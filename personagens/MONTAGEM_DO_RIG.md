@@ -1,30 +1,55 @@
-# Montagem do rig dos personagens (membros conectados)
+# Montagem do rig dos personagens
 
-Problema: braços e pernas pareciam peças soltas coladas no corpo.
-Causa: cada segmento tinha contorno próprio, então a ponta redonda de cada peça aparecia como círculo/linha sobre a peça vizinha, e as pontas das canelas vazavam por baixo dos sapatos.
+Rig V12, em `chars.js`. Use `estudio.html` para experimentar poses e expressões.
 
-## Regras (de animação de recorte: Toon Boom, Spine, tutoriais de rig 2D)
-1. Dê a cada parte sua própria camada e ligue em cadeia: coxa -> canela -> pé; braço -> antebraço -> mão. O pivô fica no centro da junta.
-2. Cubra a junta com forma redonda. Pontas de peças que se sobrepõem devem ser círculos, para que não abra buraco em nenhum ângulo.
-3. Desenhe a parte escondida inteira, por baixo da vizinha (o antebraço entra por baixo da manga; a canela, por baixo do sapato).
-4. Peças da mesma cor viram uma silhueta só: contorno de todas por baixo, preenchimento de todas por cima. Sem linha de emenda.
-5. Esconda juntas fracas sob adereços (manga, barra da calça, sapato, crachá).
-6. Peças de cor diferente se encontram em ponta redonda (manga redonda sobre o antebraço de pele).
+## Regras
 
-## Como ficou no código (versão final, chars.js / drawChar)
-Linhas soltas com ponta redonda davam aspecto de palito. Agora cada membro é uma forma afilada de verdade:
-- Perna: coxa (quad afilado) + círculo no joelho + canela (quad afilado) + círculo no tornozelo, tudo numa silhueta só (merge: contornos por baixo, preenchimentos por cima). O pé cobre o tornozelo; tornozelo a 20 px do chão com a perna reta.
-- Braço de pele (antebraço + mão): começa DENTRO da manga, passa pelo cotovelo (círculo) e termina numa mão oval alinhada com o antebraço. Uma silhueta só.
-- Manga: forma fechada, desenhada ANTES do braço de pele (ver correção abaixo). Pontos: ponto do ombro no contorno do tronco, bainha reta (punho) a uma fração do braço, axila e uma curva (cava) ligando axila e ombro. A cava toca o contorno nas duas pontas, então lê como costura de manga e não como linha solta.
-- Comprimento da manga por personagem (d.sleeve): Tico .5 (camiseta), Lua .8, Bia .88, Jão .9.
-- Ordem de camadas: pernas, saia, bolsa (Jão), cabelo de trás, pescoço, tronco, detalhes (lapela, crachá, alças), mangas, braços de pele + objeto na mão (o objeto vem antes da mão, que o segura), cabeça, cabelo da frente.
+1. **Silhueta contínua:** peças da mesma cor viram uma só. Primeiro todos os contornos, depois todos os preenchimentos, sem linha de emenda.
+2. **Juntas redondas:** ombro, cotovelo, quadril e joelho têm um círculo na junta, para não abrir buraco em nenhum ângulo.
+3. **Membro por ângulo:** cada membro sai da posição da junta anterior. A animação só interpola ângulos, então nada se solta.
+4. **Chão automático:** o corpo é posicionado para que o pé mais baixo fique em y = 0. Não ajuste a altura à mão.
+5. **Sem emenda na manga:** a manga sai do ombro, e um círculo sem contorno apaga a costura sobre o tronco. Com o braço abaixado, a linha interna da manga fica visível e funciona como a dobra da axila.
+6. **Pele sobre o tecido:** o braço de pele nasce na bainha, sempre por cima, por isso o antebraço dobrado passa à frente da manga.
+7. **Manga longa dobrada:** com mais de 55° de dobra no cotovelo, o antebraço de tecido é desenhado à parte, para a dobra aparecer.
 
-## Para o motor (Take One)
-- Cada personagem é função de (pose, expressão, boca): pose = ângulos { armL:[ombro,cotovelo], armR, legL, legR, lean }.
-- Ângulo medido a partir de "reto para baixo", em graus; a animação só interpola esses 5 pares + lean, então não há emenda para se soltar.
-- Pose do café da Lua: armR = [8, 150]. Braço cruzando o peito até a boca ficou poluído com o crachá; fica para plano fechado.
+## Pose
 
-## Correção: braço levantado e antebraço dobrado (3ª versão)
-Erros que apareceram nas poses: a manga ficava por cima do antebraço dobrado, e com o braço levantado a forma da manga se cruzava.
-- A manga agora é desenhada ANTES da pele. O trecho de pele punho->cotovelo é cortado exatamente na linha do punho (clipPath), então nasce da bainha. Antebraço e mão ficam à FRENTE da manga, mesmo dobrados de volta sobre ela.
-- Lado "de cima" da manga: perpendicular ao braço que aponta para cima; com o braço quase vertical, usa-se o lado de fora. Axila fixa no tronco (side*(tw - 1.3*hs), ty+46), independente da pose, então a cava nunca se cruza.
+`drawChar(CHARS.tico, pose)` e `drawDog(estado ou pose)` devolvem texto SVG.
+
+| Campo | O que faz |
+|---|---|
+| `armL`, `armR`, `legL`, `legR` | `[junta de cima, junta de baixo]` em graus absolutos a partir de "reto para baixo"; negativo aponta para a esquerda da tela |
+| `lean` | Inclina o tronco para os lados |
+| `head` | Inclina a cabeça para os lados |
+| `expr` | Uma das expressões de `EXPR_ORDER` |
+| `mouth` | Boca de fala: `closed`, `small`, `open`, `wide`; tem prioridade sobre a boca da expressão |
+| `blink` | Fecha os olhos a partir de 0,5 |
+| `breath` | Sobe o tronco, em pixels |
+| `liftL`, `liftR` | De 0 a 1: encurta a perna para o passo visto de frente |
+| `propL`, `propR` | Objeto na mão: `phone` ou `cup` |
+| `frente` | `'L'` ou `'R'`: desenha esse braço à frente do rosto |
+
+No Fiscal, `fN` e `fF` são as patas da frente, de perto e de longe, e `bN` e `bF`, as de trás. Os outros campos são `head`, `tail`, `expr`, `mouth` (de 0 a 1), `blink` e `breath`.
+
+## Ordem das camadas
+
+1. Mochila e cabelo de trás
+2. Sapatos e calça
+3. Tronco, pescoço e crachá
+4. Braços, exceto o marcado em `frente`
+5. Cabeça e cabelo da frente
+6. Braço marcado em `frente`
+
+## Poses úteis
+
+- **Café da Lua:** `armR: [8, 150], propR: 'cup'`
+- **Celular:** `armR: [18, 150], propR: 'phone'`
+- **Mãos na cintura:** `armL: [-55, 40], armR: [55, -40]`
+- **Aceno:** `armR: [128, 150]`
+- **Mão no queixo:** `armR: [22, 165], frente: 'R'`
+
+## Limitações
+
+- Humanos só têm vista de frente; o Fiscal só tem perfil, virado para a esquerda.
+- Andar é um passo sem sair do lugar. O deslocamento vem da posição animada no filme.
+- A cabeça só inclina para os lados, não para a frente.

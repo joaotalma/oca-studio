@@ -1,77 +1,89 @@
 # Elenco
 
-Aparência extraída de `personagens/chars.js`. Se houver diferença, vale o código. Personalidade e relações: **a definir pelo autor**.
+Visual V12, definido pelo autor. Aparência extraída de `personagens/chars.js`; se houver diferença, vale o código. Relações entre os personagens e cenário: **a definir pelo autor**.
 
 ## Tico
 
-- **Altura:** 590 (segundo mais alto).
-- **Traços:** cabelo em tufos, camiseta de manga curta (`sleeve` .5), calça e chinelo.
-- **Expressão:** a `neutro` dele já tem um leve sorriso.
+- **Papel e jeito:** protagonista; exausto, irônico e persistente.
+- **Altura:** 653.
+- **Traços:** cabelo espetado, barba por fazer, olheiras, pálpebra caída mesmo na expressão `neutro`.
+- **Figurino:** camiseta de manga curta, jeans com barra dobrada, chinelo.
+- **Objeto:** celular (`phone`).
 
 | Parte | Cor |
 |---|---|
-| Pele | `#c48a60` |
-| Nariz | `#b3794f` |
-| Cabelo | `#3d2a1d` |
-| Camiseta | `#a9c23a` |
-| Detalhe | `#7f9419` |
-| Calça | `#41667a` |
+| Pele | `#d59a6e` |
+| Sombra da pele | `#ad714f` |
+| Cabelo | `#272023` |
+| Camiseta | `#a8b94c` |
+| Detalhe da camiseta | `#7d9136` |
+| Calça | `#465a72` |
 
 ## Lua
 
-- **Altura:** 548.
-- **Traços:** cabelo ondulado longo, cílios, blush permanente, crachá com cordão, manga `sleeve` .8, calça e sapato.
-- **Pose própria:** café na mão com `armR: [8, 150]`, `propR: 'cup'`. Braço cruzando o peito até a boca só em plano fechado, porque polui com o crachá.
+- **Papel e jeito:** colega de trabalho; gentil, perspicaz e expressiva.
+- **Altura:** 605 (a menor).
+- **Traços:** cabelo ondulado nos ombros, cílios, olhos verdes.
+- **Figurino:** camisa de manga curta com botões, crachá com cordão, calça escura, tênis.
+- **Objeto:** café (`cup`), com `armR: [8, 150]`.
 
 | Parte | Cor |
 |---|---|
-| Pele | `#f3d0b0` |
-| Nariz | `#e2ab88` |
-| Cabelo | `#e0b04e` |
-| Blusa | `#19a8a3` |
-| Detalhe | `#0f7f7c` |
-| Calça | `#3b3a52` |
+| Pele | `#e9b18b` |
+| Sombra da pele | `#c98767` |
+| Cabelo | `#bd8641` |
+| Camisa | `#ae5d49` |
+| Detalhe da camisa | `#814538` |
+| Calça | `#454044` |
 
 ## Jão
 
-- **Altura:** 532 (o mais baixo e o mais largo).
-- **Traços:** cabelo raspado, barba, sobrancelhas grossas, bolsa, manga `sleeve` .9, calça e bota.
+- **Papel e jeito:** entregador; forte, reservado e determinado.
+- **Altura:** 622 (o mais largo).
+- **Traços:** barba cheia, sobrancelhas grossas, bandana com nó.
+- **Figurino:** camiseta escura, mochila de entrega vermelha com alças no peito, calça cáqui, bota.
 
 | Parte | Cor |
 |---|---|
-| Pele | `#8a5a3b` |
-| Nariz | `#774a2f` |
-| Cabelo | `#33241b` |
-| Barba | `#5a4030` |
-| Blusa | `#d9502b` |
-| Detalhe | `#aa3815` |
-| Calça | `#2e2a2a` |
+| Pele | `#805039` |
+| Sombra da pele | `#563327` |
+| Cabelo e barba | `#1e1b1e` |
+| Camiseta | `#3d4049` |
+| Detalhe da camiseta | `#282b33` |
+| Calça | `#665e50` |
+| Mochila | `#b3303c` |
+| Bandana | `#963a48` |
 
 ## Bia
 
-- **Altura:** 622 (a mais alta).
-- **Traços:** rabo de cavalo, cílios, blazer, saia, manga `sleeve` .88, tênis.
+- **Papel e jeito:** executiva; confiante, focada e exigente.
+- **Altura:** 660 (a mais alta).
+- **Traços:** rabo de cavalo com prendedor dourado, cílios.
+- **Figurino:** blazer de manga longa com lapela, blusa escura, calça social clara, scarpin.
+- **Objeto:** celular (`phone`).
 
 | Parte | Cor |
 |---|---|
-| Pele e pernas | `#e0aa84` |
-| Nariz | `#d0996f` |
-| Cabelo | `#b9803e` |
-| Blazer | `#eaab2a` |
-| Detalhe | `#c98a0e` |
-| Saia | `#fff6e6` |
+| Pele | `#e7ac87` |
+| Sombra da pele | `#bc7d60` |
+| Cabelo | `#342326` |
+| Blazer | `#bf842a` |
+| Detalhe do blazer | `#8f601f` |
+| Calça | `#c8b094` |
 
 ## Fiscal, o cachorro
 
-- **Desenho:** `drawDog(estado)`.
+- **Papel e jeito:** curioso, atento e leal.
+- **Desenho:** `drawDog(estado ou pose)`, de perfil, virado para a esquerda.
 - **Estados:** `stand`, `alerta`, `latindo`.
+- **Traços:** orelhas grandes, coleira com medalha dourada.
 
 | Parte | Cor |
 |---|---|
-| Corpo | `#d29a52` |
-| Sombra | `#b87d3a` |
-| Claro | `#f4e0b8` |
-| Orelha | `#8b5a2b` |
+| Corpo | `#b97539` |
+| Sombra | `#855029` |
+| Focinho | `#d99759` |
+| Medalha | `#e2b13f` |
 
 ## Dona Neide
 
@@ -79,4 +91,4 @@ Só voz. Nunca aparece na imagem.
 
 ## Em comum
 
-- Contorno `#2b1a12`, espessura 6.
+- Contorno `#2a1f22`, espessura 2,6 por lado.

@@ -15,34 +15,39 @@ O desenho é feito em código com o motor da skill `take-one`: `film.html` desen
 
 **Elenco:** Tico, Lua, Jão, Bia, Fiscal (o cachorro) e Dona Neide (só voz, nunca aparece). Paleta e traços estão em `references/elenco.md`.
 
-**A definir pelo autor:** personalidade, relações e cenário. Enquanto não estiverem definidos em `references/elenco.md`, não invente. Se o roteiro depender disso, pergunte. Quando o autor responder, registre lá.
+**Personalidade:** definida em `references/elenco.md`. Use-a para escrever as falas e escolher as expressões.
+
+**A definir pelo autor:** relações entre os personagens e cenário. Enquanto não estiverem definidos em `references/elenco.md`, não invente. Se o roteiro depender disso, pergunte. Quando o autor responder, registre lá.
 
 ## Rig
 
 Antes de criar ou alterar uma pose, leia `personagens/MONTAGEM_DO_RIG.md`. O essencial:
 
-- `drawChar(CHARS.tico, pose)` devolve texto SVG, com os pés em y = 0 e o corpo subindo em y negativo. `drawDog(estado)` faz o mesmo para o Fiscal.
-- Pose: `armL`, `armR`, `legL` e `legR` são pares `[junta superior, junta inferior]` em graus, medidos a partir de "reto para baixo". Há também `lean`, `expr`, `mouth`, `propL` e `propR`.
+- `drawChar(CHARS.tico, pose)` devolve texto SVG, com o pé de apoio no chão (y = 0) e o corpo subindo em y negativo. `drawDog(estado ou pose)` faz o mesmo para o Fiscal.
+- Pose: `armL`, `armR`, `legL` e `legR` são pares `[junta superior, junta inferior]` em graus absolutos a partir de "reto para baixo"; negativo aponta para a esquerda da tela.
+- Outros campos: `lean`, `head`, `expr`, `mouth`, `blink`, `breath`, `liftL`, `liftR`, `propL`, `propR` e `frente` (`'L'` ou `'R'`: braço à frente do rosto).
+- Pose do Fiscal: `head`, `tail`, `fN`, `fF`, `bN`, `bF` (pares de ângulos das patas), `expr`, `mouth` (0 a 1), `blink`, `breath`.
 - Anime só interpolando esses valores. Assim os membros não se soltam.
 - Use apenas o que existe:
-  - Expressões: `neutro`, `feliz`, `rindo`, `surpreso`, `preocupado`, `envergonhado`, `forcado`, `bravo`, `triste`, `lado`, `pensando`, `aliviado`.
+  - Expressões: `neutro`, `cansado`, `feliz`, `rindo`, `surpreso`, `preocupado`, `envergonhado`, `forcado`, `bravo`, `triste`, `lado`, `pensando`, `aliviado`.
   - Bocas de fala: `closed`, `small`, `open`, `wide`.
   - Objetos na mão: `phone`, `cup`.
   - Fiscal: `stand`, `alerta`, `latindo`.
+- **Vista:** os humanos só têm vista de frente, e o Fiscal só tem perfil, virado para a esquerda. Não escreva cena que dependa de outra vista: liste a necessidade em `poses_novas.md`. Andar é um passo sem sair do lugar; o deslocamento vem da animação da posição.
 - Precisa de pose ou expressão nova? Liste em `poses_novas.md` na pasta do episódio em vez de inventar no filme.
-- A fonte do rig é `personagens/chars.js`. Não edite as cópias nas pastas de episódio.
+- Para experimentar poses, abra `personagens/estudio.html`. O botão "Exportar JSON" dá os valores prontos.
+- A fonte do rig é `personagens/chars.js`. Não edite as cópias nas pastas de episódio. Depois de mudar o rig, rode `node gen-assets.js` na pasta `personagens`.
 
 ### Montagem do `film.html`
 
-Siga `episodios/teste/film.html`. A ordem importa: se errar, `READY` nunca chega e o render fica reiniciando sem mostrar a causa.
+Siga `episodios/teste/film.html`:
 
 ```html
 <script src="springs.js"></script>
-<script>window.module = { exports: {} };</script>
 <script src="chars.js"></script>
 ```
 
-- `CHARS` e `drawChar` já são globais depois do `chars.js`. Não os redeclare, e deixe o código do filme dentro de uma função `(() => { ... })();`.
+- `chars.js` deixa vários nomes globais, como `CHARS`, `drawChar`, `T`, `OUT` e `lerp`. Deixe o código do filme dentro de uma função `(() => { ... })();` e não redeclare `CHARS` nem `drawChar` fora dela. Se houver conflito, `READY` nunca chega e o render fica reiniciando sem mostrar a causa.
 - Exponha `window.FILM_DURATION`, `window.renderFrame(t)` e `window.READY`.
 - `renderFrame` monta o SVG, carrega em uma `Image`, faz `await img.decode()` e desenha no canvas.
 - Tudo depende só de `t`. Sem `Math.random`, relógio ou `localStorage`.

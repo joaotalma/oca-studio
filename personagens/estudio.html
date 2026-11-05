@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Se Vira, Tico — Estúdio V12</title>
+<style>
+:root{font-family:Inter,system-ui,Arial,sans-serif;color:#eeeef5;background:#151824}
+*{box-sizing:border-box}
+body{margin:0}
+header{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:#202333;border-bottom:1px solid #373b50;gap:12px;flex-wrap:wrap}
+h1{font-size:22px;margin:0}h1 b{color:#f6b944}
+.tag{background:#6b41a5;padding:5px 10px;border-radius:8px;font-size:12px;vertical-align:middle}
+main{display:grid;grid-template-columns:230px minmax(350px,1fr) 300px;gap:14px;padding:14px;max-width:1600px;margin:auto}
+.panel{background:#222637;border:1px solid #383e55;border-radius:15px;padding:15px;max-height:calc(100vh - 92px);overflow:auto}
+h2{font-size:15px;margin:0 0 13px}h3{font-size:12px;color:#c7b9ee;margin:19px 0 9px}
+.people{display:grid;gap:9px}
+.person{width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:10px 11px;border-radius:9px;background:#2d3145;border:1px solid #424761;color:#fff;cursor:pointer}
+.person.active{background:#5c3688;border-color:#ba8df9}.person .emoji{font-size:22px}.person small{display:block;color:#bec1d1;margin-top:2px}
+.stage{height:calc(100vh - 92px);min-height:520px;position:relative;overflow:hidden;background:radial-gradient(ellipse at center,#4a5168 0%,#363c52 65%,#2d3246 100%);border:1px solid #3b425a;border-radius:16px}
+.stage svg{display:block;width:100%;height:100%}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:7px}.btns.four{grid-template-columns:repeat(3,1fr)}
+button{font:inherit}
+.btn{background:#30364b;color:#f2f0fa;border:1px solid #50566f;border-radius:8px;padding:9px 6px;cursor:pointer;font-size:13px}
+.btn.active,.btn:hover{background:#7445a8;border-color:#b68ce7}.btn.full{grid-column:1/-1}
+.control{display:grid;grid-template-columns:95px 1fr 42px;align-items:center;gap:8px;font-size:12px;margin:9px 0}
+.control output{text-align:right;color:#cfc3ed;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:#b78bf1}
+.note{color:#aeb4c9;font-size:12px;line-height:1.55;margin:0}
+.legend{display:flex;flex-wrap:wrap;gap:5px}.chip{padding:5px 8px;border-radius:6px;font-size:11px;background:#363a4d}
+.chip i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:5px}
+@media(max-width:1050px){main{grid-template-columns:210px 1fr}.right{grid-column:span 2;max-height:none}.panel{max-height:none}}
+@media(max-width:650px){header{padding:12px 16px}main{grid-template-columns:minmax(0,1fr);padding:10px 16px}.right{grid-column:auto}.stage{height:62vh;min-height:430px;order:-1}.people{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.person{display:block;text-align:center;padding:7px 1px;font-size:11px}.person small{display:none}.control{grid-template-columns:82px minmax(0,1fr) 38px}}
+</style></head>
+<body>
+<header><h1>Se Vira, <b>Tico</b> <span class="tag">ESTÚDIO V12</span></h1><span style="font-size:12px;color:#b9bbca">5 personagens · 100% vetorial · pose, expressão e boca</span></header>
+<main>
+<aside class="panel"><h2>Elenco</h2><div class="people" id="people"></div>
+<button class="btn" id="lineup" style="width:100%;margin-top:9px">Ver todos juntos</button>
+<h3>Identidade visual</h3><p id="bio" class="note"></p>
+<h3>Paleta</h3><div class="legend" id="palette"></div></aside>
+<section class="stage"><svg id="scene" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Personagem vetorial animado" preserveAspectRatio="xMidYMid meet"></svg></section>
+<aside class="panel right"><h2>Direção de animação</h2><div class="btns" id="modes"></div>
+<h3>Expressão</h3><div class="btns four" id="expressions"></div>
+<h3>Boca (fala)</h3><div class="btns four" id="mouths"></div>
+<h3 id="jointsTitle">Articulações (graus)</h3><div id="joints"></div>
+<h3>Opções</h3>
+<label class="control"><span>Velocidade</span><input type="range" id="speed" min="0" max="200" value="100"><output id="speedOut">100%</output></label>
+<label class="control"><span>Zoom</span><input type="range" id="zoom" min="65" max="160" value="100"><output id="zoomOut">100%</output></label>
+<div class="btns"><button class="btn full" id="prop">Objeto na mão</button><button class="btn" id="reset">Reiniciar pose</button><button class="btn" id="export">Exportar JSON</button><button class="btn full" id="svg">Baixar SVG</button></div>
+</aside>
+</main>
+<script src="chars.js"></script>
+<script>
+/* ================= ESTÚDIO ================= */
+const ELENCO = [CHARS.tico, CHARS.lua, FISCAL, CHARS.jao, CHARS.bia];
+const $ = id => document.getElementById(id);
+const REST = { armL: 9, armR: 9, elbowL: -4, elbowR: -4, legL: 4, legR: 4, kneeL: -2, kneeR: -2 };
+const NOMES = { head: 'Cabeça', armL: 'Braço E', elbowL: 'Cotovelo E', armR: 'Braço D', elbowR: 'Cotovelo D', legL: 'Quadril E', kneeL: 'Joelho E', legR: 'Quadril D', kneeR: 'Joelho D' };
+const FAIXA = { head: [-30, 30], armL: [-60, 180], armR: [-60, 180], elbowL: [-170, 170], elbowR: [-170, 170], legL: [-35, 70], legR: [-35, 70], kneeL: [-90, 90], kneeR: [-90, 90] };
+const NOMES_DOG = { head: 'Cabeça', tail: 'Rabo', fN0: 'Pata da frente', fN1: 'Joelho da frente', fF0: 'Frente (longe)', fF1: 'Joelho (longe)', bN0: 'Pata de trás', bN1: 'Jarrete de trás', bF0: 'Trás (longe)', bF1: 'Jarrete (longe)' };
+const REST_DOG = { head: 0, tail: 18, fN0: 8, fN1: 3, fF0: -7, fF1: -3, bN0: -7, bN1: 12, bF0: 7, bF1: 18 };
+const LABEL_MODO = { stop: 'Parado', idle: 'Respirar', walk: 'Caminhar', wave: 'Acenar', talk: 'Conversar', sad: 'Desanimado' };
+let who = 'tico', mode = 'idle', expr = null, mouth = null, phase = 0, last = performance.now(), speed = 1, zoom = 1, ang = {}, lineup = false, comProp = false;
+const atual = () => who === 'fiscal' ? FISCAL : CHARS[who];
+const expressao = () => expr || (who === 'tico' ? 'neutro' : 'neutro');
+
+function restAng() { return who === 'fiscal' ? { ...REST_DOG } : { head: 0, ...REST }; }
+function poseDoHumano(a, extra = {}) {
+  const b = (k, f) => a[k] != null ? a[k] : f;
+  const aL = b('armL', 9), aR = b('armR', 9), eL = b('elbowL', -4), eR = b('elbowR', -4), lL = b('legL', 4), lR = b('legR', 4), kL = b('kneeL', -2), kR = b('kneeR', -2);
+  return { armL: [-aL, -(aL + eL)], armR: [aR, aR + eR], legL: [-lL, -(lL + kL)], legR: [lR, lR + kR], head: a.head || 0, ...extra };
+}
+function poseDoCao(a, extra = {}) {
+  return { head: a.head, tail: a.tail, fN: [a.fN0, a.fN1], fF: [a.fF0, a.fF1], bN: [a.bN0, a.bN1], bF: [a.bF0, a.bF1], ...extra };
+}
+function animar(p) {
+  const s = Math.sin(p * 6), res = restAng(), ex = {};
+  const piscada = (p % 3.4) < .13;
+  ex.blink = piscada ? 1 : 0;
+  ex.breath = mode === 'stop' ? 0 : (1 - Math.cos(p * 2.1)) * 1.6;
+  if (who === 'fiscal') {
+    const a = res;
+    if (mode === 'walk') { a.fN0 = 8 + s * 22; a.fN1 = a.fN0 - 8 - Math.max(0, -s) * 26; a.bF0 = 7 + s * 20; a.bF1 = a.bF0 + 12; a.fF0 = -7 - s * 20; a.fF1 = a.fF0 - 8 - Math.max(0, s) * 26; a.bN0 = -7 - s * 20; a.bN1 = a.bN0 + 18; a.tail = 18 + Math.sin(p * 9) * 12; a.head = s * 2; }
+    else if (mode === 'wave') { a.fN0 = -72 + Math.sin(p * 7) * 10; a.fN1 = -34 + Math.sin(p * 7) * 16; a.tail = 22 + Math.sin(p * 16) * 20; a.head = -5; ex.expr = expr || 'feliz'; }
+    else if (mode === 'talk') { a.head = Math.sin(p * 7) * 4 - 5; ex.mouth = Math.max(0, Math.sin(p * 9)); a.tail = 22 + Math.sin(p * 11) * 12; }
+    else if (mode === 'sad') { a.head = 6; a.tail = -38; ex.expr = expr || 'triste'; }
+    else if (mode === 'idle') { a.tail = 18 + Math.sin(p * 4) * 10; a.head = Math.sin(p * 1.4) * 2; }
+    return { a, ex };
+  }
+  const a = res;
+  if (mode === 'walk') {
+    const up = Math.max(0, s), un = Math.max(0, -s);
+    a.armL = 7 + s * 7; a.elbowL = -10 - un * 16; a.armR = 7 - s * 7; a.elbowR = -10 - up * 16;
+    a.legL = 3; a.legR = 3; a.kneeL = -up * 14; a.kneeR = -un * 14; ex.liftL = up; ex.liftR = un; ex.lean = s * 1.8; a.head = -s * 1.6;
+  } else if (mode === 'wave') {
+    a.armR = 128 + Math.sin(p * 2) * 3; a.elbowR = 22 + Math.sin(p * 9) * 22; a.head = 3 + Math.sin(p * 2) * 2; ex.expr = expr || 'feliz';
+  } else if (mode === 'talk') {
+    a.armR = 26 + Math.sin(p * 3) * 9; a.elbowR = 74 + Math.sin(p * 4) * 22; a.armL = 13 + Math.sin(p * 2.3) * 5; a.elbowL = 22 + Math.sin(p * 3.1) * 10; a.head = Math.sin(p * 2.6) * 3;
+    if (!mouth) { const v = Math.abs(Math.sin(p * 11) * Math.sin(p * 2.7)); ex.mouth = v < .15 ? 'closed' : v < .4 ? 'small' : v < .72 ? 'open' : 'wide'; }
+  } else if (mode === 'sad') {
+    a.head = 0; a.armL = 3; a.armR = 3; a.elbowL = 0; a.elbowR = 0; ex.lean = 0; ex.expr = expr || 'triste'; ex.breath = -6;
+  } else if (mode === 'idle') {
+    a.head = Math.sin(p * 1.7) * 1.3; a.armL = 9 + Math.sin(p * 1.9) * 1.4; a.armR = 9 - Math.sin(p * 1.9) * 1.4;
+  }
+  return { a, ex };
+}
+function caixa() {
+  if (lineup) return [-210, -740, 1660, 800];
+  const v = who === 'fiscal' ? [-310, -440, 620, 500] : [-250, -700, 500, 760];
+  const cx = v[0] + v[2] / 2, cy = v[1] + v[3] / 2, w = v[2] / zoom, h = v[3] / zoom;
+  return [cx - w / 2, cy - h / 2, w, h];
+}
+const SOMBRA = (x, rx) => `<ellipse cx="${x}" cy="4" rx="${rx}" ry="11" fill="#10121b" opacity=".3"/>`;
+function cena(a, ex) {
+  if (lineup) { let s = '', x = 0;
+    const lista = [CHARS.tico, CHARS.lua, CHARS.jao, CHARS.bia];
+    for (const d of lista) { s += SOMBRA(x, 94) + `<g transform="translate(${x} 0)">${drawChar(d, { expr: expr || 'neutro', head: 0, blink: ex.blink, breath: ex.breath, mouth })}</g>`; x += 290; }
+    return s + SOMBRA(x + 40, 150) + `<g transform="translate(${x + 40} 0) scale(.9)">${drawDog({ expr: expr || 'neutro', blink: ex.blink, breath: ex.breath })}</g>`; }
+  if (who === 'fiscal') return SOMBRA(0, 170) + drawDog(poseDoCao(a, { expr: ex.expr || expr || 'neutro', ...ex }));
+  const d = CHARS[who], extra = { expr: ex.expr || expr || 'neutro', mouth: ex.mouth || mouth, ...(comProp ? { propR: d.prop || null } : {}) };
+  const p = poseDoHumano(a, { ...ex, ...extra });
+  if (comProp && d.prop && mode !== 'wave' && ang.armR == null) { p.armR = [18, 150]; }
+  return SOMBRA(0, d.key === 'jao' ? 130 : 96) + drawChar(d, p);
+}
+function desenhar(a, ex) {
+  const svg = $('scene'), b = caixa();
+  svg.setAttribute('viewBox', b.map(r2).join(' '));
+  svg.innerHTML = cena(a, ex);
+}
+function controles() {
+  const nomes = who === 'fiscal' ? NOMES_DOG : NOMES;
+  $('joints').innerHTML = Object.entries(nomes).map(([k, v]) => { const f = who === 'fiscal' ? [-110, 110] : FAIXA[k]; return `<label class="control"><span>${v}</span><input type="range" data-j="${k}" min="${f[0]}" max="${f[1]}" value="0"><output id="o-${k}">0°</output></label>`; }).join('');
+  document.querySelectorAll('[data-j]').forEach(el => el.addEventListener('input', () => { if (mode !== 'stop') { ang = { ...ultimo }; mode = 'stop'; modos(); } ang[el.dataset.j] = +el.value; $('o-' + el.dataset.j).textContent = el.value + '°'; }));
+}
+function sincroniza(a) {
+  document.querySelectorAll('[data-j]').forEach(el => { const v = Math.round(a[el.dataset.j] || 0); if (document.activeElement !== el) el.value = v; $('o-' + el.dataset.j).textContent = v + '°'; });
+}
+function modos() { $('modes').innerHTML = Object.entries(LABEL_MODO).map(([k, v]) => `<button class="btn ${mode === k ? 'active' : ''}" data-m="${k}">${v}</button>`).join(''); document.querySelectorAll('[data-m]').forEach(el => el.onclick = () => { mode = el.dataset.m; if (mode === 'stop') ang = { ...ultimo }; phase = 0; modos(); }); }
+function expressoes() { $('expressions').innerHTML = EXPR_ORDER.map(k => `<button class="btn ${(expr || 'neutro') === k ? 'active' : ''}" data-e="${k}">${NOMES_EXPR[k]}</button>`).join(''); document.querySelectorAll('[data-e]').forEach(el => el.onclick = () => { expr = el.dataset.e; expressoes(); }); }
+function bocas() { const L = { '': 'Auto', closed: 'Fechada', small: 'Pequena', open: 'Aberta', wide: 'Larga' }; $('mouths').innerHTML = Object.entries(L).map(([k, v]) => `<button class="btn ${(mouth || '') === k ? 'active' : ''}" data-b="${k}">${v}</button>`).join(''); document.querySelectorAll('[data-b]').forEach(el => el.onclick = () => { mouth = el.dataset.b || null; bocas(); }); $('mouths').style.opacity = who === 'fiscal' ? .45 : 1; }
+function pessoas() {
+  $('people').innerHTML = ELENCO.map(c => `<button class="person ${!lineup && who === c.key ? 'active' : ''}" data-p="${c.key}"><span class="emoji">${c.emoji}</span><span><b>${c.name}</b><small>${c.papel}</small></span></button>`).join('');
+  document.querySelectorAll('[data-p]').forEach(el => el.onclick = () => { who = el.dataset.p; lineup = false; mode = 'idle'; expr = null; mouth = null; ang = {}; comProp = false; tudo(); });
+  $('lineup').classList.toggle('active', lineup);
+  const c = atual();
+  $('bio').textContent = lineup ? 'Os cinco na mesma escala, para comparar altura e silhueta.' : c.desc;
+  $('palette').innerHTML = (lineup ? [] : c.paleta).map(x => `<span class="chip"><i style="background:${x}"></i>${x}</span>`).join('');
+  $('palette').previousElementSibling.style.display = lineup ? 'none' : '';
+  $('prop').disabled = who === 'fiscal' || !CHARS[who]?.prop; $('prop').style.opacity = $('prop').disabled ? .45 : 1; $('prop').classList.toggle('active', comProp);
+}
+function tudo() { pessoas(); modos(); expressoes(); bocas(); controles(); }
+let ultimo = {};
+function quadro(t) {
+  const dt = Math.min(.05, (t - last) / 1000); last = t; phase += dt * speed;
+  let a, ex = {};
+  if (mode === 'stop') { a = Object.keys(ang).length ? ang : restAng(); ex = animarVazio(); }
+  else { const r = animar(phase); a = r.a; ex = r.ex; }
+  ultimo = a;
+  desenhar(a, ex); sincroniza(a);
+  requestAnimationFrame(quadro);
+}
+const animarVazio = () => ({});
+$('lineup').onclick = () => { lineup = !lineup; pessoas(); };
+$('speed').oninput = e => { speed = e.target.value / 100; $('speedOut').textContent = e.target.value + '%'; };
+$('zoom').oninput = e => { zoom = e.target.value / 100; $('zoomOut').textContent = e.target.value + '%'; };
+$('reset').onclick = () => { mode = 'stop'; ang = restAng(); expr = null; mouth = null; comProp = false; tudo(); };
+$('prop').onclick = () => { comProp = !comProp; pessoas(); };
+const baixar = (nome, tipo, texto) => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([texto], { type: tipo })); a.download = nome; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 500); };
+$('export').onclick = () => { const pose = who === 'fiscal' ? poseDoCao(ultimo, { expr: expr || 'neutro' }) : poseDoHumano(ultimo, { expr: expr || 'neutro', mouth }); baixar(`se-vira-tico-${who}-pose.json`, 'application/json', JSON.stringify({ version: 12, personagem: who, modo: mode, pose }, null, 2)); };
+$('svg').onclick = () => { const s = $('scene'); baixar(`se-vira-tico-${lineup ? 'elenco' : who}.svg`, 'image/svg+xml', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${s.getAttribute('viewBox')}">${s.innerHTML}</svg>`); };
+tudo(); requestAnimationFrame(quadro);
+</script>
+</body></html>

@@ -21,10 +21,9 @@ Rode um render por vez.
 - **Pasta do filme:** `export.mjs` e `gate.mjs` só servem arquivos de dentro dela. `scripts/preparar-film.sh` copia para lá o rig e o motor; essas cópias ficam fora do git.
 - **Reinício do render:** se uma parte não escreve nada em 60 s, `render-parallel.sh` a reinicia. O encerramento pode deixar processos do Chrome para trás. Eles têm `playwright_chromiumdev_profile` na linha de comando, o que os separa do Chrome normal.
 
-## Ordem dos scripts no `film.html`
+## Se o render ficar reiniciando
 
-Isso não é específico do Windows, mas trava a página. Se `READY` nunca chega, o render fica reiniciando sem mostrar a causa.
+Isso não é específico do Windows. Se `READY` nunca chega, o render fica reiniciando sem mostrar a causa. A mais provável é um erro de script no `film.html`.
 
-1. Carregue `springs.js` antes de definir `window.module`. Se `module` existir, ele não cria o `Spring` global.
-2. Defina `window.module = { exports: {} }` antes de `chars.js`, que usa `module.exports`.
-3. Não redeclare `CHARS` nem `drawChar` no escopo global: `chars.js` já os define. Use-os direto e deixe o código do filme dentro de uma função.
+- Carregue `springs.js` e `chars.js` sem definir `window.module`. Se `module` existir, o `springs.js` não cria o `Spring` global.
+- Deixe o código do filme dentro de uma função e não redeclare `CHARS` nem `drawChar` no escopo global, porque `chars.js` já os define.

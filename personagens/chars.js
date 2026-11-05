@@ -1,354 +1,290 @@
 'use strict';
-// Se Vira, Tico — personagens em SVG parametrizado (frente, traço plano, contorno fixo)
-const OUT = '#2b1a12', T = 6;           // cor e espessura visível do contorno
-const DARK_MOUTH = '#5a1a18';
-let _id = 0; const uid = () => 'c' + (++_id);
+// Se Vira, Tico: rig dos personagens (V12).
+/* ================= RIG =================
+   Mesma API do personagens/chars.js: drawChar(CHARS.tico, pose) e drawDog(pose) devolvem texto SVG,
+   com os pés em y = 0. Pose: armL/armR/legL/legR = [junta de cima, junta de baixo], em graus absolutos a
+   partir de "reto para baixo" (negativo = esquerda da tela). Também: lean, head, expr, mouth, blink,
+   breath, liftL, liftR, propL, propR e frente ('L' ou 'R': braço à frente do rosto).
+   Regra da montagem: peças da mesma cor viram uma silhueta só (contorno por baixo, preenchimento por cima). */
+const OUT = '#2a1f22', T = 2.6;
 const r2 = n => Math.round(n * 100) / 100;
 const rad = d => d * Math.PI / 180;
+const lerp = (a, b, p) => a + (b - a) * p;
+const P2 = (x, y, a, l) => [x + Math.sin(rad(a)) * l, y + Math.cos(rad(a)) * l];
+const on = (a, b, p) => [lerp(a[0], b[0], p), lerp(a[1], b[1], p)];
+const quad = (a, b, ra, rb) => { const dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1, n = [-dy / l, dx / l];
+  return { d: `M${r2(a[0] + n[0] * ra)} ${r2(a[1] + n[1] * ra)}L${r2(b[0] + n[0] * rb)} ${r2(b[1] + n[1] * rb)}L${r2(b[0] - n[0] * rb)} ${r2(b[1] - n[1] * rb)}L${r2(a[0] - n[0] * ra)} ${r2(a[1] - n[1] * ra)}Z` }; };
+const circ = (c, r) => ({ c, r });
+const el = (s, attrs) => s.c ? `<circle cx="${r2(s.c[0])}" cy="${r2(s.c[1])}" r="${r2(s.r)}" ${attrs}/>` : `<path d="${s.d}" ${attrs}/>`;
+const union = (list, fill, t = T) => list.map(s => el(s, `fill="${OUT}" stroke="${OUT}" stroke-width="${t * 2}" stroke-linejoin="round"`)).join('') + list.map(s => el(s, `fill="${fill}"`)).join('');
+const fillOnly = (d, fill, extra = '') => `<path d="${d}" fill="${fill}" ${extra}/>`;
+const shape = (d, fill, sw = T, extra = '') => `<path d="${d}" fill="${fill}" stroke="${OUT}" stroke-width="${sw}" stroke-linejoin="round" stroke-linecap="round" ${extra}/>`;
+const stroke = (d, col = OUT, sw = 2) => `<path d="${d}" fill="none" stroke="${col}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round"/>`;
+const ell = (cx, cy, rx, ry, fill, st = 'none', sw = 0, extra = '') => `<ellipse cx="${r2(cx)}" cy="${r2(cy)}" rx="${r2(rx)}" ry="${r2(ry)}" fill="${fill}" stroke="${st}" stroke-width="${sw}" ${extra}/>`;
 
-function rpoly(pts, r) {
-  const n = pts.length; let d = '';
-  const unit = (a, b) => { const dx = b[0]-a[0], dy = b[1]-a[1], l = Math.hypot(dx, dy) || 1; return [dx/l, dy/l]; };
-  for (let i = 0; i < n; i++) {
-    const p = pts[i], pr = pts[(i+n-1)%n], nx = pts[(i+1)%n];
-    const v1 = unit(p, pr), v2 = unit(p, nx);
-    const a = [p[0]+v1[0]*r, p[1]+v1[1]*r], b = [p[0]+v2[0]*r, p[1]+v2[1]*r];
-    d += (i === 0 ? 'M' : 'L') + r2(a[0]) + ' ' + r2(a[1]) + ' Q' + r2(p[0]) + ' ' + r2(p[1]) + ' ' + r2(b[0]) + ' ' + r2(b[1]);
-  }
-  return d + 'Z';
-}
-const shape = (tag, a, fill, sw = T) => `<${tag} ${a} fill="${fill}" stroke="${OUT}" stroke-width="${sw}" stroke-linejoin="round" stroke-linecap="round"/>`;
-const union = (shapes, fill) => `<g>` +
-  shapes.map(s => `<${s[0]} ${s[1]} fill="${OUT}" stroke="${OUT}" stroke-width="${T*2}" stroke-linejoin="round"/>`).join('') +
-  shapes.map(s => `<${s[0]} ${s[1]} fill="${fill}"/>`).join('') + `</g>`;
-
-function seg(x, y, ang, len, w, fill) {
-  const ex = x + Math.sin(rad(ang)) * len, ey = y + Math.cos(rad(ang)) * len;
-  return { x: ex, y: ey, svg:
-    `<line x1="${r2(x)}" y1="${r2(y)}" x2="${r2(ex)}" y2="${r2(ey)}" stroke="${OUT}" stroke-width="${w+2*T}" stroke-linecap="round"/>` +
-    `<line x1="${r2(x)}" y1="${r2(y)}" x2="${r2(ex)}" y2="${r2(ey)}" stroke="${fill}" stroke-width="${w}" stroke-linecap="round"/>` };
-}
-const ell = (P, th, rx, ry, cx, cy) => [cx + rx*Math.cos(rad(th)), cy - ry*Math.sin(rad(th))];
-
-// ---------- expressões ----------
+const CHARS = {
+  tico: { key: 'tico', name: 'Tico', emoji: '🩴', papel: 'Protagonista', desc: 'Protagonista: exausto, irônico e persistente.', paleta: ['#d59a6e', '#272023', '#a8b94c', '#465a72'],
+    skin: '#d59a6e', shade: '#ad714f', hair: '#272023', hairHi: '#4b3934', iris: '#584334', cloth: '#a8b94c', clothD: '#7d9136', pants: '#465a72', pantsD: '#304054', shoe: 'chinelo',
+    hs: .95, neck: 15, neckW: 21, torso: 172, sw: 66, waist: 54, hem: 56, hw: 44, armU: 92, armF: 88, ru: 15, re: 13, rw: 10.5, sleeve: .34, thigh: 140, shin: 136, rt: 25, rk: 20, ra: 18, cuff: true, lid: .3, bags: true, stubble: true, prop: 'phone', browW: 4.2, jaw: 'm' },
+  lua: { key: 'lua', name: 'Lua', emoji: '🌙', papel: 'Colega de trabalho', desc: 'Colega de trabalho: gentil, perspicaz e expressiva.', paleta: ['#e9b18b', '#bd8641', '#ae5d49', '#454044'],
+    skin: '#e9b18b', shade: '#c98767', hair: '#bd8641', hairHi: '#e4b16c', iris: '#568276', cloth: '#ae5d49', clothD: '#814538', pants: '#454044', pantsD: '#2f2c31', shoe: 'tenis',
+    hs: .92, neck: 15, neckW: 16, torso: 152, sw: 50, waist: 37, hem: 47, hw: 44, armU: 82, armF: 78, ru: 11.5, re: 10, rw: 8, sleeve: .42, thigh: 128, shin: 126, rt: 23, rk: 16.5, ra: 14, lid: .1, lashes: true, prop: 'cup', browW: 3.2, jaw: 'f' },
+  jao: { key: 'jao', name: 'Jão', emoji: '🎒', papel: 'Entregador', desc: 'Entregador: forte, reservado e determinado.', paleta: ['#805039', '#3d4049', '#665e50', '#bd303c'],
+    skin: '#805039', shade: '#563327', hair: '#1e1b1e', hairHi: '#3a2f2c', iris: '#2a2521', cloth: '#3d4049', clothD: '#282b33', pants: '#665e50', pantsD: '#49453e', shoe: 'bota',
+    hs: .98, neck: 8, neckW: 31, torso: 170, sw: 90, waist: 74, hem: 74, hw: 56, armU: 90, armF: 84, ru: 23, re: 20, rw: 15, sleeve: .3, thigh: 124, shin: 122, rt: 32, rk: 25, ra: 21, lid: .34, beard: true, browW: 6, jaw: 'm', handS: 1.3 },
+  bia: { key: 'bia', name: 'Bia', emoji: '📱', papel: 'Executiva', desc: 'Executiva: confiante, focada e exigente.', paleta: ['#e7ac87', '#342326', '#bf842a', '#c8b094'],
+    skin: '#e7ac87', shade: '#bc7d60', hair: '#342326', hairHi: '#5c3e38', iris: '#49372f', cloth: '#bf842a', clothD: '#8f601f', pants: '#c8b094', pantsD: '#a48d73', shoe: 'scarpin',
+    hs: .9, neck: 19, neckW: 15, torso: 164, sw: 48, waist: 36, hem: 47, hw: 40, armU: 90, armF: 86, ru: 11.5, re: 10, rw: 8, sleeve: .94, thigh: 150, shin: 146, rt: 22, rk: 15.5, ra: 13, lid: .16, lashes: true, prop: 'phone', browW: 3.4, jaw: 'f' },
+};
 const EXPR = {
-  neutro:       { brow:[0,0],   open:1, lid:{cover:.3, slant:0}, mouth:'flat' },
-  feliz:        { brow:[-6,-4], open:1, lid:{cover:.12, slant:-2}, mouth:'smile' },
-  rindo:        { brow:[-10,-12], eye:'happy', mouth:'laugh' },
-  surpreso:     { brow:[-18,-20], open:1.2, wide:1.05, pupilScale:.7, mouth:'o' },
-  preocupado:   { brow:[4,-14], open:1, lid:{cover:.14, slant:-7}, look:[0,-3], mouth:'wobble', details:['suor'] },
-  envergonhado: { brow:[0,-12], open:.9, lid:{cover:.2, slant:-3}, look:[-8,10], mouth:'smallsmile', blush:1 },
-  forcado:      { brow:[-8,-8], open:1.05, pupilScale:.65, mouth:'teeth', details:['suor'] },
-  bravo:        { brow:[-6,12], open:1, lid:{cover:.38, slant:10}, mouth:'frown', details:['veia'] },
-  triste:       { brow:[8,-12], open:.95, lid:{cover:.25, slant:-8}, look:[0,7], mouth:'frown', details:['lagrima'] },
-  lado:         { brow:[0,-4], open:.95, lid:{cover:.3, slant:0}, look:[15,0], mouth:'smirk' },
-  pensando:     { bl:[-4,-18], br:[3,1], open:1, lid:{cover:.18, slant:0}, look:[13,-12], mouth:'side' },
-  aliviado:     { brow:[2,-8], eye:'soft', mouth:'smallsmile', details:['brilho'] },
+  neutro: { mouth: 'flat' }, cansado: { lid: .55, bags: true, browIn: -2, browY: 2, mouth: 'flat' },
+  feliz: { lid: .04, low: .22, browY: -3, mouth: 'smile' }, rindo: { eye: 'arco', browY: -6, mouth: 'laugh' },
+  surpreso: { lid: 0, open: 1.2, pupil: .8, browY: -9, mouth: 'o' }, preocupado: { lid: .1, browIn: -7, browY: -1, mouth: 'wavy' },
+  envergonhado: { lid: .22, look: [2, 2], browIn: -5, blush: true, mouth: 'small' }, forcado: { lid: .04, low: .14, pupil: .78, browY: -4, mouth: 'teeth' },
+  bravo: { lid: .3, browIn: 9, browY: 2, mouth: 'frown' }, triste: { lid: .3, look: [0, 2], browIn: -8, browY: 1, mouth: 'sad' },
+  lado: { lid: .28, look: [4.5, 0], browIn: -1, mouth: 'side' }, pensando: { lid: .14, look: [3, -3], browL: -7, browIn: 1, mouth: 'side' },
+  aliviado: { eye: 'suave', browIn: -3, mouth: 'smallsmile' },
 };
 const EXPR_ORDER = Object.keys(EXPR);
-const VISEME = { closed:'flat', small:'vsmall', open:'vopen', wide:'vwide' };
+const NOMES_EXPR = { neutro: 'Neutro', cansado: 'Cansado', feliz: 'Feliz', rindo: 'Rindo', surpreso: 'Surpreso', preocupado: 'Preocupado', envergonhado: 'Sem graça', forcado: 'Forçado', bravo: 'Bravo', triste: 'Triste', lado: 'De lado', pensando: 'Pensando', aliviado: 'Aliviado' };
 
-function mouthSVG(kind, m) {
-  const D = DARK_MOUTH, S = `stroke="${OUT}" stroke-width="${T-1}" stroke-linecap="round" stroke-linejoin="round"`;
-  switch (kind) {
-    case 'flat':  return `<path d="M${-m*.7} 0 Q0 ${m*.12} ${m*.7} 0" fill="none" ${S}/>`;
-    case 'smile': return `<path d="M${-m} -2 Q0 ${m*.95} ${m} -2" fill="none" ${S}/>`;
-    case 'smallsmile': return `<path d="M${-m*.6} 0 Q0 ${m*.5} ${m*.6} 0" fill="none" ${S}/>`;
-    case 'laugh': return `<path d="M${-m*1.15} -6 Q0 ${m*2.3} ${m*1.15} -6 Z" fill="${D}" ${S}/>` +
-                         `<path d="M${-m*1.0} -4 L${m*1.0} -4 L${m*.9} 5 Q0 ${m*.5} ${-m*.9} 5Z" fill="#fff"/>` +
-                         `<ellipse cx="0" cy="${m*.95}" rx="${m*.55}" ry="${m*.3}" fill="#e8736f"/>`;
-    case 'o':     return `<ellipse cx="0" cy="${m*.2}" rx="${m*.34}" ry="${m*.5}" fill="${D}" ${S}/>`;
-    case 'frown': return `<path d="M${-m*.8} 8 Q0 ${-m*.5} ${m*.8} 8" fill="none" ${S}/>`;
-    case 'wobble':return `<polyline points="${-m*.8},3 ${-m*.4},-4 0,3 ${m*.4},-4 ${m*.8},3" fill="none" ${S}/>`;
-    case 'teeth': return `<rect x="${-m}" y="-9" width="${2*m}" height="22" rx="9" fill="#fff" ${S}/>` +
-                          [-.5,0,.5].map(k=>`<line x1="${m*k}" y1="-9" x2="${m*k}" y2="13" stroke="${OUT}" stroke-width="2.5"/>`).join('') +
-                          `<line x1="${-m}" y1="2" x2="${m}" y2="2" stroke="${OUT}" stroke-width="2.5"/>`;
-    case 'smirk': return `<path d="M${-m*.7} 4 Q${m*.1} ${m*.3} ${m*.85} -9" fill="none" ${S}/>`;
-    case 'side':  return `<ellipse cx="${m*.45}" cy="3" rx="${m*.26}" ry="${m*.2}" fill="none" ${S}/>`;
-    case 'vsmall':return `<ellipse cx="0" cy="3" rx="${m*.38}" ry="${m*.3}" fill="${D}" ${S}/>`;
-    case 'vopen': return `<ellipse cx="0" cy="6" rx="${m*.46}" ry="${m*.56}" fill="${D}" ${S}/><ellipse cx="0" cy="${m*.42+6}" rx="${m*.28}" ry="${m*.16}" fill="#e8736f"/>`;
-    case 'vwide': return `<rect x="${-m*.9}" y="-8" width="${m*1.8}" height="${m*.8}" rx="${m*.34}" fill="${D}" ${S}/><rect x="${-m*.68}" y="-5" width="${m*1.36}" height="8" rx="3" fill="#fff"/>`;
-  }
-  return '';
+/* ---------- rosto ---------- */
+function mouthSVG(kind) {
+  const M = {
+    flat: () => stroke('M-12 23 Q0 25 12 22', '#5a3a34', 2.4), smile: () => stroke('M-16 18 Q0 33 16 18', '#4a2a2a', 2.6) + stroke('M-18 16 Q-17 18 -15 18 M18 16 Q17 18 15 18', '#4a2a2a', 2),
+    laugh: () => shape('M-19 14 Q0 20 19 14 Q17 40 0 42 Q-17 40 -19 14Z', '#51242b', 2.4) + fillOnly('M-15 16 Q0 21 15 16 L13 22 Q0 26 -13 22Z', '#f7e9d8') + ell(0, 36, 8, 5, '#c85a5e'),
+    o: () => shape('M-8 20 Q-9 12 0 12 Q9 12 8 20 Q9 32 0 33 Q-9 32 -8 20Z', '#542c30', 2.4), frown: () => stroke('M-13 27 Q0 18 13 26', '#4a2a2a', 2.8), sad: () => stroke('M-12 30 Q0 19 12 30', '#4a2a2a', 2.6),
+    small: () => stroke('M-6 24 Q0 26 6 24', '#5a3a34', 2.4), smallsmile: () => stroke('M-10 21 Q0 29 10 21', '#4a2a2a', 2.4), wavy: () => stroke('M-13 25 Q-7 20 0 24 Q7 28 13 22', '#4a2a2a', 2.4),
+    side: () => stroke('M-5 25 Q4 27 13 20', '#4a2a2a', 2.5), teeth: () => shape('M-18 17 Q0 22 18 17 Q15 32 0 32 Q-15 32 -18 17Z', '#f7ecdc', 2.2) + stroke('M-16 24 L16 24 M-8 19 L-7 31 M0 20 L0 32 M8 19 L7 31', '#b9a48f', 1),
+    closed: () => stroke('M-10 23 L10 23', '#4a2a2a', 2.6), vsmall: () => shape('M-7 22 Q0 18 7 22 Q6 29 0 29 Q-6 29 -7 22Z', '#51242b', 2.2),
+    vopen: () => shape('M-11 18 Q0 13 11 18 Q10 34 0 35 Q-10 34 -11 18Z', '#4a2027', 2.3) + fillOnly('M-8 18 Q0 15 8 18 L7 21 Q0 19 -7 21Z', '#f8e7d5') + ell(0, 30, 6, 3.6, '#c85a5e'),
+    vwide: () => shape('M-17 17 Q0 13 17 17 Q15 33 0 34 Q-15 33 -17 17Z', '#4a2027', 2.3) + fillOnly('M-14 17 Q0 14 14 17 L13 22 Q0 19 -13 22Z', '#f8e7d5') + ell(0, 29, 8, 3.6, '#c85a5e'),
+  };
+  return (M[kind] || M.flat)();
 }
+const VISEME = { closed: 'closed', small: 'vsmall', open: 'vopen', wide: 'vwide' };
 
-function eyeSVG(side, d, cx, cy, e) {
-  const ex = cx + side*d.eyeDx, ey = cy + d.eyeDy;
-  const rx = d.eyeRx*(e.wide||1), ry = d.eyeRy*(e.open||1);
-  const sw = T-1;
-  if (e.eye === 'happy')
-    return `<path d="M${r2(ex-rx)} ${ey+6} Q${ex} ${r2(ey-ry*1.25)} ${r2(ex+rx)} ${ey+6}" fill="none" stroke="${OUT}" stroke-width="${T+1}" stroke-linecap="round"/>`;
-  if (e.eye === 'soft')
-    return `<path d="M${r2(ex-rx)} ${ey-3} Q${ex} ${r2(ey+ry*.8)} ${r2(ex+rx)} ${ey-3}" fill="none" stroke="${OUT}" stroke-width="${T+1}" stroke-linecap="round"/>`;
-  const id = uid();
-  const look = (e.look || [0,0]).map(v => v*(d.k||1));
-  let s = `<clipPath id="${id}"><ellipse cx="${ex}" cy="${ey}" rx="${rx}" ry="${ry}"/></clipPath>`;
-  s += `<ellipse cx="${ex}" cy="${ey}" rx="${rx}" ry="${ry}" fill="#fff"/>`;
-  const pr = d.pupilR*(e.pupilScale||1);
-  const px = Math.max(-rx+pr+2, Math.min(rx-pr-2, look[0])), py = Math.max(-ry+pr+2, Math.min(ry-pr-2, look[1]));
-  s += `<circle cx="${r2(ex+px)}" cy="${r2(ey+py)}" r="${r2(pr)}" fill="${OUT}"/><circle cx="${r2(ex+px+pr*.35)}" cy="${r2(ey+py-pr*.4)}" r="${r2(pr*.28)}" fill="#fff"/>`;
-  if (e.lid) {
-    const yl = ey - ry + 2*ry*e.lid.cover, k = e.lid.slant*(d.k||1);
-    const xi = ex - side*rx*1.5, xo = ex + side*rx*1.5;
-    const yi = yl + k, yo = yl - k;
-    s += `<g clip-path="url(#${id})"><polygon points="${xo},${yo} ${xi},${yi} ${xi},${ey-ry-30} ${xo},${ey-ry-30}" fill="${d.skin}"/>` +
-         `<line x1="${xo}" y1="${yo}" x2="${xi}" y2="${yi}" stroke="${OUT}" stroke-width="${sw}"/></g>`;
-  }
-  s += `<ellipse cx="${ex}" cy="${ey}" rx="${rx}" ry="${ry}" fill="none" stroke="${OUT}" stroke-width="${sw}"/>`;
-  if (d.lashes) {
-    const ox = ex + side*rx;
-    s += [-1,0,1].map(i => `<line x1="${r2(ox)}" y1="${r2(ey-ry*.55+i*6)}" x2="${r2(ox+side*(11-Math.abs(i)*2))}" y2="${r2(ey-ry*.85+i*8)}" stroke="${OUT}" stroke-width="4.5" stroke-linecap="round"/>`).join('');
-  }
-  if (d.bags) s += `<path d="M${r2(ex-rx*.8)} ${r2(ey+ry+9)} Q${ex} ${r2(ey+ry+19)} ${r2(ex+rx*.8)} ${r2(ey+ry+9)}" fill="none" stroke="${d.bagsC}" stroke-width="4" stroke-linecap="round"/>`;
-  return s;
-}
-
-function browSVG(side, d, cx, cy, e) {
-  const o = side < 0 ? (e.bl || e.brow) : (e.br || e.brow);
-  const kk = d.k||1; const base = cy + d.eyeDy - d.eyeRy - 17*kk + (d.browDy||0);
-  const xo = cx + side*(d.eyeDx + 28*kk), xi = cx + side*(d.eyeDx - 26*kk);
-  return `<line x1="${r2(xo)}" y1="${r2(base+o[0]*kk)}" x2="${r2(xi)}" y2="${r2(base+o[1]*kk)}" stroke="${d.browC}" stroke-width="${d.browW}" stroke-linecap="round"/>`;
-}
-
-function detailsSVG(list, d, cx, cy) {
+function eyeSVG(d, side, E, blink) {
+  const x = side * 21, y = -20, rx = 12.5, ry = 9.5 * (E.open || 1), line = '#2b2024';
+  const look = E.look || [0, 0], px = x + look[0] - side * 1, py = y + 1 + look[1];
+  const kind = blink ? 'suave' : E.eye;
   let s = '';
-  for (const k of list || []) {
-    if (k === 'suor') s += `<path d="M${cx+d.headRx*.78} ${cy-d.headRy*.55} q16 24 0 38 q-16 -14 0 -38z" fill="#7fd6ee" stroke="${OUT}" stroke-width="4" stroke-linejoin="round"/>`;
-    if (k === 'lagrima') s += `<path d="M${cx-d.eyeDx-4} ${cy+d.eyeDy+d.eyeRy+4} q14 26 0 40 q-16 -14 0 -40z" fill="#7fd6ee" stroke="${OUT}" stroke-width="4" stroke-linejoin="round"/>`;
-    if (k === 'veia') { const vx = cx+d.headRx*.5, vy = cy-d.headRy*.62;
-      s += `<g stroke="#d6281e" stroke-width="6" stroke-linecap="round" fill="none"><path d="M${vx} ${vy} q10 0 10 -12 M${vx} ${vy} q10 0 12 12 M${vx} ${vy} q-10 0 -10 -12 M${vx} ${vy} q-10 0 -12 12"/></g>`; }
-    if (k === 'brilho') { const bx = cx-d.headRx*.95, by = cy-d.headRy*.7;
-      s += `<path d="M${bx} ${by-26} Q${bx+4} ${by-4} ${bx+26} ${by} Q${bx+4} ${by+4} ${bx} ${by+26} Q${bx-4} ${by+4} ${bx-26} ${by} Q${bx-4} ${by-4} ${bx} ${by-26}z" fill="#ffe36a" stroke="${OUT}" stroke-width="4" stroke-linejoin="round"/>`; }
-  }
+  if (kind === 'arco') return stroke(`M${x - 12} ${y + 4} Q${x} ${y - 9} ${x + 12} ${y + 4}`, line, 3);
+  if (kind === 'suave') return stroke(`M${x - 12} ${y} Q${x} ${y + 7} ${x + 12} ${y}`, line, 3) + (d.lashes ? stroke(`M${x + side * 12} ${y} l${side * 4} -3`, line, 2) : '');
+  s += ell(x, y, rx, ry, '#f8f3e8', line, 2.2);
+  const pS = E.pupil || 1;
+  s += ell(px, py, 5.6 * pS, 6.4 * pS, d.iris) + ell(px, py, 3 * pS, 3.8 * pS, '#171719') + ell(px - 1.4, py - 2.2, 1.6, 1.8, '#fff');
+  const lid = E.lid != null ? E.lid : d.lid;
+  if (lid > 0) { const ly = y - ry + 2 * ry * lid;
+    s += fillOnly(`M${x - rx - 2.5} ${y - ry - 3.5}L${x + rx + 2.5} ${y - ry - 3.5}L${x + rx + 2.5} ${ly}Q${x} ${ly - 2.5} ${x - rx - 2.5} ${ly}Z`, d.skin);
+    s += stroke(`M${x - rx} ${ly + .6}Q${x} ${ly - 2.6} ${x + rx} ${ly + .6}`, line, 2.5); }
+  if (E.low) { const ly = y + ry - 2 * ry * E.low;
+    s += fillOnly(`M${x - rx - 2.5} ${y + ry + 3.5}L${x + rx + 2.5} ${y + ry + 3.5}L${x + rx + 2.5} ${ly}Q${x} ${ly + 2.5} ${x - rx - 2.5} ${ly}Z`, d.skin);
+    s += stroke(`M${x - rx + 1} ${ly}Q${x} ${ly + 2.5} ${x + rx - 1} ${ly}`, line, 1.8); }
+  if (d.lashes) s += stroke(`M${x + side * 11} ${y - 7} l${side * 4.5} -4 M${x + side * 7} ${y - 9.5} l${side * 3} -4.5`, line, 2);
+  if (E.bags || d.bags) s += stroke(`M${x - 10} ${y + ry + 3.5} Q${x} ${y + ry + 7} ${x + 10} ${y + ry + 3.5}`, d.shade, 1.6);
   return s;
 }
-
-// ---------- cabelo ----------
-function hairCap(d, cx, cy, cover, hairline) {
-  const rx = d.headRx*1.045, ry = d.headRy*1.045;
-  const a = ell(0, 180-cover, rx, ry, cx, cy), b = ell(0, cover, rx, ry, cx, cy);
-  return shape('path', `d="M${r2(a[0])} ${r2(a[1])} A${rx} ${ry} 0 0 1 ${r2(b[0])} ${r2(b[1])} Q${cx} ${r2(cy-ry*hairline)} ${r2(a[0])} ${r2(a[1])}Z"`, d.hair);
+function browSVG(d, side, E) {
+  const dy = (E.browY || 0) + (side < 0 ? (E.browL || 0) : 0), inn = E.browIn || 0;
+  const o = [side * 35, -38 + dy], i = [side * 9, -37 + dy + inn];
+  return stroke(`M${o[0]} ${o[1]} Q${(o[0] + i[0]) / 2} ${(o[1] + i[1]) / 2 - 3.5} ${i[0]} ${i[1]}`, d.key === 'lua' ? '#8d6028' : d.hair, d.browW);
 }
-function hairBack(d, cx, cy) {
-  if (d.hairStyle === 'puff') {
-    const sh = [];
-    for (let th = 5; th <= 175; th += 17) { const p = ell(0, th, d.headRx*1.02, d.headRy*1.0, cx, cy); sh.push(['circle', `cx="${r2(p[0])}" cy="${r2(p[1]-(th>60&&th<120?14*d.k:0))}" r="${r2((th>60&&th<120?72:60)*d.k*1.08)}"`]); }
-    sh.push(['circle', `cx="${cx-d.headRx*1.1}" cy="${cy+8}" r="${r2(52*d.k*1.1)}"`], ['circle', `cx="${cx+d.headRx*1.1}" cy="${cy+8}" r="${r2(52*d.k*1.1)}"`]);
-    return union(sh, d.hair);
-  }
-  if (d.hairStyle === 'wave') {
-    const sh = [], k = d.k*1.1;
-    for (let th = 0; th <= 180; th += 22) { const p = ell(0, th, d.headRx*1.03, d.headRy*1.02, cx, cy); sh.push(['circle', `cx="${r2(p[0])}" cy="${r2(p[1])}" r="${r2(34*k)}"`]); }
-    const yb = cy + d.headRy + (d.neckL||24) + 95;
-    for (const sd of [-1,1]) for (let y = cy - 20, i = 0; y <= yb; y += 38*k, i++) sh.push(['circle', `cx="${r2(cx + sd*(d.headRx*1.0 + (i%2 ? 12 : 2)*k))}" cy="${r2(y)}" r="${r2((i%2?40:36)*k)}"`]);
-    return union(sh, d.hair);
-  }
-  if (d.hairStyle === 'pony') {
-    const x0 = cx + d.headRx*.55, y0 = cy - d.headRy*.95;
-    const sh = [['path', `d="M${r2(x0)} ${r2(y0)} C${r2(x0+110)} ${r2(y0-110)} ${r2(x0+190)} ${r2(y0-10)} ${r2(x0+120)} ${r2(y0+120)} C${r2(x0+140)} ${r2(y0+20)} ${r2(x0+70)} ${r2(y0-50)} ${r2(x0-30)} ${r2(y0+10)}Z"`]];
-    return `<g transform="translate(${r2(x0)} ${r2(y0)}) scale(${d.k*1.15}) translate(${-r2(x0)} ${-r2(y0)})">` + union(sh, d.hair) + `</g>`;
-  }
+function faceShape(d) {
+  return d.jaw === 'f' ? 'M-42 -42 Q-45 -76 -20 -86 Q2 -99 28 -81 Q46 -62 42 -38 L41 8 Q35 36 9 49 Q0 52 -8 49 Q-35 36 -42 8Z'
+    : 'M-43 -42 Q-46 -76 -20 -86 Q2 -99 28 -81 Q47 -62 44 -38 L43 12 Q38 42 13 51 L-10 51 Q-38 41 -44 13Z';
+}
+function hairBack(d) {
+  if (d.key === 'lua') return shape('M-47 -66 C-72 -30 -72 28 -58 58 Q-48 80 -34 62 Q-22 70 -18 46 L20 46 Q24 70 36 62 Q50 80 60 58 C74 28 72 -30 47 -66Z', d.hair) + stroke('M-58 -18 Q-66 18 -52 52 M58 -18 Q66 18 52 52', d.hairHi, 2.6);
+  if (d.key === 'bia') return shape('M26 -94 Q66 -104 72 -62 Q80 -8 58 44 Q46 16 40 -12 Q38 -46 30 -60Z', d.hair) + stroke('M60 -64 Q66 -22 56 20', d.hairHi, 2.6);
   return '';
 }
-function scrunchie(d, cx, cy) {
-  const x0 = cx + d.headRx*.55, y0 = cy - d.headRy*.95, k = d.k*1.15;
-  return `<g transform="translate(${r2(x0+14*k)} ${r2(y0-2*k)}) rotate(-38) scale(${r2(k)})">` +
-    shape('path', 'd="M-26 0 Q-24 -16 -8 -14 Q0 -20 10 -14 Q26 -16 26 0 Q26 16 10 14 Q0 20 -8 14 Q-24 16 -26 0Z"', '#e5532d') +
-    `<path d="M-12 -8 Q0 -2 -12 8 M8 -9 Q18 0 8 9" fill="none" stroke="${OUT}" stroke-width="3" stroke-linecap="round" opacity=".5"/></g>`;
-}
-function hairFront(d, cx, cy) {
-  if (d.hairStyle === 'tufts') { // Tico: topete bagunçado e para cima
-    const y0 = cy - d.headRy*1.0, k = d.k*1.1;
-    const t = (dx, rot, sc) => `<g transform="translate(${r2(cx+dx*k)} ${r2(y0+6)}) rotate(${rot}) scale(${r2(k*sc)})">` + shape('path', 'd="M-20 8 Q-26 -34 4 -56 Q2 -26 22 -4 Z"', d.hair) + `</g>`;
-    return t(-30,-24,.85) + t(2,6,1.1) + t(34,34,.8) + hairCap(d, cx, cy, 33, .56);
-  }
-  if (d.hairStyle === 'cap')   // Tico: bagunçado + redemoinho
-    return hairCap(d, cx, cy, 33, .56) +
-      `<g transform="translate(${cx} ${r2(cy-d.headRy)}) scale(${d.k*1.1}) translate(${-cx} ${-r2(cy-d.headRy)})">` + shape('path', `d="M${cx-6} ${r2(cy-d.headRy*1.0)} q-4 -34 26 -44 q-6 22 8 30 q14 6 -2 16z"`, d.hair) + `</g>`;
-  if (d.hairStyle === 'buzz')  // Jão: raspado + bandana
-    return hairCap(d, cx, cy, 30, .5) +
-      shape('path', `d="M${cx-d.headRx*1.0} ${r2(cy-d.headRy*.46)} Q${cx} ${r2(cy-d.headRy*.7)} ${cx+d.headRx*1.0} ${r2(cy-d.headRy*.46)} l0 26 Q${cx} ${r2(cy-d.headRy*.42)} ${cx-d.headRx*1.0} ${r2(cy-d.headRy*.2)}Z"`, '#e5532d') +
-      shape('path', `d="M${cx+d.headRx*.95} ${r2(cy-d.headRy*.4)} l34 -6 l-6 18 l22 10 l-34 4z"`, '#e5532d');
-  if (d.hairStyle === 'pony')  // Bia: liso, risca de lado + elástico
-    return hairCap(d, cx, cy, 26, .66) + scrunchie(d, cx, cy);
-  if (d.hairStyle === 'wave') { // Lua: franja de lado, ondas
-    const rx = d.headRx*1.045, ry = d.headRy*1.045, a = ell(0,150,rx,ry,cx,cy), b = ell(0,25,rx,ry,cx,cy);
-    return shape('path', `d="M${r2(a[0])} ${r2(a[1])} A${rx} ${ry} 0 0 1 ${r2(b[0])} ${r2(b[1])} Q${r2(cx+30)} ${r2(cy-ry*.3)} ${r2(cx-8)} ${r2(cy-ry*.68)} Q${r2(cx-40)} ${r2(cy-ry*.62)} ${r2(a[0])} ${r2(a[1])}Z"`, d.hair);
-  }
-  if (d.hairStyle === 'puff') { // Lua: cachinhos na testa
-    const sh = [-60,-26,10,44,74].map((x,i)=>['circle', `cx="${cx+x*d.k*1.1}" cy="${cy-d.headRy*.9+Math.abs(x)*.2*d.k}" r="${r2((i%2?19:23)*d.k*1.1)}"`]);
-    return union(sh, d.hair);
-  }
+function hairFront(d) {
+  const h = d.hair, hi = d.hairHi;
+  if (d.key === 'tico') return shape('M-44 -43 L-52 -68 -42 -65 -48 -88 -29 -78 -27 -102 -10 -85 0 -111 13 -89 29 -105 29 -81 47 -94 41 -71 55 -74 45 -54 47 -37 Q24 -63 3 -60 Q-18 -65 -44 -43Z', h) + stroke('M-37 -66 L-26 -78 -15 -71 0 -90 11 -73 27 -84 26 -64 40 -68', hi, 2.6);
+  if (d.key === 'lua') return shape('M-44 -36 C-58 -90 -32 -108 -6 -101 C22 -113 52 -88 45 -36 Q38 -64 14 -80 Q-10 -56 -44 -36Z', h) + stroke('M-34 -74 Q-42 -60 -41 -48 M-12 -92 Q-24 -74 -32 -58 M20 -92 Q38 -76 41 -56', hi, 2.6);
+  if (d.key === 'jao') return shape('M-45 -44 Q-49 -90 -14 -99 Q24 -106 45 -74 L46 -42 Q0 -66 -45 -44Z', '#963a48') + stroke('M-42 -58 Q0 -82 44 -56', '#b65e68', 2.6) + stroke('M-22 -92 Q0 -94 22 -88', '#b65e68', 2)
+    + shape('M43 -68 Q62 -76 68 -60 Q58 -60 48 -56Z', '#963a48') + shape('M44 -60 Q62 -54 62 -36 Q52 -44 42 -48Z', '#7c2f3c');
+  if (d.key === 'bia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
   return '';
 }
-
-// ---------- adereços ----------
-function propSVG(kind, x, y) {
-  if (kind === 'phone') return `<g transform="translate(${x} ${y}) rotate(-12)">${shape('rect', 'x="-16" y="-40" width="32" height="54" rx="7"', '#33414f')}<rect x="-11" y="-34" width="22" height="38" rx="3" fill="#9fe3ff"/></g>`;
-  if (kind === 'cup')   return `<g transform="translate(${x} ${y-10}) scale(1.4)">${shape('path', 'd="M-18 -34 L18 -34 L14 6 Q0 12 -14 6Z"', '#fff3d6')}<path d="M18 -26 q18 2 12 16 q-4 6 -14 6" fill="none" stroke="${OUT}" stroke-width="5" stroke-linecap="round"/><path d="M-6 -48 q-8 -10 0 -20 M8 -48 q-8 -10 0 -20" fill="none" stroke="#c9b9a6" stroke-width="4" stroke-linecap="round"/></g>`;
-  if (kind === 'fist')  return '';
-  return '';
+function headSVG(d, E, pose) {
+  const sk = d.skin, sh = d.shade;
+  let s = ell(-44, -7, 7.5, 12, sk, OUT, T) + ell(44, -7, 7.5, 12, sk, OUT, T) + stroke('M-46 -11 Q-41 -7 -44 0 M46 -11 Q41 -7 44 0', sh, 1.6);
+  s += shape(faceShape(d), sk);
+  if (d.stubble) s += fillOnly('M-41 14 Q-37 42 -10 49 L13 49 Q37 40 41 14 Q27 31 15 32 Q0 25 -14 32 Q-28 30 -41 14Z', sh, 'opacity=".42"');
+  if (d.beard) s += fillOnly('M-44 6 Q-43 47 -10 56 Q0 62 13 56 Q43 46 44 6 Q34 15 25 15 Q0 8 -24 15 Q-35 15 -44 6Z', '#211c1d') + fillOnly('M-17 21 Q0 15 17 21 Q19 34 0 37 Q-19 34 -17 21Z', sk, 'opacity=".28"');
+  if (E.blush) s += ell(-28, 2, 11, 6.5, '#d9604f', 'none', 0, 'opacity=".42"') + ell(28, 2, 11, 6.5, '#d9604f', 'none', 0, 'opacity=".42"');
+  s += stroke('M-5 -8 Q-10 5 -6 10 Q0 14 7 10', sh, 2.2);
+  const blink = pose.blink >= .5;
+  for (const side of [-1, 1]) s += eyeSVG(d, side, E, blink);
+  for (const side of [-1, 1]) s += browSVG(d, side, E);
+  const kind = pose.mouth ? VISEME[pose.mouth] : E.mouth;
+  if (kind === 'smile' && !pose.mouth) s += stroke('M-30 6 Q-27 11 -25 14 M30 6 Q27 11 25 14', sh, 1.5);
+  const boca = mouthSVG(kind);
+  s += d.beard ? boca.replaceAll('#4a2a2a', '#d8a98f').replaceAll('#5a3a34', '#d8a98f') : boca; // boca clara para aparecer na barba
+  return s + hairFront(d);
 }
 
-// ---------- personagem ----------
-const CHARS = {
-  tico: { name:'Tico', H:590, k:.74, headRx:75, headRy:88, skin:'#c48a60', noseC:'#b3794f', hair:'#3d2a1d', hairStyle:'tufts', sleeve:.5, ex:{neutro:{brow:[-5,-7],lid:null,mouth:'smile'},lado:{brow:[-2,-8]},pensando:{brow:[-6,-18]}},
-    eyeDx:31, eyeDy:4, eyeRx:14, eyeRy:13, pupilR:5.4, browC:'#2b1d14', browW:7, mouthW:26, mouthK:.82, mouthDy:.56, noseK:.72, neckL:22,  torso:{tw:66,bw:62,h:172}, hipW:26, armW:19, legW:25, armLen:118, shoe:'chinelo',
-    shirt:'#a9c23a', pants:'#41667a', accent:'#7f9419', neckW:30 },
-  lua:  { name:'Lua', H:548, k:.72, headRx:69, headRy:85, skin:'#f3d0b0', noseC:'#e2ab88', hair:'#e0b04e', hairStyle:'wave', blushAlways:true,
-    eyeDx:29, eyeDy:3, eyeRx:15, eyeRy:14.5, pupilR:5.8, browC:'#9a6c2a', browW:5, mouthW:26, mouthK:.8, mouthDy:.56, noseK:.64, neckL:22, lashes:true,
-    torso:{tw:56,bw:74,h:162}, hipW:30, armW:18, legW:24, armLen:108, shoe:'sapato',
-    shirt:'#19a8a3', pants:'#3b3a52', accent:'#0f7f7c', neckW:28, lanyard:true },
-  jao:  { name:'Jão', H:532, k:.74, headRx:84, headRy:87, skin:'#8a5a3b', noseC:'#774a2f', hair:'#33241b', beardC:'#5a4030', hairStyle:'buzz',
-    eyeDx:33, eyeDy:3, eyeRx:13.5, eyeRy:12, pupilR:5.2, browC:'#2b1a12', browW:11, mouthW:26, mouthK:.82, mouthDy:.54, noseK:.82, neckL:20, beard:true, browDy:-1,
-    torso:{tw:98,bw:90,h:176}, hipW:34, armW:27, sleeve:.9, legW:31, armLen:108, shoe:'bota',
-    shirt:'#d9502b', pants:'#2e2a2a', accent:'#aa3815', neckW:50, bag:true },
-  bia:  { name:'Bia', H:622, k:.7, headRx:68, headRy:84, skin:'#e0aa84', noseC:'#d0996f', hair:'#b9803e', hairStyle:'pony',
-    eyeDx:29, eyeDy:3, eyeRx:15, eyeRy:14.5, pupilR:5.8, browC:'#8a5a28', browW:6, mouthW:26, mouthK:.82, mouthDy:.56, noseK:.5, neckL:20, lashes:true,
-    torso:{tw:52,bw:48,h:178}, hipW:24, armW:18, sleeve:.88, legW:19, armLen:126, shoe:'tenis',
-    shirt:'#eaab2a', pants:'#e0aa84', legColor:'#e0aa84', skirt:'#fff6e6', accent:'#c98a0e', neckW:26, blazer:true },
-};
+/* ---------- objetos, mão e pé ---------- */
+function propSVG(kind) {
+  if (kind === 'phone') return `<g transform="translate(-2 16) rotate(-8)">` + `<rect x="-11" y="-24" width="22" height="44" rx="4" fill="#23252f" stroke="${OUT}" stroke-width="2.4"/><rect x="-8" y="-20" width="16" height="33" rx="1.5" fill="#7fd6ee"/></g>`;
+  if (kind === 'cup') return `<g transform="translate(0 15)">` + shape('M-15 -24 L15 -24 L11 18 Q0 22 -11 18Z', '#fff3d6') + fillOnly('M-13 -8 L13 -8 L12 4 L-12 4Z', '#ae5d49') + shape('M-17 -29 L17 -29 L16 -22 L-16 -22Z', '#6d4a3a', 2.2) + `</g>`;
+  return '';
+}
+function handSVG(d, side, w, a, prop) {
+  const k = Math.max(1.12, d.rw / 10.5 * 1.08);
+  const palm = 'M-9.5 -3 C-12.5 5 -13 13 -11 20 Q-9 28 -2 28 L5 27.5 Q11 25 11 16 L10 -3Z', thumb = 'M8 5 Q18 6 18 15 Q17 21 10 18Z';
+  const body = shape(palm, d.skin) + shape(thumb, d.skin) + fillOnly('M6 3 L11 3 L12 17 L6 17Z', d.skin) + fillOnly('M-8 -6 L8 -6 L8.5 4 L-8.5 4Z', d.skin) + stroke('M-5 19 L-5 27 M1 20 L1 28 M6 19 L6 26', d.shade, 1.3);
+  const flip = -side;
+  return `<g transform="translate(${r2(w[0])} ${r2(w[1])}) rotate(${r2(-a)}) scale(${r2(k * flip)} ${r2(k)})">${prop ? propSVG(prop) : ''}${body}</g>`;
+}
+function footSVG(d, side, c) {
+  const sh = d.shoe; let s = '';
+  if (sh === 'chinelo') s = shape('M-11 -14 L-12 7 Q-19 13 -22 21 L25 21 Q20 12 12 7 L12 -14Z', d.skin) + ell(-14, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(-5, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(4, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(13, 18, 3, 2.3, '#f0b28d', d.shade, .7) + shape('M-27 20 Q0 15 30 20 Q35 26 28 28 L-25 28 Q-32 26 -27 20Z', '#2c2c30') + stroke('M-20 19 Q-6 6 1 13 Q9 6 23 19', '#c88739', 3.4);
+  if (sh === 'tenis') s = shape('M-12 -14 L-13 4 Q-23 11 -24 22 L27 22 Q26 10 13 4 L13 -14Z', '#f1ece2') + stroke('M-7 2 L7 2 M-9 8 L9 8 M-11 14 L12 14', '#ae5d49', 2) + shape('M-27 20 Q0 17 30 20 L30 26 Q0 30 -27 26Z', '#ae5d49', 2.2);
+  if (sh === 'bota') s = shape('M-18 -18 L-19 6 Q-29 12 -30 24 L33 24 Q32 11 19 6 L19 -18Z', '#4f3c2e') + stroke('M-7 -10 L7 -10 M-8 -2 L8 -2 M-9 6 L9 6', '#c9a877', 2.2) + shape('M-33 22 L36 22 L36 30 Q0 33 -33 30Z', '#262226');
+  if (sh === 'scarpin') s = shape('M-9 -14 L-10 6 Q-14 11 -15 15 L17 15 Q15 10 10 6 L10 -14Z', d.skin) + shape('M-17 11 Q0 20 19 11 Q24 20 20 27 L-16 27 Q-21 20 -17 11Z', '#26212b');
+  return `<g transform="translate(${r2(c[0] + side * 3)} ${r2(c[1])}) scale(${side} 1)">${s}</g>`;
+}
+const SHOE_H = { chinelo: 28, tenis: 27, bota: 31, scarpin: 27 };
 
+/* ---------- corpo ---------- */
+function legs(d, pose) {
+  const out = {};
+  for (const [side, nome] of [[-1, 'L'], [1, 'R']]) {
+    const ang = nome === 'L' ? pose.legL : pose.legR, lift = (nome === 'L' ? pose.liftL : pose.liftR) || 0, f = 1 - .34 * lift;
+    const H = [side * d.hw * .52, 10], K = P2(H[0], H[1], ang[0], d.thigh * f), A = P2(K[0], K[1], ang[1], d.shin * f);
+    out[nome] = { H, K, A, side, lift };
+  }
+  return out;
+}
+function lowerSVG(d, L) {
+  let s = '';
+  for (const k of ['L', 'R']) s += footSVG(d, L[k].side, L[k].A);
+  const pelvis = { d: `M${-d.hw} -22 L${d.hw} -22 Q${d.hw + 3} 8 ${d.hw - 2} 34 L${-d.hw + 2} 34 Q${-d.hw - 3} 8 ${-d.hw} -22Z` };
+  const list = [pelvis], cuffs = [], end = d.cuff ? .87 : .97;
+  for (const k of ['L', 'R']) { const { H, K, A } = L[k], e = on(K, A, end), re = lerp(d.rk, d.ra, end);
+    list.push(circ(H, d.rt), quad(H, K, d.rt, d.rk), circ(K, d.rk), quad(K, e, d.rk, re));
+    if (d.cuff) cuffs.push(quad(on(K, A, end - .05), on(K, A, end + .03), d.ra + 1, d.ra + 1.8)); }
+  s += union(list, d.pants);
+  s += cuffs.map(c => el(c, `fill="#9aa2a6" stroke="${OUT}" stroke-width="${T}" stroke-linejoin="round"`)).join('');
+  s += stroke(`M0 8 L0 ${r2(Math.min(L.L.K[1], L.R.K[1]) * .28 + 8)}`, OUT, 2);
+  for (const k of ['L', 'R']) { const { H, K, side } = L[k]; const m = on(H, K, .55); s += stroke(`M${r2(m[0] - side * d.rt * .45)} ${r2(m[1])} Q${r2(m[0])} ${r2(m[1] + 9)} ${r2(m[0] + side * d.rt * .2)} ${r2(m[1] + 2)}`, d.pantsD, 2); }
+  return s;
+}
+function torsoSVG(d, sy) {
+  const w = d.sw, wa = d.waist, he = d.hem, th = d.torso, nw = d.neckW + 4;
+  const p = `M${-nw} ${sy - 4} Q${-w + 8} ${sy - 3} ${-w} ${sy + 18} Q${-w - 1} ${sy + th * .42} ${-wa} ${sy + th * .66} Q${-he} ${sy + th * .84} ${-he} ${sy + th + 8} Q0 ${sy + th + 17} ${he} ${sy + th + 8} Q${he} ${sy + th * .84} ${wa} ${sy + th * .66} Q${w + 1} ${sy + th * .42} ${w} ${sy + 18} Q${w - 8} ${sy - 3} ${nw} ${sy - 4}Z`;
+  let s = shape(p, d.cloth);
+  if (d.key === 'tico') s += stroke(`M${-wa + 10} ${sy + th * .6} Q${-wa + 28} ${sy + th * .72} ${-wa + 42} ${sy + th * .7} M${wa - 8} ${sy + th * .78} Q${wa - 24} ${sy + th * .86} ${wa - 44} ${sy + th * .82}`, d.clothD, 2.4);
+  if (d.key === 'lua') s += stroke(`M0 ${sy + 18} L0 ${sy + th + 8}`, d.clothD, 2.2) + [40, 72, 104, 136].map(y => ell(2, sy + y, 2, 2, '#f2b88f')).join('');
+  if (d.key === 'jao') s += stroke(`M${-w + 34} ${sy + 2} L${-wa + 22} ${sy + th * .82} M${w - 34} ${sy + 2} L${wa - 22} ${sy + th * .82}`, '#171c23', 13) + stroke(`M${-wa + 16} ${sy + 72} L${wa - 16} ${sy + 72}`, '#171c23', 7) + `<rect x="-11" y="${sy + 65}" width="22" height="14" rx="3" fill="#a9acb3" stroke="${OUT}" stroke-width="2"/>`;
+  if (d.key === 'bia') s += fillOnly(`M${-nw + 2} ${sy - 3} L0 ${sy + 76} L${nw - 2} ${sy - 3}Z`, '#24252d') + shape(`M${-nw} ${sy - 4} L-6 ${sy + 78} L-20 ${sy + 54} L${-nw - 15} ${sy + 28} L${-nw - 9} ${sy + 6}Z`, '#d09936') + shape(`M${nw} ${sy - 4} L6 ${sy + 78} L20 ${sy + 54} L${nw + 15} ${sy + 28} L${nw + 9} ${sy + 6}Z`, '#d09936') + stroke(`M0 ${sy + 78} L0 ${sy + th + 11}`, d.clothD, 2.4) + ell(6, sy + 98, 3, 3, '#e5c28a', OUT, 1.4);
+  return s;
+}
+function neckSVG(d, sy, hy) {
+  const nw = d.neckW, top = hy + 30 * d.hs, base = sy + 7;
+  let s = shape(`M${-nw} ${top} L${-nw} ${base - 4} Q0 ${base + 16} ${nw} ${base - 4} L${nw} ${top}Z`, d.skin);
+  s += fillOnly(`M${-nw + 1.4} ${top} L${-nw + 1.4} ${sy - 5} Q0 ${sy + 8} ${nw - 1.4} ${sy - 5} L${nw - 1.4} ${top}Z`, d.shade, 'opacity=".75"');
+  if (d.key === 'tico' || d.key === 'jao') s += stroke(`M${-nw - 3} ${base - 5} Q0 ${base + 18} ${nw + 3} ${base - 5}`, d.clothD, 4.5);
+  if (d.key === 'lua') s += shape(`M${-nw - 3} ${sy - 7} L-3 ${sy + 18} L${-nw - 15} ${sy + 22} Z`, '#c56f59', 2.2) + shape(`M${nw + 3} ${sy - 7} L3 ${sy + 18} L${nw + 15} ${sy + 22} Z`, '#c56f59', 2.2);
+  return s;
+}
+function badgeSVG(d, sy) {
+  if (d.key !== 'lua') return '';
+  return stroke(`M-14 ${sy + 16} L0 ${sy + 52} L14 ${sy + 16}`, '#566d86', 2.6) + `<rect x="-14" y="${sy + 52}" width="28" height="36" rx="3" fill="#eef0f0" stroke="${OUT}" stroke-width="2.4"/><rect x="-9" y="${sy + 58}" width="18" height="10" rx="1" fill="#566d86"/><rect x="-9" y="${sy + 73}" width="18" height="3" fill="#a7afb7"/><rect x="-9" y="${sy + 79}" width="12" height="3" fill="#a7afb7"/>`;
+}
+function backpackSVG(d, sy) {
+  if (d.key !== 'jao') return '';
+  const w = d.sw + 26, y = sy - 22, h = d.torso + 2;
+  return `<rect x="${-w}" y="${y}" width="${w * 2}" height="${h}" rx="12" fill="#b3303c" stroke="${OUT}" stroke-width="${T}"/>` + `<rect x="${-w}" y="${y + h * .56}" width="${w * 2}" height="10" fill="#e3c04a"/>` + stroke(`M${-w} ${y + 18} L${w} ${y + 18}`, '#7c1f2b', 3);
+}
+function armSVG(d, side, a, sy, prop) {
+  const S = [side * (d.sw - d.ru * .62), sy + d.ru * 1.05], E = P2(S[0], S[1], a[0], d.armU), W = P2(E[0], E[1], a[1], d.armF);
+  const total = d.armU + d.armF, hem = d.sleeve * total, rAt = t => t < d.armU ? lerp(d.ru, d.re, t / d.armU) : lerp(d.re, d.rw, (t - d.armU) / d.armF);
+  const at = t => t <= d.armU ? on(S, E, t / d.armU) : on(E, W, (t - d.armU) / d.armF), H = at(hem), rH = rAt(hem), solta = 2.2;
+  let s = '';
+  const bend = Math.abs(((a[1] - a[0]) + 540) % 360 - 180), dobra = hem > d.armU && bend > 55;
+  const upper = [circ(S, d.ru + solta)], fore = [];
+  if (hem <= d.armU) upper.push(quad(S, H, d.ru + solta, rH + solta));
+  else { upper.push(quad(S, E, d.ru + solta, d.re + solta), circ(E, d.re + solta)); (dobra ? fore : upper).push(quad(E, H, d.re + solta, rH + solta)); if (dobra) fore.unshift(circ(E, d.re + solta)); }
+  s += union(upper, d.cloth);
+  s += el(circ(S, d.ru + solta - 1.5), `fill="${d.cloth}"`);
+  const skin = hem <= d.armU ? [quad(H, E, rH, d.re), circ(E, d.re), quad(E, W, d.re, d.rw)] : [quad(H, W, rH, d.rw)];
+  if (dobra) s += union(fore, d.cloth);
+  s += union(skin, d.skin);
+  if (d.key === 'bia') s += stroke(`M${r2(H[0] - (W[1] - E[1]) / d.armF * (rH + 1))} ${r2(H[1] + (W[0] - E[0]) / d.armF * (rH + 1))} L${r2(H[0] + (W[1] - E[1]) / d.armF * (rH + 1))} ${r2(H[1] - (W[0] - E[0]) / d.armF * (rH + 1))}`, '#f2ead8', 3.4);
+  s += handSVG(d, side, W, a[1], prop);
+  return s;
+}
 function drawChar(d, pose = {}) {
-  const P = Object.assign({ armL:[-10,-6], armR:[10,6], legL:[-3,-2], legR:[3,2], lean:0, expr:'neutro', mouth:null, details:null, propL:null, propR:null }, pose);
-  const E = Object.assign({}, EXPR[P.expr], (d.ex||{})[P.expr]), cx = 0;
-  const blushA = d.blushAlways;
-  const headCy = -(d.H - d.headRy);
-  const shoulderY = headCy + d.headRy + (d.neckL||24);
-  const ty = shoulderY - 16, by = ty + d.torso.h, hipY = by - 14;
-  const ANK = 20, segLen = (-hipY - ANK) / 2;      // tornozelo a 20 px do chão com a perna reta
-  let s = `<g>`;
-  const P2 = (x, y, ang, len) => [x + Math.sin(rad(ang))*len, y + Math.cos(rad(ang))*len];
-  // Regra de montagem: peças da MESMA cor viram uma silhueta só (contorno por baixo, preenchimento por cima),
-  // então não há linha de emenda na junta. Peças de cor diferente se encaixam por "manga/barra" com ponta redonda.
-  const itemSVG = (it, mode, fill) => {
-    const o = mode === 'o', f = o ? OUT : fill, sw = o ? ` stroke="${OUT}" stroke-width="${T*2}" stroke-linejoin="round"` : '';
-    if (it.d) return `<path d="${it.d}" fill="${f}"${sw}/>`;
-    if (it.c) return `<circle cx="${r2(it.c[0])}" cy="${r2(it.c[1])}" r="${r2(it.r)}" fill="${f}"${sw}/>`;
-    if (it.e) return `<ellipse cx="${r2(it.e[0])}" cy="${r2(it.e[1])}" rx="${r2(it.e[2])}" ry="${r2(it.e[3])}" transform="rotate(${r2(it.e[4])} ${r2(it.e[0])} ${r2(it.e[1])})" fill="${f}"${sw}/>`;
-    return `<line x1="${r2(it.p[0])}" y1="${r2(it.p[1])}" x2="${r2(it.q[0])}" y2="${r2(it.q[1])}" stroke="${o?OUT:fill}" stroke-width="${o?it.w+2*T:it.w}" stroke-linecap="round"/>`;
-  };
-  const merge = (items, fill) => items.map(it => itemSVG(it, 'o', fill)).join('') + items.map(it => itemSVG(it, 'f', fill)).join('');
-  const dirv = a => [Math.sin(rad(a)), Math.cos(rad(a))];
-  const nrm = (u, side) => { const n = [-u[1], u[0]]; return n[0]*side < 0 ? [-n[0], -n[1]] : n; };
-  const add = (p, u, k) => [p[0]+u[0]*k, p[1]+u[1]*k];
-  const quad = (p, q, wp, wq) => { const u = [q[0]-p[0], q[1]-p[1]], L = Math.hypot(u[0],u[1])||1, n = [-u[1]/L, u[0]/L];
-    return `M${r2(p[0]+n[0]*wp)} ${r2(p[1]+n[1]*wp)}L${r2(q[0]+n[0]*wq)} ${r2(q[1]+n[1]*wq)}L${r2(q[0]-n[0]*wq)} ${r2(q[1]-n[1]*wq)}L${r2(p[0]-n[0]*wp)} ${r2(p[1]-n[1]*wp)}Z`; };
-  // pernas: coxa + canela em uma peça só; o pé cobre a ponta
-  const BO = { chinelo:15, tenis:6, bota:4, sapato:6 };
-  const leg = (side, a) => {
-    const lc = d.legColor || d.pants, hx = side*d.hipW, h0 = [hx, hipY];
-    const k1 = P2(hx, hipY, a[0], segLen), an = P2(k1[0], k1[1], a[1], segLen);
-    const w0 = d.legW*.5, wk = d.legW*.45, wa = d.legW*.4;
-    let g = merge([{d:quad(h0,k1,w0,wk)}, {c:k1,r:wk}, {d:quad(k1,an,wk,wa)}, {c:an,r:wa}], lc);
-    const fx = an[0] + side*4, fy = an[1] + ANK - (BO[d.shoe]||6);
-    if (d.shoe === 'chinelo') g += shape('ellipse', `cx="${fx}" cy="${fy+4}" rx="29" ry="11"`, '#e9c46a') + shape('ellipse', `cx="${fx}" cy="${fy-1}" rx="19" ry="8"`, d.skin, 4) + `<path d="M${fx-12} ${fy-8} q12 -10 24 0" fill="none" stroke="#e5532d" stroke-width="7" stroke-linecap="round"/>`;
-    else if (d.shoe === 'tenis') g += shape('path', `d="M${fx-20} ${fy-12} q22 -8 40 0 q10 6 8 18 l-52 0z"`, '#fff') + `<line x1="${fx-26}" y1="${fy+2}" x2="${fx+28}" y2="${fy+2}" stroke="${d.accent}" stroke-width="4"/>`;
-    else if (d.shoe === 'bota') g += shape('path', `d="M${fx-22} ${fy-16} l38 0 q16 6 16 20 l-62 0z"`, '#3a2a22');
-    else g += shape('path', `d="M${fx-22} ${fy-12} q26 -10 46 0 q8 8 4 18 l-56 0z"`, '#5a3c4a');
-    return g;
-  };
-  s += leg(-1, P.legL) + leg(1, P.legR);
-  if (d.skirt) s += shape('path', rpoly([[-d.hipW-22,by-26],[d.hipW+22,by-26],[d.hipW+34,by+72],[-d.hipW-34,by+72]], 12).replace(/^/, 'd="').concat('"'), d.skirt);
-  // tronco/cabeça/braços giram juntos
-  s += `<g transform="rotate(${P.lean} 0 ${r2(hipY)})">`;
-  if (d.bag) s += shape('rect', `x="-92" y="${r2(shoulderY-62)}" width="184" height="176" rx="20"`, '#f29a2e') + `<rect x="-92" y="${r2(shoulderY+14)}" width="184" height="20" fill="#fff3d6" stroke="${OUT}" stroke-width="${T}"/>`;
-  s += hairBack(d, cx, headCy);
-  // pescoço
-  s += shape('rect', `x="${-d.neckW/2}" y="${r2(headCy+d.headRy-22)}" width="${d.neckW}" height="${r2(shoulderY-(headCy+d.headRy)+34)}" rx="8"`, d.skin);
-  // tronco + mangas = uma silhueta só (ombro sem emenda)
-  const tw = d.torso.tw, bw = d.torso.bw;
-  const torsoD = rpoly([[-tw,ty],[tw,ty],[bw,by],[-bw,by]], 26);
-  const A = {};
-  for (const [side, a] of [[-1, P.armL], [1, P.armR]]) {
-    const sh = [side*(tw-6), shoulderY+6], u1 = dirv(a[0]), u2 = dirv(a[1]), L1 = d.armLen, L2 = d.armLen*.92;
-    const el = add(sh, u1, L1), wr = add(el, u2, L2);
-    A[side] = { sh, el, wr, u1, u2, n: nrm(u1, side), a };
-  }
-  s += shape('path', `d="${torsoD}"`, d.shirt);
-  if (d.blazer) s += shape('path', `d="M${-tw+4} ${ty+6} L0 ${ty+78} L${tw-4} ${ty+6} L${tw-18} ${ty+6} L0 ${ty+46} L${-tw+18} ${ty+6}Z"`, '#fff6e6') + `<line x1="0" y1="${ty+78}" x2="0" y2="${by-10}" stroke="${OUT}" stroke-width="${T-2}"/>`;
-  if (d.lanyard) s += `<path d="M-26 ${ty+4} L0 ${ty+88} L26 ${ty+4}" fill="none" stroke="#f2b632" stroke-width="7" stroke-linejoin="round"/>` + shape('rect', `x="-16" y="${ty+84}" width="32" height="42" rx="6"`, '#fff');
-  if (d.bag) s += `<line x1="${-tw+20}" y1="${ty}" x2="${-bw+16}" y2="${by}" stroke="${d.accent}" stroke-width="9"/><line x1="${tw-20}" y1="${ty}" x2="${bw-16}" y2="${by}" stroke="${d.accent}" stroke-width="9"/>`;
-  if (d.name === 'Tico') s += `<path d="M-14 ${ty+2} q14 20 28 0" fill="none" stroke="${OUT}" stroke-width="${T-1}"/>` + `<rect x="-26" y="${ty+60}" width="52" height="8" rx="4" fill="${d.accent}" opacity=".9"/>`;
-  const sl = d.sleeve || .8, W = d.armW;
-  // 1) manga: forma fechada; a cava (costura do ombro) liga o contorno do tronco à axila
-  const cuff = {};
-  for (const side of [-1, 1]) {
-    const { sh, u1 } = A[side];
-    let n = [-u1[1], u1[0]];
-    if (Math.abs(u1[1]) > .8) { if (n[0]*side < 0) n = [-n[0], -n[1]]; } else if (n[1] > 0) n = [-n[0], -n[1]];
-    const hs = W*.62, hc = W*.55, Lc = d.armLen*sl;
-    const Cc = add(sh, u1, Lc);
-    cuff[side] = { Cc, n };
-    const Pt = [side*(tw-3), ty+7], Co = add(Cc, n, hc), Ci = add(Cc, n, -hc);
-    const Pa = [side*(tw - hs*1.3), ty + 46];
-    const C = [(Pt[0]+Pa[0])/2 - side*hs*.9, (Pt[1]+Pa[1])/2 - 4];
-    const dd = `M${r2(Pt[0])} ${r2(Pt[1])}L${r2(Co[0])} ${r2(Co[1])}L${r2(Ci[0])} ${r2(Ci[1])}L${r2(Pa[0])} ${r2(Pa[1])}Q${r2(C[0])} ${r2(C[1])} ${r2(Pt[0])} ${r2(Pt[1])}Z`;
-    s += `<path d="${dd}" fill="${d.shirt}" stroke="${OUT}" stroke-width="${T}" stroke-linejoin="round"/>`;
-  }
-  // 2) braço de pele POR CIMA da manga: trecho cuff→cotovelo é cortado na linha do punho; antebraço e mão ficam à frente
-  for (const side of [-1, 1]) {
-    const { el, wr, u1, u2, a } = A[side], prop = side < 0 ? P.propL : P.propR, { Cc, n } = cuff[side];
-    const hd = add(wr, u2, W*.5), id = uid(), o = add(Cc, u1, T/2 - 0.5);
-    const big = 600, rect = [add(o, n, big), add(o, n, -big), add(add(o, n, -big), u1, big), add(add(o, n, big), u1, big)];
-    s += `<clipPath id="${id}"><path d="M${rect.map(p => r2(p[0])+' '+r2(p[1])).join('L')}Z"/></clipPath>`;
-    const upper = [{d:quad(Cc,el,W*.4,W*.4)}], fore = [{c:el,r:W*.4}, {d:quad(el,wr,W*.4,W*.34)}, {e:[hd[0],hd[1],W*.74,W*.98,-a[1]]}];
-    if (prop === 'cup') s += propSVG(prop, hd[0], hd[1]);
-    s += `<g clip-path="url(#${id})">` + upper.map(it => itemSVG(it, 'o', d.skin)).join('') + `</g>` + fore.map(it => itemSVG(it, 'o', d.skin)).join('');
-    s += `<g clip-path="url(#${id})">` + upper.map(it => itemSVG(it, 'f', d.skin)).join('') + `</g>` + fore.map(it => itemSVG(it, 'f', d.skin)).join('');
-    if (prop && prop !== 'cup') s += propSVG(prop, hd[0], hd[1]);
-  }
-  // cabeça
-  s += `<g>`;
-  s += shape('ellipse', `cx="${-d.headRx}" cy="${headCy+d.headRy*.14}" rx="${r2(d.headRy*.12)}" ry="${r2(d.headRy*.2)}"`, d.skin) + shape('ellipse', `cx="${d.headRx}" cy="${headCy+d.headRy*.14}" rx="${r2(d.headRy*.12)}" ry="${r2(d.headRy*.2)}"`, d.skin);
-  s += shape('ellipse', `cx="${cx}" cy="${headCy}" rx="${d.headRx}" ry="${d.headRy}"`, d.skin);
-  if (E.blush || d.blushAlways) s += [-1,1].map(k=>`<ellipse cx="${k*(d.eyeDx+10)}" cy="${headCy+d.headRy*.4}" rx="${r2(22*d.k)}" ry="${r2(12*d.k)}" fill="#e8736f" opacity="${E.blush?.55:.28}"/>`).join('');
-  s += eyeSVG(-1, d, cx, headCy, E) + eyeSVG(1, d, cx, headCy, E);
-  s += browSVG(-1, d, cx, headCy, E) + browSVG(1, d, cx, headCy, E);
-  { const nk = d.noseK||1, ny = headCy + d.headRy*.3;
-    s += shape('path', `d="M${-16*nk} ${r2(ny+2*nk)} Q${-20*nk} ${r2(ny+16*nk)} ${-8*nk} ${r2(ny+20*nk)} Q0 ${r2(ny+25*nk)} ${8*nk} ${r2(ny+20*nk)} Q${20*nk} ${r2(ny+16*nk)} ${16*nk} ${r2(ny+2*nk)} Q0 ${r2(ny-6*nk)} ${-16*nk} ${r2(ny+2*nk)}Z"`, d.noseC||d.skin, 4.5);
-    if (d.lines) { const my = headCy + d.headRy*d.mouthDy;
-      s += [-1,1].map(k=>`<path d="M${k*20*nk} ${r2(ny+10*nk)} Q${k*(28*nk+6)} ${r2((ny+my)/2)} ${k*(d.mouthW*(d.mouthK||1)+10)} ${r2(my-2)}" fill="none" stroke="${OUT}" stroke-width="2.6" stroke-linecap="round" opacity=".28"/>`).join('');
-      s += `<path d="M${-30*d.k} ${r2(headCy-d.headRy*.6)} q${30*d.k} -8 ${60*d.k} 0" fill="none" stroke="${OUT}" stroke-width="2.4" stroke-linecap="round" opacity=".22"/>`; }
-  }
-  if (d.beard) s += shape('path', `d="M${r2(ell(0,222,d.headRx,d.headRy,0,headCy)[0])} ${r2(ell(0,222,d.headRx,d.headRy,0,headCy)[1])} A${d.headRx} ${d.headRy} 0 0 0 ${r2(ell(0,318,d.headRx,d.headRy,0,headCy)[0])} ${r2(ell(0,318,d.headRx,d.headRy,0,headCy)[1])} Q0 ${r2(headCy+d.headRy*.64)} ${r2(ell(0,222,d.headRx,d.headRy,0,headCy)[0])} ${r2(ell(0,222,d.headRx,d.headRy,0,headCy)[1])}Z"`, d.beardC);
-  s += `<g transform="translate(0 ${r2(headCy + d.headRy*d.mouthDy)}) scale(${d.mouthK||1})">${mouthSVG(P.mouth ? VISEME[P.mouth] : E.mouth, d.mouthW)}</g>`;
-  s += hairFront(d, cx, headCy);
-  s += detailsSVG(P.details || E.details, d, cx, headCy);
-  s += `</g></g></g>`;
+  const Pz = Object.assign({ armL: [-9, -5], armR: [9, 5], legL: [-4, -2], legR: [4, 2], lean: 0, head: 0, expr: 'neutro', mouth: null, blink: 0, breath: 0, liftL: 0, liftR: 0, propL: null, propR: null, frente: null }, pose);
+  const E = Object.assign({}, EXPR[Pz.expr] || EXPR.neutro);
+  const L = legs(d, Pz), low = Math.max(L.L.A[1], L.R.A[1]), rootY = -(low + SHOE_H[d.shoe]);
+  const sy = -d.torso, hy = sy - d.neck - 49 * d.hs;
+  const up = `<g transform="rotate(${r2(Pz.lean)}) translate(0 ${r2(-Pz.breath)})">`;
+  const head = `<g transform="translate(0 ${r2(hy)}) rotate(${r2(Pz.head)} 0 ${r2(40 * d.hs)}) scale(${d.hs})">`;
+  const braco = { L: armSVG(d, -1, Pz.armL, sy, Pz.propL), R: armSVG(d, 1, Pz.armR, sy, Pz.propR) };
+  let s = `<g transform="translate(0 ${r2(rootY)})">`;
+  s += up + backpackSVG(d, sy) + head + hairBack(d) + '</g></g>';
+  s += lowerSVG(d, L);
+  s += up + torsoSVG(d, sy) + neckSVG(d, sy, hy) + badgeSVG(d, sy);
+  if (Pz.frente !== 'L') s += braco.L;
+  if (Pz.frente !== 'R') s += braco.R;
+  s += head + headSVG(d, E, Pz) + '</g>';
+  if (Pz.frente) s += braco[Pz.frente];
+  return s + '</g></g>';
+}
+
+/* ---------- Fiscal ---------- */
+const FISCAL = { key: 'fiscal', name: 'Fiscal', emoji: '🐕', papel: 'Cachorro', desc: 'Cachorro: curioso, atento e leal.', paleta: ['#b97539', '#855029', '#342923', '#e2b13f'], skin: '#b97539', shade: '#855029', muzzle: '#d99759', iris: '#4c3525' };
+function drawDog(pose = {}) {
+  const c = FISCAL;
+  const est = typeof pose === 'string' ? pose : pose.state;
+  const D = Object.assign({ head: 0, tail: 18, fN: [8, 3], fF: [-7, -3], bN: [-7, 12], bF: [7, 18], expr: 'neutro', mouth: 0, blink: 0, breath: 0 }, typeof pose === 'object' ? pose : {});
+  if (est === 'alerta') { D.expr = 'surpreso'; D.tail = 36; D.head = -5; }
+  if (est === 'latindo') { D.expr = 'bravo'; D.mouth = 1; D.head = -8; }
+  const thigh = 54, shin = 54, paw = 13;
+  const hips = { fN: [-82, -128], fF: [-58, -128], bN: [84, -130], bF: [60, -130] };
+  const chain = k => { const a = D[k], H = hips[k], K = P2(H[0], H[1], a[0], thigh), A = P2(K[0], K[1], a[1], shin); return { H, K, A }; };
+  const G = { fN: chain('fN'), fF: chain('fF'), bN: chain('bN'), bF: chain('bF') };
+  const low = Math.max(G.fN.A[1], G.fF.A[1], G.bN.A[1], G.bF.A[1]), rootY = -(low + paw);
+  const legShapes = g => [circ(g.H, 20), quad(g.H, g.K, 20, 15), circ(g.K, 15), quad(g.K, g.A, 15, 13), { d: `M${r2(g.A[0] - 25)} ${r2(g.A[1] + paw)} Q${r2(g.A[0] - 27)} ${r2(g.A[1] - 4)} ${r2(g.A[0] - 11)} ${r2(g.A[1] - 8)} L${r2(g.A[0] + 13)} ${r2(g.A[1] - 8)} L${r2(g.A[0] + 14)} ${r2(g.A[1] + paw)}Z` }];
+  const toes = g => stroke(`M${r2(g.A[0] - 16)} ${r2(g.A[1] + 4)} l0 8 M${r2(g.A[0] - 7)} ${r2(g.A[1] + 4)} l0 8 M${r2(g.A[0] + 2)} ${r2(g.A[1] + 4)} l0 8`, OUT, 1.8);
+  let s = `<g transform="translate(0 ${r2(rootY)})">`;
+  s += union(legShapes(G.fF), c.shade) + toes(G.fF) + union(legShapes(G.bF), c.shade) + toes(G.bF);
+  // rabo: corrente curva que sai da anca
+  const t0 = [116, -176 - D.breath * .4], t1 = P2(t0[0], t0[1], 180 - 74 + D.tail, 34), t2 = P2(t1[0], t1[1], 180 - 40 + D.tail * 1.3, 32), t3 = P2(t2[0], t2[1], 180 - 8 + D.tail * 1.6, 26);
+  s += union([circ(t0, 13), quad(t0, t1, 13, 10), circ(t1, 10), quad(t1, t2, 10, 7), circ(t2, 7), quad(t2, t3, 7, 2.5)], c.skin);
+  // corpo + patas do lado de perto: uma silhueta só
+  const peito = [-78, -176], anca = [80, -178], br = D.breath;
+  const corpo = [circ(peito, 49 + br * .6), quad(peito, anca, 49 + br * .6, 44), circ(anca, 44)];
+  s += union([...corpo, ...legShapes(G.fN), ...legShapes(G.bN)], c.skin);
+  s += toes(G.fN) + toes(G.bN);
+  s += fillOnly('M-60 -134 Q10 -122 84 -138 Q40 -150 -20 -148Z', c.muzzle, 'opacity=".55"') + stroke('M-30 -214 Q10 -226 50 -214 M26 -160 Q40 -150 58 -158', c.shade, 2.4);
+  // pescoço e cabeça (ponto de giro na base do pescoço)
+  const nb = [-96, -196];
+  s += union([circ(nb, 34), quad(nb, [-104, -248], 34, 30)], c.skin);
+  s += stroke('M-133 -212 Q-100 -192 -64 -222', '#3a302a', 9);
+  s += ell(-103, -192, 12.5, 12.5, '#e2b13f', '#8b6227', 2.4) + stroke('M-108 -190 L-98 -190', '#8b6227', 2);
+  const E = Object.assign({}, EXPR[D.expr] || EXPR.neutro), alegre = D.expr === 'feliz' || D.expr === 'rindo', fala = D.mouth > .15 || alegre;
+  const ouvido = est === 'alerta' || D.expr === 'surpreso' ? -10 : D.expr === 'triste' ? 34 : 0;
+  s += `<g transform="translate(-112 -262) rotate(${r2(D.head)} 8 40) scale(1.28)">`;
+  s += `<g transform="rotate(${-ouvido} -36 -42)">` + shape('M-33 -40 L-52 -74 Q-68 -80 -64 -42 L-44 -20Z', c.shade) + `</g>`;
+  s += `<g transform="rotate(${ouvido} 36 -42)">` + shape('M24 -42 L52 -78 Q68 -70 54 -30 L39 -20Z', c.shade) + `</g>`;
+  s += shape('M-41 -30 Q-49 -58 -29 -60 L-13 -48 Q0 -55 20 -48 L38 -60 Q52 -44 41 -20 L36 16 Q11 38 -15 26 Q-41 16 -41 -30Z', c.skin);
+  if (D.blink >= .5 || E.eye) s += stroke('M-27 -16 Q-17 -9 -7 -16 M7 -16 Q17 -9 27 -16', OUT, 3);
+  else { const o = E.open || 1; s += ell(-17, -16, 11 * o, 12 * o, '#f5e7d6', OUT, 2.2) + ell(17, -16, 11 * o, 12 * o, '#f5e7d6', OUT, 2.2) + ell(-15, -14, 5, 6.5, c.iris) + ell(15, -14, 5, 6.5, c.iris) + ell(-15, -14, 2.8, 4, '#181719') + ell(15, -14, 2.8, 4, '#181719') + ell(-16.4, -17, 1.5, 1.7, '#fff') + ell(13.6, -17, 1.5, 1.7, '#fff'); }
+  const bi = E.browIn || 0;
+  s += stroke(`M-29 ${-33 + (E.browY || 0)} L-8 ${-33 + (E.browY || 0) + bi * .7}`, c.shade, 3.6) + stroke(`M29 ${-33 + (E.browY || 0)} L8 ${-33 + (E.browY || 0) + bi * .7}`, c.shade, 3.6);
+  if (fala) { const ab = alegre ? 1 : D.mouth; s += shape(`M-15 20 Q0 ${r2(24 + 46 * ab)} 15 20Z`, '#722e37', 2.4) + (alegre ? shape('M-7 30 Q-8 49 0 49 Q8 49 7 30Z', '#d8646c', 1.8) : ''); }
+  s += shape('M-20 7 Q0 -8 20 7 L15 25 Q0 33 -15 25Z', c.muzzle, 2.2) + ell(0, 7, 12, 7.5, '#2c2323') + ell(-3, 5, 3, 1.8, '#6f5b58');
+  s += stroke('M0 14 L0 22', '#6a402e', 1.8) + (fala ? '' : stroke('M-11 23 Q0 30 11 23', '#6a402e', 2));
+  s += '</g></g>';
   return s;
 }
+// Altura aproximada de cada personagem, do chão ao topo do cabelo, com a perna reta.
+for (const d of Object.values(CHARS)) d.H = Math.round(10 + d.thigh + d.shin + SHOE_H[d.shoe] + d.torso + d.neck + 160 * d.hs);
 
-// ---------- Fiscal (cachorro) ----------
-function drawDog(state = 'stand') {
-  const C = '#d29a52', C2 = '#b87d3a', L = '#f4e0b8', EAR = '#8b5a2b';
-  const barking = state === 'latindo', alert = state === 'alerta';
-  let s = '<g>';
-  const stroke = (d, w, col) => `<path d="${d}" fill="none" stroke="${OUT}" stroke-width="${w+2*T}" stroke-linecap="round"/><path d="${d}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round"/>`;
-  // rabo (para cima, balançando)
-  s += stroke(alert ? 'M-104 -128 Q-150 -150 -146 -214' : 'M-104 -128 Q-160 -130 -150 -196', 20, C2);
-  // pernas de trás e da frente (as do lado de longe mais escuras)
-  const leg = (x, col) => `<rect x="${x-13}" y="-84" width="26" height="70" rx="12" fill="${OUT}" stroke="${OUT}" stroke-width="${T*2}" stroke-linejoin="round"/><rect x="${x-13}" y="-84" width="26" height="70" rx="12" fill="${col}"/>` + shape('ellipse', `cx="${x+3}" cy="-12" rx="22" ry="10"`, L);
-  s += leg(-62, C2) + leg(66, C2) + leg(-92, C) + leg(96, C);
-  // corpo
-  s += shape('ellipse', 'cx="0" cy="-122" rx="118" ry="54"', C);
-  s += `<path d="M-60 -92 Q0 -70 74 -92 Q0 -76 -60 -92Z" fill="${L}" stroke="${L}" stroke-width="22" stroke-linejoin="round"/>`;
-  // cabeça
-  const hx = 112, hy = barking ? -190 : alert ? -186 : -174, rot = barking ? -10 : 0;
-  s += `<g transform="rotate(${rot} ${hx} ${hy+20})">`;
-  s += union([['circle', `cx="${hx}" cy="${hy}" r="54"`], ['ellipse', `cx="${hx+50}" cy="${hy+16}" rx="44" ry="29"`]], C);
-  s += `<ellipse cx="${hx+54}" cy="${hy+24}" rx="34" ry="19" fill="${L}"/>`;
-  s += shape('ellipse', `cx="${hx+90}" cy="${hy+6}" rx="13" ry="10"`, '#2b1a12', 4);
-  s += shape('path', `d="M${hx-36} ${hy-42} Q${hx+4} ${hy-44} ${hx-4} ${hy+24} Q${hx-26} ${hy+18} ${hx-44} ${hy-12}Z"`, EAR);   // orelha caída
-  s += `<circle cx="${hx+34}" cy="${hy-6}" r="${alert?13:11}" fill="#fff" stroke="${OUT}" stroke-width="4"/><circle cx="${hx+37}" cy="${hy-5}" r="5.5" fill="${OUT}"/>`;
-  s += `<path d="M${hx+20} ${hy-26} q14 -8 30 -2" fill="none" stroke="${OUT}" stroke-width="5" stroke-linecap="round"/>`;
-  if (barking) s += `<path d="M${hx+52} ${hy+36} Q${hx+78} ${hy+66} ${hx+100} ${hy+34}" fill="#e8736f" stroke="${OUT}" stroke-width="5" stroke-linejoin="round"/><path d="M${hx+40} ${hy+34} L${hx+98} ${hy+30}" stroke="${OUT}" stroke-width="5" stroke-linecap="round"/>`;
-  else s += `<path d="M${hx+46} ${hy+36} q22 8 46 -4" fill="none" stroke="${OUT}" stroke-width="5" stroke-linecap="round"/>`;
-  s += `</g>`;
-  if (barking) s += `<g fill="none" stroke="${OUT}" stroke-width="6" stroke-linecap="round"><path d="M${hx+136} ${hy-34} q28 -8 44 12"/><path d="M${hx+148} ${hy+0} q30 6 50 -8"/><path d="M${hx+138} ${hy+32} q24 14 42 2"/></g>`;
-  // só a medalhinha
-  s += `<circle cx="${hx-14}" cy="${hy+62}" r="10" fill="#f2b632" stroke="${OUT}" stroke-width="4"/>`;
-  return s + '</g>';
-}
-
-module.exports = { CHARS, EXPR, EXPR_ORDER, drawChar, drawDog, OUT };
+if (typeof module === 'object' && module.exports) module.exports = { CHARS, FISCAL, EXPR, EXPR_ORDER, NOMES_EXPR, SHOE_H, OUT, drawChar, drawDog };
