@@ -1,0 +1,20 @@
+{
+  "name": "se-vira-tico",
+  "version": "1.0.0",
+  "description": "Série animada Se Vira, Tico",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaotalma/se-vira-tico.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joaotalma/se-vira-tico/issues"
+  },
+  "homepage": "https://github.com/joaotalma/se-vira-tico#readme",
+  "private": true,
+  "dependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}
