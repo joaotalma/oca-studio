@@ -289,7 +289,7 @@ function drawChar(d, pose = {}) {
   // 2) braço de pele POR CIMA da manga: trecho cuff→cotovelo é cortado na linha do punho; antebraço e mão ficam à frente
   for (const side of [-1, 1]) {
     const { el, wr, u1, u2, a } = A[side], prop = side < 0 ? P.propL : P.propR, { Cc, n } = cuff[side];
-    const hd = add(wr, u2, W*.5), id = uid(), o = add(Cc, u1, T/2 + 1);
+    const hd = add(wr, u2, W*.5), id = uid(), o = add(Cc, u1, T/2 - 0.5);
     const big = 600, rect = [add(o, n, big), add(o, n, -big), add(add(o, n, -big), u1, big), add(add(o, n, big), u1, big)];
     s += `<clipPath id="${id}"><path d="M${rect.map(p => r2(p[0])+' '+r2(p[1])).join('L')}Z"/></clipPath>`;
     const upper = [{d:quad(Cc,el,W*.4,W*.4)}], fore = [{c:el,r:W*.4}, {d:quad(el,wr,W*.4,W*.34)}, {e:[hd[0],hd[1],W*.74,W*.98,-a[1]]}];
