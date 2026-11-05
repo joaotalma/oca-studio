@@ -1,0 +1,9 @@
+node_modules/
+render/*.mp4
+render/frames/
+audio/*.wav
+audio/*.mp3
+.env
+*.log
+audio/**/*.wav
+audio/**/*.mp3
