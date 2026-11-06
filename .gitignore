@@ -13,3 +13,4 @@ episodios/*/serve.mjs
 episodios/*/springs.js
 episodios/*/cenarios.js
 episodios/*/motor.js
+render/*.mp3

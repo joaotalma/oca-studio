@@ -94,7 +94,7 @@ cd episodios/epNN
 W=540 H=960 bash ~/.claude/skills/take-one/scripts/render-parallel.sh 15 90 ../../render/epNN_rascunho.mp4 1 12
 ```
 
-Pare antes da voz e diga ao autor quais falas gerar no ElevenLabs. Os arquivos vão em `audio/epNN/` (`01_tico.mp3`, `02_lua.mp3`...). Gerar voz custa créditos, então confirme antes de usar a API.
+Depois gere as vozes localmente com `python scripts/gerar-vozes.py episodios/epNN audio/epNN`, com o VoiceStudio aberto. Os arquivos ficam em `audio/epNN/` (`01_tico.mp3`, `02_lua.mp3`...). A licença do motor é não comercial: leia `docs/VOZES.md`. Confira cada fala com transcrição e ajuste a grafia quando a pronúncia sair errada.
 
 ### 4. Áudio com tempo por palavra
 

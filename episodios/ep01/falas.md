@@ -6,12 +6,12 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 
 | Personagem | Falas | Caracteres | Procure por |
 |---|---|---|---|
-| Tico | 21 | 682 | Homem, cerca de 30 anos, voz cansada e irônica, com humor seco |
+| Tico | 21 | 695 | Homem, cerca de 30 anos, voz cansada e irônica, com humor seco |
 | Lua | 8 | 199 | Mulher, cerca de 30 anos, voz calorosa, com risada fácil e impaciência controlada |
 | Jão | 2 | 88 | Homem, cerca de 33 anos, voz grave e firme, mas afetuosa |
 | Borracheiro | 4 | 100 | Homem, cerca de 50 anos, voz rouca e resignada |
 
-**Total:** 35 arquivos e 1069 caracteres, sem contar novas tentativas.
+**Total:** 35 arquivos e 1082 caracteres, sem contar novas tentativas.
 
 ## Falas
 
@@ -19,7 +19,7 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 |---|---|---|---|
 | `01_tico.mp3` | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | Empolgado de verdade, para a câmera |
 | `02_tico.mp3` | Tico | Aaah! Mas que porcaria de pneu! | Grito de raiva, curto. Será coberto pelo apito |
-| `03_tico.mp3` | Tico | Por favorzinho, Jão. Três meses parado. Empresta a Companheira? | Pedinte, meio sem graça, querendo parecer leve |
+| `03_tico.mp3` | Tico | Por favorzinho, Jão! Três meses parado! Me empresta a Companheira? | Pedinte, meio sem graça, querendo parecer leve |
 | `04_jao.mp3` | Jão | Pega. Mas qualquer prejuízo, a conta é tua. | Tranquilo de amigo; firme só em "a conta é tua" |
 | `05_tico.mp3` | Tico | Fechado. | Rápido e aliviado |
 | `06_jao.mp3` | Jão | Ah, e cliente é folgado: entregador não sobe. | Conselho de veterano, com carinho |
@@ -27,7 +27,7 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 | `08_tico.mp3` | Tico | Como é que eu resolvo isso? | Falando sozinho, começando a se desesperar |
 | `09_tico.mp3` | Tico | Perdi a entrega? Eu nem tenho nota e ela caiu. | Lendo, incrédulo; a segunda frase sai rindo de nervoso |
 | `10_tico.mp3` | Tico | E o que eu faço com esse tanto de bolo? | Desanimado, olhando para o bolo |
-| `11_tico.mp3` | Tico | Já sei! | Curto, com a alegria repentina da ideia |
+| `11_tico.mp3` | Tico | Ah! Já sei! | Curto, com a alegria repentina da ideia |
 | `12_tico.mp3` | Tico | Parabéns, meu amigo, hoje é seu grande dia! | Cantado de propósito desafinado, com animação profissional |
 | `13_borracheiro.mp3` | Borracheiro | Hoje não é meu aniversário. | Confuso, sem hostilidade |
 | `14_tico.mp3` | Tico | É recado cantado. Cento e vinte reais. | Seco e formal, de quem presta um serviço |
@@ -48,7 +48,7 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 | `29_lua.mp3` | Lua | Desço em dois minutos! | No limite; corta a frase e bate o interfone |
 | `30_lua.mp3` | Lua | Escuta aqui, seu... | Gritando, interrompida no "seu..." |
 | `31_lua.mp3` | Lua | Tico? Tico do bloco quatro? | Da fúria à surpresa, com a voz amolecendo |
-| `32_tico.mp3` | Tico | Boa noite, senhora. | Envergonhado, tentando brincar |
+| `32_tico.mp3` | Tico | Boa noite, minha senhora. | Envergonhado, tentando brincar |
 | `33_lua.mp3` | Lua | Você não mudou nada. | Depois da risada, com carinho |
 | `34_lua.mp3` | Lua | Espera... você é entregador? | Mais baixo, percebendo aos poucos |
 | `35_tico.mp3` | Tico | Não tô pedindo ajuda. Mas... o que eu falo? | Sussurrado, olhando para os lados |

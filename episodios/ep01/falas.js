@@ -19,7 +19,7 @@ const FALAS = [
   "ini": 4.8,
   "fim": 7.4,
   "quem": "Tico",
-  "texto": "Por favorzinho, Jão. Três meses parado. Empresta a Companheira?"
+  "texto": "Por favorzinho, Jão! Três meses parado! Me empresta a Companheira?"
  },
  {
   "n": 4,
@@ -75,7 +75,7 @@ const FALAS = [
   "ini": 25,
   "fim": 25.8,
   "quem": "Tico",
-  "texto": "Já sei!"
+  "texto": "Ah! Já sei!"
  },
  {
   "n": 12,
@@ -222,7 +222,7 @@ const FALAS = [
   "ini": 68,
   "fim": 69.5,
   "quem": "Tico",
-  "texto": "Boa noite, senhora."
+  "texto": "Boa noite, minha senhora."
  },
  {
   "n": 33,

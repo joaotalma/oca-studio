@@ -47,7 +47,7 @@ Lembrança, com a imagem quase em preto e branco e as bordas escurecidas. Na tel
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 3 | 4,8–7,4 | Tico | Por favorzinho, Jão. Três meses parado. Empresta a Companheira? | envergonhado | Mãos juntas, de chinelo | Dupla, com a moto | Rua ao fundo |
+| 3 | 4,8–7,4 | Tico | Por favorzinho, Jão! Três meses parado! Me empresta a Companheira? | envergonhado | Mãos juntas, de chinelo | Dupla, com a moto | Rua ao fundo |
 | 4 | 7,4–9,6 | Jão | Pega. Mas qualquer prejuízo, a conta é tua. | neutro | Estende a chave | Close do Jão | |
 | 5 | 9,6–10,2 | Tico | Fechado. | feliz | Pega a chave | Close do Tico | |
 | 6 | 10,2–12,4 | Jão | Ah, e cliente é folgado: entregador não sobe. | neutro | Aponta para o alto, como quem ensina | Close do Jão | |
@@ -64,7 +64,7 @@ Lembrança, com a imagem quase em preto e branco e as bordas escurecidas. Na tel
 | 10 | 19,0–22,0 | Tico | E o que eu faço com esse tanto de bolo? | triste | Tira a bag das costas, põe na moto e abre | Bag e rosto | |
 | | 22,0–24,0 | | **Sem fala** | preocupado | O bolo: "Feliz 80 anos, Marlene". Ele olha para o nome, sem graça | Close do bolo, depois do rosto | Silêncio curto |
 | | 24,0–25,0 | | **Sem fala** | | A placa, que só aparece agora: "Pneu: R$ 120". No painel, a dívida vira R$ 120 | Placa | |
-| 11 | 25,0–25,8 | Tico | Já sei! | feliz | Uma lâmpada acende sobre a cabeça dele | Close | Plim |
+| 11 | 25,0–25,8 | Tico | Ah! Já sei! | feliz | Uma lâmpada acende sobre a cabeça dele | Close | Plim |
 
 ### 3. Borracharia: o recado cantado (26–45,5 s)
 
@@ -108,7 +108,7 @@ Lembrança, com a imagem quase em preto e branco e as bordas escurecidas. Na tel
 | 30 | 64,0–65,0 | Lua | Escuta aqui, seu... | bravo | Abre a porta de crachá, com o dedo em riste, e congela | Dupla | Porta batendo, depois silêncio |
 | | 65,0–66,0 | | **Na tela: placa "Crush de infância" com seta para a Lua** | surpreso (os dois) | A placa desce do alto, como um aviso de condomínio | Dupla | Plim |
 | 31 | 66,0–68,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Baixa o dedo | Close da Lua | |
-| 32 | 68,0–69,5 | Tico | Boa noite, senhora. | envergonhado | Acena sem jeito e sorri | Close do Tico | |
+| 32 | 68,0–69,5 | Tico | Boa noite, minha senhora. | envergonhado | Acena sem jeito e sorri | Close do Tico | |
 | 33 | 70,5–72,0 | Lua | Você não mudou nada. | rindo | Risada alta de verdade, e ele ri junto | Close dos dois | Antes da fala, só a risada |
 | 34 | 72,0–74,0 | Lua | Espera... você é entregador? | preocupado | Olha para a bag, depois para ele | Close da Lua | Grave só neste impacto |
 | | 74,0–75,5 | | **Silêncio e corte** | surpreso, suor | Tico abre a boca para responder | Close do Tico | Silêncio; corte seco antes da resposta |
@@ -173,7 +173,7 @@ As duas levam ao mesmo marco: depois da conversa, sozinho, o Tico liga para o J�
 ## Para conferir na produção
 
 - **Personagens novos:** o borracheiro precisa de desenho e voz, e a Dona Marlene só de desenho.
-- **Vozes:** são 4 no piloto: Tico, Jão, Lua e Borracheiro.
+- **Vozes:** são 4 no piloto: Tico, Jão, Lua e Borracheiro, geradas com o OmniVoice. Ver `docs/VOZES.md`.
 - **Pilotagem:** visão do guidão, com a câmera voltada para o piloto, e a estrada em perspectiva ao fundo.
 - **Cenários:** rua, com a esquina como trecho dela, borracharia, porta do conjunto e casa da Marlene. A kitnet fica para depois.
 - **Moto:** tem cerca de 2 m em escala com os personagens.
