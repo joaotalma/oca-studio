@@ -1,82 +1,79 @@
 # Elenco
 
-Visual V12, definido pelo autor. Aparência extraída de `personagens/chars.js`; se houver diferença, vale o código. Relações entre os personagens e cenário: **a definir pelo autor**.
+História: `docs/BIBLIA.md`. Aparência: `personagens/chars.js`; se houver diferença, vale o código. Cada um acerta em parte e erra em parte, para a sátira nunca escolher lado.
 
-## Tico
+## Tico (Tiago Almeida), 31
 
-- **Papel e jeito:** protagonista; exausto, irônico e persistente.
-- **Altura:** 653.
-- **Traços:** cabelo espetado, barba por fazer, olheiras, pálpebra caída mesmo na expressão `neutro`.
-- **Figurino:** camiseta de manga curta, jeans com barra dobrada, chinelo.
-- **Objeto:** celular (`phone`).
+- **Quem é:** cresceu num conjunto popular, mora de aluguel numa kitnet e vive de bicos.
+- **Quer:** provar para a mãe e para si que deu certo, e conquistar a Lua.
+- **Teme:** ser descoberto e virar "o que não deu em nada".
+- **Defeito:** prefere inventar a confessar.
+- **Fala:** "Já já eu resolvo." Chama desemprego de "transição de carreira" e dívida de "investimento".
+- **Visual:** cabelo espetado, barba por fazer, olheiras, camiseta verde-limão, jeans com barra dobrada, chinelo, celular.
 
 | Parte | Cor |
 |---|---|
 | Pele | `#d59a6e` |
-| Sombra da pele | `#ad714f` |
 | Cabelo | `#272023` |
 | Camiseta | `#a8b94c` |
-| Detalhe da camiseta | `#7d9136` |
 | Calça | `#465a72` |
 
-## Lua
+## Lua (Luana Barros), 30
 
-- **Papel e jeito:** colega de trabalho; gentil, perspicaz e expressiva.
-- **Altura:** 605 (a menor).
-- **Traços:** cabelo ondulado nos ombros, cílios, olhos verdes.
-- **Figurino:** camisa de manga curta com botões, crachá com cordão, calça escura, tênis.
-- **Objeto:** café (`cup`), com `armR: [8, 150]`.
+- **Quem é:** vizinha de infância e primeiro crush do Tico. Analista numa empresa grande, jornada de 10 horas, ansiedade de domingo à noite.
+- **Quer:** largar o emprego e abrir uma confeitaria, mas não conta para ninguém.
+- **Teme:** jogar fora a estabilidade e se arrepender.
+- **Defeito:** responde "tá tudo ótimo" para tudo. Também esconde algo, em espelho com o Tico.
+- **Marca:** risada alta, café coado como a avó fazia e uma caixa de lembranças da infância.
+- **Visual:** cabelo ondulado, olhos verdes, camisa, crachá da empresa, calça escura, tênis, café (`armR: [8, 150], propR: 'cup'`).
 
 | Parte | Cor |
 |---|---|
 | Pele | `#e9b18b` |
-| Sombra da pele | `#c98767` |
 | Cabelo | `#bd8641` |
 | Camisa | `#ae5d49` |
-| Detalhe da camisa | `#814538` |
 | Calça | `#454044` |
 
-## Jão
+## Jão (Jonas Ferreira), 33
 
-- **Papel e jeito:** entregador; forte, reservado e determinado.
-- **Altura:** 622 (o mais largo).
-- **Traços:** barba cheia, sobrancelhas grossas, bandana com nó.
-- **Figurino:** camiseta escura, mochila de entrega vermelha com alças no peito, calça cáqui, bota.
+- **Quem é:** motoboy, o galo de luta de esquerda. Peito estufado, pavio curto, moto velha chamada "Companheira".
+- **Quer:** respeito e organizar a categoria.
+- **Teme:** ser bloqueado pelo app e ver a nota cair.
+- **Acerta:** o diagnóstico, porque o sistema aperta mesmo o entregador.
+- **Erra:** usa isso como desculpa para não mudar nada, e não consegue combinar nem o horário da assembleia.
+- **Fala:** áudio de 4 minutos no WhatsApp. Tem coração mole: é o primeiro a emprestar a moto.
+- **Visual:** barba cheia, bandana, camiseta escura, mochila de entrega vermelha, calça cáqui, bota.
 
 | Parte | Cor |
 |---|---|
 | Pele | `#805039` |
-| Sombra da pele | `#563327` |
 | Cabelo e barba | `#1e1b1e` |
 | Camiseta | `#3d4049` |
-| Detalhe da camiseta | `#282b33` |
 | Calça | `#665e50` |
 | Mochila | `#b3303c` |
-| Bandana | `#963a48` |
 
-## Bia
+## Bia (Beatriz Campos), 29
 
-- **Papel e jeito:** executiva; confiante, focada e exigente.
-- **Altura:** 660 (a mais alta).
-- **Traços:** rabo de cavalo com prendedor dourado, cílios.
-- **Figurino:** blazer de manga longa com lapela, blusa escura, calça social clara, scarpin.
-- **Objeto:** celular (`phone`).
+- **Quem é:** coach de mindset, vende o curso "Mente Milionária" e acorda às 4h.
+- **Quer:** ser vista como bem-sucedida e libertar todo mundo da mentalidade de pobreza.
+- **Teme:** que descubram o cartão estourado.
+- **Acerta:** empurra o Tico para agir.
+- **Erra:** trata toda dificuldade como falta de esforço.
+- **Fala:** "Gratidão!" Faz foto com carro alugado.
+- **Visual:** rabo de cavalo, blazer mostarda, calça social clara, scarpin, celular de fazer live.
 
 | Parte | Cor |
 |---|---|
 | Pele | `#e7ac87` |
-| Sombra da pele | `#bc7d60` |
 | Cabelo | `#342326` |
 | Blazer | `#bf842a` |
-| Detalhe do blazer | `#8f601f` |
 | Calça | `#c8b094` |
 
-## Fiscal, o cachorro
+## Fiscal
 
-- **Papel e jeito:** curioso, atento e leal.
-- **Desenho:** `drawDog(estado ou pose)`, de perfil, virado para a esquerda.
-- **Estados:** `stand`, `alerta`, `latindo`.
-- **Traços:** orelhas grandes, coleira com medalha dourada.
+- **Quem é:** vira-lata do prédio, na portaria do conjunto.
+- **Função:** late sempre que alguém mente. Quanto maior a mentira, mais late.
+- **Desenho:** `drawDog(estado ou pose)`, de perfil, virado para a esquerda. Estados: `stand`, `alerta`, `latindo`.
 
 | Parte | Cor |
 |---|---|
@@ -87,8 +84,8 @@ Visual V12, definido pelo autor. Aparência extraída de `personagens/chars.js`;
 
 ## Dona Neide
 
-Só voz. Nunca aparece na imagem.
+Mãe do Tico e coração da série. Liga todo dia, manda áudio e torce pela Lua. "Já já eu resolvo" nasceu com ela. Só voz na temporada 1, pelos áudios de WhatsApp.
 
 ## Em comum
 
-- Contorno `#2a1f22`, espessura 2,6 por lado.
+Contorno `#2a1f22`, espessura 2,6 por lado.

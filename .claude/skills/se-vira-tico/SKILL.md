@@ -5,19 +5,25 @@ description: "Fluxo de produção dos episódios da série animada Se Vira, Tico
 
 # Se Vira, Tico
 
-Animação 2D romântica-cômica para TikTok. Cada episódio tem cerca de 90 s, em vídeo vertical, e termina o clímax com duas opções A/B para o público votar nos comentários. A opção vencedora define o episódio seguinte.
+Comédia romântica animada em 2D para TikTok. Cada episódio tem cerca de 90 s, em vídeo vertical, e corta o clímax com duas opções A/B para o público votar. O desfecho vencedor abre o episódio seguinte.
+
+**Logline:** Tico, 31, vive de bico em bico e chama o desemprego de "transição de carreira". Ao reencontrar a Lua, vizinha de infância e primeiro crush, passa a inventar mentiras e bicos cada vez mais absurdos para parecer que a vida está resolvida.
 
 O desenho é feito em código com o motor da skill `take-one`: `film.html` desenha cada quadro como função do tempo, o Chrome captura os quadros e o ffmpeg gera o MP4.
 
 ## Bíblia curta
 
-**Tom:** romântico e cômico, em português do Brasil coloquial.
+A fonte da história é `docs/BIBLIA.md`, com a temporada 1 episódio a episódio, o arco de 10 temporadas e o banco de sátiras. Leia antes de escrever.
 
-**Elenco:** Tico, Lua, Jão, Bia, Fiscal (o cachorro) e Dona Neide (só voz, nunca aparece). Paleta e traços estão em `references/elenco.md`.
+**Tom:** afetuoso, em português do Brasil coloquial. O humor vem da situação e do carinho pelos personagens, não do deboche. Toda dureza ganha uma piada, e todo episódio fecha com um fio de esperança. Sem narrador.
 
-**Personalidade:** definida em `references/elenco.md`. Use-a para escrever as falas e escolher as expressões.
+**Elenco:** Tico, Lua, Jão, Bia, Fiscal e Dona Neide (só voz na temporada 1). Quem é cada um, como fala, paleta e traços estão em `references/elenco.md`.
 
-**A definir pelo autor:** relações entre os personagens e cenário. Enquanto não estiverem definidos em `references/elenco.md`, não invente. Se o roteiro depender disso, pergunte. Quando o autor responder, registre lá.
+**Mundo:** capital grande sem bairro real, em paleta quente (laranja, verde-limão, azul-turquesa), com fios de poste, laje e parede com reboco aparente.
+
+**Roteiro:** estrutura de 90 s, regra do absurdo e votação estão em `references/roteiro.md`.
+
+**Produção:** números de cada regra, kit do piloto e fases estão em `references/regras.md`. Respeite a ordem das fases.
 
 ## Rig
 
@@ -29,7 +35,8 @@ Antes de criar ou alterar uma pose, leia `personagens/MONTAGEM_DO_RIG.md`. O ess
 - Pose do Fiscal: `head`, `tail`, `fN`, `fF`, `bN`, `bF` (pares de ângulos das patas), `expr`, `mouth` (0 a 1), `blink`, `breath`.
 - Anime só interpolando esses valores. Assim os membros não se soltam.
 - Use apenas o que existe:
-  - Expressões: `neutro`, `cansado`, `feliz`, `rindo`, `surpreso`, `preocupado`, `envergonhado`, `forcado`, `bravo`, `triste`, `lado`, `pensando`, `aliviado`.
+  - Expressões: `neutro`, `cansado`, `feliz`, `rindo`, `surpreso`, `preocupado`, `envergonhado`, `forcado` (sorriso de quem mente), `bravo`, `triste`, `lado`, `pensando`, `aliviado`.
+  - Detalhes do rosto, no campo `detalhe`: `suor`, `lagrima`, `veia`, `brilho`.
   - Bocas de fala: `closed`, `small`, `open`, `wide`.
   - Objetos na mão: `phone`, `cup`.
   - Fiscal: `stand`, `alerta`, `latindo`.
@@ -59,12 +66,9 @@ Trabalhe na branch `epNN` e abra um Pull Request para `main`. Não faça merge.
 
 ### 1. Roteiro: `episodios/epNN/roteiro.md`
 
-- 90 s, gancho nos primeiros 3 s, três viradas.
-- Clímax com duas opções A/B e última fala curta.
-- Cada fala indica personagem e emoção.
-- A partir do ep. 2, continue a opção vencedora.
+Siga `references/roteiro.md`: de 200 a 230 palavras, começando no meio da ação, com a regra do absurdo e a sinopse do episódio em `docs/BIBLIA.md`. Cada fala indica personagem, emoção, gesto, plano, cenário, objeto-informação e efeito sonoro. A partir do ep. 2, abra com o desfecho da opção vencedora.
 
-Conte as palavras: cerca de 2 por segundo, mais as pausas. Os tempos das cenas saem dessa conta.
+Conte as palavras e meça os tempos: as cenas saem dessa conta. Ao publicar, atualize `episodios/continuidade.md`.
 
 ### 2. Cenas: `episodios/epNN/cenas.md`
 
@@ -110,6 +114,8 @@ No rascunho, acrescente `--rascunho`: resolução e fps passam a ser 540x960 e 1
 - [ ] Legenda alinhada à voz real.
 - [ ] Loudness perto de -16 LUFS (TikTok).
 - [ ] Duração de 85 a 95 s.
+- [ ] Gesto antes da palavra; expressão troca na piscada; de 10 a 15 planos.
+- [ ] Compreensível sem ter visto os episódios anteriores.
 
 Detalhes e forma de medir: `references/qa-checklist.md`.
 
