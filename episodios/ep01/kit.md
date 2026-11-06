@@ -34,6 +34,7 @@ Todas já existem: as 13 expressões, as 4 bocas e os detalhes `suor` e `veia`.
 | Moto Companheira | Criada | De perfil, em tamanho real, com rodas que giram e pneu estourado |
 | Chave da moto | **Criar** | Cena 1 |
 | Bag sobre a moto, fechada e aberta | Criada | Cena 2 |
+| Guidão, espelhos, tanque e estrada em perspectiva | Criados | Plano da pilotagem |
 | Bolo com "Feliz 80 anos, Marlene", vela acesa e fatia | **Criar** | Cenas 2 e 3 |
 | Chave de roda | **Criar** | Cena 3 |
 | Interfone | **Criar** | Cena 4 |

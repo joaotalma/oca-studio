@@ -7,7 +7,6 @@ const CELULAR = { armR: [18, 150], propR: 'phone' };
 
 // Moto em tamanho real: cerca de 2 m ao lado de um personagem de 1,75 m.
 const MOTO_S = 1.9, MOTO_Y = CHAO + 10, MOTO_X = 700;
-const motoAndando = (t) => 100 + 300 * (Math.min(t, 12) - 10);
 const moto = (x, o) => motoSVG(x, MOTO_Y, MOTO_S, o);
 const BAG_X = MOTO_X - 95, BAG_Y = MOTO_Y - 395;
 
@@ -25,11 +24,11 @@ const ep01Planos = [
       { id: 'tico', x: 220, movX: [8.2, 10, 220, 420], poses: [[8, { expr: 'feliz', bag: true }]] },
       { id: 'jao', x: 850, s: 1.3, poses: [[8, { expr: 'feliz', bag: false, armL: [-40, -60], armR: [12, 8] }]] },
     ] },
-  // Cena 2: pilotando até o estouro
-  { ini: 10, fim: 12.2, cena: 'rua', cam: [[10, 300, 800, 1.12], [12, 740, 800, 1.12, 2]],
-    fundo: (t) => moto(motoAndando(t), { furado: t >= 11.95, giro: t < 11.95 ? t * 720 : 0 }) + (t < 11.95 ? [0, 1, 2].map((i) => stroke(`M${motoAndando(t) - 560 - i * 50} ${1270 + i * 80} l-120 0`, '#fff6e6', 7)).join('') : ''),
-    frente: (t) => t >= 11.9 ? estouroSVG(motoAndando(t) - 330, 1420, sai((t - 11.9) / .12)) : '',
-    atores: [{ id: 'tico', xF: (t) => motoAndando(t) - 15, yF: (t) => MOTO_Y + (t < 12 ? Math.sin(t * 22) * 4 : -22), poses: [[10, { expr: 'feliz', bag: true, semPernas: true, armR: [62, 58], armL: [-12, 40] }], [11.95, { expr: 'surpreso' }]] }] },
+  // Cena 2: câmera presa no guidão, com o Tico de frente e a estrada fugindo atrás dele
+  { ini: 10, fim: 12.2, cena: 'vazio', cam: [[10, 540, 960, 1]],
+    fundo: (t) => { const tr = Math.min(t, 11.95), tremor = t > 11.95 ? Math.sin(t * 90) * 16 : Math.sin(t * 24) * 2; return `<g transform="translate(${tremor.toFixed(1)} 0)">${estradaSVG(tr)}</g>` + (t >= 11.9 ? estouroSVG(190, 700, sai((t - 11.9) / .12)) : '') + guidaoFundoSVG(); },
+    frente: () => guidaoFrenteSVG(),
+    atores: [{ id: 'tico', x: 540, s: 2.1, yF: (t) => 2230 + (t > 11.95 ? -34 : Math.sin(t * 19) * 5), poses: [[10, { expr: 'feliz', bag: true, semPernas: true, armL: [-60, -62], armR: [60, 62] }], [11.95, { expr: 'surpreso', detalhe: 'suor' }]] }] },
   // Tico vê o pneu; a bag sai das costas e vai para a moto
   { ini: 12.2, fim: 24, cena: 'rua', cam: [[12.2, 400, 1400, 1.7], [13.3, 470, 880, 1.2, .7], [17, 200, 690, 1.75, .6], [20.5, 440, 960, 1.22, .6]],
     fundo: (t) => moto(MOTO_X, { furado: true }) + (t >= 20.5 ? (t < 21.3 ? bagFechadaSVG(BAG_X, BAG_Y - 200 * (1 - sai((t - 20.5) / .3)), .8) : bagAbertaSVG(BAG_X, BAG_Y, .8, boloSVG(0, -190, 1.25, false))) : ''),
@@ -93,7 +92,7 @@ const ep01Planos = [
 
 const ep01Telas = [
   // Nome no depoimento
-  { ini: 10, fim: 11.9, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .2, (1.9 - s) / .25); u.cartao(120, 1500, 840, 96, '#a8b94c'); u.texto('Tiago Almeida, entregador há 4 minutos', 540, 1548, 38, '#2a1f22'); u.g.globalAlpha = 1; } },
+  { ini: 10, fim: 11.9, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .2, (1.9 - s) / .25); u.cartao(120, 180, 840, 96, '#a8b94c'); u.texto('Tiago Almeida, entregador há 4 minutos', 540, 228, 38, '#2a1f22'); u.g.globalAlpha = 1; } },
   // Notificação
   { ini: 17, fim: 20.5, desenha: (p, s, u) => { const y = 180 + (u.sai(s / .4) - 1) * 260; u.cartao(70, y, 940, 180, '#fff6e6'); u.texto('ENTREGA PERDIDA', 540, y + 62, 62, '#c23b3b'); u.texto('Sua nota caiu', 540, y + 128, 44, '#2a1f22'); } },
   // Dez minutos depois

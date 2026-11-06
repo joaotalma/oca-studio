@@ -66,6 +66,45 @@ function notasSVG(x, y, t) {
   return [0, 1, 2].map((i) => { const f = (t * .9 + i * .33) % 1; return `<g transform="translate(${x + i * 70 + Math.sin(f * 6) * 12} ${y - f * 180})" opacity="${(1 - f).toFixed(2)}">` + txt(0, 0, '♪', 60, '#f2d36b') + '</g>'; }).join('');
 }
 
+/* ---------- visão do guidão ---------- */
+const FUGA = [540, 900];
+function estradaSVG(t) {
+  const prof = (p) => p * p, ALT = 1020;
+  let s = `<rect x="-200" y="-200" width="1480" height="1300" fill="#f4a65a"/>` + ell(760, 620, 90, 90, '#f7d774')
+    + `<rect x="-200" y="${FUGA[1]}" width="1480" height="1200" fill="#8f8a84"/>`
+    + `<path d="M${FUGA[0] - 8} ${FUGA[1]} L${FUGA[0] + 8} ${FUGA[1]} L1500 2000 L-420 2000Z" fill="#55535a"/>`;
+  for (let i = 0; i < 8; i++) {
+    const p = (t * 1.3 + i / 8) % 1, a = prof(p), b = prof(Math.min(1, p + .055));
+    const ya = FUGA[1] + ALT * a, yb = FUGA[1] + ALT * b, la = 2 + 22 * a, lb = 2 + 22 * b;
+    s += `<path d="M${540 - la} ${ya.toFixed(1)} L${540 + la} ${ya.toFixed(1)} L${540 + lb} ${yb.toFixed(1)} L${540 - lb} ${yb.toFixed(1)}Z" fill="#f2d36b"/>`;
+  }
+  const itens = [];
+  for (let i = 0; i < 14; i++) itens.push({ i, p: (t * .85 + i / 14) % 1 });
+  itens.sort((x, y) => x.p - y.p);
+  for (const { i, p } of itens) {
+    const lado = i % 2 ? 1 : -1, k = prof(p) * 2.4 + .02, x = 540 + lado * 620 * k, y = FUGA[1] + ALT * prof(p);
+    const op = Math.min(1, p / .12).toFixed(2), tipo = i % 7;
+    let g = '';
+    if (tipo === 3) g = ret(-8, -520, 16, 520, '#55606c', 0) + ret(-90, -420, 180, 110, '#fff6e6', 4);
+    else if (tipo === 5) g = ret(-10, -560, 20, 560, '#55606c', 0) + stroke('M0 -560 Q-70 -590 -130 -560', '#55606c', 12) + ell(-130, -552, 24, 13, '#f2d36b', OUT, 2);
+    else { const w = 300 + (i * 37) % 90, h = 620 + (i * 53) % 280, cor = i % 3 ? '#d9a860' : '#c48a4e'; g = ret(-w / 2, -h, w, h, cor, 0, 3); for (let a = 0; a < 3; a++) for (let b = 0; b < 5; b++) g += `<rect x="${-w / 2 + 26 + a * (w - 34) / 3}" y="${-h + 34 + b * (h - 60) / 5}" width="44" height="66" fill="${(a + b * 2 + i) % 3 ? '#8a5a2e' : '#f2d36b'}"/>`; }
+    s += `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${k.toFixed(3)})" opacity="${op}">${g}</g>`;
+  }
+  return s;
+}
+function guidaoFundoSVG() {
+  const lado = (s) => `<g transform="translate(540 0) scale(${s} 1)">`
+    + stroke('M90 1500 Q260 1470 390 1420', OUT, 44) + stroke('M90 1500 Q260 1470 390 1420', '#8a9099', 34)
+    + stroke('M385 1422 L515 1372', OUT, 66) + stroke('M385 1422 L515 1372', '#26262b', 54) + '</g>';
+  return lado(1) + lado(-1);
+}
+function guidaoFrenteSVG() {
+  const espelho = (s) => `<g transform="translate(540 0) scale(${s} 1)">` + stroke('M410 1390 L470 950', OUT, 14) + stroke('M410 1390 L470 950', '#8a9099', 8) + `<ellipse cx="475" cy="880" rx="70" ry="90" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><ellipse cx="475" cy="880" rx="54" ry="74" fill="#c9dfe6"/>` + '</g>';
+  return espelho(1) + espelho(-1)
+    + shape('M150 2000 Q170 1560 350 1500 Q540 1450 730 1500 Q910 1560 930 2000Z', '#c9412f')
+    + `<circle cx="540" cy="1560" r="62" fill="#fff6e6" stroke="${OUT}" stroke-width="${T}"/>` + stroke('M540 1560 L580 1530', '#c23b3b', 6) + txt(540, 1600, 'km/h', 18, OUT);
+}
+
 /* ---------- cenários ---------- */
 function predios(cor1, cor2, janela, ceu) {
   let s = `<rect x="-700" y="-300" width="3600" height="2300" fill="${ceu}"/>`;
@@ -120,4 +159,4 @@ function mesaSVG(y) {
   for (const [x, yy] of [[190, 40], [360, 90], [720, 90], [890, 40]]) s += ell(x, y + yy, 70, 22, '#f7f4ef', OUT, 2.4) + ell(x, y + yy, 38, 11, '#e5e1da', 'none', 0);
   return s;
 }
-const CENARIOS = { rua: () => cenaRua(false), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), casa: cenaCasa };
+const CENARIOS = { vazio: () => [], rua: () => cenaRua(false), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), casa: cenaCasa };

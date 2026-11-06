@@ -7,7 +7,7 @@
 | Tico sentado na calçada | "Dez minutos depois" | O rig não tem pose sentada |
 | Bag vermelha em qualquer personagem | Cena 1 em diante | Hoje a mochila é fixa no Jão |
 | Boca e olhos da Dona Marlene e do Borracheiro | Cenas 3 e 6 | Personagens novos no mesmo rig |
-| Tico montado na moto | Fala 6 | Mostrado do quadril para cima, com `semPernas` |
+| Tico pilotando | Fala 6 | Mostrado do quadril para cima, com `semPernas` |
 | Bolo apoiado na mão | Cena 3 | Fica sempre nivelado, como uma bandeja |
 | Objetos novos na mão: chave, bolo, chave de roda, pão com vela | Cenas 1, 3 e 6 | Hoje só existem `phone` e `cup` |
 
@@ -28,4 +28,4 @@ Valores iniciais, a ajustar no estúdio.
 
 ## Pilotagem
 
-A moto fica de perfil, e o piloto aparece do quadril para cima, virado para a câmera. Vista lateral dos humanos segue fora do rig.
+Visão do guidão: a câmera fica presa nele, voltada para o piloto, e a estrada foge atrás. O rig mostra o piloto do quadril para cima, com `semPernas`. Quando a moto está parada, ela aparece de perfil, ao lado do personagem. Vista lateral dos humanos segue fora do rig.

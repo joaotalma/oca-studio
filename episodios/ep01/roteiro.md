@@ -41,7 +41,7 @@
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 6 | 10,0–12,0 | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | feliz | **Depoimento:** para a câmera, pilotando a moto pela rua. Na tela: "Tiago Almeida, entregador há 4 minutos" | Médio, acompanhando | Ao fim da frase, explosão: POW! |
+| 6 | 10,0–12,0 | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | feliz | **Depoimento:** pilotando, de frente para a câmera presa no guidão, com a rua fugindo atrás dele. Na tela: "Tiago Almeida, entregador há 4 minutos" | Câmera no guidão | Ao fim da frase, explosão atrás dele: POW! A imagem treme |
 | 7 | 12,5–14,0 | Tico | @*#&(*!@&#! | bravo, veia | Primeiro aparece o pneu furado. Depois ele grita, com os símbolos num balão sobre a cabeça | Do pneu ao médio | Apito de censura sobre a voz |
 | 8 | 14,5–16,5 | Tico | Como é que eu resolvo isso? | preocupado | Mãos na cabeça | Médio | |
 | 9 | 17,0–20,0 | Tico | Perdi a entrega? Eu nem tenho nota e ela caiu. | pensando | Olha o celular | Close com o celular | **Objeto:** "ENTREGA PERDIDA. Sua nota caiu", na palavra "Perdi"; notificação |
@@ -159,7 +159,7 @@ São 15 planos, contando a votação. Dentro de cada plano, o enquadramento muda
 |---|---|---|
 | 1 | Falas 1–4 | Dupla, fecha no Jão |
 | 2 | Fala 5 | Dupla, com o Tico indo para a moto |
-| 3 | Fala 6 | Acompanha a moto até a explosão |
+| 3 | Fala 6 | Câmera presa no guidão, até a explosão |
 | 4 | Falas 7–10 | Do pneu furado ao Tico, ao celular e à bag |
 | 5 | Placa | Placa da borracharia |
 | 6 | Fala 11 | Close, com a lâmpada |
@@ -177,7 +177,7 @@ São 15 planos, contando a votação. Dentro de cada plano, o enquadramento muda
 
 - **Personagens novos:** o borracheiro precisa de desenho e voz, e a Dona Marlene só de desenho.
 - **Vozes:** são 4 no piloto, com o borracheiro no lugar da Dona Neide.
-- **Pilotagem:** a moto fica de perfil, e o Tico aparece da cintura para cima, de frente para a câmera.
+- **Pilotagem:** visão do guidão, com a câmera voltada para o piloto, e a estrada em perspectiva ao fundo.
 - **Cenários:** rua, com a esquina como trecho dela, borracharia, porta do conjunto e casa da Marlene. São 2 a mais que os previstos no kit, e a kitnet fica para depois.
 - **Moto:** tem cerca de 2 m em escala com os personagens.
 - **Objetos novos:** bolo com vela, interfone, chave da moto, chave de roda, pão com vela e a placa "Crush de infância".
