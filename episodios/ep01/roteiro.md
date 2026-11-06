@@ -30,7 +30,7 @@
 | 1 | 0,0–3,0 | Tico | Jão, três meses desempregado. Me empresta a Companheira? | envergonhado | Olha para o chão, de chinelo | Dupla, com a moto | Rua ao fundo |
 | 2 | 3,0–6,0 | Jão | Pega, irmão. Mas olha: furou, o prejuízo é teu. | neutro | Estende a chave sem pensar | Dupla | |
 | 3 | 6,0–6,6 | Tico | Fechado. | feliz | Pega a chave | Dupla | |
-| 4 | 6,8–9,3 | Jão | E entregador não sobe. Desce quem pediu. | bravo | Aponta para o alto, sério | Close do Jão | |
+| 4 | 6,8–9,3 | Jão | E entregador não sobe. Desce quem pediu. | neutro | Aponta para o alto, como quem ensina | Close do Jão | |
 | 5 | 9,3–11,0 | Tico | Jão, é meu primeiro dia. | surpreso | | Close do Tico | |
 | 6 | 11,0–12,5 | Jão | Por isso mesmo. | feliz | Põe a bag no ombro dele e dá dois tapinhas | Dupla | Tapinhas no ombro |
 
@@ -86,7 +86,7 @@
 | 25 | 71,0–72,0 | Lua | Escuta aqui, seu... | bravo | Abre a porta de crachá, com o dedo em riste, e congela | Dupla | Porta batendo, depois silêncio |
 | | 72,0–73,0 | | **Na tela: placa "Crush de infância" com seta para a Lua** | surpreso (os dois) | A placa desce do alto, como um aviso de condomínio | Dupla | Plim |
 | 26 | 73,0–75,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Baixa o dedo | Close da Lua | |
-| 27 | 75,0–76,5 | Tico | Boa noite, senhora. | envergonhado | Tira o capacete imaginário e sorri | Close do Tico | |
+| 27 | 75,0–76,5 | Tico | Boa noite, senhora. | envergonhado | Acena sem jeito e sorri | Close do Tico | |
 | 28 | 77,5–79,0 | Lua | Você não mudou nada. | rindo | Risada alta de verdade, e ele ri junto | Close dos dois | Antes da fala, só a risada |
 | 29 | 79,5–81,5 | Lua | Espera... você é entregador? | preocupado | Olha para a bag, depois para ele | Close da Lua | Grave só neste impacto |
 | | 81,5–83,0 | | **Silêncio e corte** | | Tico abre a boca. O Fiscal, com uma coxinha na boca, enche o peito para latir | Close do Tico, depois do Fiscal | Silêncio; corte seco antes do latido |
@@ -156,4 +156,4 @@ São 15 planos, mais a tela de votação. A coluna "Plano" das falas indica o en
 - **Cenários:** rua, com a esquina e a borracharia como trechos dela, e porta do conjunto. A kitnet fica para depois.
 - **Objetos novos:** coxinhas, pneu que murcha, interfone, chave da moto e a placa "Crush de infância".
 - **Nomes:** "Esperança" é fictício, e o app não é nomeado.
-- **Cena 2 e bíblia:** o episódio 1 da bíblia ainda traz outra história. Ver a conferência do roteiro.
+- **Bíblia:** o episódio 1 e a votação descritos lá ainda trazem a versão anterior.
