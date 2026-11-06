@@ -15,6 +15,20 @@ Fonte completa: `docs/BIBLIA.md`. Antes de escrever, releia a bíblia e `episodi
 
 No episódio 1 não há votação anterior: os 12 s iniciais precisam abrir no meio da ação por conta própria. Os 12 s de abertura são trocáveis; os outros 78 s não dependem do voto.
 
+## O fio e as cenas
+
+Escreva primeiro o fio, em uma frase, e uma tabela de como ele avança em cada cena. Sem isso, não escreva falas.
+
+- **Um fio só:** uma promessa, prazo ou contradição aparece cedo, muda em toda cena e se paga no clímax. Cada cena fica mais perto do desastre.
+- **Toda cena fecha:** alguém quer algo, encontra um obstáculo, algo vira e a cena termina num fecho que puxa a próxima. Escreva esses quatro itens acima da tabela de falas.
+- **Conversa, não monólogo:** a piada precisa de alguém para reagir. Se o personagem está sozinho, dê a ele um parceiro, como um áudio, o Fiscal ou um objeto que desobedece.
+- **A piada vem da lógica do personagem:** o Jão não empresta moto para patrão, a mãe aumenta tudo por amor, o Tico transforma tudo em eufemismo. Se a fala serviria para qualquer um, troque.
+- **Palavra engraçada no fim:** a frase acaba na palavra que vira o sentido. Quem prepara a piada é o outro personagem.
+- **Repetição que cresce:** uma piada volta maior ou com sentido novo, e o título ou objeto do começo reaparece no fim.
+- **Um momento de verdade na comédia:** por um instante alguém deixa de fingir. Depois, a piada volta mais perigosa.
+
+Use outras séries só para estudar estrutura. Nunca reaproveite falas, situações ou personagens.
+
 ## Texto
 
 - De 200 a 230 palavras. A primeira fala já é ação, e cada fala precisa ser uma imagem desenhável.

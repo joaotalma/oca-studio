@@ -1,77 +1,101 @@
 # Episódio 1: Entregue
 
-**Em 3 frases:** Tico, desempregado, conta à mãe e até ao público que tem uma empresa de logística, enquanto faz entregas empurrando a moto emprestada do Jão. O app marca o jantar como entregue antes de ele chegar, e o jantar some da bag. Na porta está a Lua, que já leu sobre a "empresa" no grupo do prédio, e o áudio do Jão quase entrega tudo.
+**O fio:** quanto mais a empresa inventada cresce na boca dos outros, mais a vida real do Tico encolhe, até as duas se encontrarem na porta da Lua.
+
+**Em 3 frases:** Tico, desempregado, diz à mãe que tem uma empresa de logística e sai para fazer uma entrega com a moto emprestada do Jão, que precisa voltar às dez. Enquanto a mãe aumenta a "empresa" no grupo do prédio, o app some com o jantar e ainda cobra por ele. Na porta está a Lua, que acredita em tudo, até o áudio do Jão tocar.
 
 - **Mentira:** "Tenho uma empresa de logística."
-- **Absurdo:** o que o app declara passa a ser verdade, e todos tratam isso como burocracia.
-- **Aprendizado:** pedir ajuda não é fracassar. Ele chega na abertura do episódio 2, seja qual for o voto, e já aparece de raspão no pedido ao público.
-- **Marco da temporada:** reencontro e primeira mentira.
+- **Absurdo:** o que alguém declara passa a valer mais que a realidade, seja o app, seja a mãe.
+- **Aprendizado:** pedir ajuda não é fracassar. Ele chega na abertura do episódio 2, seja qual for o voto.
+- **Título:** "entregue" é o status do jantar e também o que o Tico fica no final.
 - **Tempos:** PROVISÓRIOS, estimados até termos as vozes.
-- **Depoimento:** o personagem fala direto para a câmera, com o nome na tela. Ninguém explica quem está filmando.
 
-## Falas
+## Como o fio avança
 
-### Rua, noite: o orgulho (0–13 s)
+| Cena | A empresa na boca dos outros | A vida real |
+|---|---|---|
+| 1 | Mãe ouve: "uma empresa de logística" | Empurra uma moto enguiçada |
+| 2 | Jão: "patrão" | A moto nem é dele e tem hora para voltar |
+| 3 | Mãe: "três motos", depois "plano de saúde" | Perde o jantar e fica devendo R$ 47,90 |
+| 4 | Lua: "trinta funcionários" e um convite para visitar | Tem uma bag vazia |
+| 5 | Jão, no áudio: "entregador" | A verdade fica a uma frase de sair |
 
-Não há votação anterior: o episódio já abre no meio da ação.
+## Cenas
 
-| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
-|---|---|---|---|---|---|---|---|
-| 1 | 0,0–2,5 | Tico | Anda, Companheira! Não me faz passar vergonha. | cansado | Empurra a moto | Dupla, Tico e moto | Passos, motor engasgando |
-| 2 | 2,5–4,0 | Dona Neide | Filho, arrumou serviço? | | Pega o celular | Fecha aos poucos | Áudio de WhatsApp |
-| 3 | 4,0–8,0 | Tico | Tô em transição de carreira, mãe. Tenho uma empresa de logística. | forcado | Fala no celular | Médio | |
-| 4 | 8,0–9,7 | Dona Neide | Ai, meu filho... que orgulho. | | | Médio | Áudio de WhatsApp |
-| | 9,7–12,7 | | **Riso que engasga: silêncio** | triste | Abaixa o celular, sem olhar para a câmera | Close sem fala | Silêncio total |
+### 1. Rua, noite: o orgulho (0–12 s)
 
-### Rua: o bico (13–22 s)
-
-| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
-|---|---|---|---|---|---|---|---|
-| 5 | 13,0–16,5 | Jão | A moto é minha, a bag é minha, o prejuízo é teu! | bravo | Aponta e joga a bag | Dupla | Impacto da bag |
-| 6 | 16,5–17,7 | Tico | Já já eu resolvo. | forcado | Pega a bag | Dupla | |
-| 7 | 17,7–19,8 | Jão | Esse app bloqueia até pensamento, viu? | preocupado | Dá de ombros | Close do Jão | |
-| 8 | 19,8–22,0 | Tico | Conjunto Esperança? Eu cresci lá. | surpreso | Olha o celular | Close do Tico | Notificação |
-
-### Rua: a escalada (22–52 s)
+**Quer:** parecer bem para a mãe. **Obstáculo:** ela pergunta. **Virada:** ele inventa a empresa. **Fecho:** o orgulho dela dói.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 9 | 22,5–25,5 | Tico | Empresa de logística é isso: o dono empurra a frota. | forcado | **Depoimento:** para a câmera, ofegante, apoiado na moto. Na tela: "Tiago Almeida, Fundador e CEO" | Médio, frontal | Passos param |
-| 10 | 26,0–28,0 | Tico | Esse cachorro mora a seis quilômetros. | lado | Olha para longe, depois volta para a câmera | Médio, frontal | Antes da fala, Fiscal late bem ao longe |
-| 11 | 28,0–31,5 | Dona Neide | Filho, contei da tua empresa no grupo do Esperança. | | Corre empurrando a moto | Aberto, rua passando | Áudio de WhatsApp, passos |
-| 12 | 31,5–33,0 | Tico | Do Esperança, mãe?! | surpreso, suor | Para de repente | Médio | Passos param |
-| 13 | 33,5–35,5 | Tico | Entregue? Eu ainda tô na avenida. | pensando | Olha o celular | Close com o celular | **Objeto 1:** "ENTREGUE ✓ Avalie sua entrega", na palavra "Entregue"; notificação |
-| 14 | 36,0–39,0 | Tico | É. Se o app entregou, o jantar foi. | cansado | Abre a bag vazia | Bag e rosto | Isopor rangendo |
-| 15 | 39,5–42,5 | Tico | Para contestar, envie foto do jantar desaparecido. | lado | Lê o celular | Close com o celular | **Objeto 2:** formulário, na palavra "contestar" |
-| 16 | 43,0–46,0 | Tico | E ainda me cobraram quarenta e sete e noventa. | triste | Lê o celular | Close | Formulário mostra "R$ 47,90" |
-| 17 | 46,0–47,5 | Tico | Tudo bem. É investimento. | forcado | Guarda o celular | Close | |
-| 18 | 48,0–52,0 | Tico | Entrega é entrega. Eu levo a bag. O jantar é detalhe. | forcado | Fecha a bag e volta a empurrar | Aberto | Passos |
+| 1 | 0,0–1,5 | Tico | Anda, Companheira! | cansado | Empurra a moto | Dupla, Tico e moto | Passos, motor engasgando |
+| 2 | 1,5–3,0 | Dona Neide | Filho, arrumou serviço? | | Pega o celular | Fecha aos poucos | Áudio de WhatsApp |
+| 3 | 3,0–7,0 | Tico | Tô em transição de carreira, mãe. Tenho uma empresa de logística. | forcado | Fala no celular | Médio | |
+| 4 | 7,0–8,7 | Dona Neide | Ai, meu filho... que orgulho. | | | Médio | Áudio de WhatsApp |
+| | 8,7–11,7 | | **Riso que engasga: silêncio** | triste | Abaixa o celular, sem olhar para a câmera | Close sem fala | Silêncio total |
 
-### Porta do conjunto: a complicação (52–74 s)
+### 2. Rua: o patrão (12–23 s)
+
+**Quer:** continuar com a moto. **Obstáculo:** o Jão ouviu "empresa", e ele não empresta moto para patrão. **Virada:** Tico vira a mentira em piada de trabalhador. **Fecho:** o coração mole do Jão vence, mas com hora marcada.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 19 | 52,5–54,0 | Tico | Boa noite, entrega do... | neutro | Acena para a porta | Médio, com Fiscal ao lado | Porta |
-| 20 | 54,0–56,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Abre a porta, crachá no pescoço | Dupla, a câmera se aproxima | |
-| 21 | 56,0–60,5 | Lua | Você é o dono da empresa de logística! Sua mãe postou no grupo! | feliz | Mostra o celular | Close da Lua | |
-| 22 | 60,5–62,0 | Tico | Exatamente. | forcado, suor | Esconde a bag atrás do corpo | Close do Tico | Fiscal late uma vez |
-| 23 | 62,5–65,0 | Tico | Tô só acompanhando a operação na ponta. | forcado, suor | Cruza os braços. **Fiscal olha para a câmera** | Dupla | Fiscal late duas vezes |
-| 24 | 65,5–66,5 | Lua | Que máximo. | forcado | Sorri para ele | Dupla | |
-| 25 | 66,5–68,5 | Lua | Comigo tá tudo ótimo. | forcado | **Depoimento:** para a câmera, na porta. Na tela: "Luana Barros, Analista". Ao ouvir o latido, o sorriso trava | Close, frontal | Fiscal late baixinho |
-| 26 | 68,5–69,5 | Lua | E meu jantar? | neutro | De volta à porta, estende a mão | Dupla | |
-| 27 | 69,5–71,5 | Tico | Segundo o sistema, você já jantou. | forcado | Mostra a bag vazia. **Olha para a câmera por 0,7 s** | Dupla | |
-| 28 | 71,5–74,0 | Lua | Você não mudou nada. Me leva pra conhecer a empresa? | rindo, depois feliz | Risada alta, depois olha para ele | Close dos dois | Fiscal late sem parar |
+| 5 | 12,0–14,5 | Jão | Empresa?! Tu virou patrão com a minha moto? | bravo | Aponta para a moto | Dupla | Passos, impacto do pé no chão |
+| 6 | 14,5–17,5 | Tico | Patrão e funcionário. Hoje de manhã eu me demiti. | forcado | Dá de ombros | Dupla | |
+| 7 | 17,5–19,0 | Jão | E recebeu os direitos? | pensando | Cruza os braços | Close do Jão | |
+| 8 | 19,0–20,0 | Tico | Tô me devendo. | cansado | | Close do Tico | |
+| 9 | 20,5–22,5 | Jão | Às dez, a Companheira volta. | neutro | Solta o ar e joga a bag | Dupla | Impacto da bag |
 
-### Porta do conjunto: o clímax cortado (74–82 s)
+### 3. Rua: a empresa cresce (23–52 s)
+
+**Quer:** entregar um jantar. **Obstáculo:** o app e a própria mãe. **Virada:** o destino é justamente o prédio onde a mentira está circulando. **Fecho:** ele deseja que a empresa fosse real.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 29 | 74,0–77,5 | Jão | Ô, Tico! Já são dez horas, entregador! Cadê a minha moto? | surpreso, suor (Tico) | Áudio toca sozinho; Tico tenta esconder o celular | Close do celular e do rosto | Áudio de WhatsApp, alto |
-| | 77,5–79,0 | | **Silêncio** | | Lua olha para a moto | Move da moto até a Lua | Silêncio total |
-| 30 | 79,0–81,5 | Lua | Tico... de quem é essa moto? | preocupado | | Close da Lua | Grave só neste impacto |
-| | 81,5–82,0 | | **Corte** | | Fiscal enche o peito para latir | Close do Fiscal | Corte seco antes do latido |
+| 10 | 23,0–26,0 | Tico | Empresa de logística é isso: o dono empurra a frota. | forcado | **Depoimento:** para a câmera, ofegante, apoiado na moto. Na tela: "Tiago Almeida, Fundador e CEO" | Médio, frontal | Passos param |
+| 11 | 26,7–28,7 | Tico | Esse cachorro mora a seis quilômetros. | lado | Olha para longe, depois volta para a câmera | Médio, frontal | Antes da fala, Fiscal late bem ao longe |
+| 12 | 29,0–31,0 | Tico | Jantar pro Esperança. Eu cresci lá. | neutro | Empurra a moto, olhando o celular | Aberto, rua passando | Notificação, passos |
+| 13 | 31,0–33,5 | Dona Neide | Contei da empresa no grupo do Esperança. | | Continua empurrando | Aberto | Áudio de WhatsApp |
+| 14 | 33,5–34,8 | Tico | Do Esperança, mãe?! | surpreso, suor | Para de repente | Médio | Passos param |
+| 15 | 34,8–36,0 | Dona Neide | Botei três motos. | | Olha para a única moto, que solta uma peça | Médio | Áudio de WhatsApp, peça caindo |
+| 16 | 36,5–38,5 | Tico | Entregue? Eu ainda tô na avenida. | pensando | Olha o celular | Close com o celular | **Objeto 1:** "ENTREGUE ✓ Avalie sua entrega", na palavra "Entregue"; notificação |
+| 17 | 38,5–41,5 | Tico | É. Se o app entregou, o jantar foi. | cansado | Abre a bag vazia | Bag e rosto | Isopor rangendo |
+| 18 | 42,0–44,5 | Tico | Para contestar, envie foto do jantar desaparecido. | lado | Lê o celular | Close com o celular | **Objeto 2:** formulário, na palavra "contestar" |
+| 19 | 44,5–47,5 | Tico | Quarenta e sete e noventa. É investimento. | forcado | Lê o celular | Close | Formulário mostra "R$ 47,90" |
+| 20 | 47,5–49,5 | Dona Neide | Botei plano de saúde também. | | Tico ergue os olhos do celular | Close | Áudio de WhatsApp |
+| 21 | 50,0–52,0 | Tico | Eu queria trabalhar nessa empresa. | triste | Fecha a bag e volta a empurrar | Close que abre | Passos |
 
-### Votação (82–90 s)
+### 4. Porta do conjunto: a Lua (52–77 s)
+
+**Quer:** entregar e sair. **Obstáculo:** quem abre é a Lua, que já ouviu a versão da mãe. **Virada:** ela também finge, e os dois riem de verdade por um instante. **Fecho:** o convite que ele não pode aceitar, e aceita.
+
+| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
+|---|---|---|---|---|---|---|---|
+| 22 | 53,0–55,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Abre a porta, crachá no pescoço; Tico trava com a mão no interfone | Dupla, a câmera se aproxima, com Fiscal ao lado | Interfone, porta |
+| 23 | 55,0–57,5 | Lua | Trinta funcionários! Tua mãe postou no grupo! | feliz | Mostra o celular | Close da Lua | |
+| 24 | 57,5–58,5 | Tico | Exatamente. | forcado, suor | Esconde a bag atrás do corpo | Close do Tico | Fiscal late uma vez |
+| 25 | 59,0–60,5 | Lua | E o dono veio entregar? | pensando | Inclina a cabeça | Dupla | |
+| 26 | 60,5–63,0 | Tico | Tô acompanhando a operação na ponta. | forcado, suor | Cruza os braços. **Fiscal olha para a câmera** | Dupla | Fiscal late duas vezes |
+| 27 | 63,5–66,0 | Lua | Ótima! Hoje saí cedo: nove e meia. | forcado | Ajeita o crachá | Close da Lua | |
+| 28 | 66,0–67,5 | Lua | Comigo tá tudo ótimo. | forcado | **Depoimento:** para a câmera, na porta. Na tela: "Luana Barros, Analista". Ao ouvir o latido, o sorriso trava | Close, frontal | Fiscal late baixinho |
+| 29 | 68,0–69,0 | Lua | E meu jantar? | neutro | De volta à porta, estende a mão | Dupla | |
+| 30 | 69,0–71,0 | Tico | Segundo o sistema, você já jantou. | forcado | Mostra a bag vazia. **Olha para a câmera por 0,7 s** | Dupla | |
+| 31 | 71,7–73,0 | Lua | Você não mudou nada. | rindo | Risada alta de verdade; ele ri junto | Close dos dois | Só a risada |
+| 32 | 73,0–75,0 | Lua | Me leva pra conhecer a empresa? | feliz | O riso dele morre | Close dos dois | |
+| 33 | 75,0–76,5 | Tico | Claro. Já já eu resolvo. | forcado, suor | | Close do Tico | Fiscal late sem parar |
+
+### 5. Porta do conjunto: o clímax cortado (77–83 s)
+
+**Quer:** sustentar a história. **Obstáculo:** a hora marcada do Jão chega. **Fecho:** "entregue".
+
+| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
+|---|---|---|---|---|---|---|---|
+| 34 | 77,0–79,5 | Jão | Ô, Tico! Dez horas, entregador! Cadê minha moto? | surpreso, suor (Tico) | Áudio toca sozinho; Tico tenta esconder o celular | Close do celular e do rosto | Áudio de WhatsApp, alto |
+| | 79,5–80,5 | | **Silêncio** | | Lua olha para a moto | Move da moto até a Lua | Silêncio total |
+| 35 | 80,5–82,5 | Lua | Tico... de quem é essa moto? | preocupado | | Close da Lua | Grave só neste impacto |
+| | 82,5–83,0 | | **Corte** | | "ENTREGUE ✓" brilha no celular dele; o Fiscal enche o peito para latir | Close do Fiscal | **Objeto 1 de volta**; corte seco antes do latido |
+
+### Votação (83–90 s)
 
 Tico em depoimento, de lado na tela, com as opções ao lado dele:
 
@@ -83,7 +107,7 @@ Tico em depoimento, de lado na tela, com as opções ao lado dele:
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 31 | 83,0–86,0 | Tico | Não tô pedindo ajuda. Mas... A ou B? | forcado, suor | **Depoimento:** para a câmera, em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
+| 36 | 84,0–87,0 | Tico | Não tô pedindo ajuda. Mas... A ou B? | forcado, suor | **Depoimento:** para a câmera, em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
 
 ## Piadas visuais
 
@@ -98,9 +122,9 @@ Tico em depoimento, de lado na tela, com as opções ao lado dele:
 
 - **Fiscal:** o latido de longe prepara o público para a regra do cachorro antes de ele aparecer na porta.
 - **Lua também mente:** o depoimento dela é desmentido pelo Fiscal, e ninguém comenta na cena.
-- **Grupo do Esperança:** a mentira agora tem plateia, a partir da Dona Neide.
+- **Grupo do Esperança:** "trinta funcionários e plano de saúde" agora é a versão oficial.
 - **Dívida de R$ 47,90:** volta como consequência.
-- **Convite para conhecer a empresa:** continua aberto.
+- **Convite para conhecer a empresa:** ele aceitou, e o próximo bico já nasce com essa dívida.
 - **"Não tô pedindo ajuda":** o público participa do defeito do Tico. A frase pode virar a marca fixa da votação.
 
 ## Aberturas do episódio 2
@@ -117,24 +141,23 @@ São 15 planos, mais a tela de votação. A coluna "Plano" das falas indica o en
 | Plano | Falas | Câmera |
 |---|---|---|
 | 1 | 1–4 e silêncio | Aproxima devagar da dupla com a moto até o close |
-| 2 | 5–8 | Dupla Jão e Tico, vai do Jão para o Tico |
-| 3 | 9–10 | Depoimento do Tico, câmera quase parada |
-| 4 | 11–12 | Aberto, acompanhando a corrida até ele parar |
-| 5 | 13–14 | Aproxima do celular e desce até a bag |
-| 6 | 15–17 | Close com o celular |
-| 7 | 18 | Aberto, acompanhando |
-| 8 | 19–20 | Aproxima da porta até a dupla |
-| 9 | 21–22 | Vai da Lua para o Tico |
-| 10 | 23–24 | Dupla, com o Fiscal |
-| 11 | 25 | Depoimento da Lua, câmera quase parada |
-| 12 | 26–28 | Dupla, fecha até o close dos dois |
-| 13 | 29 | Close do celular e do rosto |
-| 14 | Silêncio e 30 | Vai da moto até o close da Lua |
-| 15 | Corte | Close do Fiscal |
+| 2 | 5–9 | Dupla, vai do Jão para o Tico e volta |
+| 3 | 10–11 | Depoimento do Tico, câmera quase parada |
+| 4 | 12–15 | Aberto, acompanhando até ele parar |
+| 5 | 16–17 | Aproxima do celular e desce até a bag |
+| 6 | 18–19 | Close com o celular |
+| 7 | 20–21 | Close que abre até o aberto |
+| 8 | 22–24 | Aproxima da porta, vai da Lua para o Tico |
+| 9 | 25–26 | Dupla, com o Fiscal |
+| 10 | 27 | Close da Lua |
+| 11 | 28 | Depoimento da Lua, câmera quase parada |
+| 12 | 29–33 | Dupla, fecha até o close dos dois e termina no Tico |
+| 13 | 34 | Close do celular e do rosto |
+| 14 | Silêncio e 35 | Vai da moto até o close da Lua |
+| 15 | Corte | Do celular para o close do Fiscal |
 
 ## Para conferir na produção
 
-- **Ritmo:** as falas apertadas estão listadas na conferência do roteiro. Reavalie com as vozes reais antes de cortar texto.
 - **Cenários:** o episódio só usa rua e porta do conjunto, então a kitnet fica para depois. Os depoimentos usam esses mesmos cenários.
 - **Vista:** humanos só têm vista de frente, por isso o Tico empurra a moto, sem pilotar. A pose de empurrar precisa ser testada ao lado da moto de perfil.
 - **Fiscal olhando para a câmera:** a cabeça dele já é desenhada de frente, então a olhada não exige desenho novo.
