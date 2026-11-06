@@ -10,6 +10,7 @@ const MOTO_S = 1.9, MOTO_Y = CHAO + 10, MOTO_X = 700;
 const moto = (x, o) => motoSVG(x, MOTO_Y, MOTO_S, o);
 const BAG_X = MOTO_X - 95, BAG_Y = MOTO_Y - 395;
 const POW = 2.7;
+const LEMBRANCA = () => .1; // lembrança: quase sem cor
 
 // Enquadramentos: rosto grande a 1,9x, centrado acima da legenda
 const C_TICO = 897, C_JAO = 1000, C_BORR = 1035, C_LUA = 955;
@@ -55,16 +56,16 @@ const ep01Planos = [
   { ini: 3.4, fim: 4.6, cena: 'rua', cam: [[3.4, 140, C_TICO, 1.9]], fundo: motoFurada, atores: RUA_TICO,
     frente: (t) => `<g opacity="${Math.min(1, (t - 3.4) / .1, (4.6 - t) / .15).toFixed(2)}">${balaoPalavraoSVG(140, 560)}</g>` },
   // Cena 1: duas horas antes
-  { ini: 4.6, fim: 7.4, cena: 'rua', cam: [[4.6, 540, 990, 1.02]], fundo: () => moto(540), atores: ESQUINA },
-  { ini: 7.4, fim: 9.6, cena: 'rua', cam: [[7.4, 850, C_JAO, 1.9]], fundo: () => moto(540), atores: ESQUINA },
-  { ini: 9.6, fim: 10.2, cena: 'rua', cam: [[9.6, 220, C_TICO, 1.9]], fundo: () => moto(540), atores: ESQUINA },
-  { ini: 10.2, fim: 12.4, cena: 'rua', cam: [[10.2, 850, C_JAO, 1.7]], fundo: () => moto(540), atores: ESQUINA },
-  { ini: 12.4, fim: 13.4, cena: 'rua', cam: [[12.4, 540, 990, 1.02]], fundo: () => moto(540), atores: ESQUINA },
+  { ini: 4.6, fim: 7.4, cena: 'rua', cam: [[4.6, 540, 990, 1.02]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
+  { ini: 7.4, fim: 9.6, cena: 'rua', cam: [[7.4, 850, C_JAO, 1.9]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
+  { ini: 9.6, fim: 10.2, cena: 'rua', cam: [[9.6, 220, C_TICO, 1.9]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
+  { ini: 10.2, fim: 12.4, cena: 'rua', cam: [[10.2, 850, C_JAO, 1.7]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
+  { ini: 12.4, fim: 13.4, cena: 'rua', cam: [[12.4, 540, 990, 1.02]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
   // Cena 2: o bolo
-  { ini: 13.4, fim: 15.8, cena: 'rua', cam: [[13.4, 450, 880, 1.2]], fundo: motoFurada, atores: RUA_TICO },
+  { ini: 13.4, fim: 15.8, cena: 'rua', cam: [[13.4, 450, 960, 1.2]], fundo: motoFurada, atores: RUA_TICO },
   { ini: 15.8, fim: 17.4, cena: 'vazio', cam: [[15.8, 540, 960, 1]], fundo: celularSVG },
   { ini: 17.4, fim: 19, cena: 'rua', cam: [[17.4, 140, C_TICO, 1.9]], fundo: motoFurada, atores: RUA_TICO },
-  { ini: 19, fim: 22, cena: 'rua', cam: [[19, 400, 960, 1.22]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
+  { ini: 19, fim: 22, cena: 'rua', cam: [[19, 420, 1040, 1.22]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
   { ini: 22, fim: 23, cena: 'rua', cam: [[22, BAG_X, 1050, 2.3]], fundo: (t) => motoFurada() + bagNaMoto(t) },
   { ini: 23, fim: 24, cena: 'rua', cam: [[23, 140, C_TICO, 1.9]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
   { ini: 24, fim: 25, cena: 'ruaBorracharia', cam: [[24, 1267, 1087, 1.15], [25, 1267, 1087, 1.5, 1]] },
@@ -75,7 +76,7 @@ const ep01Planos = [
   { ini: 29, fim: 30.5, cena: 'borracharia', cam: [[29, 680, C_BORR, 1.9]], atores: OFICINA },
   { ini: 30.5, fim: 33, cena: 'borracharia', cam: [[30.5, 300, C_TICO, 1.7]], atores: OFICINA },
   { ini: 33, fim: 36, cena: 'borracharia', cam: [[33, 680, C_BORR, 1.9]], atores: OFICINA },
-  { ini: 36, fim: 38, cena: 'ruaBorracharia', cam: [[36, 620, 1090, 1.08], [38, 500, 1240, 1.4, 2]], fundo: () => moto(640, { furado: true }) },
+  { ini: 36, fim: 38, cena: 'ruaBorracharia', cam: [[36, 560, 1170, 1.15], [38, 380, 1370, 1.55, 2]], fundo: () => moto(640, { furado: true }) },
   { ini: 38, fim: 39.5, cena: 'borracharia', cam: [[38, 680, C_BORR, 1.9]], atores: OFICINA },
   { ini: 39.5, fim: 40.5, cena: 'borracharia', cam: [[39.5, 300, C_TICO, 1.7]], atores: OFICINA },
   { ini: 40.5, fim: 41.5, cena: 'borracharia', cam: [[40.5, 600, 920, 1.5]], atores: OFICINA },
@@ -96,7 +97,7 @@ const ep01Planos = [
     fundo: () => `<rect x="150" y="${CHAO - 62}" width="520" height="62" fill="#b9b4ac" stroke="${OUT}" stroke-width="${T}"/>`,
     frente: () => interfoneSVG(860, 1120, .8, false),
     atores: [
-      { id: 'tico', x: 400, y: CHAO + 10, poses: [[62, { expr: 'rindo', bag: false, sentado: true, legL: [-40, -6], legR: [40, 6], armL: [-16, 20], armR: [58, 72] }]] },
+      { id: 'tico', x: 400, y: CHAO + 10, poses: [[62, { expr: 'rindo', bag: true, sentado: true, legL: [-40, -6], legR: [40, 6], armL: [-16, 20], armR: [58, 72] }]] },
       { id: 'fiscal', x: 790, s: .95, poses: [[62, { expr: 'feliz', tail: 40 }]] },
     ] },
   // Cena 5: a Lua
@@ -132,7 +133,8 @@ const painel = (t, u, pb) => {
 const ep01Telas = [
   // Nome no depoimento
   { ini: .1, fim: 2.65, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .2, (2.55 - s) / .25); u.cartao(120, 180, 840, 96, '#a8b94c'); u.texto('Tiago Almeida, entregador há 4 minutos', 540, 228, 38, '#2a1f22'); u.g.globalAlpha = 1; } },
-  { ini: 4.6, fim: 5.7, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .15, (1.1 - s) / .2); u.cartao(240, 220, 600, 110, '#2a1f22'); u.texto('Duas horas antes', 540, 275, 54, '#ffd83a'); u.g.globalAlpha = 1; } },
+  { ini: 4.6, fim: 13.4, desenha: (p, s, u) => { const v = u.g.createRadialGradient(540, 860, 420, 540, 960, 1120); v.addColorStop(0, 'rgba(20,20,20,0)'); v.addColorStop(1, 'rgba(20,20,20,.62)'); u.g.fillStyle = v; u.g.fillRect(0, 0, 1080, 1920); } },
+  { ini: 4.6, fim: 5.7, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .15, (1.1 - s) / .2); u.cartao(240, 220, 600, 110, '#222222'); u.texto('Duas horas antes', 540, 275, 54, '#ffffff'); u.g.globalAlpha = 1; } },
   // Painel: some no celular em tela cheia
   { ini: 13.4, fim: 15.8, desenha: (p, s, u) => painel(13.4 + s, u) },
   { ini: 17.4, fim: 75.5, desenha: (p, s, u) => painel(17.4 + s, u) },
@@ -143,14 +145,14 @@ const ep01Telas = [
     u.g.fillStyle = 'rgba(0,0,0,.78)'; u.g.fillRect(0, 0, 1080, 850);
     u.g.globalAlpha = u.sai(s / .35);
     u.texto('Comenta uma palavra:', 540, 290, 60, '#ffffff');
-    u.cartao(90, 370, 900, 200, '#f2f2f2'); u.texto('VERDADE', 540, 442, 72, '#111111'); u.texto('perde a pose', 540, 516, 40, '#444444');
-    u.cartao(90, 600, 900, 200, '#bdbdbd'); u.texto('HISTÓRIA', 540, 672, 72, '#111111'); u.texto('o Fiscal late', 540, 746, 40, '#333333');
+    u.cartao(90, 370, 900, 200, '#35d04a'); u.texto('VERDADE', 540, 442, 76, '#08280d'); u.texto('perde a pose', 540, 516, 42, '#08280d');
+    u.cartao(90, 600, 900, 200, '#ff4f6e'); u.texto('HISTÓRIA', 540, 672, 76, '#3a0612'); u.texto('o Fiscal late', 540, 746, 42, '#3a0612');
     u.g.globalAlpha = 1;
     painel(75.5 + s, u, true);
     u.cartao(240, 1500, 600, 80, '#d9d9d9'); u.texto('Tiago Almeida, indeciso', 540, 1540, 38, '#111111');
   } },
   // Pergunta no canto, durante a cena da Marlene
-  { ini: 82, fim: 87, desenha: (p, s, u) => { u.cartao(620, 120, 410, 110, 'rgba(255,246,230,.95)'); u.texto('VERDADE', 825, 156, 34, '#2a1f22'); u.texto('ou HISTÓRIA?', 825, 198, 34, '#2a1f22'); } },
+  { ini: 82, fim: 87, desenha: (p, s, u) => { u.cartao(620, 120, 410, 110, 'rgba(255,246,230,.95)'); u.texto('VERDADE', 825, 156, 34, '#1f9e33'); u.texto('ou HISTÓRIA?', 825, 198, 34, '#e0304f'); } },
 ];
 
 const EPISODIO = {

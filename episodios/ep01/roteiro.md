@@ -41,7 +41,7 @@
 
 ### 1. Esquina: o empréstimo (4,6–13,4 s)
 
-Na tela, ao abrir: **"Duas horas antes"**.
+Lembrança, com a imagem quase em preto e branco e as bordas escurecidas. Na tela, ao abrir: **"Duas horas antes"**.
 
 **Quer:** a moto para começar a trabalhar. **Obstáculo:** quase nenhum, porque o Jão é amigo. **Virada:** o prejuízo fica por conta dele. **Fecho:** um aviso que ele não leva a sério.
 
@@ -59,7 +59,7 @@ Na tela, ao abrir: **"Duas horas antes"**.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 8 | 13,6–15,6 | Tico | Como é que eu resolvo isso? | preocupado | De volta ao presente. Mãos na cabeça, ao lado da moto. O painel aparece | Médio | |
+| 8 | 13,6–15,6 | Tico | Como é que eu resolvo isso? | preocupado | De volta ao presente, com as cores. Mãos na cabeça, ao lado da moto com o pneu rasgado e murcho. O painel aparece | Médio | |
 | 9 | 15,8–18,8 | Tico | Perdi a entrega? Eu nem tenho nota e ela caiu. | pensando | Celular em tela cheia; depois o rosto dele. A nota do painel vira -0,3 | Celular, depois close | **Objeto:** "ENTREGA PERDIDA. Sua nota caiu", na palavra "Perdi"; notificação |
 | 10 | 19,0–22,0 | Tico | E o que eu faço com esse tanto de bolo? | triste | Tira a bag das costas, põe na moto e abre | Bag e rosto | |
 | | 22,0–24,0 | | **Sem fala** | preocupado | O bolo: "Feliz 80 anos, Marlene". Ele olha para o nome, sem graça | Close do bolo, depois do rosto | Silêncio curto |
@@ -115,13 +115,13 @@ Na tela, ao abrir: **"Duas horas antes"**.
 
 ### Votação (75,5–82 s)
 
-A imagem fica em preto e branco. Tico em depoimento, abaixo das opções:
+A imagem fica em preto e branco, e só as opções têm cor. Tico em depoimento, abaixo delas:
 
 **Comenta uma palavra:**
 
-**VERDADE: perde a pose**
+**VERDADE: perde a pose** (verde)
 
-**HISTÓRIA: o Fiscal late**
+**HISTÓRIA: o Fiscal late** (vermelho)
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|

@@ -12,7 +12,15 @@ const reboco = (pts, cor) => pts.map(([x, y, w, h]) => `<rect x="${x}" y="${y}" 
 
 /* ---------- objetos ---------- */
 function pneuSVG(x, y, r, murcho, giro = 0) {
-  if (murcho) return `<ellipse cx="${x}" cy="${y + r * .55}" rx="${r * 1.2}" ry="${r * .45}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><ellipse cx="${x}" cy="${y + r * .5}" rx="${r * .5}" ry="${r * .22}" fill="#8a9099" stroke="${OUT}" stroke-width="${T}"/>`;
+  if (murcho) {
+    // Aro quase no chão, com a borracha achatada embaixo e um rasgo com tiras soltas.
+    const cy = y + r * .28, ch = y + r * .92;
+    return shape(`M${x - r * 1.5} ${ch + r * .08} Q${x - r * 1.35} ${ch - r * .3} ${x - r * .85} ${ch - r * .22} Q${x - r * .55} ${ch - r * .34} ${x - r * .3} ${ch - r * .16} Q${x + r * .1} ${ch - r * .32} ${x + r * .45} ${ch - r * .16} Q${x + r * .85} ${ch - r * .34} ${x + r * 1.2} ${ch - r * .18} Q${x + r * 1.55} ${ch - r * .1} ${x + r * 1.5} ${ch + r * .08}Z`, '#26262b')
+      + `<circle cx="${x}" cy="${cy}" r="${r * .78}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><circle cx="${x}" cy="${cy}" r="${r * .6}" fill="#a7adb5" stroke="${OUT}" stroke-width="${T}"/><circle cx="${x}" cy="${cy}" r="${r * .14}" fill="#3a3a40"/>`
+      + `<path d="M${x - r * .5} ${cy} L${x + r * .5} ${cy} M${x} ${cy - r * .5} L${x} ${cy + r * .5}" stroke="#6c727a" stroke-width="${r * .08}"/>`
+      + shape(`M${x - r * .35} ${cy - r * .68} L${x - r * .1} ${cy - r * 1.12} L${x + r * .05} ${cy - r * .78} L${x + r * .32} ${cy - r * 1.05} L${x + r * .38} ${cy - r * .66}Z`, '#26262b')
+      + stroke(`M${x + r * .68} ${cy - r * .4} l${r * .4} ${-r * .18} M${x - r * .7} ${cy - r * .38} l${-r * .34} ${-r * .24}`, '#26262b', r * .13);
+  }
   return `<circle cx="${x}" cy="${y}" r="${r}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><circle cx="${x}" cy="${y}" r="${r * .55}" fill="#8a9099" stroke="${OUT}" stroke-width="${T}"/><g transform="rotate(${giro} ${x} ${y})"><path d="M${x - r * .5} ${y} L${x + r * .5} ${y} M${x} ${y - r * .5} L${x} ${y + r * .5}" stroke="#3a3a40" stroke-width="${r * .08}"/></g><circle cx="${x}" cy="${y}" r="${r * .15}" fill="#3a3a40"/>`;
 }
 function motoSVG(x, y, s, o = {}) {
