@@ -21,6 +21,8 @@ Escreva primeiro o fio, em uma frase, e uma tabela de como ele avança em cada c
 
 - **Um fio só:** uma promessa, prazo ou contradição aparece cedo, muda em toda cena e se paga no clímax. Cada cena fica mais perto do desastre.
 - **Toda cena fecha:** alguém quer algo, encontra um obstáculo, algo vira e a cena termina num fecho que puxa a próxima. Escreva esses quatro itens acima da tabela de falas.
+- **Nexo:** toda fala responde à anterior, e todo personagem tem um motivo para estar ali e um jeito de chegar. Depois de cortar uma fala, releia a vizinha.
+- **Personagem inteiro:** cada um mostra qualidade e defeito. O Jão é briguento com o sistema, mas carinhoso com os amigos; não o escreva só cobrando.
 - **Conversa, não monólogo:** a piada precisa de alguém para reagir. Se o personagem está sozinho, dê a ele um parceiro, como um áudio, o Fiscal ou um objeto que desobedece.
 - **A piada vem da lógica do personagem:** o Jão não empresta moto para patrão, a mãe aumenta tudo por amor, o Tico transforma tudo em eufemismo. Se a fala serviria para qualquer um, troque.
 - **Palavra engraçada no fim:** a frase acaba na palavra que vira o sentido. Quem prepara a piada é o outro personagem.
