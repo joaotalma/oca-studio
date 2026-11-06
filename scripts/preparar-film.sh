@@ -6,5 +6,5 @@ set -euo pipefail
 pasta="${1:?pasta do filme}"
 raiz="$(cd "$(dirname "$0")/.." && pwd)"
 motor="${TAKE_ONE:-$HOME/.claude/skills/take-one/scripts}"
-cp "$raiz/personagens/chars.js" "$pasta/chars.js"
+cp "$raiz/personagens/chars.js" "$raiz/personagens/cenarios.js" "$raiz/personagens/motor.js" "$pasta/"
 cp "$motor/export.mjs" "$motor/serve.mjs" "$motor/springs.js" "$pasta/"

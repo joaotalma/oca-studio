@@ -35,6 +35,12 @@ const CHARS = {
   bia: { key: 'bia', name: 'Bia', emoji: '📱', papel: 'Coach de mindset', desc: 'Coach de mindset: confiante e exigente. "Gratidão!" por fora, cartão estourado por dentro.', paleta: ['#e7ac87', '#342326', '#bf842a', '#c8b094'],
     skin: '#e7ac87', shade: '#bc7d60', hair: '#342326', hairHi: '#5c3e38', iris: '#49372f', cloth: '#bf842a', clothD: '#8f601f', pants: '#c8b094', pantsD: '#a48d73', shoe: 'scarpin',
     hs: 1.32, neck: 19, neckW: 15, torso: 164, sw: 48, waist: 36, hem: 47, hw: 40, armU: 90, armF: 86, ru: 11.5, re: 10, rw: 8, sleeve: .94, thigh: 150, shin: 146, rt: 22, rk: 15.5, ra: 13, lid: .16, lashes: true, prop: 'phone', browW: 3.4, jaw: 'f' },
+  borracheiro: { key: 'borracheiro', name: 'Borracheiro', emoji: '🔧', papel: 'Borracheiro', desc: 'Dono da borracharia: cansado, sem dinheiro e bom de negócio.', paleta: ['#b57f5c', '#3a3331', '#4f7f9e', '#355a73'],
+    skin: '#b57f5c', shade: '#8f6145', hair: '#3a3331', hairHi: '#6a5f5a', iris: '#4a3a2e', cloth: '#4f7f9e', clothD: '#355a73', pants: '#4f7f9e', pantsD: '#355a73', shoe: 'bota',
+    hs: 1.11, neck: 8, neckW: 27, torso: 150, sw: 74, waist: 76, hem: 74, hw: 50, armU: 84, armF: 78, ru: 19, re: 17, rw: 13, sleeve: .3, thigh: 120, shin: 116, rt: 30, rk: 24, ra: 20, lid: .4, bags: true, browW: 6, jaw: 'm', bigode: true },
+  marlene: { key: 'marlene', name: 'Dona Marlene', emoji: '🎂', papel: 'A dona do bolo', desc: 'Fez 80 anos e esperava um bolo.', paleta: ['#e3b597', '#d8d4d0', '#9c5f8a', '#6f4464'],
+    skin: '#e3b597', shade: '#bf8c70', hair: '#d8d4d0', hairHi: '#f2efec', iris: '#5a6a72', cloth: '#9c5f8a', clothD: '#6f4464', pants: '#6f4464', pantsD: '#4f2f47', shoe: 'scarpin',
+    hs: 1.0, neck: 10, neckW: 16, torso: 130, sw: 50, waist: 44, hem: 50, hw: 44, armU: 74, armF: 70, ru: 12, re: 10.5, rw: 8.5, sleeve: .9, thigh: 110, shin: 105, rt: 22, rk: 16, ra: 14, lid: .3, bags: true, lashes: false, browW: 3, jaw: 'f', oculos: true, chapeu: true, prop: 'pao' },
 };
 const EXPR = {
   neutro: { mouth: 'flat' }, cansado: { lid: .55, bags: true, browIn: -2, browY: 2, mouth: 'flat' },
@@ -97,6 +103,7 @@ function faceShape(d) {
 function hairBack(d) {
   if (d.key === 'lua') return shape('M-47 -66 C-72 -30 -72 28 -58 58 Q-48 80 -34 62 Q-22 70 -18 46 L20 46 Q24 70 36 62 Q50 80 60 58 C74 28 72 -30 47 -66Z', d.hair) + stroke('M-58 -18 Q-66 18 -52 52 M58 -18 Q66 18 52 52', d.hairHi, 2.6);
   if (d.key === 'bia') return shape('M26 -94 Q66 -104 72 -62 Q80 -8 58 44 Q46 16 40 -12 Q38 -46 30 -60Z', d.hair) + stroke('M60 -64 Q66 -22 56 20', d.hairHi, 2.6);
+  if (d.key === 'marlene') return ell(0, -100, 25, 21, d.hair, OUT, T);
   return '';
 }
 function hairFront(d) {
@@ -106,6 +113,8 @@ function hairFront(d) {
   if (d.key === 'jao') return shape('M-45 -44 Q-49 -90 -14 -99 Q24 -106 45 -74 L46 -42 Q0 -66 -45 -44Z', '#963a48') + stroke('M-42 -58 Q0 -82 44 -56', '#b65e68', 2.6) + stroke('M-22 -92 Q0 -94 22 -88', '#b65e68', 2)
     + shape('M43 -68 Q62 -76 68 -60 Q58 -60 48 -56Z', '#963a48') + shape('M44 -60 Q62 -54 62 -36 Q52 -44 42 -48Z', '#7c2f3c');
   if (d.key === 'bia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
+  if (d.key === 'borracheiro') return shape('M-44 -30 Q-52 -52 -38 -70 Q-40 -50 -34 -38Z', h) + shape('M44 -30 Q52 -52 38 -70 Q40 -50 34 -38Z', h);
+  if (d.key === 'marlene') return shape('M-44 -34 C-58 -66 -38 -92 -14 -88 C4 -100 40 -92 44 -60 Q50 -46 43 -32 Q36 -58 14 -66 Q-14 -60 -44 -34Z', h) + stroke('M-30 -68 Q-20 -80 -6 -78 M14 -82 Q28 -78 34 -62', hi, 2.6);
   return '';
 }
 function detalheSVG(tipo) {
@@ -130,15 +139,23 @@ function headSVG(d, E, pose) {
   if (kind === 'smile' && !pose.mouth) s += stroke('M-30 6 Q-27 11 -25 14 M30 6 Q27 11 25 14', sh, 1.5);
   const boca = mouthSVG(kind);
   s += d.beard ? boca.replaceAll('#4a2a2a', '#d8a98f').replaceAll('#5a3a34', '#d8a98f') : boca; // boca clara para aparecer na barba
+  if (d.bigode) s += shape('M-20 15 Q-9 8 0 13 Q9 8 20 15 Q12 22 0 18 Q-12 22 -20 15Z', '#2c2725', 1.6);
+  if (d.oculos) s += `<circle cx="-21" cy="-20" r="16" fill="none" stroke="${OUT}" stroke-width="2.6"/><circle cx="21" cy="-20" r="16" fill="none" stroke="${OUT}" stroke-width="2.6"/>` + stroke('M-5 -21 Q0 -24 5 -21', OUT, 2.6);
   s += hairFront(d);
+  if (d.chapeu) s += shape('M-26 -84 L4 -146 L30 -86 Q2 -74 -26 -84Z', '#e8736f') + stroke('M-16 -100 L20 -92 M-6 -120 L14 -114', '#f2d36b', 3) + ell(4, -150, 8, 8, '#f2d36b', OUT, 2.2);
   for (const t of [].concat(pose.detalhe || [])) s += detalheSVG(t);
   return s;
 }
 
 /* ---------- objetos, mão e pé ---------- */
+const ret2 = (x, y, w, h, fill) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2" fill="${fill}" stroke="${OUT}" stroke-width="1.8"/>`;
 function propSVG(kind) {
   if (kind === 'phone') return `<g transform="translate(-2 16) rotate(-8)">` + `<rect x="-11" y="-24" width="22" height="44" rx="4" fill="#23252f" stroke="${OUT}" stroke-width="2.4"/><rect x="-8" y="-20" width="16" height="33" rx="1.5" fill="#7fd6ee"/></g>`;
   if (kind === 'cup') return `<g transform="translate(0 15)">` + shape('M-15 -24 L15 -24 L11 18 Q0 22 -11 18Z', '#fff3d6') + fillOnly('M-13 -8 L13 -8 L12 4 L-12 4Z', '#ae5d49') + shape('M-17 -29 L17 -29 L16 -22 L-16 -22Z', '#6d4a3a', 2.2) + `</g>`;
+  if (kind === 'chave') return `<g transform="translate(2 28)">` + shape('M-3 0 L3 0 L3 28 L8 28 L8 33 L3 33 L3 38 L-3 38Z', '#c7cbd0', 1.8) + ell(0, -7, 10, 10, '#e2b13f', OUT, 2.2) + `</g>`;
+  if (kind === 'chaveRoda') return `<g transform="translate(2 18)">` + shape('M-5 0 L5 0 L6 96 L-6 96Z', '#8a9099', 2.4) + shape('M-20 92 L20 92 L16 118 L-16 118Z', '#6c727a', 2.4) + `</g>`;
+  if (kind === 'fatia') return `<g transform="translate(2 -2)">` + shape('M-24 -6 L24 -6 L14 26 L-14 26Z', '#fdf1dd') + fillOnly('M-23 -3 L23 -3 L20 6 L-20 6Z', '#e8736f') + `</g>`;
+  if (kind === 'pao' || kind === 'paoAceso') return `<g transform="translate(2 8)">` + ret2(-4, 12, 8, 42, '#7fd6ee') + (kind === 'paoAceso' ? shape('M0 82 Q10 68 0 54 Q-10 68 0 82Z', '#f2b632', 1.6) : '') + shape('M-30 -2 Q-30 -22 0 -22 Q30 -22 30 -2 Q30 14 0 14 Q-30 14 -30 -2Z', '#d99b55') + stroke('M-14 -18 Q-8 -4 -14 8 M2 -21 Q8 -6 2 11 M16 -18 Q22 -6 17 6', '#a96f35', 2.2) + `</g>`;
   return '';
 }
 function handSVG(d, side, w, a, prop) {
@@ -163,7 +180,7 @@ function legs(d, pose) {
   const out = {};
   for (const [side, nome] of [[-1, 'L'], [1, 'R']]) {
     const ang = nome === 'L' ? pose.legL : pose.legR, lift = (nome === 'L' ? pose.liftL : pose.liftR) || 0, f = 1 - .34 * lift;
-    const H = [side * d.hw * .52, 10], K = P2(H[0], H[1], ang[0], d.thigh * f), A = P2(K[0], K[1], ang[1], d.shin * f);
+    const H = [side * d.hw * .52, 10], K = P2(H[0], H[1], ang[0], d.thigh * f * (pose.sentado ? .3 : 1)), A = P2(K[0], K[1], ang[1], d.shin * f);
     out[nome] = { H, K, A, side, lift };
   }
   return out;
@@ -182,13 +199,13 @@ function lowerSVG(d, L) {
   for (const k of ['L', 'R']) { const { H, K, side } = L[k]; const m = on(H, K, .55); s += stroke(`M${r2(m[0] - side * d.rt * .45)} ${r2(m[1])} Q${r2(m[0])} ${r2(m[1] + 9)} ${r2(m[0] + side * d.rt * .2)} ${r2(m[1] + 2)}`, d.pantsD, 2); }
   return s;
 }
-function torsoSVG(d, sy) {
+function torsoSVG(d, sy, comBag) {
   const w = d.sw, wa = d.waist, he = d.hem, th = d.torso, nw = d.neckW + 4;
   const p = `M${-nw} ${sy - 4} Q${-w + 8} ${sy - 3} ${-w} ${sy + 18} Q${-w - 1} ${sy + th * .42} ${-wa} ${sy + th * .66} Q${-he} ${sy + th * .84} ${-he} ${sy + th + 8} Q0 ${sy + th + 17} ${he} ${sy + th + 8} Q${he} ${sy + th * .84} ${wa} ${sy + th * .66} Q${w + 1} ${sy + th * .42} ${w} ${sy + 18} Q${w - 8} ${sy - 3} ${nw} ${sy - 4}Z`;
   let s = shape(p, d.cloth);
   if (d.key === 'tico') s += stroke(`M${-wa + 10} ${sy + th * .6} Q${-wa + 28} ${sy + th * .72} ${-wa + 42} ${sy + th * .7} M${wa - 8} ${sy + th * .78} Q${wa - 24} ${sy + th * .86} ${wa - 44} ${sy + th * .82}`, d.clothD, 2.4);
   if (d.key === 'lua') s += stroke(`M0 ${sy + 18} L0 ${sy + th + 8}`, d.clothD, 2.2) + [40, 72, 104, 136].map(y => ell(2, sy + y, 2, 2, '#f2b88f')).join('');
-  if (d.key === 'jao') s += stroke(`M${-w + 34} ${sy + 2} L${-wa + 22} ${sy + th * .82} M${w - 34} ${sy + 2} L${wa - 22} ${sy + th * .82}`, '#171c23', 13) + stroke(`M${-wa + 16} ${sy + 72} L${wa - 16} ${sy + 72}`, '#171c23', 7) + `<rect x="-11" y="${sy + 65}" width="22" height="14" rx="3" fill="#a9acb3" stroke="${OUT}" stroke-width="2"/>`;
+  if (comBag) s += stroke(`M${-w + 34} ${sy + 2} L${-wa + 22} ${sy + th * .82} M${w - 34} ${sy + 2} L${wa - 22} ${sy + th * .82}`, '#171c23', 13) + stroke(`M${-wa + 16} ${sy + 72} L${wa - 16} ${sy + 72}`, '#171c23', 7) + `<rect x="-11" y="${sy + 65}" width="22" height="14" rx="3" fill="#a9acb3" stroke="${OUT}" stroke-width="2"/>`;
   if (d.key === 'bia') s += fillOnly(`M${-nw + 2} ${sy - 3} L0 ${sy + 76} L${nw - 2} ${sy - 3}Z`, '#24252d') + shape(`M${-nw} ${sy - 4} L-6 ${sy + 78} L-20 ${sy + 54} L${-nw - 15} ${sy + 28} L${-nw - 9} ${sy + 6}Z`, '#d09936') + shape(`M${nw} ${sy - 4} L6 ${sy + 78} L20 ${sy + 54} L${nw + 15} ${sy + 28} L${nw + 9} ${sy + 6}Z`, '#d09936') + stroke(`M0 ${sy + 78} L0 ${sy + th + 11}`, d.clothD, 2.4) + ell(6, sy + 98, 3, 3, '#e5c28a', OUT, 1.4);
   return s;
 }
@@ -204,8 +221,8 @@ function badgeSVG(d, sy) {
   if (d.key !== 'lua') return '';
   return stroke(`M-14 ${sy + 16} L0 ${sy + 52} L14 ${sy + 16}`, '#566d86', 2.6) + `<rect x="-14" y="${sy + 52}" width="28" height="36" rx="3" fill="#eef0f0" stroke="${OUT}" stroke-width="2.4"/><rect x="-9" y="${sy + 58}" width="18" height="10" rx="1" fill="#566d86"/><rect x="-9" y="${sy + 73}" width="18" height="3" fill="#a7afb7"/><rect x="-9" y="${sy + 79}" width="12" height="3" fill="#a7afb7"/>`;
 }
-function backpackSVG(d, sy) {
-  if (d.key !== 'jao') return '';
+function backpackSVG(d, sy, comBag) {
+  if (!comBag) return '';
   const w = d.sw + 26, y = sy - 22, h = d.torso + 2;
   return `<rect x="${-w}" y="${y}" width="${w * 2}" height="${h}" rx="12" fill="#b3303c" stroke="${OUT}" stroke-width="${T}"/>` + `<rect x="${-w}" y="${y + h * .56}" width="${w * 2}" height="10" fill="#e3c04a"/>` + stroke(`M${-w} ${y + 18} L${w} ${y + 18}`, '#7c1f2b', 3);
 }
@@ -228,7 +245,8 @@ function armSVG(d, side, a, sy, prop) {
   return s;
 }
 function drawChar(d, pose = {}) {
-  const Pz = Object.assign({ armL: [-9, -5], armR: [9, 5], legL: [-4, -2], legR: [4, 2], lean: 0, head: 0, expr: 'neutro', mouth: null, blink: 0, breath: 0, liftL: 0, liftR: 0, propL: null, propR: null, frente: null }, pose);
+  const Pz = Object.assign({ armL: [-9, -5], armR: [9, 5], legL: [-4, -2], legR: [4, 2], lean: 0, head: 0, expr: 'neutro', mouth: null, blink: 0, breath: 0, liftL: 0, liftR: 0, propL: null, propR: null, frente: null, sentado: false, bag: null }, pose);
+  const comBag = Pz.bag != null ? Pz.bag : d.key === 'jao';
   const E = Object.assign({}, EXPR[Pz.expr] || EXPR.neutro);
   const L = legs(d, Pz), low = Math.max(L.L.A[1], L.R.A[1]), rootY = -(low + SHOE_H[d.shoe]);
   const sy = -d.torso, hy = sy - d.neck - 49 * d.hs;
@@ -236,9 +254,9 @@ function drawChar(d, pose = {}) {
   const head = `<g transform="translate(0 ${r2(hy)}) rotate(${r2(Pz.head)} 0 ${r2(40 * d.hs)}) scale(${d.hs})">`;
   const braco = { L: armSVG(d, -1, Pz.armL, sy, Pz.propL), R: armSVG(d, 1, Pz.armR, sy, Pz.propR) };
   let s = `<g transform="translate(0 ${r2(rootY)})">`;
-  s += up + backpackSVG(d, sy) + head + hairBack(d) + '</g></g>';
+  s += up + backpackSVG(d, sy, comBag) + head + hairBack(d) + '</g></g>';
   s += lowerSVG(d, L);
-  s += up + torsoSVG(d, sy) + neckSVG(d, sy, hy) + badgeSVG(d, sy);
+  s += up + torsoSVG(d, sy, comBag) + neckSVG(d, sy, hy) + badgeSVG(d, sy);
   if (Pz.frente !== 'L') s += braco.L;
   if (Pz.frente !== 'R') s += braco.R;
   s += head + headSVG(d, E, Pz) + '</g>';
@@ -289,6 +307,7 @@ function drawDog(pose = {}) {
   s += stroke(`M-29 ${-33 + (E.browY || 0)} L-8 ${-33 + (E.browY || 0) + bi * .7}`, c.shade, 3.6) + stroke(`M29 ${-33 + (E.browY || 0)} L8 ${-33 + (E.browY || 0) + bi * .7}`, c.shade, 3.6);
   if (fala) { const ab = alegre ? 1 : D.mouth; s += shape(`M-15 20 Q0 ${r2(24 + 46 * ab)} 15 20Z`, '#722e37', 2.4) + (alegre ? shape('M-7 30 Q-8 49 0 49 Q8 49 7 30Z', '#d8646c', 1.8) : ''); }
   s += shape('M-20 7 Q0 -8 20 7 L15 25 Q0 33 -15 25Z', c.muzzle, 2.2) + ell(0, 7, 12, 7.5, '#2c2323') + ell(-3, 5, 3, 1.8, '#6f5b58');
+  if (D.boca === 'embalagem') s += shape('M-34 18 L34 14 L38 44 L-30 48Z', '#fff3d6') + stroke('M-24 28 L26 25 M-22 37 L10 35', '#ae5d49', 2.4);
   s += stroke('M0 14 L0 22', '#6a402e', 1.8) + (fala ? '' : stroke('M-11 23 Q0 30 11 23', '#6a402e', 2));
   s += '</g></g>';
   return s;

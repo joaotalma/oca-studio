@@ -153,25 +153,22 @@ As duas levam ao mesmo marco: sem dinheiro para repor o jantar, o Tico liga para
 
 ## Planos
 
-São 15 planos, mais a tela de votação. A coluna "Plano" das falas indica o enquadramento; dentro de cada plano abaixo, ele muda com movimento de câmera, sem corte.
+São 12 planos, contando a votação. Dentro de cada plano, o enquadramento muda com movimento de câmera, sem corte.
 
-| Plano | Falas | Câmera |
+| Plano | Trecho | Câmera |
 |---|---|---|
-| 1 | 1–5 | Dupla, indo do Tico para o Jão e voltando |
-| 2 | 6 | Depoimento, câmera quase parada, até o estouro |
-| 3 | 7–10 | Médio, fecha no celular e desce até a bag |
-| 4 | Placa e 11 | Vai da placa ao rosto, com a lâmpada |
-| 5 | 12–13 | Aberto, acompanhando a entrada do Tico |
-| 6 | 14–16 | Dupla, indo do borracheiro até a moto |
-| 7 | 17–18 | Dupla |
-| 8 | 19–20 | Close do bolo, abre até a dupla |
-| 9 | 21 | Close do Tico |
-| 10 | 22–24 | Médio na porta |
-| 11 | 25–29 | Vai do interfone para o Tico e volta |
-| 12 | "Dez minutos depois" | Aberto, com o Fiscal e a bag ao fundo |
-| 13 | 30–33 | Dupla, fecha até o close dos dois |
-| 14 | 34, silêncio e corte | Vai da Lua para o Tico e termina no Fiscal |
-| 15 | Marlene | Aproxima devagar até o close |
+| 1 | Falas 1–4 | Dupla, fecha no Jão |
+| 2 | Fala 5 | Dupla, com o Tico saindo |
+| 3 | Falas 6–10 | Do depoimento ao estouro, depois fecha no celular e desce até a bag |
+| 4 | Placa e fala 11 | Vai da placa ao rosto, com a lâmpada |
+| 5 | Falas 12–20 | Borracharia inteira, indo do Tico ao borracheiro, à moto e ao bolo |
+| 6 | Fala 21 | Close do Tico |
+| 7 | Falas 22–29 | Porta, alternando entre o interfone e o Tico |
+| 8 | "Dez minutos depois" | Aberto, com o Fiscal e a bag ao fundo |
+| 9 | Falas 30–34 e silêncio | Dupla, com closes da Lua e do Tico |
+| 10 | Corte | Close do Fiscal |
+| 11 | Votação | Médio, frontal |
+| 12 | Marlene | Aproxima devagar até o close |
 
 ## Para conferir na produção
 
