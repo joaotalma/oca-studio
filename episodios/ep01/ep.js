@@ -144,15 +144,15 @@ const ep01Telas = [
   { ini: 75.5, fim: 82, desenha: (p, s, u) => {
     u.g.fillStyle = 'rgba(0,0,0,.78)'; u.g.fillRect(0, 0, 1080, 850);
     u.g.globalAlpha = u.sai(s / .35);
-    u.texto('Comenta uma palavra:', 540, 290, 60, '#ffffff');
-    u.cartao(90, 370, 900, 200, '#35d04a'); u.texto('VERDADE', 540, 442, 76, '#08280d'); u.texto('perde a pose', 540, 516, 42, '#08280d');
-    u.cartao(90, 600, 900, 200, '#ff4f6e'); u.texto('HISTÓRIA', 540, 672, 76, '#3a0612'); u.texto('o Fiscal late', 540, 746, 42, '#3a0612');
+    u.texto('Comenta sua escolha:', 540, 290, 60, '#ffffff');
+    u.cartao(90, 370, 900, 200, '#35d04a'); u.texto('Conte a Verdade', 540, 470, 72, '#08280d');
+    u.cartao(90, 600, 900, 200, '#ff4f6e'); u.texto('Inventa uma História', 540, 700, 62, '#3a0612');
     u.g.globalAlpha = 1;
     painel(75.5 + s, u, true);
     u.cartao(240, 1500, 600, 80, '#d9d9d9'); u.texto('Tiago Almeida, indeciso', 540, 1540, 38, '#111111');
   } },
   // Pergunta no canto, durante a cena da Marlene
-  { ini: 82, fim: 87, desenha: (p, s, u) => { u.cartao(620, 120, 410, 110, 'rgba(255,246,230,.95)'); u.texto('VERDADE', 825, 156, 34, '#1f9e33'); u.texto('ou HISTÓRIA?', 825, 198, 34, '#e0304f'); } },
+  { ini: 82, fim: 87, desenha: (p, s, u) => { u.cartao(620, 120, 410, 110, 'rgba(255,246,230,.95)'); u.texto('Verdade', 825, 156, 34, '#1f9e33'); u.texto('ou História?', 825, 198, 34, '#e0304f'); } },
 ];
 
 const EPISODIO = {

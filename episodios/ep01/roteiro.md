@@ -117,11 +117,11 @@ Lembrança, com a imagem quase em preto e branco e as bordas escurecidas. Na tel
 
 A imagem fica em preto e branco, e só as opções têm cor. Tico em depoimento, abaixo delas:
 
-**Comenta uma palavra:**
+**Comenta sua escolha:**
 
-**VERDADE: perde a pose** (verde)
+**Conte a Verdade** (verde)
 
-**HISTÓRIA: o Fiscal late** (vermelho)
+**Inventa uma História** (vermelho)
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
@@ -129,7 +129,7 @@ A imagem fica em preto e branco, e só as opções têm cor. Tico em depoimento,
 
 ### 6. Casa da Marlene: o bolo tinha dona (82–87 s)
 
-**Riso que engasga.** Sem fala. "VERDADE ou HISTÓRIA?" segue pequeno no canto da tela.
+**Riso que engasga.** Sem fala. "Verdade ou História?" segue pequeno no canto da tela.
 
 | Tempo | Ação | Plano | Som |
 |---|---|---|---|
@@ -167,8 +167,8 @@ A letra e a melodia da fala 12 são originais, compostas para a cena e sintetiza
 
 As duas levam ao mesmo marco: depois da conversa, sozinho, o Tico liga para o Jão e pede ajuda pela primeira vez, para aprender o trabalho e ficar mais um dia com a moto. Ele aprende que pedir ajuda não é fracassar. E a primeira mentira de verdade passa a existir.
 
-- **Se VERDADE vencer:** "Sou. Hoje é meu primeiro dia." A Lua reage com carinho e um pouco de pena. A pena dói mais que a vergonha, e ele emenda: "Mas é só temporário, viu?" O Fiscal late.
-- **Se HISTÓRIA vencer:** "Eu? Não, tô fazendo uma pesquisa de campo." O Fiscal late sem parar. A Lua acredita, e agora ele tem uma pesquisa para sustentar.
+- **Se Verdade vencer:** "Sou. Hoje é meu primeiro dia." A Lua reage com carinho e um pouco de pena. A pena dói mais que a vergonha, e ele emenda: "Mas é só temporário, viu?" O Fiscal late.
+- **Se História vencer:** "Eu? Não, tô fazendo uma pesquisa de campo." O Fiscal late sem parar. A Lua acredita, e agora ele tem uma pesquisa para sustentar.
 
 ## Para conferir na produção
 
