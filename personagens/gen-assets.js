@@ -23,7 +23,7 @@ const cabeca = (k, expr, mouth, x, y, tam) => {
 };
 
 for (const k of Object.keys(POSES)) {
-  out(`${k}-poses.svg`, wrap('0 -720 920 760', `<g transform="translate(230 0)">${drawChar(CHARS[k], POSES[k][0])}</g><g transform="translate(690 0)">${drawChar(CHARS[k], POSES[k][1])}</g>`, 920, 760));
+  out(`${k}-poses.svg`, wrap('0 -800 920 840', `<g transform="translate(230 0)">${drawChar(CHARS[k], POSES[k][0])}</g><g transform="translate(690 0)">${drawChar(CHARS[k], POSES[k][1])}</g>`, 920, 840));
   let g = '';
   EXPR_ORDER.forEach((e, i) => {
     const x = (i % 7) * 200, y = Math.floor(i / 7) * 232;
@@ -34,17 +34,24 @@ for (const k of Object.keys(POSES)) {
 
 const xs = [170, 460, 770, 1090];
 let linha = '';
-['tico', 'lua', 'jao', 'bia'].forEach((k, i) => { linha += `<g transform="translate(${xs[i]} 700)">${drawChar(CHARS[k], {})}</g>`; });
-linha += `<g transform="translate(1440 700) scale(.9)">${drawDog({})}</g>`;
-out('elenco.svg', wrap('0 0 1720 730', linha, 1720, 730));
+['tico', 'lua', 'jao', 'bia'].forEach((k, i) => { linha += `<g transform="translate(${xs[i]} 790)">${drawChar(CHARS[k], {})}</g>`; });
+linha += `<g transform="translate(1440 790) scale(.9)">${drawDog({})}</g>`;
+out('elenco.svg', wrap('0 0 1720 820', linha, 1720, 820));
 
 // Silhueta: todas as cores viram uma só e as transparências deixam de ter efeito.
 const silhueta = (svg) => svg.replace(/#[0-9a-fA-F]{6}\b/g, SOMBRA).replace(/#[0-9a-fA-F]{3}\b/g, SOMBRA).replace(/opacity="[^"]*"/g, '');
-out('silhuetas.svg', wrap('0 0 1720 730', silhueta(linha), 1720, 730));
+out('silhuetas.svg', wrap('0 0 1720 820', silhueta(linha), 1720, 820));
 
 let bocas = '';
 ['closed', 'small', 'open', 'wide'].forEach((m, i) => { bocas += cabeca('tico', 'neutro', m, i * 230, 0, 220) + rotulo(i * 230 + 110, 243, m); });
 out('bocas.svg', wrap('0 0 920 255', bocas, 920, 255));
+
+let detalhes = '';
+['suor', 'lagrima', 'veia', 'brilho'].forEach((t, i) => {
+  const d = CHARS.tico, c = centroCabeca(d), lado = 230 * d.hs;
+  detalhes += `<svg x="${i * 230}" y="0" width="220" height="220" viewBox="${-lado / 2} ${c - lado * .52} ${lado} ${lado}">${drawChar(d, { expr: 'neutro', detalhe: t })}</svg>` + rotulo(i * 230 + 110, 243, t);
+});
+out('detalhes.svg', wrap('0 0 920 255', detalhes, 920, 255));
 
 let cao = '';
 [['stand', 'stand'], ['alerta', 'alerta'], ['latindo', 'latindo']].forEach(([estado, nome], i) => {

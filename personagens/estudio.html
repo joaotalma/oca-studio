@@ -40,6 +40,7 @@ input[type=range]{width:100%;accent-color:#b78bf1}
 <aside class="panel right"><h2>Direção de animação</h2><div class="btns" id="modes"></div>
 <h3>Expressão</h3><div class="btns four" id="expressions"></div>
 <h3>Boca (fala)</h3><div class="btns four" id="mouths"></div>
+<h3>Detalhe do rosto</h3><div class="btns four" id="details"></div>
 <h3 id="jointsTitle">Articulações (graus)</h3><div id="joints"></div>
 <h3>Opções</h3>
 <label class="control"><span>Velocidade</span><input type="range" id="speed" min="0" max="200" value="100"><output id="speedOut">100%</output></label>
@@ -58,7 +59,7 @@ const FAIXA = { head: [-30, 30], armL: [-60, 180], armR: [-60, 180], elbowL: [-1
 const NOMES_DOG = { head: 'Cabeça', tail: 'Rabo', fN0: 'Pata da frente', fN1: 'Joelho da frente', fF0: 'Frente (longe)', fF1: 'Joelho (longe)', bN0: 'Pata de trás', bN1: 'Jarrete de trás', bF0: 'Trás (longe)', bF1: 'Jarrete (longe)' };
 const REST_DOG = { head: 0, tail: 18, fN0: 8, fN1: 3, fF0: -7, fF1: -3, bN0: -7, bN1: 12, bF0: 7, bF1: 18 };
 const LABEL_MODO = { stop: 'Parado', idle: 'Respirar', walk: 'Caminhar', wave: 'Acenar', talk: 'Conversar', sad: 'Desanimado' };
-let who = 'tico', mode = 'idle', expr = null, mouth = null, phase = 0, last = performance.now(), speed = 1, zoom = 1, ang = {}, lineup = false, comProp = false;
+let who = 'tico', mode = 'idle', expr = null, mouth = null, detalhe = null, phase = 0, last = performance.now(), speed = 1, zoom = 1, ang = {}, lineup = false, comProp = false;
 const atual = () => who === 'fiscal' ? FISCAL : CHARS[who];
 const expressao = () => expr || (who === 'tico' ? 'neutro' : 'neutro');
 
@@ -103,8 +104,8 @@ function animar(p) {
   return { a, ex };
 }
 function caixa() {
-  if (lineup) return [-210, -740, 1660, 800];
-  const v = who === 'fiscal' ? [-310, -440, 620, 500] : [-250, -700, 500, 760];
+  if (lineup) return [-220, -800, 1690, 860];
+  const v = who === 'fiscal' ? [-310, -440, 620, 500] : [-290, -790, 580, 850];
   const cx = v[0] + v[2] / 2, cy = v[1] + v[3] / 2, w = v[2] / zoom, h = v[3] / zoom;
   return [cx - w / 2, cy - h / 2, w, h];
 }
@@ -115,7 +116,7 @@ function cena(a, ex) {
     for (const d of lista) { s += SOMBRA(x, 94) + `<g transform="translate(${x} 0)">${drawChar(d, { expr: expr || 'neutro', head: 0, blink: ex.blink, breath: ex.breath, mouth })}</g>`; x += 290; }
     return s + SOMBRA(x + 40, 150) + `<g transform="translate(${x + 40} 0) scale(.9)">${drawDog({ expr: expr || 'neutro', blink: ex.blink, breath: ex.breath })}</g>`; }
   if (who === 'fiscal') return SOMBRA(0, 170) + drawDog(poseDoCao(a, { expr: ex.expr || expr || 'neutro', ...ex }));
-  const d = CHARS[who], extra = { expr: ex.expr || expr || 'neutro', mouth: ex.mouth || mouth, ...(comProp ? { propR: d.prop || null } : {}) };
+  const d = CHARS[who], extra = { expr: ex.expr || expr || 'neutro', mouth: ex.mouth || mouth, detalhe, ...(comProp ? { propR: d.prop || null } : {}) };
   const p = poseDoHumano(a, { ...ex, ...extra });
   if (comProp && d.prop && mode !== 'wave' && ang.armR == null) { p.armR = [18, 150]; }
   return SOMBRA(0, d.key === 'jao' ? 130 : 96) + drawChar(d, p);
@@ -136,9 +137,10 @@ function sincroniza(a) {
 function modos() { $('modes').innerHTML = Object.entries(LABEL_MODO).map(([k, v]) => `<button class="btn ${mode === k ? 'active' : ''}" data-m="${k}">${v}</button>`).join(''); document.querySelectorAll('[data-m]').forEach(el => el.onclick = () => { mode = el.dataset.m; if (mode === 'stop') ang = { ...ultimo }; phase = 0; modos(); }); }
 function expressoes() { $('expressions').innerHTML = EXPR_ORDER.map(k => `<button class="btn ${(expr || 'neutro') === k ? 'active' : ''}" data-e="${k}">${NOMES_EXPR[k]}</button>`).join(''); document.querySelectorAll('[data-e]').forEach(el => el.onclick = () => { expr = el.dataset.e; expressoes(); }); }
 function bocas() { const L = { '': 'Auto', closed: 'Fechada', small: 'Pequena', open: 'Aberta', wide: 'Larga' }; $('mouths').innerHTML = Object.entries(L).map(([k, v]) => `<button class="btn ${(mouth || '') === k ? 'active' : ''}" data-b="${k}">${v}</button>`).join(''); document.querySelectorAll('[data-b]').forEach(el => el.onclick = () => { mouth = el.dataset.b || null; bocas(); }); $('mouths').style.opacity = who === 'fiscal' ? .45 : 1; }
+function detalhes() { const L = { '': 'Nenhum', suor: 'Suor', lagrima: 'Lágrima', veia: 'Veia', brilho: 'Brilho' }; $('details').innerHTML = Object.entries(L).map(([k, v]) => `<button class="btn ${(detalhe || '') === k ? 'active' : ''}" data-d="${k}">${v}</button>`).join(''); document.querySelectorAll('[data-d]').forEach(el => el.onclick = () => { detalhe = el.dataset.d || null; detalhes(); }); $('details').style.opacity = who === 'fiscal' ? .45 : 1; }
 function pessoas() {
   $('people').innerHTML = ELENCO.map(c => `<button class="person ${!lineup && who === c.key ? 'active' : ''}" data-p="${c.key}"><span class="emoji">${c.emoji}</span><span><b>${c.name}</b><small>${c.papel}</small></span></button>`).join('');
-  document.querySelectorAll('[data-p]').forEach(el => el.onclick = () => { who = el.dataset.p; lineup = false; mode = 'idle'; expr = null; mouth = null; ang = {}; comProp = false; tudo(); });
+  document.querySelectorAll('[data-p]').forEach(el => el.onclick = () => { who = el.dataset.p; lineup = false; mode = 'idle'; expr = null; mouth = null; detalhe = null; ang = {}; comProp = false; tudo(); });
   $('lineup').classList.toggle('active', lineup);
   const c = atual();
   $('bio').textContent = lineup ? 'Os cinco na mesma escala, para comparar altura e silhueta.' : c.desc;
@@ -146,7 +148,7 @@ function pessoas() {
   $('palette').previousElementSibling.style.display = lineup ? 'none' : '';
   $('prop').disabled = who === 'fiscal' || !CHARS[who]?.prop; $('prop').style.opacity = $('prop').disabled ? .45 : 1; $('prop').classList.toggle('active', comProp);
 }
-function tudo() { pessoas(); modos(); expressoes(); bocas(); controles(); }
+function tudo() { pessoas(); modos(); expressoes(); bocas(); detalhes(); controles(); }
 let ultimo = {};
 function quadro(t) {
   const dt = Math.min(.05, (t - last) / 1000); last = t; phase += dt * speed;
@@ -161,7 +163,7 @@ const animarVazio = () => ({});
 $('lineup').onclick = () => { lineup = !lineup; pessoas(); };
 $('speed').oninput = e => { speed = e.target.value / 100; $('speedOut').textContent = e.target.value + '%'; };
 $('zoom').oninput = e => { zoom = e.target.value / 100; $('zoomOut').textContent = e.target.value + '%'; };
-$('reset').onclick = () => { mode = 'stop'; ang = restAng(); expr = null; mouth = null; comProp = false; tudo(); };
+$('reset').onclick = () => { mode = 'stop'; ang = restAng(); expr = null; mouth = null; detalhe = null; comProp = false; tudo(); };
 $('prop').onclick = () => { comProp = !comProp; pessoas(); };
 const baixar = (nome, tipo, texto) => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([texto], { type: tipo })); a.download = nome; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 500); };
 $('export').onclick = () => { const pose = who === 'fiscal' ? poseDoCao(ultimo, { expr: expr || 'neutro' }) : poseDoHumano(ultimo, { expr: expr || 'neutro', mouth }); baixar(`se-vira-tico-${who}-pose.json`, 'application/json', JSON.stringify({ version: 12, personagem: who, modo: mode, pose }, null, 2)); };

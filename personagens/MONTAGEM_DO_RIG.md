@@ -23,6 +23,7 @@ Rig V12, em `chars.js`. Use `estudio.html` para experimentar poses e expressões
 | `head` | Inclina a cabeça para os lados |
 | `expr` | Uma das expressões de `EXPR_ORDER` |
 | `mouth` | Boca de fala: `closed`, `small`, `open`, `wide`; tem prioridade sobre a boca da expressão |
+| `detalhe` | `suor`, `lagrima`, `veia` ou `brilho`; aceita uma lista |
 | `blink` | Fecha os olhos a partir de 0,5 |
 | `breath` | Sobe o tronco, em pixels |
 | `liftL`, `liftR` | De 0 a 1: encurta a perna para o passo visto de frente |

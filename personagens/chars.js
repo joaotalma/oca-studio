@@ -3,7 +3,7 @@
 /* ================= RIG =================
    Mesma API do personagens/chars.js: drawChar(CHARS.tico, pose) e drawDog(pose) devolvem texto SVG,
    com os pés em y = 0. Pose: armL/armR/legL/legR = [junta de cima, junta de baixo], em graus absolutos a
-   partir de "reto para baixo" (negativo = esquerda da tela). Também: lean, head, expr, mouth, blink,
+   partir de "reto para baixo" (negativo = esquerda da tela). Também: lean, head, expr, mouth, detalhe, blink,
    breath, liftL, liftR, propL, propR e frente ('L' ou 'R': braço à frente do rosto).
    Regra da montagem: peças da mesma cor viram uma silhueta só (contorno por baixo, preenchimento por cima). */
 const OUT = '#2a1f22', T = 2.6;
@@ -23,18 +23,18 @@ const stroke = (d, col = OUT, sw = 2) => `<path d="${d}" fill="none" stroke="${c
 const ell = (cx, cy, rx, ry, fill, st = 'none', sw = 0, extra = '') => `<ellipse cx="${r2(cx)}" cy="${r2(cy)}" rx="${r2(rx)}" ry="${r2(ry)}" fill="${fill}" stroke="${st}" stroke-width="${sw}" ${extra}/>`;
 
 const CHARS = {
-  tico: { key: 'tico', name: 'Tico', emoji: '🩴', papel: 'Protagonista', desc: 'Protagonista: exausto, irônico e persistente.', paleta: ['#d59a6e', '#272023', '#a8b94c', '#465a72'],
+  tico: { key: 'tico', name: 'Tico', emoji: '🩴', papel: 'Protagonista', desc: 'Protagonista, vive de bicos: exausto, irônico e persistente. Prefere inventar a confessar.', paleta: ['#d59a6e', '#272023', '#a8b94c', '#465a72'],
     skin: '#d59a6e', shade: '#ad714f', hair: '#272023', hairHi: '#4b3934', iris: '#584334', cloth: '#a8b94c', clothD: '#7d9136', pants: '#465a72', pantsD: '#304054', shoe: 'chinelo',
-    hs: .95, neck: 15, neckW: 21, torso: 172, sw: 66, waist: 54, hem: 56, hw: 44, armU: 92, armF: 88, ru: 15, re: 13, rw: 10.5, sleeve: .34, thigh: 140, shin: 136, rt: 25, rk: 20, ra: 18, cuff: true, lid: .3, bags: true, stubble: true, prop: 'phone', browW: 4.2, jaw: 'm' },
-  lua: { key: 'lua', name: 'Lua', emoji: '🌙', papel: 'Colega de trabalho', desc: 'Colega de trabalho: gentil, perspicaz e expressiva.', paleta: ['#e9b18b', '#bd8641', '#ae5d49', '#454044'],
+    hs: 1.28, neck: 15, neckW: 21, torso: 172, sw: 66, waist: 54, hem: 56, hw: 44, armU: 92, armF: 88, ru: 15, re: 13, rw: 10.5, sleeve: .34, thigh: 140, shin: 136, rt: 25, rk: 20, ra: 18, cuff: true, lid: .3, bags: true, stubble: true, prop: 'phone', browW: 4.2, jaw: 'm' },
+  lua: { key: 'lua', name: 'Lua', emoji: '🌙', papel: 'Vizinha de infância', desc: 'Vizinha de infância e primeiro crush do Tico, analista: gentil e perspicaz. Responde "tá tudo ótimo" para tudo.', paleta: ['#e9b18b', '#bd8641', '#ae5d49', '#454044'],
     skin: '#e9b18b', shade: '#c98767', hair: '#bd8641', hairHi: '#e4b16c', iris: '#568276', cloth: '#ae5d49', clothD: '#814538', pants: '#454044', pantsD: '#2f2c31', shoe: 'tenis',
-    hs: .92, neck: 15, neckW: 16, torso: 152, sw: 50, waist: 37, hem: 47, hw: 44, armU: 82, armF: 78, ru: 11.5, re: 10, rw: 8, sleeve: .42, thigh: 128, shin: 126, rt: 23, rk: 16.5, ra: 14, lid: .1, lashes: true, prop: 'cup', browW: 3.2, jaw: 'f' },
-  jao: { key: 'jao', name: 'Jão', emoji: '🎒', papel: 'Entregador', desc: 'Entregador: forte, reservado e determinado.', paleta: ['#805039', '#3d4049', '#665e50', '#bd303c'],
+    hs: 1.17, neck: 15, neckW: 16, torso: 152, sw: 50, waist: 37, hem: 47, hw: 44, armU: 82, armF: 78, ru: 11.5, re: 10, rw: 8, sleeve: .42, thigh: 128, shin: 126, rt: 23, rk: 16.5, ra: 14, lid: .1, lashes: true, prop: 'cup', browW: 3.2, jaw: 'f' },
+  jao: { key: 'jao', name: 'Jão', emoji: '🎒', papel: 'Motoboy', desc: 'Motoboy e galo de luta: forte, de pavio curto e coração mole. Dono da moto Companheira.', paleta: ['#805039', '#3d4049', '#665e50', '#bd303c'],
     skin: '#805039', shade: '#563327', hair: '#1e1b1e', hairHi: '#3a2f2c', iris: '#2a2521', cloth: '#3d4049', clothD: '#282b33', pants: '#665e50', pantsD: '#49453e', shoe: 'bota',
-    hs: .98, neck: 8, neckW: 31, torso: 170, sw: 90, waist: 74, hem: 74, hw: 56, armU: 90, armF: 84, ru: 23, re: 20, rw: 15, sleeve: .3, thigh: 124, shin: 122, rt: 32, rk: 25, ra: 21, lid: .34, beard: true, browW: 6, jaw: 'm', handS: 1.3 },
-  bia: { key: 'bia', name: 'Bia', emoji: '📱', papel: 'Executiva', desc: 'Executiva: confiante, focada e exigente.', paleta: ['#e7ac87', '#342326', '#bf842a', '#c8b094'],
+    hs: 1.19, neck: 8, neckW: 31, torso: 170, sw: 90, waist: 74, hem: 74, hw: 56, armU: 90, armF: 84, ru: 23, re: 20, rw: 15, sleeve: .3, thigh: 124, shin: 122, rt: 32, rk: 25, ra: 21, lid: .34, beard: true, browW: 6, jaw: 'm', handS: 1.3 },
+  bia: { key: 'bia', name: 'Bia', emoji: '📱', papel: 'Coach de mindset', desc: 'Coach de mindset: confiante e exigente. "Gratidão!" por fora, cartão estourado por dentro.', paleta: ['#e7ac87', '#342326', '#bf842a', '#c8b094'],
     skin: '#e7ac87', shade: '#bc7d60', hair: '#342326', hairHi: '#5c3e38', iris: '#49372f', cloth: '#bf842a', clothD: '#8f601f', pants: '#c8b094', pantsD: '#a48d73', shoe: 'scarpin',
-    hs: .9, neck: 19, neckW: 15, torso: 164, sw: 48, waist: 36, hem: 47, hw: 40, armU: 90, armF: 86, ru: 11.5, re: 10, rw: 8, sleeve: .94, thigh: 150, shin: 146, rt: 22, rk: 15.5, ra: 13, lid: .16, lashes: true, prop: 'phone', browW: 3.4, jaw: 'f' },
+    hs: 1.32, neck: 19, neckW: 15, torso: 164, sw: 48, waist: 36, hem: 47, hw: 40, armU: 90, armF: 86, ru: 11.5, re: 10, rw: 8, sleeve: .94, thigh: 150, shin: 146, rt: 22, rk: 15.5, ra: 13, lid: .16, lashes: true, prop: 'phone', browW: 3.4, jaw: 'f' },
 };
 const EXPR = {
   neutro: { mouth: 'flat' }, cansado: { lid: .55, bags: true, browIn: -2, browY: 2, mouth: 'flat' },
@@ -108,6 +108,13 @@ function hairFront(d) {
   if (d.key === 'bia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
   return '';
 }
+function detalheSVG(tipo) {
+  if (tipo === 'suor') return shape('M36 -56 Q46 -40 41 -34 Q34 -29 30 -36 Q29 -44 36 -56Z', '#8fd3e8', 2) + stroke('M36 -43 Q34 -39 36 -37', '#eaf8fc', 1.6);
+  if (tipo === 'lagrima') return shape('M-29 -8 Q-21 6 -25 11 Q-31 15 -35 9 Q-36 3 -29 -8Z', '#8fd3e8', 2) + stroke('M-30 2 Q-32 6 -30 8', '#eaf8fc', 1.6);
+  if (tipo === 'veia') return stroke('M22 -68 Q27 -62 22 -56 M38 -68 Q33 -62 38 -56 M23 -70 Q30 -65 37 -70 M23 -54 Q30 -59 37 -54', '#c23b3b', 2.8);
+  if (tipo === 'brilho') { const b = (x, y, r) => fillOnly(`M${x} ${y - r} Q${x} ${y} ${x + r} ${y} Q${x} ${y} ${x} ${y + r} Q${x} ${y} ${x - r} ${y} Q${x} ${y} ${x} ${y - r}Z`, '#fff'); return b(-27, -27, 5) + b(15, -27, 5) + b(-16, -16, 2.6) + b(26, -16, 2.6); }
+  return '';
+}
 function headSVG(d, E, pose) {
   const sk = d.skin, sh = d.shade;
   let s = ell(-44, -7, 7.5, 12, sk, OUT, T) + ell(44, -7, 7.5, 12, sk, OUT, T) + stroke('M-46 -11 Q-41 -7 -44 0 M46 -11 Q41 -7 44 0', sh, 1.6);
@@ -123,7 +130,9 @@ function headSVG(d, E, pose) {
   if (kind === 'smile' && !pose.mouth) s += stroke('M-30 6 Q-27 11 -25 14 M30 6 Q27 11 25 14', sh, 1.5);
   const boca = mouthSVG(kind);
   s += d.beard ? boca.replaceAll('#4a2a2a', '#d8a98f').replaceAll('#5a3a34', '#d8a98f') : boca; // boca clara para aparecer na barba
-  return s + hairFront(d);
+  s += hairFront(d);
+  for (const t of [].concat(pose.detalhe || [])) s += detalheSVG(t);
+  return s;
 }
 
 /* ---------- objetos, mão e pé ---------- */
@@ -238,7 +247,7 @@ function drawChar(d, pose = {}) {
 }
 
 /* ---------- Fiscal ---------- */
-const FISCAL = { key: 'fiscal', name: 'Fiscal', emoji: '🐕', papel: 'Cachorro', desc: 'Cachorro: curioso, atento e leal.', paleta: ['#b97539', '#855029', '#342923', '#e2b13f'], skin: '#b97539', shade: '#855029', muzzle: '#d99759', iris: '#4c3525' };
+const FISCAL = { key: 'fiscal', name: 'Fiscal', emoji: '🐕', papel: 'Vira-lata do prédio', desc: 'Vira-lata do prédio: curioso e leal. Late sempre que alguém mente.', paleta: ['#b97539', '#855029', '#342923', '#e2b13f'], skin: '#b97539', shade: '#855029', muzzle: '#d99759', iris: '#4c3525' };
 function drawDog(pose = {}) {
   const c = FISCAL;
   const est = typeof pose === 'string' ? pose : pose.state;
