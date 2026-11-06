@@ -67,7 +67,7 @@ const ep01Planos = [
   { ini: 19, fim: 22, cena: 'rua', cam: [[19, 400, 960, 1.22]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
   { ini: 22, fim: 23, cena: 'rua', cam: [[22, BAG_X, 1050, 2.3]], fundo: (t) => motoFurada() + bagNaMoto(t) },
   { ini: 23, fim: 24, cena: 'rua', cam: [[23, 140, C_TICO, 1.9]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
-  { ini: 24, fim: 25, cena: 'ruaBorracharia', cam: [[24, 1267, 1087, 1.3]] },
+  { ini: 24, fim: 25, cena: 'ruaBorracharia', cam: [[24, 1267, 1087, 1.15], [25, 1267, 1087, 1.5, 1]] },
   { ini: 25, fim: 26, cena: 'rua', cam: [[25, 200, 830, 1.65]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO,
     frente: (t) => lampadaSVG(140, 250, sai((t - 25) / .25)) },
   // Cena 3: borracharia
@@ -159,6 +159,6 @@ const EPISODIO = {
   planos: ep01Planos,
   telas: ep01Telas,
   latidos: [61.2, 78.6],
-  impactos: [POW - .03, 65.13],
+  impactos: [POW - .03, 65.2],
   destaques: { 1: 'tudo', 3: 'companheira', 4: 'prejuízo', 6: 'sobe', 9: 'nota', 10: 'bolo', 12: 'dia', 14: 'reais', 18: 'aniversário', 20: 'você', 21: 'chance', 24: 'sobe', 28: 'isso', 34: 'entregador', 35: 'falo' },
 };
