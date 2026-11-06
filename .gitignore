@@ -14,3 +14,5 @@ episodios/*/springs.js
 episodios/*/cenarios.js
 episodios/*/motor.js
 render/*.mp3
+render/*.wav
+__pycache__/

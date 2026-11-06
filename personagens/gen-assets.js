@@ -12,7 +12,7 @@ const POSES = {
   tico: [{ expr: 'neutro' }, { armR: [18, 150], propR: 'phone', legL: [-5, -1], legR: [6, 3], lean: 2, expr: 'cansado' }],
   lua: [{ expr: 'neutro' }, { armR: [8, 150], propR: 'cup', expr: 'feliz', lean: -2 }],
   jao: [{ armL: [-38, 32], armR: [38, -32], legL: [-8, -3], legR: [8, 3], expr: 'neutro' }, { armL: [-38, 32], armR: [105, 175], legL: [-8, -3], legR: [8, 3], expr: 'bravo', lean: -3 }],
-  bia: [{ armL: [-30, 70], armR: [18, 150], propR: 'phone', expr: 'neutro' }, { armL: [-135, -168], armR: [135, 168], expr: 'rindo' }],
+  leticia: [{ armL: [-30, 70], armR: [18, 150], propR: 'phone', expr: 'neutro' }, { armL: [-135, -168], armR: [135, 168], expr: 'rindo' }],
 };
 
 // Centro da cabeça de cada personagem em pé, com a perna reta.
@@ -34,7 +34,7 @@ for (const k of Object.keys(POSES)) {
 
 const xs = [170, 460, 770, 1090];
 let linha = '';
-['tico', 'lua', 'jao', 'bia'].forEach((k, i) => { linha += `<g transform="translate(${xs[i]} 790)">${drawChar(CHARS[k], {})}</g>`; });
+['tico', 'lua', 'jao', 'leticia'].forEach((k, i) => { linha += `<g transform="translate(${xs[i]} 790)">${drawChar(CHARS[k], {})}</g>`; });
 linha += `<g transform="translate(1440 790) scale(.9)">${drawDog({})}</g>`;
 out('elenco.svg', wrap('0 0 1720 820', linha, 1720, 820));
 

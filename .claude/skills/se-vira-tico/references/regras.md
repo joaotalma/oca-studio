@@ -16,7 +16,7 @@ Extraídas da aba "Plano de produção" da bíblia. São valores iniciais: calib
 
 | Item | No piloto | Total da temporada 1 |
 |---|---|---|
-| Personagens | Tico, Lua, Jão, Fiscal | + Bia; Dona Neide só como voz (áudio de WhatsApp) |
+| Personagens | Tico, Lua, Jão, Fiscal | + Letícia; Dona Marlene só como voz (áudio de WhatsApp) |
 | Gestos | 8: andar, correr, apontar, dar de ombros, esconder o celular, cruzar braços, pegar ou empurrar objeto, acenar | 12 |
 | Cenários | 3: rua, porta do conjunto, kitnet | 6: + padaria, escritório, ponto de moto |
 | Objetos | 3: moto Companheira, bag de entrega, celular com app | 5: + boleto, caixa de lembranças |

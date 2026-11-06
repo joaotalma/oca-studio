@@ -7,9 +7,9 @@ Comédia romântica animada em 2D para TikTok. Episódios verticais de 90 s, com
 - **Tico**, 31, vive de bicos: prefere inventar a confessar
 - **Lua**, 30, vizinha de infância e primeiro crush, analista: "tá tudo ótimo"
 - **Jão**, 33, motoboy: pavio curto e coração mole
-- **Bia**, 29, coach de mindset: "Gratidão!"
+- **Letícia**, 29, coach de mindset: "Gratidão!"
 - **Fiscal**, vira-lata do prédio: late quando alguém mente
-- **Dona Neide**, mãe do Tico, só voz
+- **Dona Marlene**, mãe do Tico, só voz
 
 ## Como rodar
 

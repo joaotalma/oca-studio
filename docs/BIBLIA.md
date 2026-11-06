@@ -1,4 +1,5 @@
 <!-- Cópia da aba principal da bíblia no Claude Docs, feita em 2026-11-05: https://claude.ai/artifact/GdDXy4mQ4ecj9d6Q55TMZ1 . A fonte é o documento; atualize esta cópia quando ele mudar. -->
+<!-- 2026-11-06: o autor renomeou Bia para Letícia e Dona Neide para Dona Marlene, e a Letícia entra no episódio 2. Esta cópia e o documento ainda trazem os nomes antigos, até o autor atualizar a fonte. -->
 
 # Bíblia da Série — Comédia Romântica Animada (TikTok)
 

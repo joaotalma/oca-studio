@@ -9,7 +9,7 @@
 - **Mentira:** ainda não existe. Nasce no fim, quando a Lua faz a pergunta e o público vota.
 - **Riso que engasga:** a Marlene, sozinha e sem bolo, depois da votação.
 - **Aprendizado:** pedir ajuda não é fracassar. Chega na abertura do episódio 2, quando ele liga para o Jão.
-- **Tempos:** PROVISÓRIOS, estimados até termos as vozes.
+- **Tempos:** os das tabelas são do roteiro. `scripts/sincronizar.py` leva cada um para o tempo real do áudio, e o filme final tem 86,5 s.
 
 ## Ritmo
 
@@ -74,7 +74,7 @@ Lembrança, com a imagem quase em preto e branco e as bordas escurecidas. Na tel
 |---|---|---|---|---|---|---|---|
 | 12 | 26,0–29,0 | Tico | Parabéns, meu amigo, hoje é seu grande dia! | feliz | Entra cantando, com o bolo apoiado na mão, como um garçom, e a vela acesa | Aberto | Musiquinha desafinada no celular |
 | 13 | 29,0–30,5 | Borracheiro | Hoje não é meu aniversário. | surpreso | Para com a chave de roda na mão | Close do borracheiro | A música continua |
-| 14 | 30,5–33,0 | Tico | É recado cantado. Cento e vinte reais. | neutro | Desliga a música e estende a mão livre | Close do Tico | A música para de repente |
+| 14 | 30,5–33,0 | Tico | É um recado cantado. Cento e vinte reais. | neutro | Desliga a música e estende a mão livre | Close do Tico | A música para de repente |
 | 15 | 33,0–36,0 | Borracheiro | Eu não pedi! E não tenho cento e vinte! | bravo | Aponta para a porta | Close do borracheiro | |
 | 16 | 36,0–38,0 | Tico | A gente pode acertar de outro jeito. | pensando | Corte para a moto na rua, com o pneu furado | Moto na rua | Só a voz dele |
 | 17 | 38,0–39,5 | Borracheiro | Teu pneu furou, né? | cansado | Solta o ar | Close do borracheiro | |
@@ -155,7 +155,6 @@ A letra e a melodia da fala 12 são originais, compostas para a cena e sintetiza
 
 ## O que este episódio planta
 
-- **Dona Marlene:** ela fez 80 anos sem bolo. O público sabe, e o Tico descobre em um episódio futuro e precisa reparar o erro.
 - **Painel:** dias desempregado, nota e dívida seguem de episódio em episódio.
 - **Borracheiro:** agora conhece o Tico e sabe o que ele é capaz de fazer.
 - **Fiscal e a mentira:** ele late para o "dois minutos" da Lua, que sabe que vai demorar, e prepara a regra antes da pergunta final.
@@ -177,5 +176,5 @@ As duas levam ao mesmo marco: depois da conversa, sozinho, o Tico liga para o J�
 - **Pilotagem:** visão do guidão, com a câmera voltada para o piloto, e a estrada em perspectiva ao fundo.
 - **Cenários:** rua, com a esquina como trecho dela, borracharia, porta do conjunto e casa da Marlene. A kitnet fica para depois.
 - **Moto:** tem cerca de 2 m em escala com os personagens.
-- **Nomes:** "Esperança" e "Marlene" são fictícios, e o app não é nomeado. "Bia" e "Dona Neide" coincidem com nomes de outro canal: decidir antes de eles aparecerem.
+- **Nomes:** "Esperança" e "Marlene" são fictícios, e o app não é nomeado. A Bia passou a se chamar Letícia e a Dona Neide, mãe do Tico, Dona Marlene. A idosa do bolo é piada de pós-crédito, sem volta, e o nome igual está no backlog.
 - **Bíblia:** o episódio 1, a votação, os planos, a Dona Neide neste episódio e a exceção da mentira ainda estão na versão anterior.

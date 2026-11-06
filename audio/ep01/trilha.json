@@ -1,0 +1,68 @@
+{
+ "alegre": {
+  "aprovado": true,
+  "bpm": 112,
+  "duracao_loop_s": 8.571,
+  "salto": 0.0023,
+  "salto_limite": 0.0968,
+  "degrau_dB": 16.6,
+  "degrau_limite_dB": 23.24,
+  "clique": 0.07155,
+  "clique_limite": 0.08067
+ },
+ "lembranca": {
+  "aprovado": true,
+  "bpm": 76,
+  "duracao_loop_s": 12.632,
+  "salto": 0.0038,
+  "salto_limite": 0.0355,
+  "degrau_dB": 18.48,
+  "degrau_limite_dB": 19.64,
+  "clique": 0.00027,
+  "clique_limite": 0.00097
+ },
+ "apuro": {
+  "aprovado": true,
+  "bpm": 104,
+  "duracao_loop_s": 9.231,
+  "salto": 0.0,
+  "salto_limite": 0.0229,
+  "degrau_dB": 65.18,
+  "degrau_limite_dB": 66.18,
+  "clique": 0.00027,
+  "clique_limite": 0.00039
+ },
+ "romance": {
+  "aprovado": true,
+  "bpm": 88,
+  "duracao_loop_s": 10.909,
+  "salto": 0.004,
+  "salto_limite": 0.0467,
+  "degrau_dB": 10.16,
+  "degrau_limite_dB": 11.53,
+  "clique": 0.06105,
+  "clique_limite": 0.07205
+ },
+ "voto": {
+  "aprovado": true,
+  "bpm": 120,
+  "duracao_loop_s": 4.0,
+  "salto": 0.0,
+  "salto_limite": 0.0412,
+  "degrau_dB": 19.63,
+  "degrau_limite_dB": 20.91,
+  "clique": 0.00117,
+  "clique_limite": 0.00123
+ },
+ "sozinha": {
+  "aprovado": true,
+  "bpm": 60,
+  "duracao_loop_s": 8.0,
+  "salto": 0.0104,
+  "salto_limite": 0.083,
+  "degrau_dB": 10.45,
+  "degrau_limite_dB": 11.87,
+  "clique": 0.00449,
+  "clique_limite": 0.00734
+ }
+}

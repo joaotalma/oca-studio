@@ -32,7 +32,7 @@ const CHARS = {
   jao: { key: 'jao', name: 'Jão', emoji: '🎒', papel: 'Motoboy', desc: 'Motoboy e galo de luta: forte, de pavio curto e coração mole. Dono da moto Companheira.', paleta: ['#805039', '#3d4049', '#665e50', '#bd303c'],
     skin: '#805039', shade: '#563327', hair: '#1e1b1e', hairHi: '#3a2f2c', iris: '#2a2521', cloth: '#3d4049', clothD: '#282b33', pants: '#665e50', pantsD: '#49453e', shoe: 'bota',
     hs: 1.19, neck: 8, neckW: 31, torso: 170, sw: 90, waist: 74, hem: 74, hw: 56, armU: 90, armF: 84, ru: 23, re: 20, rw: 15, sleeve: .3, thigh: 124, shin: 122, rt: 32, rk: 25, ra: 21, lid: .34, beard: true, browW: 6, jaw: 'm', handS: 1.3 },
-  bia: { key: 'bia', name: 'Bia', emoji: '📱', papel: 'Coach de mindset', desc: 'Coach de mindset: confiante e exigente. "Gratidão!" por fora, cartão estourado por dentro.', paleta: ['#e7ac87', '#342326', '#bf842a', '#c8b094'],
+  leticia: { key: 'leticia', name: 'Letícia', emoji: '📱', papel: 'Coach de mindset', desc: 'Coach de mindset: confiante e exigente. "Gratidão!" por fora, cartão estourado por dentro.', paleta: ['#e7ac87', '#342326', '#bf842a', '#c8b094'],
     skin: '#e7ac87', shade: '#bc7d60', hair: '#342326', hairHi: '#5c3e38', iris: '#49372f', cloth: '#bf842a', clothD: '#8f601f', pants: '#c8b094', pantsD: '#a48d73', shoe: 'scarpin',
     hs: 1.32, neck: 19, neckW: 15, torso: 164, sw: 48, waist: 36, hem: 47, hw: 40, armU: 90, armF: 86, ru: 11.5, re: 10, rw: 8, sleeve: .94, thigh: 150, shin: 146, rt: 22, rk: 15.5, ra: 13, lid: .16, lashes: true, prop: 'phone', browW: 3.4, jaw: 'f' },
   borracheiro: { key: 'borracheiro', name: 'Borracheiro', emoji: '🔧', papel: 'Borracheiro', desc: 'Dono da borracharia: cansado, sem dinheiro e bom de negócio.', paleta: ['#b57f5c', '#3a3331', '#4f7f9e', '#355a73'],
@@ -102,7 +102,7 @@ function faceShape(d) {
 }
 function hairBack(d) {
   if (d.key === 'lua') return shape('M-47 -66 C-72 -30 -72 28 -58 58 Q-48 80 -34 62 Q-22 70 -18 46 L20 46 Q24 70 36 62 Q50 80 60 58 C74 28 72 -30 47 -66Z', d.hair) + stroke('M-58 -18 Q-66 18 -52 52 M58 -18 Q66 18 52 52', d.hairHi, 2.6);
-  if (d.key === 'bia') return shape('M26 -94 Q66 -104 72 -62 Q80 -8 58 44 Q46 16 40 -12 Q38 -46 30 -60Z', d.hair) + stroke('M60 -64 Q66 -22 56 20', d.hairHi, 2.6);
+  if (d.key === 'leticia') return shape('M26 -94 Q66 -104 72 -62 Q80 -8 58 44 Q46 16 40 -12 Q38 -46 30 -60Z', d.hair) + stroke('M60 -64 Q66 -22 56 20', d.hairHi, 2.6);
   if (d.key === 'marlene') return ell(0, -100, 25, 21, d.hair, OUT, T);
   return '';
 }
@@ -112,7 +112,7 @@ function hairFront(d) {
   if (d.key === 'lua') return shape('M-44 -36 C-58 -90 -32 -108 -6 -101 C22 -113 52 -88 45 -36 Q38 -64 14 -80 Q-10 -56 -44 -36Z', h) + stroke('M-34 -74 Q-42 -60 -41 -48 M-12 -92 Q-24 -74 -32 -58 M20 -92 Q38 -76 41 -56', hi, 2.6);
   if (d.key === 'jao') return shape('M-45 -44 Q-49 -90 -14 -99 Q24 -106 45 -74 L46 -42 Q0 -66 -45 -44Z', '#963a48') + stroke('M-42 -58 Q0 -82 44 -56', '#b65e68', 2.6) + stroke('M-22 -92 Q0 -94 22 -88', '#b65e68', 2)
     + shape('M43 -68 Q62 -76 68 -60 Q58 -60 48 -56Z', '#963a48') + shape('M44 -60 Q62 -54 62 -36 Q52 -44 42 -48Z', '#7c2f3c');
-  if (d.key === 'bia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
+  if (d.key === 'leticia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
   if (d.key === 'borracheiro') return shape('M-44 -30 Q-52 -52 -38 -70 Q-40 -50 -34 -38Z', h) + shape('M44 -30 Q52 -52 38 -70 Q40 -50 34 -38Z', h);
   if (d.key === 'marlene') return shape('M-44 -34 C-58 -66 -38 -92 -14 -88 C4 -100 40 -92 44 -60 Q50 -46 43 -32 Q36 -58 14 -66 Q-14 -60 -44 -34Z', h) + stroke('M-30 -68 Q-20 -80 -6 -78 M14 -82 Q28 -78 34 -62', hi, 2.6);
   return '';
@@ -207,7 +207,7 @@ function torsoSVG(d, sy, comBag) {
   if (d.key === 'tico') s += stroke(`M${-wa + 10} ${sy + th * .6} Q${-wa + 28} ${sy + th * .72} ${-wa + 42} ${sy + th * .7} M${wa - 8} ${sy + th * .78} Q${wa - 24} ${sy + th * .86} ${wa - 44} ${sy + th * .82}`, d.clothD, 2.4);
   if (d.key === 'lua') s += stroke(`M0 ${sy + 18} L0 ${sy + th + 8}`, d.clothD, 2.2) + [40, 72, 104, 136].map(y => ell(2, sy + y, 2, 2, '#f2b88f')).join('');
   if (comBag) s += stroke(`M${-w + 34} ${sy + 2} L${-wa + 22} ${sy + th * .82} M${w - 34} ${sy + 2} L${wa - 22} ${sy + th * .82}`, '#171c23', 13) + stroke(`M${-wa + 16} ${sy + 72} L${wa - 16} ${sy + 72}`, '#171c23', 7) + `<rect x="-11" y="${sy + 65}" width="22" height="14" rx="3" fill="#a9acb3" stroke="${OUT}" stroke-width="2"/>`;
-  if (d.key === 'bia') s += fillOnly(`M${-nw + 2} ${sy - 3} L0 ${sy + 76} L${nw - 2} ${sy - 3}Z`, '#24252d') + shape(`M${-nw} ${sy - 4} L-6 ${sy + 78} L-20 ${sy + 54} L${-nw - 15} ${sy + 28} L${-nw - 9} ${sy + 6}Z`, '#d09936') + shape(`M${nw} ${sy - 4} L6 ${sy + 78} L20 ${sy + 54} L${nw + 15} ${sy + 28} L${nw + 9} ${sy + 6}Z`, '#d09936') + stroke(`M0 ${sy + 78} L0 ${sy + th + 11}`, d.clothD, 2.4) + ell(6, sy + 98, 3, 3, '#e5c28a', OUT, 1.4);
+  if (d.key === 'leticia') s += fillOnly(`M${-nw + 2} ${sy - 3} L0 ${sy + 76} L${nw - 2} ${sy - 3}Z`, '#24252d') + shape(`M${-nw} ${sy - 4} L-6 ${sy + 78} L-20 ${sy + 54} L${-nw - 15} ${sy + 28} L${-nw - 9} ${sy + 6}Z`, '#d09936') + shape(`M${nw} ${sy - 4} L6 ${sy + 78} L20 ${sy + 54} L${nw + 15} ${sy + 28} L${nw + 9} ${sy + 6}Z`, '#d09936') + stroke(`M0 ${sy + 78} L0 ${sy + th + 11}`, d.clothD, 2.4) + ell(6, sy + 98, 3, 3, '#e5c28a', OUT, 1.4);
   return s;
 }
 function neckSVG(d, sy, hy) {
@@ -241,7 +241,7 @@ function armSVG(d, side, a, sy, prop) {
   const skin = hem <= d.armU ? [quad(H, E, rH, d.re), circ(E, d.re), quad(E, W, d.re, d.rw)] : [quad(H, W, rH, d.rw)];
   if (dobra) s += union(fore, d.cloth);
   s += union(skin, d.skin);
-  if (d.key === 'bia') s += stroke(`M${r2(H[0] - (W[1] - E[1]) / d.armF * (rH + 1))} ${r2(H[1] + (W[0] - E[0]) / d.armF * (rH + 1))} L${r2(H[0] + (W[1] - E[1]) / d.armF * (rH + 1))} ${r2(H[1] - (W[0] - E[0]) / d.armF * (rH + 1))}`, '#f2ead8', 3.4);
+  if (d.key === 'leticia') s += stroke(`M${r2(H[0] - (W[1] - E[1]) / d.armF * (rH + 1))} ${r2(H[1] + (W[0] - E[0]) / d.armF * (rH + 1))} L${r2(H[0] + (W[1] - E[1]) / d.armF * (rH + 1))} ${r2(H[1] - (W[0] - E[0]) / d.armF * (rH + 1))}`, '#f2ead8', 3.4);
   s += handSVG(d, side, W, a[1], prop);
   return s;
 }

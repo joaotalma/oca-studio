@@ -96,7 +96,7 @@ const FALAS = [
   "ini": 30.5,
   "fim": 33,
   "quem": "Tico",
-  "texto": "É recado cantado. Cento e vinte reais."
+  "texto": "É um recado cantado. Cento e vinte reais."
  },
  {
   "n": 15,

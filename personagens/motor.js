@@ -35,8 +35,23 @@ const motor = (() => {
     return p;
   }
   function falaAtiva(id, t) { return EPISODIO.falas.find((f) => QUEM[f.quem] === id && t >= f.ini && t < f.fim); }
+  // Tempo real do áudio para o tempo do roteiro, e o inverso (tempos.js, gerado por scripts/sincronizar.py)
+  const TP = typeof TEMPOS !== 'undefined' ? TEMPOS : null;
+  const interpola = (x, de, para) => {
+    const n = TP.nos; if (x <= n[0][de]) return n[0][para];
+    for (let i = 1; i < n.length; i++) if (x <= n[i][de]) return n[i - 1][para] + (n[i][para] - n[i - 1][para]) * (x - n[i - 1][de]) / (n[i][de] - n[i - 1][de]);
+    return n[n.length - 1][para];
+  };
+  const paraRoteiro = (T) => TP ? interpola(T, 1, 0) : T;
+  const paraReal = (t) => TP ? interpola(t, 0, 1) : t;
   function boca(id, t) {
-    if (!falaAtiva(id, t)) return null;
+    const f = falaAtiva(id, t);
+    if (!f) return null;
+    const env = TP && TP.env[f.n];
+    if (env) {
+      const v = env[Math.min(env.length - 1, Math.floor((t - f.ini) / (f.fim - f.ini) * env.length))];
+      return v < .12 ? 'closed' : v < .38 ? 'small' : v < .7 ? 'open' : 'wide';
+    }
     const v = hash(Math.floor(t * 11) + FASE[id] * 9);
     return v < .2 ? 'closed' : v < .5 ? 'small' : v < .85 ? 'open' : 'wide';
   }
@@ -58,7 +73,9 @@ const motor = (() => {
     const po = { armL: [-9, -5], armR: [9, 5], ...pz, blink, breath };
     const bal = Math.sin(t * 1.5 + f) * 1.3, fala = falaAtiva(a.id, t);
     po.armL = [po.armL[0] + bal, po.armL[1] + bal * 1.6]; po.armR = [po.armR[0] + bal * .8, po.armR[1] - bal * 1.4];
-    po.head = (po.head || 0) + Math.sin(t * .9 + f) * 1.2 + (fala ? Math.sin(t * 5.3 + f) * 2.4 : 0);
+    // O balanço de cabeça entra e sai aos poucos: nunca salta no início ou no fim da fala
+    const peso = fala ? Math.min(1, (t - fala.ini) / .12, (fala.fim - t) / .12) : 0;
+    po.head = (po.head || 0) + Math.sin(t * .9 + f) * 1.2 + Math.sin(t * 5.3 + f) * 2.4 * peso;
     po.lean = (po.lean || 0) + Math.sin(t * .7 + f) * .5;
     const m = boca(a.id, t); if (m) po.mouth = m;
     return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${drawChar(CHARS[a.id], po)}</g>`;
@@ -129,9 +146,10 @@ const motor = (() => {
   const texto = (s, x, y, tam, cor = '#fff', alinha = 'center') => { g.font = `900 ${tam}px Arial Black, Arial, sans-serif`; g.textAlign = alinha; g.textBaseline = 'middle'; g.fillStyle = cor; g.fillText(s, x, y); };
   function telas(t) { for (const e of EPISODIO.telas || []) if (t >= e.ini && t < e.fim) e.desenha((t - e.ini) / (e.fim - e.ini), t - e.ini, { g, cartao, texto, sai, suave }); }
 
-  window.FILM_DURATION = EPISODIO.duracao;
-  window.CUTS = EPISODIO.planos.filter((p) => !p.continua).map((p) => p.ini).filter((t) => t > 0).concat(EPISODIO.impactos || []);
-  window.renderFrame = async (t) => {
+  window.FILM_DURATION = TP ? TP.duracao : EPISODIO.duracao;
+  window.CUTS = EPISODIO.planos.filter((p) => !p.continua).map((p) => p.ini).filter((t) => t > 0).concat(EPISODIO.impactos || []).map(paraReal);
+  window.renderFrame = async (real) => {
+    const t = paraRoteiro(real);
     const pl = EPISODIO.planos.find((p) => t >= p.ini && t < p.fim) || EPISODIO.planos[EPISODIO.planos.length - 1];
     const img = new Image();
     img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(quadroSVG(pl, t));

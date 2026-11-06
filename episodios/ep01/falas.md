@@ -30,7 +30,7 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 | `11_tico.mp3` | Tico | Ah! Já sei! | Curto, com a alegria repentina da ideia |
 | `12_tico.mp3` | Tico | Parabéns, meu amigo, hoje é seu grande dia! | Cantado de propósito desafinado, com animação profissional |
 | `13_borracheiro.mp3` | Borracheiro | Hoje não é meu aniversário. | Confuso, sem hostilidade |
-| `14_tico.mp3` | Tico | É recado cantado. Cento e vinte reais. | Seco e formal, de quem presta um serviço |
+| `14_tico.mp3` | Tico | É um recado cantado. Cento e vinte reais. | Seco e formal, de quem presta um serviço |
 | `15_borracheiro.mp3` | Borracheiro | Eu não pedi! E não tenho cento e vinte! | Indignado, subindo a voz |
 | `16_tico.mp3` | Tico | A gente pode acertar de outro jeito. | Lento, insinuando |
 | `17_borracheiro.mp3` | Borracheiro | Teu pneu furou, né? | Cansado; já entendeu tudo |

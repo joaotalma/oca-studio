@@ -9,7 +9,7 @@ Fonte completa: `docs/BIBLIA.md`. Antes de escrever, releia a bíblia e `episodi
 | 0–12 s | Desfecho da votação anterior + aprendizado | Começa no meio da ação, com legenda "Antes:" de 2 s. O Tico aprende a lição em uma fala ou gesto. Costuma ter o "riso que engasga" |
 | 12–22 s | Bico novo e mentira nova | Uma piada de sátira do dia a dia |
 | 22–52 s | Escalada do absurdo | O Tico dobra a aposta. Duas viradas, uma a cada 15 s |
-| 52–72 s | Complicação romântica | Lua, Jão ou Bia entra em cena. Maior risco de descoberta |
+| 52–72 s | Complicação romântica | Lua, Jão ou Letícia entra em cena. Maior risco de descoberta |
 | 72–82 s | Clímax cortado | Corta no pior momento, antes de qualquer resolução |
 | 82–90 s | Votação | Duas opções e a pergunta: "O que vai acontecer no próximo?" |
 
@@ -81,7 +81,7 @@ Recurso de falso documentário, em uso a partir do episódio 1. Empresta só a t
 
 ## Cuidados
 
-- Nenhuma pessoa real, partido ou candidato. Política só como tempero, e Jão e Bia erram na mesma medida.
+- Nenhuma pessoa real, partido ou candidato. Política só como tempero, e Jão e Letícia erram na mesma medida.
 - Apps e empresas sempre com nomes fictícios.
 - BoJack Horseman é referência de tom e de jeito de contar. Não reproduza personagens, paleta nem cenários.
 

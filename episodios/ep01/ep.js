@@ -1,6 +1,6 @@
 'use strict';
 // Episódio 1: dados de planos, poses e telas. Falas e tempos vêm de falas.js, gerado do roteiro.
-// TEMPOS PROVISÓRIOS: estimados até termos as vozes.
+// Os tempos aqui são os do roteiro; tempos.js os leva para o tempo real das vozes.
 const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };
 const DOWN = { armL: [-9, -5], armR: [9, 5] };
 const CELULAR = { armR: [18, 150], propR: 'phone' };
@@ -54,7 +54,7 @@ const ep01Planos = [
     atores: [{ id: 'tico', x: 540, s: 2.1, yF: (t) => 2230 + (t > POW ? -34 : Math.sin(t * 19) * 5), poses: [[0, { expr: 'feliz', bag: true, semPernas: true, armL: [-60, -62], armR: [60, 62] }], [POW, { expr: 'surpreso', detalhe: 'suor' }]] }] },
   { ini: 3, fim: 3.4, cena: 'rua', cam: [[3, 370, 1400, 1.9]], fundo: motoFurada },
   { ini: 3.4, fim: 4.6, cena: 'rua', cam: [[3.4, 140, C_TICO, 1.9]], fundo: motoFurada, atores: RUA_TICO,
-    frente: (t) => `<g opacity="${Math.min(1, (t - 3.4) / .1, (4.6 - t) / .15).toFixed(2)}">${balaoPalavraoSVG(140, 560)}</g>` },
+    frente: (t) => `<g opacity="${Math.min(1, (t - 3.4) / .1, (4.6 - t) / .32).toFixed(2)}">${balaoPalavraoSVG(140, 560)}</g>` },
   // Cena 1: duas horas antes
   { ini: 4.6, fim: 7.4, cena: 'rua', cam: [[4.6, 540, 990, 1.02]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
   { ini: 7.4, fim: 9.6, cena: 'rua', cam: [[7.4, 850, C_JAO, 1.9]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
@@ -63,7 +63,7 @@ const ep01Planos = [
   { ini: 12.4, fim: 13.4, cena: 'rua', cam: [[12.4, 540, 990, 1.02]], fundo: () => moto(540), cor: LEMBRANCA, atores: ESQUINA },
   // Cena 2: o bolo
   { ini: 13.4, fim: 15.8, cena: 'rua', cam: [[13.4, 450, 960, 1.2]], fundo: motoFurada, atores: RUA_TICO },
-  { ini: 15.8, fim: 17.4, cena: 'vazio', cam: [[15.8, 540, 960, 1]], fundo: celularSVG },
+  { ini: 15.8, fim: 17.4, cena: 'vazio', cam: [[15.8, 540, 960, 1], [17.4, 540, 900, 1.12, 1.6]], fundo: celularSVG },
   { ini: 17.4, fim: 19, cena: 'rua', cam: [[17.4, 140, C_TICO, 1.9]], fundo: motoFurada, atores: RUA_TICO },
   { ini: 19, fim: 22, cena: 'rua', cam: [[19, 420, 1040, 1.22]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
   { ini: 22, fim: 23, cena: 'rua', cam: [[22, BAG_X, 1050, 2.3]], fundo: (t) => motoFurada() + bagNaMoto(t) },
@@ -104,8 +104,8 @@ const ep01Planos = [
   { ini: 64, fim: 66, cena: 'portaAberta', cam: [[64, 540, 880, 1.1]], atores: NA_PORTA,
     frente: (t) => interfoneLua() + (t >= 65 ? placaCrushSVG(720, 180 + 30 * sai((t - 65) / .25) - 240 * (1 - sai((t - 65) / .25))) : '') },
   { ini: 66, fim: 68, cena: 'portaAberta', cam: [[66, 720, C_LUA, 1.8]], atores: NA_PORTA, frente: interfoneLua },
-  { ini: 68, fim: 69.8, cena: 'portaAberta', cam: [[68, 300, C_TICO, 1.8]], atores: NA_PORTA, frente: interfoneLua },
-  { ini: 69.8, fim: 72, cena: 'portaAberta', cam: [[69.8, 520, 720, 1.4]], atores: NA_PORTA, frente: interfoneLua },
+  { ini: 68, fim: 69.6, cena: 'portaAberta', cam: [[68, 300, C_TICO, 1.8]], atores: NA_PORTA, frente: interfoneLua },
+  { ini: 69.6, fim: 72, cena: 'portaAberta', cam: [[69.6, 520, 720, 1.4]], atores: NA_PORTA, frente: interfoneLua },
   { ini: 72, fim: 74, cena: 'portaAberta', cam: [[72, 720, C_LUA, 1.9]], atores: NA_PORTA, frente: interfoneLua },
   { ini: 74, fim: 75.5, cena: 'portaAberta', cam: [[74, 300, C_TICO, 2.0]], atores: NA_PORTA, frente: interfoneLua },
   // Votação em preto e branco
@@ -113,7 +113,7 @@ const ep01Planos = [
     cor: (t) => 1 - sai((t - 75.5) / .4),
     atores: [{ id: 'tico', x: 540, poses: [[75.5, { expr: 'forcado', detalhe: 'suor', bag: true, armL: [-18, 60], armR: [14, 8], head: 4 }], [78.5, { expr: 'lado' }]] }] },
   // Cena 6: Dona Marlene apaga a vela, triste e sozinha
-  { ini: 82, fim: 87, cena: 'casa', cam: [[82, 540, 960, 1.0], [83.2, 540, 900, 1.45, 1.2]],
+  { ini: 82, fim: 87, cena: 'casa', cam: [[82, 540, 960, 1.0], [83.2, 540, 900, 1.45, 1.2], [87.6, 540, 860, 1.9, 3.6]],
     frente: (t) => mesaSVG(1180) + (t < 83.3 ? `<g transform="translate(860 1230) rotate(-10)">` + ret(-44, -24, 88, 48, '#23252f', 8) + ret(-36, -18, 72, 36, '#7fd6ee', 2, 0) + '</g>' : ''),
     atores: [{ id: 'marlene', x: 540, y: 1560, s: 1.35, poses: [[82, { expr: 'triste', armL: [-20, 30], armR: [20, -30] }], [83.2, { armR: [24, 170], propR: 'pao' }], [83.6, { propR: 'paoAceso' }], [84.9, { mouth: 'small' }], [85.3, { propR: 'pao', mouth: null }], [85.8, { armR: [20, -30], propR: 'pao' }]] }] },
 ];
@@ -145,8 +145,15 @@ const ep01Telas = [
     u.g.fillStyle = 'rgba(0,0,0,.78)'; u.g.fillRect(0, 0, 1080, 850);
     u.g.globalAlpha = u.sai(s / .35);
     u.texto('Comenta sua escolha:', 540, 290, 60, '#ffffff');
-    u.cartao(90, 370, 900, 200, '#35d04a'); u.texto('Conte a Verdade', 540, 470, 72, '#08280d');
-    u.cartao(90, 600, 900, 200, '#ff4f6e'); u.texto('Inventa uma História', 540, 700, 62, '#3a0612');
+    // As duas opções se alternam, chamando o voto
+    const opcao = (y, cor, txt, tam, fase) => {
+      const e = 1 + .03 * Math.sin(s * 4.2 + fase);
+      u.g.save(); u.g.translate(540, y + 100); u.g.scale(e, e); u.g.translate(-540, -y - 100);
+      u.cartao(90, y, 900, 200, cor); u.texto(txt, 540, y + 100, tam, fase ? '#3a0612' : '#08280d');
+      u.g.restore();
+    };
+    opcao(370, '#35d04a', 'Conte a Verdade', 72, 0);
+    opcao(600, '#ff4f6e', 'Inventa uma História', 62, Math.PI);
     u.g.globalAlpha = 1;
     painel(75.5 + s, u, true);
     u.cartao(240, 1500, 600, 80, '#d9d9d9'); u.texto('Tiago Almeida, indeciso', 540, 1540, 38, '#111111');
@@ -161,6 +168,6 @@ const EPISODIO = {
   planos: ep01Planos,
   telas: ep01Telas,
   latidos: [61.2, 78.6],
-  impactos: [POW - .03, 65.2],
+  impactos: [POW - .03, 3.5, 19.9, 65.2],
   destaques: { 1: 'tudo', 3: 'companheira', 4: 'prejuízo', 6: 'sobe', 9: 'nota', 10: 'bolo', 12: 'dia', 14: 'reais', 18: 'aniversário', 20: 'você', 21: 'chance', 24: 'sobe', 28: 'isso', 34: 'entregador', 35: 'falo' },
 };

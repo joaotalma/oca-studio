@@ -17,7 +17,7 @@ A fonte da história é `docs/BIBLIA.md`, com a temporada 1 episódio a episódi
 
 **Tom:** afetuoso, em português do Brasil coloquial. O humor vem da situação e do carinho pelos personagens, não do deboche. Toda dureza ganha uma piada, e todo episódio fecha com um fio de esperança. Sem narrador.
 
-**Elenco:** Tico, Lua, Jão, Bia, Fiscal e Dona Neide (só voz na temporada 1). Quem é cada um, como fala, paleta e traços estão em `references/elenco.md`.
+**Elenco:** Tico, Lua, Jão, Letícia, Fiscal e Dona Marlene (só voz na temporada 1). Quem é cada um, como fala, paleta e traços estão em `references/elenco.md`.
 
 **Mundo:** capital grande sem bairro real, em paleta quente (laranja, verde-limão, azul-turquesa), com fios de poste, laje e parede com reboco aparente.
 

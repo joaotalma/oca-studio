@@ -52,7 +52,9 @@ História: `docs/BIBLIA.md`. Aparência: `personagens/chars.js`; se houver difer
 | Calça | `#665e50` |
 | Mochila | `#b3303c` |
 
-## Bia (Beatriz Campos), 29
+## Letícia (Letícia Campos), 29
+
+Antes Bia. Entra em cena no episódio 2.
 
 - **Quem é:** coach de mindset, vende o curso "Mente Milionária" e acorda às 4h.
 - **Quer:** ser vista como bem-sucedida e libertar todo mundo da mentalidade de pobreza.
@@ -82,9 +84,9 @@ História: `docs/BIBLIA.md`. Aparência: `personagens/chars.js`; se houver difer
 | Focinho | `#d99759` |
 | Medalha | `#e2b13f` |
 
-## Dona Neide
+## Dona Marlene
 
-Mãe do Tico e coração da série. Liga todo dia, manda áudio e torce pela Lua. "Já já eu resolvo" nasceu com ela. Só voz na temporada 1, pelos áudios de WhatsApp.
+Mãe do Tico e coração da série (antes Dona Neide). Liga todo dia, manda áudio e torce pela Lua. "Já já eu resolvo" nasceu com ela. Só voz na temporada 1, pelos áudios de WhatsApp.
 
 ## Em comum
 

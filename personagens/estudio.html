@@ -51,7 +51,7 @@ input[type=range]{width:100%;accent-color:#b78bf1}
 <script src="chars.js"></script>
 <script>
 /* ================= ESTÚDIO ================= */
-const ELENCO = [CHARS.tico, CHARS.lua, FISCAL, CHARS.jao, CHARS.bia];
+const ELENCO = [CHARS.tico, CHARS.lua, FISCAL, CHARS.jao, CHARS.leticia];
 const $ = id => document.getElementById(id);
 const REST = { armL: 9, armR: 9, elbowL: -4, elbowR: -4, legL: 4, legR: 4, kneeL: -2, kneeR: -2 };
 const NOMES = { head: 'Cabeça', armL: 'Braço E', elbowL: 'Cotovelo E', armR: 'Braço D', elbowR: 'Cotovelo D', legL: 'Quadril E', kneeL: 'Joelho E', legR: 'Quadril D', kneeR: 'Joelho D' };
@@ -112,7 +112,7 @@ function caixa() {
 const SOMBRA = (x, rx) => `<ellipse cx="${x}" cy="4" rx="${rx}" ry="11" fill="#10121b" opacity=".3"/>`;
 function cena(a, ex) {
   if (lineup) { let s = '', x = 0;
-    const lista = [CHARS.tico, CHARS.lua, CHARS.jao, CHARS.bia];
+    const lista = [CHARS.tico, CHARS.lua, CHARS.jao, CHARS.leticia];
     for (const d of lista) { s += SOMBRA(x, 94) + `<g transform="translate(${x} 0)">${drawChar(d, { expr: expr || 'neutro', head: 0, blink: ex.blink, breath: ex.breath, mouth })}</g>`; x += 290; }
     return s + SOMBRA(x + 40, 150) + `<g transform="translate(${x + 40} 0) scale(.9)">${drawDog({ expr: expr || 'neutro', blink: ex.blink, breath: ex.breath })}</g>`; }
   if (who === 'fiscal') return SOMBRA(0, 170) + drawDog(poseDoCao(a, { expr: ex.expr || expr || 'neutro', ...ex }));
