@@ -19,11 +19,22 @@ No episódio 1 não há votação anterior: os 12 s iniciais precisam abrir no m
 
 - De 200 a 230 palavras. A primeira fala já é ação, e cada fala precisa ser uma imagem desenhável.
 - Uma piada falada a cada 8 a 10 s e pelo menos uma piada visual no fundo de cada cena.
-- Sem narrador: a mentira aparece na diferença entre o que o Tico diz e o que a imagem mostra.
+- Sem narrador: a mentira aparece na diferença entre o que o Tico diz e o que a imagem mostra. O depoimento para a câmera não narra: quem fala também mente ou se trai.
 - Compreensível sozinho, porque o algoritmo não entrega os vídeos em ordem.
 - Absurdo tratado como rotina: o personagem reclama do formulário, não do fenômeno.
 - "Riso que engasga": uma virada sincera por episódio, com 3 a 4 s de silêncio e close. Depois volta a piada.
 - Toda piada sobre a dureza do dia a dia termina em um passo possível.
+
+## Quebra da quarta parede
+
+Recurso de falso documentário, em uso a partir do episódio 1. Empresta só a técnica: nenhum personagem, situação ou piada de outra série.
+
+- **Depoimento:** o personagem fala para a câmera, com nome e cargo na tela. No máximo 2 por episódio, além da votação, e até 4 s cada.
+- **Olhada:** um olhar mudo para a câmera, de até 1 s, depois de uma fala absurda. No máximo 2 por episódio. O Fiscal também pode olhar.
+- **Votação:** o Tico pede o voto sem admitir que está pedindo ajuda.
+- **Sempre desmentido:** cada depoimento contradiz a imagem ou o latido do Fiscal. Sem essa contradição, vira narração.
+- **Sem explicar:** ninguém diz quem filma, e a câmera nunca entra na trama.
+- **Nunca no que é sincero:** o "riso que engasga" não olha para a câmera. Depois da temporada 7, reavalie o uso no luto.
 
 ## Regra do absurdo
 
