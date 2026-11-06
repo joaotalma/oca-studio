@@ -44,6 +44,8 @@ const motor = (() => {
     const pz = poseEm(a.poses, t), f = FASE[a.id] || 0;
     const s = a.s || 1.32, sx = a.flip ? -s : s;
     let x = a.x, y = a.y == null ? CHAO : a.y;
+    if (a.xF) x = a.xF(t);
+    if (a.yF) y = a.yF(t);
     if (a.movX) { const [t0, t1, x0, x1] = a.movX; x = x0 + (x1 - x0) * suave((t - t0) / (t1 - t0)); }
     const blink = pz.blink || (((t + f * 1.31) % 3.7) < .13 ? 1 : 0);
     const breath = 1.5 + Math.sin(t * 1.9 + f) * 1.5;
@@ -76,12 +78,17 @@ const motor = (() => {
     const tf = (f) => `translate(${540} ${960}) scale(${z}) translate(${-540 - (cx - 540) * f} ${-960 - (cy - 960) * f})`;
     let s = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 1080 1920">`;
     const nome = typeof pl.cena === 'function' ? pl.cena(t) : pl.cena;
+    // Plano em preto e branco: pl.cor(t) vai de 1 (colorido) a 0 (cinza)
+    const cor = pl.cor ? pl.cor(t) : 1;
+    if (cor < 1) s += `<defs><filter id="pb" filterUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="${cor.toFixed(3)}"/></filter></defs><g filter="url(#pb)">`;
     for (const c of CENARIOS[nome]()) s += `<g transform="${tf(c.f)}">${c.svg}</g>`;
     s += `<g transform="${tf(1)}">`;
     if (pl.fundo) s += pl.fundo(t);
     for (const a of pl.atores || []) s += atorSVG(a, t);
     if (pl.frente) s += pl.frente(t);
-    return s + '</g></svg>';
+    s += '</g>';
+    if (cor < 1) s += '</g>';
+    return s + '</svg>';
   }
   const FADE = .13;
   function blocosDe(f) {

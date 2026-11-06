@@ -163,7 +163,8 @@ function handSVG(d, side, w, a, prop) {
   const palm = 'M-9.5 -3 C-12.5 5 -13 13 -11 20 Q-9 28 -2 28 L5 27.5 Q11 25 11 16 L10 -3Z', thumb = 'M8 5 Q18 6 18 15 Q17 21 10 18Z';
   const body = shape(palm, d.skin) + shape(thumb, d.skin) + fillOnly('M6 3 L11 3 L12 17 L6 17Z', d.skin) + fillOnly('M-8 -6 L8 -6 L8.5 4 L-8.5 4Z', d.skin) + stroke('M-5 19 L-5 27 M1 20 L1 28 M6 19 L6 26', d.shade, 1.3);
   const flip = -side;
-  return `<g transform="translate(${r2(w[0])} ${r2(w[1])}) rotate(${r2(-a)}) scale(${r2(k * flip)} ${r2(k)})">${prop ? propSVG(prop) : ''}${body}</g>`;
+  const nivelado = prop === 'bolo' || prop === 'boloApagado';
+  return `<g transform="translate(${r2(w[0])} ${r2(w[1])}) rotate(${r2(-a)}) scale(${r2(k * flip)} ${r2(k)})">${prop && !nivelado ? propSVG(prop) : ''}${body}</g>` + (nivelado ? boloSVG(r2(w[0]), r2(w[1] - 22), .8, prop === 'bolo') : '');
 }
 function footSVG(d, side, c) {
   const sh = d.shoe; let s = '';
@@ -245,17 +246,17 @@ function armSVG(d, side, a, sy, prop) {
   return s;
 }
 function drawChar(d, pose = {}) {
-  const Pz = Object.assign({ armL: [-9, -5], armR: [9, 5], legL: [-4, -2], legR: [4, 2], lean: 0, head: 0, expr: 'neutro', mouth: null, blink: 0, breath: 0, liftL: 0, liftR: 0, propL: null, propR: null, frente: null, sentado: false, bag: null }, pose);
+  const Pz = Object.assign({ armL: [-9, -5], armR: [9, 5], legL: [-4, -2], legR: [4, 2], lean: 0, head: 0, expr: 'neutro', mouth: null, blink: 0, breath: 0, liftL: 0, liftR: 0, propL: null, propR: null, frente: null, sentado: false, bag: null, semPernas: false }, pose);
   const comBag = Pz.bag != null ? Pz.bag : d.key === 'jao';
   const E = Object.assign({}, EXPR[Pz.expr] || EXPR.neutro);
-  const L = legs(d, Pz), low = Math.max(L.L.A[1], L.R.A[1]), rootY = -(low + SHOE_H[d.shoe]);
+  const L = legs(d, Pz), low = Pz.semPernas ? 10 + d.thigh + d.shin : Math.max(L.L.A[1], L.R.A[1]), rootY = -(low + SHOE_H[d.shoe]);
   const sy = -d.torso, hy = sy - d.neck - 49 * d.hs;
   const up = `<g transform="rotate(${r2(Pz.lean)}) translate(0 ${r2(-Pz.breath)})">`;
   const head = `<g transform="translate(0 ${r2(hy)}) rotate(${r2(Pz.head)} 0 ${r2(40 * d.hs)}) scale(${d.hs})">`;
   const braco = { L: armSVG(d, -1, Pz.armL, sy, Pz.propL), R: armSVG(d, 1, Pz.armR, sy, Pz.propR) };
   let s = `<g transform="translate(0 ${r2(rootY)})">`;
   s += up + backpackSVG(d, sy, comBag) + head + hairBack(d) + '</g></g>';
-  s += lowerSVG(d, L);
+  if (!Pz.semPernas) s += lowerSVG(d, L);
   s += up + torsoSVG(d, sy, comBag) + neckSVG(d, sy, hy) + badgeSVG(d, sy);
   if (Pz.frente !== 'L') s += braco.L;
   if (Pz.frente !== 'R') s += braco.R;
@@ -307,7 +308,6 @@ function drawDog(pose = {}) {
   s += stroke(`M-29 ${-33 + (E.browY || 0)} L-8 ${-33 + (E.browY || 0) + bi * .7}`, c.shade, 3.6) + stroke(`M29 ${-33 + (E.browY || 0)} L8 ${-33 + (E.browY || 0) + bi * .7}`, c.shade, 3.6);
   if (fala) { const ab = alegre ? 1 : D.mouth; s += shape(`M-15 20 Q0 ${r2(24 + 46 * ab)} 15 20Z`, '#722e37', 2.4) + (alegre ? shape('M-7 30 Q-8 49 0 49 Q8 49 7 30Z', '#d8646c', 1.8) : ''); }
   s += shape('M-20 7 Q0 -8 20 7 L15 25 Q0 33 -15 25Z', c.muzzle, 2.2) + ell(0, 7, 12, 7.5, '#2c2323') + ell(-3, 5, 3, 1.8, '#6f5b58');
-  if (D.boca === 'embalagem') s += shape('M-34 18 L34 14 L38 44 L-30 48Z', '#fff3d6') + stroke('M-24 28 L26 25 M-22 37 L10 35', '#ae5d49', 2.4);
   s += stroke('M0 14 L0 22', '#6a402e', 1.8) + (fala ? '' : stroke('M-11 23 Q0 30 11 23', '#6a402e', 2));
   s += '</g></g>';
   return s;

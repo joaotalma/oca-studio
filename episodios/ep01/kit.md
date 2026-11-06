@@ -31,13 +31,12 @@ Todas já existem: as 13 expressões, as 4 bocas e os detalhes `suor` e `veia`.
 | Objeto | Situação | Onde aparece |
 |---|---|---|
 | Celular | Pronto | Várias cenas |
-| Moto Companheira | **Criar** | De perfil, com adesivo, pneu inteiro e pneu estourado |
+| Moto Companheira | Criada | De perfil, em tamanho real, com rodas que giram e pneu estourado |
 | Chave da moto | **Criar** | Cena 1 |
-| Bag aberta, vista por dentro | **Criar** | Cenas 2 e 4 |
+| Bag sobre a moto, fechada e aberta | Criada | Cena 2 |
 | Bolo com "Feliz 80 anos, Marlene", vela acesa e fatia | **Criar** | Cenas 2 e 3 |
 | Chave de roda | **Criar** | Cena 3 |
 | Interfone | **Criar** | Cena 4 |
-| Embalagem do jantar | **Criar** | Cena 5 |
 | Pão francês com vela | **Criar** | Cena 6 |
 
 ## Elementos de tela
@@ -69,7 +68,6 @@ Todos sintetizados em código, sem amostras com direitos.
 | Filtro de interfone sobre a voz da Lua | Cena 4 |
 | Chiado e batida do interfone | Cena 4 |
 | Latido do Fiscal | Cenas 4 e 5, votação |
-| Mastigação | Cena 4 |
 | Porta batendo | Cena 5 |
 | Grave de impacto | Pergunta da Lua |
 | Relógio de parede e sopro | Cena 6 |

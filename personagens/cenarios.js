@@ -11,14 +11,14 @@ const placa = (x, y, w, h, fill, linhas, tam = 28, cor = OUT, rot = 0) => `<g${r
 const reboco = (pts, cor) => pts.map(([x, y, w, h]) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="9" fill="${cor}"/>`).join('');
 
 /* ---------- objetos ---------- */
-function pneuSVG(x, y, r, murcho) {
+function pneuSVG(x, y, r, murcho, giro = 0) {
   if (murcho) return `<ellipse cx="${x}" cy="${y + r * .55}" rx="${r * 1.2}" ry="${r * .45}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><ellipse cx="${x}" cy="${y + r * .5}" rx="${r * .5}" ry="${r * .22}" fill="#8a9099" stroke="${OUT}" stroke-width="${T}"/>`;
-  return `<circle cx="${x}" cy="${y}" r="${r}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><circle cx="${x}" cy="${y}" r="${r * .55}" fill="#8a9099" stroke="${OUT}" stroke-width="${T}"/><circle cx="${x}" cy="${y}" r="${r * .15}" fill="#3a3a40"/>`;
+  return `<circle cx="${x}" cy="${y}" r="${r}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><circle cx="${x}" cy="${y}" r="${r * .55}" fill="#8a9099" stroke="${OUT}" stroke-width="${T}"/><g transform="rotate(${giro} ${x} ${y})"><path d="M${x - r * .5} ${y} L${x + r * .5} ${y} M${x} ${y - r * .5} L${x} ${y + r * .5}" stroke="#3a3a40" stroke-width="${r * .08}"/></g><circle cx="${x}" cy="${y}" r="${r * .15}" fill="#3a3a40"/>`;
 }
 function motoSVG(x, y, s, o = {}) {
   const r = 72, chao = -r, tras = o.furado ? -r * .35 : chao;
   return `<g transform="translate(${x} ${y}) scale(${s})">`
-    + pneuSVG(-170, -r, r, o.furado) + pneuSVG(180, -r, r)
+    + pneuSVG(-170, -r, r, o.furado, o.giro || 0) + pneuSVG(180, -r, r, false, o.giro || 0)
     + `<g transform="rotate(${o.furado ? -3.5 : 0} 180 -72)">`
     + shape('M-170 -80 L-60 -170 L90 -170 L180 -72 L150 -60 L60 -130 L-60 -130 L-150 -66Z', '#55606c')
     + shape('M-110 -175 Q-120 -215 -40 -212 L40 -205 L50 -170 L-60 -165Z', '#ae5d49')
@@ -31,6 +31,9 @@ function motoSVG(x, y, s, o = {}) {
 }
 function bagAbertaSVG(x, y, s, conteudo = '') {
   return `<g transform="translate(${x} ${y}) scale(${s})">` + shape('M-140 -120 L140 -120 L160 -240 L-160 -240Z', '#7c1f2b') + conteudo + shape('M-150 -130 L150 -130 L135 30 L-135 30Z', '#b3303c') + `<rect x="-142" y="-40" width="284" height="14" fill="#e3c04a"/>` + '</g>';
+}
+function bagFechadaSVG(x, y, s) {
+  return `<g transform="translate(${x} ${y}) scale(${s})">` + shape('M-150 -240 L150 -240 L135 30 L-135 30Z', '#b3303c') + `<rect x="-145" y="-40" width="290" height="14" fill="#e3c04a"/>` + stroke('M-150 -190 L150 -190', '#7c1f2b', 4) + '</g>';
 }
 function boloSVG(x, y, s, velaAcesa, comFatia = true) {
   const chama = velaAcesa ? shape('M0 -112 Q10 -96 0 -84 Q-10 -96 0 -112Z', '#f2b632', 1.6) : '';
@@ -65,22 +68,22 @@ function notasSVG(x, y, t) {
 
 /* ---------- cenários ---------- */
 function predios(cor1, cor2, janela, ceu) {
-  let s = `<rect x="-700" y="-300" width="2500" height="2300" fill="${ceu}"/>`;
-  const pr = [[-500, 520, 300, cor1], [-180, 300, 280, cor2], [120, 460, 250, cor1], [390, 240, 300, cor2], [710, 400, 280, cor1], [1010, 280, 320, cor2], [1350, 500, 320, cor1]];
+  let s = `<rect x="-700" y="-300" width="3600" height="2300" fill="${ceu}"/>`;
+  const pr = [[-500, 520, 300, cor1], [-180, 300, 280, cor2], [120, 460, 250, cor1], [390, 240, 300, cor2], [710, 400, 280, cor1], [1010, 280, 320, cor2], [1350, 500, 320, cor1], [1690, 330, 300, cor2], [2010, 450, 300, cor1]];
   for (const [x, y, w, c] of pr) { s += ret(x, y, w, 1400, c, 0, 0); for (let i = 0; i < 4; i++) for (let j = 0; j < 8; j++) s += `<rect x="${x + 24 + i * (w - 40) / 4}" y="${y + 30 + j * 96}" width="34" height="56" fill="${janela[(i * 3 + j * 5) % janela.length]}"/>`; }
   return s;
 }
-const FIOS = `<path d="M-700 430 Q300 500 1800 390 M-700 480 Q300 560 1800 440" fill="none" stroke="#2a1f22" stroke-width="4"/>`;
-function cenaRua() {
+const FIOS = `<path d="M-700 430 Q300 500 2800 390 M-700 480 Q300 560 2800 440" fill="none" stroke="#2a1f22" stroke-width="4"/>`;
+function cenaRua(comBorracharia = false) {
   const fundo = predios('#d9a860', '#c48a4e', ['#f2d36b', '#8a5a2e', '#8a5a2e'], '#f4a65a');
   const meio = FIOS
     + ret(-40, 780, 30, 830, '#55606c', 0) + placa(-120, 840, 190, 110, '#fff6e6', ['Trago a pessoa', 'amada em 3x', 'no Pix'], 18)
-    + ret(90, 1050, 720, 560, '#e6b98a', 0) + reboco([[120, 1110, 90, 44], [420, 1190, 120, 50], [640, 1300, 90, 40], [230, 1380, 110, 44]], '#cf9c6f')
+    + ret(90, 1050, comBorracharia ? 720 : 2400, 560, '#e6b98a', 0) + reboco([[120, 1110, 90, 44], [420, 1190, 120, 50], [640, 1300, 90, 40], [230, 1380, 110, 44], [1050, 1160, 110, 46], [1400, 1330, 100, 44], [1800, 1200, 120, 50]], '#cf9c6f')
     + placa(620, 1120, 170, 90, '#f2d36b', ['Previsão de', 'entrega: 2009'], 18)
-    + ret(850, 960, 500, 650, '#3aa39f', 0) + ret(900, 1160, 360, 450, '#2d2a2c', 0)
-    + placa(860, 980, 450, 150, '#f2d36b', ['BORRACHARIA', 'Pneu: R$ 120', 'Fiado só amanhã'], 34)
-    + pneuSVG(960, 1510, 64) + pneuSVG(1110, 1520, 58);
-  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#8f8a84"/><rect x="-900" y="${CHAO - 40}" width="2900" height="14" fill="#2a1f22"/><rect x="-900" y="${CHAO + 150}" width="2900" height="240" fill="#55535a"/>`;
+    + (comBorracharia ? ret(850, 960, 500, 650, '#3aa39f', 0) + ret(900, 1160, 360, 450, '#2d2a2c', 0)
+      + placa(860, 980, 450, 150, '#f2d36b', ['BORRACHARIA', 'Pneu: R$ 120', 'Fiado só amanhã'], 34)
+      + pneuSVG(960, 1510, 64) + pneuSVG(1110, 1520, 58) : placa(1500, 1120, 240, 90, '#fff6e6', ['Aluga-se', 'kitnet: R$ 1.900'], 22));
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="3900" height="420" fill="#8f8a84"/><rect x="-900" y="${CHAO - 40}" width="3900" height="14" fill="#2a1f22"/><rect x="-900" y="${CHAO + 150}" width="3900" height="240" fill="#55535a"/>`;
   return [{ f: .3, svg: fundo }, { f: .75, svg: meio }, { f: 1, svg: chao }];
 }
 function cenaBorracharia() {
@@ -88,7 +91,6 @@ function cenaBorracharia() {
   const meio = placa(90, 470, 330, 170, '#fff6e6', ['0 dias sem', 'prejuízo'], 40)
     + placa(480, 500, 240, 120, '#f2d36b', ['Fiado só', 'amanhã'], 34)
     + ret(760, 660, 340, 950, '#f4a65a', 0) + ret(760, 660, 340, 950, 'none', 0)
-    + motoSVG(930, 1590, .85, { furado: true })
     + [0, 1, 2, 3].map((i) => pneuSVG(70, 1520 - i * 72, 90)).join('') + [0, 1].map((i) => pneuSVG(240, 1530 - i * 72, 74)).join('')
     + stroke('M450 700 L720 700', OUT, 8) + [0, 1, 2, 3].map((i) => shape(`M${480 + i * 60} 700 L${490 + i * 60} 790 L${510 + i * 60} 790 L${520 + i * 60} 700Z`, '#8a9099', 2)).join('');
   const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#6c6a6e"/><rect x="-900" y="${CHAO - 40}" width="2900" height="14" fill="#2a1f22"/>`;
@@ -118,4 +120,4 @@ function mesaSVG(y) {
   for (const [x, yy] of [[190, 40], [360, 90], [720, 90], [890, 40]]) s += ell(x, y + yy, 70, 22, '#f7f4ef', OUT, 2.4) + ell(x, y + yy, 38, 11, '#e5e1da', 'none', 0);
   return s;
 }
-const CENARIOS = { rua: cenaRua, borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), casa: cenaCasa };
+const CENARIOS = { rua: () => cenaRua(false), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), casa: cenaCasa };
