@@ -1,168 +1,159 @@
-# Episódio 1: Entregue
+# Episódio 1: Entregador Não Sobe
 
-**O fio:** quanto mais a empresa inventada cresce na boca dos outros, mais a vida real do Tico encolhe, até as duas se encontrarem na porta da Lua.
+**O fio:** a regra do Jão, "entregador não sobe". O Tico promete segui-la, tudo dá errado para ele não falhar com o amigo, e é por causa dela que a Lua desce até a porta.
 
-**Em 3 frases:** Tico, desempregado, diz à mãe que tem uma empresa de logística e sai para fazer uma entrega com a moto emprestada do Jão, que precisa voltar às dez. Enquanto a mãe aumenta a "empresa" no grupo do prédio, o app some com o jantar e ainda cobra por ele. Na porta está a Lua, que acredita em tudo, até o áudio do Jão tocar.
+**Em 3 frases:** Desempregado há três meses, Tico pega a moto do Jão emprestada para começar a fazer entregas, prometendo arcar com qualquer prejuízo. Na primeira entrega o pneu estoura e, sem dinheiro para o conserto, ele recheia o pneu com as coxinhas do pedido cancelado. Na entrega seguinte, ele briga pelo interfone com uma cliente que quer que ele suba, e ela desce furiosa: é a Lua, o crush de infância, que pergunta se ele é entregador.
 
-- **Mentira:** "Tenho uma empresa de logística."
-- **Absurdo:** o que alguém declara passa a valer mais que a realidade, seja o app, seja a mãe.
-- **Aprendizado:** pedir ajuda não é fracassar. Ele chega na abertura do episódio 2, seja qual for o voto.
-- **Título:** "entregue" é o status do jantar e também o que o Tico fica no final.
+- **Absurdo:** o pneu recheado, tratado por ele como solução técnica.
+- **Mentira:** ainda não existe. Nasce no fim, quando a Lua faz a pergunta e o público vota.
+- **Aprendizado:** pedir ajuda não é fracassar. Chega na abertura do episódio 2, porque o pneu acaba e ele precisa ligar para o Jão.
 - **Tempos:** PROVISÓRIOS, estimados até termos as vozes.
 
 ## Como o fio avança
 
-| Cena | A empresa na boca dos outros | A vida real |
+| Cena | A regra e o compromisso com o Jão | O que dá errado |
 |---|---|---|
-| 1 | Mãe ouve: "uma empresa de logística" | Empurra uma moto enguiçada |
-| 2 | Jão, de brincadeira: "patrão" | A moto nem é dele e tem hora para voltar |
-| 3 | Mãe: "três motos", depois "plano de saúde" | Perde o jantar e fica devendo R$ 47,90 |
-| 4 | Lua: "trinta funcionários" e um convite para visitar | Tem uma bag vazia |
-| 5 | Jão, no áudio, sem querer: "a entrega" e "minha moto" | A verdade fica a uma frase de sair |
+| 1 | Promete: prejuízo é dele e entregador não sobe | Nada ainda; é o primeiro dia |
+| 2 | Precisa consertar a moto antes que vire prejuízo do amigo | Pneu estoura, a nota cai e o conserto custa R$ 120 |
+| 3 | Dá um jeito sem incomodar o Jão | Pneu de coxinha, e um cachorro seguindo |
+| 4 | Defende a regra pelo interfone, contra a cliente | A cliente desce, e o cachorro come o pneu |
+| 5 | A regra trouxe a Lua até ele | Ela pergunta se ele é entregador |
 
 ## Cenas
 
-### 1. Esquina, noite: o orgulho (0–12 s)
+### 1. Esquina, fim de tarde: o empréstimo (0–13 s)
 
-O Tico foi até a esquina onde o Jão para a moto, porque ela está sendo emprestada ali. O Jão fica sentado na calçada desde o começo, primeiro fora de quadro.
-
-**Quer:** parecer bem para a mãe. **Obstáculo:** ela pergunta. **Virada:** ele inventa a empresa. **Fecho:** o orgulho dela dói.
+**Quer:** a moto para começar a trabalhar. **Obstáculo:** a moto é o sustento do Jão. **Virada:** o Jão empresta na hora. **Fecho:** as duas regras, ditas por carinho.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 1 | 0,0–1,5 | Tico | Anda, Companheira! | cansado | Tenta dar a partida na moto parada | Médio, Tico e moto | Motor engasgando |
-| 2 | 1,5–3,0 | Dona Neide | Filho, arrumou serviço? | | Pega o celular | Fecha aos poucos | Áudio de WhatsApp |
-| 3 | 3,0–7,0 | Tico | Tô em transição de carreira, mãe. Tenho uma empresa de logística. | forcado | Fala no celular | Médio | |
-| 4 | 7,0–8,7 | Dona Neide | Ai, meu filho... que orgulho. | | | Médio | Áudio de WhatsApp |
-| | 8,7–11,7 | | **Riso que engasga: silêncio** | triste | Abaixa o celular, sem olhar para a câmera | Close sem fala | Silêncio total |
+| 1 | 0,0–3,0 | Tico | Jão, três meses desempregado. Me empresta a Companheira? | envergonhado | Olha para o chão, de chinelo | Dupla, com a moto | Rua ao fundo |
+| 2 | 3,0–6,0 | Jão | Pega, irmão. Mas olha: furou, o prejuízo é teu. | neutro | Estende a chave sem pensar | Dupla | |
+| 3 | 6,0–6,6 | Tico | Fechado. | feliz | Pega a chave | Dupla | |
+| 4 | 6,8–9,3 | Jão | E entregador não sobe. Desce quem pediu. | bravo | Aponta para o alto, sério | Close do Jão | |
+| 5 | 9,3–11,0 | Tico | Jão, é meu primeiro dia. | surpreso | | Close do Tico | |
+| 6 | 11,0–12,5 | Jão | Por isso mesmo. | feliz | Põe a bag no ombro dele e dá dois tapinhas | Dupla | Tapinhas no ombro |
 
-### 2. Esquina: o amigo (12–23 s)
+### 2. Rua: a primeira entrega (13–33 s)
 
-**Quer:** sair com a moto sem falar da mentira. **Obstáculo:** o Jão ouviu tudo. **Virada:** em vez de expor o amigo, o Jão entra na brincadeira. **Fecho:** ele empresta a moto e a bag, e só pede a moto de volta porque precisa trabalhar.
-
-| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
-|---|---|---|---|---|---|---|---|
-| 5 | 12,0–13,5 | Jão | Empresa, é? Tu virou patrão? | feliz | A câmera abre e revela o Jão na calçada, que ouviu tudo | Abre até a dupla | |
-| 6 | 13,5–16,5 | Tico | Patrão e funcionário. Hoje de manhã eu me demiti. | forcado | Dá de ombros | Dupla | |
-| 7 | 16,5–18,0 | Jão | E recebeu os direitos? | rindo | Levanta da calçada | Close do Jão | |
-| 8 | 18,0–19,5 | Tico | Tô me devendo. | cansado | Os dois riem, e o Tico fica sem graça | Close do Tico | |
-| 9 | 20,0–23,0 | Jão | Ela pega no tranco. Às dez, preciso dela. | neutro | Põe a bag no ombro do Tico e dá dois tapinhas nele | Dupla | Tapinhas no ombro |
-
-### 3. Rua: a empresa cresce (23–52 s)
-
-**Quer:** entregar um jantar. **Obstáculo:** o app e a própria mãe. **Virada:** o destino é justamente o prédio onde a mentira está circulando. **Fecho:** ele deseja que a empresa fosse real.
+**Quer:** fazer a primeira entrega. **Obstáculo:** o pneu. **Virada:** o app ainda o pune e manda jogar a comida fora. **Fecho:** ele vê as coxinhas e o preço do conserto ao mesmo tempo.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 10 | 23,0–26,0 | Tico | Empresa de logística é isso: o dono empurra a frota. | forcado | **Depoimento:** para a câmera, ofegante, apoiado na moto. Na tela: "Tiago Almeida, Fundador e CEO" | Médio, frontal | Passos param |
-| 11 | 26,7–28,7 | Tico | Esse cachorro mora a seis quilômetros. | lado | Olha para longe, depois volta para a câmera | Médio, frontal | Antes da fala, Fiscal late bem ao longe |
-| 12 | 29,0–31,0 | Tico | Jantar pro Esperança. Eu cresci lá. | neutro | Empurra a moto, olhando o celular | Aberto, rua passando | Notificação, passos |
-| 13 | 31,0–33,5 | Dona Neide | Contei da empresa no grupo do Esperança. | | Continua empurrando | Aberto | Áudio de WhatsApp |
-| 14 | 33,5–34,8 | Tico | Do Esperança, mãe?! | surpreso, suor | Para de repente | Médio | Passos param |
-| 15 | 34,8–36,0 | Dona Neide | Botei três motos. | | Olha para a única moto, que solta uma peça | Médio | Áudio de WhatsApp, peça caindo |
-| 16 | 36,5–38,5 | Tico | Entregue? Eu ainda tô na avenida. | pensando | Olha o celular | Close com o celular | **Objeto 1:** "ENTREGUE ✓ Avalie sua entrega", na palavra "Entregue"; notificação |
-| 17 | 38,5–41,5 | Tico | É. Se o app entregou, o jantar foi. | cansado | Abre a bag vazia | Bag e rosto | Isopor rangendo |
-| 18 | 42,0–44,5 | Tico | Para contestar, envie foto do jantar desaparecido. | lado | Lê o celular | Close com o celular | **Objeto 2:** formulário, na palavra "contestar" |
-| 19 | 44,5–47,5 | Tico | Quarenta e sete e noventa. É investimento. | forcado | Lê o celular | Close | Formulário mostra "R$ 47,90" |
-| 20 | 47,5–49,5 | Dona Neide | Botei plano de saúde também. | | Tico ergue os olhos do celular | Close | Áudio de WhatsApp |
-| 21 | 50,0–52,0 | Tico | Eu queria trabalhar nessa empresa. | triste | Fecha a bag e volta a empurrar | Close que abre | Passos |
+| 7 | 13,5–15,5 | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | feliz | **Depoimento:** para a câmera, ao lado da moto. Na tela: "Tiago Almeida, entregador há 4 minutos" | Médio, frontal | Ao fim da frase, o pneu estoura atrás dele |
+| 8 | 17,0–20,0 | Tico | Entrega perdida? Eu nem tenho nota e ela caiu. | pensando | Olha o celular | Close com o celular | **Objeto 1:** "ENTREGA PERDIDA. Sua nota caiu", na palavra "perdida"; notificação |
+| 9 | 20,5–23,0 | Tico | Pedido cancelado. Descarte as quarenta coxinhas. | lado | Abre a bag e olha as coxinhas | Bag e rosto | **Objeto 2:** "DESCARTE O PEDIDO", na palavra "Descarte" |
+| 10 | 23,5–25,0 | Dona Neide | Filho, conseguiu alguma coisa? | | Pega o celular | Médio | Áudio de WhatsApp |
+| 11 | 25,0–26,7 | Tico | Já já eu resolvo, mãe. | forcado | Responde olhando o pneu murcho | Médio | |
+| | 26,7–29,7 | | **Riso que engasga: silêncio** | triste | Abaixa o celular, sem olhar para a câmera | Close sem fala | Silêncio total |
+| 12 | 30,0–32,5 | Tico | Cento e vinte reais? Eu tenho quarenta coxinhas. | pensando | Lê a placa da borracharia, olha a bag, olha o pneu | Vai da placa ao rosto | |
 
-### 4. Porta do conjunto: a Lua (52–77 s)
+### 3. Rua: o pneu recheado (33–52 s)
 
-**Quer:** entregar e sair. **Obstáculo:** quem abre é a Lua, que já ouviu a versão da mãe. **Virada:** ela também está fingindo, e os dois riem de verdade por um instante. **Fecho:** o convite que ele não pode aceitar, e aceita.
+**Quer:** consertar a moto sem incomodar o Jão. **Obstáculo:** não há dinheiro. **Virada:** funciona. **Fecho:** uma segunda chance, com um cachorro atrás.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 22 | 53,0–55,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Abre a porta, crachá no pescoço; Tico trava com a mão no interfone | Dupla, a câmera se aproxima, com Fiscal ao lado | Interfone, porta |
-| 23 | 55,0–57,5 | Lua | Trinta funcionários! Tua mãe postou no grupo! | feliz | Mostra o celular | Close da Lua | |
-| 24 | 57,5–58,5 | Tico | Exatamente. | forcado, suor | Esconde a bag atrás do corpo | Close do Tico | Fiscal late uma vez |
-| 25 | 59,0–60,5 | Lua | E o dono veio entregar? | pensando | Inclina a cabeça | Dupla | |
-| 26 | 60,5–63,0 | Tico | Tô acompanhando a operação na ponta. | forcado, suor | Cruza os braços. **Fiscal olha para a câmera** | Dupla | Fiscal late duas vezes |
-| 27 | 63,5–64,2 | Tico | E você? | forcado | Tenta mudar de assunto | Dupla | |
-| 28 | 64,2–66,0 | Lua | Tudo ótimo! Hoje saí cedo. | forcado | Sorri. Ao ouvir o latido, olha para o Fiscal, e o sorriso trava | Close da Lua | Fiscal late baixinho, logo depois de "ótimo" |
-| 29 | 66,5–67,2 | Tico | Que horas? | pensando | Repara no crachá ainda no pescoço dela | Dupla | |
-| 30 | 67,2–69,0 | Lua | Nove e meia. Da noite. | cansado | Esconde o crachá dentro da camisa | Close da Lua | |
-| 31 | 69,0–70,0 | Lua | E meu jantar? | neutro | Recompõe o sorriso e estende a mão | Dupla | |
-| 32 | 70,0–72,0 | Tico | Segundo o sistema, você já jantou. | forcado | Mostra a bag vazia. **Olha para a câmera por 0,5 s** | Dupla | |
-| 33 | 72,5–73,7 | Lua | Você não mudou nada. | rindo | Risada alta de verdade; ele ri junto | Close dos dois | Só a risada |
-| 34 | 73,7–75,7 | Lua | Me leva pra conhecer a empresa? | feliz | O riso dele morre | Close dos dois | |
-| 35 | 75,7–77,2 | Tico | Claro. Já já eu resolvo. | forcado, suor | | Close do Tico | Fiscal late sem parar |
+| | 33,0–38,0 | | **Sem fala** | pensando | Enfia coxinha por coxinha no pneu, com cuidado de cirurgião | Close das mãos e do pneu | Trilha, coxinhas sendo apertadas |
+| 13 | 38,0–41,0 | Tico | Não é gambiarra. É pneu recheado. | forcado | **Depoimento:** para a câmera, orgulhoso. Na tela: "Tiago Almeida, engenheiro" | Médio, frontal | |
+| 14 | 42,0–43,0 | Tico | Tá rodando! | rindo | Só o pneu em quadro, com o Tico fora da cena | Close do pneu | Motor, pneu fazendo barulho molhado |
+| | 43,0–46,0 | | **Sem fala** | | O pneu solta farelo, e o Fiscal aparece farejando atrás | Close do pneu, abre até o Fiscal | Fungadas |
+| 15 | 46,0–48,5 | Tico | Sai, cachorro! Isso é peça de moto! | bravo | Enxota de leve. **Fiscal olha para a câmera** | Dupla, Tico e Fiscal | |
+| 16 | 49,0–51,5 | Tico | Jantar no Esperança. Segunda chance. | feliz | Olha o celular, animado | Close do Tico | Notificação |
 
-### 5. Porta do conjunto: o clímax cortado (77–83 s)
+### 4. Porta do conjunto: o interfone (52–70 s)
 
-**Quer:** sustentar a história. **Obstáculo:** o Jão, preocupado com o amigo, manda um áudio. **Fecho:** "entregue".
+**Quer:** entregar sem quebrar a regra. **Obstáculo:** a cliente quer que ele suba. **Virada:** os dois brigam sem se ver. **Fecho:** ela desce, e o pneu é comido enquanto ele espera.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 36 | 77,5–80,0 | Jão | Tico, irmão! Deu certo a entrega? Preciso da minha moto. | surpreso, suor (Tico) | Áudio toca sozinho; Tico tenta esconder o celular | Close do celular e do rosto | Áudio de WhatsApp, alto e carinhoso |
-| | 80,0–80,8 | | **Silêncio** | | Lua olha para a moto | Move da moto até a Lua | Silêncio total |
-| 37 | 80,8–82,8 | Lua | Tico... de quem é essa moto? | preocupado | | Close da Lua | Grave só neste impacto |
-| | 82,8–83,3 | | **Corte** | | "ENTREGUE ✓" brilha no celular dele; o Fiscal enche o peito para latir | Close do Fiscal | **Objeto 1 de volta**; corte seco antes do latido |
+| 17 | 52,5–54,0 | Tico | Boa noite, seu jantar chegou. | feliz | Fala no interfone | Médio, com o Fiscal e o aviso ao fundo | Interfone |
+| 18 | 54,0–55,5 | Lua | Sobe, por favor. | | Só a voz, chiando no interfone | Médio | Interfone |
+| 19 | 55,5–58,0 | Tico | Não posso, senhora. Entregador não sobe. | neutro | Aprumado, cumprindo a regra | Médio | |
+| 20 | 58,0–60,0 | Lua | Senhora?! O elevador funciona, moço! | | Só a voz | Close do interfone | Interfone |
+| 21 | 60,0–62,5 | Tico | Meu amigo falou pra eu não subir. | preocupado | | Close do Tico | |
+| 22 | 62,5–64,5 | Lua | Teu amigo vai pagar meu jantar? | | Só a voz | Close do interfone | Interfone |
+| 23 | 64,5–67,0 | Tico | Ele falou que você ia dizer isso. | forcado | Mostra o dedo em riste para o interfone | Close do Tico | |
+| 24 | 67,0–68,5 | Lua | Desço em dois minutos! | | Só a voz | Médio | Interfone batendo; Fiscal late uma vez |
+| | 68,5–70,5 | | **Na tela: "Vinte minutos depois"** | cansado | Tico sentado na calçada; atrás dele o Fiscal come o pneu, que vai murchando | Aberto | Mastigação, pneu esvaziando |
 
-### Votação (83,5–90 s)
+### 5. Porta do conjunto: a Lua (70–83 s)
+
+**Quer:** brigar com o entregador. **Obstáculo:** é o Tico. **Virada:** os dois riem. **Fecho:** a pergunta.
+
+| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
+|---|---|---|---|---|---|---|---|
+| 25 | 71,0–72,0 | Lua | Escuta aqui, seu... | bravo | Abre a porta de crachá, com o dedo em riste, e congela | Dupla | Porta batendo, depois silêncio |
+| | 72,0–73,0 | | **Na tela: placa "Crush de infância" com seta para a Lua** | surpreso (os dois) | A placa desce do alto, como um aviso de condomínio | Dupla | Plim |
+| 26 | 73,0–75,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Baixa o dedo | Close da Lua | |
+| 27 | 75,0–76,5 | Tico | Boa noite, senhora. | envergonhado | Tira o capacete imaginário e sorri | Close do Tico | |
+| 28 | 77,5–79,0 | Lua | Você não mudou nada. | rindo | Risada alta de verdade, e ele ri junto | Close dos dois | Antes da fala, só a risada |
+| 29 | 79,5–81,5 | Lua | Espera... você é entregador? | preocupado | Olha para a bag, depois para ele | Close da Lua | Grave só neste impacto |
+| | 81,5–83,0 | | **Silêncio e corte** | | Tico abre a boca. O Fiscal, com uma coxinha na boca, enche o peito para latir | Close do Tico, depois do Fiscal | Silêncio; corte seco antes do latido |
+
+### Votação (83–90 s)
 
 Tico em depoimento, de lado na tela, com as opções ao lado dele:
 
 **O que vai acontecer no próximo?**
 
-**A) Confessa que a moto é do Jão.**
+**A) Fala a verdade.**
 
-**B) Diz que a empresa é dele.**
+**B) Inventa uma história.**
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 38 | 84,0–87,0 | Tico | Não tô pedindo ajuda. Mas... A ou B? | forcado, suor | **Depoimento:** para a câmera, em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
+| 30 | 84,0–87,0 | Tico | Não tô pedindo ajuda. Mas... o que eu falo? | forcado, suor | **Depoimento:** para a câmera, em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
 
 ## Piadas visuais
 
 | Cena | Piada de fundo |
 |---|---|
-| Rua | Poste com cartazes: "Trago a pessoa amada em 3x no Pix" e "Vendo curso de como vender curso" |
-| Rua | Placa de obra: "Previsão de entrega: 2009" |
+| Rua | Placa da borracharia: "Pneu: R$ 120. Fiado só amanhã" |
+| Rua | Poste com cartaz: "Trago a pessoa amada em 3x no Pix" |
 | Moto | Adesivo gasto na lateral: "Companheira" |
 | Porta | Aviso: "Proibido latir após as 22h. A Administração", com o Fiscal logo abaixo |
 
 ## O que este episódio planta
 
-- **Fiscal:** o latido de longe prepara o público para a regra do cachorro antes de ele aparecer na porta.
-- **Lua também mente:** o Fiscal late para o "tudo ótimo" dela, e o crachá às nove e meia da noite conta o resto.
-- **Jão protege o amigo:** ele sabe da verdade e não conta, então o áudio entrega o Tico por carinho, não por maldade.
-- **Grupo do Esperança:** "trinta funcionários e plano de saúde" agora é a versão oficial.
-- **Dívida de R$ 47,90:** volta como consequência.
-- **Convite para conhecer a empresa:** ele aceitou, e o próximo bico já nasce com essa dívida.
+- **Fiscal e a mentira:** ele late para o "dois minutos" da Lua e prepara a regra antes da pergunta final.
+- **Crachá às dez da noite:** a Lua chega do trabalho, sem ninguém comentar.
+- **Pneu comido:** a moto do Jão está parada na porta da Lua, e o prejuízo é do Tico.
 - **"Não tô pedindo ajuda":** o público participa do defeito do Tico. A frase pode virar a marca fixa da votação.
 
 ## Aberturas do episódio 2
 
-As duas levam ao mesmo marco: a Lua segue sem saber do desemprego, e o Tico entende que pedir ajuda não é fracassar.
+As duas levam ao mesmo marco: o pneu acabou, então o Tico liga para o Jão e aprende que pedir ajuda não é fracassar. E a primeira mentira de verdade passa a existir.
 
-- **Se A vencer:** ele admite que a moto é do Jão, diz que a frota está "em manutenção" e pede ao Jão ajuda para devolvê-la. O Jão ajuda sem cobrar.
-- **Se B vencer:** ele diz que o Jão é funcionário da empresa, e o Jão, sem entender, entra na conversa. Depois, a sós, Tico precisa pedir a ajuda dele para sustentar a história.
+- **Se A vencer:** "Sou. Hoje é meu primeiro dia." A Lua reage com carinho e um pouco de pena. A pena dói mais que a vergonha, e ele emenda: "Mas é só temporário, viu?" O Fiscal late.
+- **Se B vencer:** "Eu? Não, tô fazendo uma pesquisa de campo." O Fiscal late sem parar. A Lua acredita, e agora ele tem uma pesquisa para sustentar.
 
 ## Planos
 
-São 14 planos, mais a tela de votação. A coluna "Plano" das falas indica o enquadramento; dentro de cada plano abaixo, ele muda com movimento de câmera, sem corte.
+São 15 planos, mais a tela de votação. A coluna "Plano" das falas indica o enquadramento; dentro de cada plano abaixo, ele muda com movimento de câmera, sem corte.
 
 | Plano | Falas | Câmera |
 |---|---|---|
-| 1 | 1–4 e silêncio | Aproxima devagar do Tico até o close, sem mostrar o Jão |
-| 2 | 5–9 | Abre até revelar o Jão, depois acompanha os dois |
-| 3 | 10–11 | Depoimento do Tico, câmera quase parada |
-| 4 | 12–15 | Aberto, acompanhando até ele parar |
-| 5 | 16–17 | Aproxima do celular e desce até a bag |
-| 6 | 18–19 | Close com o celular |
-| 7 | 20–21 | Close que abre até o aberto |
-| 8 | 22–24 | Aproxima da porta, vai da Lua para o Tico |
-| 9 | 25–26 | Dupla, com o Fiscal |
-| 10 | 27–30 | Vai do Tico para a Lua, com o crachá em quadro |
-| 11 | 31–35 | Dupla, fecha até o close dos dois e termina no Tico |
-| 12 | 36 | Close do celular e do rosto |
-| 13 | Silêncio e 37 | Vai da moto até o close da Lua |
-| 14 | Corte | Do celular para o close do Fiscal |
+| 1 | 1–6 | Dupla, indo do Tico para o Jão e voltando |
+| 2 | 7 | Depoimento, câmera quase parada, até o estouro |
+| 3 | 8–9 | Close do celular, desce até a bag |
+| 4 | 10–11 e silêncio | Aproxima até o close |
+| 5 | 12 | Vai da placa ao rosto |
+| 6 | Mãos no pneu | Close das mãos |
+| 7 | 13 | Depoimento, câmera quase parada |
+| 8 | 14 e o Fiscal | Acompanha o pneu e abre até o Fiscal |
+| 9 | 15–16 | Dupla, fecha no Tico |
+| 10 | 17–19 | Médio na porta |
+| 11 | 20–24 | Vai do interfone para o Tico e volta |
+| 12 | "Vinte minutos depois" | Aberto, com o Fiscal e o pneu ao fundo |
+| 13 | 25–28 | Dupla, fecha até o close dos dois |
+| 14 | 29 | Close da Lua |
+| 15 | Silêncio e corte | Do Tico para o Fiscal |
 
 ## Para conferir na produção
 
-- **Cenários:** o episódio só usa rua, com a esquina como um trecho dela, e porta do conjunto. A kitnet fica para depois. Os depoimentos usam esses mesmos cenários.
-- **Vista:** humanos só têm vista de frente, por isso o Tico empurra a moto, sem pilotar. A pose de empurrar precisa ser testada ao lado da moto de perfil.
-- **Fiscal olhando para a câmera:** a cabeça dele já é desenhada de frente, então a olhada não exige desenho novo.
-- **Nomes:** "Conjunto Esperança" é fictício. O app não é nomeado; o nome fica em aberto para quando for necessário.
+- **Vista:** como os humanos só têm vista de frente, ninguém aparece pilotando. A moto andando é mostrada em close do pneu.
+- **Cenários:** rua, com a esquina e a borracharia como trechos dela, e porta do conjunto. A kitnet fica para depois.
+- **Objetos novos:** coxinhas, pneu que murcha, interfone, chave da moto e a placa "Crush de infância".
+- **Nomes:** "Esperança" é fictício, e o app não é nomeado.
+- **Cena 2 e bíblia:** o episódio 1 da bíblia ainda traz outra história. Ver a conferência do roteiro.
