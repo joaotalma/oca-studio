@@ -2,11 +2,11 @@
 
 **O fio:** a regra do Jão, "entregador não sobe". O Tico promete segui-la, tudo dá errado para ele não falhar com o amigo, e é por causa dela que a Lua desce até a porta.
 
-**Em 3 frases:** Desempregado há três meses, Tico pega a moto do Jão emprestada para começar a fazer entregas, prometendo arcar com qualquer prejuízo. Na primeira entrega o pneu estoura e, sem dinheiro para o conserto, ele recheia o pneu com as coxinhas do pedido cancelado. Na entrega seguinte, ele briga pelo interfone com uma cliente que quer que ele suba, e ela desce furiosa: é a Lua, o crush de infância, que pergunta se ele é entregador.
+**Em 3 frases:** Desempregado há três meses, Tico pega a moto do Jão emprestada para começar a fazer entregas, prometendo arcar com qualquer prejuízo. Na primeira entrega o pneu estoura e, sem dinheiro para o conserto, ele entra na borracharia cantando com o bolo do pedido cancelado, cobra pelo "recado cantado" e aceita o conserto como pagamento. Na entrega seguinte, ele briga pelo interfone com uma cliente que quer que ele suba, e ela desce furiosa: é a Lua, o crush de infância, que pergunta se ele é entregador.
 
-- **Absurdo:** o pneu recheado, tratado por ele como solução técnica.
+- **Absurdo:** o recado cantado que ninguém pediu, tratado por ele como serviço profissional.
 - **Mentira:** ainda não existe. Nasce no fim, quando a Lua faz a pergunta e o público vota.
-- **Aprendizado:** pedir ajuda não é fracassar. Chega na abertura do episódio 2, porque o pneu acaba e ele precisa ligar para o Jão.
+- **Aprendizado:** pedir ajuda não é fracassar. Chega na abertura do episódio 2, quando ele precisa ligar para o Jão.
 - **Tempos:** PROVISÓRIOS, estimados até termos as vozes.
 
 ## Como o fio avança
@@ -15,8 +15,8 @@
 |---|---|---|
 | 1 | Promete: prejuízo é dele e entregador não sobe | Nada ainda; é o primeiro dia |
 | 2 | Precisa consertar a moto antes que vire prejuízo do amigo | Pneu estoura, a nota cai e o conserto custa R$ 120 |
-| 3 | Dá um jeito sem incomodar o Jão | Pneu de coxinha, e um cachorro seguindo |
-| 4 | Defende a regra pelo interfone, contra a cliente | A cliente desce, e o cachorro come o pneu |
+| 3 | Dá um jeito sem incomodar o Jão | Conserta o pneu com um bolo que não é dele |
+| 4 | Defende a regra pelo interfone, contra a cliente | A cliente desce, e o cachorro come o jantar |
 | 5 | A regra trouxe a Lua até ele | Ela pergunta se ele é entregador |
 
 ## Cenas
@@ -36,60 +36,65 @@
 
 ### 2. Rua: a primeira entrega (13–33 s)
 
-**Quer:** fazer a primeira entrega. **Obstáculo:** o pneu. **Virada:** o app ainda o pune e manda jogar a comida fora. **Fecho:** ele vê as coxinhas e o preço do conserto ao mesmo tempo.
+**Quer:** fazer a primeira entrega. **Obstáculo:** o pneu. **Virada:** o app ainda o pune e manda jogar o bolo fora. **Fecho:** ele vê o preço do conserto, o bolo e o celular ao mesmo tempo.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
 | 7 | 13,5–15,5 | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | feliz | **Depoimento:** para a câmera, ao lado da moto. Na tela: "Tiago Almeida, entregador há 4 minutos" | Médio, frontal | Ao fim da frase, o pneu estoura atrás dele |
 | 8 | 17,0–20,0 | Tico | Entrega perdida? Eu nem tenho nota e ela caiu. | pensando | Olha o celular | Close com o celular | **Objeto 1:** "ENTREGA PERDIDA. Sua nota caiu", na palavra "perdida"; notificação |
-| 9 | 20,5–23,0 | Tico | Pedido cancelado. Descarte as quarenta coxinhas. | lado | Abre a bag e olha as coxinhas | Bag e rosto | **Objeto 2:** "DESCARTE O PEDIDO", na palavra "Descarte" |
+| 9 | 20,5–23,0 | Tico | Pedido cancelado. Descarte o bolo. | lado | Abre a bag: um bolo escrito "Feliz 80 anos, Marlene" | Bag e rosto | **Objeto 2:** "DESCARTE O PEDIDO", na palavra "Descarte" |
 | 10 | 23,5–25,0 | Dona Neide | Filho, conseguiu alguma coisa? | | Pega o celular | Médio | Áudio de WhatsApp |
 | 11 | 25,0–26,7 | Tico | Já já eu resolvo, mãe. | forcado | Responde olhando o pneu murcho | Médio | |
 | | 26,7–29,7 | | **Riso que engasga: silêncio** | triste | Abaixa o celular, sem olhar para a câmera | Close sem fala | Silêncio total |
-| 12 | 30,0–32,5 | Tico | Cento e vinte reais? Eu tenho quarenta coxinhas. | pensando | Lê a placa da borracharia, olha a bag, olha o pneu | Vai da placa ao rosto | |
+| 12 | 30,0–31,5 | Tico | Cento e vinte reais? | pensando | Lê a placa da borracharia | Vai da placa ao rosto | |
+| | 31,5–33,0 | | **Sem fala** | pensando | Olha para o bolo, para o celular e para a borracharia. A ideia chega | Close | Silêncio curto |
 
-### 3. Rua: o pneu recheado (33–52 s)
+### 3. Borracharia: o recado cantado (33–52 s)
 
-**Quer:** consertar a moto sem incomodar o Jão. **Obstáculo:** não há dinheiro. **Virada:** funciona. **Fecho:** uma segunda chance, com um cachorro atrás.
-
-| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
-|---|---|---|---|---|---|---|---|
-| | 33,0–38,0 | | **Sem fala** | pensando | Enfia coxinha por coxinha no pneu, com cuidado de cirurgião | Close das mãos e do pneu | Trilha, coxinhas sendo apertadas |
-| 13 | 38,0–41,0 | Tico | Não é gambiarra. É pneu recheado. | forcado | **Depoimento:** para a câmera, orgulhoso. Na tela: "Tiago Almeida, engenheiro" | Médio, frontal | |
-| 14 | 42,0–43,0 | Tico | Tá rodando! | rindo | Só o pneu em quadro, com o Tico fora da cena | Close do pneu | Motor, pneu fazendo barulho molhado |
-| | 43,0–46,0 | | **Sem fala** | | O pneu solta farelo, e o Fiscal aparece farejando atrás | Close do pneu, abre até o Fiscal | Fungadas |
-| 15 | 46,0–48,5 | Tico | Sai, cachorro! Isso é peça de moto! | bravo | Enxota de leve. **Fiscal olha para a câmera** | Dupla, Tico e Fiscal | |
-| 16 | 49,0–51,5 | Tico | Jantar no Esperança. Segunda chance. | feliz | Olha o celular, animado | Close do Tico | Notificação |
-
-### 4. Porta do conjunto: o interfone (52–70 s)
-
-**Quer:** entregar sem quebrar a regra. **Obstáculo:** a cliente quer que ele suba. **Virada:** os dois brigam sem se ver. **Fecho:** ela desce, e o pneu é comido enquanto ele espera.
+**Quer:** consertar o pneu sem dinheiro. **Obstáculo:** o borracheiro não pediu nada e também não tem dinheiro. **Virada:** é exatamente por ele não ter dinheiro que o plano funciona. **Fecho:** o borracheiro entende tudo e aceita mesmo assim.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 17 | 52,5–54,0 | Tico | Boa noite, seu jantar chegou. | feliz | Fala no interfone | Médio, com o Fiscal e o aviso ao fundo | Interfone |
-| 18 | 54,0–55,5 | Lua | Sobe, por favor. | | Só a voz, chiando no interfone | Médio | Interfone |
-| 19 | 55,5–58,0 | Tico | Não posso, senhora. Entregador não sobe. | neutro | Aprumado, cumprindo a regra | Médio | |
-| 20 | 58,0–60,0 | Lua | Senhora?! O elevador funciona, moço! | | Só a voz | Close do interfone | Interfone |
-| 21 | 60,0–62,5 | Tico | Meu amigo falou pra eu não subir. | preocupado | | Close do Tico | |
-| 22 | 62,5–64,5 | Lua | Teu amigo vai pagar meu jantar? | | Só a voz | Close do interfone | Interfone |
-| 23 | 64,5–67,0 | Tico | Ele falou que você ia dizer isso. | forcado | Mostra o dedo em riste para o interfone | Close do Tico | |
-| 24 | 67,0–68,5 | Lua | Desço em dois minutos! | | Só a voz | Médio | Interfone batendo; Fiscal late uma vez |
-| | 68,5–70,5 | | **Na tela: "Vinte minutos depois"** | cansado | Tico sentado na calçada; atrás dele o Fiscal come o pneu, que vai murchando | Aberto | Mastigação, pneu esvaziando |
+| 13 | 33,0–36,0 | Tico | Parabéns, meu amigo, hoje é seu grande dia! | feliz | Entra cantando, com o bolo e uma vela acesa | Aberto, com o borracheiro ao fundo | Musiquinha desafinada no celular |
+| 14 | 36,0–37,5 | Borracheiro | Hoje não é meu aniversário. | surpreso | Para com a chave de roda na mão | Dupla | A música continua |
+| 15 | 37,5–40,0 | Tico | É recado cantado. Cento e vinte reais. | neutro | Desliga a música e estende a mão | Dupla | A música para de repente |
+| 16 | 40,0–43,0 | Borracheiro | Eu não pedi! E não tenho cento e vinte! | bravo | Aponta para a porta | Close do borracheiro | |
+| 17 | 43,0–45,0 | Tico | A gente pode acertar de outro jeito. | pensando | Olha devagar para o pneu furado lá fora | Vai do Tico até a moto | |
+| 18 | 45,0–46,5 | Borracheiro | Teu pneu furou, né? | cansado | Solta o ar | Dupla | |
+| 19 | 46,5–47,5 | Tico | Feliz aniversário. | forcado | Oferece o bolo. **Olha para a câmera por 0,5 s** | Dupla | |
+| 20 | 47,5–48,5 | Borracheiro | Quem é Marlene? | pensando | Já com um pedaço de bolo na mão | Close do bolo | |
+| 21 | 48,5–50,5 | Tico | Você, até o pneu ficar pronto. | feliz | Assopra a vela por ele | Dupla | Chave de roda trabalhando |
+| 22 | 50,5–52,5 | Tico | Jantar no Esperança. Segunda chance. | feliz | Ao lado da moto consertada, olha o celular | Close do Tico | Notificação |
 
-### 5. Porta do conjunto: a Lua (70–83 s)
+### 4. Porta do conjunto: o interfone (53–71 s)
+
+**Quer:** entregar sem quebrar a regra. **Obstáculo:** a cliente quer que ele suba. **Virada:** os dois brigam sem se ver. **Fecho:** ela desce, e o jantar é comido enquanto ele espera.
+
+| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
+|---|---|---|---|---|---|---|---|
+| 23 | 53,0–54,5 | Tico | Boa noite, seu jantar chegou. | feliz | Fala no interfone, com a bag no chão | Médio, com o Fiscal e o aviso ao fundo | Interfone |
+| 24 | 54,5–56,0 | Lua | Sobe, por favor. | | Só a voz, chiando no interfone | Médio | Interfone |
+| 25 | 56,0–58,5 | Tico | Não posso, senhora. Entregador não sobe. | neutro | Aprumado, cumprindo a regra | Médio | |
+| 26 | 58,5–60,5 | Lua | Senhora?! O elevador funciona, moço! | | Só a voz | Close do interfone | Interfone |
+| 27 | 60,5–63,0 | Tico | Meu amigo falou pra eu não subir. | preocupado | | Close do Tico | |
+| 28 | 63,0–65,0 | Lua | Teu amigo vai pagar meu jantar? | | Só a voz | Close do interfone | Interfone |
+| 29 | 65,0–67,5 | Tico | Ele falou que você ia dizer isso. | forcado | Aponta o dedo para o interfone | Close do Tico | |
+| 30 | 67,5–69,0 | Lua | Desço em dois minutos! | | Só a voz | Médio | Interfone batendo; Fiscal late uma vez |
+| | 69,0–71,0 | | **Na tela: "Vinte minutos depois"** | cansado | Tico sentado na calçada. Atrás dele, o Fiscal está com a cabeça dentro da bag. **Fiscal olha para a câmera** | Aberto | Mastigação |
+
+### 5. Porta do conjunto: a Lua (71–83 s)
 
 **Quer:** brigar com o entregador. **Obstáculo:** é o Tico. **Virada:** os dois riem. **Fecho:** a pergunta.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 25 | 71,0–72,0 | Lua | Escuta aqui, seu... | bravo | Abre a porta de crachá, com o dedo em riste, e congela | Dupla | Porta batendo, depois silêncio |
+| 31 | 71,0–72,0 | Lua | Escuta aqui, seu... | bravo | Abre a porta de crachá, com o dedo em riste, e congela | Dupla | Porta batendo, depois silêncio |
 | | 72,0–73,0 | | **Na tela: placa "Crush de infância" com seta para a Lua** | surpreso (os dois) | A placa desce do alto, como um aviso de condomínio | Dupla | Plim |
-| 26 | 73,0–75,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Baixa o dedo | Close da Lua | |
-| 27 | 75,0–76,5 | Tico | Boa noite, senhora. | envergonhado | Acena sem jeito e sorri | Close do Tico | |
-| 28 | 77,5–79,0 | Lua | Você não mudou nada. | rindo | Risada alta de verdade, e ele ri junto | Close dos dois | Antes da fala, só a risada |
-| 29 | 79,5–81,5 | Lua | Espera... você é entregador? | preocupado | Olha para a bag, depois para ele | Close da Lua | Grave só neste impacto |
-| | 81,5–83,0 | | **Silêncio e corte** | | Tico abre a boca. O Fiscal, com uma coxinha na boca, enche o peito para latir | Close do Tico, depois do Fiscal | Silêncio; corte seco antes do latido |
+| 32 | 73,0–75,0 | Lua | Tico? Tico do bloco quatro? | surpreso | Baixa o dedo | Close da Lua | |
+| 33 | 75,0–76,5 | Tico | Boa noite, senhora. | envergonhado | Acena sem jeito e sorri | Close do Tico | |
+| 34 | 77,5–79,0 | Lua | Você não mudou nada. | rindo | Risada alta de verdade, e ele ri junto | Close dos dois | Antes da fala, só a risada |
+| 35 | 79,5–81,5 | Lua | Espera... você é entregador? | preocupado | Olha para a bag, depois para ele | Close da Lua | Grave só neste impacto |
+| | 81,5–83,0 | | **Silêncio e corte** | | Tico abre a boca. O Fiscal, com a embalagem do jantar na boca, enche o peito para latir | Close do Tico, depois do Fiscal | Silêncio; corte seco antes do latido |
 
 ### Votação (83–90 s)
 
@@ -103,7 +108,11 @@ Tico em depoimento, de lado na tela, com as opções ao lado dele:
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 30 | 84,0–87,0 | Tico | Não tô pedindo ajuda. Mas... o que eu falo? | forcado, suor | **Depoimento:** para a câmera, em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
+| 36 | 84,0–87,0 | Tico | Não tô pedindo ajuda. Mas... o que eu falo? | forcado, suor | **Depoimento:** para a câmera, em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
+
+## Música do recado
+
+A letra e a melodia da fala 13 são originais, compostas para a cena e sintetizadas em código. O "Parabéns a você" tradicional fica de fora até a confirmação de seus direitos.
 
 ## Piadas visuais
 
@@ -112,18 +121,21 @@ Tico em depoimento, de lado na tela, com as opções ao lado dele:
 | Rua | Placa da borracharia: "Pneu: R$ 120. Fiado só amanhã" |
 | Rua | Poste com cartaz: "Trago a pessoa amada em 3x no Pix" |
 | Moto | Adesivo gasto na lateral: "Companheira" |
+| Borracharia | Bolo: "Feliz 80 anos, Marlene" |
 | Porta | Aviso: "Proibido latir após as 22h. A Administração", com o Fiscal logo abaixo |
 
 ## O que este episódio planta
 
+- **Dona Marlene:** ela fez 80 anos sem bolo, e alguém vai perguntar por ele.
+- **Borracheiro:** agora conhece o Tico e sabe o que ele é capaz de fazer.
 - **Fiscal e a mentira:** ele late para o "dois minutos" da Lua e prepara a regra antes da pergunta final.
 - **Crachá às dez da noite:** a Lua chega do trabalho, sem ninguém comentar.
-- **Pneu comido:** a moto do Jão está parada na porta da Lua, e o prejuízo é do Tico.
+- **Jantar comido:** a primeira entrega foi perdida, e a segunda virou comida de cachorro. O prejuízo é do Tico.
 - **"Não tô pedindo ajuda":** o público participa do defeito do Tico. A frase pode virar a marca fixa da votação.
 
 ## Aberturas do episódio 2
 
-As duas levam ao mesmo marco: o pneu acabou, então o Tico liga para o Jão e aprende que pedir ajuda não é fracassar. E a primeira mentira de verdade passa a existir.
+As duas levam ao mesmo marco: sem dinheiro para repor o jantar, o Tico liga para o Jão e aprende que pedir ajuda não é fracassar. E a primeira mentira de verdade passa a existir.
 
 - **Se A vencer:** "Sou. Hoje é meu primeiro dia." A Lua reage com carinho e um pouco de pena. A pena dói mais que a vergonha, e ele emenda: "Mas é só temporário, viu?" O Fiscal late.
 - **Se B vencer:** "Eu? Não, tô fazendo uma pesquisa de campo." O Fiscal late sem parar. A Lua acredita, e agora ele tem uma pesquisa para sustentar.
@@ -138,22 +150,23 @@ São 15 planos, mais a tela de votação. A coluna "Plano" das falas indica o en
 | 2 | 7 | Depoimento, câmera quase parada, até o estouro |
 | 3 | 8–9 | Close do celular, desce até a bag |
 | 4 | 10–11 e silêncio | Aproxima até o close |
-| 5 | 12 | Vai da placa ao rosto |
-| 6 | Mãos no pneu | Close das mãos |
-| 7 | 13 | Depoimento, câmera quase parada |
-| 8 | 14 e o Fiscal | Acompanha o pneu e abre até o Fiscal |
-| 9 | 15–16 | Dupla, fecha no Tico |
-| 10 | 17–19 | Médio na porta |
-| 11 | 20–24 | Vai do interfone para o Tico e volta |
-| 12 | "Vinte minutos depois" | Aberto, com o Fiscal e o pneu ao fundo |
-| 13 | 25–28 | Dupla, fecha até o close dos dois |
-| 14 | 29 | Close da Lua |
-| 15 | Silêncio e corte | Do Tico para o Fiscal |
+| 5 | 12 e a ideia | Vai da placa ao rosto |
+| 6 | 13–14 | Aberto, acompanhando a entrada do Tico |
+| 7 | 15–17 | Dupla, indo do borracheiro até a moto |
+| 8 | 18–19 | Dupla |
+| 9 | 20–21 | Close do bolo, abre até a dupla |
+| 10 | 22 | Close do Tico |
+| 11 | 23–25 | Médio na porta |
+| 12 | 26–30 | Vai do interfone para o Tico e volta |
+| 13 | "Vinte minutos depois" | Aberto, com o Fiscal e a bag ao fundo |
+| 14 | 31–34 | Dupla, fecha até o close dos dois |
+| 15 | 35, silêncio e corte | Vai da Lua para o Tico e termina no Fiscal |
 
 ## Para conferir na produção
 
-- **Vista:** como os humanos só têm vista de frente, ninguém aparece pilotando. A moto andando é mostrada em close do pneu.
-- **Cenários:** rua, com a esquina e a borracharia como trechos dela, e porta do conjunto. A kitnet fica para depois.
-- **Objetos novos:** coxinhas, pneu que murcha, interfone, chave da moto e a placa "Crush de infância".
-- **Nomes:** "Esperança" é fictício, e o app não é nomeado.
+- **Personagem novo:** o borracheiro precisa de desenho e de uma 5ª voz.
+- **Vista:** como os humanos só têm vista de frente, ninguém aparece pilotando.
+- **Cenários:** rua, com a esquina como trecho dela, borracharia e porta do conjunto. A borracharia é um cenário a mais que o previsto no kit, e a kitnet fica para depois.
+- **Objetos novos:** bolo com vela, interfone, chave da moto, chave de roda e a placa "Crush de infância".
+- **Nomes:** "Esperança" e "Marlene" são fictícios, e o app não é nomeado.
 - **Bíblia:** o episódio 1 e a votação descritos lá ainda trazem a versão anterior.
