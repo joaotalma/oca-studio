@@ -72,7 +72,7 @@ História: `docs/BIBLIA.md`. Aparência: `personagens/chars.js`; se houver difer
 ## Fiscal
 
 - **Quem é:** vira-lata do prédio, na portaria do conjunto.
-- **Função:** late sempre que alguém mente. Quanto maior a mentira, mais late.
+- **Função:** late quando alguém diz o que sabe que não é verdade. Quanto maior a mentira, mais late.
 - **Desenho:** `drawDog(estado ou pose)`, de perfil, virado para a esquerda. Estados: `stand`, `alerta`, `latindo`.
 
 | Parte | Cor |

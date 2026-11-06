@@ -9,7 +9,7 @@ Extraídas da aba "Plano de produção" da bíblia. São valores iniciais: calib
 | Informação vira objeto | Notificação, nota de app, boleto ou placar entram na palavra, em até 6 quadros; no máximo 2 por episódio | O objeto aparece na palavra, nunca depois |
 | Rostos | 12 expressões + 4 detalhes; troca a cada 2 a 3 s, dentro de uma piscada; 4 bocas pelo volume | A boca abre quando o som sobe |
 | Movimentos | Gesto de 5 a 6 quadros que termina 0,1 a 0,2 s antes da palavra-chave | Nenhum gesto chega depois da fala |
-| Câmera | 10 a 15 planos (aberto, dupla, close), movimento lento contínuo, close sem fala de 3 a 4 s no "riso que engasga" | A câmera mostra o que importa |
+| Câmera | Imagem muda a cada 2 a 3 s (cerca de 30 a 35 cortes em 80 a 90 s), com rostos grandes e cenários simples; close sem fala de 3 a 4 s no "riso que engasga" | A câmera mostra o que importa |
 | Som | Um efeito por acontecimento, um som de objeto por cena, trilha sempre abaixo da voz, grave só no impacto, silêncio antes de cada revelação | A fala se entende em fone barato |
 
 ## Kit do piloto

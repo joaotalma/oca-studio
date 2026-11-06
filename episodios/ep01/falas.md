@@ -17,13 +17,13 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 
 | Arquivo | Quem | Texto | Direção |
 |---|---|---|---|
-| `01_tico.mp3` | Tico | Por favorzinho, Jão. Três meses parado. Empresta a Companheira? | Pedinte, meio sem graça, querendo parecer leve |
-| `02_jao.mp3` | Jão | Pega. Mas qualquer prejuízo, a conta é tua. | Tranquilo de amigo; firme só em "a conta é tua" |
-| `03_tico.mp3` | Tico | Fechado. | Rápido e aliviado |
-| `04_jao.mp3` | Jão | Ah, e cliente é folgado: entregador não sobe. | Conselho de veterano, com carinho |
-| `05_tico.mp3` | Tico | Valeu pela dica. | Distraído, já indo embora |
-| `06_tico.mp3` | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | Empolgado de verdade, para a câmera |
-| `07_tico.mp3` | Tico | Aaah! Mas que porcaria de pneu! | Grito de raiva, curto. Será coberto pelo apito |
+| `01_tico.mp3` | Tico | Primeiro dia, primeira entrega. Hoje muda tudo. | Empolgado de verdade, para a câmera |
+| `02_tico.mp3` | Tico | Aaah! Mas que porcaria de pneu! | Grito de raiva, curto. Será coberto pelo apito |
+| `03_tico.mp3` | Tico | Por favorzinho, Jão. Três meses parado. Empresta a Companheira? | Pedinte, meio sem graça, querendo parecer leve |
+| `04_jao.mp3` | Jão | Pega. Mas qualquer prejuízo, a conta é tua. | Tranquilo de amigo; firme só em "a conta é tua" |
+| `05_tico.mp3` | Tico | Fechado. | Rápido e aliviado |
+| `06_jao.mp3` | Jão | Ah, e cliente é folgado: entregador não sobe. | Conselho de veterano, com carinho |
+| `07_tico.mp3` | Tico | Valeu pela dica. | Distraído, já indo embora |
 | `08_tico.mp3` | Tico | Como é que eu resolvo isso? | Falando sozinho, começando a se desesperar |
 | `09_tico.mp3` | Tico | Perdi a entrega? Eu nem tenho nota e ela caiu. | Lendo, incrédulo; a segunda frase sai rindo de nervoso |
 | `10_tico.mp3` | Tico | E o que eu faço com esse tanto de bolo? | Desanimado, olhando para o bolo |
@@ -55,7 +55,7 @@ Gere um arquivo por fala, com a voz fixa de cada personagem, e salve em `audio/e
 
 ## Cuidados
 
-- **Fala 7:** o texto só serve para dar a emoção, porque o apito de censura cobre a voz.
+- **Fala 2:** o texto só serve para dar a emoção, porque o apito de censura cobre a voz.
 - **Fala 12:** é cantada. Se o ElevenLabs não entregar um canto engraçado, gere falada e com ritmo; a musiquinha entra por baixo. Se preferir, grave você mesmo.
 - **Falas 23, 25, 27 e 29:** gere sem efeito. O som de interfone é aplicado depois.
 - **Latidos e sons:** não gere. São sintetizados em código.

@@ -45,7 +45,9 @@ Todas já existem: as 13 expressões, as 4 bocas e os detalhes `suor` e `veia`.
 | Elemento | Situação | Onde aparece |
 |---|---|---|
 | Legenda de fala | **Criar** | Episódio todo: 1 a 3 palavras, destaque amarelo |
-| Nome e cargo do depoimento | **Criar** | Cena 2 e votação |
+| Nome e cargo do depoimento | **Criar** | Abertura e votação |
+| Painel fixo de dias, nota e dívida | Criado | Da cena 2 à votação |
+| Celular em tela cheia | Criado | Cena 2 |
 | Notificação "ENTREGA PERDIDA" | **Criar** | Cena 2 |
 | Balão de palavrão | **Criar** | Cena 2 |
 | Lâmpada acendendo | **Criar** | Cena 2 |

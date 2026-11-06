@@ -15,6 +15,15 @@ Fonte completa: `docs/BIBLIA.md`. Antes de escrever, releia a bíblia e `episodi
 
 No episódio 1 não há votação anterior: os 12 s iniciais precisam abrir no meio da ação por conta própria. Os 12 s de abertura são trocáveis; os outros 78 s não dependem do voto.
 
+## Dinâmica
+
+- **Problema no primeiro segundo:** a primeira fala ou imagem já mostra o conflito. Se precisar de contexto, volte depois com um corte rápido, como "Duas horas antes".
+- **Imagem que muda a cada 2 a 3 s:** rostos grandes e cortes para quem reage. Não dependa de cenário caro.
+- **Celular em tela cheia:** notificações e conversas viram cortes baratos.
+- **Painel fixo:** dias desempregado, nota e dívida seguem de um episódio para o outro.
+- **Voto por uma palavra:** o público comenta uma palavra, e cada opção mostra o que custa.
+- **Referências:** estude técnica e medidas de outras séries. Nunca reaproveite texto, desenho, nomes ou situações.
+
 ## O fio e as cenas
 
 Escreva primeiro o fio, em uma frase, e uma tabela de como ele avança em cada cena. Sem isso, não escreva falas.
@@ -65,7 +74,7 @@ Recurso de falso documentário, em uso a partir do episódio 1. Empresta só a t
 
 ## Votação
 
-- Sempre 2 opções. A e B levam ao mesmo próximo marco: o voto muda o caminho e o aprendizado, nunca o rumo.
+- Sempre 2 opções, cada uma com uma palavra e um custo. A e B levam ao mesmo próximo marco: o voto muda o caminho e o aprendizado, nunca o rumo.
 - O público decide como o Tico reage no clímax, qual mentira ou bico vem a seguir, e detalhes de cenário e tom.
 - O público nunca decide o arco da temporada, o destino de Tico e Lua, tema político, pessoa real, polêmica, traição, luto ou morte.
 - Em empate, o Tico decide e o episódio brinca com isso.

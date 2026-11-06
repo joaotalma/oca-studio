@@ -124,7 +124,7 @@ No rascunho, acrescente `--rascunho`: resolução e fps passam a ser 540x960 e 1
 - [ ] Legenda alinhada à voz real.
 - [ ] Loudness perto de -16 LUFS (TikTok).
 - [ ] Duração de 85 a 95 s.
-- [ ] Gesto antes da palavra; expressão troca na piscada; de 10 a 15 planos.
+- [ ] Gesto antes da palavra; expressão troca na piscada; imagem muda a cada 2 a 3 s.
 - [ ] Compreensível sem ter visto os episódios anteriores.
 
 Detalhes e forma de medir: `references/qa-checklist.md`.

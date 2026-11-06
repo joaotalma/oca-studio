@@ -9,115 +9,156 @@ const CELULAR = { armR: [18, 150], propR: 'phone' };
 const MOTO_S = 1.9, MOTO_Y = CHAO + 10, MOTO_X = 700;
 const moto = (x, o) => motoSVG(x, MOTO_Y, MOTO_S, o);
 const BAG_X = MOTO_X - 95, BAG_Y = MOTO_Y - 395;
+const POW = 2.7;
+
+// Enquadramentos: rosto grande a 1,9x, centrado acima da legenda
+const C_TICO = 897, C_JAO = 1000, C_BORR = 1035, C_LUA = 955;
+
+// Atores por cenário: o mesmo elenco vale para todos os planos do cenário
+const ESQUINA = [
+  { id: 'tico', x: 220, poses: [[4.6, { expr: 'envergonhado', bag: false, armL: [-35, 150], armR: [35, -150], frente: 'R' }], [9.6, { expr: 'feliz', ...DOWN, armR: [50, 70], propR: 'chave', frente: null }], [12.4, { bag: true, propR: null, ...DOWN }]] },
+  { id: 'jao', x: 850, s: 1.3, poses: [[4.6, { expr: 'neutro', bag: true, armL: [-14, -8], armR: [12, 8] }], [7.5, { armL: [-58, -70], propL: 'chave' }], [9.8, { armL: [-14, -8], propL: null }], [10.4, { armR: [150, 170] }], [12.4, { expr: 'feliz', bag: false, armR: [12, 8], armL: [-40, -60] }]] },
+];
+const RUA_TICO = [{ id: 'tico', x: 140, poses: [[3, { expr: 'surpreso', bag: true, ...DOWN }], [3.5, { expr: 'bravo', detalhe: 'veia', armL: [-60, -130], armR: [60, 130] }], [13.4, { expr: 'preocupado', detalhe: null, armL: [-130, 150], armR: [130, -150] }], [15.8, { expr: 'pensando', ...DOWN, ...CELULAR }], [19, { ...DOWN, propR: null, bag: false }], [19.3, { armR: [70, 80] }], [20, { expr: 'surpreso', armR: [14, 8] }], [20.6, { expr: 'triste' }], [22, { expr: 'preocupado' }], [25, { expr: 'feliz', armR: [120, 170] }]] }];
+const motoFurada = () => moto(MOTO_X, { furado: true });
+const bagNaMoto = (t) => t < 19 ? '' : (t < 19.9 ? bagFechadaSVG(BAG_X, BAG_Y - 200 * (1 - sai((t - 19) / .3)), .8) : bagAbertaSVG(BAG_X, BAG_Y, .8, boloSVG(0, -190, 1.25, false)));
+const OFICINA = [
+  { id: 'borracheiro', x: 680, poses: [[26, { expr: 'neutro', armL: [-14, -8], armR: [14, 20], propR: 'chaveRoda' }], [29, { expr: 'surpreso' }], [33, { expr: 'bravo', armL: [-85, -90] }], [38, { expr: 'cansado', armL: [-14, -8] }], [40.5, { expr: 'pensando', armR: [40, 120], propR: 'fatia' }]] },
+  { id: 'tico', x: 250, movX: [26, 27.6, 20, 250], poses: [[26, { expr: 'feliz', bag: false, armL: [-14, 20], armR: [32, 105], propR: 'bolo' }], [30.5, { expr: 'neutro', armL: [35, 80], frente: 'L' }], [36, { expr: 'pensando', armL: [-14, 20], frente: null }], [39.5, { expr: 'forcado', armR: [58, 95] }], [41.6, { expr: 'feliz', propR: 'boloApagado' }]] },
+];
+const PORTA = [
+  { id: 'fiscal', x: 190, s: .85, flip: true, poses: [[46, { expr: 'neutro' }]] },
+  { id: 'tico', x: 640, poses: [[46, { expr: 'feliz', bag: true, armR: [70, 95] }], [49, { expr: 'neutro', armR: [14, 8] }], [53.5, { expr: 'preocupado' }], [58, { expr: 'forcado', armR: [80, 110] }], [60.5, { expr: 'surpreso', armR: [14, 8] }]] },
+];
+const interfoneFala = (t) => interfoneSVG(860, 1120, .8, FALAS.some((f) => f.quem === 'Lua' && t >= f.ini && t < f.fim));
+const NA_PORTA = [
+  { id: 'tico', x: 300, poses: [[64, { expr: 'surpreso', bag: true }], [68, { expr: 'envergonhado', armR: [128, 150] }], [69.8, { expr: 'rindo', ...DOWN }], [72, { expr: 'surpreso', detalhe: 'suor' }], [74, { mouth: 'wide' }]] },
+  { id: 'lua', x: 720, s: 1.4, poses: [[64, { expr: 'bravo', armR: [75, 140] }], [65, { expr: 'surpreso' }], [66.1, { armR: [12, 8] }], [69.8, { expr: 'rindo' }], [72, { expr: 'preocupado' }]] },
+];
+const interfoneLua = () => interfoneSVG(980, 1120, .8, false);
+
+const celularSVG = (t) => {
+  const e = sai((t - 15.85) / .25), y = 620 - 120 * e;
+  return `<rect x="-100" y="-100" width="1300" height="2200" fill="#1c2a45"/>`
+    + ret(240, 180, 600, 1240, '#23252f', 54) + ret(268, 240, 544, 1120, '#f7f4ef', 16, 0)
+    + txt(540, 320, 'Seu app de entregas', 30, '#55606c')
+    + `<g opacity="${e.toFixed(2)}">` + ret(290, y, 500, 260, '#fff6e6', 22) + txt(540, y + 96, 'ENTREGA', 52, '#c23b3b') + txt(540, y + 156, 'PERDIDA', 52, '#c23b3b') + txt(540, y + 216, 'Sua nota caiu', 32, OUT) + '</g>';
+};
 
 const ep01Planos = [
-  // Cena 1: esquina
-  { ini: 0, fim: 8, cena: 'rua', cam: [[0, 540, 990, 1.02], [5.7, 760, 830, 1.5, .5]],
-    fundo: () => moto(540),
-    atores: [
-      { id: 'tico', x: 220, poses: [[0, { expr: 'envergonhado', armL: [-35, 150], armR: [35, -150], frente: 'R' }], [5, { expr: 'feliz', ...DOWN, armR: [50, 70], propR: 'chave', frente: null }]] },
-      { id: 'jao', x: 850, s: 1.3, poses: [[0, { expr: 'neutro', bag: false, armL: [-14, -8], armR: [12, 8] }], [2.9, { armL: [-58, -70], propL: 'chave' }], [5.1, { armL: [-14, -8], propL: null }], [6, { armR: [150, 170] }]] },
-    ] },
-  { ini: 8, fim: 10, cena: 'rua', cam: [[8, 540, 990, 1.02]],
-    fundo: () => moto(540),
-    atores: [
-      { id: 'tico', x: 220, movX: [8.2, 10, 220, 420], poses: [[8, { expr: 'feliz', bag: true }]] },
-      { id: 'jao', x: 850, s: 1.3, poses: [[8, { expr: 'feliz', bag: false, armL: [-40, -60], armR: [12, 8] }]] },
-    ] },
-  // Cena 2: câmera presa no guidão, com o Tico de frente e a estrada fugindo atrás dele
-  { ini: 10, fim: 12.2, cena: 'vazio', cam: [[10, 540, 960, 1]],
-    fundo: (t) => { const tr = Math.min(t, 11.95), tremor = t > 11.95 ? Math.sin(t * 90) * 16 : Math.sin(t * 24) * 2; return `<g transform="translate(${tremor.toFixed(1)} 0)">${estradaSVG(tr)}</g>` + (t >= 11.9 ? estouroSVG(190, 700, sai((t - 11.9) / .12)) : '') + guidaoFundoSVG(); },
+  // Abertura: câmera presa no guidão
+  { ini: 0, fim: 3, cena: 'vazio', cam: [[0, 540, 960, 1]],
+    fundo: (t) => { const tr = Math.min(t, POW), tremor = t > POW ? Math.sin(t * 90) * 16 : Math.sin(t * 24) * 2; return `<g transform="translate(${tremor.toFixed(1)} 0)">${estradaSVG(tr)}</g>` + (t >= POW - .05 ? estouroSVG(190, 700, sai((t - POW + .05) / .12)) : '') + guidaoFundoSVG(); },
     frente: () => guidaoFrenteSVG(),
-    atores: [{ id: 'tico', x: 540, s: 2.1, yF: (t) => 2230 + (t > 11.95 ? -34 : Math.sin(t * 19) * 5), poses: [[10, { expr: 'feliz', bag: true, semPernas: true, armL: [-60, -62], armR: [60, 62] }], [11.95, { expr: 'surpreso', detalhe: 'suor' }]] }] },
-  // Tico vê o pneu; a bag sai das costas e vai para a moto
-  { ini: 12.2, fim: 24, cena: 'rua', cam: [[12.2, 400, 1400, 1.7], [13.3, 470, 880, 1.2, .7], [17, 200, 690, 1.75, .6], [20.5, 440, 960, 1.22, .6]],
-    fundo: (t) => moto(MOTO_X, { furado: true }) + (t >= 20.5 ? (t < 21.3 ? bagFechadaSVG(BAG_X, BAG_Y - 200 * (1 - sai((t - 20.5) / .3)), .8) : bagAbertaSVG(BAG_X, BAG_Y, .8, boloSVG(0, -190, 1.25, false))) : ''),
-    frente: (t) => t >= 12.7 && t < 14.4 ? `<g opacity="${Math.min(1, (t - 12.7) / .15, (14.4 - t) / .25).toFixed(2)}">${balaoPalavraoSVG(230, 330)}</g>` : '',
-    atores: [{ id: 'tico', x: 140, poses: [[12.2, { expr: 'surpreso', bag: true, ...DOWN }], [12.75, { expr: 'bravo', detalhe: 'veia', armL: [-60, -130], armR: [60, 130] }], [14.5, { expr: 'preocupado', detalhe: null, armL: [-130, 150], armR: [130, -150] }], [17, { expr: 'pensando', ...DOWN, ...CELULAR }], [20.3, { ...DOWN, propR: null, bag: false }], [20.6, { armR: [70, 80] }], [21.4, { expr: 'surpreso', armR: [14, 8] }], [22, { expr: 'triste' }]] }] },
-  // A placa, depois a ideia
-  { ini: 24, fim: 25.3, cena: 'ruaBorracharia', cam: [[24, 1267, 1087, 1.3]] },
-  { ini: 25.3, fim: 27, cena: 'rua', cam: [[25.3, 230, 690, 1.65]],
-    fundo: () => moto(MOTO_X, { furado: true }),
-    frente: (t) => t >= 25.9 ? lampadaSVG(140, 250, sai((t - 25.9) / .3)) : '',
-    atores: [{ id: 'tico', x: 140, poses: [[25.3, { expr: 'pensando', bag: false }], [26, { expr: 'feliz', armR: [120, 170] }]] }] },
-  // Cena 3: borracharia, com o bolo na mão como bandeja
-  { ini: 27, fim: 37, cena: 'borracharia', cam: [[27, 430, 930, 1.05], [30, 480, 840, 1.25, .7], [32.2, 460, 890, 1.15, .7], [34, 640, 800, 1.65, .5]],
-    frente: (t) => t < 31.5 ? notasSVG(420, 620, t) : '',
-    atores: [
-      { id: 'borracheiro', x: 680, poses: [[27, { expr: 'neutro', armL: [-14, -8], armR: [14, 20], propR: 'chaveRoda' }], [30, { expr: 'surpreso' }], [34, { expr: 'bravo', armL: [-85, -90] }]] },
-      { id: 'tico', x: 250, movX: [27, 29, 20, 250], poses: [[27, { expr: 'feliz', bag: false, armL: [-14, 20], armR: [32, 105], propR: 'bolo' }], [31.9, { expr: 'neutro', armL: [35, 80], frente: 'L' }]] },
-    ] },
-  // Fora: o pneu furado está na rua
-  { ini: 37, fim: 39, cena: 'ruaBorracharia', cam: [[37, 620, 1090, 1.08], [39, 500, 1240, 1.4, 2]],
-    fundo: () => moto(640, { furado: true }) },
-  { ini: 39, fim: 44.5, cena: 'borracharia', cam: [[39, 470, 860, 1.25], [42, 640, 760, 1.6, .5], [43.2, 470, 860, 1.25, 1]],
-    atores: [
-      { id: 'borracheiro', x: 680, poses: [[39, { expr: 'cansado', armL: [-14, -8], armR: [14, 20], propR: 'chaveRoda' }], [41.8, { expr: 'pensando', armR: [40, 120], propR: 'fatia' }]] },
-      { id: 'tico', x: 250, poses: [[39, { expr: 'pensando', bag: false, armL: [-14, 20], armR: [32, 105], propR: 'bolo' }], [40.6, { expr: 'forcado', armR: [58, 95] }], [43.4, { expr: 'feliz', propR: 'boloApagado' }]] },
-    ] },
-  { ini: 44.5, fim: 47, cena: 'rua', cam: [[44.5, 330, 700, 1.7]],
-    fundo: () => moto(MOTO_X),
-    atores: [{ id: 'tico', x: 270, poses: [[44.5, { expr: 'feliz', bag: true, ...CELULAR }]] }] },
-  // Cena 4: interfone
-  { ini: 47, fim: 63, cena: 'porta', cam: [[47, 560, 900, 1.12], [53.2, 850, 1100, 2.0, .6], [54.8, 640, 690, 1.6, .5], [57.1, 850, 1100, 2.0, .5], [59.1, 640, 690, 1.6, .5], [61.6, 700, 900, 1.2, .5]],
-    frente: (t) => interfoneSVG(860, 1120, .8, FALAS.some((f) => f.quem === 'Lua' && t >= f.ini && t < f.fim && t < 63)),
-    atores: [
-      { id: 'fiscal', x: 190, s: .85, flip: true, poses: [[47, { expr: 'neutro' }]] },
-      { id: 'tico', x: 640, poses: [[47, { expr: 'feliz', bag: true, armR: [70, 95] }], [50, { expr: 'neutro', armR: [14, 8] }], [54.5, { expr: 'preocupado' }], [59, { expr: 'forcado', armR: [80, 110] }], [61.5, { expr: 'surpreso', armR: [14, 8] }]] },
-    ] },
+    atores: [{ id: 'tico', x: 540, s: 2.1, yF: (t) => 2230 + (t > POW ? -34 : Math.sin(t * 19) * 5), poses: [[0, { expr: 'feliz', bag: true, semPernas: true, armL: [-60, -62], armR: [60, 62] }], [POW, { expr: 'surpreso', detalhe: 'suor' }]] }] },
+  { ini: 3, fim: 3.4, cena: 'rua', cam: [[3, 370, 1400, 1.9]], fundo: motoFurada },
+  { ini: 3.4, fim: 4.6, cena: 'rua', cam: [[3.4, 140, C_TICO, 1.9]], fundo: motoFurada, atores: RUA_TICO,
+    frente: (t) => `<g opacity="${Math.min(1, (t - 3.4) / .1, (4.6 - t) / .15).toFixed(2)}">${balaoPalavraoSVG(140, 560)}</g>` },
+  // Cena 1: duas horas antes
+  { ini: 4.6, fim: 7.4, cena: 'rua', cam: [[4.6, 540, 990, 1.02]], fundo: () => moto(540), atores: ESQUINA },
+  { ini: 7.4, fim: 9.6, cena: 'rua', cam: [[7.4, 850, C_JAO, 1.9]], fundo: () => moto(540), atores: ESQUINA },
+  { ini: 9.6, fim: 10.2, cena: 'rua', cam: [[9.6, 220, C_TICO, 1.9]], fundo: () => moto(540), atores: ESQUINA },
+  { ini: 10.2, fim: 12.4, cena: 'rua', cam: [[10.2, 850, C_JAO, 1.7]], fundo: () => moto(540), atores: ESQUINA },
+  { ini: 12.4, fim: 13.4, cena: 'rua', cam: [[12.4, 540, 990, 1.02]], fundo: () => moto(540), atores: ESQUINA },
+  // Cena 2: o bolo
+  { ini: 13.4, fim: 15.8, cena: 'rua', cam: [[13.4, 450, 880, 1.2]], fundo: motoFurada, atores: RUA_TICO },
+  { ini: 15.8, fim: 17.4, cena: 'vazio', cam: [[15.8, 540, 960, 1]], fundo: celularSVG },
+  { ini: 17.4, fim: 19, cena: 'rua', cam: [[17.4, 140, C_TICO, 1.9]], fundo: motoFurada, atores: RUA_TICO },
+  { ini: 19, fim: 22, cena: 'rua', cam: [[19, 400, 960, 1.22]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
+  { ini: 22, fim: 23, cena: 'rua', cam: [[22, BAG_X, 1050, 2.3]], fundo: (t) => motoFurada() + bagNaMoto(t) },
+  { ini: 23, fim: 24, cena: 'rua', cam: [[23, 140, C_TICO, 1.9]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO },
+  { ini: 24, fim: 25, cena: 'ruaBorracharia', cam: [[24, 1267, 1087, 1.3]] },
+  { ini: 25, fim: 26, cena: 'rua', cam: [[25, 200, 830, 1.65]], fundo: (t) => motoFurada() + bagNaMoto(t), atores: RUA_TICO,
+    frente: (t) => lampadaSVG(140, 250, sai((t - 25) / .25)) },
+  // Cena 3: borracharia
+  { ini: 26, fim: 29, cena: 'borracharia', cam: [[26, 430, 930, 1.05]], frente: (t) => notasSVG(420, 620, t), atores: OFICINA },
+  { ini: 29, fim: 30.5, cena: 'borracharia', cam: [[29, 680, C_BORR, 1.9]], atores: OFICINA },
+  { ini: 30.5, fim: 33, cena: 'borracharia', cam: [[30.5, 300, C_TICO, 1.7]], atores: OFICINA },
+  { ini: 33, fim: 36, cena: 'borracharia', cam: [[33, 680, C_BORR, 1.9]], atores: OFICINA },
+  { ini: 36, fim: 38, cena: 'ruaBorracharia', cam: [[36, 620, 1090, 1.08], [38, 500, 1240, 1.4, 2]], fundo: () => moto(640, { furado: true }) },
+  { ini: 38, fim: 39.5, cena: 'borracharia', cam: [[38, 680, C_BORR, 1.9]], atores: OFICINA },
+  { ini: 39.5, fim: 40.5, cena: 'borracharia', cam: [[39.5, 300, C_TICO, 1.7]], atores: OFICINA },
+  { ini: 40.5, fim: 41.5, cena: 'borracharia', cam: [[40.5, 600, 920, 1.5]], atores: OFICINA },
+  { ini: 41.5, fim: 43.5, cena: 'borracharia', cam: [[41.5, 470, 860, 1.25]], atores: OFICINA },
+  { ini: 43.5, fim: 46, cena: 'rua', cam: [[43.5, 330, 700, 1.7]], fundo: () => moto(MOTO_X),
+    atores: [{ id: 'tico', x: 270, poses: [[43.5, { expr: 'feliz', bag: true, ...CELULAR }]] }] },
+  // Cena 4: interfone, com cada resposta cortando para quem reage
+  { ini: 46, fim: 47.5, cena: 'porta', cam: [[46, 560, 900, 1.12]], frente: interfoneFala, atores: PORTA },
+  { ini: 47.5, fim: 49, cena: 'porta', cam: [[47.5, 850, 1100, 2.0]], frente: interfoneFala, atores: PORTA },
+  { ini: 49, fim: 51.5, cena: 'porta', cam: [[49, 640, C_TICO, 1.9]], frente: interfoneFala, atores: PORTA },
+  { ini: 51.5, fim: 53.5, cena: 'porta', cam: [[51.5, 850, 1100, 2.0]], frente: interfoneFala, atores: PORTA },
+  { ini: 53.5, fim: 56, cena: 'porta', cam: [[53.5, 640, C_TICO, 1.9]], frente: interfoneFala, atores: PORTA },
+  { ini: 56, fim: 58, cena: 'porta', cam: [[56, 850, 1100, 2.0]], frente: interfoneFala, atores: PORTA },
+  { ini: 58, fim: 60.5, cena: 'porta', cam: [[58, 640, C_TICO, 1.9]], frente: interfoneFala, atores: PORTA },
+  { ini: 60.5, fim: 62, cena: 'porta', cam: [[60.5, 170, 1270, 2.0]], atores: PORTA },
   // Dez minutos depois: Tico brincando com o Fiscal
-  { ini: 63, fim: 65, cena: 'porta', cam: [[63, 540, 1080, 1.05]],
+  { ini: 62, fim: 64, cena: 'porta', cam: [[62, 540, 1080, 1.05]],
     fundo: () => `<rect x="150" y="${CHAO - 62}" width="520" height="62" fill="#b9b4ac" stroke="${OUT}" stroke-width="${T}"/>`,
     frente: () => interfoneSVG(860, 1120, .8, false),
     atores: [
-      { id: 'tico', x: 400, y: CHAO + 10, poses: [[63, { expr: 'rindo', bag: false, sentado: true, legL: [-40, -6], legR: [40, 6], armL: [-16, 20], armR: [58, 72] }]] },
-      { id: 'fiscal', x: 790, s: .95, poses: [[63, { expr: 'feliz', tail: 40 }]] },
+      { id: 'tico', x: 400, y: CHAO + 10, poses: [[62, { expr: 'rindo', bag: false, sentado: true, legL: [-40, -6], legR: [40, 6], armL: [-16, 20], armR: [58, 72] }]] },
+      { id: 'fiscal', x: 790, s: .95, poses: [[62, { expr: 'feliz', tail: 40 }]] },
     ] },
   // Cena 5: a Lua
-  { ini: 65, fim: 77, cena: 'portaAberta', cam: [[65, 540, 880, 1.1], [67, 690, 680, 1.6, .5], [69, 330, 690, 1.6, .5], [71.5, 520, 720, 1.4, .7], [74.1, 700, 680, 1.65, .6], [75.5, 330, 690, 1.65, .5]],
-    frente: (t) => interfoneSVG(980, 1120, .8, false) + (t >= 66 && t < 69 ? placaCrushSVG(720, 180 + 30 * sai((t - 66) / .25) - 240 * (1 - sai((t - 66) / .25))) : ''),
-    atores: [
-      { id: 'tico', x: 300, poses: [[65, { expr: 'surpreso', bag: true }], [69, { expr: 'envergonhado', armR: [128, 150] }], [71, { expr: 'rindo', ...DOWN }], [73.5, { expr: 'surpreso', detalhe: 'suor' }], [75.5, { mouth: 'wide' }]] },
-      { id: 'lua', x: 720, s: 1.4, poses: [[65, { expr: 'bravo', armR: [75, 140] }], [66, { expr: 'surpreso' }], [67, { armR: [12, 8] }], [71.5, { expr: 'rindo' }], [73.5, { expr: 'preocupado' }]] },
-    ] },
+  { ini: 64, fim: 66, cena: 'portaAberta', cam: [[64, 540, 880, 1.1]], atores: NA_PORTA,
+    frente: (t) => interfoneLua() + (t >= 65 ? placaCrushSVG(720, 180 + 30 * sai((t - 65) / .25) - 240 * (1 - sai((t - 65) / .25))) : '') },
+  { ini: 66, fim: 68, cena: 'portaAberta', cam: [[66, 720, C_LUA, 1.8]], atores: NA_PORTA, frente: interfoneLua },
+  { ini: 68, fim: 69.8, cena: 'portaAberta', cam: [[68, 300, C_TICO, 1.8]], atores: NA_PORTA, frente: interfoneLua },
+  { ini: 69.8, fim: 72, cena: 'portaAberta', cam: [[69.8, 520, 720, 1.4]], atores: NA_PORTA, frente: interfoneLua },
+  { ini: 72, fim: 74, cena: 'portaAberta', cam: [[72, 720, C_LUA, 1.9]], atores: NA_PORTA, frente: interfoneLua },
+  { ini: 74, fim: 75.5, cena: 'portaAberta', cam: [[74, 300, C_TICO, 2.0]], atores: NA_PORTA, frente: interfoneLua },
   // Votação em preto e branco
-  { ini: 77, fim: 84, cena: 'porta', cam: [[77, 540, 680, 1.35]],
-    cor: (t) => 1 - sai((t - 77) / .4),
-    atores: [{ id: 'tico', x: 540, poses: [[77, { expr: 'forcado', detalhe: 'suor', bag: true, armL: [-18, 60], armR: [14, 8], head: 4 }], [80.5, { expr: 'lado' }]] }] },
+  { ini: 75.5, fim: 82, cena: 'porta', cam: [[75.5, 540, 680, 1.35]],
+    cor: (t) => 1 - sai((t - 75.5) / .4),
+    atores: [{ id: 'tico', x: 540, poses: [[75.5, { expr: 'forcado', detalhe: 'suor', bag: true, armL: [-18, 60], armR: [14, 8], head: 4 }], [78.5, { expr: 'lado' }]] }] },
   // Cena 6: Dona Marlene apaga a vela, triste e sozinha
-  { ini: 84, fim: 90, cena: 'casa', cam: [[84, 540, 960, 1.0], [85.5, 540, 900, 1.45, 1.4]],
-    frente: (t) => mesaSVG(1180) + (t < 85.6 ? `<g transform="translate(860 1230) rotate(-10)">` + ret(-44, -24, 88, 48, '#23252f', 8) + ret(-36, -18, 72, 36, '#7fd6ee', 2, 0) + '</g>' : ''),
-    atores: [{ id: 'marlene', x: 540, y: 1560, s: 1.35, poses: [[84, { expr: 'triste', armL: [-20, 30], armR: [20, -30] }], [85.5, { armR: [24, 170], propR: 'pao' }], [86, { propR: 'paoAceso' }], [87.4, { mouth: 'small' }], [87.8, { propR: 'pao', mouth: null }], [88.3, { armR: [20, -30], propR: 'pao' }]] }] },
+  { ini: 82, fim: 87, cena: 'casa', cam: [[82, 540, 960, 1.0], [83.2, 540, 900, 1.45, 1.2]],
+    frente: (t) => mesaSVG(1180) + (t < 83.3 ? `<g transform="translate(860 1230) rotate(-10)">` + ret(-44, -24, 88, 48, '#23252f', 8) + ret(-36, -18, 72, 36, '#7fd6ee', 2, 0) + '</g>' : ''),
+    atores: [{ id: 'marlene', x: 540, y: 1560, s: 1.35, poses: [[82, { expr: 'triste', armL: [-20, 30], armR: [20, -30] }], [83.2, { armR: [24, 170], propR: 'pao' }], [83.6, { propR: 'paoAceso' }], [84.9, { mouth: 'small' }], [85.3, { propR: 'pao', mouth: null }], [85.8, { armR: [20, -30], propR: 'pao' }]] }] },
 ];
+
+// Painel fixo: os valores seguem de episódio em episódio
+const nota = (t) => t < 17.2 ? '-' : '-0,3';
+const divida = (t) => t < 24.3 ? 'R$ 0' : t < 44 ? 'R$ 120' : 'R$ 0';
+const painel = (t, u, pb) => {
+  u.g.globalAlpha = Math.min(1, (t - 13.4) / .3);
+  u.cartao(30, 70, 500, 138, pb ? '#222222' : '#2a1f22');
+  u.texto('Desempregado: 92 dias', 56, 105, 32, '#ffffff', 'left');
+  u.texto(`Nota: ${nota(t)}`, 56, 148, 32, t >= 17.2 && t < 17.8 && !pb ? '#ff6a5a' : '#ffffff', 'left');
+  u.texto(`Dívida: ${divida(t)}`, 56, 188, 32, divida(t) !== 'R$ 0' && !pb ? '#ffd83a' : '#ffffff', 'left');
+  u.g.globalAlpha = 1;
+};
 
 const ep01Telas = [
   // Nome no depoimento
-  { ini: 10, fim: 11.9, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .2, (1.9 - s) / .25); u.cartao(120, 180, 840, 96, '#a8b94c'); u.texto('Tiago Almeida, entregador há 4 minutos', 540, 228, 38, '#2a1f22'); u.g.globalAlpha = 1; } },
-  // Notificação
-  { ini: 17, fim: 20.5, desenha: (p, s, u) => { const y = 180 + (u.sai(s / .4) - 1) * 260; u.cartao(70, y, 940, 180, '#fff6e6'); u.texto('ENTREGA PERDIDA', 540, y + 62, 62, '#c23b3b'); u.texto('Sua nota caiu', 540, y + 128, 44, '#2a1f22'); } },
+  { ini: .1, fim: 2.65, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .2, (2.55 - s) / .25); u.cartao(120, 180, 840, 96, '#a8b94c'); u.texto('Tiago Almeida, entregador há 4 minutos', 540, 228, 38, '#2a1f22'); u.g.globalAlpha = 1; } },
+  { ini: 4.6, fim: 5.7, desenha: (p, s, u) => { u.g.globalAlpha = Math.min(1, s / .15, (1.1 - s) / .2); u.cartao(240, 220, 600, 110, '#2a1f22'); u.texto('Duas horas antes', 540, 275, 54, '#ffd83a'); u.g.globalAlpha = 1; } },
+  // Painel: some no celular em tela cheia
+  { ini: 13.4, fim: 15.8, desenha: (p, s, u) => painel(13.4 + s, u) },
+  { ini: 17.4, fim: 75.5, desenha: (p, s, u) => painel(17.4 + s, u) },
   // Dez minutos depois
-  { ini: 63, fim: 65, desenha: (p, s, u) => { u.cartao(190, 240, 700, 120, '#2a1f22'); u.texto('Dez minutos depois', 540, 300, 58, '#ffd83a'); } },
+  { ini: 62, fim: 64, desenha: (p, s, u) => { u.cartao(190, 250, 700, 120, '#2a1f22'); u.texto('Dez minutos depois', 540, 310, 58, '#ffd83a'); } },
   // Votação, em preto e branco
-  { ini: 77, fim: 84, desenha: (p, s, u) => {
+  { ini: 75.5, fim: 82, desenha: (p, s, u) => {
     u.g.fillStyle = 'rgba(0,0,0,.78)'; u.g.fillRect(0, 0, 1080, 850);
-    const e = u.sai(s / .35);
-    u.g.globalAlpha = e;
-    u.texto('O que vai acontecer', 540, 250, 64, '#ffffff'); u.texto('no próximo?', 540, 330, 64, '#ffffff');
-    u.cartao(90, 430, 900, 170, '#f2f2f2'); u.texto('A) Fala a verdade', 540, 515, 62, '#111111');
-    u.cartao(90, 640, 900, 170, '#bdbdbd'); u.texto('B) Inventa uma história', 540, 725, 56, '#111111');
+    u.g.globalAlpha = u.sai(s / .35);
+    u.texto('Comenta uma palavra:', 540, 290, 60, '#ffffff');
+    u.cartao(90, 370, 900, 200, '#f2f2f2'); u.texto('VERDADE', 540, 442, 72, '#111111'); u.texto('perde a pose', 540, 516, 40, '#444444');
+    u.cartao(90, 600, 900, 200, '#bdbdbd'); u.texto('HISTÓRIA', 540, 672, 72, '#111111'); u.texto('o Fiscal late', 540, 746, 40, '#333333');
     u.g.globalAlpha = 1;
+    painel(75.5 + s, u, true);
     u.cartao(240, 1500, 600, 80, '#d9d9d9'); u.texto('Tiago Almeida, indeciso', 540, 1540, 38, '#111111');
   } },
-  // Opções no canto, durante a cena da Marlene
-  { ini: 84, fim: 90, desenha: (p, s, u) => { u.cartao(640, 120, 390, 140, 'rgba(255,246,230,.95)'); u.texto('A) Verdade', 835, 164, 36, '#2a1f22'); u.texto('B) História', 835, 216, 36, '#2a1f22'); } },
+  // Pergunta no canto, durante a cena da Marlene
+  { ini: 82, fim: 87, desenha: (p, s, u) => { u.cartao(620, 120, 410, 110, 'rgba(255,246,230,.95)'); u.texto('VERDADE', 825, 156, 34, '#2a1f22'); u.texto('ou HISTÓRIA?', 825, 198, 34, '#2a1f22'); } },
 ];
 
 const EPISODIO = {
-  duracao: 90,
-  falas: FALAS.map((f) => f.n === 7 ? { ...f, semLegenda: true } : f),
+  duracao: 87,
+  falas: FALAS.map((f) => f.n === 2 ? { ...f, semLegenda: true } : f),
   planos: ep01Planos,
   telas: ep01Telas,
-  latidos: [61.9, 62.3, 80.8],
-  impactos: [11.93, 66.13],
-  destaques: { 1: 'companheira', 2: 'prejuízo', 4: 'sobe', 6: 'tudo', 9: 'nota', 10: 'bolo', 12: 'dia', 14: 'reais', 18: 'aniversário', 20: 'você', 21: 'chance', 24: 'sobe', 28: 'isso', 34: 'entregador', 35: 'falo' },
+  latidos: [61.2, 78.6],
+  impactos: [POW - .03, 65.13],
+  destaques: { 1: 'tudo', 3: 'companheira', 4: 'prejuízo', 6: 'sobe', 9: 'nota', 10: 'bolo', 12: 'dia', 14: 'reais', 18: 'aniversário', 20: 'você', 21: 'chance', 24: 'sobe', 28: 'isso', 34: 'entregador', 35: 'falo' },
 };
