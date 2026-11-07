@@ -87,4 +87,6 @@ Recurso de falso documentário, em uso a partir do episódio 1. Empresta só a t
 
 ## Continuidade
 
-Ao terminar, acrescente uma linha a `episodios/continuidade.md`: onde cada um está, objetos que importam, regra do absurdo usada e o que volta depois.
+Assim que o autor aprovar o roteiro, acrescente uma linha a `episodios/continuidade.md`: voto, bico do Tico, onde cada um está, painel e objetos que importam, absurdo usado e o que volta depois. Atualize a linha quando o vídeo sair e a votação fechar.
+
+A bíblia guarda só a base da série: conceito, personagens, mundo, tom e regras. O que muda de episódio para episódio, como o bico atual do Tico, fica na continuidade. Se um plano da bíblia e a continuidade divergirem sobre o que já aconteceu, vale a continuidade.

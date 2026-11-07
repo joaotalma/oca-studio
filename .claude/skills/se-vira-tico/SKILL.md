@@ -78,7 +78,7 @@ Trabalhe na branch `epNN` e abra um Pull Request para `main`. Não faça merge.
 
 Siga `references/roteiro.md`: de 200 a 230 palavras, começando no meio da ação, com a regra do absurdo e a sinopse do episódio em `docs/BIBLIA.md`. Cada fala indica personagem, emoção, gesto, plano, cenário, objeto-informação e efeito sonoro. A partir do ep. 2, abra com o desfecho da opção vencedora.
 
-Conte as palavras e meça os tempos: as cenas saem dessa conta. Ao publicar, atualize `episodios/continuidade.md`.
+Conte as palavras e meça os tempos: as cenas saem dessa conta. Assim que o autor aprovar o roteiro, acrescente a linha do episódio em `episodios/continuidade.md`. Atualize essa linha quando o vídeo sair e a votação fechar.
 
 ### 2. Cenas: `episodios/epNN/cenas.md`
 

@@ -37,9 +37,9 @@ O documento no Claude Docs não foi editado, porque é seu. Ele ainda traz Bia, 
 - exceção da regra do absurdo: no ep. 1, a mentira só nasce no fim;
 - Letícia entra já no ep. 2, antes do previsto.
 
-### 6. Moto em vez de carro no ep. 2
+### 6. Moto em vez de carro no ep. 2 (decidido)
 
-A bíblia põe o Tico como motorista de app no ep. 2. Nos pré-roteiros ele vira mototaxista, porque só tem a Companheira. Se preferir carro, muda o plano do guidão e a cena da garupa.
+**Decisão do autor:** o Tico vira mototaxista no ep. 2. A bíblia não muda, porque o bico do momento fica em `episodios/continuidade.md`.
 
 ### 7. Acentuação do nome
 
