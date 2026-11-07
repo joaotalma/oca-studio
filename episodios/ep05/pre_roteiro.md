@@ -1,95 +1,72 @@
 # Episódio 5: Dá Tempo?
 
-**Status:** pré-roteiro reconstruído. Cerca de uma semana depois do 4. Sai o processo seletivo silencioso; o experimento não é obrigação desta nova temporada. Falas e tempos provisórios.
+**Status:** pré-roteiro encurtado para cerca de 60 s, com cerca de 10 falas. Junta a encomenda do antigo 5 com a divulgação dos doces no carro. Também planta, só na imagem, a inscrição que abre a T2. A história se passa cerca de uma semana depois do 4.
 
 ## O fio
 
-Tico quer ser alguém com quem Lua pode contar, mas responde ao desejo de agradar antes de conferir o próprio horário.
+Tico quer ser alguém com quem Lua pode contar, mas promete antes de conferir o próprio horário. Lua testa o sonho em segredo e não conta tudo a ninguém.
 
-**Em três frases:** Lua aceita uma encomenda pequena enquanto continua empregada. Tico oferece a entrega, mas precisa ganhar o aluguel do carro e promete um horário apertado. Quando vê que não estará nos dois lugares, escolhe avisar ou tentar resolver sozinho sem revelar a incerteza.
+## Produção
 
-## Estado de entrada — 0–13 s
+- **Trecho que depende do voto do 4:** só o bloco 1, com uma ou duas falas por histórico. O resto é base comum.
+- **Texto na tela, sem voz:** a inscrição, o painel de ganhos e o mapa.
 
-- **Encontro + CONTA:** ela admite o sonho, mas não vai largar o emprego. Decide testar seis caixas, não abrir uma loja porque ele incentivou.
-- **Encontro + GUARDA:** um colega prova seu doce e pergunta se vende. Ela aceita seis caixas; Tico conhece a entrega, não o projeto profissional.
-- **Corrida + VERDADE:** primeiro mostrar a resposta dela. Chuveiro: “Você podia ter me avisado”. Carona: “Trabalho é trabalho, Tico”. Ela paga e sai. Dias depois consulta um serviço de entrega.
-- **Corrida + DESCULPA:** ele termina a história inventada. Ela paga e sai. Depois pergunta pela entrega; sua falta de contestação não torna a explicação verdadeira.
+## Gancho — 0–3 s
 
-Não executar todas essas entradas no mesmo vídeo. A venda parte de Lua e tem preço combinado.
+Relógio marcando 7h58. Tico, parado no trânsito, olha seis caixas de doce no banco. Cartão "Mais cedo".
 
-**Se veio do encontro:** antes de oferecer a entrega, mostrar que, nos dias seguintes, Tico começou a fazer corridas com carro alugado por diária. A chave e o contrato estabelecem a origem; ele precisa pagar despesas, não adquire carro para ficar perto dela. No caminho da recusa, essa apresentação já aconteceu no 4 e não será repetida. Em ambos, o roteiro final precisa fechar a origem da primeira diária e o custo real antes de mostrar dinheiro disponível. A moto continua com Jão.
+## 1. Estado de entrada — 3–10 s
 
-## Causa e consequência
+Produzir só uma destas entradas:
+- **Encontro + CONTA:** "Vou testar. Seis caixas. Não é largar o emprego."
+- **Encontro + GUARDA:** um colega prova o doce e pergunta: "Você vende?"
+- **Corrida + VERDADE:** ela responde à confissão do 4, com "Você podia ter me avisado" no caminho Chuveiro ou "Trabalho é trabalho, Tico" no caminho Carona. Depois pede a entrega.
+- **Corrida + DESCULPA:** ela não contesta a história inventada e pede a entrega. Isso não torna a desculpa verdadeira.
 
-| Tentativa | Consequência |
-|---|---|
-| Ela testa vender seis caixas | Precisa cozinhar depois do expediente e combinar transporte |
-| Ele quer ser útil | Oferece o serviço antes de conferir o turno |
-| Precisa pagar a diária | Continua aceitando corridas |
-| Ela organiza a manhã pela promessa | Precisa saber com antecedência se pode contar |
-| Última corrida leva para longe | Ele precisa avisar ou aumentar o esforço sem garantia |
+## 2. Seis caixas — 10–24 s
 
-## 1. Seis caixas e uma pia — 13–31 s
-
-**Quer:** ela, entregar algo bem-feito; ele, ajudar. **Obstáculo:** cozinha pequena e pouco tempo. **Virada:** a conta é menos romântica do que imaginava. **Fecho:** definem retirada.
-
-Conversam por telefone ou pela porta; ela não precisa convidá-lo para dentro só porque já saíram.
 — Seis caixas. Não é uma fábrica.
 — Toda fábrica começou com seis caixas.
 — A minha começa com uma pia cheia.
-
-Ela faz conta de ingredientes e tempo, experimenta a receita e corrige uma fornada. Um recipiente de apoio emprestado por Tico pode carregar as caixas; se esse objeto entrar, será devolvido no 7. Não colocá-lo retroativamente no próximo render.
-
-## 2. O favor tem relógio — 31–49 s
-
-**Quer:** ele, impressionar sem cobrar. **Obstáculo:** deslocamento custa. **Virada:** ela trata o serviço dele com mais seriedade. **Fecho:** ele promete disponibilidade.
-
-Se houve encontro:
+— Eu entrego.
 — Quanto fica?
 — Pra você, imagina.
 — Eu tô imaginando. Quanto?
 
-Se houve corrida:
-— Não precisa fazer de graça.
-— É no caminho.
-Jão olha o mapa: outro lado da cidade.
+O preço combinado aparece na tela e passa a valer para o 6.
 
-A imagem contradiz, sem Fiscal latindo de longe. No roteiro final, definir se é serviço pago ou favor, quanto custa e o horário. O 6 respeita esse único acordo; não manter dinheiro indefinido para facilitar a saída.
+## 3. O carro que cheira a doce — 24–38 s
 
-## 3. Ganhar para poder ajudar — 49–66 s
+Na corrida, um passageiro diz que é "pertinho" e abre uma mala. Outro elogia o cheiro do carro. Tico começa a agradecer pelo perfume, e o passageiro aponta a caixa de doce. Tico entrega um cartão com o contato da Lua:
+— É dela. Eu só dirijo.
 
-**Quer:** fechar a diária. **Obstáculo:** cada viagem cresce. **Virada:** percebe o conflito que aceitou. **Fecho:** duas necessidades ocupam o mesmo relógio.
+Aparece o painel de ganhos, e Jão pergunta por mensagem: "Quanto sobrou?". Os números ficam na tela por três segundos.
 
-Passageiro diz “pertinho” e abre uma mala. Um sinal fecha quando o anterior abre. O aromatizador comprado para impressionar Lua balança entre recibos.
+## 4. A inscrição — 38–44 s
 
-Jão pergunta quanto sobrou. Tico manda o painel de ganhos:
-— Eu perguntei o que sobrou.
+À noite, Lua, sozinha, toca em "Enviar" na tela "Inscrição: Curso de Confeitaria, [cidade em outro estado]". Fecha o notebook. Não há fala: o público fica sabendo, e o Tico não. Essa é a semente da T2.
 
-Três segundos com a conta. Não chamar isso de um novo cargo, apenas mostrar a diferença entre dinheiro que entrou e dinheiro disponível.
-
-## 4. Ela precisa decidir — 66–82 s
-
-**Quer:** manter a promessa. **Obstáculo:** está longe e há passageiro. **Virada:** percebe que esconder o atraso impede a escolha dela. **Fecho:** precisa responder.
+## 5. Ela precisa decidir — 44–54 s
 
 Áudio da Lua enquanto fecha as caixas:
-— Você chega até as oito? Se não der, preciso chamar outra entrega agora.
+— Você chega até as oito? Se não der, chamo outra entrega agora.
 
-Mapa, relógio, rosto. Ele começa a digitar “tô chegando”, como se a frase aproximasse o carro.
+Mapa, relógio, rosto. Ele começa a digitar "tô chegando".
 
-## Votação — 82–89 s
+## Votação — 54–60 s
 
-**AVISA:** admite que não chega; ela pode buscar outra solução e perde a fantasia de que ele sempre consegue.
-**DÁ UM JEITO:** tenta cumprir sem revelar a incerteza; assume risco de atraso, corrida perdida e ajuda paga.
+**AVISA:** admite que não chega a tempo. Ela resolve de outro jeito e perde a ideia de que ele sempre consegue.
+**DÁ UM JEITO:** tenta cumprir sem contar a incerteza e corre o risco de atrasar.
 
-Não autoriza dirigir perigosamente, abandonar passageiro ou teletransportar o carro.
+Nenhum dos dois caminhos autoriza direção perigosa nem abandonar passageiro.
 
-## Retorno — 89–94 s
+## Retorno — 60–63 s
 
-No caderno: “Descansar a massa”. O timer toca. Lua leva outra assadeira e encosta na parede: a única que não descansou foi ela. Prova um pedaço torto e gosta. Prazer e custo do esforço na mesma ação.
+O timer toca. No caderno está escrito "Descansar a massa". Lua encosta na parede: a única que não descansou foi ela.
 
 ## O que passa ao 6
 
-Resultado da entrega, acordo e eventual custo continuam. Nenhuma venda depende de Tico comprar tudo escondido. O avanço é descobrir o que cabe na rotina, sem emprego abandonado nem confeitaria aberta.
+Ficam o resultado da entrega, o preço combinado e a inscrição enviada. Lua continua empregada.
 
 ---
 

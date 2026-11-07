@@ -1,5 +1,7 @@
 # Episódio 9 — reserva de desenvolvimento
 
+> **Fora da T1 (7/11/2026):** a temporada 1 fecha no ep. 6. Este arquivo fica como banco de cenas para a T2 (ver `docs/estrategia/T2.md`).
+
 **Status:** fora da sequência ativa de oito episódios. O antigo “Cabe Mais Uma” foi substituído; a visita está no ep. 7. Não produzir a versão antiga junto com a reconstrução.
 
 ## Quando usar

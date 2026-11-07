@@ -1,5 +1,7 @@
 # Episódio 7: Pode Entrar
 
+> **Fora da T1 (7/11/2026):** a temporada 1 fecha no ep. 6. Este arquivo fica como banco de cenas para a T2 (ver `docs/estrategia/T2.md`).
+
 **Status:** pré-roteiro reconstruído. Fim de semana após contato combinado. A visita não é prêmio por ter ajudado.
 
 ## O fio

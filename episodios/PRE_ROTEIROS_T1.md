@@ -1,6 +1,6 @@
 # Temporada 1 — reencontrar não é retomar
 
-**Status:** norte de oito episódios aceito pelo autor, com os ajustes de direção registrados abaixo. Esta atualização altera apenas este mapa; os pré-roteiros individuais ainda precisam incorporar as mudanças nos episódios 5–8. Oito é um percurso de trabalho, não prazo obrigatório para namoro ou resolução profissional. O encerramento desejado agora é o cinema, com a escolha do beijo ficando para a próxima temporada.
+**Status (7/11/2026):** a T1 fecha no **ep. 6**. Como pediu o autor, do ep. 3 em diante os episódios terão pouco mais de **60 s** (acima de 1 min, requisito de monetização) e **pelo menos 30% menos falas** que o ep. 2. O cinema e o voto do beijo passam do 8 para o 6. A viagem da Lua para outro estado, plantada no 5 e revelada ao público no 6, vira o gancho da T2 (ver `docs/estrategia/T2.md`). Os eps. 7 a 10 ficam como banco de cenas.
 
 ## O centro da história
 
@@ -28,15 +28,21 @@ Tico permanece motorista de aplicativo por mais tempo, inclusive como possibilid
 
 | Ep. | Pré-roteiro | Mudança na relação | Votação |
 |---|---|---|---|
-| 1–2 | Reencontro e promessa da carona, já construídos | Uma lembrança vira expectativa concreta | Verdade/História; Carona/Chuveiro |
-| 3 | [O Dia Errado](ep03/pre_roteiro.md) | Gratidão ou mágoa; ele oferece uma aproximação enquanto ela processa a promoção perdida | ACEITA / AGORA NÃO |
-| 4 | [A Hora dos Dois](ep04/pre_roteiro.md) | Encontro ou corrida abrem conversas diferentes | Encontro: CONTA / GUARDA; corrida: VERDADE / DESCULPA |
-| 5 | [Dá Tempo? — ajustar](ep05/pre_roteiro.md) | Ela testa vender; ele divulga no carro e oferece ajuda, sem virar parte do negócio. A disponibilidade dele continua tendo limite | AVISA / DÁ UM JEITO pode permanecer se a entrega continuar como conflito |
-| 6 | [Só Pra Não Incomodar — ajustar](ep06/pre_roteiro.md) | O cotidiano das vendas e corridas permite outra tentativa de aproximação. Lua falha num compromisso e percebe o custo para ele | Definir a reação concreta à mancada; não votar se ele deve perdoar |
-| 7 | [Pré-roteiro a realinhar](ep07/pre_roteiro.md) | Ela tenta reparar a falha sem usar romance como pagamento e enfrenta o limite de conciliar emprego e doces | SAI / FICA, decisão profissional da Lua |
-| 8 | [Final a realinhar](ep08/pre_roteiro.md) | A situação profissional escolhida continua pesando, mas os dois conseguem marcar e viver uma ida ao cinema | BEIJA / NÃO BEIJA; desfecho na temporada seguinte |
+| 1–2 | Reencontro e promessa da carona, já produzidos | Uma lembrança vira expectativa concreta | Verdade/História; Carona/Chuveiro |
+| 3 | [O Dia Errado](ep03/pre_roteiro.md) | Lua perde a promoção; ele faz o convite e precisa ouvir antes | ACEITA / AGORA NÃO |
+| 4 | [A Hora dos Dois](ep04/pre_roteiro.md) | O encontro ou a corrida abrem conversas diferentes | Encontro: CONTA / GUARDA; corrida: VERDADE / DESCULPA |
+| 5 | [Dá Tempo?](ep05/pre_roteiro.md) | Seis caixas, a divulgação no carro, e ele promete antes de conferir o horário. Ela se inscreve no curso em segredo | AVISA / DÁ UM JEITO |
+| 6 | [Sessão das Oito](ep06/pre_roteiro.md) | Ela o convida para o cinema e ele confere antes de prometer. Ela recebe a aprovação e guarda a notícia | BEIJA / NÃO BEIJA; o resultado abre a T2 |
 
-**Passagem de tempo proposta:** ep. 3 no fim do dia da carona; ep. 4 alguns dias depois; ep. 5 na semana seguinte; entre 5 e 7, mostrar repetição de corridas, vendas pequenas e tentativas de conciliar horários ao longo de mais dias ou semanas. O cinema ocorre depois de um convite e de tempo para a reparação, não na mesma noite da mancada ou da demissão. Roupa, rotina, mensagens e marcadores curtos comunicam os intervalos. Oito vídeos não significam oito horas de intimidade.
+**Passagem de tempo:** o ep. 3 acontece no dia da carona, o 4 alguns dias depois, o 5 na semana seguinte e o 6 poucos dias depois da entrega.
+
+**Regras de corte para 60 s:**
+- Um gancho de 3 s, seguido do cartão "Mais cedo".
+- No máximo quatro blocos antes do voto.
+- Mensagens, anúncios e painéis aparecem como texto na tela, sem voz.
+- O trecho que depende do voto deve ser curto, para gerar a base antes de a votação fechar.
+
+**Fora da T1:** a mancada da Lua, a decisão SAI/FICA e as cenas de silêncio do antigo 6 ficam como material para a T2. Na T2, o segredo da viagem passa a ser a falha concreta dela com o Tico.
 
 ## O que cada voto continua mudando
 
@@ -82,7 +88,7 @@ Piada possível: depois de passageiros recusarem a oferta, ele responde à pergu
 
 Ela pode saber que está vendendo para pessoas indicadas por ele e ainda não ter contado que sonha viver disso. O sonho guardado no 4 continua guardado até ela decidir falar.
 
-## A mancada da Lua — proposta para desenvolver no 6
+## A mancada da Lua — material para a T2
 
 **Situação proposta, ainda não escolhida pelo autor:** Lua combina um café ou uma conversa num horário em que ele precisará encerrar o turno. Ele se organiza, recusa uma corrida que não caberia e aparece. Uma encomenda dá problema; ela decide resolver, perde a hora e deixa de avisá-lo. Não é sabotagem nem ausência de direito a trabalhar: a falha é contar com a compreensão dele sem lhe dar informação.
 
@@ -94,7 +100,7 @@ Ele pode aceitar o pedido de desculpas sem exigir compensação. Ela continua in
 
 Não encadear perdão, culpa e beijo como dívida: o cinema precisa também nascer da vontade dela de estar com ele. Se a mancada proposta repetir demais a carona, procurar outra situação com o mesmo peso e espaço para reparação antes de fechar o 6.
 
-## A escolha profissional perto do 7
+## A escolha profissional — material para a T2
 
 Mostrar antes do voto pequenas vendas repetidas, o desgaste de conciliar e uma conta concreta. A decisão não nasce só de uma briga com o chefe ou de Tico dizer “vai dar certo”. Ela escolhe o risco que consegue considerar.
 
@@ -104,7 +110,7 @@ Mostrar antes do voto pequenas vendas repetidas, o desgaste de conciliar e uma c
 
 Nos dois caminhos, Tico escuta e ajuda na divulgação. Não decide pela Lua, vira funcionário, assume investimento nem passa a administrar sua agenda.
 
-## Cinema no episódio 8
+## Cinema — agora no episódio 6
 
 O convite e o aceite acontecem antes da sessão. Se o 4 teve encontro, pode ser o segundo, desde que não tenhamos mostrado outro entre eles. Se o 4 teve recusa, o cinema é o primeiro encontro assumido ou vem depois de uma saída desenvolvida no intervalo; não chamar de segundo por hábito.
 
@@ -130,11 +136,9 @@ Estes são pré-roteiros, com cenas e falas propostas. Tempos são reservas; nã
 
 A orientação anterior de um bico novo por episódio, seleção silenciosa no 5, encontro só no 6 e confissão só no 10 foi substituída pela direção expressa do autor nesta conversa. A base de tom, personagens e humor permanece. Bíblia e continuidade aprovada não foram alteradas automaticamente.
 
-## Se oito não bastarem
+## Eps. 7 a 10
 
-Os arquivos [9](ep09/pre_roteiro.md) e [10](ep10/pre_roteiro.md) continuam como reservas, sem episódios antigos ativos. O norte aceito agora é chegar ao cinema e à votação do beijo no 8, com resposta na próxima temporada. Se os votos exigirem mais percurso, discutir a extensão antes de comprimir reparação, demissão e encontro. Esta atualização não reescreve esses cartões nem os demais pré-roteiros: este mapa registra o ajuste para a próxima passagem por eles.
-
----
+Os arquivos [7](ep07/pre_roteiro.md), [8](ep08/pre_roteiro.md), [9](ep09/pre_roteiro.md) e [10](ep10/pre_roteiro.md) ficam como banco de cenas para a T2. As seções acima sobre a escolha profissional no 7 e o cinema no 8 continuam como referência de tom. Agora o cinema acontece no 6.
 
 ## Comentários do autor
 

@@ -1,144 +1,116 @@
 # Episódio 4: A Hora dos Dois
 
-**Status:** pré-roteiro reconstruído. Dois corpos alternativos, conforme o voto do 3. Produzir apenas o vencedor. Alguns dias se passam; não há encontro imediatamente depois da reunião.
+**Status:** pré-roteiro encurtado para cerca de 60 s. São dois corpos alternativos, conforme o voto do 3, e só o vencedor vai para produção. O caminho A tem cerca de 14 falas, e o B, cerca de 9. A versão longa está no histórico do git. A história se passa alguns dias depois da reunião.
 
 ## O fio
 
-Eles se aproximam quando deixam de representar por um instante, mas uma conversa boa não cria intimidade para contar tudo.
+Os dois se aproximam quando param de encenar por um instante. Uma conversa boa ainda não dá intimidade para contar tudo.
+
+## Produção
+
+O voto do 3 escolhe o corpo inteiro, então não existe base comum. O que dá para adiantar são as vozes do Tico e do Jão nos trechos que não dependem do caminho da carona. No caminho B, chave, contrato da diária e avaliação aparecem na tela, sem voz.
 
 ## Caminho A — Lua ACEITA
 
-### 1. O galã precisa conseguir sentar — 0–19 s
+### Gancho — 0–3 s
 
-**Quer:** ele, parecer bonito e seguro. **Obstáculo:** orçamento e expectativa. **Virada:** a roupa ideal dificulta uma ação simples. **Fecho:** escolhe algo em que consegue sentar.
+A mesa da padaria balança e o café dela quase vira. Cartão "Mais cedo".
 
-Abrir no botão da camisa quase soltando quando tenta amarrar o tênis. Jão:
+### 1. O galã precisa sentar — 3–14 s
+
+O botão da camisa emprestada quase solta quando ele amarra o tênis.
 — Tá confortável?
-— Estou elegante.
+— Tô elegante.
 — Perguntei outra coisa.
 
-Uma camisa emprestada e perfume, não uma transformação mágica. Tico confere o dinheiro e escolhe uma padaria conhecida, sem reservar jantar que não consegue pagar.
+**Chuveiro:** ao combinar o horário, ele diz "Se ainda tiver chateada, eu entendo". **Carona:** ele não pede desculpas por um abandono que não aconteceu.
 
-**Se houve Chuveiro:** ao combinar o horário, reconhece que entende se ela ainda estiver chateada. Aceitar café não significa que o sumiço foi resolvido.
-**Se houve Carona:** não pede desculpas por abandono inexistente.
+### 2. Mesa pequena, vinte anos — 14–28 s
 
-### 2. Mesa pequena, vinte anos — 19–42 s
-
-**Quer:** conversar. **Obstáculo:** ele preenche cada silêncio. **Virada:** uma lembrança pequena quebra o ensaio. **Fecho:** riem da mesma coisa.
-
-Ele puxa a cadeira e a mesa vem junto porque balança. Ela segura o próprio café.
+Ele puxa a cadeira, e a mesa vem junto.
 — Ainda põe açúcar antes de provar?
 — Ainda acha que eu não sei quanto gosto?
 — Você botava no suco de caixinha.
 — Eu era uma criança com metas.
 
-Essa lembrança é proposta nova, não passado aprovado. Usar uma memória, não um catálogo da infância. Perguntam por onde andaram e contam um detalhe ordinário de cada vida. Não inventar tragédia para justificar vinte anos sem contato.
-
-### 3. A reunião chega à mesa — 42–65 s
-
-**Quer:** ele, animá-la; ela, ser ouvida. **Obstáculo:** conselho automático. **Virada:** ele corrige sua abordagem. **Fecho:** ela consegue relaxar um pouco.
+### 3. A reunião chega à mesa — 28–40 s
 
 — Na próxima você consegue.
 — Essa já era a próxima.
-
 Ele para.
 — Foi mal. Deve ter sido uma merda.
 
-Silêncio curto. Ela recebe outra demanda do promovido e escolhe se atende. Tico espera, sem tomar o telefone nem dizer o que deveria fazer do emprego.
+O celular dela acende com "Júnior: rapidinho?". Ela decide se responde, e Tico espera sem palpite.
 
-### 4. A pergunta da receita — 65–82 s
+### 4. A pergunta da receita — 40–52 s
 
-**Quer:** ela, decidir quanto contar. **Obstáculo:** medo de falar de uma vontade que pode não conseguir realizar. **Virada:** ele faz uma pergunta sem oferecer solução. **Fecho:** a resposta fica em aberto.
-
-Um papel de receita aparece como marcador na bolsa; ela já comentou ter feito um doce.
+Um papel de receita serve de marcador na bolsa dela.
 — Você ainda faz aqueles doces?
 — Às vezes.
-— Você gosta mais disso do que de lá?
+— Gosta mais disso do que de lá?
 
-Não oferecer sociedade ou investimento antes de ouvir.
+### Votação A — 52–58 s
 
-### Votação A — 82–89 s
+**CONTA:** ela admite que pensa em confeitaria, mas tem medo de largar a estabilidade.
+**GUARDA:** fica no "é só uma receita". O encontro pode ser bom sem ser a hora de contar tudo.
 
-**CONTA:** Lua admite pensar em confeitaria, mas teme trocar estabilidade por incerteza.
-**GUARDA:** fica no “é só uma receita”; um encontro pode ser bom sem ser hora de contar tudo.
+### Retorno A — 58–61 s
 
-Não votar na demissão. No caminho GUARDA, ele não conhece o projeto no episódio seguinte.
-
-### Retorno A — 89–93 s
-
-Ele tenta vestir o paletó ao sair e percebe que passou o encontro sentado na manga. Ela ajuda a soltar:
-— Agora dá pra ir.
+Ao sair, ele percebe que passou o encontro sentado na manga do paletó.
 — Eu tava criando raízes.
-
-Não terminar em beijo automático.
 
 ## Caminho B — Lua diz AGORA NÃO
 
-### 1. Um não ouvido — 0–17 s
+### Gancho — 0–3 s
 
-**Quer:** ele, continuar perto. **Obstáculo:** ela não está disponível. **Virada:** percebe a insistência disfarçada. **Fecho:** vai trabalhar.
+Tico passa aromatizador no cinto de segurança. Cartão "Mais cedo".
 
-Ela: “Não tô com cabeça agora, Tico”.
-Depois, Jão vê o texto longo que ele quase envia:
-— “Outro assunto” com três parágrafos?
-Ele apaga. A recusa vale.
+### 1. Um não ouvido — 3–14 s
 
-Dias depois, começa corridas em carro alugado por diária. Mostrar chave, contrato e diária, sem ganhar carro por conveniência. Antes do roteiro final, definir de onde sai o primeiro aluguel e quanto sobra das corridas; a moto segue com Jão.
+— Não tô com cabeça agora, Tico.
+Depois, Jão vê na tela o texto longo que ele quase envia:
+— "Outro assunto" com três parágrafos?
+Ele apaga a mensagem, porque a recusa vale.
 
-### 2. Motorista do quarteirão — 17–41 s
+Dias depois, aparecem na tela a chave, o contrato e a diária de um carro alugado. Antes do roteiro final, falta definir de onde sai o primeiro aluguel.
 
-**Quer:** pagar a diária e talvez encontrá-la. **Obstáculo:** as chamadas o levam para longe. **Virada:** os passageiros têm suas próprias urgências. **Fecho:** o mapa não obedece ao romance.
+### 2. Motorista do quarteirão — 14–24 s
 
-Ele começa pelo bairro dela e ensaia um cumprimento; o app o leva ao outro lado. Três passageiros: um pede ar menos frio, outro abre a janela, o terceiro leva um ventilador no colo.
+Ele ensaia um cumprimento passando pelo bairro dela, mas o app o manda para o outro lado. Um passageiro entra com um ventilador no colo:
 — Esse pode ligar?
 — Primeiro o cinto.
 
-Não repetir as voltas da Letícia, desviar passageiros ou seguir a localização de Lua.
+### 3. É uma corrida — 24–38 s
 
-### 3. É uma corrida — 41–63 s
-
-**Quer:** ela, chegar ao destino; ele, não parecer que estava esperando. **Obstáculo:** mistura de expectativa e serviço. **Virada:** combinam a viagem. **Fecho:** conversam sem chamar aquilo de encontro.
-
-Lua o vê parado trabalhando e pergunta se pode levá-la. Tem um compromisso próprio e combina pagar. Mostrar esse pedido antes de entrar, sem coincidência de app escolhida pelo roteiro sem causa.
-
-Ele limpa o banco já limpo.
+Lua vê o carro parado e pergunta se ele pode levá-la, pagando. Ele limpa um banco que já está limpo.
 — É corrida, tá?
 — Eu sei.
 — Você passou perfume no cinto?
-Ele recolhe o aromatizador.
 
-Definir uma cobrança só, pelo aplicativo fictício ou combinada, sem duplicar. Ela escolhe o destino; não recebe passeio romântico no lugar da viagem.
+### 4. Uma pergunta — 38–52 s
 
-### 4. Uma lembrança e uma pergunta — 63–82 s
+Uma rua lembra a escola, e um riso curto escapa sem desfazer a recusa.
 
-**Quer:** conversar sem assumir mais intimidade do que existe. **Obstáculo:** a história recente continua. **Virada:** o assunto deixa de ser só lembrança. **Fecho:** ele precisa responder.
+**Chuveiro:** "Por que você sumiu naquele dia?"
+**Carona:** "Por que você fala 'bico' como se não contasse?"
 
-Uma rua lembra a escola; reconhecem uma coisa que mudou e outra que ficou. Um riso breve não revoga a recusa.
+### Votação B — 52–58 s
 
-**Chuveiro:** “Por que você sumiu naquele dia?”. Refere-se à carona, sem trocar por um abandono de vinte anos.
-**Carona:** não houve sumiço. Ela pergunta “Por que você fala ‘bico’ como se não contasse?”. É a vergonha do próprio trabalho, não uma falta que ele não cometeu.
+**VERDADE:** no caminho Chuveiro, ele fugiu por vergonha do cheiro. No caminho Carona, tem vergonha de não ter a estabilidade que queria.
+**DESCULPA:** no caminho Chuveiro, inventa um problema na moto. No caminho Carona, diz que as corridas são passatempo.
 
-### Votação B — 82–89 s
+### Retorno B — 58–61 s
 
-**VERDADE:** Chuveiro: fugiu por vergonha do cheiro. Carona: tem vergonha de não ter o emprego e a estabilidade que queria.
-**DESCULPA:** Chuveiro: inventa problema na moto. Carona: diz que as corridas são passatempo e o emprego principal está garantido.
-
-São informações diferentes que seguem para os próximos. Verdade não garante perdão. Se a instabilidade foi revelada, o final não a “revela” de novo.
-
-### Retorno B — 89–93 s
-
-Ela sai; Tico espera mensagem pessoal. Chega uma avaliação de cinco estrelas. Sorri, percebe que é do serviço e coloca o telefone no suporte. Não perder nota por falta de romance: a viagem funcionou.
+Ela desce. Ele espera uma mensagem pessoal, mas chega uma avaliação de cinco estrelas. Sorri e encaixa o celular no suporte.
 
 ## O que passa ao 5
 
-| Histórico | Informação estabelecida |
+| Histórico | O que fica estabelecido |
 |---|---|
-| Encontro + CONTA | Houve saída; ele conhece sonho e receio |
-| Encontro + GUARDA | Houve saída; ela não contou o projeto |
-| Corrida + VERDADE | Não houve encontro; ela ouviu uma vulnerabilidade dele |
-| Corrida + DESCULPA | Não houve encontro; há uma mentira específica por corrigir |
-
-O ponto comum é uma conversa de adultos, não um casal formado. Lua segue no emprego. Nenhum caminho autoriza entrar na casa ou organizar a vida dela sem perguntar.
+| Encontro + CONTA | Os dois saíram juntos, e ele conhece o sonho e o receio dela |
+| Encontro + GUARDA | Os dois saíram juntos, mas ela não contou o projeto |
+| Corrida + VERDADE | Não houve encontro, e ela ouviu uma vulnerabilidade dele |
+| Corrida + DESCULPA | Não houve encontro, e ficou uma mentira para corrigir |
 
 ---
 

@@ -4,7 +4,7 @@
 //   node .claude/skills/se-vira-tico/scripts/qa-episodio.mjs <pasta do filme> <video.mp4> [--rascunho] [--sem-duracao]
 //
 //   --rascunho     espera 540x960 a 15 fps e não cobra loudness
-//   --sem-duracao  não cobra 85-95 s (para testes curtos)
+//   --sem-duracao  não cobra a duração (85-95 s nos eps. 1 e 2, 61-68 s do 3 em diante) (para testes curtos)
 //
 // Saída: 0 aprovado, 1 algum item reprovado, 2 não conseguiu rodar.
 import { spawnSync } from 'node:child_process';
@@ -22,7 +22,9 @@ const parar = (msg) => { console.error(msg); process.exit(2); };
 if (!pasta || !video) parar(uso);
 const rascunho = flags.has('--rascunho');
 const ALVO = rascunho ? { w: 540, h: 960, fps: 15 } : { w: 1080, h: 1920, fps: 30 };
-const DURACAO = [85, 95], LUFS = -16, TOLERANCIA_LU = 1;
+// Eps. 1 e 2 têm cerca de 90 s; do ep. 3 em diante, pouco mais de 60 s (decisão do autor em 7/11/2026; acima de 1 min por causa da monetização)
+const NUM_EP = Number((pasta.match(/ep(\d+)/) || [])[1] || 0);
+const DURACAO = NUM_EP >= 3 ? [61, 68] : [85, 95], LUFS = -16, TOLERANCIA_LU = 1;
 
 const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../..');
 const motor = process.env.TAKE_ONE || path.join(os.homedir(), '.claude/skills/take-one/scripts');

@@ -1,5 +1,7 @@
 # Episódio 8: Um Café de Cada Vez
 
+> **Fora da T1 (7/11/2026):** a temporada 1 fecha no ep. 6. Este arquivo fica como banco de cenas para a T2 (ver `docs/estrategia/T2.md`).
+
 **Status:** possível encerramento desta fase. Não é obrigação de concluir namoro, emprego e sonho em oito. Se a conversa precisar de mais duração, usar os espaços 9 e 10 antes de acelerar.
 
 ## O fio
