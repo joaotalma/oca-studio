@@ -176,5 +176,5 @@ As duas levam ao mesmo marco: depois da conversa, sozinho, o Tico liga para o J�
 - **Pilotagem:** visão do guidão, com a câmera voltada para o piloto, e a estrada em perspectiva ao fundo.
 - **Cenários:** rua, com a esquina como trecho dela, borracharia, porta do conjunto e casa da Marlene. A kitnet fica para depois.
 - **Moto:** tem cerca de 2 m em escala com os personagens.
-- **Nomes:** "Esperança" e "Marlene" são fictícios, e o app não é nomeado. A Bia passou a se chamar Letícia e a Dona Neide, mãe do Tico, Dona Marlene. A idosa do bolo é piada de pós-crédito, sem volta, e o nome igual está no backlog.
+- **Nomes:** "Esperança" e "Marlene" são fictícios, e o app não é nomeado. A Bia passou a se chamar Letícia e a Dona Neide, mãe do Tico, Dona Marlene. A idosa do bolo é piada de pós-crédito, sem volta, e o nome igual foi mantido por decisão do autor; a mãe aparece só como "Mãe" na tela.
 - **Bíblia:** o episódio 1, a votação, os planos, a Dona Neide neste episódio e a exceção da mentira ainda estão na versão anterior.

@@ -4,14 +4,11 @@ Decisões que ficaram para você. Nada aqui foi publicado ou alterado sem aviso.
 
 ## Decidir antes de publicar o ep. 1
 
-### 1. Duas Dona Marlene
+### 1. Duas Dona Marlene (decidido)
 
-A idosa do bolo do ep. 1 se chama Marlene: está no bolo, na fala 19 ("Quem é Marlene?") e na faixa da casa dela. Com a mãe do Tico agora chamada Marlene, quem assistir depois pode achar que o bolo era da mãe dele.
+**Decisão do autor:** manter. A idosa do bolo continua se chamando Marlene no ep. 1, e o vídeo não muda.
 
-Não mexi porque o ep. 1 já estava aprovado com esse nome.
-
-- **Minha recomendação:** trocar o nome da idosa, por exemplo para Odete. Custa regerar a fala 19 e renderizar de novo, cerca de 10 minutos, e não muda a piada.
-- **Alternativa:** manter no ep. 1 e seguir chamando a mãe só de "Mãe" na tela. Foi o que fiz nos pré-roteiros, então nada quebra por enquanto.
+**Regra que fica:** a mãe do Tico é chamada só de "Mãe" na tela, como já está nos pré-roteiros do ep. 2, para ninguém achar que o bolo era dela.
 
 ### 2. Risada da fala 33
 
