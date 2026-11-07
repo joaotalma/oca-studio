@@ -55,9 +55,10 @@ const motor = (() => {
     const v = hash(Math.floor(t * 11) + FASE[id] * 9);
     return v < .2 ? 'closed' : v < .5 ? 'small' : v < .85 ? 'open' : 'wide';
   }
-  function atorSVG(a, t) {
+  const avisados = new Set();
+  function atorSVG(a, t, pl, cy, z) {
     const pz = { ...poseEm(a.poses, t), ...(a.dyn ? a.dyn(t) : {}) }, f = FASE[a.id] || 0;
-    const s = a.s || 1.32, sx = a.flip ? -s : s;
+    const s = a.sF ? a.sF(t) : (a.s || 1.32), sx = a.flip ? -s : s;
     let x = a.x, y = a.y == null ? CHAO : a.y;
     if (a.xF) x = a.xF(t);
     if (a.yF) y = a.yF(t);
@@ -78,7 +79,17 @@ const motor = (() => {
     po.head = (po.head || 0) + Math.sin(t * .9 + f) * 1.2 + Math.sin(t * 5.3 + f) * 2.4 * peso;
     po.lean = (po.lean || 0) + Math.sin(t * .7 + f) * .5;
     const m = boca(a.id, t); if (m) po.mouth = m;
-    return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${drawChar(a.char ? a.char(t) : CHARS[a.id], po)}</g>`;
+    const desenho = a.char ? a.char(t) : CHARS[a.id];
+    // Regra das pernas: semPernas só vale se o corte da cintura ficar fora da tela ou o plano declarar cobrePernas,
+    // quando algo desenhado na frente esconde o corte. Fora disso, as pernas voltam.
+    if (po.semPernas && !pl.cobrePernas) {
+      const cintura = y - s * (10 + desenho.thigh + desenho.shin + SHOE_H[desenho.shoe]);
+      if (960 + z * (cintura - cy) < 1920) {
+        po.semPernas = false;
+        if (!avisados.has(pl.ini)) { avisados.add(pl.ini); console.warn(`semPernas ignorado em ${a.id}, plano de ${pl.ini}: o corte ficaria à vista`); }
+      }
+    }
+    return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${drawChar(desenho, po)}</g>`;
   }
   function camEm(cam, t) {
     let a = cam[0];
@@ -101,7 +112,7 @@ const motor = (() => {
     for (const c of CENARIOS[nome]()) s += `<g transform="${tf(c.f)}">${c.svg}</g>`;
     s += `<g transform="${tf(1)}">`;
     if (pl.fundo) s += pl.fundo(t);
-    for (const a of pl.atores || []) s += atorSVG(a, t);
+    for (const a of pl.atores || []) s += atorSVG(a, t, pl, cy, z);
     if (pl.frente) s += pl.frente(t);
     s += '</g>';
     if (cor < 1) s += '</g>';

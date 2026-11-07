@@ -54,3 +54,7 @@ No Fiscal, `fN` e `fF` são as patas da frente, de perto e de longe, e `bN` e `b
 - Humanos só têm vista de frente; o Fiscal só tem perfil, virado para a esquerda.
 - Andar é um passo sem sair do lugar. O deslocamento vem da posição animada no filme.
 - A cabeça só inclina para os lados, não para a frente.
+
+## Pernas
+
+Personagem de corpo inteiro sempre tem pernas. `semPernas` serve só para enquadramentos em que a cintura não aparece. O motor confere isso quadro a quadro: se o corte da cintura ficaria à vista, ele ignora `semPernas`, desenha as pernas e avisa no console. Quando algo em primeiro plano esconde o corte, como o guidão ou a moldura do celular, declare `cobrePernas: true` no plano.

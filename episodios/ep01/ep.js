@@ -48,7 +48,7 @@ const celularSVG = (t) => {
 
 const ep01Planos = [
   // Abertura: câmera presa no guidão
-  { ini: 0, fim: 3, cena: 'vazio', cam: [[0, 540, 960, 1]],
+  { ini: 0, fim: 3, cena: 'vazio', cobrePernas: true, cam: [[0, 540, 960, 1]],
     fundo: (t) => { const tr = Math.min(t, POW), tremor = t > POW ? Math.sin(t * 90) * 16 : Math.sin(t * 24) * 2; return `<g transform="translate(${tremor.toFixed(1)} 0)">${estradaSVG(tr)}</g>` + (t >= POW - .05 ? estouroSVG(190, 700, sai((t - POW + .05) / .12)) : '') + guidaoFundoSVG(); },
     frente: () => guidaoFrenteSVG(),
     atores: [{ id: 'tico', x: 540, s: 2.1, yF: (t) => 2230 + (t > POW ? -34 : Math.sin(t * 19) * 5), poses: [[0, { expr: 'feliz', bag: true, semPernas: true, armL: [-60, -62], armR: [60, 62] }], [POW, { expr: 'surpreso', detalhe: 'suor' }]] }] },

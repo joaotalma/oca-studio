@@ -155,7 +155,7 @@ function headSVG(d, E, pose) {
 const ret2 = (x, y, w, h, fill) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2" fill="${fill}" stroke="${OUT}" stroke-width="1.8"/>`;
 function propSVG(kind) {
   if (kind === 'phone') return `<g transform="translate(-2 16) rotate(-8)">` + `<rect x="-11" y="-24" width="22" height="44" rx="4" fill="#23252f" stroke="${OUT}" stroke-width="2.4"/><rect x="-8" y="-20" width="16" height="33" rx="1.5" fill="#7fd6ee"/></g>`;
-  if (kind === 'cup') return `<g transform="translate(0 15)">` + shape('M-15 -24 L15 -24 L11 18 Q0 22 -11 18Z', '#fff3d6') + fillOnly('M-13 -8 L13 -8 L12 4 L-12 4Z', '#ae5d49') + shape('M-17 -29 L17 -29 L16 -22 L-16 -22Z', '#6d4a3a', 2.2) + `</g>`;
+  if (kind === 'cup') return `<g transform="translate(0 15)">` + stroke('M15 -14 Q33 -14 31 2 Q29 14 12 12', OUT, 7.5) + stroke('M15 -14 Q33 -14 31 2 Q29 14 12 12', '#fff6e6', 3.4) + shape('M-17 -22 L17 -22 L13 20 Q0 25 -13 20Z', '#fff6e6') + fillOnly('M-15 -20 L15 -20 L14 -12 L-14 -12Z', '#6b3f2a') + stroke('M-7 -32 Q-2 -40 -7 -48 M6 -32 Q11 -40 6 -48', '#c9c1b4', 3) + `</g>`;
   if (kind === 'chave') return `<g transform="translate(2 28)">` + shape('M-3 0 L3 0 L3 28 L8 28 L8 33 L3 33 L3 38 L-3 38Z', '#c7cbd0', 1.8) + ell(0, -7, 10, 10, '#e2b13f', OUT, 2.2) + `</g>`;
   if (kind === 'chaveRoda') return `<g transform="translate(2 18)">` + shape('M-5 0 L5 0 L6 96 L-6 96Z', '#8a9099', 2.4) + shape('M-20 92 L20 92 L16 118 L-16 118Z', '#6c727a', 2.4) + `</g>`;
   if (kind === 'fatia') return `<g transform="translate(2 -2)">` + shape('M-24 -6 L24 -6 L14 26 L-14 26Z', '#fdf1dd') + fillOnly('M-23 -3 L23 -3 L20 6 L-20 6Z', '#e8736f') + `</g>`;

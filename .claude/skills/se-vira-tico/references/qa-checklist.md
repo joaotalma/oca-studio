@@ -23,3 +23,5 @@
 | Espectador | Sem ter visto nada antes, dá para entender; o autor assiste inteiro no celular | Autor |
 
 O gate é mais rígido que o limite de 1 s: uma janela de meio segundo com menos de 0,5% de mudança já reprova. Corrija com movimento real. Use `HOLDS` só em pausa intencional.
+
+**Pernas:** nas folhas de quadros, ninguém pode aparecer cortado na cintura. Quem usa `semPernas` precisa estar enquadrado de modo que a cintura fique fora da tela ou coberta por algo em primeiro plano (`cobrePernas`).

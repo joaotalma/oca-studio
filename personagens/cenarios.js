@@ -167,37 +167,53 @@ function mesaSVG(y) {
   for (const [x, yy] of [[190, 40], [360, 90], [720, 90], [890, 40]]) s += ell(x, y + yy, 70, 22, '#f7f4ef', OUT, 2.4) + ell(x, y + yy, 38, 11, '#e5e1da', 'none', 0);
   return s;
 }
-/* ---------- moto de frente, em três quartos ---------- */
-// Origem no chão, sob a roda da frente. As pontas do guidão estão em MOTO_FRENTE, para as mãos alcançarem.
-const MOTO_FRENTE = { gripL: [-72, -452], gripR: [118, -432] };
-function motoFrenteSVG(x, y, s, o = {}) {
-  const giro = o.giro || 0, r = 150, ex = .46;
-  const raios = [0, 1, 2, 3].map((i) => { const a = (giro + i * 45) * Math.PI / 180, c = Math.cos(a) * r * .6, n = Math.sin(a) * r * .6; return stroke(`M${-110 + c * ex} ${-r + n} L${-110 - c * ex} ${-r - n}`, '#3a3a40', 3.5); }).join('');
-  return `<g transform="translate(${x} ${y}) scale(${s})">`
-    + `<ellipse cx="225" cy="-92" rx="42" ry="92" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/><ellipse cx="225" cy="-92" rx="22" ry="52" fill="#8a9099" stroke="${OUT}" stroke-width="${T}"/>`
-    + stroke('M60 -240 L225 -110', OUT, 22) + stroke('M60 -240 L225 -110', '#55606c', 13) + shape('M-6 -236 L112 -226 L128 -128 L14 -122Z', '#3a3a40') + stroke('M34 -196 L100 -192 M34 -166 L104 -162', '#6c727a', 5) + stroke('M60 -118 L250 -92', OUT, 20) + stroke('M60 -118 L250 -92', '#a7adb5', 12)
-    + shape('M95 -345 Q210 -350 290 -300 L285 -262 Q190 -280 100 -282Z', '#ae5d49')
-    + shape('M-34 -372 Q40 -408 112 -360 Q130 -300 104 -252 Q30 -218 -30 -254 Q-52 -310 -34 -372Z', '#c9412f')
-    + `<g transform="translate(68 -318) rotate(8)">` + txt(0, 6, 'Compa-', 15, '#fff3d6') + txt(0, 24, 'nheira', 15, '#fff3d6') + `</g>`
-    + stroke('M-16 -395 L-92 -128', OUT, 21) + stroke('M-16 -395 L-92 -128', '#8a9099', 14)
-    + stroke('M42 -384 L-34 -120', OUT, 21) + stroke('M42 -384 L-34 -120', '#8a9099', 14)
-    + `<ellipse cx="-110" cy="${-r}" rx="${r * ex}" ry="${r}" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/>`
-    + `<ellipse cx="-110" cy="${-r}" rx="${r * ex * .62}" ry="${r * .62}" fill="#a7adb5" stroke="${OUT}" stroke-width="${T}"/>` + raios
-    + `<ellipse cx="-110" cy="${-r}" rx="${r * ex * .18}" ry="${r * .18}" fill="#3a3a40" stroke="${OUT}" stroke-width="2"/>`
-    + shape('M-178 -228 Q-120 -320 -38 -258 L-52 -218 Q-112 -262 -158 -196Z', '#c9412f')
-    + stroke('M-72 -452 L24 -442 L118 -432', OUT, 18) + stroke('M-72 -452 L24 -442 L118 -432', '#8a9099', 10)
-    + stroke('M-72 -452 L-50 -450', '#26262b', 15) + stroke('M96 -434 L118 -432', '#26262b', 15)
-    + stroke('M-44 -448 L-64 -540', OUT, 8) + stroke('M100 -434 L136 -476', OUT, 8)
-    + ell(-68, -564, 25, 31, '#26262b', OUT, T) + ell(-68, -564, 17, 23, '#c9dfe6')
-    + ell(146, -494, 21, 25, '#26262b', OUT, T) + ell(146, -494, 14, 18, '#c9dfe6')
-    + ell(10, -398, 42, 46, '#f2d36b', OUT, T) + ell(4, -402, 22, 25, '#fff6d8')
-    + '</g>';
+/* ---------- moto vista de frente ---------- */
+// Origem no chão, sob a roda. parte 'fundo' vai atrás do piloto; parte 'frente', na frente dele; sem parte, a moto inteira.
+const MOTO_RETA = { gripL: [-150, -376], gripR: [150, -376] };
+function motoRetaSVG(x, y, s, o = {}) {
+  const giro = o.giro || 0;
+  const fundo = `<ellipse cx="0" cy="-92" rx="27" ry="92" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/>`
+    + stroke('M-70 -150 L-132 -124 M70 -150 L132 -124', OUT, 17) + stroke('M-70 -150 L-132 -124 M70 -150 L132 -124', '#a7adb5', 9)
+    + shape('M-98 -348 Q0 -376 98 -348 L104 -284 Q0 -262 -104 -284Z', '#ae5d49')
+    + stroke('M-74 -326 Q0 -348 74 -326', '#8f4c3b', 3.4);
+  const pedaleiras = stroke('M-124 -106 L-58 -118 M124 -106 L58 -118', OUT, 14) + stroke('M-124 -106 L-58 -118 M124 -106 L58 -118', '#6c727a', 7);
+  const riscos = [0, 1, 2, 3, 4, 5].map((i) => { const q = ((giro / 60 + i / 6) % 1 + 1) % 1, yy = -240 + q * 230, l = 30 * Math.sin(q * Math.PI); return stroke(`M${-l} ${yy.toFixed(1)} L${l} ${yy.toFixed(1)}`, '#55535a', 5); }).join('');
+  const frente = pedaleiras + shape('M-48 -258 L48 -258 L40 -172 L-40 -172Z', '#3a3a40') + stroke('M-34 -228 L34 -228 M-32 -200 L32 -200', '#6c727a', 5)
+    + `<ellipse cx="0" cy="-125" rx="36" ry="125" fill="#26262b" stroke="${OUT}" stroke-width="${T}"/>` + riscos
+    + shape('M-44 -196 Q0 -262 44 -196 L34 -158 Q0 -196 -34 -158Z', '#c9412f')
+    + stroke('M-27 -130 L-34 -345 M27 -130 L34 -345', OUT, 19) + stroke('M-27 -130 L-34 -345 M27 -130 L34 -345', '#a7adb5', 12)
+    + shape('M-68 -372 Q0 -402 68 -372 L58 -272 Q0 -246 -58 -272Z', '#c9412f')
+    + stroke('M-112 -384 L-176 -470 M112 -384 L176 -470', OUT, 8)
+    + ell(-182, -496, 27, 34, '#26262b', OUT, T) + ell(-182, -496, 18, 25, '#c9dfe6') + ell(182, -496, 27, 34, '#26262b', OUT, T) + ell(182, -496, 18, 25, '#c9dfe6')
+    + stroke('M-150 -376 Q0 -404 150 -376', OUT, 18) + stroke('M-150 -376 Q0 -404 150 -376', '#a7adb5', 10)
+    + stroke('M-162 -374 L-124 -380 M162 -374 L124 -380', '#26262b', 17)
+    + ell(0, -338, 46, 46, '#f2d36b', OUT, T) + ell(-5, -343, 25, 25, '#fff6d8')
+    + txt(0, -268, 'Companheira', 15, '#fff3d6');
+  const miolo = o.parte === 'fundo' ? fundo : o.parte === 'frente' ? frente : fundo + frente;
+  return `<g transform="translate(${x} ${y}) scale(${s})">${miolo}</g>`;
 }
 function fedorSVG(x, y, t, forca = 1) {
   return [-1, 0, 1].map((i) => {
     const o = Math.sin(t * 5 + i * 2) * 11, h = 150 * forca, a = x + i * 72;
     return `<path d="M${a} ${y} Q${a + 34 + o} ${y - h * .25} ${a} ${y - h * .5} Q${a - 34 - o} ${y - h * .75} ${a} ${y - h}" fill="none" stroke="#7f9419" stroke-width="9" stroke-linecap="round" opacity="${(.82 * Math.min(1, forca)).toFixed(2)}"/>`;
   }).join('');
+}
+// Suor pingando: cada gota cai do rosto até o chão, acelera e respinga ao bater
+function pingosSVG(x, y, chao, t, n = 3) {
+  const lados = [-30, 22, -8, 30, -18];
+  let s = '';
+  for (let i = 0; i < n; i++) {
+    const q = (t * .95 + i * .37 + i * i * .11) % 1, x0 = x + lados[i % lados.length];
+    if (q < .82) {
+      const p = q / .82, yy = y + (chao - y) * p * p, g = 1 + p * .35;
+      s += `<path transform="translate(${x0} ${yy.toFixed(1)}) scale(${g.toFixed(2)})" d="M0 -17 Q12 -2 9 6 Q6 14 0 14 Q-6 14 -9 6 Q-12 -2 0 -17Z" fill="#7fd6ee" stroke="${OUT}" stroke-width="2.6"/>`;
+    } else {
+      const p = (q - .82) / .18, a = (1 - p).toFixed(2), r = 8 + p * 26;
+      s += `<g opacity="${a}"><ellipse cx="${x0}" cy="${chao}" rx="${r.toFixed(1)}" ry="${(r * .28).toFixed(1)}" fill="none" stroke="#7fd6ee" stroke-width="4"/>`
+        + `<circle cx="${x0 - r * .9}" cy="${chao - 14 * Math.sin(p * 3.14)}" r="4" fill="#7fd6ee"/><circle cx="${x0 + r * .9}" cy="${chao - 14 * Math.sin(p * 3.14)}" r="4" fill="#7fd6ee"/></g>`;
+    }
+  }
+  return s;
 }
 function gasolinaSVG(x, y, s, nivel) {
   const a = (-58 + 116 * nivel) * Math.PI / 180, cor = nivel < .12 ? '#c23b3b' : '#2a1f22';
