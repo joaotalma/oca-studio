@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+*.log
+.env
+render/*
+!render/.gitkeep
+audio/**/*.wav
+audio/**/*.mp3
+audio/**/*.m4a
+audio/**/*.flac
+roteiros/**/*.wav
+roteiros/**/*.mp3
+roteiros/**/*.m4a
+roteiros/**/*.mp4
+templates/**/film-*.html
