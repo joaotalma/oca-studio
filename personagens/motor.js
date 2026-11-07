@@ -56,7 +56,7 @@ const motor = (() => {
     return v < .2 ? 'closed' : v < .5 ? 'small' : v < .85 ? 'open' : 'wide';
   }
   const avisados = new Set();
-  function atorSVG(a, t, pl, cy, z) {
+  function atorSVG(a, t, pl, cy, z, indice) {
     const pz = { ...poseEm(a.poses, t), ...(a.dyn ? a.dyn(t) : {}) }, f = FASE[a.id] || 0;
     const s = a.sF ? a.sF(t) : (a.s || 1.32), sx = a.flip ? -s : s;
     let x = a.x, y = a.y == null ? CHAO : a.y;
@@ -89,7 +89,10 @@ const motor = (() => {
         if (!avisados.has(pl.ini)) { avisados.add(pl.ini); console.warn(`semPernas ignorado em ${a.id}, plano de ${pl.ini}: o corte ficaria à vista`); }
       }
     }
-    return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${drawChar(desenho, po)}</g>`;
+    const visual = pl.visual ?? EPISODIO.visual ?? false;
+    const luz = { ...(visual || {}) };
+    if (a.flip) luz.lado = luz.lado === 'esquerda' ? 'direita' : 'esquerda';
+    return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${typeof SerieVisual !== 'undefined' && visual !== false ? SerieVisual.personagem(drawChar(desenho, po), luz, a.id + '-' + indice) : drawChar(desenho, po)}</g>`;
   }
   function camEm(cam, t) {
     let a = cam[0];
@@ -112,7 +115,7 @@ const motor = (() => {
     for (const c of CENARIOS[nome]()) s += `<g transform="${tf(c.f)}">${c.svg}</g>`;
     s += `<g transform="${tf(1)}">`;
     if (pl.fundo) s += pl.fundo(t);
-    for (const a of pl.atores || []) s += atorSVG(a, t, pl, cy, z);
+    for (const [indice, a] of (pl.atores || []).entries()) s += atorSVG(a, t, pl, cy, z, indice);
     if (pl.frente) s += pl.frente(t);
     s += '</g>';
     if (cor < 1) s += '</g>';

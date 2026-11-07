@@ -139,3 +139,7 @@ Detalhes e forma de medir: `references/qa-checklist.md`.
 - Commitar vídeo, áudio ou chave de API.
 - Declarar `HOLDS` ou `CUTS` falsos para passar no gate.
 - Gastar créditos sem o autor confirmar o valor.
+
+## Acabamento aprovado para novos episódios
+
+Antes de montar cenas novas, leia `docs/ACABAMENTO_VISUAL.md`. Use `EPISODIO.visual` para luz de recorte e sombra por ambiente; `SerieVisual` oferece rua detalhada, abertura configurável, GPS com trajeto compartilhado e setas animadas. Live pertence à tela do aparelho. Preserve pausas de reação e proporções do cenário. Não reprepare nem rerenderize o EP2 publicado por causa dessas melhorias.

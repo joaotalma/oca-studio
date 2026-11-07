@@ -154,7 +154,12 @@ function headSVG(d, E, pose) {
 /* ---------- objetos, mão e pé ---------- */
 const ret2 = (x, y, w, h, fill) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2" fill="${fill}" stroke="${OUT}" stroke-width="1.8"/>`;
 function propSVG(kind) {
-  if (kind === 'phone') return `<g transform="translate(-2 16) rotate(-8)">` + `<rect x="-11" y="-24" width="22" height="44" rx="4" fill="#23252f" stroke="${OUT}" stroke-width="2.4"/><rect x="-8" y="-20" width="16" height="33" rx="1.5" fill="#7fd6ee"/></g>`;
+  const live = typeof kind === 'object' && kind ? kind.live : null;
+  if (typeof kind === 'object' && kind) kind = kind.tipo;
+  if (kind === 'phone') {
+    const label = live ? 'AO VIVO' + (live.audiencia == null ? '' : ' · ' + String(live.audiencia).replace(/[^0-9]/g,'')) : '';
+    return '<g transform="translate(-2 6) rotate(-8)"><rect x="-25" y="-47" width="50" height="90" rx="5" fill="#23252f" stroke="'+OUT+'" stroke-width="2"/><g transform="rotate(180 0 -2) scale(-1 1)"><rect x="-21" y="-41" width="42" height="76" rx="2" fill="#8ca9be"/>'+(live?'<rect x="-21" y="-41" width="42" height="25" rx="1" fill="#bd3548"/><text x="0" y="-31" text-anchor="middle" font-family="Arial" font-weight="900" font-size="5.5" fill="#fff">'+label+'</text>':'')+'<ellipse cx="0" cy="1" rx="11" ry="13" fill="#e7ac87"/><rect x="-15" y="16" width="30" height="15" rx="3" fill="#bf842a"/></g></g>';
+  }
   if (kind === 'cup') return `<g transform="translate(0 15)">` + stroke('M15 -14 Q33 -14 31 2 Q29 14 12 12', OUT, 7.5) + stroke('M15 -14 Q33 -14 31 2 Q29 14 12 12', '#fff6e6', 3.4) + shape('M-17 -22 L17 -22 L13 20 Q0 25 -13 20Z', '#fff6e6') + fillOnly('M-15 -20 L15 -20 L14 -12 L-14 -12Z', '#6b3f2a') + stroke('M-7 -32 Q-2 -40 -7 -48 M6 -32 Q11 -40 6 -48', '#c9c1b4', 3) + `</g>`;
   if (kind === 'chave') return `<g transform="translate(2 28)">` + shape('M-3 0 L3 0 L3 28 L8 28 L8 33 L3 33 L3 38 L-3 38Z', '#c7cbd0', 1.8) + ell(0, -7, 10, 10, '#e2b13f', OUT, 2.2) + `</g>`;
   if (kind === 'chaveRoda') return `<g transform="translate(2 18)">` + shape('M-5 0 L5 0 L6 96 L-6 96Z', '#8a9099', 2.4) + shape('M-20 92 L20 92 L16 118 L-16 118Z', '#6c727a', 2.4) + `</g>`;
@@ -163,6 +168,16 @@ function propSVG(kind) {
   return '';
 }
 function handSVG(d, side, w, a, prop) {
+  if (prop === 'phone' || (prop && prop.tipo === 'phone')) {
+  const k = Math.max(1.12, d.rw / 10.5 * 1.08);
+  const palma = shape('M-9 -6 L9 -6 L12 9 Q19 13 17 23 Q13 30 1 28 Q-11 27 -12 17Z',d.skin);
+  const aparelho = propSVG(prop);
+  // O vidro termina em x=21 no espaço do aparelho. O dedo começa em 21.6.
+  const polegar = `<g transform="translate(-2 6) rotate(-8)">`+
+    shape('M25.5 -2 C31 -3 32 3 30 10 Q28 17 24 16 Q21.6 15 21.6 11 L21.6 3 Q21.6 -1 25.5 -2Z',d.skin,1.2)+
+    stroke('M25 4 L27 4',d.shade,.8)+'</g>';
+  return `<g transform="translate(${r2(w[0])} ${r2(w[1])}) rotate(${r2(-a)}) scale(${r2(k * -side)} ${r2(k)})">${palma}${aparelho}${polegar}</g>`;
+  }
   const k = Math.max(1.12, d.rw / 10.5 * 1.08);
   const palm = 'M-9.5 -3 C-12.5 5 -13 13 -11 20 Q-9 28 -2 28 L5 27.5 Q11 25 11 16 L10 -3Z', thumb = 'M8 5 Q18 6 18 15 Q17 21 10 18Z';
   const body = shape(palm, d.skin) + shape(thumb, d.skin) + fillOnly('M6 3 L11 3 L12 17 L6 17Z', d.skin) + fillOnly('M-8 -6 L8 -6 L8.5 4 L-8.5 4Z', d.skin) + stroke('M-5 19 L-5 27 M1 20 L1 28 M6 19 L6 26', d.shade, 1.3);
