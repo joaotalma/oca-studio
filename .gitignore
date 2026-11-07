@@ -16,3 +16,4 @@ episodios/*/motor.js
 render/*.mp3
 render/*.wav
 __pycache__/
+render/.pieces-*/
