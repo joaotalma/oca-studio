@@ -1,6 +1,6 @@
 'use strict';
-// Se Vira, Tico: motor de episódio. Carregar depois de chars.js, cenarios.js e dos dados do episódio.
-// O episódio define EPISODIO = { duracao, falas, planos, destaques, telas }. Tudo é função do tempo t.
+// Motor de cena com rig. Carregar depois de tempo.js, rig/chars.js, cenarios.js e dos dados do vídeo.
+// O vídeo define EPISODIO = { duracao, falas, planos, destaques, telas, quem, nomeCor, fase }. Tudo é função do tempo t.
 const motor = (() => {
   const W = window.innerWidth, H = window.innerHeight, K = W / 1080;
   const canvas = document.getElementById('c'); canvas.width = W; canvas.height = H;
@@ -9,9 +9,8 @@ const motor = (() => {
   const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };
   const hash = (n) => { const s = Math.sin(n * 127.1) * 43758.5453; return s - Math.floor(s); };
   const TRANS = .22;
-  const QUEM = { 'Tico': 'tico', 'Jão': 'jao', 'Lua': 'lua', 'Borracheiro': 'borracheiro' };
-  const NOME_COR = { tico: '#a8b94c', jao: '#e3c04a', lua: '#f0a48c', borracheiro: '#7fd6ee' };
-  const FASE = { tico: .3, lua: 1.4, jao: 2.2, borracheiro: 2.9, marlene: .9, fiscal: 1.7 };
+  // O elenco vem do vídeo: quem liga o nome da fala ao id do rig; nomeCor e fase são opcionais.
+  const QUEM = EPISODIO.quem || {}, NOME_COR = EPISODIO.nomeCor || {}, FASE = EPISODIO.fase || {};
 
   function poseEm(chaves, t) {
     const p = {}; let trocaExpr = -9;
@@ -36,14 +35,7 @@ const motor = (() => {
   }
   function falaAtiva(id, t) { return EPISODIO.falas.find((f) => QUEM[f.quem] === id && t >= f.ini && t < f.fim); }
   // Tempo real do áudio para o tempo do roteiro, e o inverso (tempos.js, gerado por scripts/sincronizar.py)
-  const TP = typeof TEMPOS !== 'undefined' ? TEMPOS : null;
-  const interpola = (x, de, para) => {
-    const n = TP.nos; if (x <= n[0][de]) return n[0][para];
-    for (let i = 1; i < n.length; i++) if (x <= n[i][de]) return n[i - 1][para] + (n[i][para] - n[i - 1][para]) * (x - n[i - 1][de]) / (n[i][de] - n[i - 1][de]);
-    return n[n.length - 1][para];
-  };
-  const paraRoteiro = (T) => TP ? interpola(T, 1, 0) : T;
-  const paraReal = (t) => TP ? interpola(t, 0, 1) : t;
+  const { TP, paraRoteiro, paraReal } = tempoDoVideo();
   function boca(id, t) {
     const f = falaAtiva(id, t);
     if (!f) return null;
@@ -64,12 +56,6 @@ const motor = (() => {
     if (a.movX) { const [t0, t1, x0, x1] = a.movX; x = x0 + (x1 - x0) * suave((t - t0) / (t1 - t0)); }
     const blink = pz.blink || (((t + f * 1.31) % 3.7) < .13 ? 1 : 0);
     const breath = 1.5 + Math.sin(t * 1.9 + f) * 1.5;
-    if (a.id === 'fiscal') {
-      const lat = (EPISODIO.latidos || []).some((b) => t >= b && t < b + .32);
-      const po = { ...pz, blink, breath: pz.breath != null ? pz.breath : breath, tail: (pz.tail == null ? 18 : pz.tail) + Math.sin(t * 7 + f) * 7, head: (pz.head || 0) + Math.sin(t * 1.3) * 1.5 };
-      if (lat) { po.mouth = 1; po.head -= 9; po.expr = po.expr || 'bravo'; }
-      return `<g transform="translate(${x} ${y}) scale(${sx * .9} ${s * .9})">${drawDog(po)}</g>`;
-    }
     const po = { armL: [-9, -5], armR: [9, 5], ...pz, blink, breath };
     const bal = Math.sin(t * 1.5 + f) * 1.3, fala = falaAtiva(a.id, t);
     po.armL = [po.armL[0] + bal, po.armL[1] + bal * 1.6]; po.armR = [po.armR[0] + bal * .8, po.armR[1] - bal * 1.4];

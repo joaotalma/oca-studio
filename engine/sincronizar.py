@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Mede as falas gravadas e gera os tempos reais do episódio.
+"""Mede os trechos da narração e gera os tempos reais do vídeo.
 
-Uso: python scripts/sincronizar.py episodios/ep01 audio/ep01
+Uso: python engine/sincronizar.py roteiros/<slug> audio/<slug> [duracao_do_roteiro]
+Antes: python engine/fatiar-narracao.py (um arquivo NN.wav por fala em audio/<slug>).
 
 Escreve:
-  <episodio>/tempos.js      mapa de tempo do roteiro para o tempo real e volume de cada fala
+  <roteiro>/tempos.js      mapa de tempo do roteiro para o tempo real e volume de cada fala
   <audio>/limpas/NN.wav     falas sem o silêncio das pontas, usadas na mixagem
   <audio>/tempos.json       início e fim reais de cada fala, usados na mixagem
 
@@ -55,7 +56,8 @@ def main():
     limpas.mkdir(exist_ok=True)
     fonte = (pasta / 'falas.js').read_text(encoding='utf8')
     falas = json.loads(re.search(r'const FALAS = (\[.*\]);?', fonte, re.S).group(1))
-    arquivos = {int(os.path.basename(f)[:2]): f for f in glob.glob(str(audio / '*.mp3'))}
+    arquivos = {int(os.path.basename(f)[:2]): f for f in glob.glob(str(audio / '*'))
+                if re.match(r'\d{2}\.(wav|mp3|m4a|flac)$', os.path.basename(f))}
     nos, envs, reais, T, fim_ant = [[0.0, 0.0]], {}, [], 0.0, 0.0
     for f in falas:
         a = apara(carrega(arquivos[f['n']]))
@@ -70,14 +72,14 @@ def main():
         fim = ini + dur
         nos += [[max(f['ini'], fim_ant + .01), round(ini, 3)], [f['fim'], round(fim, 3)]]
         envs[f['n']] = envelope(a)
-        reais.append({'n': f['n'], 'quem': f['quem'], 'roteiro': [f['ini'], f['fim']], 'ini': round(ini, 3), 'fim': round(fim, 3)})
+        reais.append({'n': f['n'], 'quem': f['quem'], 'fx': f.get('fx'), 'roteiro': [f['ini'], f['fim']], 'ini': round(ini, 3), 'fim': round(fim, 3)})
         T, fim_ant = fim, f['fim']
-    duracao_roteiro = float(sys.argv[3]) if len(sys.argv) > 3 else 87.0
+    duracao_roteiro = float(sys.argv[3]) if len(sys.argv) > 3 else fim_ant + .8
     total = T + (duracao_roteiro - fim_ant)
     nos.append([duracao_roteiro, round(total, 3)])
     for a, b in zip(nos, nos[1:]):
         assert b[0] > a[0] and b[1] > a[1], ('mapa de tempo não crescente', a, b)
-    (pasta / 'tempos.js').write_text('// Gerado por scripts/sincronizar.py. Não edite.\nconst TEMPOS = ' + json.dumps({'nos': nos, 'env': envs, 'duracao': round(total, 3)}, ensure_ascii=False) + ';\n', encoding='utf8')
+    (pasta / 'tempos.js').write_text('// Gerado por engine/sincronizar.py. Não edite.\nconst TEMPOS = ' + json.dumps({'nos': nos, 'env': envs, 'duracao': round(total, 3)}, ensure_ascii=False) + ';\n', encoding='utf8')
     (audio / 'tempos.json').write_text(json.dumps({'nos': nos, 'falas': reais, 'duracao': round(total, 3)}, ensure_ascii=False, indent=1), encoding='utf8')
     fala = sum(r['fim'] - r['ini'] for r in reais)
     print(f'{len(reais)} falas; {fala:.1f} s de fala; filme de {total:.1f} s; {sum(len(r) for r in [f["texto"].split() for f in falas]) / total:.2f} palavras/s')
