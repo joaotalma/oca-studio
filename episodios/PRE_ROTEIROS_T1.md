@@ -47,3 +47,10 @@ Cada arquivo tem duas respostas possíveis ao voto anterior e um marco comum. Co
 5. O formato da votação do final exige decisão do autor: a bíblia pede confissão dentro do 10 e voto no cenário dessa confissão. O rascunho propõe contar a verdade antes do voto e escolher onde a conversa continua. Essa adaptação está identificada no arquivo do 10, não foi tratada como regra aprovada.
 
 Não foram alterados a bíblia, os roteiros anteriores, o rig nem a continuidade oficial. Nenhum episódio deste mapa está pronto para vozes ou render.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

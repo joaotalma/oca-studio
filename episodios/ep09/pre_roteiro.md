@@ -89,3 +89,10 @@ Do lado de fora, Fiscal passa pela porta antes que alguém tente fechá-la. Um a
 Lua viu a casa e a falta da suposta estrutura em ambos os caminhos; muda quanto ele reconhece disso diante dela. Tico ainda não contou por inteiro o desemprego e os bicos, mas percebe que já não está escondendo bem. Ele decide chamar Lua para uma conversa verdadeira, sem precisar que ela o desmascare publicamente.
 
 **A lapidar:** a casa não deve voltar ao tamanho original por solução mágica. No final da temporada, o enquadramento pode voltar a mostrar o cômodo real sem criar nova transformação; o autor precisa escolher a convenção visual. Registrar essa escolha antes de desenhar novos cenários ou um rig de paredes móveis.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

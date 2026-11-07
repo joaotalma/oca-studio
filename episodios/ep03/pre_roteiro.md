@@ -156,3 +156,10 @@ Não usar essa saída se for apenas uma repetição da troca de cores. Buscar um
 Escolher e lapidar a situação central com o autor. Só então transformar em `roteiro.md`, com 200–230 palavras faladas por caminho, tempos medidos para ações e pausas e campos de emoção, gesto, plano, cenário, objetos e som. Os 90 s reservados aqui são um objetivo de montagem, não uma duração validada. Não gerar cenas, vozes ou render a partir deste pré-roteiro.
 
 Não foi adicionada linha à continuidade: o ep. 3 ainda não tem roteiro aprovado. Nenhum arquivo dos episódios anteriores, do rig ou da produção em andamento foi alterado.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

@@ -87,3 +87,10 @@ Tela do empregador fictício, vendo uma candidatura: “Pretensão salarial: um 
 Uma candidatura já saiu antes do voto e recebe uma proposta falsa. Apagar o aplicativo não recolhe o envio; manter o aplicativo não torna a fraude inevitável. O golpe depende de nova decisão do Tico. O primeiro encontro ocorreu e o convite seguinte foi feito, sem fixar namoro antes do final.
 
 **A lapidar:** o assistente é uma interface, com no máximo uma voz sintética se necessária. Não criar avatar humano, narrador ou longas telas. A graça deve vir da tentativa do Tico de administrar a imagem, não de uma coleção de erros aleatórios de IA.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

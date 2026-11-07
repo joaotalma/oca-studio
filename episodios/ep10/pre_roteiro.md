@@ -106,3 +106,10 @@ Jão vê a folha de cargos dobrada, pensa que é uma cobrança e abre. No verso,
 Lua sabe do desemprego e dos bicos; Tico sabe do cansaço e do desejo da confeitaria. Não há retorno automático ao segredo da primeira temporada. O emprego não foi conquistado, a dívida não sumiu e ela ainda não largou o trabalho. A relação pode avançar porque os dois agora decidem com informação verdadeira.
 
 **A lapidar:** forma final da votação, peso da reação da Lua, resultado da reunião plantada no ep. 2 e primeiro gesto de namoro. O autor julga o silêncio, o afeto e a graça. Este arquivo não aprova exceção de formato nem altera a bíblia.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

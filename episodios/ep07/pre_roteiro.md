@@ -88,3 +88,10 @@ O mesmo homem, pelo áudio de uma inscrição no curso, se apresenta como “esp
 A pessoa escolhida recebe a verdade e oferece ajuda. A outra só fica sabendo por um convite autorizado pelo Tico na abertura seguinte, não por vazamento conveniente. A perda financeira continua; o painel só muda se a causa e a quantia forem estabelecidas. Lua quase descobriu, mas ainda não ouviu a confissão do desemprego.
 
 **A lapidar:** equilibrar absurdo e dano real, evitar sequência de golpes dentro do mesmo episódio e manter o golpista em participação curta. O tema é a vergonha que impede pedir ajuda, não ensinar o funcionamento de uma fraude.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

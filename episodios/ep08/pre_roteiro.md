@@ -82,3 +82,10 @@ Antes de qualquer fala do Tico, os dois celulares apitam juntos: a única espect
 Na abertura seguinte, Tico usa o caminho escolhido e apresenta um serviço pequeno que realmente sabe executar, sem admitir ainda à Lua toda a situação. Depois convida Lua a um café em casa para conversar sem plateia. Ao se envergonhar do tamanho da kitnet, chama o lugar de “meu escritório”. A nova mentira espacial deve ser mostrada na transição, não presumida.
 
 **A lapidar:** as lives não podem repetir a humilhação da garupa. O conflito aqui é aceitar versões alheias por medo de desagradar. Não transformar o episódio em disputa política nem deixar o encontro com Lua depender de viralizar.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

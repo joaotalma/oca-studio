@@ -80,3 +80,10 @@ O recrutador recolhe a placa “Estagiário sênior”, vira e revela no verso �
 Nos dois caminhos ele termina sem contratação confirmada e responde ao convite do café. O emprego pode continuar em análise no caminho CONTINUA; não inventar uma aprovação nem uma rejeição retroativa. A dificuldade com respostas de seleção prepara o uso de um assistente, sem fazê-lo surgir já controlando tudo.
 
 **A lapidar:** preservar leitura no celular, limitar textos e conferir que o experimento continua engraçado sem trilha ou legenda explicativa. A versão com diálogo só será desenvolvida se o autor preferir abandonar o experimento. A contagem usual de 200–230 palavras faladas não se aplica a esta proposta silenciosa.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

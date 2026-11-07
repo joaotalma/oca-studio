@@ -89,3 +89,10 @@ O atendente põe o café sobre a mesa e chama: “Pedido do CEO.” Entrega uma 
 Nos dois caminhos, Tico ainda precisa de renda: se assina, pode procurar emprego enquanto o negócio não paga; se pensa, usa o prazo para procurar alternativa. Não apagar contrato, participação ou prazo na abertura seguinte. O próximo bico é candidatura a emprego, não outra avaliação de startup.
 
 **A lapidar:** a avaliação precisa ser uma piada compreensível sem jargão; Letícia acredita no negócio e também trabalha nele, em vez de ser só alguém que explora Tico. Não fixar nova dívida, pagamento ou dia no painel antes de fechar as ações e a cronologia.
+
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->
