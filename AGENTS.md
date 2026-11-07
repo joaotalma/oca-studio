@@ -14,14 +14,40 @@ Este arquivo vale para o Claude Code e para o Codex. Responda ao autor em portug
 
 - **Publicação:** só o autor publica. Não poste nem agende nada.
 - **Licença das vozes:** as vozes do OmniVoice têm licença não comercial. Sem monetização, e com crédito na legenda.
-- **Git:** não faça merge nem push sem o autor pedir.
+- **Git:** depois que o autor aceitar uma alteração, faça o commit e o push na branch de trabalho sem perguntar de novo. Inclua só os arquivos dessa alteração e nunca envie direto para a `main`. Merge só a pedido do autor.
 - **Arquivos fora do git:** vídeos e áudios finais ficam fora do git, com cópia no Drive. Referências de voz ficam em `audio/vozes/`; não as apague.
 - **Rig:** edite `personagens/chars.js`, nunca as cópias nas pastas de episódio.
 - **Obras de terceiros:** não copie personagens, músicas ou cenas de outras obras.
 
+## Quem faz o quê
+
+O autor pode trocar estes papéis a qualquer momento. Um pedido dele na conversa vale mais que esta lista. Fora do seu papel, pergunte antes de agir.
+
+- **Claude Code gera:** escreve o roteiro, monta as cenas, renderiza, mixa e roda o QA. Fica com o render porque os scripts estão fora do projeto e o sandbox do Codex pode bloqueá-los.
+- **Codex revisa:** lê o que foi entregue e aponta problemas. Só escreve em `episodios/epNN/revisao.md`, sem alterar o trabalho revisado. Pode propor uma fala ou correção, mas quem aplica é o gerador, depois da decisão do autor.
+- **O autor decide:** escolhe o que entra, resolve discordâncias e assiste ao vídeo antes de publicar. Só ele julga som e graça.
+
+A análise de vídeos do YouTube é feita pelo autor no Cowork. Se houver um resumo em arquivo, leia só quando o autor pedir: as ideias entram na série pela decisão dele.
+
+### O que revisar em cada etapa
+
+| Etapa | O gerador entrega | O revisor confere |
+|---|---|---|
+| Roteiro | Roteiro a partir do pré-roteiro vencedor | Bíblia e regras: tom, personagens, piadas, duração e votação |
+| Cenas | Poses, câmera e cenários em código | Alterações do commit: bugs e regras quebradas |
+| Vídeo | Render, mixagem e relatório de QA | Relatório e folhas de quadros: membros, boca, legenda e cortes |
+
+### Ciclo
+
+1. **Entrega:** o gerador conclui uma etapa e, quando o autor aceitar, faz o commit e o push na branch do episódio.
+2. **Revisão:** a pedido do autor, o revisor analisa esse commit e escreve em `episodios/epNN/revisao.md`.
+3. **Classificação:** cada item aponta o arquivo ou o momento do vídeo e vem marcado como **bloqueia** ou **sugestão**.
+4. **Correção:** o autor escolhe o que entra, e o gerador corrige.
+5. **Limite:** no máximo duas rodadas por etapa. Depois disso, o autor decide.
+
 ## Dois agentes ao mesmo tempo
 
-- **Uma frente por agente:** antes de começar, combine com o autor qual pasta ou episódio é seu. Nunca edite um arquivo que o outro agente está editando.
+- **Em turnos:** o revisor só começa depois da entrega, e o gerador só volta a editar depois da revisão. Nunca edite um arquivo que o outro agente está editando.
 - **Arquivos que afetam tudo:** só um agente por vez mexe em `personagens/` e `scripts/`.
 - **Render:** um por vez, porque os dois disputam o Chrome e a mesma pasta `render/`.
 - **Antes de editar:** rode `git status`. Se houver alteração que não é sua, não reverta nem inclua no seu commit.
