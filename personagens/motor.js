@@ -9,9 +9,9 @@ const motor = (() => {
   const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };
   const hash = (n) => { const s = Math.sin(n * 127.1) * 43758.5453; return s - Math.floor(s); };
   const TRANS = .22;
-  const QUEM = { 'Tico': 'tico', 'Jão': 'jao', 'Lua': 'lua', 'Borracheiro': 'borracheiro' };
-  const NOME_COR = { tico: '#a8b94c', jao: '#e3c04a', lua: '#f0a48c', borracheiro: '#7fd6ee' };
-  const FASE = { tico: .3, lua: 1.4, jao: 2.2, borracheiro: 2.9, marlene: .9, fiscal: 1.7 };
+  const QUEM = { 'Tico': 'tico', 'Jão': 'jao', 'Lua': 'lua', 'Borracheiro': 'borracheiro', 'Letícia': 'leticia', 'Vendedor': 'vendedor' };
+  const NOME_COR = { tico: '#a8b94c', jao: '#e3c04a', lua: '#f0a48c', borracheiro: '#7fd6ee', leticia: '#f2c14e', vendedor: '#e9e4d8' };
+  const FASE = { tico: .3, lua: 1.4, jao: 2.2, borracheiro: 2.9, marlene: .9, fiscal: 1.7, leticia: 2.5, vendedor: .6 };
 
   function poseEm(chaves, t) {
     const p = {}; let trocaExpr = -9;
@@ -56,7 +56,7 @@ const motor = (() => {
     return v < .2 ? 'closed' : v < .5 ? 'small' : v < .85 ? 'open' : 'wide';
   }
   function atorSVG(a, t) {
-    const pz = poseEm(a.poses, t), f = FASE[a.id] || 0;
+    const pz = { ...poseEm(a.poses, t), ...(a.dyn ? a.dyn(t) : {}) }, f = FASE[a.id] || 0;
     const s = a.s || 1.32, sx = a.flip ? -s : s;
     let x = a.x, y = a.y == null ? CHAO : a.y;
     if (a.xF) x = a.xF(t);
@@ -78,7 +78,7 @@ const motor = (() => {
     po.head = (po.head || 0) + Math.sin(t * .9 + f) * 1.2 + Math.sin(t * 5.3 + f) * 2.4 * peso;
     po.lean = (po.lean || 0) + Math.sin(t * .7 + f) * .5;
     const m = boca(a.id, t); if (m) po.mouth = m;
-    return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${drawChar(CHARS[a.id], po)}</g>`;
+    return `<g transform="translate(${x} ${y}) scale(${sx} ${s})">${drawChar(a.char ? a.char(t) : CHARS[a.id], po)}</g>`;
   }
   function camEm(cam, t) {
     let a = cam[0];

@@ -19,7 +19,7 @@ Ritmo do ep. 1, medido em `falas.js` e `tempos.js`: 2,96 palavras por segundo, e
 | Medida | Caminho da verdade | Caminho da história | Regra |
 |---|---|---|---|
 | Palavras | 201 | 200 | 200 a 230 |
-| Duração estimada | 93,2 s | 93,2 s | 85 a 95 s |
+| Duração estimada | 94,1 s | 94,1 s | 85 a 95 s |
 | Tempo de fala | 69,1 s | 69,1 s | |
 
 | Cena | Tempo | Duração |
@@ -27,11 +27,11 @@ Ritmo do ep. 1, medido em `falas.js` e `tempos.js`: 2,96 palavras por segundo, e
 | Abertura: a lombada | 0,0–5,8 | 5,8 s |
 | 1. Porta do conjunto: a promessa | 5,8–21,3 | 15,4 s |
 | 2. A regra das cinco estrelas | 21,3–24,3 | 3,0 s |
-| 3. Cinco da manhã: as voltas | 24,3–61,1 | 36,8 s |
-| 3b. O prédio chique e a volta a pé | 61,1–70,9 | 9,8 s |
-| 4. Quase oito: o clímax | 70,9–81,5 | 10,6 s |
-| Votação | 81,5–87,1 | 5,6 s |
-| 5. Depois da votação: o vendedor de paçoca | 87,1–93,2 | 6,1 s |
+| 3. Cinco da manhã: as voltas | 24,3–62,0 | 37,7 s |
+| 3b. O prédio chique e a volta a pé | 62,0–71,8 | 9,8 s |
+| 4. Quase oito: o clímax | 71,8–82,4 | 10,6 s |
+| Votação | 82,4–88,0 | 5,6 s |
+| 5. Depois da votação: o vendedor de paçoca | 88,0–94,1 | 6,1 s |
 
 ## Corrente de causa e consequência
 
@@ -93,7 +93,7 @@ Curta, sem sair da porta. **Quer:** cumprir o que acabou de prometer. **Obstácu
 | 12 | 21,3–23,3 | Tico | Cinco estrelas na corrida de teste? | preocupado | Sozinho com o Fiscal, abre o app. Painel: "Nota: -0,3" | Tela do app, depois close | **Objeto:** "Mototáxi: libera com 5 estrelas na corrida de teste", na palavra "Cinco" |
 | 13 | 23,4–24,1 | Tico | Fácil. | forcado | Olha para o Fiscal, como quem pede confirmação | Close do Tico | Fiscal late |
 
-### 3. Cinco da manhã: as voltas (24,3–61,1 s)
+### 3. Cinco da manhã: as voltas (24,3–62,0 s)
 
 A cena alcança a abertura e continua depois dela. **Quer:** as cinco estrelas e chegar a tempo. **Obstáculo:** a Letícia ganha audiência a cada volta, e a nota só sai no destino. **Virada:** para encerrar a corrida, ele precisa confirmar a história dela. **Fecho:** "O curso."
 
@@ -120,31 +120,32 @@ A cena alcança a abertura e continua depois dela. **Quer:** as cinco estrelas e
 |  | 57,6–58,6 |  | **Sem fala** | pensando | Ele olha as estrelas, depois o ponteiro da gasolina | Estrelas, ponteiro, rosto | Silêncio |
 | 30 | 58,6–59,3 | Tico | Você. | forcado | Quase sem voz | Close do Tico |  |
 | 31 | 59,4–60,1 | Letícia | O curso. | neutro | Corrige, sem tirar o sorriso | Close da Letícia |  |
-| 32 | 60,3–61,0 | Tico | O curso. | triste | Corte de 1 s para a porta do conjunto, longe dali: o Fiscal, dormindo, ergue a cabeça e late para o nada | Close, depois Fiscal | Fiscal late |
+| 32 | 60,3–61,0 | Tico | O curso. | triste | A voz some | Close do Tico |  |
+|  | 61,1–62,0 |  | **Sem fala** | neutro | Corte para a porta do conjunto, longe dali: o Fiscal, dormindo, ergue a cabeça e late para o nada | Fiscal | Fiscal late |
 
-### 3b. O prédio chique e a volta a pé (61,1–70,9 s)
+### 3b. O prédio chique e a volta a pé (62,0–71,8 s)
 
 A Letícia sai antes de a Lua aparecer, e o suor nasce do que vemos. **Quer:** chegar às oito. **Obstáculo:** a gasolina que ela gastou. **Virada:** a moto morre. **Fecho:** ele chega à esquina do conjunto, encharcado e com o tanque vazio.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 33 | 61,1–63,5 | Letícia | Gratidão! Cinco estrelas. Agora você é mototáxi. | feliz | Desce em frente a um prédio chique, toca nas estrelas e entra sem olhar para trás. Painel: "Nota: 5,0" | Médio, com o prédio | Porta de vidro |
-|  | 63,6–64,8 |  | **Sem fala** | surpreso | Ele dá a partida. A moto tosse e morre. O ponteiro bate no zero. Relógio: 7h31 | Ponteiro, depois close | Tosse do motor; silêncio |
-| 34 | 64,8–66,5 | Tico | Não faz isso comigo, Companheira. | triste | Fala baixinho com a moto, a mão no tanque | Close do Tico |  |
-|  | 66,7–67,9 |  | **Na tela: "Recalculando: a pé. 27 min"** | cansado | Mapa em tela cheia. O novelo de voltas fica para trás, e uma única linha reta vai até o conjunto | Mapa | Voz do GPS, sem palavras |
-|  | 67,9–70,9 |  | **Sem fala** | cansado, suor | Montagem: ele empurra a moto em três ruas. O sol sobe, a camiseta escurece e surgem as linhas de fedor. No último plano, chega à esquina do conjunto | Três planos curtos | Passos e corrente |
+| 33 | 62,0–64,4 | Letícia | Gratidão! Cinco estrelas. Agora você é mototáxi. | feliz | Desce em frente a um prédio chique, toca nas estrelas e entra sem olhar para trás. Painel: "Nota: 5,0" | Médio, com o prédio | Porta de vidro |
+|  | 64,5–65,7 |  | **Sem fala** | surpreso | Ele dá a partida. A moto tosse e morre. O ponteiro bate no zero. Relógio: 7h31 | Ponteiro, depois close | Tosse do motor; silêncio |
+| 34 | 65,7–67,4 | Tico | Não faz isso comigo, Companheira. | triste | Fala baixinho com a moto, a mão no tanque | Close do Tico |  |
+|  | 67,6–68,8 |  | **Na tela: "Recalculando: a pé. 27 min"** | cansado | Mapa em tela cheia. O novelo de voltas fica para trás, e uma única linha reta vai até o conjunto | Mapa | Voz do GPS, sem palavras |
+|  | 68,8–71,8 |  | **Sem fala** | cansado, suor | Montagem: ele empurra a moto em três ruas. O sol sobe, a camiseta escurece e surgem as linhas de fedor. No último plano, chega à esquina do conjunto | Três planos curtos | Passos e corrente |
 
-### 4. Quase oito: o clímax (70,9–81,5 s)
+### 4. Quase oito: o clímax (71,8–82,4 s)
 
 Ela não o vê e não sabe de nada. **Quer:** agradecer. **Obstáculo:** ele ouve isso fedendo. **Virada:** a reunião importa de verdade para ela, e a carona deixa de ser só orgulho dele. **Fecho:** ele cheira a axila, e corta.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-|  | 70,9–71,9 |  | **Na tela: "7h58"** | feliz | Lá na porta do conjunto, a Lua sai sozinha: arrumada, com brilho, crachá e café. Ele a vê da esquina, escondido atrás da moto; ela não o vê | Aberto, de longe | Rua ao fundo |
-| 35 | 71,9–77,9 | Lua | Tico, tô te esperando. Se eu mandar bem nessa reunião, tudo pode mudar. Muito obrigada por me ajudar. | feliz | Grava o áudio sozinha, com o celular perto da boca. Na metade da fala, corte para o celular dele tocando o áudio | Médio da Lua, depois tela | **Objeto:** "Lua: áudio 0:06"; notificação |
-|  | 78,1–81,5 |  | **Riso que engasga** | envergonhado | Ele olha o nome dela na tela. Devagar, cheira a própria axila e abaixa o braço. No painel, "Nota: 5,0". Sem olhar para a câmera | Close, aproximando | Silêncio total; corte seco |
+|  | 71,8–72,8 |  | **Na tela: "7h58"** | feliz | Lá na porta do conjunto, a Lua sai sozinha: arrumada, com brilho, crachá e café. Ele a vê da esquina, escondido atrás da moto; ela não o vê | Aberto, de longe | Rua ao fundo |
+| 35 | 72,8–78,8 | Lua | Tico, tô te esperando. Se eu mandar bem nessa reunião, tudo pode mudar. Muito obrigada por me ajudar. | feliz | Grava o áudio sozinha, com o celular perto da boca. Na metade da fala, corte para o celular dele tocando o áudio | Médio da Lua, depois tela | **Objeto:** "Lua: áudio 0:06"; notificação |
+|  | 79,0–82,4 |  | **Riso que engasga** | envergonhado | Ele olha o nome dela na tela. Devagar, cheira a própria axila e abaixa o braço. No painel, "Nota: 5,0". Sem olhar para a câmera | Close, aproximando | Silêncio total; corte seco |
 
-### Votação (81,5–87,1 s)
+### Votação (82,4–88,0 s)
 
 Preto e branco, só as opções em cor, como no ep. 1.
 
@@ -158,18 +159,18 @@ Na tela, as palavras **Carona** e **Chuveiro** aparecem maiores e mais chamativa
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-| 36 | 81,5–84,5 | Tico | Não tô pedindo ajuda. Mas... dá pra sentir daí? | forcado, suor | **Depoimento:** em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
-|  | 84,7–87,1 |  | **Sem fala** | envergonhado | Ele cheira a axila de novo, disfarçando. As opções continuam na tela | Médio, frontal |  |
+| 36 | 82,4–85,4 | Tico | Não tô pedindo ajuda. Mas... dá pra sentir daí? | forcado, suor | **Depoimento:** em voz baixa, olhando para os lados | Médio, frontal | Fiscal late uma vez |
+|  | 85,6–88,0 |  | **Sem fala** | envergonhado | Ele cheira a axila de novo, disfarçando. As opções continuam na tela | Médio, frontal |  |
 
-### 5. Depois da votação: o vendedor de paçoca (87,1–93,2 s)
+### 5. Depois da votação: o vendedor de paçoca (88,0–94,1 s)
 
 Consequência fora do campo de visão do Tico, preparada pelo comentário da fala 23. A história que ele detesta convenceu quem vende doce na rua: bala e paçoca, a mesma vida. "Carona ou Chuveiro?" segue pequeno no canto.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-|  | 87,1–88,5 |  | **Sem fala** | neutro | Homem de meia-idade, calvo e barrigudo, num banco, com a caixa de paçocas no colo. No celular, o corte da live: "O curso." | Aberto, aproximando | Voz do Tico, abafada, no celular |
-| 37 | 88,5–91,9 | Vendedor | Se ela conseguiu com esse aí... comigo vai ser fácil. | pensando | Olha o Tico na tela, depois endireita as costas | Close do vendedor |  |
-|  | 92,0–93,2 |  | **Sem fala** | feliz | O dedo toca "Comprar curso" | Tela em close | Plim; corte seco |
+|  | 88,0–89,4 |  | **Sem fala** | neutro | Homem de meia-idade, calvo e barrigudo, num banco, com a caixa de paçocas no colo. No celular, o corte da live: "O curso." | Aberto, aproximando | Voz do Tico, abafada, no celular |
+| 37 | 89,4–92,8 | Vendedor | Se ela conseguiu com esse aí... comigo vai ser fácil. | pensando | Olha o Tico na tela, depois endireita as costas | Close do vendedor |  |
+|  | 92,9–94,1 |  | **Sem fala** | feliz | O dedo toca "Comprar curso" | Tela em close | Plim; corte seco |
 
 ## Piadas visuais
 

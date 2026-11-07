@@ -41,6 +41,9 @@ const CHARS = {
   marlene: { key: 'marlene', name: 'Dona Marlene', emoji: '🎂', papel: 'A dona do bolo', desc: 'Fez 80 anos e esperava um bolo.', paleta: ['#e3b597', '#d8d4d0', '#9c5f8a', '#6f4464'],
     skin: '#e3b597', shade: '#bf8c70', hair: '#d8d4d0', hairHi: '#f2efec', iris: '#5a6a72', cloth: '#9c5f8a', clothD: '#6f4464', pants: '#6f4464', pantsD: '#4f2f47', shoe: 'scarpin',
     hs: 1.0, neck: 10, neckW: 16, torso: 130, sw: 50, waist: 44, hem: 50, hw: 44, armU: 74, armF: 70, ru: 12, re: 10.5, rw: 8.5, sleeve: .9, thigh: 110, shin: 105, rt: 22, rk: 16, ra: 14, lid: .3, bags: true, lashes: false, browW: 3, jaw: 'f', oculos: true, chapeu: true, prop: 'pao' },
+  vendedor: { key: 'vendedor', name: 'Vendedor', emoji: '🍬', papel: 'Vendedor de paçoca', desc: 'Vende paçoca na rua e acredita em si mais do que o Tico acredita.', paleta: ['#c98f68', '#4a403c', '#e9e4d8', '#6b5a48'],
+    skin: '#c98f68', shade: '#a06e4e', hair: '#4a403c', hairHi: '#7a6e68', iris: '#4a3a2e', cloth: '#e9e4d8', clothD: '#c4bdac', pants: '#6b5a48', pantsD: '#4f4234', shoe: 'chinelo',
+    hs: 1.08, neck: 8, neckW: 26, torso: 150, sw: 70, waist: 92, hem: 90, hw: 48, armU: 82, armF: 76, ru: 17, re: 15, rw: 12, sleeve: .12, thigh: 116, shin: 112, rt: 29, rk: 23, ra: 19, lid: .24, bags: true, browW: 5, jaw: 'm' },
 };
 const EXPR = {
   neutro: { mouth: 'flat' }, cansado: { lid: .55, bags: true, browIn: -2, browY: 2, mouth: 'flat' },
@@ -114,6 +117,7 @@ function hairFront(d) {
     + shape('M43 -68 Q62 -76 68 -60 Q58 -60 48 -56Z', '#963a48') + shape('M44 -60 Q62 -54 62 -36 Q52 -44 42 -48Z', '#7c2f3c');
   if (d.key === 'leticia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
   if (d.key === 'borracheiro') return shape('M-44 -30 Q-52 -52 -38 -70 Q-40 -50 -34 -38Z', h) + shape('M44 -30 Q52 -52 38 -70 Q40 -50 34 -38Z', h);
+  if (d.key === 'vendedor') return shape('M-45 -26 Q-53 -46 -42 -60 Q-44 -44 -37 -32Z', h) + shape('M45 -26 Q53 -46 42 -60 Q44 -44 37 -32Z', h) + stroke('M-20 -86 Q0 -92 20 -86', d.shade, 2.2);
   if (d.key === 'marlene') return shape('M-44 -34 C-58 -66 -38 -92 -14 -88 C4 -100 40 -92 44 -60 Q50 -46 43 -32 Q36 -58 14 -66 Q-14 -60 -44 -34Z', h) + stroke('M-30 -68 Q-20 -80 -6 -78 M14 -82 Q28 -78 34 -62', hi, 2.6);
   return '';
 }

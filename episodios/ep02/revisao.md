@@ -173,3 +173,53 @@ Extrair esses mecanismos e testá-los em situações próprias do Tico. Nenhum a
 Transformar a sequência acima em uma proposta coesa, distinguindo decisões do autor das sugestões ainda abertas. Conferir compreensão independente do episódio 1, transições temporais, efeito real do voto anterior, motivo do treino e da avaliação, escalada da live, clímax da carona e pagamento da piada no vendedor. Medir falas, ações e pausas para caber na duração; não comprimir tudo acelerando os diálogos.
 
 Este documento registra a revisão e a conversa. Os pré-roteiros e o esboço não foram editados pelo revisor.
+
+---
+
+# Decisões do autor sobre o roteiro completo — 2026-11-06
+
+Registro da direção dada pelo autor após ler `roteiro.md`, sem abrir uma terceira rodada de revisão. Estas decisões prevalecem sobre propostas anteriores incompatíveis. O revisor não alterou o roteiro.
+
+## Bloqueia — rever a ligação para pedir ajuda
+
+**Local:** cena 2, “A ligação: pedir ajuda”, 21,3–38,8 s.
+
+O autor considera que a ligação surge do nada, fica solta e contribui pouco. A informação relevante a preservar é a importância das cinco estrelas. Rever a necessidade da cena e integrar essa informação à ação; não manter a ligação apenas para cumprir o aprendizado previsto no episódio anterior.
+
+**Em aberto:** como apresentar a regra das estrelas na nova sequência. O autor não definiu uma fala nem um meio substituto.
+
+## Bloqueia — substituir a pane pelas voltas e pela falta de gasolina
+
+**Local:** abertura e cena 3, “Cinco da manhã: o treino vira testemunho”.
+
+**Decisão do autor:** na lombada há o momento de “voar”, mas a moto volta ao chão e segue normalmente. Não cai nem quebra por causa da lombada.
+
+O esforço nasce da corrida: a Letícia faz o Tico dar voltas, ele se perde no GPS e gasta toda a gasolina. Depois precisa levar a moto à mão até a Lua. Essa é a causa do cansaço e do suor; substitui a moto morta após a lombada e elimina a solução de ela ligar sozinha.
+
+**Encenação desejada pelo autor:** simulação do GPS com o Tico indo de um lado para outro, voltando e dando voltas, como desenho animado. O trajeto deve mostrar a confusão e o desgaste acumulado.
+
+**A conferir pelo gerador:** tornar clara a relação entre as voltas exigidas pela Letícia e o trajeto no GPS, além da ordem entre desembarque, avaliação, gasolina acabar e caminhada até a Lua. Não assumir que a Letícia permanece na garupa durante o empurrão: isso não foi solicitado nesta nova direção.
+
+## Bloqueia — simplificar o desembarque da Letícia
+
+**Local:** cena 3b, “Porta do conjunto: a Letícia sai”.
+
+**Decisão do autor:** Tico deixa a Letícia em frente a um prédio chique. Retirar a parte do carro, incluindo o depoimento sobre ser dona dele e o adesivo da locadora. Encerrar a participação dela com clareza e preservar a avaliação necessária à carona.
+
+## Bloqueia — construir o clímax com a Lua sozinha e o áudio
+
+**Local:** cena 4, “Perto das oito: o clímax”, e votação.
+
+**Decisões do autor:**
+
+- Retirar o Fiscal cheirando o Tico e recuando.
+- Mostrar a Lua sozinha, sem ver o estado do Tico. Ela envia a ele um áudio que estabelece a importância da reunião e agradece pela ajuda.
+- As formulações sugeridas pelo autor são “Se eu mandar bem nessa reunião, tudo pode mudar” e “Estou te esperando, muito obrigado por me ajudar”. São referências de conteúdo para compor o áudio, não duas falas obrigatórias nem uma exigência de mensagem escrita além do áudio.
+- Tico recebe a notificação, vê que é da Lua e sente o cheiro da própria axila. Daí nasce a votação.
+- As opções escolhidas pelo autor são **“Carona Fedida”** e **“Foge para o Chuveiro”**.
+
+**A conferir pelo gerador:** o conteúdo do áudio precisa chegar ao espectador; apenas mostrar a notificação não comunica o peso da reunião e do agradecimento. Ajustar a cronologia para que ele possa empurrar a moto até o ponto combinado e ainda se depare com a escolha da carona, com a gasolina já esgotada. A solução desse ponto ainda não foi definida pelo autor.
+
+## Preservar e medir
+
+A live com a biografia inventada e a piada final do vendedor de paçoca não foram retiradas por esta orientação. Integrar as mudanças ao fio da promessa da carona, sem tratar acréscimos do gerador como decisões do autor. Recalcular falas, ações, montagem do GPS e pausas; os tempos do roteiro atual deixam de servir como medida da nova sequência.
