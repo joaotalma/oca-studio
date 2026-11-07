@@ -1,165 +1,122 @@
-# Episódio 3: Só Uma Mexidinha
+# Episódio 3: O Dia Errado
 
-**Status:** primeiro pré-roteiro, escrito pelo Codex a pedido do autor. Proposta para discussão; não é roteiro aprovado nem material pronto para renderizar. As falas abaixo são exemplos e os tempos são reservas de estrutura, sem medição de voz.
+**Status:** pré-roteiro reconstruído conforme a direção do autor. Substitui “Só Uma Mexidinha”. Não há encontro neste episódio. Falas propostas e reservas de tempo, sem medição de voz.
 
 ## O fio
 
-Para deixar de ser o homem humilhado na live, Tico se apresenta à Lua como designer e promete trabalhar até a cliente gostar. Cada vez que tenta terminar o serviço, aumenta o trabalho que prometeu fazer de graça.
+Enquanto Lua absorve um dia que não deu certo, Tico procura a frase certa para convidá-la. Ele prepara uma ocasião; ela ainda está tentando terminar o dia.
 
-**Em três frases:** depois de resolver a carona ou fugir para o banho, Tico descobre que a Lua recebeu a live da Letícia. Ele tenta recuperar a imagem dizendo que seu trabalho principal é design; Lua o indica justamente para a Letícia, que precisa de um logo para o curso. Ele promete alterações sem limite, o prédio inteiro muda de cor a cada versão e, quando a Lua elogia seu trabalho, a cliente pede para começar tudo de novo.
-
-- **Bico e absurdo previstos na bíblia:** freelancer de logo; o prédio muda de cor a cada revisão.
-- **Mentira proposta:** “Meu trabalho mesmo é design.” Ele está escondendo a falta de trabalho fixo, não confessando isso à Lua antes do marco da temporada.
-- **Erro que sustenta o episódio:** aceita alterações ilimitadas para parecer seguro e prestativo diante dela.
-- **Desejo concreto da cliente:** um logo legível para anunciar a próxima turma do curso. Letícia traz o trabalho e dá uma indicação real; erra ao tratar toda mudança como parte do mesmo favor.
-- **Aprendizado a construir:** dizer não também é profissionalismo. Não fazer discurso nem resolver a escolha antes do voto.
-- **Riso que engasga:** a Lua elogia uma coisa que ele fez, e por três segundos ele acredita nesse elogio. A nova solicitação interrompe o momento.
-- **Título:** provisório.
-
-## Continuidade obrigatória
-
-A fonte do que já aconteceu é `episodios/continuidade.md`, junto do roteiro aprovado do ep. 2. Os votos ainda estão em aberto nos arquivos; não declarar vencedor por suposição.
-
-- A moto começa sem gasolina. Mostrar um abastecimento curto na abertura em ambos os caminhos, antes de qualquer nova corrida motorizada.
-- O voto muda se ele cumpre a carona no estado em que está ou escolhe o banho; não produzir as duas ações como se ambas tivessem ocorrido.
-- O vídeo da live chega à Lua nos dois caminhos. Isso acontece em cena e provoca o novo bico.
-- Não decidir neste pré-roteiro o resultado profissional da reunião da Lua nem revelar o desejo da confeitaria.
-- A moto continua emprestada do Jão. A nota é 5,0 e a dívida estava em R$ 0; não inventar ganhos, dívida ou atualização da nota sem uma causa mostrada.
-- O corpo principal pode ocorrer no fim da tarde do mesmo dia: painel de 93 dias. Se a data mudar no roteiro, atualizar essa conta.
+**Em três frases:** a carona determina se ela apresenta antes do anúncio da promoção ou perde sua vez pelo atraso. Tico devolve a moto a Jão e prepara um convite, querendo compensar o cheiro ou reparar o sumiço; Lua volta frustrada e reencontra uma receita antiga. Ele oferece uma saída quando ela está pensando no que fazer da própria vida.
 
 ## Corrente de causa e consequência
 
-| Cena | O que Tico tenta | O que isso provoca |
-|---|---|---|
-| Desfecho do voto | Levar a Lua apesar da vergonha, ou se esconder no banho | Ela conhece sua escolha e chega ao trabalho por um dos caminhos |
-| A live chega | Parecer mais estabelecido do que a live sugere | Inventa o trabalho principal e recebe uma indicação concreta |
-| O acordo | Impressionar a Lua com segurança profissional | Promete alterações até a cliente gostar |
-| As versões | Conseguir o aceite e receber | Cada versão muda a fachada e produz uma objeção nova |
-| O elogio | Mostrar que consegue fazer algo direito | O trabalho já chegou à pessoa que ele mais quer impressionar |
-| Clímax | Finalmente encerrar | A cliente quer recomeçar sem mudar o preço |
-| Votação | Proteger a indicação ou estabelecer um limite | Refazer de graça ou cobrar pelo retrabalho |
+| Tentativa | Consequência |
+|---|---|
+| Levar ou fugir | Gratidão por chegar ou mágoa pelo atraso |
+| Ela busca reconhecimento | A promoção perdida faz reaparecer outra vontade |
+| Ele quer parecer melhor | Ensaia com Jão uma pessoa mais segura do que está |
+| Ele encontra Lua | Precisa ouvir antes de apresentar o programa ensaiado |
+| Ele faz o convite | Ela escolhe se há espaço para isso agora |
 
-## 1. Abertura trocável: resolver Carona ou Chuveiro — reserva de 0–12 s
+## Abertura: um galã quase pronto — 0–5 s
 
-**Quer:** cumprir a escolha do público. **Obstáculo:** tanque vazio e vergonha. **Virada:** a atitude dele tem efeito na Lua. **Fecho:** a relação continua, mas os caminhos deixam lembranças diferentes.
+Adiantamento do fim da tarde. Tico borrifa perfume no ar, entra na nuvem e tosse. Jão, com a chave da Companheira:
+— É encontro ou dedetização?
 
-### Se Carona vencer
+Corta antes de saber como o convite será recebido. “Mais cedo.” O perfume volta no fim; não vira piada sobre o corpo dele.
 
-Começar com o ponteiro saindo do vazio: um corte curto mostra Tico abastecendo. Em seguida, já na carona, ele tenta manter distância da Lua mesmo sentado na mesma moto.
+## 1. O dia da Lua — 5–29 s
 
-- **Tico:** “Foi mal. O treino rendeu.”
-- **Lua:** “Obrigada por vir.”
+**Quer:** apresentar e conseguir a promoção. **Obstáculo:** trânsito conforme o voto e decisão da empresa. **Virada:** perde a oportunidade de maneiras diferentes. **Fecho:** fica com o material pronto e a decepção por guardar.
 
-Ela agradece de verdade; ele para por um instante de tentar esconder o corpo. O cheiro pode render uma reação física discreta, sem transformar a Lua em alguém que o humilha. A escolha cumpriu a promessa apesar da vergonha. Não repetir a lombada nem criar outro defeito na moto.
+### Se CARONA venceu
 
-### Se Chuveiro vencer
+Tico admite o tanque vazio. Corte curto de abastecimento dos dois antes de rodarem.
+— O treino foi intenso.
+— Hoje eu preciso chegar. Depois você toma banho.
 
-Abastecimento curto, sem levar a Lua, antes de voltar para casa. Corte para o banheiro: Tico pronto, limpo, procurando no celular uma justificativa para o sumiço. Áudio da Lua:
+Ela chega cinco minutos antes, ajeita o cabelo e apresenta. Mostrar uma boa apresentação em dois cortes, não um discurso completo. O anúncio promove um recém-chegado; ele recebe o crédito e pergunta a ela onde está o arquivo:
+— Você me manda? Pra eu dar continuidade.
+— Eu mando.
 
-- **Lua:** “Fui de carro. Consegui chegar. Você tá bem?”
+Ela continua segurando o controle, mas ninguém espera seu próximo slide. Ele a levou e ajudou; não causou a derrota.
 
-Ele ganha a aparência que queria, mas vê que ela precisou se virar e ainda se preocupa com ele. Digita “Já já eu...” e apaga. Não afirmar que ela perdeu ou venceu a reunião.
+### Se CHUVEIRO venceu
 
-**A desenvolver:** conseguir que as duas alternativas caibam na mesma janela sem transformar o abastecimento numa cena de posto. A primeira rodada de falas deve conferir se a diferença emocional entre cumprir e fugir fica clara sem explicação.
+Tico se afasta para abastecer e ir para casa. Lua envia “Você vem?”. Corte para ele limpo, diante da mensagem sem resposta.
 
-## 2. Fim da tarde: a live chegou — reserva de 12–26 s
+Ela consegue outro transporte, chega depois de sua vez e encontra a apresentação encerrada. A promoção é anunciada antes que possa mostrar o que preparou. Não afirmar que pontualidade garantiria a promoção; o atraso tirou sua oportunidade.
 
-**Quer:** recuperar a imagem diante da Lua. **Obstáculo:** ela viu a biografia inventada. **Virada:** a nova defesa vira uma oportunidade de trabalho. **Fecho:** ela vai indicá-lo.
+Mensagem a Tico: “Cheguei atrasada”. Ele não pode se convencer de que fugir não custou nada. Não envia uma explicação definitiva aqui: o motivo pode ser contado ou escondido na corrida do ep. 4.
 
-Na porta do conjunto, Lua mostra o vídeo no celular; um trecho curto da fala “O curso” identifica a live do ep. 2 para quem não viu. Ela não ri da humilhação.
+São versões alternativas. O resultado semelhante na empresa não iguala a experiência com Tico. Reservar tempo de reação ao anúncio.
 
-- **Lua:** “Você fez o curso da Letícia?”
-- **Tico:** “Aquilo foi um bico. Meu trabalho mesmo é design.”
-- **Lua:** “Sério? Ela tá procurando alguém pro logo. Posso indicar?”
-- **Tico:** “Pode.”
+## 2. A Companheira volta — 29–49 s
 
-O Fiscal pode denunciar a mentira do trabalho principal, se estiver presente e ouvindo. Não latir para toda resposta nem para uma promessa sincera de conseguir fazer o serviço.
+**Quer:** recuperar a imagem. **Obstáculo:** vergonha ou culpa. **Virada:** Jão distingue convite de compensação. **Fecho:** ele abandona a ideia de um espetáculo.
 
-O sorriso do Tico dura até a Lua abrir a conversa com a Letícia. Ele procurou status e ganhou trabalho para provar o que disse.
+Devolve chave e moto com o combustível que restou. Jão confere a Companheira, sem inventar nova dívida.
 
-## 3. O acordo: até gostar — reserva de 26–36 s
+**Carona:**
+— Queria que ela me visse arrumado.
+— Ela te viu trabalhando.
+— Eu queria uma imagem com menos cheiro.
 
-**Quer:** parecer competente diante da indicação. **Obstáculo:** definir onde o serviço termina. **Virada:** ele mesmo remove esse limite. **Fecho:** a cliente aceita imediatamente.
+**Chuveiro:**
+— Vou chamar ela pra sair. Pra compensar.
+— Você quer sair com ela ou pagar uma multa?
+— As duas coisas.
+— Então começa ouvindo o que aconteceu.
 
-Letícia chega à porta para combinar o logo. Quer anunciar a turma nova; propõe um valor fechado, a definir no roteiro. Tico trabalha num notebook emprestado ou próprio — origem a decidir, sem inserir marca ou ferramenta real.
+Jão empresta um perfume recebido de presente. Tico tenta recolocar a tampa ao contrário durante a conversa. O amigo ajuda sem virar treinador de conquista e sem escrever toda a mensagem por ele.
 
-- **Letícia:** “E se eu quiser mudar?”
-- **Tico:** “Só paro quando você gostar.”
-- **Letícia:** “Gostei.”
+## 3. Uma receita que ficou — 49–65 s
 
-Ela gostou da condição, ainda não do desenho. Ele comemora cedo. A Lua se despede e sobe; não precisa permanecer assistindo ao trabalho durante horas.
+**Quer:** ela, sair um pouco do dia de trabalho. **Obstáculo:** a frustração continua. **Virada:** reencontra uma receita familiar. **Fecho:** faz uma coisa pequena antes de decidir se muda a vida.
 
-## 4. Revisões: o prédio vira amostra — reserva de 36–58 s
+Em casa, Lua larga o crachá, tira o sapato sem usar a mão e abre um caderno gasto com anotação da avó. Faz uma quantidade pequena; prova e corrige algo. Não há cozinha profissional ou receita perfeita automática.
 
-**Quer:** terminar a versão e receber. **Obstáculo:** cada aprovação vem acompanhada de uma alteração. **Virada:** a cliente passa de ajustar uma cor a mudar a direção do trabalho. **Fecho:** ele já não sabe o que seria uma versão final.
+O novo promovido pede o arquivo: “Rapidinho”.
+Ela olha a receita: “Descansar 40 minutos”.
+Põe o telefone de tela para baixo e liga o timer. A vontade de voltar à confeitaria começa nela, sem precisar contar a Tico ainda.
 
-Tico e Letícia ficam diante do notebook, na entrada do conjunto. Ao aplicar a cor do logo, a fachada inteira assume essa cor. Ninguém explica a transformação: o prédio funciona como amostra em tamanho real, seguindo o absurdo da bíblia. O Tico reclama da revisão, não do fenômeno.
+## 4. Um convite fora do ritmo — 65–82 s
 
-Três tentativas, com progressão:
+**Quer:** ele, propor a saída; ela, não fingir animação. **Obstáculo:** momentos diferentes e vinte anos sem convivência. **Virada:** ele percebe que ela não veio participar do ensaio. **Fecho:** pergunta em vez de anunciar.
 
-1. **Verde:** “Precisa parecer dinheiro.” Ele aplica verde; a fachada muda. Ela olha: “Agora parece empréstimo.”
-2. **Dourado:** ele tenta comunicar riqueza. Ela observa o logo reduzido no celular: “Não dá pra ler.” Essa objeção tem fundamento; ele corrige de verdade, e a próxima versão fica legível.
-3. **Outra proposta:** quando a legibilidade está resolvida, ela pede “mais simples, mas com mais coisa”. Ele abre uma versão nova para não contrariar a cliente indicada pela Lua. A fachada troca de cor outra vez.
+Ela desce para comprar o que faltou à receita; ele a encontra na área comum.
+— Como foi?
+— Não rolou.
 
-**Piada visual proposta:** os arquivos se acumulam: `final`, `final_agora`, `final_agora_2`. Usar poucos nomes grandes, legíveis no celular, sem ocupar os diálogos com uma lista de trocadilhos.
+**Carona:** ele diz “Você tava tão preparada”. Ela: “Eu também achei”.
+**Chuveiro:** ela mantém mais distância: “Eu cheguei atrasada”. Ele reconhece: “Eu te deixei esperando”. Isso admite o fato sem resolver o motivo, nem exigir perdão.
 
-As mudanças devem permitir ver a fachada antes e depois; não fazer uma sequência de flashes. Letícia precisa olhar cada resultado e reagir, em vez de disparar várias frases genéricas de coach.
+Ele guarda o discurso. Uma pausa.
+— Você topa tomar um café comigo outro dia? Sem pressa.
 
-## 5. O elogio e o pedido de recomeçar — reserva de 58–78 s
+Ela olha o telefone do trabalho e depois para ele. Não entregar um sorriso de “sim” antes da votação.
 
-**Quer:** provar à Lua que a indicação valeu. **Obstáculo:** a cliente ainda não encerrou. **Virada:** a Lua elogia, e logo depois a cliente descarta o caminho inteiro. **Fecho:** o trabalho novo não cabe no acordo que ele fez.
+## Votação — 82–89 s
 
-Letícia envia à Lua uma imagem do logo: “Olha como tá ficando.” A indicação é reconhecida, e a Lua responde ao Tico:
+**ACEITA:** uma saída marcada para outro dia; curiosidade, não namoro ou apagamento da mágoa.
+**AGORA NÃO:** ela não tem cabeça neste momento; ele precisa respeitar, sem tratar como desafio.
 
-- **Lua, áudio:** “Ela me mandou. Ficou bonito, Tico.”
+A escolha é sobre este convite, como o autor propôs. Não decidir se ela gosta dele, perdoa ou quer ficar com ele para sempre.
 
-Ele sorri para a tela, sem olhar para a câmera. Três segundos para receber o elogio; a fachada também para de mudar por esse instante.
+## Depois do voto — 89–94 s
 
-- **Letícia:** “Pensando bem... vamos começar do zero.”
-- **Tico:** “Outro logo?”
-- **Letícia:** “Só uma mexidinha.”
+Jão tenta usar o perfume devolvido. Sai só ar. Olha o frasco e o corredor:
+— Vinte anos sem se ver. Gastou os vinte.
 
-Ela fecha a referência que ele estava seguindo e abre outra, claramente diferente. Ele olha o acordo de valor fechado e o elogio da Lua no celular. Precisa dizer que o pedido é outro trabalho ou aceitar mais uma vez. Cortar antes da resposta.
+O frasco vazio paga a preparação exagerada. Se não ficar claro na imagem, usar só a reação ao borrifador vazio.
 
-O custo é concreto: refazer consome mais uma noite pelo mesmo valor; cobrar estabelece um limite, mas pode fazê-lo perder o serviço vindo da indicação. Não afirmar que Lua vai desaprová-lo por cobrar — esse medo é do Tico.
+## O que passa ao 4
 
-## 6. Votação — reserva de 78–86 s
-
-Imagem em preto e branco; opções em cor:
-
-- **REFAZ:** começa de novo pelo valor combinado; trabalha mais sem receber mais.
-- **COBRA:** apresenta preço pelo novo trabalho; arrisca a cliente recusar.
-
-Proposta de depoimento do Tico:
-
-> “Não tô pedindo ajuda. Mas... isso ainda é uma mexidinha?”
-
-Sem latido automático: a pergunta não é uma mentira. Os dois caminhos devem chegar ao marco de ele ter de negociar o valor do próprio trabalho; o autor decide o efeito concreto no episódio 4.
-
-## 7. Depois do voto — reserva de 86–90 s
-
-**Sugestão opcional, ainda fraca para tratar como fechada:** dentro de casa, Lua fotografa a fachada pela janela e envia à mãe: “Pintaram o prédio.” Antes de enviar, a cor troca de novo; ela apaga a foto e tira outra. A revisão já interfere na rotina de quem não participou do acordo.
-
-Não usar essa saída se for apenas uma repetição da troca de cores. Buscar uma consequência com revelação própria, como o vendedor de paçoca no ep. 2. O fechamento principal é a votação; a piada extra não pode resolvê-la.
-
-## O que ainda precisa amadurecer
-
-1. **Cliente:** esta proposta usa a Letícia para ligar a live, a indicação e o curso. É escolha deste rascunho, não decisão anterior do autor. Avaliar se sua presença consecutiva fortalece a consequência do ep. 2 ou repete demais o mesmo conflito.
-2. **O absurdo em ação:** testar se o prédio como amostra comunica imediatamente a alteração do logo. Não inventar um aplicativo mágico para justificar uma convenção visual que a bíblia já prevê.
-3. **Prazo e preço:** definir valor e tempo gastos, com poucos sinais visuais. Não empilhar números, notificações e regras para explicar o custo.
-4. **Aberturas:** são consequências possíveis do voto, não fatos aprovados. A resposta da Lua precisa preservar o peso da escolha sem punição moral nem nojo como motor da graça.
-5. **Episódio 4:** a bíblia sugere startup/CEO por um dia. Ainda falta construir o marco comum que conduza a esse bico sem transformar aprovação deste pré-roteiro em aprovação dessa passagem.
-6. **Pós-votação:** procurar uma piada melhor antes de fechar o roteiro.
-
-## Próxima etapa
-
-Escolher e lapidar a situação central com o autor. Só então transformar em `roteiro.md`, com 200–230 palavras faladas por caminho, tempos medidos para ações e pausas e campos de emoção, gesto, plano, cenário, objetos e som. Os 90 s reservados aqui são um objetivo de montagem, não uma duração validada. Não gerar cenas, vozes ou render a partir deste pré-roteiro.
-
-Não foi adicionada linha à continuidade: o ep. 3 ainda não tem roteiro aprovado. Nenhum arquivo dos episódios anteriores, do rig ou da produção em andamento foi alterado.
-
+A moto está com Jão. Lua continua empregada, com frustração e uma vontade reaparecendo. Há gratidão ou mágoa, e só um convite. Logo, startup e troca de cargos saem deste episódio. A live pode voltar quando tiver consequência própria, sem obrigação de cumprir um retorno.
 
 ---
 
 ## Comentários do autor
 
 <!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->
+Aqui precisamos ter uma grande ruptura em relação a escolha do usuario, visto que a depender da escolha, temos um distanciamento entre o casal, ou uma aproximação. Se ele foge, pela vergonha do cheiro, ela chega atrasada na reunião, e não consegue a promoção que tanto queria. Se ele cola com ela, eles abastecem juntos, atravessam o transito e ela chega com 5 minutos de antecedencia. Ela apresenta, manda bem na reunião, mas promovem um cara fresco no lugar dela. Ela fica chateada em ambas as situações e começa a pensar em voltar para o sonho da confeitaria. Enquanto isso, Tico devolve a moto para o Jão, e começa a pensar na Lua, se ele fez a carona, ele vai querer compensar o fedor, e vai querer chamar ela para sair, cheiroso, bonito galã. Se ele não fez a carona, ele vai querer compensar essa mancada que ele deu. Ai ele conversa com o Jão sobre isso, e ai acho que podemos já trazer a pergunta. O Fato Aleatório aqui que pode voltar no final do episódio precisariamos pensar, assim como o spoiler no começo do video para prender atenção.

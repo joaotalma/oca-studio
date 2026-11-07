@@ -1,86 +1,95 @@
-# Episódio 5: Só Mais Uma Etapa
+# Episódio 5: Dá Tempo?
 
-**Status:** pré-roteiro proposto. Episódio-experimento sem diálogo, como possibilidade prevista na bíblia. As cartelas abaixo são conteúdo visual, não falas. Tempos reservados, sem animática validada.
+**Status:** pré-roteiro reconstruído. Cerca de uma semana depois do 4. Sai o processo seletivo silencioso; o experimento não é obrigação desta nova temporada. Falas e tempos provisórios.
 
 ## O fio
 
-Para provar que cabe numa vaga grande, Tico vai se encolhendo até quase não caber na própria cadeira.
+Tico quer ser alguém com quem Lua pode contar, mas responde ao desejo de agradar antes de conferir o próprio horário.
 
-**Em três frases:** sem renda imediata da empresa, Tico entra num processo seletivo e esconde da Lua a insegurança por trás de uma roupa de executivo. A cada etapa cumprida, a vaga cai de nível e os móveis diminuem, até o cargo virar “estagiário sênior”. Na etapa 14, o recrutador oferece uma portinhola ainda menor para a etapa 15.
+**Em três frases:** Lua aceita uma encomenda pequena enquanto continua empregada. Tico oferece a entrega, mas precisa ganhar o aluguel do carro e promete um horário apertado. Quando vê que não estará nos dois lugares, escolhe avisar ou tentar resolver sozinho sem revelar a incerteza.
 
-- **Mentira:** mensagem à Lua apresenta o processo como “reunião de diretoria”. O público vê a identificação de candidato.
-- **Absurdo:** quem passa de fase recebe uma vaga menor. O mobiliário acompanha o rebaixamento; a pessoa mantém seu tamanho.
-- **Aprendizado:** seu valor não cai a cada fase.
-- **Experimento:** compreensível por ação, som e poucos textos curtos. Não substituir diálogo por longas conversas escritas.
+## Estado de entrada — 0–13 s
+
+- **Encontro + CONTA:** ela admite o sonho, mas não vai largar o emprego. Decide testar seis caixas, não abrir uma loja porque ele incentivou.
+- **Encontro + GUARDA:** um colega prova seu doce e pergunta se vende. Ela aceita seis caixas; Tico conhece a entrega, não o projeto profissional.
+- **Corrida + VERDADE:** primeiro mostrar a resposta dela. Chuveiro: “Você podia ter me avisado”. Carona: “Trabalho é trabalho, Tico”. Ela paga e sai. Dias depois consulta um serviço de entrega.
+- **Corrida + DESCULPA:** ele termina a história inventada. Ela paga e sai. Depois pergunta pela entrega; sua falta de contestação não torna a explicação verdadeira.
+
+Não executar todas essas entradas no mesmo vídeo. A venda parte de Lua e tem preço combinado.
+
+**Se veio do encontro:** antes de oferecer a entrega, mostrar que, nos dias seguintes, Tico começou a fazer corridas com carro alugado por diária. A chave e o contrato estabelecem a origem; ele precisa pagar despesas, não adquire carro para ficar perto dela. No caminho da recusa, essa apresentação já aconteceu no 4 e não será repetida. Em ambos, o roteiro final precisa fechar a origem da primeira diária e o custo real antes de mostrar dinheiro disponível. A moto continua com Jão.
 
 ## Causa e consequência
 
 | Tentativa | Consequência |
 |---|---|
-| Buscar renda sem abandonar a pose | Vai à seleção vestido como chefe |
-| Provar que é flexível | Aceita cada diminuição do posto |
-| Concluir as tarefas | É premiado com condições piores |
-| Caber na fase seguinte | Precisa literalmente se dobrar |
-| Continuar sem limite | Recebe a etapa 15 em vez de uma contratação |
+| Ela testa vender seis caixas | Precisa cozinhar depois do expediente e combinar transporte |
+| Ele quer ser útil | Oferece o serviço antes de conferir o turno |
+| Precisa pagar a diária | Continua aceitando corridas |
+| Ela organiza a manhã pela promessa | Precisa saber com antecedência se pode contar |
+| Última corrida leva para longe | Ele precisa avisar ou aumentar o esforço sem garantia |
 
-## Abertura trocável — 0–12 s
+## 1. Seis caixas e uma pia — 13–31 s
 
-**Quer:** responder ao contrato. **Obstáculo:** trabalho sem renda imediata. **Virada:** distingue cargo de salário. **Fecho:** abre uma vaga.
+**Quer:** ela, entregar algo bem-feito; ele, ajudar. **Obstáculo:** cozinha pequena e pouco tempo. **Virada:** a conta é menos romântica do que imaginava. **Fecho:** definem retirada.
 
-- **Se ASSINA:** assinatura, crachá de sócio e campo “retirada agora: R$ 0”. Ao lado, despesas comuns; ele abre uma candidatura. A sociedade continua existindo e não o impede de procurar renda.
-- **Se PENSA:** escreve “24 h” ao lado da proposta e guarda a caneta. Abre a mesma candidatura para ter uma alternativa antes de responder.
+Conversam por telefone ou pela porta; ela não precisa convidá-lo para dentro só porque já saíram.
+— Seis caixas. Não é uma fábrica.
+— Toda fábrica começou com seis caixas.
+— A minha começa com uma pia cheia.
 
-Não usar texto jurídico extenso nem dissolver a empresa por uma notificação conveniente.
+Ela faz conta de ingredientes e tempo, experimenta a receita e corrige uma fornada. Um recipiente de apoio emprestado por Tico pode carregar as caixas; se esse objeto entrar, será devolvido no 7. Não colocá-lo retroativamente no próximo render.
 
-## Cena 1: roupa de diretor, senha de candidato — 12–24 s
+## 2. O favor tem relógio — 31–49 s
 
-**Quer:** manter a imagem diante de Lua. **Obstáculo:** ela pergunta onde vai. **Virada:** veste a mentira. **Fecho:** entra pela fila de candidatos.
+**Quer:** ele, impressionar sem cobrar. **Obstáculo:** deslocamento custa. **Virada:** ela trata o serviço dele com mais seriedade. **Fecho:** ele promete disponibilidade.
 
-Na porta do conjunto, Lua olha o paletó emprestado e faz um gesto de pergunta. Ele mostra no celular “Reunião de diretoria”. Assim que ela se afasta, vira o aparelho: senha “Candidato 143”. Fiscal pode latir nesse contraste, não em cada corte.
+Se houve encontro:
+— Quanto fica?
+— Pra você, imagina.
+— Eu tô imaginando. Quanto?
 
-Um único gesto da Lua ajeitando a gola dá carinho sem transformar a cena em explicação. Não introduzir voz de assistente ou locução de RH.
+Se houve corrida:
+— Não precisa fazer de graça.
+— É no caminho.
+Jão olha o mapa: outro lado da cidade.
 
-## Cena 2: avançar diminui — 24–46 s
+A imagem contradiz, sem Fiscal latindo de longe. No roteiro final, definir se é serviço pago ou favor, quanto custa e o horário. O 6 respeita esse único acordo; não manter dinheiro indefinido para facilitar a saída.
 
-**Quer:** passar. **Obstáculo:** tarefas inúteis. **Virada:** cada aprovação piora a vaga. **Fecho:** o papel de “sênior” vira “júnior”.
+## 3. Ganhar para poder ajudar — 49–66 s
 
-Três tarefas claras: montar uma torre com objetos da mesa; entregar a torre para ser desmontada; remontá-la com menos peças. Tico começa seguro, passa a observar o avaliador e termina copiando seu sorriso.
+**Quer:** fechar a diária. **Obstáculo:** cada viagem cresce. **Virada:** percebe o conflito que aceitou. **Fecho:** duas necessidades ocupam o mesmo relógio.
 
-Carimbos mostram etapas 1, 4 e 8. Entre eles, uma sequência rápida de marcas comunica as outras fases sem exigir quatorze cenas diferentes. A placa da vaga passa de “Pleno” para “Júnior”. A cadeira diminui. O recrutador ajusta sua própria cadeira para cima, tranquilamente.
+Passageiro diz “pertinho” e abre uma mala. Um sinal fecha quando o anterior abre. O aromatizador comprado para impressionar Lua balança entre recibos.
 
-## Cena 3: quase cabe — 46–66 s
+Jão pergunta quanto sobrou. Tico manda o painel de ganhos:
+— Eu perguntei o que sobrou.
 
-**Quer:** terminar sem admitir desgaste. **Obstáculo:** a tarefa agora exige uma postura impossível. **Virada:** ele olha para si, não para a aprovação. **Fecho:** interrompe o gesto por três segundos.
+Três segundos com a conta. Não chamar isso de um novo cargo, apenas mostrar a diferença entre dinheiro que entrou e dinheiro disponível.
 
-Etapa 12: sentado numa cadeira infantil, tenta alcançar uma mesa alta. O recrutador entrega um apoio menor que o anterior. Tico recebe o objeto, baixa os olhos para os joelhos e fica quieto. Som de ventilador, sem música explicando a emoção.
+## 4. Ela precisa decidir — 66–82 s
 
-O celular acende com uma foto de duas xícaras enviada pela Lua e um convite curto: “Café amanhã?” Ele guarda o aparelho sem responder ainda. Não antecipar mensagem humilhante nem fazer a Lua conhecer a seleção.
+**Quer:** manter a promessa. **Obstáculo:** está longe e há passageiro. **Virada:** percebe que esconder o atraso impede a escolha dela. **Fecho:** precisa responder.
 
-## Cena 4: etapa 14 — 66–80 s
+Áudio da Lua enquanto fecha as caixas:
+— Você chega até as oito? Se não der, preciso chamar outra entrega agora.
 
-**Quer:** sair contratado. **Obstáculo:** a aprovação não encerra nada. **Virada:** vaga rebaixada outra vez. **Fecho:** uma porta ainda menor.
+Mapa, relógio, rosto. Ele começa a digitar “tô chegando”, como se a frase aproximasse o carro.
 
-Carimbo 14. Placa “Estagiário sênior”. Tico estende a mão para receber o contrato; recebe uma senha para a etapa 15. O recrutador aponta uma portinhola perto do chão.
+## Votação — 82–89 s
 
-Ele começa a se curvar, para e olha de volta para o recrutador. Sem monólogo escrito na tela. O gesto verdadeiro de se levantar fica para o caminho escolhido na abertura do ep. 6.
+**AVISA:** admite que não chega; ela pode buscar outra solução e perde a fantasia de que ele sempre consegue.
+**DÁ UM JEITO:** tenta cumprir sem revelar a incerteza; assume risco de atraso, corrida perdida e ajuda paga.
 
-## Votação — 80–88 s
+Não autoriza dirigir perigosamente, abandonar passageiro ou teletransportar o carro.
 
-- **CONTINUA:** entra na etapa 15 e aceita adiar outra vez a decisão sobre a vaga.
-- **SAI:** interrompe o processo e apresenta ao recrutador sua condição real de procurar trabalho remunerado.
+## Retorno — 89–94 s
 
-Voto mudo: Tico olha para a portinhola, para a câmera e ergue as mãos. Manter duas palavras grandes; sem áudio para a frase fixa da votação.
+No caderno: “Descansar a massa”. O timer toca. Lua leva outra assadeira e encosta na parede: a única que não descansou foi ela. Prova um pedaço torto e gosta. Prazer e custo do esforço na mesma ação.
 
-## Depois do voto — 88–92 s
+## O que passa ao 6
 
-O recrutador recolhe a placa “Estagiário sênior”, vira e revela no verso “Banco de talentos”. Encosta a placa sobre um banco físico, já cheio de senhas. Piada visual a testar; não revelar o resultado da escolha do Tico.
-
-## O que passa ao ep. 6
-
-Nos dois caminhos ele termina sem contratação confirmada e responde ao convite do café. O emprego pode continuar em análise no caminho CONTINUA; não inventar uma aprovação nem uma rejeição retroativa. A dificuldade com respostas de seleção prepara o uso de um assistente, sem fazê-lo surgir já controlando tudo.
-
-**A lapidar:** preservar leitura no celular, limitar textos e conferir que o experimento continua engraçado sem trilha ou legenda explicativa. A versão com diálogo só será desenvolvida se o autor preferir abandonar o experimento. A contagem usual de 200–230 palavras faladas não se aplica a esta proposta silenciosa.
-
+Resultado da entrega, acordo e eventual custo continuam. Nenhuma venda depende de Tico comprar tudo escondido. O avanço é descobrir o que cabe na rotina, sem emprego abandonado nem confeitaria aberta.
 
 ---
 

@@ -1,94 +1,90 @@
-# Episódio 7: Taxa de Sucesso
+# Episódio 7: Pode Entrar
 
-**Status:** pré-roteiro proposto. Usa a candidatura enviada no ep. 6; não pressupõe voto vencedor. Falas e duração ainda provisórias.
+**Status:** pré-roteiro reconstruído. Fim de semana após contato combinado. A visita não é prêmio por ter ajudado.
 
 ## O fio
 
-Tico paga para parecer alguém que já conseguiu uma vaga e depois precisa esconder o preço dessa aparência.
+Tico quer receber Lua, mas tenta arrumar a própria vida em dez segundos para que ela não veja o que realmente existe.
 
-**Em três frases:** uma resposta à candidatura promete emprego mediante uma suposta taxa, e Tico diz à Lua que já foi chamado. Depois do pagamento, o próprio golpista liga pedindo desculpas, mas tenta usar a vergonha dele para transformar o golpe em outra oportunidade. Lua quase vê a situação real, e Tico precisa escolher a quem contar o que fez.
-
-- **Mentira:** anuncia a vaga antes de existir contratação para não admitir que continua procurando.
-- **Absurdo:** o golpista quer uma indicação profissional de sua vítima e transforma a desculpa em apresentação de negócio.
-- **Aprendizado:** vergonha dura um dia; calar custa mais.
-- **Tom:** a vontade de trabalhar torna o golpe possível. A vítima não é tratada como burra.
+**Em três frases:** depois de respeitar um horário de conversa, Lua passa para devolver o recipiente da entrega, e ele oferece café. A casa não parece o cenário em que imaginava recebê-la; tenta chamar a dificuldade de provisória, e as paredes se aproximam. Ela pede uma conversa em que possa saber o que ele consegue levar, sem uma nova apresentação.
 
 ## Causa e consequência
 
-| Tentativa | Consequência |
-|---|---|
-| Voltar a responder por si ou manter a IA | Recebe a candidatura já enviada |
-| Parecer empregado diante de Lua | Antecipa a notícia antes de confirmar |
-| Garantir a oportunidade | Paga a taxa proposta |
-| Esconder o erro | Escuta mais do golpista do que gostaria |
-| Impedir que Lua descubra | Percebe que precisa contar a alguém |
+Contato respeitado -> visita combinada -> insegurança com a casa -> explicações que tiram espaço -> uma vulnerabilidade dela -> escolha de começar a falar ou pedir tempo de forma responsável.
 
-## Abertura trocável — 0–12 s
+## 1. A resposta que foi respeitada — 0–16 s
 
-**Quer:** responder sobre o próximo encontro. **Obstáculo:** hábito de consultar a tela. **Virada:** aceita ou mantém a intermediação. **Fecho:** a proposta chega.
+**Quer:** conversar. **Obstáculo:** ela estava exausta. **Virada:** limite não vira disputa. **Fecho:** marcam um horário.
 
-- **Se APAGA:** desativa o assistente e responde à Lua com um “Quero” simples. Em seguida chega a resposta de uma candidatura já enviada.
-- **Se LEVA:** confirma outro café usando a sugestão do assistente; Lua pede apenas um horário, e a ferramenta oferece cinco opções. A proposta de trabalho aparece entre as notificações.
+**Se LIGA:** Lua atende: “Quero conversar, mas hoje não dou conta”. Ele aceita e não aparece à porta. No dia seguinte, ela propõe o fim de semana.
+**Se ESPERA:** ele oferece espaço e cumpre. Ela procura depois: “Você tá por aí?”. Combinam um horário em vez de ele abandonar corrida para provar interesse.
 
-Não encenar o segundo encontro inteiro nesta abertura. A escolha muda sua relação com a ferramenta e a conversa, não cancela o primeiro encontro.
+A diferença é pedir e ouvir um limite, ou oferecer espaço e receber iniciativa. O cansaço não some na mesma noite.
 
-## Cena 1: “me chamaram” — 12–28 s
+## 2. O recipiente volta — 16–32 s
 
-**Quer:** levar uma notícia boa à Lua. **Obstáculo:** só recebeu uma promessa. **Virada:** transforma convocação em emprego. **Fecho:** precisa pagar para sustentar a expectativa.
+**Quer:** ela, devolver e conversar; ele, recebê-la bem. **Obstáculo:** casa sem preparação. **Virada:** ela aceita entrar sem o cenário ideal. **Fecho:** ele começa a explicar o que nem foi criticado.
 
-Na porta, Lua o vê arrumado e pergunta se tem novidade.
+Usar o recipiente apenas se foi plantado no 5. Caso não entre, a visita é um café explicitamente marcado; não inventar um objeto depois.
+— Trouxe sua caixa.
+— Não precisava lavar.
+— Eu precisava devolver sem chocolate.
 
-- **Tico:** “Me chamaram. Agora vai.”
-- **Lua:** “Pra trabalhar?”
-- **Tico:** “É.”
+Ele oferece café, ela aceita. A entrada é decisão dela, sem significar segundo encontro, sexo ou permanência prolongada.
 
-O celular informa uma taxa fictícia para “liberar cadastro”. Ele esconde o trecho da tela e paga. O valor e a origem do dinheiro precisam ser definidos no roteiro; não consumir quantia que nunca teve nem apagar o gasto depois.
+## 3. A casa não precisa de currículo — 32–54 s
 
-## Cena 2: o recrutador pede indicação — 28–48 s
+**Quer:** parecer organizado. **Obstáculo:** um cômodo e contas à vista. **Virada:** ele inventa uma justificativa. **Fecho:** a mentira diminui o espaço que a casa já tinha.
 
-**Quer:** obter horário e endereço. **Obstáculo:** o contato mudou de postura. **Virada:** ele próprio admite o golpe. **Fecho:** pede um favor à vítima.
+**Se instabilidade ainda escondida:** “Quase não fico aqui. A outra sala tá em reforma”. Fiscal ouve pela porta, late, parede avança.
+**Se contou na corrida:** não revelar desemprego conhecido outra vez. Assume a kitnet, mas chama as contas vencidas de “erro do banco”, embora a data contradiga. É essa defesa falsa que provoca o aperto.
 
-O interlocutor é voz no telefone, sem exigir personagem novo em cena.
+Não encolher a casa porque é pobre. A transformação responde à mentira consciente. Lua muda a xícara de lugar, sem explicar o fenômeno.
 
-- **Voz:** “Tico, preciso ser honesto. Essa vaga não existe.”
-- **Tico:** “Então devolve.”
-- **Voz:** “Tô tentando mudar de vida. Você conhece uma coach?”
+— Essa cadeira posso usar?
+— Pode. Ela tá aqui há mais tempo que eu.
 
-Ele viu a live pública da Letícia e reconheceu o nome do candidato. Essa informação vem do vídeo, não de acesso mágico aos contatos. Tico encara na tela a própria fala “O curso”.
+Uma verdade engraçada; a parede para por um momento.
 
-## Cena 3: nem o pedido de desculpas paga — 48–65 s
+## 4. Uma coisa dela também falhou — 54–71 s
 
-**Quer:** recuperar o dinheiro. **Obstáculo:** recebe justificativa em vez de devolução. **Virada:** ouve uma pessoa se defendendo com os mesmos eufemismos que usa. **Fecho:** fica sem resposta por um instante.
+**Quer:** ela, conversar sem receber um personagem; ele, oferecer cuidado. **Obstáculo:** hábito de consertar a impressão. **Virada:** ela também admite um limite. **Fecho:** ele escuta sem virar sócio.
 
-O homem chama o golpe de “fase de transição”. Tico prepara uma bronca, ouve a expressão e para. Três segundos, sem olhar para a câmera. A semelhança incomoda, mas não iguala mentir por vergonha a roubar alguém.
+Ela conta que gostou da venda e ficou exausta. Se já contou o sonho, nomeia o medo de não conseguir sustentá-lo; se guardou, fala só daquela encomenda.
+— Achei que você tava gostando.
+— Tô. Gostar não faz sobrar hora no dia.
 
-O golpista pode dizer que encontrou o curso no perfil público da Letícia. Não pedir a Tico que o indique como pessoa confiável nem apresentar compra do curso como restituição ou redenção.
+Ele deixa o pano com que limpava a mesma mesa. Três segundos sem resposta pronta. Não oferecer dinheiro ou abrir negócio em nome dela.
 
-## Cena 4: quase diante da Lua — 65–80 s
+## 5. O que realmente cabe — 71–82 s
 
-**Quer:** preservar a notícia da vaga. **Obstáculo:** Lua pede informação concreta. **Virada:** o telefonema quase o desmente. **Fecho:** ele precisa de um aliado.
+**Quer:** continuar perto. **Obstáculo:** ainda protege fatos e limites com pose. **Virada:** ela pede informação, não prestação de contas. **Fecho:** ele pode falar ou pedir tempo sem sumir.
 
-Lua volta à porta e pergunta onde vai trabalhar. No telefone, a voz começa: “Sobre a taxa...” Ele abaixa o volume e responde: “Ainda tão acertando.”
+— O que você tá conseguindo levar agora, Tico? De verdade.
 
-Ela nota a hesitação, mas não recebe a revelação completa antes do marco previsto. Sai para atender o próprio trabalho. Tico abre os contatos Jão e Letícia, agora sabendo que continuar sozinho só prolonga o problema.
+Se houve Chuveiro + DESCULPA, precisa corrigir a história da moto antes de acrescentar outra. Se já disse a verdade, não repetir como inédita. Se o emprego já foi explicado, a pergunta é sobre disponibilidade e medo, não sobre um segredo artificialmente guardado até o fim.
 
-## Votação — 80–87 s
+Ele se senta e deixa a cadeira para ela. Fiscal fica com saída livre; não usar esmagamento como piada.
 
-- **JÃO:** conta ao amigo e aceita admitir que precisava da vaga.
-- **LETÍCIA:** conta à coach e arrisca a situação virar conteúdo.
+## Votação — 82–89 s
 
-“Não tô pedindo ajuda. Mas... pra quem eu conto essa?”
+**ABRE O JOGO:** começa ali, dizendo o que ainda não contou e ouvindo a resposta.
+**PEDE TEMPO:** diz que quer falar sem inventar e combina um horário concreto; fica responsável por cumprir.
 
-## Depois do voto — 87–92 s
+Não oferecer nova mentira como único jeito de alongar a série. Pedir tempo pode ser legítimo; fugir e não dar retorno é outra coisa. Não votar em perdão ou destino do casal.
 
-O mesmo homem, pelo áudio de uma inscrição no curso, se apresenta como “especialista em converter oportunidades”. Letícia faz uma pausa e pergunta: “Oportunidade de quem?” A compra não está garantida e o dinheiro do Tico não reaparece.
+## Retorno — 89–94 s
 
-## O que passa ao ep. 8
+O recipiente lavado é grande demais para o pedaço de mesa livre. Os dois o viram juntos e encontram um lugar no chão.
+— Pronto.
+Ele olha o trabalho que teve para disfarçar tudo:
+— Era isso?
 
-A pessoa escolhida recebe a verdade e oferece ajuda. A outra só fica sabendo por um convite autorizado pelo Tico na abertura seguinte, não por vazamento conveniente. A perda financeira continua; o painel só muda se a causa e a quantia forem estabelecidas. Lua quase descobriu, mas ainda não ouviu a confissão do desemprego.
+Acomodar um objeto não resolve confiança, mas paga a tentativa de achar espaço. Se o momento pedir silêncio, deixar só o gesto.
 
-**A lapidar:** equilibrar absurdo e dano real, evitar sequência de golpes dentro do mesmo episódio e manter o golpista em participação curta. O tema é a vergonha que impede pedir ajuda, não ensinar o funcionamento de uma fraude.
+## O que passa ao 8
 
+A visita ocorreu por acordo, no grau de proximidade de cada caminho. O problema não é Tico ter pouco, e sim oferecer informações e promessas em que Lua não consegue se apoiar. A próxima conversa usa o que ela já sabe; não existe confissão de desemprego obrigatoriamente inédita no final. A casa não se expande por uma cura mágica ao dizer a verdade.
 
 ---
 

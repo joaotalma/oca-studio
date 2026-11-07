@@ -1,95 +1,144 @@
-# Episódio 4: Um Bilhão e Nenhum Troco
+# Episódio 4: A Hora dos Dois
 
-**Status:** pré-roteiro proposto pelo Codex a pedido do autor. Depende do ep. 3, ainda não aprovado. Falas ilustrativas; 90 s como objetivo, não duração validada.
+**Status:** pré-roteiro reconstruído. Dois corpos alternativos, conforme o voto do 3. Produzir apenas o vencedor. Alguns dias se passam; não há encontro imediatamente depois da reunião.
 
 ## O fio
 
-Tico tenta transformar um serviço mal pago em prova de sucesso; ganha um cargo cada vez maior e continua sem dinheiro para uma coisa pequena.
+Eles se aproximam quando deixam de representar por um instante, mas uma conversa boa não cria intimidade para contar tudo.
 
-**Em três frases:** depois de refazer o logo ou cobrar pela mudança, Tico aceita gravar com a Letícia um anúncio do serviço. Para a Lua não vê-lo apenas como um freelancer exausto, apresenta aquilo como sua empresa; um vídeo com “disrupção” faz a avaliação subir a um bilhão. Quando precisa receber, descobre que estão oferecendo participação e mais trabalho, e um contrato pode prendê-lo à promessa.
+## Caminho A — Lua ACEITA
 
-- **Bico:** sócio e CEO por um dia, como previsto na bíblia.
-- **Mentira:** “Já tenho uma empresa.” O bico e o notebook existem; equipe, caixa e estrutura não.
-- **Absurdo:** avaliação do negócio sobe com palavras do vídeo, sem entrar dinheiro.
-- **Aprendizado:** ideia grande começa pelo básico. O limite aparece quando ele pergunta pelo pagamento.
-- **Lua:** ouve uma proposta de que trabalhar por conta própria é liberdade e deixa escapar sua exaustão.
+### 1. O galã precisa conseguir sentar — 0–19 s
 
-## Causa e consequência
+**Quer:** ele, parecer bonito e seguro. **Obstáculo:** orçamento e expectativa. **Virada:** a roupa ideal dificulta uma ação simples. **Fecho:** escolhe algo em que consegue sentar.
 
-| Tentativa | Consequência |
+Abrir no botão da camisa quase soltando quando tenta amarrar o tênis. Jão:
+— Tá confortável?
+— Estou elegante.
+— Perguntei outra coisa.
+
+Uma camisa emprestada e perfume, não uma transformação mágica. Tico confere o dinheiro e escolhe uma padaria conhecida, sem reservar jantar que não consegue pagar.
+
+**Se houve Chuveiro:** ao combinar o horário, reconhece que entende se ela ainda estiver chateada. Aceitar café não significa que o sumiço foi resolvido.
+**Se houve Carona:** não pede desculpas por abandono inexistente.
+
+### 2. Mesa pequena, vinte anos — 19–42 s
+
+**Quer:** conversar. **Obstáculo:** ele preenche cada silêncio. **Virada:** uma lembrança pequena quebra o ensaio. **Fecho:** riem da mesma coisa.
+
+Ele puxa a cadeira e a mesa vem junto porque balança. Ela segura o próprio café.
+— Ainda põe açúcar antes de provar?
+— Ainda acha que eu não sei quanto gosto?
+— Você botava no suco de caixinha.
+— Eu era uma criança com metas.
+
+Essa lembrança é proposta nova, não passado aprovado. Usar uma memória, não um catálogo da infância. Perguntam por onde andaram e contam um detalhe ordinário de cada vida. Não inventar tragédia para justificar vinte anos sem contato.
+
+### 3. A reunião chega à mesa — 42–65 s
+
+**Quer:** ele, animá-la; ela, ser ouvida. **Obstáculo:** conselho automático. **Virada:** ele corrige sua abordagem. **Fecho:** ela consegue relaxar um pouco.
+
+— Na próxima você consegue.
+— Essa já era a próxima.
+
+Ele para.
+— Foi mal. Deve ter sido uma merda.
+
+Silêncio curto. Ela recebe outra demanda do promovido e escolhe se atende. Tico espera, sem tomar o telefone nem dizer o que deveria fazer do emprego.
+
+### 4. A pergunta da receita — 65–82 s
+
+**Quer:** ela, decidir quanto contar. **Obstáculo:** medo de falar de uma vontade que pode não conseguir realizar. **Virada:** ele faz uma pergunta sem oferecer solução. **Fecho:** a resposta fica em aberto.
+
+Um papel de receita aparece como marcador na bolsa; ela já comentou ter feito um doce.
+— Você ainda faz aqueles doces?
+— Às vezes.
+— Você gosta mais disso do que de lá?
+
+Não oferecer sociedade ou investimento antes de ouvir.
+
+### Votação A — 82–89 s
+
+**CONTA:** Lua admite pensar em confeitaria, mas teme trocar estabilidade por incerteza.
+**GUARDA:** fica no “é só uma receita”; um encontro pode ser bom sem ser hora de contar tudo.
+
+Não votar na demissão. No caminho GUARDA, ele não conhece o projeto no episódio seguinte.
+
+### Retorno A — 89–93 s
+
+Ele tenta vestir o paletó ao sair e percebe que passou o encontro sentado na manga. Ela ajuda a soltar:
+— Agora dá pra ir.
+— Eu tava criando raízes.
+
+Não terminar em beijo automático.
+
+## Caminho B — Lua diz AGORA NÃO
+
+### 1. Um não ouvido — 0–17 s
+
+**Quer:** ele, continuar perto. **Obstáculo:** ela não está disponível. **Virada:** percebe a insistência disfarçada. **Fecho:** vai trabalhar.
+
+Ela: “Não tô com cabeça agora, Tico”.
+Depois, Jão vê o texto longo que ele quase envia:
+— “Outro assunto” com três parágrafos?
+Ele apaga. A recusa vale.
+
+Dias depois, começa corridas em carro alugado por diária. Mostrar chave, contrato e diária, sem ganhar carro por conveniência. Antes do roteiro final, definir de onde sai o primeiro aluguel e quanto sobra das corridas; a moto segue com Jão.
+
+### 2. Motorista do quarteirão — 17–41 s
+
+**Quer:** pagar a diária e talvez encontrá-la. **Obstáculo:** as chamadas o levam para longe. **Virada:** os passageiros têm suas próprias urgências. **Fecho:** o mapa não obedece ao romance.
+
+Ele começa pelo bairro dela e ensaia um cumprimento; o app o leva ao outro lado. Três passageiros: um pede ar menos frio, outro abre a janela, o terceiro leva um ventilador no colo.
+— Esse pode ligar?
+— Primeiro o cinto.
+
+Não repetir as voltas da Letícia, desviar passageiros ou seguir a localização de Lua.
+
+### 3. É uma corrida — 41–63 s
+
+**Quer:** ela, chegar ao destino; ele, não parecer que estava esperando. **Obstáculo:** mistura de expectativa e serviço. **Virada:** combinam a viagem. **Fecho:** conversam sem chamar aquilo de encontro.
+
+Lua o vê parado trabalhando e pergunta se pode levá-la. Tem um compromisso próprio e combina pagar. Mostrar esse pedido antes de entrar, sem coincidência de app escolhida pelo roteiro sem causa.
+
+Ele limpa o banco já limpo.
+— É corrida, tá?
+— Eu sei.
+— Você passou perfume no cinto?
+Ele recolhe o aromatizador.
+
+Definir uma cobrança só, pelo aplicativo fictício ou combinada, sem duplicar. Ela escolhe o destino; não recebe passeio romântico no lugar da viagem.
+
+### 4. Uma lembrança e uma pergunta — 63–82 s
+
+**Quer:** conversar sem assumir mais intimidade do que existe. **Obstáculo:** a história recente continua. **Virada:** o assunto deixa de ser só lembrança. **Fecho:** ele precisa responder.
+
+Uma rua lembra a escola; reconhecem uma coisa que mudou e outra que ficou. Um riso breve não revoga a recusa.
+
+**Chuveiro:** “Por que você sumiu naquele dia?”. Refere-se à carona, sem trocar por um abandono de vinte anos.
+**Carona:** não houve sumiço. Ela pergunta “Por que você fala ‘bico’ como se não contasse?”. É a vergonha do próprio trabalho, não uma falta que ele não cometeu.
+
+### Votação B — 82–89 s
+
+**VERDADE:** Chuveiro: fugiu por vergonha do cheiro. Carona: tem vergonha de não ter o emprego e a estabilidade que queria.
+**DESCULPA:** Chuveiro: inventa problema na moto. Carona: diz que as corridas são passatempo e o emprego principal está garantido.
+
+São informações diferentes que seguem para os próximos. Verdade não garante perdão. Se a instabilidade foi revelada, o final não a “revela” de novo.
+
+### Retorno B — 89–93 s
+
+Ela sai; Tico espera mensagem pessoal. Chega uma avaliação de cinco estrelas. Sorri, percebe que é do serviço e coloca o telefone no suporte. Não perder nota por falta de romance: a viagem funcionou.
+
+## O que passa ao 5
+
+| Histórico | Informação estabelecida |
 |---|---|
-| Mostrar que o logo foi um trabalho profissional | Aceita divulgar o serviço |
-| Chamar o serviço de empresa | Precisa representar um fundador |
-| Inflar o discurso | A avaliação dispara, mas as obrigações também |
-| Pedir algo concreto | Descobre que valor de tela não paga trabalho |
-| Manter o título | Recebe contrato para decidir |
+| Encontro + CONTA | Houve saída; ele conhece sonho e receio |
+| Encontro + GUARDA | Houve saída; ela não contou o projeto |
+| Corrida + VERDADE | Não houve encontro; ela ouviu uma vulnerabilidade dele |
+| Corrida + DESCULPA | Não houve encontro; há uma mentira específica por corrigir |
 
-## Abertura trocável — 0–12 s
-
-**Quer:** resolver a revisão do logo. **Obstáculo:** pedido novo pelo mesmo valor. **Virada:** ele escolhe um limite ou cede. **Fecho:** Letícia identifica um serviço que pode vender.
-
-- **Se REFAZ:** ele chega ao amanhecer com outra versão. “Agora acabou?” Ela aceita o logo; o valor permanece o combinado. O custo é a noite perdida, não uma punição nova inventada.
-- **Se COBRA:** ele mostra dois orçamentos: o trabalho combinado e o novo. “Esse é outro logo.” Ela reduz o pedido para caber no orçamento original; ele entrega só o escopo acordado. O limite tem efeito, mesmo sem pagamento extra.
-
-Nos dois, o logo está entregue e ela propõe divulgar o serviço. Não afirmar que recebeu o adicional no caminho de refazer.
-
-## Cena 1: a empresa nasce na conversa — 12–25 s
-
-**Quer:** impressionar Lua. **Obstáculo:** aparência de trabalho improvisado. **Virada:** inventa estrutura. **Fecho:** Letícia vai apresentá-lo como fundador.
-
-Na porta, Lua vê os dois preparando o anúncio. Tico troca “faço uns logos” por “tenho uma empresa”. O Fiscal late apenas nessa mentira verificável.
-
-- **Lua:** “Você faz tudo sozinho?”
-- **Tico:** “Equipe enxuta.”
-
-Letícia enxerga uma oferta real: revisões rápidas para pequenos negócios. Tico deveria definir o serviço; prefere ensaiar o cargo.
-
-## Cena 2: o vídeo de um bilhão — 25–46 s
-
-**Quer:** parecer fundador convincente. **Obstáculo:** não consegue explicar o que vende. **Virada:** a palavra de efeito funciona melhor que a explicação. **Fecho:** a tela anuncia uma fortuna.
-
-Celular no tripé; Letícia dá uma orientação simples: “Fala o que você resolve.” Ele tenta e se enrola. Na segunda tomada, arrisca “disrupção”. Um placar fictício de avaliação sobe; ela pede que repita a parte que funcionou.
-
-- **Tico:** “A gente muda a cor.”
-- **Letícia:** “Do mercado.”
-
-A cada correção do anúncio, o cargo no crachá aumenta; o mesmo notebook velho continua na mesa. Ninguém narra a regra do placar. Não inventar investidor real, rodada real ou transferência de um bilhão.
-
-## Cena 3: a liberdade da Lua — 46–62 s
-
-**Quer:** mostrar a ela que deu certo. **Obstáculo:** ela precisa voltar ao trabalho. **Virada:** percebe por um instante que ela também está cansada. **Fecho:** o celular dela interrompe.
-
-Ele tenta vender a ideia de mandar no próprio horário. A Lua ri sem energia:
-
-- **Lua:** “Na reunião de hoje marcaram outra reunião pra decidir quando eu posso descansar.”
-
-Ela guarda o sorriso por três segundos. O telefone vibra; recompõe o rosto: “Tá tudo ótimo.” Ele quase pergunta mais, mas Letícia chama para a assinatura. Não revelar ainda plano de demissão ou confeitaria.
-
-## Cena 4: caixa de empresa — 62–80 s
-
-**Quer:** receber pelo trabalho. **Obstáculo:** só oferecem promessa de participação. **Virada:** o contrato amplia suas obrigações. **Fecho:** caneta parada.
-
-Na padaria, ele tenta pagar um café; a tela continua mostrando um bilhão. Letícia explica que aquilo é avaliação, não saldo. Ele pergunta: “E pelo trabalho de amanhã?” Ela abre o contrato: serviço, divulgação e participação futura, sem retirada imediata.
-
-O documento deve ter duas informações grandes e legíveis, não cláusulas minúsculas para o espectador adivinhar. O autor definirá o arranjo fictício; não representar assinatura como dinheiro recebido.
-
-## Votação — 80–87 s
-
-- **ASSINA:** começa a trabalhar pelo acordo e arrisca mais tempo sem renda imediata.
-- **PENSA:** pede 24 horas e arrisca a proposta seguir sem ele.
-
-“Não tô pedindo ajuda. Mas... bilionário pode pedir fiado?”
-
-## Depois do voto — 87–92 s
-
-O atendente põe o café sobre a mesa e chama: “Pedido do CEO.” Entrega uma única colher para os dois sócios. O cargo virou tratamento especial, mas o pedido continua um café dividido. Sugestão de piada, não fechamento aprovado.
-
-## O que passa ao ep. 5
-
-Nos dois caminhos, Tico ainda precisa de renda: se assina, pode procurar emprego enquanto o negócio não paga; se pensa, usa o prazo para procurar alternativa. Não apagar contrato, participação ou prazo na abertura seguinte. O próximo bico é candidatura a emprego, não outra avaliação de startup.
-
-**A lapidar:** a avaliação precisa ser uma piada compreensível sem jargão; Letícia acredita no negócio e também trabalha nele, em vez de ser só alguém que explora Tico. Não fixar nova dívida, pagamento ou dia no painel antes de fechar as ações e a cronologia.
-
+O ponto comum é uma conversa de adultos, não um casal formado. Lua segue no emprego. Nenhum caminho autoriza entrar na casa ou organizar a vida dela sem perguntar.
 
 ---
 

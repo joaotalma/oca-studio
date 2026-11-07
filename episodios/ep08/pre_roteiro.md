@@ -1,88 +1,96 @@
-# Episódio 8: Ao Vivo, Com Certeza
+# Episódio 8: Um Café de Cada Vez
 
-**Status:** pré-roteiro proposto. Depende da confissão ao contato escolhido no ep. 7. Falas ilustrativas e duração ainda não validada.
+**Status:** possível encerramento desta fase. Não é obrigação de concluir namoro, emprego e sonho em oito. Se a conversa precisar de mais duração, usar os espaços 9 e 10 antes de acelerar.
 
 ## O fio
 
-Tico aceita duas ajudas para não decepcionar ninguém e acaba tendo de representar duas versões incompatíveis de si.
+Os dois tentam combinar uma coisa pequena sem prometer a versão de si que gostariam de já ter alcançado.
 
-**Em três frases:** depois de contar o golpe a Jão ou Letícia, Tico aceita que os dois o ajudem a conseguir trabalho. Cada um organiza uma live: num celular ele deve ser exemplo da injustiça do sistema; no outro, prova de que basta agir. Tentando concordar com ambos para não perder oportunidades, ele prepara uma participação em que já não consegue dizer uma frase própria.
-
-- **Mentira:** “Tá tudo combinado”, embora prometa exclusividade e horário aos dois.
-- **Absurdo:** as duas transmissões disputam fisicamente o mesmo enquadramento e o mesmo entrevistado.
-- **Aprendizado:** cada amigo enxerga uma parte da situação; ajuda exige ouvi-lo também.
-- **Equilíbrio:** Jão identifica exploração e traz contatos reais, mas fala por Tico; Letícia oferece divulgação e iniciativa, mas reduz tudo a esforço.
+**Em três frases:** Tico cumpre a conversa que começou ou pediu para adiar e corrige o que ainda escondeu. Lua responde com seu próprio ritmo: revela o projeto guardado ou admite o medo que persiste depois de contá-lo. Sem resolver emprego e confeitaria, tentam reservar um momento concreto para continuar se conhecendo.
 
 ## Causa e consequência
 
-| Tentativa | Consequência |
+Horário cumprido -> verdade específica, sem repetição -> resposta real da Lua -> vulnerabilidade dela também -> negociação de tempo e dinheiro -> próximo passo pequeno, se ambos quiserem.
+
+## 1. Cumprir a conversa — 0–18 s
+
+**Quer:** falar sem nova encenação. **Obstáculo:** vergonha e história acumulada. **Virada:** cumprir o horário já muda a experiência. **Fecho:** estão ali por vontade própria.
+
+**Se ABRE O JOGO:** o 7 iniciou a conversa; o 8 abre na resposta dela. Não repetir a revelação para fabricar outro clímax.
+**Se PEDE TEMPO:** mostrar alguns dias e o horário combinado. Ele encerra o turno com antecedência, envia “Cheguei” e espera. Ela aparece porque aceitou, não por ter sido procurada sem convite.
+
+A conversa pode ser na padaria ou área comum, conforme o conforto dela. Não escolher cenário romântico para obrigar uma resposta favorável.
+
+## 2. O que ele precisa corrigir — 18–40 s
+
+**Quer:** contar sem cobrar acolhimento. **Obstáculo:** medo do julgamento. **Virada:** assume a própria decisão. **Fecho:** deixa espaço à resposta.
+
+| Histórico | Conteúdo necessário |
 |---|---|
-| Contar a alguém | Recebe ajuda e precisa reconhecer o problema |
-| Aceitar toda oportunidade | Agenda duas lives no mesmo horário |
-| Concordar com os dois | Aprende dois relatos incompatíveis |
-| Evitar um confronto | É empurrado de uma câmera para a outra |
-| Ser ouvido por Lua | Percebe que precisa falar em nome próprio |
+| Chuveiro sem explicação verdadeira | Fugiu por vergonha do cheiro, não por pane |
+| Chuveiro + VERDADE | O motivo já é conhecido; reconhecer efeito sem “já expliquei” |
+| Carona com instabilidade escondida | Bicos sustentam o que consegue; não há emprego garantido |
+| Carona + VERDADE | Ela já sabe; falar do hábito de prometer mais tempo do que tem |
+| DESCULPA no 4 | Corrigir literalmente a mentira específica |
 
-## Abertura trocável — 0–12 s
+A versão produzida terá só o necessário, não a tabela inteira em diálogo.
 
-**Quer:** contar o golpe. **Obstáculo:** vergonha. **Virada:** o contato escuta de verdade. **Fecho:** ele aceita ajuda e autoriza chamar o outro.
+— Eu queria que você me visse bem.
+**Se Chuveiro:** “Eu queria saber se você vinha”.
+**Se Carona:** “Eu queria saber o que você realmente podia combinar”.
 
-- **Se JÃO:** o amigo inicia uma bronca, vê o rosto dele e guarda o celular. “Tá. Me conta do começo.” Depois oferece contatos e pergunta se pode chamar Letícia para divulgar. Tico concorda.
-- **Se LETÍCIA:** ela começa a enquadrá-lo para uma gravação; ele pede “Sem filmar agora”. Ela baixa o telefone, escuta e oferece divulgação. Pergunta se pode chamar Jão pelos contatos da categoria. Ele concorda.
+Não cobrar abandono inexistente. Ele pede desculpas pelo que fez sem terminar com “mas você também”. Três segundos; não exigir lágrima ou abraço.
 
-O limite pedido no caminho Letícia é respeitado nesse momento. A live posterior depende de nova autorização, não de ela filmá-lo escondido.
+## 3. O que ela também está levando — 40–62 s
 
-## Cena 1: dois horários iguais — 12–27 s
+**Quer:** ela, falar por si. **Obstáculo:** medo de arriscar a estabilidade e de parecer ingrata. **Virada:** admite vontade sem anunciar sucesso. **Fecho:** ele escuta sem resolver.
 
-**Quer:** conseguir trabalho sem contrariar os amigos. **Obstáculo:** ambos querem conduzir. **Virada:** promete aparecer nos dois. **Fecho:** duas contagens regressivas iguais.
+**Se CONTA no encontro:** o sonho é conhecido. Ela conta o que a encomenda revelou: gostou e ficou exausta, ainda não sabe como repetir.
+**Se GUARDA ou corrida:** pode agora dizer “Eu penso em trabalhar com isso”, depois de mais tempo e de um teste real. É abertura gradual, não anulação de ter guardado antes.
 
-Na calçada, Jão monta um celular numa caixa; Letícia ajusta um tripé. Cada um anuncia uma live para o mesmo horário. Tico deveria negociar; responde “Fechado” aos dois.
+Ela segue empregada. A promoção perdida não vira “foi bom acontecer”. Ele não promete investimento que não tem.
+— Você acha que eu devia largar?
+Ele pensa:
+— Acho que eu não sei.
 
-Jão oferece apresentar um trabalho concreto. Letícia diz que conhece gente procurando serviços. Essas ajudas precisam aparecer antes da disputa de discurso.
+Ela pode rir: pela primeira vez a pausa não produz uma solução ensaiada. O emprego e o risco são dela; o carinho permite ouvir, não decidir por ela.
 
-## Cena 2: ensaio do caso de sucesso — 27–48 s
+## 4. Uma agenda possível — 62–81 s
 
-**Quer:** dizer a frase que abre portas. **Obstáculo:** recebe instruções contrárias. **Virada:** percebe que é a mesma entrevista, mas ele muda de personagem. **Fecho:** concorda até se contradizer.
+**Quer:** continuar sem cobrar uma vida pronta. **Obstáculo:** energia, orçamento, horários. **Virada:** negociam em vez de prometer tudo. **Fecho:** um próximo momento, não contrato de casal.
 
-- **Jão:** “Conta como o sistema te apertou.”
-- **Letícia:** “Conta como você saiu da zona de conforto.”
-- **Tico:** “O sistema apertou minha zona.”
+Ela pergunta quando pode parar de trabalhar. Ele quase responde “a hora que você quiser”, consulta a agenda e diz um horário real. Ela confere o dela.
+— Tenho meia hora.
+— Eu tenho quarenta.
+— Então não precisa gastar dez me esperando.
 
-Letícia move o tripé; Jão arrasta a caixa. A faixa de um invade o quadro do outro. Usar poucos objetos e movimento legível; não empilhar transmissões minúsculas na tela.
+Se nunca houve encontro, ela pode propor explicitamente um café fora de serviço. Se já houve, é repetir uma experiência com menos pose. Nenhum sorriso exige beijo.
 
-## Cena 3: uma pergunta sem discurso — 48–65 s
+Se a mágoa ainda estiver aberta, ela diz “Quero ir devagar”. O capítulo pode terminar na disposição para conversar. Não restaurar confiança só porque chegamos ao oito.
 
-**Quer:** voltar a parecer no controle. **Obstáculo:** Lua aparece e vê os ensaios. **Virada:** ela pergunta o que ele quer, não o que ele representa. **Fecho:** ele não sabe responder.
+## Votação — 81–89 s
 
-Lua chega do trabalho e identifica a situação como divulgação dos serviços dele. Não ouvir ainda “desempregado há tantos dias”, já que o marco de confissão é o 10.
+Depois de ambos aceitarem considerar outra saída, escolher programa:
+**CAMINHADA:** volta pelo bairro, conversa e pouco gasto.
+**CAFÉ:** padaria que cabe no orçamento e no intervalo.
 
-- **Lua:** “E você, Tico? Quer fazer o quê?”
+Não votar em perdão, namoro ou demissão. Se ela ainda não aceitou sair naquele histórico, o voto escolhe o próximo convite dele; a resposta dela não é presumida. Não fabricar tragédia em uma das opções só para um passeio ter “custo”.
 
-Ele olha para os dois celulares esperando uma resposta. Três segundos. Jão e Letícia também param; por um instante ninguém o corrige.
+Fala possível: “Não tô pedindo ajuda. Só não marca pra oito”. Usar apenas se o tom comportar; se a mágoa do sumiço ainda estiver aberta, não fazer dessa lembrança uma piada que ela deveria aceitar.
 
-## Cena 4: entram no ar — 65–80 s
+## Retorno — 89–94 s
 
-**Quer:** ter a chance de falar. **Obstáculo:** cada amigo disputa o início. **Virada:** os dois botões estão prontos. **Fecho:** ele pode tirar ambos do comando ou reuni-los.
+Se a memória do açúcar entrou no encontro do 4, ela prova o café dele:
+— Você ainda põe açúcar antes de provar.
+— Eu tenho consistência.
 
-As contagens terminam. Jão prepara uma apresentação; Letícia prepara outra. Tico levanta a mão, pedindo que parem antes de começarem. Corte antes de decidir como participa.
+Se não houve esse encontro, não usar retorno de cena inexistente. Ele guarda o mapa e pergunta a ela por qual caminho prefere ir, em vez de escolher pelos dois.
 
-## Votação — 80–87 s
+## O que mudou e o que não forçar
 
-- **SOZINHO:** usa o espaço oferecido para falar por si; assume a exposição sem os dois conduzindo.
-- **JUNTOS:** põe os dois na mesma conversa; precisa interromper a disputa e combinar limites.
+Ele consegue nomear limite e corrigir mentira; ela consegue dizer vontade e indisponibilidade. O ganho é informação e possibilidade de continuar. A moto segue com Jão; carro alugado tem prazo e custo. Encomenda foi teste; emprego não acabou.
 
-“Não tô pedindo ajuda. Mas... quem segura esses dois?”
-
-## Depois do voto — 87–92 s
-
-Antes de qualquer fala do Tico, os dois celulares apitam juntos: a única espectadora comum é Dona Marlene, identificada apenas como “Mãe”. Áudio dela: “Dá pra chegar mais perto do meu filho?” Ela não está interessada nas faixas nem nos discursos. Não usar o áudio para decidir a votação.
-
-## O que passa ao ep. 9
-
-Na abertura seguinte, Tico usa o caminho escolhido e apresenta um serviço pequeno que realmente sabe executar, sem admitir ainda à Lua toda a situação. Depois convida Lua a um café em casa para conversar sem plateia. Ao se envergonhar do tamanho da kitnet, chama o lugar de “meu escritório”. A nova mentira espacial deve ser mostrada na transição, não presumida.
-
-**A lapidar:** as lives não podem repetir a humilhação da garupa. O conflito aqui é aceitar versões alheias por medo de desagradar. Não transformar o episódio em disputa política nem deixar o encontro com Lua depender de viralizar.
-
+Não concentrar confissão, sonho, beijo, namoro, perdão e decisão profissional numa recompensa de noventa segundos. Se a conversa difícil ocupar o episódio, convite e votação podem passar ao seguinte. O fechamento é o que conseguem fazer de verdade, não a numeração.
 
 ---
 
