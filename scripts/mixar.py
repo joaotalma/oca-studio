@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Mixa o áudio de um episódio: falas, efeitos e trilha sintetizados em código.
 
-Uso: python scripts/mixar.py audio/ep01 render/ep01_mix.wav
+Uso: python scripts/mixar.py audio/ep01 render/ep01_mix.wav [episodios/ep02]
+Com a pasta do episódio, músicas e efeitos vêm do mixagem.py dela. Sem ela, valem os do ep. 1.
 Antes: python scripts/sincronizar.py. Os tempos abaixo estão no tempo do roteiro.
 
 Regra da trilha: cada música é um loop circular com número inteiro de compassos, em que as notas que
 passam do fim voltam para o começo. O loop só entra na mixagem se passar nas medições de emenda; se
 reprovar, a cena fica sem música e o relatório diz qual caiu.
 """
-import json, sys, wave
+import importlib.util, json, sys, wave
 from pathlib import Path
 import numpy as np
 
@@ -180,6 +181,26 @@ def fx_chiado_pneu(d=1.3):
     n = int(d * SR)
     return np.diff(rng.standard_normal(n), prepend=0) * np.linspace(.45, .03, n)
 
+def fx_galo():
+    n = int(.9 * SR); t = np.arange(n) / SR
+    f = 620 + 260 * np.sin(np.pi * np.minimum(t / .9, 1)) ** .5
+    return np.tanh(2.5 * np.sin(2 * np.pi * np.cumsum(f) / SR)) * np.minimum(t / .04, 1) * np.minimum((.9 - t) / .2, 1) * .5
+
+def fx_gps():
+    n = int(.34 * SR); t = np.arange(n) / SR
+    return (np.sin(2 * np.pi * 880 * t) * (t < .13) + np.sin(2 * np.pi * 660 * t) * (t >= .17)) * .5 * env(n, .004, .3)
+
+def fx_tosse_motor():
+    s = np.zeros(int(1.0 * SR))
+    for i, (ini, g) in enumerate([(0, 1), (.28, .8), (.6, .5)]):
+        a = fx_motor(.16 + .04 * i) * g
+        c = int(ini * SR); s[c:c + len(a)] += a * np.hanning(len(a))
+    return s
+
+def fx_fungada():
+    n = int(.5 * SR); t = np.arange(n) / SR
+    return filtro_grave(rng.standard_normal(n), 2600) * np.sin(np.pi * t / .5) ** 2 * (t / .5) * 2
+
 def fx_motor(d):
     n = int(d * SR); t = np.arange(n) / SR
     f = 62 + 5 * np.sin(2 * np.pi * .7 * t)
@@ -276,6 +297,8 @@ EFEITOS = [  # (tempo no roteiro, efeito, ganho)
 ]
 LATIDOS = [61.2, 78.6]
 VOZ_INTERFONE = {23, 25, 27, 29}
+APITO = {2}
+MOTORES = [(0, 2.7, .16)]
 ALVO_VOZ = .085  # RMS de cada fala antes da normalização final
 
 
@@ -289,6 +312,12 @@ def main():
     audio, saida = Path(sys.argv[1]), Path(sys.argv[2])
     tempos = json.loads((audio / 'tempos.json').read_text(encoding='utf8'))
     xp, fp = zip(*tempos['nos'])
+    if len(sys.argv) > 3:
+        caminho = Path(sys.argv[3]) / 'mixagem.py'
+        spec = importlib.util.spec_from_file_location('mixagem', caminho)
+        mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+        por_n = {f['n']: f['roteiro'] for f in tempos['falas']}
+        globals().update(mod.config(sys.modules[__name__], lambda n: por_n[n][0], lambda n: por_n[n][1]))
     real = lambda t: float(np.interp(t, xp, fp))
     N = int((tempos['duracao'] + .5) * SR)
     voz, fx, mus, presenca = np.zeros(N), np.zeros(N), np.zeros(N), np.zeros(N)
@@ -303,14 +332,15 @@ def main():
         a = a / max(np.sqrt(np.mean(a ** 2)), 1e-5) * ALVO_VOZ
         if f['n'] in VOZ_INTERFONE:
             a = interfone_voz(a / ALVO_VOZ * .25) * ALVO_VOZ * 2.6
-        if f['n'] == 2:   # palavrão coberto pelo apito
+        if f['n'] in APITO:   # palavrão coberto pelo apito
             fx_ap = fx_apito(f['fim'] - f['ini'])
             poe(fx, fx_ap, f['ini'], .16)
             a = a * .05
         poe(voz, a, f['ini'])
         presenca[int(f['ini'] * SR):int(f['fim'] * SR)] = 1
 
-    poe(fx, fx_motor(real(2.7)), 0, .16)
+    for ini, fim, g in MOTORES:
+        poe(fx, fx_motor(real(fim) - real(ini)), real(ini), g)
     for t, ef, g in EFEITOS:
         poe(fx, ef(), real(t), g)
     for t in LATIDOS:

@@ -282,7 +282,7 @@ const ep02Telas = [
   // Audiência durante as voltas
   { ini: POUSO, fim: FISCAL_LONGE, desenha: (p, s, u) => { const t = POUSO + s; if (!ep02Planos.some((pl) => pl.live && t >= pl.ini && t < pl.fim) && !ep02Planos.some((pl) => t >= pl.ini && t < pl.fim && (String(pl.fundo || '').includes('mapa') || pl.estrelasCheias || String(pl.fundo || '').includes('gasolinaSVG')))) chipLive(t, u); } },
   // Estrelas à espera do polegar
-  ...ep02Planos.filter((pl) => pl.estrelas || pl.estrelasCheias).map((pl) => ({ ini: pl.ini, fim: pl.fim, desenha: (p, s, u) => { const y = pl.estrelasCheias ? 860 : 1050, tam = (pl.estrelasCheias ? 150 : 78) * (1 + Math.sin(s * 9) * .05); u.texto('★★★★★', 540, y, tam, '#ffd83a'); } })),
+  ...ep02Planos.filter((pl) => pl.estrelas || pl.estrelasCheias).map((pl) => ({ ini: pl.ini, fim: pl.fim, desenha: (p, s, u) => { const y = pl.estrelasCheias ? 860 : 1050, tam = (pl.estrelasCheias ? 150 : 78) * (1 + Math.sin(s * 9) * .05); if (!pl.estrelasCheias) u.cartao(250, y - 66, 580, 132, '#2a1f22'); u.texto('★★★★★', 540, y, tam, '#ffd83a'); } })),
   // Cartões e placares
   ...ep02Planos.filter((pl) => pl.cartaz).map((pl) => ({ ini: pl.ini, fim: pl.fim, desenha: (p, s, u) => { u.cartao(690, 90, 340, 118, '#2a1f22'); u.texto(pl.cartaz, 860, 150, 62, '#ffd83a'); } })),
   // Depoimento da corrida concluída
