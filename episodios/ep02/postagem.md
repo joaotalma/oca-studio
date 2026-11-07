@@ -12,18 +12,27 @@ O autor está publicando só no Instagram por enquanto. Os arquivos ficam no Dri
 **Legenda** (copie tudo daqui):
 
 ```
-Vocês escolheram: o Tico contou a verdade. Agora ele precisa de cinco estrelas para dar carona à Lua.
+🗳️ Vocês escolheram: o Tico contou a VERDADE.
+Agora ele precisa de ⭐⭐⭐⭐⭐ pra dar carona pra Lua... 🛵💨
 
-Cinco estrelas no app. Zero condições de dar carona.
+Cinco estrelas no app. Zero condições de dar carona. 🤢
 
-Comenta sua escolha: CARONA ou CHUVEIRO? A mais comentada abre o próximo episódio.
+👇 COMENTA SUA ESCOLHA:
+🛵 CARONA: ele leva a Lua assim mesmo
+🚿 CHUVEIRO: ele foge pro banho
 
-Vozes geradas com OmniVoice.
+A mais comentada abre o próximo episódio! 🔥
+
+🎙️ Vozes geradas com OmniVoice.
 
 #SeViraTico #Animação #Comédia #Mototáxi #Humor
 ```
 
-**Comentário fixado:** "Vale uma resposta só: CARONA ou CHUVEIRO? A escolha mais comentada vira o ep. 3."
+**Comentário fixado:**
+
+```
+🗳️ Vale UMA resposta só: 🛵 CARONA ou 🚿 CHUVEIRO? A mais comentada vira o ep. 3! 👇
+```
 
 **Configurações do Reel:**
 - **Capa:** em "Editar capa", escolha "Adicionar da galeria" e use `ep02_capa.png`. No perfil, a grade corta a capa em 3:4. Confira se o título do topo continua visível.

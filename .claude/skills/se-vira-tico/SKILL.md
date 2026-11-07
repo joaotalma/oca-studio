@@ -23,6 +23,8 @@ A fonte da história é `docs/BIBLIA.md`, com a temporada 1 episódio a episódi
 
 **Roteiro:** estrutura de 90 s, regra do absurdo e votação estão em `references/roteiro.md`.
 
+**Postagem:** legenda com emojis, comentário fixado e kit do Instagram estão em `references/postagem.md`. Para montar a pasta no Drive, rode `bash scripts/kit-instagram.sh episodios/epNN`.
+
 **Produção:** números de cada regra, kit do piloto e fases estão em `references/regras.md`. Respeite a ordem das fases.
 
 ## Rig
