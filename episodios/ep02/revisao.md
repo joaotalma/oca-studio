@@ -223,3 +223,73 @@ O esforço nasce da corrida: a Letícia faz o Tico dar voltas, ele se perde no G
 ## Preservar e medir
 
 A live com a biografia inventada e a piada final do vendedor de paçoca não foram retiradas por esta orientação. Integrar as mudanças ao fio da promessa da carona, sem tratar acréscimos do gerador como decisões do autor. Recalcular falas, ações, montagem do GPS e pausas; os tempos do roteiro atual deixam de servir como medida da nova sequência.
+
+---
+
+# Revisão da saída do episódio 2 — 2026-11-07
+
+Material: `render/ep02_rascunho.mp4`, quadros extraídos, `ep.js`, `cenas.md`, `mixagem.py` e motor compartilhado. Registro das correções solicitadas pelo autor nesta etapa de vídeo; não reabre decisões aprovadas do roteiro, como a gasolina ficar para o episódio seguinte. Tempos aproximados do rascunho, ainda sem validação das vozes finais.
+
+## 1. Bloqueia — pernas e apoio na garupa
+
+**Local:** abertura, 0–5,8 s, e planos do guidão durante a corrida; `ep.js`, `GARUPA`, `ATOR_LIVE`, `fundoGuidao` e `frenteGuidao`.
+
+Confirmado no quadro de 4,8 s: os dois troncos terminam no ar, acima do guidão. `GARUPA` define `semPernas: true` para Tico e Letícia. A elevação torna o corte dos corpos ainda mais evidente e impede a leitura física do salto.
+
+**Correção pedida:** pernas completas em ambos, dobradas e apoiadas na moto durante a corrida; durante o voo, manter quadris, joelhos, pés e moto coerentes. A moto pousa normalmente, sem pane causada pela lombada. Reenquadrar e rever as camadas para que a carroceria esconda apenas o que realmente deveria encobrir. Apenas remover `semPernas` não garante uma pose sentada convincente.
+
+**Correção pedida para Letícia:** ficar atrás do piloto, ligeiramente à direita e angulada, com quadril e pernas apoiados na garupa. Hoje a separação lateral e a ausência do assento visível fazem parecer que flutua. Conferir aberto, closes, salto e pouso. O rig atual só tem vista frontal; qualquer nova vista deve ser resolvida na fonte `personagens/chars.js`, documentada em `poses_novas.md` e propagada pelo fluxo de assets, nunca editando apenas a cópia do episódio.
+
+## 2. Bloqueia — cadência e troca antes do pedido da Lua
+
+**Local:** cena 1, aproximadamente 9,5–21,3 s; `roteiro.md`, falas 6–11, e planos correspondentes em `ep.js`.
+
+O autor considera que a Lua emenda a reação ao emprego com a proposta do mototáxi sem pausa nem troca suficiente. A fala 7 concentra observação, pedido, horário e justificativa do app.
+
+**Correção pedida:** dar tempo para Tico reagir e criar troca entre os dois antes de fechar a carona. Separar intenção, reação e pedido; não resolver apenas com cortes de câmera sobre a mesma fala corrida. Recalcular o tempo e atualizar roteiro, falas geradas e cenas antes de gerar ou sincronizar as vozes. A redação exata dessa troca ainda não foi definida pelo autor.
+
+## 3. Bloqueia — preto e branco termina depois da resposta
+
+**Local:** cena 1 e regra das estrelas, aproximadamente 5,8–24,3 s; `ep.js`, `LEMBRANCA`, helper `porta` e vinhetas em `ep02Telas`; `cenas.md`, seção Cor.
+
+O código aplica quase ausência de cor a todos os planos criados por `porta`, inclusive depois da resposta e ao ler a regra do app. Os quadros confirmam a conversa ainda dessaturada.
+
+**Decisão do autor:** o preto e branco antecede a resposta à pergunta “você é entregador?”. Tico responde conforme o resultado escolhido pelo público e a cena volta à cor do presente. Não manter a conversa inteira em preto e branco até a manhã. Ajustar também as bordas escurecidas e a documentação, sem alterar o preto e branco próprio da votação final.
+
+## 4. Bloqueia — latidos sem mentira clara
+
+**Local:** `ep.js`, `EPISODIO.latidos`, e `mixagem.py`, `LATIDOS`; aproximadamente 23–24 s, 61 s e votação.
+
+Hoje imagem e mixagem programam latidos após “temporário”, “Às oito eu tenho”, “Fácil”, no corte distante após “O curso” e na votação. O autor apontou excesso de latidos sem motivo. “Fácil” é uma expectativa e a pergunta da votação não constitui, por si, mentira. O corte para o Fiscal longe da corrida também pede uma decisão de encenação, pois ele não presencia a fala.
+
+**Correção pedida:** rever cada ocorrência segundo a regra do Fiscal: ele denuncia algo que o personagem sabe ser falso. Retirar ocorrências sem esse gatilho, sincronizando imagem e som. Não trocar por latido aleatório de ambiente nem conservar cortes/impactos declarados apenas por causa de latidos removidos. Preservar os latidos que tenham mentira legível e diferença pertinente entre as variantes do voto.
+
+## 5. Bloqueia — Letícia desliza ao desembarcar
+
+**Local:** prédio chique, aproximadamente 62–65 s; `ep.js`, ator Letícia no plano iniciado em `I(33)`; `personagens/motor.js`, `atorSVG`.
+
+Confirmado na sequência de quadros: Letícia se desloca lateralmente com pernas praticamente na mesma pose. O ator usa `movX`, mas não define ciclo de passo. O motor só interpola a posição; não cria caminhada automaticamente.
+
+**Correção pedida:** sincronizar deslocamento, alternância das pernas e apoio dos pés; parar o ciclo quando o deslocamento terminar. Fazer o trajeto terminar na entrada do prédio de forma legível.
+
+**Checagem dos demais personagens:** em `ep02/ep.js`, esse é o único `movX`; não há outro `xF` de deslocamento de ator. Tico no empurrão já tem alternância de `liftL`/`liftR`, mas a rua avança independentemente, portanto esse trecho ainda exige conferir contato e velocidade dos pés. Nos planos vistos da Lua não há caminhada lateral programada; não atribuir automaticamente a ela o mesmo defeito. Conferir qualquer caminhada nova adicionada à conversa ou às entradas/saídas.
+
+## 6. Bloqueia — Tico precisa andar ao lado da moto de frente
+
+**Local:** montagem da volta, aproximadamente 69–72 s; `ep.js`, `empurra`, `frenteEmpurra`, `MOTO_X`, `EMPURRA_X`, `bracoAte`; `personagens/cenarios.js`, `motoFrenteSVG`.
+
+Os quadros mostram o corpo do Tico encoberto pela moto, como se estivesse atrás ou montado. Apesar do nome, `motoFrenteSVG` desenha uma vista em três quartos, com banco e roda traseira deslocados lateralmente; ela é sobreposta ao ator inteiro por `frenteEmpurra`.
+
+**Correção pedida:** moto apontada para a frente, Tico caminhando ao lado dela, com corpo e pernas distinguíveis. Reposicionar e rever a ordem das camadas, mantendo mão em contato com o guidão. Não basta mudar apenas o nome da vista nem abrir a distância e deixar o braço sem alcançar. Conferir todos os três enquadramentos da montagem e o contato dos pés com o chão.
+
+## 7. Bloqueia — Lua aparece com dois celulares
+
+**Local:** pedido da carona e áudio perto do fim; `ep.js`, `NA_PORTA` e plano de `I(35)`; renderização de objetos em `personagens/chars.js` e sua cópia gerada no episódio.
+
+Confirmado nos quadros: Lua parece segurar um celular em cada mão, tanto na conversa quanto no áudio. As poses do episódio pedem café à direita (`propR: 'cup'`) e celular à esquerda (`propL: 'phone'`). É necessário conferir a geração dos objetos e eventual divergência da cópia local do rig; a declaração da pose, sozinha, não garante o resultado visual correto.
+
+**Correção pedida:** apenas um celular, na mão que ela usa para consultar/gravar; a outra deve segurar uma xícara inequívoca ou ficar livre conforme a encenação. Corrigir a fonte do objeto/rig quando for a causa e regenerar as cópias. Conferir os dois momentos e os demais personagens que usam os mesmos objetos.
+
+## Aceite da correção
+
+Gerar nova prévia após aplicar as correções. Conferir salto e pouso, retorno à cor depois da resposta, cadência com áudio real quando disponível, cada latido restante, caminhada no prédio, os três planos do empurrão e as mãos da Lua. Rodar o QA de rascunho e declarar o que ainda depende da geração das vozes. Os arquivos `_cuts.mjs` e `_quadros.mjs` já estavam excluídos no `git status` inicial; essas exclusões não pertencem à revisão.

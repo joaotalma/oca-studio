@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: capa do episódio 2</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Capa 1080x1920. O perfil do TikTok corta a capa em cerca de 3:4 (y de 240 a 1680): título, rosto e selo ficam nessa faixa.
+const contorno = (x, y, s, tam, cor, borda = 16) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+
+// Rua de dia, com o chão mais alto para a moto aparecer acima do selo
+const [fundo, meio, chao] = CENARIOS.rua();
+const SOBE = 170;
+s += fundo.svg;
+s += `<g transform="translate(-322 0)">${meio.svg}</g>`;
+s += `<g transform="translate(0 ${-SOBE})">${chao.svg}</g><rect x="0" y="1790" width="1080" height="130" fill="#55535a"/>`;
+
+// Faixa escura atrás do título. Vem antes do Tico para não escurecer o rosto
+s += `<defs><linearGradient id="topo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2a45" stop-opacity=".92"/><stop offset=".7" stop-color="#1c2a45" stop-opacity=".78"/><stop offset="1" stop-color="#1c2a45" stop-opacity="0"/></linearGradient></defs>`;
+s += `<rect x="0" y="0" width="1080" height="820" fill="url(#topo)"/>`;
+
+// A moto de frente, à direita
+s += motoRetaSVG(850, 1500, .78, {});
+
+// Tico encharcado, cheirando a própria axila
+const SUADO = { ...CHARS.tico, cloth: '#6d7c2c', clothD: '#4f5c1f' };
+s += `<g transform="translate(345 2108) scale(2.15)">${drawChar(SUADO, { expr: 'surpreso', detalhe: 'suor', bag: false, armL: [-9, -5], armR: [112, 196], head: -15, lean: 4, breath: 0, blink: 0 })}</g>`;
+
+// Fedor saindo do braço
+s += fedorSVG(590, 1060, .35, .8);
+
+// A nota que não mudou nada
+s += `<g transform="rotate(5 810 760)">` + ret(630, 660, 360, 196, '#fff6e6', 22, 6) + txt(810, 736, 'NOTA 5,0', 54, OUT) + txt(810, 816, '★★★★★', 62, '#e2a91f') + '</g>';
+
+// Título
+s += `<g transform="rotate(-3 540 480)">` + contorno(540, 365, 'SE VIRA,', 130, '#fff6e6', 18) + contorno(540, 565, 'TICO', 230, '#f2d36b', 22) + '</g>';
+
+// Selo do episódio
+s += `<g transform="rotate(-2 540 1560)">`
+  + ret(150, 1462, 780, 205, '#fff6e6', 26, 6)
+  + ret(120, 1424, 170, 80, '#c23b3b', 18, 6)
+  + txt(205, 1481, 'EP. 2', 44, '#fff6e6')
+  + txt(540, 1560, 'CINCO ESTRELAS,', 56, OUT)
+  + txt(540, 1632, 'ZERO DESODORANTE', 56, '#c23b3b')
+  + '</g>';
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>
