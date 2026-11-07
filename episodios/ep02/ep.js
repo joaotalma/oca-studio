@@ -220,7 +220,7 @@ const ep02Planos = [
   andando(I(21) - .35, I(21), CTICO(I(20))),
   andando(I(21), I(22), CLET(I(21))),
   andando(I(22), I(23), CTICO(I(22))),
-  { ini: I(23), fim: I(24), cena: 'vazio', mapa: true, cam: [[I(23), 540, 960, 1.04]], fundo: (t) => mapaSVG(.35 + .3 * clamp01((t - I(23)) / 2), 0, t) },
+  { ini: I(23), fim: I(24), cena: 'vazio', mapa: true, cam: [[I(23), 540, 960, 1.04], [I(24), 540, 920, 1.12, I(24) - I(23)]], fundo: (t) => mapaSVG(.35 + .3 * clamp01((t - I(23)) / 2), 0, t) },
   andando(I(24), I(25), CTICO(I(24))),
   { ini: I(25), fim: I(26), cena: 'vazio', cobrePernas: true, cam: [[I(25), 540, 960, 1]], fundo: fundoLive, atores: ATOR_LIVE, frente: frenteLive, live: true },
   andando(I(26), I(27), CTICO(I(26)), { frente: (t) => frenteMoto(t) + placa(1120 - (t - I(26)) * 900, 760, 190, 110, '#fff6e6', ['Trago a pessoa', 'amada em 3x', 'no Pix'], 18) }),
@@ -245,7 +245,7 @@ const ep02Planos = [
     fundo: () => motoSVG(300, CHAO + 40, 1.7), atores: [{ id: 'tico', x: 120, char: ticoSuado, poses: [[0, { expr: 'surpreso', detalhe: 'suor', bag: false, armR: [60, 70] }]] }] },
   { ini: I(36), fim: MAPA_PE, cena: 'predioChique', cam: [[I(36), 190, 860, 1.8]], painel: true,
     fundo: () => motoSVG(300, CHAO + 40, 1.7), atores: [{ id: 'tico', x: 120, char: ticoSuado, poses: [[0, { expr: 'triste', detalhe: 'suor', bag: false, armR: [60, 70], head: 5 }]] }] },
-  { ini: MAPA_PE, fim: MONTAGEM, cena: 'vazio', cam: [[MAPA_PE, 540, 960, 1]], fundo: (t) => mapaSVG(1, sai((t - MAPA_PE) / 1.1), t), recalc: true },
+  { ini: MAPA_PE, fim: MONTAGEM, cena: 'vazio', cam: [[MAPA_PE, 540, 960, 1], [MONTAGEM, 540, 920, 1.08, MONTAGEM - MAPA_PE]], fundo: (t) => mapaSVG(1, sai((t - MAPA_PE) / 1.1), t), recalc: true },
   // Montagem: a moto de frente, e ele ao lado, de corpo inteiro nos três planos
   { ini: MONTAGEM, fim: MONTAGEM + 1, cena: 'vazio', cam: [[MONTAGEM, 575, 960, 1.04]], fundo: fundoEmpurra(mistura('#f4a65a', '#ffd9a0', .4), [860, 560]), atores: empurra('cansado'), frente: frenteEmpurra(.45), painel: true },
   { ini: MONTAGEM + 1, fim: MONTAGEM + 2, cena: 'vazio', cam: [[MONTAGEM + 1, 620, 1000, 1.12]], fundo: fundoEmpurra(mistura('#f4a65a', '#ffd9a0', .75), [260, 430]), atores: empurra('bravo'), frente: frenteEmpurra(.75), painel: true },
@@ -279,7 +279,7 @@ const ep02Planos = [
   { ini: I(39), fim: COMPRA, cena: 'rua', cam: [[I(39), 540, 860, 1.75]], canto: true,
     fundo: () => bancoSVG(540), frente: () => caixaPacocaSVG(540, 1500),
     atores: [{ id: 'vendedor', x: 540, y: CHAO - 20, s: 1.32, poses: [[0, { expr: 'pensando', sentado: true, legL: [-40, -6], legR: [40, 6], armL: [-16, 20], armR: [18, 150], propR: 'phone' }], [E(39) - .1, { expr: 'feliz' }]] }] },
-  { ini: COMPRA, fim: FIM_DO_EP, cena: 'vazio', cam: [[COMPRA, 540, 960, 1]], canto: true, fundo: (t) => moldura(ret(250, 330, 580, 500, '#3a3a40', 18) + txt(540, 600, 'Mente Milionária', 46, '#ffd83a') + ret(290, 930, 500, 170, t > COMPRA + .55 ? '#1f9e33' : '#35d04a', 26) + txt(540, 1035, 'Comprar curso', 50, '#fff') + `<circle cx="${(800 - 60 * sai((t - COMPRA) / .5)).toFixed(1)}" cy="${(1340 - 240 * sai((t - COMPRA) / .5)).toFixed(1)}" r="56" fill="#c98f68" stroke="${OUT}" stroke-width="6"/>`) },
+  { ini: COMPRA, fim: FIM_DO_EP, cena: 'vazio', cam: [[COMPRA, 540, 960, 1], [FIM_DO_EP, 540, 930, 1.07, FIM_DO_EP - COMPRA]], canto: true, fundo: (t) => moldura(ret(250, 330, 580, 500, '#3a3a40', 18) + txt(540, 600, 'Mente Milionária', 46, '#ffd83a') + ret(290, 930, 500, 170, t > COMPRA + .55 ? '#1f9e33' : '#35d04a', 26) + txt(540, 1035, 'Comprar curso', 50, '#fff') + `<circle cx="${(800 - 60 * sai((t - COMPRA) / .5)).toFixed(1)}" cy="${(1340 - 240 * sai((t - COMPRA) / .5)).toFixed(1)}" r="56" fill="#c98f68" stroke="${OUT}" stroke-width="6"/>`) },
 ];
 function bancoSVG(x) { return ret(x - 240, CHAO - 150, 480, 34, '#7a5a44', 6) + ret(x - 210, CHAO - 116, 26, 126, '#55606c', 0) + ret(x + 184, CHAO - 116, 26, 126, '#55606c', 0); }
 function caixaPacocaSVG(x, y) { return `<g transform="translate(${x} ${y})">` + shape('M-120 -60 L120 -60 L104 40 L-104 40Z', '#d9a860') + txt(0, -10, 'PAÇOCA', 34, '#7a3f1f') + txt(0, 26, 'R$ 2', 26, '#7a3f1f') + '</g>'; }
