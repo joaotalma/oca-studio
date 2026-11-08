@@ -9,9 +9,9 @@ const motor = (() => {
   const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };
   const hash = (n) => { const s = Math.sin(n * 127.1) * 43758.5453; return s - Math.floor(s); };
   const TRANS = .22;
-  const QUEM = { 'Tico': 'tico', 'Jão': 'jao', 'Lua': 'lua', 'Borracheiro': 'borracheiro', 'Letícia': 'leticia', 'Vendedor': 'vendedor' };
-  const NOME_COR = { tico: '#a8b94c', jao: '#e3c04a', lua: '#f0a48c', borracheiro: '#7fd6ee', leticia: '#f2c14e', vendedor: '#e9e4d8' };
-  const FASE = { tico: .3, lua: 1.4, jao: 2.2, borracheiro: 2.9, marlene: .9, fiscal: 1.7, leticia: 2.5, vendedor: .6 };
+  const QUEM = { 'Tico': 'tico', 'Jão': 'jao', 'Lua': 'lua', 'Borracheiro': 'borracheiro', 'Letícia': 'leticia', 'Vendedor': 'vendedor', 'CEO': 'ceo', 'Júnior': 'junior' };
+  const NOME_COR = { tico: '#a8b94c', jao: '#e3c04a', lua: '#f0a48c', borracheiro: '#7fd6ee', leticia: '#f2c14e', vendedor: '#e9e4d8', ceo: '#9fb4d8', junior: '#cfe3ef' };
+  const FASE = { tico: .3, lua: 1.4, jao: 2.2, borracheiro: 2.9, marlene: .9, fiscal: 1.7, leticia: 2.5, vendedor: .6, ceo: 1.1, junior: 2.0 };
 
   function poseEm(chaves, t) {
     const p = {}; let trocaExpr = -9;

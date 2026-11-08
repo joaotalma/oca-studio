@@ -17,3 +17,5 @@ render/*.mp3
 render/*.wav
 __pycache__/
 render/.pieces-*/
+# Local secrets written by `elevenlabs onboard`
+/.env.local

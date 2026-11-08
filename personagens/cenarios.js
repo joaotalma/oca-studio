@@ -261,4 +261,118 @@ function cenaPredioChique() {
   return [{ f: .3, svg: fundo }, { f: .9, svg: meio }, { f: 1, svg: chao }];
 }
 
-const CENARIOS = { vazio: () => [], rua: () => cenaRua(false), ruaNoite: () => cenaRua(false, true), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), portaDiaAberta: () => cenaPorta(true, true), predioChique: cenaPredioChique, casa: cenaCasa };
+/* ---------- ep. 3: céu e silhueta no tom da ficha visual ---------- */
+function ceuSerie(noite = true, id = 'ceuS') {
+  const [a, b] = noite ? ['#172540', '#816579'] : ['#7f9ec0', '#f5c690'];
+  let s = `<defs><linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="-300" x2="0" y2="1300"><stop stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect x="-900" y="-600" width="2900" height="2900" fill="url(#${id})"/>`;
+  if (noite) for (let i = 0; i < 40; i++) s += `<circle cx="${(i * 173) % 1500 - 200}" cy="${(i * 97) % 600 - 120}" r="${1 + i % 3}" fill="#ffefd2" opacity=".6"/>`;
+  return s;
+}
+function silhuetaSerie(base = 820, noite = true) {
+  let s = '';
+  for (let i = 0; i < 16; i++) { const x = -400 + i * 125, h = 120 + (i * 61) % 210; s += ret(x, base - h, 118, h + 600, noite ? '#39435b' : '#8b8fa3', 0, 0); for (let j = 0; j < 3; j++) s += ret(x + 18 + j * 31, base - h + 30, 12, 20, (i + j) % 3 ? (noite ? '#667080' : '#a9adbb') : '#e5bf75', 0, 0); }
+  return s;
+}
+function janelaPredio(x, y, w, h, acesa) { return ret(x, y, w, h, acesa ? '#f4cf89' : '#544a54', 2, 2) + ret(x - 4, y + h, w + 8, 6, '#302e3d', 0, 0); }
+
+// Banheiro da kitnet: azulejo, registro e chuveiro. A cortina entra pela frente, no plano.
+function cenaBox() {
+  let fundo = `<rect x="-700" y="-300" width="2500" height="2400" fill="#cfd8d6"/>`;
+  for (let i = -6; i < 18; i++) for (let j = 0; j < 22; j++) fundo += `<rect x="${i * 96 + (j % 2) * 48}" y="${j * 96 - 200}" width="92" height="92" fill="${(i * 7 + j * 3) % 11 ? '#dfe7e4' : '#c4d3d0'}"/>`;
+  fundo += ret(-700, 1250, 2500, 900, '#9fb3b4', 0, 0) + ret(-700, 1240, 2500, 14, '#7c8f90', 0, 0);
+  const meio = stroke('M700 -100 L700 380 Q700 420 650 420 L560 420', '#9aa3aa', 16) + shape('M500 410 L620 410 L600 450 L520 450Z', '#b5bcc2', 3)
+    + ell(760, 760, 26, 26, '#b5bcc2', OUT, 3) + stroke('M760 760 L800 760', OUT, 6)
+    + ret(150, 600, 110, 150, '#f0e6d2', 8) + ell(205, 640, 22, 12, '#e8736f', OUT, 2) + txt(205, 712, 'XAMPU', 18, '#4c4a4c')
+    + ret(880, 520, 140, 30, '#b5bcc2', 4, 2) + ell(915, 505, 22, 18, '#f2d36b', OUT, 2) + ell(975, 500, 18, 22, '#8fd3e8', OUT, 2);
+  return [{ f: .9, svg: fundo }, { f: 1, svg: meio }];
+}
+// Kitnet: parede com reboco, janela, cama, abajur e pôster. dia = manhã; senão, noite.
+function cenaKitnet(dia = true) {
+  const fundo = ceuSerie(!dia, dia ? 'ceuKd' : 'ceuKn') + silhuetaSerie(900, !dia);
+  const parede = dia ? '#e3b07c' : '#9c7a64', rb = dia ? '#c9935f' : '#84624f';
+  const meio = `<path fill-rule="evenodd" d="M-700 -300 H1800 V1700 H-700Z M640 360 H980 V860 H640Z" fill="${parede}"/>` + reboco([[60, 300, 150, 56], [120, 1060, 120, 50], [420, 980, 90, 40], [260, 620, 110, 44]], rb)
+    + ret(630, 350, 360, 520, 'none', 0, 10) + stroke('M810 350 V870 M630 610 H990', OUT, 8) + ret(610, 860, 400, 26, '#efe3cf', 3)
+    + placa(90, 380, 300, 200, '#2a4f8a', ['TRANSIÇÃO', 'DE CARREIRA', '2.0'], 32, '#fff3d9', -3)
+    + ret(-200, 1190, 820, 140, '#5a6f8a', 14) + ret(-200, 1140, 820, 70, '#e9e4d8', 20) + ell(470, 1160, 110, 40, '#f6f0e2', OUT, T)
+    + ret(830, 1090, 190, 260, '#7a5a44', 6) + ret(850, 1110, 150, 100, '#8a6a52', 4, 2) + ell(925, 1060, 40, 40, dia ? '#d9d1c2' : '#ffe6a0', OUT, 3)
+    + (dia ? '' : `<ellipse cx="925" cy="1060" rx="210" ry="190" fill="#ffd98a" opacity=".22"/>`);
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="${dia ? '#b98f6a' : '#7a5f4c'}"/><rect x="-900" y="${CHAO - 40}" width="2900" height="12" fill="#2a1f22"/>`;
+  return [{ f: .25, svg: fundo }, { f: .9, svg: meio }, { f: 1, svg: chao }];
+}
+// Corredor do escritório: porta de vidro da sala de reunião, bebedouro, planta e quadro motivacional.
+function cenaEscritorio() {
+  const fundo = `<rect x="-700" y="-300" width="2500" height="2400" fill="#e8e3d8"/>` + ret(-700, 1200, 2500, 400, '#d5cfc2', 0, 0) + stroke('M-700 1200 H1800', '#b8b0a2', 6);
+  const meio = ret(330, 520, 420, 1080, '#5a6672', 0) + ret(352, 540, 376, 1060, '#bcd8e2', 0) + stroke('M380 600 L470 520 M420 760 L600 560 M560 900 L720 720', '#e9f5f8', 10)
+    + ret(352, 980, 376, 36, '#f2f2ee', 0, 0) + txt(540, 1006, 'SALA DE REUNIÃO', 22, '#55606c')
+    + placa(-60, 600, 330, 210, '#fff6e6', ['MISSÃO:', 'Gratidão', 'com resultado'], 30, OUT, -2)
+    + ret(860, 1180, 120, 410, '#cfd6da', 10) + ell(920, 1150, 52, 52, '#8fd3e8', OUT, 3) + ret(890, 1300, 60, 20, '#55606c', 4, 2)
+    + ret(-150, 1420, 120, 180, '#b96d53', 10) + ell(-90, 1330, 80, 110, '#637351', OUT, 3) + ell(-60, 1260, 50, 70, '#738058', OUT, 3)
+    + ell(1000, 420, 58, 58, '#fff6e6', OUT, 4) + stroke('M1000 420 L1000 382 M1000 420 L1026 432', OUT, 5) + txt(1000, 510, '8h20', 26, '#c23b3b');
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#a9a39a"/><rect x="-900" y="${CHAO - 40}" width="2900" height="12" fill="#2a1f22"/>`;
+  return [{ f: .85, svg: fundo }, { f: .92, svg: meio }, { f: 1, svg: chao }];
+}
+// Sala de reunião, vista de dentro: telão com o gráfico da Lua, mesa e janela da cidade.
+function cenaSalaReuniao() {
+  const fundo = `<rect x="-700" y="-300" width="2500" height="2400" fill="#dcd6ca"/>` + ret(-300, 300, 520, 700, '#9fb3c4', 0, 4) + ret(-280, 320, 480, 660, '#bcd0dc', 0, 0) + stroke('M-40 320 V980 M-280 650 H200', '#8fa3b4', 6);
+  const meio = ret(330, 330, 620, 400, '#2a2f38', 10) + ret(350, 350, 580, 360, '#f7f4ef', 4, 0) + txt(640, 400, 'METAS DO TRIMESTRE', 30, '#2a4f8a')
+    + [0, 1, 2, 3].map((i) => ret(420 + i * 120, 660 - (i + 1) * 55, 70, (i + 1) * 55, i === 3 ? '#e0304f' : '#2a4f8a', 2, 2)).join('')
+    + placa(560, 760, 380, 80, '#f2d36b', ['PROMOÇÃO DO MÊS'], 30)
+    + ret(-200, 1360, 1480, 70, '#7a5a44', 8) + ret(-160, 1430, 40, 170, '#55606c', 0) + ret(1160, 1430, 40, 170, '#55606c', 0);
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#9c958b"/>`;
+  return [{ f: .7, svg: fundo }, { f: .9, svg: meio }, { f: 1, svg: chao }];
+}
+// Frente da casa do Jão, à noite: laje com caixa-d'água, portão, muro baixo, poste e varal.
+function cenaCasaJao() {
+  const fundo = ceuSerie(true, 'ceuJ') + silhuetaSerie(860, true);
+  const meio = FIOS + ret(-260, 560, 1080, 1100, '#c08a62', 0) + reboco([[-180, 640, 150, 56], [380, 720, 120, 50], [60, 980, 100, 44]], '#a7744f')
+    + ret(-260, 520, 1080, 50, '#8e6a52', 0) + ret(40, 380, 220, 150, '#3c6f9a', 10) + txt(150, 470, '1000 L', 30, '#e9f2f8')
+    + janelaPredio(-160, 700, 200, 180, true) + janelaPredio(300, 700, 200, 180, false)
+    + ret(560, 900, 260, 700, '#3b4d5e', 0) + [0, 1, 2, 3, 4, 5].map((i) => stroke(`M${580 + i * 40} 920 V1590`, '#2a3742', 8)).join('')
+    + placa(80, 980, 300, 110, '#fff6e6', ['Garagem da', 'Companheira'], 28, OUT, -2)
+    + ret(-400, 1300, 960, 300, '#d9a07a', 0) + reboco([[-300, 1360, 120, 44], [200, 1420, 140, 50]], '#bd8660')
+    + ret(820, 1300, 700, 300, '#d9a07a', 0)
+    + stroke('M900 700 Q1050 760 1200 700', '#5d5e66', 3) + shape('M960 720 L1000 720 L996 790 L964 790Z', '#e8736f', 2) + shape('M1050 735 L1110 735 L1104 800 L1056 800Z', '#8fd3e8', 2)
+    + (typeof SerieVisual !== 'undefined' ? SerieVisual.lampada(1000, 560) : '');
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#77707a"/><rect x="-900" y="${CHAO - 40}" width="2900" height="14" fill="#2a1f22"/><rect x="-900" y="${CHAO + 150}" width="2900" height="240" fill="#454955"/>`;
+  return [{ f: .3, svg: fundo }, { f: .9, svg: meio }, { f: 1, svg: chao }];
+}
+// Duas fachadas do mesmo condomínio, de frente uma para a outra; a câmera fica no vão entre elas.
+function fachadaBloco(x, w, cor, nome, acesa) {
+  let s = ret(x, 260, w, 1700, cor, 0, 3) + reboco([[x + 40, 420, 120, 46], [x + w - 170, 1040, 110, 44]], 'rgba(0,0,0,.13)');
+  for (let r = 0; r < 4; r++) for (let c = 0; c < 2; c++) { const xx = x + 70 + c * (w - 260), yy = 360 + r * 300; s += janelaPredio(xx, yy, 120, 170, (r * 3 + c * 5) % 4 === 1); }
+  s += janelaPredio(acesa[0], acesa[1], 200, 260, true) + placa(x + w / 2 - 110, 290, 220, 52, '#fff6e6', [nome], 24);
+  return s;
+}
+function cenaJanelas() {
+  const fundo = ceuSerie(true, 'ceuJn') + silhuetaSerie(980, true);
+  const meio = fachadaBloco(-420, 760, '#9a6a55', 'Bloco 4', [140, 940]) + fachadaBloco(740, 760, '#5f7a7a', 'Bloco 5', [740, 940])
+    + `<path d="M340 600 Q540 690 740 590" stroke="#343646" stroke-width="3" fill="none"/>` + shape('M500 640 L540 640 L536 700 L504 700Z', '#f2d36b', 2) + shape('M570 655 L610 655 L606 710 L574 710Z', '#e8736f', 2)
+    + (typeof SerieVisual !== 'undefined' ? SerieVisual.arvore(540, 1640, .9) : '');
+  const chao = `<rect x="-900" y="1580" width="2900" height="460" fill="#454955"/>`;
+  return [{ f: .3, svg: fundo }, { f: .85, svg: meio }, { f: 1, svg: chao }];
+}
+// Close de uma janela, por fora: parede, moldura e o interior aceso. O parapeito vem pela frente, no plano.
+function cenaJanelaClose(cor, interior, fundoInt) {
+  const fundo = `<rect x="-700" y="-300" width="2500" height="2400" fill="${fundoInt}"/>` + interior;
+  const meio = `<path fill-rule="evenodd" d="M-700 -300 H1800 V2300 H-700Z M140 380 H940 V1500 H140Z" fill="${cor}"/>` + reboco([[-20, 200, 140, 50], [960, 1600, 120, 44], [980, 300, 90, 40]], 'rgba(0,0,0,.13)')
+    + ret(130, 370, 820, 1140, 'none', 0, 14);
+  return [{ f: .85, svg: fundo }, { f: 1, svg: meio }];
+}
+const INT_TICO = () => `<g transform="rotate(-4 330 600)">` + stroke('M200 470 L200 760', '#6a5a4a', 8) + ret(200, 470, 300, 190, '#1d1d22', 2, 3) + shape('M200 560 L500 520 L500 560 L200 600Z', '#f4f1ea', 0) + `<circle cx="350" cy="565" r="30" fill="#f4f1ea" stroke="#1d1d22" stroke-width="5"/>` + '</g>'
+  + ell(820, 600, 46, 46, '#ffe6a0', OUT, 3) + `<ellipse cx="820" cy="600" rx="230" ry="200" fill="#ffd98a" opacity=".25"/>`;
+const INT_LUA = () => { let s = ret(160, 470, 330, 520, '#7a5a44', 4, 3); const cores = ['#ae5d49', '#2a4f8a', '#e2b13f', '#637351', '#c9b8a0', '#8a4a6a'];
+  for (let r = 0; r < 4; r++) { s += ret(160, 470 + r * 130 + 118, 330, 12, '#5d4434', 0, 0); for (let i = 0; i < 7; i++) { const h = 80 + (i * 13 + r * 7) % 30; s += ret(176 + i * 42, 470 + r * 130 + 118 - h, 34, h, cores[(i + r * 2) % cores.length], 2, 2); } }
+  return s + ell(820, 560, 50, 50, '#ffe6a0', OUT, 3) + `<ellipse cx="820" cy="560" rx="240" ry="200" fill="#ffd98a" opacity=".22"/>`; };
+
+/* ---------- ep. 3: objetos ---------- */
+function onibusSVG(x, y, s) {
+  let c = `<g transform="translate(${x} ${y}) scale(${s})">` + ell(0, 6, 520, 26, '#181e2b', 'none', 0, 'opacity=".25"') + ret(-500, -460, 1000, 440, '#2f8f86', 30) + ret(-500, -150, 1000, 40, '#f2d36b', 0, 0);
+  for (let i = 0; i < 6; i++) { c += ret(-470 + i * 160, -420, 140, 160, '#bcd8e2', 8, 3); for (let k = 0; k < 3; k++) c += ell(-440 + i * 160 + k * 42, -300, 18, 20, ['#d59a6e', '#805039', '#e9b18b'][(i + k) % 3], OUT, 2); }
+  return c + pneuSVG(-300, -20, 64) + pneuSVG(300, -20, 64) + txt(330, -180, 'CENTRO', 40, '#fff3d9') + '</g>';
+}
+function perfumeSVG(x, y, s = 1) { return `<g transform="translate(${x} ${y}) scale(${s})">` + ret(-22, -50, 44, 60, '#bfe2ec', 10) + ret(-8, -66, 16, 18, '#e2b13f', 3, 2) + txt(0, -14, 'N°1', 14, '#2a4f8a') + '</g>'; }
+function nuvemPerfumeSVG(x, y, q) { if (q <= 0 || q >= 1) return ''; let s = ''; for (let i = 0; i < 7; i++) { const a = i * .9, r = 40 + q * 160; s += `<circle cx="${(x + Math.cos(a) * r * .8).toFixed(1)}" cy="${(y + Math.sin(a) * r * .5 - q * 60).toFixed(1)}" r="${(30 + q * 70).toFixed(1)}" fill="#f3e6f5" opacity="${(.55 * (1 - q)).toFixed(2)}"/>`; } return s; }
+
+const CENARIOS = { vazio: () => [], rua: () => cenaRua(false), ruaNoite: () => cenaRua(false, true), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), portaDiaAberta: () => cenaPorta(true, true), predioChique: cenaPredioChique, casa: cenaCasa,
+  box: cenaBox, kitnet: () => cenaKitnet(true), kitnetNoite: () => cenaKitnet(false), escritorio: cenaEscritorio, salaReuniao: cenaSalaReuniao, casaJao: cenaCasaJao, janelas: cenaJanelas,
+  janelaTico: () => cenaJanelaClose('#9a6a55', INT_TICO(), '#c9a27a'), janelaLua: () => cenaJanelaClose('#5f7a7a', INT_LUA(), '#d9b48c') };

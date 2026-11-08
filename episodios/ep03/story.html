@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: story do episódio 3</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Story 1080x1920: o Tico pergunta em cima, a Lua pensa embaixo. O Instagram cobre cerca de 250 px no topo e no
+// pé com a barra e a caixa de resposta: os textos ficam entre 260 e 1660.
+const contorno = (x, y, s, tam, cor, borda = 14) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+const cabecaLocal = (d) => -(10 + d.thigh + d.shin + SHOE_H[d.shoe]) - d.torso - d.neck - 73 * d.hs;
+const mao = (d, x, y, s) => `<circle cx="${x}" cy="${y}" r="${d.rw * 1.75 * s}" fill="${d.skin}" stroke="${OUT}" stroke-width="3.2"/>`;
+const papel = (cx, cy, w, h, linhas, tam) => `<g transform="rotate(-2 ${cx} ${cy})"><rect x="${cx - w / 2 + 12}" y="${cy - h / 2 + 14}" width="${w}" height="${h}" rx="8" fill="#181e2b" opacity=".3"/>` + ret(cx - w / 2, cy - h / 2, w, h, '#fbf8f0', 8, 4)
+  + linhas.map((l, i) => `<text x="${cx}" y="${cy - (linhas.length - 1) * tam * .6 + i * tam * 1.2 + tam * .36}" text-anchor="middle" font-family="Comic Sans MS, Arial Black, sans-serif" font-weight="900" font-size="${tam}" fill="#1d1d2b">${esc(l)}</text>`).join('') + '</g>';
+const canetao = (x, y, r = 38) => `<g transform="translate(${x} ${y}) rotate(${r})">` + ret(-11, -116, 22, 100, '#f2f0ea', 5, 2.6) + ret(-11, -136, 22, 26, '#1d1d2b', 5, 2.6) + shape('M-8 -16 L8 -16 L3 0 L-3 0Z', '#1d1d2b', 2) + '</g>';
+// Uma metade da tela: a cena da janela, vista por um recorte do mundo
+const metade = (y0, cena, conteudo, vb) => `<svg x="0" y="${y0}" width="1080" height="960" viewBox="${vb}" preserveAspectRatio="xMidYMid slice">` + CENARIOS[cena]().map((c) => c.svg).join('') + conteudo + '</svg>';
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+
+// Em cima: o Tico com o papel do lanche
+const dt = CHARS.tico, kt = 1.9, yt = 690 - kt * cabecaLocal(dt);
+s += metade(0, 'janelaTico',
+  `<g transform="translate(540 ${yt}) scale(${kt})">${drawChar(dt, { expr: 'envergonhado', semPernas: true, armL: [-30, 60], armR: [30, -60], head: 3, blink: 0, breath: 0 })}</g>`
+  + ret(-200, 1240, 1480, 900, '#9a6a55', 0, 0) + ret(110, 1222, 860, 40, '#e9e1d2', 6, 3)
+  + papel(540, 1010, 640, 330, ['TE PAGO UM', 'LANCHE,', 'QUE TAL?'], 76) + mao(dt, 240, 1030, kt) + mao(dt, 840, 1030, kt) + canetao(862, 1010),
+  '90 380 900 800');
+
+// Embaixo: a Lua pensando, com o canetão no queixo
+const dl = CHARS.lua, kl = 1.9, yl = 690 - kl * cabecaLocal(dl);
+s += metade(960, 'janelaLua',
+  `<g transform="translate(540 ${yl}) scale(${kl})">${drawChar(dl, { expr: 'pensando', semPernas: true, armL: [-12, -6], armR: [-40, -150], frente: 'R', head: -4, blink: 0, breath: 0 })}</g>`
+  + ret(-200, 1240, 1480, 900, '#5f7a7a', 0, 0) + ret(110, 1222, 860, 40, '#e9e1d2', 6, 3) + canetao(632, 828, 30) + mao(dl, 590, 845, kl),
+  '90 430 900 800');
+
+// Divisória com a pergunta
+s += ret(-10, 905, 1100, 110, '#1c1f29', 0, 0) + contorno(540, 985, 'ELA ACEITA?', 84, '#f2d36b', 12);
+
+// Selo do episódio, no alto
+s += `<g transform="rotate(-4 200 320)">` + ret(40, 270, 330, 96, '#c23b3b', 20, 6) + txt(205, 336, 'EP. 3 NO AR', 46, '#fff6e6') + '</g>';
+
+// Chamada para o voto, no pé
+s += `<defs><linearGradient id="pe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172540" stop-opacity="0"/><stop offset=".4" stop-color="#172540" stop-opacity=".88"/><stop offset="1" stop-color="#172540" stop-opacity=".95"/></linearGradient></defs>`;
+s += `<rect x="0" y="1440" width="1080" height="480" fill="url(#pe)"/>`;
+s += contorno(540, 1565, 'VOTA NO REEL:', 58, '#fff6e6', 12);
+s += ret(110, 1600, 400, 92, '#35d04a', 20, 5) + txt(310, 1663, 'ACEITA', 52, '#08280d');
+s += ret(570, 1600, 400, 92, '#ff4f6e', 20, 5) + txt(770, 1663, 'AGORA NÃO', 46, '#3a0612');
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>

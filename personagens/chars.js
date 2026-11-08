@@ -44,6 +44,12 @@ const CHARS = {
   vendedor: { key: 'vendedor', name: 'Vendedor', emoji: '🍬', papel: 'Vendedor de paçoca', desc: 'Vende paçoca na rua e acredita em si mais do que o Tico acredita.', paleta: ['#c98f68', '#4a403c', '#e9e4d8', '#6b5a48'],
     skin: '#c98f68', shade: '#a06e4e', hair: '#4a403c', hairHi: '#7a6e68', iris: '#4a3a2e', cloth: '#e9e4d8', clothD: '#c4bdac', pants: '#6b5a48', pantsD: '#4f4234', shoe: 'chinelo',
     hs: 1.08, neck: 8, neckW: 26, torso: 150, sw: 70, waist: 92, hem: 90, hw: 48, armU: 82, armF: 76, ru: 17, re: 15, rw: 12, sleeve: .12, thigh: 116, shin: 112, rt: 29, rk: 23, ra: 19, lid: .24, bags: true, browW: 5, jaw: 'm' },
+  ceo: { key: 'ceo', name: 'CEO', emoji: '💼', papel: 'Dono da empresa da Lua', desc: 'Dono da empresa em que a Lua trabalha: simpático, distraído e pai do Júnior.', paleta: ['#d8a07a', '#9a9690', '#2f3a52', '#b8323c'],
+    skin: '#d8a07a', shade: '#b07a58', hair: '#9a9690', hairHi: '#c9c5bf', iris: '#4a3a2e', cloth: '#2f3a52', clothD: '#1f2738', pants: '#2f3a52', pantsD: '#1f2738', shoe: 'bota',
+    hs: 1.12, neck: 9, neckW: 24, torso: 165, sw: 78, waist: 84, hem: 82, hw: 52, armU: 86, armF: 80, ru: 19, re: 16.5, rw: 13, sleeve: .94, thigh: 126, shin: 122, rt: 30, rk: 24, ra: 20, lid: .38, bags: true, browW: 5.4, jaw: 'm', oculos: true, gravata: '#b8323c', cracha: 'CEO' },
+  junior: { key: 'junior', name: 'Júnior', emoji: '🧴', papel: 'Filho do CEO', desc: 'Recém-chegado e recém-promovido: educado, perfumado e sem saber abrir um arquivo.', paleta: ['#f0c09a', '#3a2a20', '#cfe3ef', '#3e4450'],
+    skin: '#f0c09a', shade: '#cf9a76', hair: '#3a2a20', hairHi: '#9a7a5e', iris: '#5a4a3a', cloth: '#cfe3ef', clothD: '#9fbccc', pants: '#3e4450', pantsD: '#2a2f38', shoe: 'bota',
+    hs: 1.24, neck: 14, neckW: 18, torso: 160, sw: 58, waist: 46, hem: 50, hw: 44, armU: 88, armF: 84, ru: 13, re: 11, rw: 9, sleeve: .9, thigh: 120, shin: 116, rt: 25, rk: 18, ra: 15.5, lid: .12, browW: 3.6, jaw: 'm', gravata: '#2a4f8a' },
 };
 const EXPR = {
   neutro: { mouth: 'flat' }, cansado: { lid: .55, bags: true, browIn: -2, browY: 2, mouth: 'flat' },
@@ -118,6 +124,9 @@ function hairFront(d) {
   if (d.key === 'leticia') return shape('M-44 -34 Q-53 -88 -22 -100 Q8 -113 34 -94 Q52 -74 44 -34 Q40 -66 16 -82 Q-16 -82 -44 -34Z', h) + stroke('M-26 -84 Q2 -98 30 -80', hi, 2.6) + shape('M28 -96 Q38 -100 42 -90 Q40 -82 31 -83Z', '#bf842a', 2);
   if (d.key === 'borracheiro') return shape('M-44 -30 Q-52 -52 -38 -70 Q-40 -50 -34 -38Z', h) + shape('M44 -30 Q52 -52 38 -70 Q40 -50 34 -38Z', h);
   if (d.key === 'vendedor') return shape('M-45 -26 Q-53 -46 -42 -60 Q-44 -44 -37 -32Z', h) + shape('M45 -26 Q53 -46 42 -60 Q44 -44 37 -32Z', h) + stroke('M-20 -86 Q0 -92 20 -86', d.shade, 2.2);
+  if (d.key === 'ceo') return shape('M-45 -24 Q-54 -50 -40 -70 Q-30 -82 -14 -86 Q-26 -70 -34 -40Z', h) + shape('M45 -24 Q54 -50 40 -70 Q30 -82 14 -86 Q26 -70 34 -40Z', h) + stroke('M-10 -90 Q0 -94 12 -90 M-4 -84 Q4 -88 10 -84', hi, 2.4);
+  if (d.key === 'junior' && d.despenteado) return shape('M-45 -40 L-56 -70 -38 -66 -44 -96 -22 -82 -16 -112 0 -88 12 -116 22 -88 42 -104 38 -78 58 -80 46 -54 47 -38 Q20 -62 0 -60 Q-22 -62 -45 -40Z', h) + stroke('M-30 -72 L-18 -84 M6 -96 L14 -80 M30 -90 L34 -76', hi, 2.4);
+  if (d.key === 'junior') return shape('M-45 -38 Q-52 -84 -16 -98 Q-4 -126 30 -122 Q52 -118 50 -100 Q40 -106 28 -102 Q50 -86 47 -38 Q30 -66 0 -68 Q-26 -66 -45 -38Z', h) + stroke('M-32 -70 Q-12 -88 18 -92 M-20 -60 Q4 -78 34 -80 M4 -106 Q22 -118 42 -112', hi, 3) + ell(22, -104, 7, 3, '#ffffff', 'none', 0, 'opacity=".75"') + ell(-14, -84, 6, 2.5, '#ffffff', 'none', 0, 'opacity=".6"');
   if (d.key === 'marlene') return shape('M-44 -34 C-58 -66 -38 -92 -14 -88 C4 -100 40 -92 44 -60 Q50 -46 43 -32 Q36 -58 14 -66 Q-14 -60 -44 -34Z', h) + stroke('M-30 -68 Q-20 -80 -6 -78 M14 -82 Q28 -78 34 -62', hi, 2.6);
   return '';
 }
@@ -225,6 +234,7 @@ function torsoSVG(d, sy, comBag) {
   let s = shape(p, d.cloth);
   if (d.key === 'tico') s += stroke(`M${-wa + 10} ${sy + th * .6} Q${-wa + 28} ${sy + th * .72} ${-wa + 42} ${sy + th * .7} M${wa - 8} ${sy + th * .78} Q${wa - 24} ${sy + th * .86} ${wa - 44} ${sy + th * .82}`, d.clothD, 2.4);
   if (d.key === 'lua') s += stroke(`M0 ${sy + 18} L0 ${sy + th + 8}`, d.clothD, 2.2) + [40, 72, 104, 136].map(y => ell(2, sy + y, 2, 2, '#f2b88f')).join('');
+  if (d.gravata) s += fillOnly(`M${-nw + 2} ${sy - 3} L0 ${sy + 30} L${nw - 2} ${sy - 3}Z`, '#f4f1ea') + shape(`M-7 ${sy + 2} L7 ${sy + 2} L5 ${sy + 14} L10 ${sy + th * .62} L0 ${sy + th * .7} L-10 ${sy + th * .62} L-5 ${sy + 14}Z`, d.gravata, 2);
   if (comBag) s += stroke(`M${-w + 34} ${sy + 2} L${-wa + 22} ${sy + th * .82} M${w - 34} ${sy + 2} L${wa - 22} ${sy + th * .82}`, '#171c23', 13) + stroke(`M${-wa + 16} ${sy + 72} L${wa - 16} ${sy + 72}`, '#171c23', 7) + `<rect x="-11" y="${sy + 65}" width="22" height="14" rx="3" fill="#a9acb3" stroke="${OUT}" stroke-width="2"/>`;
   if (d.key === 'leticia') s += fillOnly(`M${-nw + 2} ${sy - 3} L0 ${sy + 76} L${nw - 2} ${sy - 3}Z`, '#24252d') + shape(`M${-nw} ${sy - 4} L-6 ${sy + 78} L-20 ${sy + 54} L${-nw - 15} ${sy + 28} L${-nw - 9} ${sy + 6}Z`, '#d09936') + shape(`M${nw} ${sy - 4} L6 ${sy + 78} L20 ${sy + 54} L${nw + 15} ${sy + 28} L${nw + 9} ${sy + 6}Z`, '#d09936') + stroke(`M0 ${sy + 78} L0 ${sy + th + 11}`, d.clothD, 2.4) + ell(6, sy + 98, 3, 3, '#e5c28a', OUT, 1.4);
   return s;
@@ -238,6 +248,7 @@ function neckSVG(d, sy, hy) {
   return s;
 }
 function badgeSVG(d, sy) {
+  if (d.cracha) return stroke(`M-16 ${sy + 18} L-26 ${sy + 70} M16 ${sy + 18} L-14 ${sy + 70}`, '#3c4a5a', 2.4) + `<rect x="-50" y="${sy + 70}" width="60" height="36" rx="4" fill="#eef0f0" stroke="${OUT}" stroke-width="2.4"/><text x="-20" y="${sy + 96}" text-anchor="middle" font-family="Arial Black, Arial" font-weight="900" font-size="19" fill="#b8323c">${d.cracha}</text>`;
   if (d.key !== 'lua') return '';
   return stroke(`M-14 ${sy + 16} L0 ${sy + 52} L14 ${sy + 16}`, '#566d86', 2.6) + `<rect x="-14" y="${sy + 52}" width="28" height="36" rx="3" fill="#eef0f0" stroke="${OUT}" stroke-width="2.4"/><rect x="-9" y="${sy + 58}" width="18" height="10" rx="1" fill="#566d86"/><rect x="-9" y="${sy + 73}" width="18" height="3" fill="#a7afb7"/><rect x="-9" y="${sy + 79}" width="12" height="3" fill="#a7afb7"/>`;
 }

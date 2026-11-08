@@ -1,11 +1,12 @@
 // Gera a capa de um episódio a partir de episodios/<ep>/capa.html.
-// Uso: node scripts/renderizar-capa.mjs ep01 render/ep01_capa.png
+// Uso: node scripts/renderizar-capa.mjs ep01 render/ep01_capa.png [capa.html]
+// O terceiro argumento escolhe outra página da pasta, como story.html.
 import { chromium } from 'playwright-core';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-const [ep = 'ep01', saida = `render/${ep}_capa.png`] = process.argv.slice(2);
-const pagina = pathToFileURL(path.resolve('episodios', ep, 'capa.html')).href;
+const [ep = 'ep01', saida = `render/${ep}_capa.png`, arquivo = 'capa.html'] = process.argv.slice(2);
+const pagina = pathToFileURL(path.resolve('episodios', ep, arquivo)).href;
 
 const navegador = await chromium.launch({ channel: 'chrome', headless: true });
 try {

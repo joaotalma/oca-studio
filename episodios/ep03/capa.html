@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: capa do episódio 3</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Capa 1080x1920. A grade do perfil corta em 3:4 (y de 240 a 1680): título, rosto, papel e selo ficam nessa faixa.
+const contorno = (x, y, s, tam, cor, borda = 16) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+const cabecaLocal = (d) => -(10 + d.thigh + d.shin + SHOE_H[d.shoe]) - d.torso - d.neck - 73 * d.hs;
+const mao = (d, x, y, s) => `<circle cx="${x}" cy="${y}" r="${d.rw * 1.75 * s}" fill="${d.skin}" stroke="${OUT}" stroke-width="3.2"/>`;
+const papel = (cx, cy, w, h, linhas, tam, rot = -2) => `<g transform="rotate(${rot} ${cx} ${cy})"><rect x="${cx - w / 2 + 12}" y="${cy - h / 2 + 14}" width="${w}" height="${h}" rx="8" fill="#181e2b" opacity=".3"/>` + ret(cx - w / 2, cy - h / 2, w, h, '#fbf8f0', 8, 4)
+  + linhas.map((l, i) => `<text x="${cx}" y="${cy - (linhas.length - 1) * tam * .6 + i * tam * 1.2 + tam * .36}" text-anchor="middle" font-family="Comic Sans MS, Arial Black, sans-serif" font-weight="900" font-size="${tam}" fill="#1d1d2b">${esc(l)}</text>`).join('') + '</g>';
+const canetao = (x, y) => `<g transform="translate(${x} ${y}) rotate(38)">` + ret(-11, -116, 22, 100, '#f2f0ea', 5, 2.6) + ret(-11, -136, 22, 26, '#1d1d2b', 5, 2.6) + shape('M-8 -16 L8 -16 L3 0 L-3 0Z', '#1d1d2b', 2) + '</g>';
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+// A janela do Tico à noite, descida 200 px para o título caber em cima
+const DESCE = 200;
+for (const c of CENARIOS.janelaTico()) s += `<g transform="translate(0 ${DESCE})">${c.svg}</g>`;
+s += `<rect x="-10" y="-10" width="1100" height="${380 + DESCE}" fill="#9a6a55"/>` + reboco([[60, 120, 150, 50], [860, 60, 120, 44]], 'rgba(0,0,0,.13)');
+
+// Tico na janela, com cara de quem pede desculpa
+const d = CHARS.tico, k = 2.05, cab = 950, y = cab - k * cabecaLocal(d);
+s += `<g transform="translate(540 ${y}) scale(${k})">${drawChar(d, { expr: 'envergonhado', semPernas: true, armL: [-30, 60], armR: [30, -60], head: 4, blink: 0, breath: 0 })}</g>`;
+
+// Parapeito, papel e mãos
+s += ret(-20, 1450, 1120, 520, '#9a6a55', 0, 0) + ret(110, 1430, 860, 44, '#e9e1d2', 6, 3);
+s += papel(540, 1265, 720, 320, ['DESCULPA.'], 104);
+s += mao(d, 210, 1290, k) + mao(d, 870, 1290, k) + canetao(895, 1268);
+
+// Faixa escura atrás do título
+s += `<defs><linearGradient id="topo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172540" stop-opacity=".92"/><stop offset=".75" stop-color="#172540" stop-opacity=".7"/><stop offset="1" stop-color="#172540" stop-opacity="0"/></linearGradient></defs>`;
+s += `<rect x="0" y="0" width="1080" height="700" fill="url(#topo)"/>`;
+for (let i = 0; i < 26; i++) s += `<circle cx="${(i * 173) % 1080}" cy="${(i * 97) % 520 + 20}" r="${1.5 + i % 3}" fill="#ffefd2" opacity=".55"/>`;
+s += `<g transform="rotate(-3 540 420)">` + contorno(540, 365, 'SE VIRA,', 130, '#fff6e6', 18) + contorno(540, 565, 'TICO', 230, '#f2d36b', 22) + '</g>';
+
+// Selo do episódio
+s += `<g transform="rotate(-2 540 1570)">`
+  + ret(150, 1490, 780, 180, '#fff6e6', 26, 6)
+  + ret(120, 1452, 170, 80, '#c23b3b', 18, 6)
+  + txt(205, 1509, 'EP. 3', 44, '#fff6e6')
+  + txt(540, 1574, 'FUGIU DA CARONA,', 54, OUT)
+  + txt(540, 1640, 'VOLTOU COM BILHETE', 54, '#c23b3b')
+  + '</g>';
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>

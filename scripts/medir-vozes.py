@@ -9,7 +9,7 @@ import glob, os, statistics, subprocess, sys
 import numpy as np
 
 SR = 16000
-FAIXA = {'tico': (85, 195), 'jao': (70, 165), 'borracheiro': (85, 195), 'lua': (180, 340), 'leticia': (170, 380), 'vendedor': (85, 195), 'marlene': (150, 300)}
+FAIXA = {'tico': (85, 195), 'jao': (70, 165), 'borracheiro': (85, 195), 'lua': (180, 340), 'leticia': (170, 380), 'vendedor': (85, 195), 'marlene': (150, 300), 'ceo': (100, 210), 'junior': (120, 260)}
 
 
 def f0_mediana(caminho):

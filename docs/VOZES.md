@@ -1,6 +1,36 @@
 # Vozes
 
-**Decisão atual:** as vozes são geradas localmente no VoiceStudio, com o motor OmniVoice, e a série é publicada **sem monetização**.
+**Decisão atual (a partir do ep. 3):** as vozes são geradas no **ElevenLabs**, com uma voz fixa por personagem. O OmniVoice, de licença não comercial, ficou nos eps. 1 e 2.
+
+## ElevenLabs
+
+- **Chave:** em `.env.local` (`ELEVENLABS_API_KEY`), fora do git. Rode os scripts com `node --env-file=.env.local`.
+- **Vozes fixas:** criadas uma vez pelo Voice Design (`eleven_ttv_v3`), cada uma guiada pelo clipe antigo do personagem em `audio/vozes/`, para ficar parecida com a dos eps. 1 e 2. Os `voice_id` ficam em `scripts/vozes-elevenlabs.json`. Não recrie: a mesma voz segue em todos os episódios.
+
+| Personagem | Referência usada | Prévia escolhida | F0 da referência | F0 da prévia |
+|---|---|---|---|---|
+| Tico | tico | 0 | 156 Hz | 154 Hz |
+| Lua | lua | 2 | 262 Hz | 262 Hz |
+| Jão | jao | 2 | 123 Hz | 127 Hz |
+| Letícia | leticia | 2 | 333 Hz | 333 Hz |
+| CEO | borracheiro | 1 | 157 Hz | 158 Hz |
+| Júnior | vendedor | 1 | 170 Hz | 163 Hz |
+
+A prévia foi escolhida por medida (`python scripts/comparar-vozes.py`: altura e timbre médio contra a referência). Quem julga o som é o autor; se uma voz não agradar, gere novas prévias só dela e salve outra.
+
+```bash
+node --env-file=.env.local scripts/elevenlabs-criar-vozes.mjs previas tico      # só se for trocar uma voz
+node --env-file=.env.local scripts/elevenlabs-criar-vozes.mjs salvar tico=1
+node --env-file=.env.local scripts/gerar-vozes-elevenlabs.mjs episodios/ep03 audio/ep03 [--refazer 7,12]
+```
+
+- **Falas:** `gerar-vozes-elevenlabs.mjs` lê a tabela de `falas.md`, usa o modelo `eleven_v4` em português e grava também `alinhamento/NN.json`, com o tempo de cada palavra. `ESTABILIDADE=0.85` deixa a entonação mais contida quando uma fala sai fora do tom.
+- **Conferir:** `python scripts/medir-vozes.py audio/ep03` mede a altura. Para conferir a pronúncia, transcreva com o speech-to-text do ElevenLabs.
+- **Personagem novo:** acrescente em `PERSONAGENS` de `scripts/elevenlabs-criar-vozes.mjs`, com descrição em inglês, texto de amostra em português (100 a 1000 caracteres) e um clipe de referência.
+
+## OmniVoice (eps. 1 e 2)
+
+Os eps. 1 e 2 foram gerados localmente no VoiceStudio, com o motor OmniVoice, e são publicados **sem monetização**.
 
 ## Licença
 

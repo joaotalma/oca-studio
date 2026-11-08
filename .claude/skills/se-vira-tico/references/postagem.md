@@ -13,10 +13,14 @@ Monte a legenda nesta ordem, com emojis e linhas curtas. Ela precisa chamar aten
 3. **Piada-título:** uma linha que repete a da capa.
 4. **Chamada para o voto:** 👇 "COMENTA SUA ESCOLHA:", com uma opção por linha. Cada opção tem um emoji próprio, a palavra do voto em CAIXA ALTA e meia frase dizendo o que acontece.
 5. **Promessa:** "A mais comentada abre o próximo episódio! 🔥"
-6. **Crédito obrigatório:** "🎙️ Vozes geradas com OmniVoice." É exigência da licença; não remova.
+6. **Crédito das vozes:** "🎙️ Vozes geradas com ElevenLabs." a partir do ep. 3. Nos eps. 1 e 2, "🎙️ Vozes geradas com OmniVoice.", exigência da licença; não remova.
 7. **Hashtags:** no máximo 5, sempre com #SeViraTico, #Animação, #Comédia e #Humor. A quinta varia conforme o tema do episódio.
 
 Use no máximo 2 emojis por linha. As palavras do voto precisam ser exatamente as da tela final do vídeo.
+
+## Story
+
+Cada episódio ganha `render/epNN_story.png` (de `episodios/epNN/story.html`, com `node scripts/renderizar-capa.mjs epNN render/epNN_story.png story.html`). Deixe os textos entre y 260 e 1660, longe das barras do Instagram. O autor acrescenta a figurinha de link para o Reel. Não use enquete: os votos que contam são os dos comentários.
 
 ## Comentário fixado
 
