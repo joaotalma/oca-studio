@@ -26,6 +26,8 @@ export const PERSONAGENS = {
     texto: 'Gente, presta atenção: eu acordo às quatro da manhã para agradecer, e hoje a minha vida mudou completamente. Gratidão, gente!' },
   ceo: { ref: 'borracheiro', desc: 'Brazilian Portuguese man around 60, low grainy voice, jovial and self-satisfied company owner, slow paternal delivery.',
     texto: 'Parabéns a todos pelo trimestre! Esse menino aqui vai longe, eu sempre disse: talento vem de berço, e esta empresa é uma família.' },
+  vendedor: { ref: 'vendedor', desc: 'Brazilian Portuguese man in his late 40s, low hoarse street-vendor voice, hopeful and chatty, believes in himself, warm working-class accent.',
+    texto: 'Olha a paçoca, freguês, tá fresquinha! Eu vendo nessa rua faz muito tempo, e hoje o dia ainda vai melhorar, pode escrever o que eu tô dizendo.' },
   junior: { ref: 'vendedor', desc: 'Brazilian Portuguese young man around 25, light polished voice, polite and a bit naive, rich-kid office tone.',
     texto: 'Oi, gente, prazer! Eu sou o Júnior, o novo gerente. Alguém me manda o arquivo da apresentação? Eu não achei a pasta compartilhada.' },
 };

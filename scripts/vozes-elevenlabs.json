@@ -28,5 +28,10 @@
   "voiceId": "jUGzs0RMu1LpNbvvinsk",
   "previa": 1,
   "referencia": "vendedor"
+ },
+ "vendedor": {
+  "voiceId": "ePd4yti5BMm8PtB0iafk",
+  "previa": 0,
+  "referencia": "vendedor"
  }
 }

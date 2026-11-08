@@ -26,6 +26,8 @@ function palavras(al) {
   return out;
 }
 
+// MODELO=eleven_multilingual_v2 no ambiente segura melhor o tom de uma voz que sobe demais no eleven_v4.
+const MODELO = process.env.MODELO || 'eleven_v4';
 const client = new ElevenLabsClient();
 fs.mkdirSync(path.join(saida, 'alinhamento'), { recursive: true });
 let caracteres = 0;
@@ -34,7 +36,7 @@ for (const f of falas) {
   if (fs.existsSync(mp3) && !refazer.has('todas') && !refazer.has(String(Number(f.n)))) continue;
   if (!vozes[f.voz]) { console.error('sem voz no registro:', f.voz); process.exit(1); }
   const r = await client.textToSpeech.convertWithTimestamps(vozes[f.voz].voiceId, {
-    text: f.texto, modelId: 'eleven_v4', languageCode: 'pt', outputFormat: 'mp3_44100_128',
+    text: f.texto, modelId: MODELO, ...(MODELO === 'eleven_multilingual_v2' ? {} : { languageCode: 'pt' }), outputFormat: 'mp3_44100_128',
     voiceSettings: { stability: Number(process.env.ESTABILIDADE || .5), similarityBoost: .8 },
   });
   fs.writeFileSync(mp3, Buffer.from(r.audioBase64, 'base64'));

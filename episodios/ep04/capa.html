@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: capa do episódio 4</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Capa 1080x1920. A grade do perfil corta em 3:4 (y de 240 a 1680): título, carro, rostos e selo ficam nessa faixa.
+const contorno = (x, y, s, tam, cor, borda = 16) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+const cabecaLocal = (d) => -(10 + d.thigh + d.shin + SHOE_H[d.shoe]) - d.torso - d.neck - 73 * d.hs;
+const mao = (d, x, y, s) => `<circle cx="${x}" cy="${y}" r="${d.rw * 1.75 * s}" fill="${d.skin}" stroke="${OUT}" stroke-width="3.2"/>`;
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+// Fim de tarde na rua, com a silhueta da cidade
+s += ceuSerie(false, 'ceuCapa') + silhuetaSerie(1000, false) + `<rect x="0" y="0" width="1080" height="1920" fill="#f08a3c" opacity=".18"/>`;
+s += `<path d="M500 1000 L580 1000 L1300 1920 L-220 1920Z" fill="#454955"/>` + [0, 1, 2, 3].map((i) => { const q = .25 + i * .2; return `<rect x="${540 - 8 - 12 * q}" y="${1000 + 900 * q * q}" width="${16 + 24 * q}" height="${30 + 80 * q}" fill="#e0bf7d"/>`; }).join('');
+
+// O carro de frente, maior, com a Lua atrás e o Tico ao volante
+const CX = 540, CY = 1720, CK = 1.05;
+s += carroSVG(CX, CY, CK, { parte: 'fundo' });
+const dl = CHARS.lua, ls = .9, ly = 850 - ls * cabecaLocal(dl);
+s += `<g transform="translate(380 ${ly}) scale(${ls})">${drawChar(dl, { expr: 'lado', semPernas: true, armL: [-9, -5], armR: [9, 5], head: -6, blink: 0, breath: 0 })}</g>`;
+const dt = CHARS.tico, ts = 1.12, vx = CX + CARRO.volante[0] * CK, vy = CY + CARRO.volante[1] * CK, ty = 860 - ts * cabecaLocal(dt);
+s += `<g transform="translate(${vx} ${ty}) scale(${ts})">${drawChar(dt, { expr: 'envergonhado', detalhe: 'suor', semPernas: true, armL: [-20, 40], armR: [20, -40], blink: 0, breath: 0 })}</g>`;
+s += carroSVG(CX, CY, CK, {}) + mao(dt, vx - 118, vy - 6, ts) + mao(dt, vx + 118, vy - 6, ts);
+// Linhas de perfume saindo do cinto
+s += [0, 1, 2].map((i) => `<path d="M${330 + i * 50} 1060 q22 -40 0 -80 q-22 -40 0 -80" fill="none" stroke="#e8a0d8" stroke-width="9" stroke-linecap="round" opacity=".85"/>`).join('');
+
+// Faixa escura atrás do título
+s += `<defs><linearGradient id="topo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172540" stop-opacity=".92"/><stop offset=".75" stop-color="#172540" stop-opacity=".7"/><stop offset="1" stop-color="#172540" stop-opacity="0"/></linearGradient></defs>`;
+s += `<rect x="0" y="0" width="1080" height="760" fill="url(#topo)"/>`;
+s += `<g transform="rotate(-3 540 420)">` + contorno(540, 365, 'SE VIRA,', 130, '#fff6e6', 18) + contorno(540, 565, 'TICO', 230, '#f2d36b', 22) + '</g>';
+
+// Selo do episódio
+s += `<g transform="rotate(-2 540 1570)">`
+  + ret(150, 1490, 780, 180, '#fff6e6', 26, 6)
+  + ret(120, 1452, 170, 80, '#c23b3b', 18, 6)
+  + txt(205, 1509, 'EP. 4', 44, '#fff6e6')
+  + txt(540, 1574, 'É SÓ UMA CORRIDA.', 54, OUT)
+  + txt(540, 1640, 'COM PERFUME NO CINTO', 50, '#c23b3b')
+  + '</g>';
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>

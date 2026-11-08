@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compara as prévias do ElevenLabs com o clipe de referência de cada personagem e indica a mais parecida.
 
-Uso: python scripts/comparar-vozes.py
+Uso: python scripts/comparar-vozes.py [tico,lua,...]
 Mede a altura (F0 mediana) e o timbre médio (energia em 24 faixas de 150 a 5000 Hz, em dB).
 Distância = 3 x |log2(F0 prévia / F0 referência)| + distância de timbre (média das diferenças, em dB / 10).
 A escolha por medida é um ponto de partida: quem julga o som é o autor.
@@ -15,7 +15,7 @@ f0_mediana = import_module('medir-vozes').f0_mediana
 
 SR = 16000
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REF = {'tico': 'tico', 'lua': 'lua', 'jao': 'jao', 'leticia': 'leticia', 'ceo': 'borracheiro', 'junior': 'vendedor'}
+REF = {'tico': 'tico', 'lua': 'lua', 'jao': 'jao', 'leticia': 'leticia', 'ceo': 'borracheiro', 'junior': 'vendedor', 'vendedor': 'vendedor'}
 
 
 def timbre(caminho):
@@ -37,7 +37,10 @@ def timbre(caminho):
 def main():
     sys.stdout.reconfigure(encoding='utf-8')
     escolha = {}
+    so = sys.argv[1].split(',') if len(sys.argv) > 1 else list(REF)
     for nome, ref in REF.items():
+        if nome not in so:
+            continue
         r = os.path.join(RAIZ, 'audio', 'vozes', f'{ref}.wav')
         f0r, tr = f0_mediana(r)[0], timbre(r)
         linhas = []

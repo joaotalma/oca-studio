@@ -322,8 +322,8 @@ function cenaSalaReuniao() {
   return [{ f: .7, svg: fundo }, { f: .9, svg: meio }, { f: 1, svg: chao }];
 }
 // Frente da casa do Jão, à noite: laje com caixa-d'água, portão, muro baixo, poste e varal.
-function cenaCasaJao() {
-  const fundo = ceuSerie(true, 'ceuJ') + silhuetaSerie(860, true);
+function cenaCasaJao(dia = false) {
+  const fundo = ceuSerie(!dia, dia ? 'ceuJd' : 'ceuJ') + silhuetaSerie(860, !dia);
   const meio = FIOS + ret(-260, 560, 1080, 1100, '#c08a62', 0) + reboco([[-180, 640, 150, 56], [380, 720, 120, 50], [60, 980, 100, 44]], '#a7744f')
     + ret(-260, 520, 1080, 50, '#8e6a52', 0) + ret(40, 380, 220, 150, '#3c6f9a', 10) + txt(150, 470, '1000 L', 30, '#e9f2f8')
     + janelaPredio(-160, 700, 200, 180, true) + janelaPredio(300, 700, 200, 180, false)
@@ -332,7 +332,7 @@ function cenaCasaJao() {
     + ret(-400, 1300, 960, 300, '#d9a07a', 0) + reboco([[-300, 1360, 120, 44], [200, 1420, 140, 50]], '#bd8660')
     + ret(820, 1300, 700, 300, '#d9a07a', 0)
     + stroke('M900 700 Q1050 760 1200 700', '#5d5e66', 3) + shape('M960 720 L1000 720 L996 790 L964 790Z', '#e8736f', 2) + shape('M1050 735 L1110 735 L1104 800 L1056 800Z', '#8fd3e8', 2)
-    + (typeof SerieVisual !== 'undefined' ? SerieVisual.lampada(1000, 560) : '');
+    + (!dia && typeof SerieVisual !== 'undefined' ? SerieVisual.lampada(1000, 560) : '');
   const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#77707a"/><rect x="-900" y="${CHAO - 40}" width="2900" height="14" fill="#2a1f22"/><rect x="-900" y="${CHAO + 150}" width="2900" height="240" fill="#454955"/>`;
   return [{ f: .3, svg: fundo }, { f: .9, svg: meio }, { f: 1, svg: chao }];
 }
@@ -373,6 +373,67 @@ function onibusSVG(x, y, s) {
 function perfumeSVG(x, y, s = 1) { return `<g transform="translate(${x} ${y}) scale(${s})">` + ret(-22, -50, 44, 60, '#bfe2ec', 10) + ret(-8, -66, 16, 18, '#e2b13f', 3, 2) + txt(0, -14, 'N°1', 14, '#2a4f8a') + '</g>'; }
 function nuvemPerfumeSVG(x, y, q) { if (q <= 0 || q >= 1) return ''; let s = ''; for (let i = 0; i < 7; i++) { const a = i * .9, r = 40 + q * 160; s += `<circle cx="${(x + Math.cos(a) * r * .8).toFixed(1)}" cy="${(y + Math.sin(a) * r * .5 - q * 60).toFixed(1)}" r="${(30 + q * 70).toFixed(1)}" fill="#f3e6f5" opacity="${(.55 * (1 - q)).toFixed(2)}"/>`; } return s; }
 
+/* ---------- ep. 4: quarto da Lua, à noite, com a estante e a janela ---------- */
+function estanteLua(x, y, k = 1) {
+  let s = `<g transform="translate(${x} ${y}) scale(${k})">` + ret(0, 0, 360, 640, '#7a5a44', 4, 3);
+  const cores = ['#ae5d49', '#2a4f8a', '#e2b13f', '#637351', '#c9b8a0', '#8a4a6a'];
+  for (let r = 0; r < 4; r++) { s += ret(0, r * 160 + 146, 360, 14, '#5d4434', 0, 0); for (let i = 0; i < 8; i++) { if (r === 2 && i === 5) continue; const h = 96 + (i * 13 + r * 7) % 34; s += ret(16 + i * 42, r * 160 + 146 - h, 34, h, cores[(i + r * 2) % cores.length], 2, 2); } }
+  return s + '</g>';
+}
+function cenaQuartoLua() {
+  const fundo = ceuSerie(true, 'ceuQL') + silhuetaSerie(980, true) + janelaPredio(600, 520, 120, 170, true);
+  const meio = `<path fill-rule="evenodd" d="M-700 -300 H1800 V1700 H-700Z M560 380 H1000 V900 H560Z" fill="#d9b48c"/>` + reboco([[80, 260, 140, 50], [1040, 1000, 110, 44]], 'rgba(0,0,0,.08)')
+    + ret(550, 370, 460, 540, 'none', 0, 10) + stroke('M780 370 V910 M550 640 H1010', OUT, 8) + ret(530, 900, 500, 26, '#efe3cf', 3)
+    + estanteLua(60, 560) + ell(900, 1080, 60, 22, '#f2d36b', OUT, 3) + stroke('M900 1080 V1200', OUT, 6) + `<ellipse cx="900" cy="1060" rx="220" ry="180" fill="#ffd98a" opacity=".2"/>`;
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="#8a6a52"/><rect x="-900" y="${CHAO - 40}" width="2900" height="12" fill="#2a1f22"/>`;
+  return [{ f: .3, svg: fundo }, { f: .92, svg: meio }, { f: 1, svg: chao }];
+}
+// Caderno de receitas da avó, fechado (para mão e estante)
+function cadernoSVG(x, y, k = 1, rot = 0) {
+  return `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${k})">` + ret(-46, -64, 92, 128, '#c9774f', 6, 3) + ret(-46, -64, 14, 128, '#8e4f33', 3, 0) + ret(-22, -30, 58, 34, '#f4e7c9', 3, 2) + txt(7, -8, 'Receitas', 12, '#7a3f1f') + '</g>';
+}
+
+/* ---------- ep. 4: carro alugado, visto de frente ---------- */
+// Desenha em camadas: 'fundo' (interior e bancos) e 'frente' (vidro, painel e carroceria).
+// x, y: centro do para-choque no chão. As medidas internas têm o carro com 1000 px de largura em k = 1.
+const CARRO = { volante: [160, -585], banco: -560 };
+function carroSVG(x, y, k, o = {}) {
+  const T0 = `<g transform="translate(${x} ${y}) scale(${k})">`;
+  if (o.parte === 'fundo') {
+    return T0 + `<path d="M-400 -980 L400 -980 L470 -600 L-470 -600Z" fill="#2c2f38"/>` + ret(-430, -760, 860, 200, '#3b3f4a', 20, 0)
+      + ret(-330, -920, 140, 110, '#4a4f5c', 26, 3) + ret(90, -920, 140, 110, '#4a4f5c', 26, 3) + '</g>';
+  }
+  const cor = o.cor || '#d9dde0', escura = o.corEscura || '#aab0b6';
+  return T0
+    // vidro do para-brisa: tom azulado e um reflexo
+    + `<path d="M-400 -980 L400 -980 L470 -600 L-470 -600Z" fill="#a9d6e3" opacity=".16"/>`
+    + `<path d="M-330 -970 L-250 -970 L-380 -610 L-450 -610Z M250 -975 L290 -975 L170 -610 L130 -610Z" fill="#ffffff" opacity=".18"/>`
+    + `<path fill-rule="evenodd" d="M-470 -1030 L470 -1030 L540 -600 L540 -560 L-540 -560 L-540 -600Z M-400 -980 L400 -980 L470 -600 L-470 -600Z" fill="${cor}" stroke="${OUT}" stroke-width="5"/>`
+    + ret(-150, -1000, 300, 16, escura, 6, 0)
+    // painel e volante
+    + ret(-470, -610, 940, 60, '#262931', 10, 4)
+    + `<ellipse cx="${CARRO.volante[0]}" cy="${CARRO.volante[1]}" rx="135" ry="52" fill="none" stroke="#1b1d22" stroke-width="22"/>`
+    + `<ellipse cx="${CARRO.volante[0]}" cy="${CARRO.volante[1]}" rx="135" ry="52" fill="none" stroke="#3c4048" stroke-width="8"/>`
+    + ret(-80, -700, 140, 92, '#1b1d22', 10, 3) + ret(-72, -692, 124, 76, o.telaApp || '#3b8fd6', 6, 0)
+    // capô, faróis, grade, placa e para-choque
+    + `<path d="M-540 -560 L540 -560 L560 -300 L-560 -300Z" fill="${cor}" stroke="${OUT}" stroke-width="5"/>` + stroke('M-300 -540 Q0 -500 300 -540', escura, 6)
+    + `<path d="M-560 -300 L560 -300 L560 -90 Q560 -40 510 -40 L-510 -40 Q-560 -40 -560 -90Z" fill="${cor}" stroke="${OUT}" stroke-width="5"/>`
+    + ell(-400, -230, 95, 46, '#fff6d5', OUT, 5) + ell(400, -230, 95, 46, '#fff6d5', OUT, 5)
+    + ret(-220, -270, 440, 90, '#2a2d34', 20, 4) + [0, 1, 2, 3].map((i) => stroke(`M${-190 + i * 127} -255 V-195`, '#4a4f5c', 6)).join('')
+    + ret(-130, -160, 260, 66, '#f4f6f8', 6, 4) + txt(0, -114, o.placa || 'LOC-4D10', 38, OUT)
+    + ret(-560, -90, 1120, 50, '#2a2d34', 16, 4)
+    + ret(-520, -40, 150, 70, '#1b1d22', 16, 0) + ret(370, -40, 150, 70, '#1b1d22', 16, 0)
+    + ret(300, -985, 130, 44, '#f2d36b', 6, 3) + txt(365, -955, 'LOCADORA', 17, OUT)
+    + '</g>';
+}
+function ventiladorSVG(x, y, k, t) {
+  const a = (t * 1400) % 360;
+  return `<g transform="translate(${x} ${y}) scale(${k})">` + ret(-14, 40, 28, 70, '#c7cbd0', 4, 2.5) + ell(0, 118, 50, 14, '#9aa3aa', OUT, 2.5)
+    + `<circle cx="0" cy="0" r="62" fill="#e9f2f8" fill-opacity=".35" stroke="${OUT}" stroke-width="3"/>`
+    + `<g transform="rotate(${a.toFixed(1)})">` + [0, 120, 240].map((r) => `<ellipse transform="rotate(${r})" cx="0" cy="-30" rx="16" ry="30" fill="#8fd3e8" stroke="${OUT}" stroke-width="2"/>`).join('') + '</g>'
+    + `<circle cx="0" cy="0" r="10" fill="#55606c" stroke="${OUT}" stroke-width="2"/>` + '</g>';
+}
+
 const CENARIOS = { vazio: () => [], rua: () => cenaRua(false), ruaNoite: () => cenaRua(false, true), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), portaDiaAberta: () => cenaPorta(true, true), predioChique: cenaPredioChique, casa: cenaCasa,
-  box: cenaBox, kitnet: () => cenaKitnet(true), kitnetNoite: () => cenaKitnet(false), escritorio: cenaEscritorio, salaReuniao: cenaSalaReuniao, casaJao: cenaCasaJao, janelas: cenaJanelas,
+  box: cenaBox, kitnet: () => cenaKitnet(true), kitnetNoite: () => cenaKitnet(false), escritorio: cenaEscritorio, salaReuniao: cenaSalaReuniao, casaJao: () => cenaCasaJao(false), casaJaoDia: () => cenaCasaJao(true), quartoLua: cenaQuartoLua, janelas: cenaJanelas,
   janelaTico: () => cenaJanelaClose('#9a6a55', INT_TICO(), '#c9a27a'), janelaLua: () => cenaJanelaClose('#5f7a7a', INT_LUA(), '#d9b48c') };

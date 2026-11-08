@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: story do episódio 4</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Story 1080x1920: os olhos da Lua no retrovisor em cima, o Tico ao volante embaixo.
+// O Instagram cobre cerca de 250 px no topo e no pé: os textos ficam entre 260 e 1660.
+const contorno = (x, y, s, tam, cor, borda = 14) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+const cabecaLocal = (d) => -(10 + d.thigh + d.shin + SHOE_H[d.shoe]) - d.torso - d.neck - 73 * d.hs;
+const mao = (d, x, y, s) => `<circle cx="${x}" cy="${y}" r="${d.rw * 1.75 * s}" fill="${d.skin}" stroke="${OUT}" stroke-width="3.2"/>`;
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+s += ceuSerie(false, 'ceuSt') + silhuetaSerie(900, false) + `<rect x="0" y="0" width="1080" height="1920" fill="#f08a3c" opacity=".2"/>`;
+s += `<rect x="0" y="0" width="1080" height="250" fill="#262931"/>`;
+
+// Retrovisor com os olhos da Lua
+const ex = 120, ey = 330, ew = 840, eh = 330;
+s += `<defs><clipPath id="espelho"><rect x="${ex}" y="${ey}" width="${ew}" height="${eh}" rx="48"/></clipPath></defs>`;
+s += `<g clip-path="url(#espelho)"><rect x="${ex}" y="${ey}" width="${ew}" height="${eh}" fill="#3b3f4a"/>`;
+const dl = CHARS.lua, ls = 3.0, ly = 545 - ls * cabecaLocal(dl);
+s += `<g transform="translate(540 ${ly}) scale(${-ls} ${ls})">${drawChar(dl, { expr: 'triste', semPernas: true, blink: 0, breath: 0 })}</g>`;
+s += `<rect x="${ex}" y="${ey}" width="${ew}" height="${eh}" fill="#ffffff" opacity=".07"/></g>`;
+s += ret(ex - 16, ey - 16, ew + 32, eh + 32, 'none', 60, 22) + ret(530, 250, 20, 70, '#262931', 6, 3);
+
+
+// O Tico ao volante, apertando as mãos
+const CX = 540, CY = 2080, CK = 1.0;
+s += carroSVG(CX, CY, CK, { parte: 'fundo' });
+const dt = CHARS.tico, ts = 1.1, vx = CX + CARRO.volante[0] * CK, vy = CY + CARRO.volante[1] * CK, ty = 1250 - ts * cabecaLocal(dt);
+s += `<g transform="translate(${vx} ${ty}) scale(${ts})">${drawChar(dt, { expr: 'surpreso', detalhe: 'suor', semPernas: true, armL: [-20, 40], armR: [20, -40], blink: 0, breath: 0 })}</g>`;
+s += carroSVG(CX, CY, CK, {}) + mao(dt, vx - 128, vy - 6, ts) + mao(dt, vx + 128, vy - 6, ts);
+
+// A pergunta, por cima do carro
+s += contorno(540, 790, 'POR QUE VOCÊ SUMIU', 66, '#fff6e6', 12) + contorno(540, 870, 'NAQUELE DIA?', 66, '#f2d36b', 12);
+// Selo e chamada
+s += `<g transform="rotate(-4 200 980)">` + ret(40, 930, 330, 96, '#c23b3b', 20, 6) + txt(205, 996, 'EP. 4 NO AR', 46, '#fff6e6') + '</g>';
+s += `<defs><linearGradient id="pe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172540" stop-opacity="0"/><stop offset=".4" stop-color="#172540" stop-opacity=".88"/><stop offset="1" stop-color="#172540" stop-opacity=".95"/></linearGradient></defs>`;
+s += `<rect x="0" y="1440" width="1080" height="480" fill="url(#pe)"/>`;
+s += contorno(540, 1565, 'VOTA NO REEL:', 58, '#fff6e6', 12);
+s += ret(110, 1600, 400, 92, '#35d04a', 20, 5) + txt(310, 1663, 'VERDADE', 50, '#08280d');
+s += ret(570, 1600, 400, 92, '#ff4f6e', 20, 5) + txt(770, 1663, 'DESCULPA', 50, '#3a0612');
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>
