@@ -13,7 +13,7 @@ Este arquivo vale para o Claude Code e para o Codex. Responda ao autor em portug
 ## Regras do projeto
 
 - **Publicação:** só o autor publica. Não poste nem agende nada.
-- **Licença das vozes:** as vozes do OmniVoice têm licença não comercial. Sem monetização, e com crédito na legenda.
+- **Licença das vozes:** os eps. 1 e 2 usam OmniVoice, de licença não comercial: não monetize esses dois e mantenha o crédito na legenda. Do ep. 3 em diante as vozes são do ElevenLabs (`docs/VOZES.md`). Antes de monetizar, confirme na página oficial que o plano do autor permite uso comercial.
 - **Git:** depois que o autor aceitar uma alteração, faça o commit e o push na branch de trabalho sem perguntar de novo. Inclua só os arquivos dessa alteração e nunca envie direto para a `main`. Merge só a pedido do autor.
 - **Arquivos fora do git:** vídeos e áudios finais ficam fora do git, com cópia no Drive. Referências de voz ficam em `audio/vozes/`; não as apague.
 - **Rig:** edite `personagens/chars.js`, nunca as cópias nas pastas de episódio.

@@ -1,47 +1,55 @@
 # Episódio 6: Sessão das Oito
 
-**Status:** pré-roteiro novo e final da T1, com cerca de 60 s e 10 falas. Substitui "Só Pra Não Incomodar". Reúne o resultado do 5, o cinema que antes ficava no 8 e o gancho da T2, que é a viagem da Lua. A versão anterior está no histórico do git.
+**Status:** pré-roteiro final da T1, com cerca de 60 s e 10 falas. Reúne o resultado do 5, o cinema que antes ficava no 8 e o gancho da T2, que é a viagem da Lua. Atualizado em 8/11/2026 para o voto real do ep. 5 (CONFIA ou OUTRO MOTORISTA) e para a regra de andar só para a frente: saiu o gancho "Mais cedo". As versões anteriores estão no histórico do git.
 
-## O fio
+## Contrato
 
-Os dois finalmente escolhem estar juntos por vontade própria. Na hora do momento bom, Lua guarda uma notícia que muda tudo.
+- **Fio:** "às oito". No ep. 2 ele prometeu sem saber; no 5, prometeu sem conferir. Agora confere antes de dizer sim.
+- **Pergunta:** depois da entrega, ela ainda conta com ele?
+- **Pista:** o horário "às oito", que volta no convite e no cinema.
+- **Virada:** a aprovação no curso chega quando os dois finalmente escolhem sair juntos.
+- **Entrega:** ela toma a iniciativa do convite, e ele aceita conferindo o app.
+- **O que fica:** o público sabe da viagem, e o Tico não. Ela guarda a notícia por escolha, e isso vira a falha concreta dela na T2.
 
 ## Produção
 
-- **Trecho que depende do voto do 5:** só o bloco 1, com 3 falas por caminho. Se o 4 teve CONTA, entra uma fala no bloco 3.
+- **Trecho que depende do voto do 5:** só o bloco 1, com 3 falas por caminho.
 - **Texto na tela, sem voz:** o e-mail da aprovação e a notificação no cinema.
 - **Cinema:** a tela mostra só luz e reações. Nada de cenas de filmes de terceiros.
+- **Cidade do curso:** Porto Alegre, RS, como no ep. 5.
 
-## Gancho — 0–3 s
+## 1. Retomada: o resultado da entrega — 0–12 s
 
-No escuro do cinema, duas mãos disputam o braço da poltrona. Cartão "Mais cedo".
+Retoma o último plano do ep. 5, o polegar da Lua sobre "Chamar outra entrega" às 19h41, com o filtro de lembrança por no máximo 1 s. Nos primeiros 3 s, a legenda "Ela decidiu se confiava nele." deixa o conflito claro para quem chega agora.
 
-## 1. O resultado da entrega — 3–14 s
+**Se CONFIA:** ela tira o polegar do botão e espera. Às 20h14, ele chega correndo, e as caixas saem atrasadas.
+— Mas chegou.
+— Eu não sabia se ia chegar, Tico.
+Ela sorri cansada: confiar custou catorze minutos, e os dois sabem disso.
 
-**Se AVISA:**
+**Se OUTRO MOTORISTA:** as caixas saem às 19h45 com outro carro. Às 20h14, ele chega a uma cozinha vazia.
 — Obrigada por avisar.
 — Não fiz nada.
 — Fez. Eu consegui resolver.
+Ele fica feliz por ela e murcha um pouco por não ter sido ele.
 
-**Se DÁ UM JEITO:** as caixas chegam atrasadas.
-— Mas chegou.
-— Eu não sabia se ia chegar, Tico.
+Fecha no título.
 
-## 2. Ela convida — 14–26 s
+## 2. Ela convida — 12–26 s
 
-Quem toma a iniciativa é Lua:
+Dias depois. Quem toma a iniciativa é a Lua, por vontade própria:
 — Sexta tem sessão às oito. Você tá de turno?
 
 Ele começa a dizer "Eu desmarco tudo", para e confere o app.
 — Às oito eu posso.
 
-É um retorno ao "às oito" do ep. 2. Agora ele confere antes de prometer, e isso mostra o que aprendeu.
+É a pista da temporada: o "às oito" do ep. 2 e do ep. 5 volta, e agora ele confere antes de prometer. Close sem corte nele conferindo.
 
 ## 3. A notícia — 26–34 s
 
-Lua se arruma para sair e o celular acende: "Aprovada! Curso de Confeitaria, [cidade em outro estado]. Início em 30 dias." Ela sorri, depois fica séria e guarda o celular na bolsa.
+A Lua se arruma para sair, e o celular acende: "Aprovada! Curso de Confeitaria, Porto Alegre, RS. Início em 30 dias." Ela sorri, depois fica séria e guarda o celular na bolsa. A campainha toca.
 
-**Se o 4 teve CONTA:** ela ensaia baixinho "Tico, sabe aquele curso..." e desiste quando a campainha toca.
+No caminho da corrida ela nunca contou o sonho ao Tico, então ele não sabe nem do curso.
 
 ## 4. A sessão — 34–50 s
 
@@ -55,11 +63,11 @@ A piada é do autor e precisa de teste de naturalidade no roteiro final.
 
 ## 5. O quase — 50–55 s
 
-Na bolsa dela, o celular vibra com "Confirme sua vaga até amanhã". Lua olha o celular, depois olha para Tico, e chega mais perto.
+Na bolsa dela, o celular vibra com "Confirme sua vaga até amanhã". A Lua olha o celular, depois olha para o Tico, e chega mais perto. Corte seco.
 
 ## Votação — 55–60 s
 
-**BEIJA** ou **NÃO BEIJA**. A resposta abre a T2. O voto não decide namoro e não resolve a viagem.
+**BEIJA** ou **NÃO BEIJA**. O público vota o gesto, não a relação: na tela, "O beijo não decide namoro." A resposta abre a T2 e não resolve a viagem.
 
 ## Fecho da temporada — 60–63 s
 

@@ -6,10 +6,10 @@ Extraídas da aba "Plano de produção" da bíblia. São valores iniciais: calib
 |---|---|---|
 | Forma | Proporção adulta, cabeça cerca de 29% da altura, olhar cansado, contorno de espessura fixa, silhueta própria | Em preto chapado, dá para dizer quem é quem |
 | Cenário | Pelo menos 5 objetos, 3 camadas com paralaxe leve, 1 piada visual de fundo, paleta quente | Nenhuma cena com chão vazio |
-| Informação vira objeto | Notificação, nota de app, boleto ou placar entram na palavra, em até 6 quadros; no máximo 2 por episódio | O objeto aparece na palavra, nunca depois |
+| Informação vira objeto | Notificação, nota de app, boleto ou placar entram na palavra, em até 6 quadros. Telas sem voz são livres, desde que cada uma traga informação nova | O objeto aparece na palavra, nunca depois; a tela se lê no celular sem pausar |
 | Rostos | 12 expressões + 4 detalhes; troca a cada 2 a 3 s, dentro de uma piscada; 4 bocas pelo volume | A boca abre quando o som sobe |
 | Movimentos | Gesto de 5 a 6 quadros que termina 0,1 a 0,2 s antes da palavra-chave | Nenhum gesto chega depois da fala |
-| Câmera | Imagem muda a cada 2 a 3 s (cerca de 30 a 35 cortes em 80 a 90 s), com rostos grandes e cenários simples; close sem fala de 3 a 4 s no "riso que engasga" | A câmera mostra o que importa |
+| Câmera | Corte quando muda a informação ou chega uma reação, com rostos grandes e cenários simples; close sem fala de 3 a 4 s no "riso que engasga". Os 2 a 3 s por plano dos eps. 1 e 2 são referência de ritmo, não meta | A câmera mostra o que importa; nenhum corte sem motivo |
 | Som | Um efeito por acontecimento, um som de objeto por cena, trilha sempre abaixo da voz, grave só no impacto, silêncio antes de cada revelação | A fala se entende em fone barato |
 
 ## Kit do piloto

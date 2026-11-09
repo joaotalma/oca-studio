@@ -1,11 +1,11 @@
 ---
 name: se-vira-tico
-description: "Fluxo de produção dos episódios da série animada Se Vira, Tico (TikTok, 90 s, votação A/B). Use ao escrever roteiro, montar cena, gerar áudio com tempo por palavra, renderizar ou revisar qualquer episódio."
+description: "Fluxo de produção dos episódios da série animada Se Vira, Tico (Reels, pouco mais de 60 s, votação A/B). Use ao escrever roteiro, montar cena, gerar áudio com tempo por palavra, renderizar ou revisar qualquer episódio."
 ---
 
 # Se Vira, Tico
 
-Comédia romântica animada em 2D para TikTok. Os eps. 1 e 2 têm cerca de 90 s; do ep. 3 em diante, pouco mais de 60 s (acima de 1 min, requisito de monetização), em vídeo vertical, e corta o clímax com duas opções A/B para o público votar. O desfecho vencedor abre o episódio seguinte.
+Comédia romântica animada em 2D para Reels (Instagram); TikTok e YouTube estão pausados. Os eps. 1 e 2 têm cerca de 90 s; do ep. 3 em diante, pouco mais de 60 s (acima de 1 min, requisito de monetização), em vídeo vertical, e corta o clímax com duas opções A/B para o público votar. O desfecho vencedor abre o episódio seguinte.
 
 **Logline:** Tico, 31, vive de bico em bico e chama o desemprego de "transição de carreira". Ao reencontrar a Lua, vizinha de infância e primeiro crush, passa a inventar mentiras e bicos cada vez mais absurdos para parecer que a vida está resolvida.
 
@@ -21,7 +21,9 @@ A fonte da história é `docs/BIBLIA.md`, com a temporada 1 episódio a episódi
 
 **Mundo:** capital grande sem bairro real, em paleta quente (laranja, verde-limão, azul-turquesa), com fios de poste, laje e parede com reboco aparente.
 
-**Roteiro:** estrutura de 90 s, regra do absurdo e votação estão em `references/roteiro.md`.
+**Centro:** a relação do Tico com a Lua, com os altos e baixos da falta de estabilidade financeira e emocional dos dois. Bicos e cargos são o contorno.
+
+**Roteiro:** contrato do episódio (fio, pergunta, pista, virada, entrega), estrutura de pouco mais de 60 s, votação e regra do absurdo estão em `references/roteiro.md`. O percurso da temporada e a memória de cada voto estão em `episodios/PRE_ROTEIROS_T1.md`.
 
 **Postagem:** legenda com emojis, comentário fixado e kit do Instagram estão em `references/postagem.md`. Para montar a pasta no Drive, rode `bash scripts/kit-instagram.sh episodios/epNN`.
 
@@ -78,9 +80,9 @@ Trabalhe na branch `epNN` e abra um Pull Request para `main`. Não faça merge.
 
 ### 1. Roteiro: `episodios/epNN/roteiro.md`
 
-Siga `references/roteiro.md`: de 200 a 230 palavras, começando no meio da ação, com a regra do absurdo e a sinopse do episódio em `docs/BIBLIA.md`. Cada fala indica personagem, emoção, gesto, plano, cenário, objeto-informação e efeito sonoro. A partir do ep. 2, abra com o desfecho da opção vencedora.
+Parta do `pre_roteiro.md` do episódio e dos comentários do autor nele. Siga `references/roteiro.md`: escreva primeiro o contrato e a corrente de causa e consequência, depois as falas. Cada fala indica personagem, emoção, gesto, plano, cenário, objeto-informação e efeito sonoro. Abra retomando o ponto exato em que o episódio anterior parou, no caminho vencedor, sem voltar no tempo.
 
-Conte as palavras e meça os tempos: as cenas saem dessa conta. Assim que o autor aprovar o roteiro, acrescente a linha do episódio em `episodios/continuidade.md`. Atualize essa linha quando o vídeo sair e a votação fechar.
+Conte falas e palavras e meça os tempos pelo ritmo das vozes do episódio anterior: as cenas saem dessa conta. Antes de pedir aprovação, passe a conferência do fim de `references/roteiro.md`. Assim que o autor aprovar o roteiro, acrescente a linha do episódio em `episodios/continuidade.md`. Atualize essa linha quando o vídeo sair e a votação fechar.
 
 ### 2. Cenas: `episodios/epNN/cenas.md`
 
@@ -96,7 +98,7 @@ cd episodios/epNN
 W=540 H=960 bash ~/.claude/skills/take-one/scripts/render-parallel.sh 15 90 ../../render/epNN_rascunho.mp4 1 12
 ```
 
-Depois gere as vozes localmente com `python scripts/gerar-vozes.py episodios/epNN audio/epNN`, com o VoiceStudio aberto. Os arquivos ficam em `audio/epNN/` (`01_tico.mp3`, `02_lua.mp3`...). A licença do motor é não comercial: leia `docs/VOZES.md`. Confira cada fala com transcrição e ajuste a grafia quando a pronúncia sair errada.
+Depois gere as vozes no ElevenLabs com `node --env-file=.env.local scripts/gerar-vozes-elevenlabs.mjs episodios/epNN audio/epNN`, como descreve `docs/VOZES.md`. Os arquivos ficam em `audio/epNN/`. Confira cada fala com transcrição e ajuste a grafia quando a pronúncia sair errada. O OmniVoice, de licença não comercial, ficou só nos eps. 1 e 2.
 
 ### 4. Áudio com tempo por palavra
 
@@ -126,8 +128,9 @@ No rascunho, acrescente `--rascunho`: resolução e fps passam a ser 540x960 e 1
 - [ ] Legenda alinhada à voz real.
 - [ ] Loudness perto de -16 LUFS (TikTok).
 - [ ] Duração de 85 a 95 s nos eps. 1 e 2; de 61 a 68 s do ep. 3 em diante.
-- [ ] Gesto antes da palavra; expressão troca na piscada; imagem muda a cada 2 a 3 s.
-- [ ] Compreensível sem ter visto os episódios anteriores.
+- [ ] Gesto antes da palavra; expressão troca na piscada; cada corte motivado por informação nova ou reação.
+- [ ] Conflito compreensível nos primeiros 3 s, sem ter visto os episódios anteriores.
+- [ ] Toda tela de texto legível no celular sem pausar.
 
 Detalhes e forma de medir: `references/qa-checklist.md`.
 

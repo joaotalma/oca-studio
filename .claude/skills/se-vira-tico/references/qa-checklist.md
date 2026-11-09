@@ -16,7 +16,9 @@
 | Voto A/B | Duas opções claras no clímax, levando ao mesmo próximo marco | Visual |
 | Sincronia de gesto | Termina 0,1 a 0,2 s antes da palavra-chave; o objeto-informação aparece na palavra | Visual, com folha de contato |
 | Expressão | Troca a cada 2 a 3 s, dentro de uma piscada | Visual |
-| Ritmo de imagem | Muda a cada 2 a 3 s, com close sem fala de 3 a 4 s no "riso que engasga" | Visual |
+| Ritmo de imagem | Cada corte motivado por informação nova ou reação; close sem fala de 3 a 4 s no "riso que engasga" | Visual |
+| Abertura | Conflito compreensível nos primeiros 3 s; lembrança em preto e branco de no máximo 1 s | Visual, sem ter visto o episódio anterior |
+| Texto na tela | Cada tela legível no celular sem pausar | Autor, no celular |
 | Cenário | Pelo menos 5 objetos, 3 camadas, 1 piada visual; nada de chão vazio | Visual |
 | Quatro problemas | Personagem atravessando objeto, pé deslizando, expressão atrasada, câmera fora do que importa | Visual, com um quadro a cada 2 s |
 | Tela | Sem tela preta, legenda cortada ou rosto coberto | Visual, com um quadro a cada 2 s |

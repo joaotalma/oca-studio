@@ -30,14 +30,14 @@ Tico permanece motorista de aplicativo por mais tempo, inclusive como possibilid
 |---|---|---|---|
 | 1–2 | Reencontro e promessa da carona, já produzidos | Uma lembrança vira expectativa concreta | Verdade/História; Carona/Chuveiro |
 | 3 | [O Dia Errado](ep03/pre_roteiro.md) | Lua perde a promoção; ele faz o convite e precisa ouvir antes | ACEITA / AGORA NÃO |
-| 4 | [A Hora dos Dois](ep04/pre_roteiro.md) | O encontro ou a corrida abrem conversas diferentes | Encontro: CONTA / GUARDA; corrida: VERDADE / DESCULPA |
-| 5 | [Dá Tempo?](ep05/pre_roteiro.md) | Seis caixas, a divulgação no carro, e ele promete antes de conferir o horário. Ela se inscreve no curso em segredo | AVISA / DÁ UM JEITO |
+| 4 | [A Hora dos Dois](ep04/pre_roteiro.md), produzido como "É Só Uma Corrida" | AGORA NÃO venceu: a corrida paga abre a pergunta "por que você sumiu" | VERDADE / DESCULPA (venceu VERDADE) |
+| 5 | [Dá Tempo?](ep05/pre_roteiro.md) | Seis caixas, a divulgação no carro, e ele promete antes de conferir o horário. Ela se inscreve no curso em segredo. Ele avisa que está a 34 min | CONFIA / OUTRO MOTORISTA (a decisão é da Lua) |
 | 6 | [Sessão das Oito](ep06/pre_roteiro.md) | Ela o convida para o cinema e ele confere antes de prometer. Ela recebe a aprovação e guarda a notícia | BEIJA / NÃO BEIJA; o resultado abre a T2 |
 
 **Passagem de tempo:** o ep. 3 acontece no dia da carona, o 4 alguns dias depois, o 5 na semana seguinte e o 6 poucos dias depois da entrega.
 
 **Regras de corte para 60 s:**
-- Um gancho de 3 s, seguido do cartão "Mais cedo".
+- Sem cartão "Mais cedo" (decisão do autor a partir do ep. 4): a abertura retoma o ponto exato em que o anterior parou, e o conflito fica claro nos primeiros 3 s.
 - No máximo quatro blocos antes do voto.
 - Mensagens, anúncios e painéis aparecem como texto na tela, sem voz.
 - O trecho que depende do voto deve ser curto, para gerar a base antes de a votação fechar.
@@ -56,8 +56,9 @@ Tico permanece motorista de aplicativo por mais tempo, inclusive como possibilid
 | Lua guarda | Ele conhece receitas ou a encomenda, não o projeto profissional |
 | Tico diz a verdade | Ela entende a motivação e ainda pode estar magoada |
 | Tico dá desculpa | A história específica precisa ser corrigida, sem vazamento conveniente por Jão |
-| Avisa o limite | Ela ganha tempo de escolher outra solução |
-| Dá um jeito | O custo e o atraso não desaparecem porque a intenção foi boa |
+| Tico avisa o limite (ep. 5, nos dois caminhos) | Ela sabe que ele diz quando não dá. Ele não volta a prometer sem conferir sem pagar por isso |
+| Confia | Ela esperou por ele; o atraso de 14 min foi dos dois, e a entrega chegou |
+| Outro motorista | Ela resolveu sem ele, graças ao aviso. Ele chegou tarde para ajudar e não ganhou os R$ 20 |
 | SAI do emprego | Ela passa a depender dos doces, com renda incerta e mais pressão sobre cada pedido; Tico não assume as contas dela |
 | FICA por enquanto | Mantém salário e cansaço; precisa limitar pedidos e horários em vez de conseguir fazer tudo |
 | BEIJA | A próxima temporada começa com o beijo e o que ele muda na proximidade, sem namoro automático |
