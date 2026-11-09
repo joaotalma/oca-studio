@@ -1,0 +1,178 @@
+{
+  "slug": "geada-negra-v2",
+  "titulo": "A mesma xícara contaria outra história.",
+  "pergunta": "Quem sente primeiro a perda de uma lavoura?",
+  "pista": "xícara de café",
+  "virada": "A perda começaria no campo e mudaria decisões muito além do café da manhã.",
+  "resposta": "Que parte dessa cadeia você percebe na sua xícara?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://cnabrasil.org.br/noticias/geada-negra-50-anos-do-evento-climatico-que-modificou-o-agro-do-parana",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "A mesma xícara contaria outra história.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar xícara de café",
+      "revela": "A mesma xícara contaria outra história.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 1975, o Paraná colheu 10,2 milhões de sacas de café.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1975, o Paraná colheu 10,2 milhões de sacas de café.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Naquele dia, veio a geada negra.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Naquele dia, veio a geada negra.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Na safra seguinte, a produção despencou para 3,8 mil sacas.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Na safra seguinte, a produção despencou para 3,8 mil sacas.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria esperar a próxima colheita, preservando o que ainda pudesse ser aproveitado.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Você tentaria esperar a próxima colheita, preservando o que ainda pudesse ser aproveitado.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O preço do café na padaria dobraria em poucas semanas.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "O preço do café na padaria dobraria em poucas semanas.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Famílias olhariam para a lavoura preta sem saber o que fazer.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Famílias olhariam para a lavoura preta sem saber o que fazer.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas famílias precisariam atravessar a espera; cada decisão alcançaria outras atividades da cidade.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Mas famílias precisariam atravessar a espera; cada decisão alcançaria outras atividades da cidade.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Cidades inteiras perderiam o motivo de existir.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Cidades inteiras perderiam o motivo de existir.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Bancos cobrariam dívidas de quem não tem mais nada.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Bancos cobrariam dívidas de quem não tem mais nada.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você veria uma família escolher entre esperar o campo se recuperar e buscar trabalho longe.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Você veria uma família escolher entre esperar o campo se recuperar e buscar trabalho longe.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A decisão mudaria a escola, o comércio e a casa de outras pessoas.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "A decisão mudaria a escola, o comércio e a casa de outras pessoas.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A perda começaria no campo e mudaria decisões muito além do café da manhã.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "A perda começaria no campo e mudaria decisões muito além do café da manhã.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A xícara seria pequena. O caminho necessário para enchê-la, muito maior.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "A xícara seria pequena. O caminho necessário para enchê-la, muito maior.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Que parte dessa cadeia você percebe na sua xícara?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em xícara de café",
+      "revela": "Que parte dessa cadeia você percebe na sua xícara?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "slug": "compra-do-acre-v2",
+  "titulo": "Uma rua separaria dois países.",
+  "pergunta": "O que mudaria na rotina se a fronteira fosse outra?",
+  "pista": "mapa da viagem",
+  "virada": "Uma mudança pequena no mapa poderia mudar a identidade de quem mora ali.",
+  "resposta": "Você pensaria primeiro na distância ou na fronteira?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://portalamazonia.com/amazonia/brasil-x-bolivia-saiba-o-que-foi-o-tratado-de-petropolis/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Uma rua separaria dois países.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar mapa da viagem",
+      "revela": "Uma rua separaria dois países.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O Acre já pertenceu à Bolívia.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "O Acre já pertenceu à Bolívia.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas a região era ocupada por seringueiros brasileiros.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Mas a região era ocupada por seringueiros brasileiros.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 17 de novembro de 1903, veio o Tratado de Petrópolis.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 17 de novembro de 1903, veio o Tratado de Petrópolis.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você planejaria visitar a mesma paisagem, como se a viagem continuasse igual.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Você planejaria visitar a mesma paisagem, como se a viagem continuasse igual.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Rio Branco seria uma cidade boliviana.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Rio Branco seria uma cidade boliviana.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A seleção boliviana teria jogadores com sotaque do Norte.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "A seleção boliviana teria jogadores com sotaque do Norte.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas o trajeto conhecido terminaria numa fronteira; detalhes comuns ganhariam outro significado.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Mas o trajeto conhecido terminaria numa fronteira; detalhes comuns ganhariam outro significado.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "E o Brasil teria um formato diferente no mapa da escola.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "E o Brasil teria um formato diferente no mapa da escola.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O mapa escolar teria um contorno a menos.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "O mapa escolar teria um contorno a menos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você olharia uma fotografia de família e pensaria em quem teria aprendido outro hino.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Você olharia uma fotografia de família e pensaria em quem teria aprendido outro hino.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O limite no papel passaria por histórias que não cabem numa linha.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "O limite no papel passaria por histórias que não cabem numa linha.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Ao chegar, reconheceria a paisagem antes de entender os documentos.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Ao chegar, reconheceria a paisagem antes de entender os documentos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Uma mudança pequena no mapa poderia mudar a identidade de quem mora ali.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Uma mudança pequena no mapa poderia mudar a identidade de quem mora ali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A floresta não mudaria de lugar. Quem precisaria explicar de onde veio seria você.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "A floresta não mudaria de lugar. Quem precisaria explicar de onde veio seria você.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você pensaria primeiro na distância ou na fronteira?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em mapa da viagem",
+      "revela": "Você pensaria primeiro na distância ou na fronteira?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

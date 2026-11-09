@@ -1,0 +1,188 @@
+{
+  "slug": "bendego-v2",
+  "titulo": "Uma fortuna bloquearia sua porta.",
+  "pergunta": "Ser dono de algo valioso resolveria sua vida?",
+  "pista": "pedra impedindo a passagem",
+  "virada": "A fortuna seria imóvel; o custo e a disputa chegariam antes do dinheiro.",
+  "resposta": "Você guardaria a descoberta ou tentaria se livrar dela?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://olhardigital.com.br/2023/01/24/ciencia-e-espaco/a-epica-jornada-do-meteorito-bendego/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Uma fortuna bloquearia sua porta.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar pedra impedindo a passagem",
+      "revela": "Uma fortuna bloquearia sua porta.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No sertão da Bahia, havia uma pedra imensa, vinda do espaço.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "No sertão da Bahia, havia uma pedra imensa, vinda do espaço.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Tentaram levá-la em uma carroça puxada por 12 pares de bois.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Tentaram levá-la em uma carroça puxada por 12 pares de bois.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Depois de 180 metros, a carroça quebrou.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Depois de 180 metros, a carroça quebrou.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria vender a descoberta para recuperar a sua rotina.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Você tentaria vender a descoberta para recuperar a sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A rua fecharia, e o seu quintal viraria notícia mundial.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "A rua fecharia, e o seu quintal viraria notícia mundial.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Colecionadores ofereceriam uma fortuna.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Colecionadores ofereceriam uma fortuna.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas mostrar o objeto atrairia ainda mais gente; tirá-lo dali seria outro problema.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Mas mostrar o objeto atrairia ainda mais gente; tirá-lo dali seria outro problema.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Cientistas pediriam um pedaço.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Cientistas pediriam um pedaço.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "E ninguém saberia como tirar aquilo dali.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "E ninguém saberia como tirar aquilo dali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você deixaria a passagem livre para o guincho.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Você deixaria a passagem livre para o guincho.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas antes precisaria combinar quem pagaria a retirada e para onde a pedra poderia ir.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Mas antes precisaria combinar quem pagaria a retirada e para onde a pedra poderia ir.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Enquanto a discussão crescesse, sua rotina continuaria esperando do lado de fora.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Enquanto a discussão crescesse, sua rotina continuaria esperando do lado de fora.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A fortuna seria imóvel; o custo e a disputa chegariam antes do dinheiro.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "A fortuna seria imóvel; o custo e a disputa chegariam antes do dinheiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "O que parecia um presente acabaria controlando a entrada da sua própria casa.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "O que parecia um presente acabaria controlando a entrada da sua própria casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você guardaria a descoberta ou tentaria se livrar dela?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em pedra impedindo a passagem",
+      "revela": "Você guardaria a descoberta ou tentaria se livrar dela?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

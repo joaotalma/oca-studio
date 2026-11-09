@@ -1,0 +1,178 @@
+{
+  "slug": "hiperinflacao-v2",
+  "titulo": "Sua compra aumentaria antes do caixa.",
+  "pergunta": "Como planejar uma compra quando o preço não espera?",
+  "pista": "etiqueta na prateleira",
+  "virada": "A corrida pelo menor preço acabaria consumindo o tempo e a tranquilidade da família.",
+  "resposta": "Você conseguiria planejar a semana assim?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www12.senado.leg.br/noticias/especiais/arquivo-s/antes-do-plano-real-inflacao-no-brasil-chegou-a-2-500-ao-ano",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Sua compra aumentaria antes do caixa.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar etiqueta na prateleira",
+      "revela": "Sua compra aumentaria antes do caixa.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No Brasil, isso já foi rotina.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "No Brasil, isso já foi rotina.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Funcionários remarcavam preços a todo momento com máquinas de etiquetar.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Funcionários remarcavam preços a todo momento com máquinas de etiquetar.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em oito anos, antes do real, o país teve quatro moedas.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em oito anos, antes do real, o país teve quatro moedas.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria comprar logo depois de receber, antes que as etiquetas mudassem de novo.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Você tentaria comprar logo depois de receber, antes que as etiquetas mudassem de novo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O preço no aplicativo mudaria entre o carrinho e o Pix.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "O preço no aplicativo mudaria entre o carrinho e o Pix.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Seu salário perderia valor antes da conta chegar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Seu salário perderia valor antes da conta chegar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas escolher depressa também faria você perder o tempo de comparar e decidir.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Mas escolher depressa também faria você perder o tempo de comparar e decidir.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você correria ao mercado no dia do pagamento.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Você correria ao mercado no dia do pagamento.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O aluguel seria renegociado todo mês.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "O aluguel seria renegociado todo mês.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você olharia o salário e a lista ao mesmo tempo.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Você olharia o salário e a lista ao mesmo tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A dificuldade seria decidir o que comprar sem saber por quanto tempo aquela conta continuaria fazendo sentido.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "A dificuldade seria decidir o que comprar sem saber por quanto tempo aquela conta continuaria fazendo sentido.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A corrida pelo menor preço acabaria consumindo o tempo e a tranquilidade da família.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "A corrida pelo menor preço acabaria consumindo o tempo e a tranquilidade da família.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "O carrinho carregaria comida. A corrida seria para preservar o valor do seu trabalho.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "O carrinho carregaria comida. A corrida seria para preservar o valor do seu trabalho.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você conseguiria planejar a semana assim?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em etiqueta na prateleira",
+      "revela": "Você conseguiria planejar a semana assim?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

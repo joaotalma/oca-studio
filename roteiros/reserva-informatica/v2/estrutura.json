@@ -1,0 +1,177 @@
+{
+  "slug": "reserva-informatica-v2",
+  "titulo": "Seu aparelho dependeria de uma fronteira.",
+  "pergunta": "Proteger uma produção garantiria acesso a boas ferramentas?",
+  "pista": "computador sobre a mesa",
+  "virada": "A origem do produto e sua capacidade de atender às pessoas seriam questões diferentes.",
+  "resposta": "O que você exigiria de um aparelho feito aqui?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.dio.me/articles/direto-ao-ponto-16-a-reserva-de-mercado-da-informatica-no-brasil-1984-1992",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Seu aparelho dependeria de uma fronteira.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar computador sobre a mesa",
+      "revela": "Seu aparelho dependeria de uma fronteira.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em outubro de 1984, o Brasil criou a reserva de mercado da informática.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em outubro de 1984, o Brasil criou a reserva de mercado da informática.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A reserva beneficiava empresas nacionais.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "A reserva beneficiava empresas nacionais.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria resolver o trabalho com as ferramentas disponíveis, aprendendo outros caminhos.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Você tentaria resolver o trabalho com as ferramentas disponíveis, aprendendo outros caminhos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O seu celular seria de uma marca que só existe aqui.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "O seu celular seria de uma marca que só existe aqui.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Os aplicativos de fora nunca chegariam.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Os aplicativos de fora nunca chegariam.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas uma solução que dependesse de peça ou programa específico encontraria novos limites.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Mas uma solução que dependesse de peça ou programa específico encontraria novos limites.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Haveria fila para comprar um modelo de três anos atrás.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Haveria fila para comprar um modelo de três anos atrás.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Alguém traria aparelhos escondidos na mala.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Alguém traria aparelhos escondidos na mala.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você compararia o que precisa fazer com o que o aparelho permite.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Você compararia o que precisa fazer com o que o aparelho permite.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Uma origem nacional não eliminaria a necessidade de aprender, consertar e melhorar o produto.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Uma origem nacional não eliminaria a necessidade de aprender, consertar e melhorar o produto.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Ao mesmo tempo, depender de fora também teria custos.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "Ao mesmo tempo, depender de fora também teria custos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A origem do produto e sua capacidade de atender às pessoas seriam questões diferentes.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "A origem do produto e sua capacidade de atender às pessoas seriam questões diferentes.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A etiqueta diria onde foi feito. Sua rotina diria se ele resolveria o problema.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "A etiqueta diria onde foi feito. Sua rotina diria se ele resolveria o problema.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que você exigiria de um aparelho feito aqui?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em computador sobre a mesa",
+      "revela": "O que você exigiria de um aparelho feito aqui?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+<defs>
+  <linearGradient id="pc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#071318"/><stop offset="1" stop-color="#123840"/></linearGradient>
+  <linearGradient id="pa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14262b"/><stop offset="1" stop-color="#05090b"/></linearGradient>
+  <linearGradient id="pt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf8a"/><stop offset="1" stop-color="#ffb25d" stop-opacity="0"/></linearGradient>
+  <linearGradient id="pm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#17404e"/><stop offset=".55" stop-color="#d4bfae"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <mask id="pk" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><use href="#frente" transform="translate(340 690) scale(.92)" filter="url(#branco)"/></mask>
+</defs>
+<rect width="1080" height="1920" fill="url(#pc)"/>
+<g filter="url(#b6)" opacity=".8" fill="#0c232a">
+  <rect x="0" y="520" width="170" height="620"/><rect x="170" y="600" width="130" height="540"/><rect x="800" y="470" width="160" height="670"/><rect x="960" y="590" width="120" height="550"/>
+</g>
+<g fill="#ffb25d" opacity=".45" filter="url(#b6)"><rect x="40" y="620" width="30" height="40"/><rect x="100" y="720" width="30" height="40"/><rect x="850" y="560" width="30" height="40"/><rect x="900" y="680" width="30" height="40"/></g>
+<!-- asfalto molhado -->
+<rect y="1130" width="1080" height="790" fill="url(#pa)"/>
+<!-- cobertura do posto -->
+<path d="M90 400 H990 L1030 490 H50 Z" fill="#123840" stroke="#050c0f" stroke-width="8"/>
+<rect x="50" y="490" width="980" height="36" fill="#ffcf8a"/>
+<rect x="120" y="526" width="42" height="660" fill="#0d2a31" stroke="#050c0f" stroke-width="6"/><rect x="918" y="526" width="42" height="660" fill="#17404e" stroke="#050c0f" stroke-width="6"/>
+<!-- cone de luz -->
+<path d="M90 526 H990 L1080 1300 H0 Z" fill="url(#pt)" opacity=".2"/>
+<!-- bombas -->
+<g stroke="#050c0f" stroke-width="6">
+  <rect x="210" y="860" width="130" height="310" rx="10" fill="#1f5a60"/><rect x="232" y="890" width="86" height="72" fill="#091418"/><rect x="740" y="860" width="130" height="310" rx="10" fill="#2a6d74"/><rect x="762" y="890" width="86" height="72" fill="#091418"/>
+</g>
+<g font-family="monospace" font-size="42" font-weight="700" fill="#e8493a" text-anchor="middle"><text x="275" y="940">---</text><text x="805" y="940">---</text></g>
+<!-- reflexos no asfalto -->
+<g filter="url(#b12)">
+  <rect x="100" y="1240" width="880" height="26" fill="#ffcf8a" opacity=".5"/><rect x="220" y="1350" width="110" height="280" fill="#2a6d74" opacity=".5"/><rect x="750" y="1350" width="110" height="280" fill="#2a6d74" opacity=".5"/><rect x="130" y="1320" width="30" height="400" fill="#17404e" opacity=".6"/><rect x="925" y="1320" width="30" height="400" fill="#ffb25d" opacity=".25"/>
+</g>
+<!-- sombra e reflexo do personagem -->
+<ellipse cx="540" cy="1566" rx="230" ry="26" fill="#000" opacity=".6" filter="url(#b6)"/>
+<g opacity=".22" filter="url(#b6)"><use href="#frente" transform="translate(340 2440) scale(.92 -.92)"/></g>
+<g mask="url(#pk)">
+  <use href="#frente" transform="translate(340 690) scale(.92)"/>
+  <rect x="340" y="690" width="405" height="880" fill="url(#pm)" style="mix-blend-mode:multiply"/>
+</g>
+</svg>

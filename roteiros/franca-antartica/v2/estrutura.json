@@ -1,0 +1,188 @@
+{
+  "slug": "franca-antartica-v2",
+  "titulo": "Sua cidade teria outra primeira palavra.",
+  "pergunta": "O que permaneceria seu se a história falasse outra língua?",
+  "pista": "placa da rua",
+  "virada": "A mudança de idioma alteraria o cotidiano, sem apagar automaticamente o pertencimento.",
+  "resposta": "O que faz alguém pertencer a uma cidade?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://militares.estrategia.com/portal/mundo-militar/datas-comemorativas/20-de-janeiro-o-dia-da-expulsao-dos-franceses-do-rio-de-janeiro/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Sua cidade teria outra primeira palavra.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar placa da rua",
+      "revela": "Sua cidade teria outra primeira palavra.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em novembro de 1555, cerca de seiscentas pessoas chegaram à Baía de Guanabara.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em novembro de 1555, cerca de seiscentas pessoas chegaram à Baía de Guanabara.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Vinham da França em duas naus.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Vinham da França em duas naus.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Era a França Antártica.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Era a França Antártica.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você procuraria no mapa os lugares conhecidos, tentando descobrir quais nomes reconhecer.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "Você procuraria no mapa os lugares conhecidos, tentando descobrir quais nomes reconhecer.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O samba teria sotaque francês.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "O samba teria sotaque francês.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O boteco se chamaria bistrô.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "O boteco se chamaria bistrô.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas mudar a placa não mudaria o mar; a rotina misturaria familiaridade e estranhamento.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "Mas mudar a placa não mudaria o mar; a rotina misturaria familiaridade e estranhamento.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você aprenderia francês na escola sem ter escolha.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "Você aprenderia francês na escola sem ter escolha.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O futebol seria paixão, mas com outro vocabulário.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "O futebol seria paixão, mas com outro vocabulário.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você ouviria um nome de família pronunciado de outro jeito.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "Você ouviria um nome de família pronunciado de outro jeito.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Tentaria separar o que veio da língua, o que veio da história e o que foi criado ali.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "Tentaria separar o que veio da língua, o que veio da história e o que foi criado ali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A cidade não seria uma cópia pronta de outro país.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "A cidade não seria uma cópia pronta de outro país.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A mudança de idioma alteraria o cotidiano, sem apagar automaticamente o pertencimento.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "A mudança de idioma alteraria o cotidiano, sem apagar automaticamente o pertencimento.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A praia ainda estaria ali. A palavra usada para chamar aquele lugar poderia ser outra.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "A praia ainda estaria ali. A palavra usada para chamar aquele lugar poderia ser outra.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que faz alguém pertencer a uma cidade?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em placa da rua",
+      "revela": "O que faz alguém pertencer a uma cidade?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

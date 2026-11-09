@@ -1,0 +1,20 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"E se fosse verdade em Varginha?","pausa":0,"camada":"seria","inteiro":true,"ini":0,"fim":2.4,"imagens":["assets/c01a.png"]},
+  {"n":2,"quem":"Narrador","texto":"Em janeiro de 1996, no sul de Minas, três jovens contaram uma história.","pausa":0.1,"camada":"foi","ini":2.5,"fim":7.7,"movimento":"zoom-out","imagens":["assets/c02a.png","assets/c02b.png"],"filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"Disseram ter visto uma criatura estranha em um terreno baldio.","pausa":0.1,"camada":"foi","ini":7.8,"fim":11.8,"movimento":"esq","imagens":["assets/c03a.png","assets/c03b.png"],"filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"O caso se espalhou, e surgiram boatos sobre viaturas militares.","pausa":0.1,"camada":"foi","ini":11.9,"fim":15.9,"movimento":"zoom-in","imagens":["assets/c04a.png","assets/c04b.png"],"filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"Em 1997, o Exército abriu um inquérito.","pausa":0.1,"camada":"foi","ini":16,"fim":18.8,"movimento":"dir","imagens":["assets/c05a.png","assets/c05b.png"],"filtro":"flashback"},
+  {"n":6,"quem":"Narrador","texto":"São cerca de 600 páginas, hoje guardadas na Justiça Militar.","pausa":0.1,"camada":"foi","ini":18.9,"fim":22.9,"movimento":"cima","imagens":["assets/c06a.png","assets/c06b.png"],"filtro":"flashback"},
+  {"n":7,"quem":"Narrador","texto":"A conclusão: nenhum indício de operação militar.","pausa":0.1,"camada":"foi","ini":23,"fim":25.8,"movimento":"zoom-in","imagens":["assets/c07a.png","assets/c07b.png"],"filtro":"flashback"},
+  {"n":8,"quem":"Narrador","texto":"E as jovens possivelmente viram um homem que costumava ficar agachado.","pausa":0.1,"camada":"foi","ini":25.9,"fim":30.3,"movimento":"baixo","imagens":["assets/c08a.png","assets/c08b.png"],"filtro":"flashback"},
+  {"n":9,"quem":"Narrador","texto":"Para o inquérito, o caso acabou ali. Agora imagine se a conclusão estivesse errada.","pausa":0.4,"camada":"seria","ini":30.7,"fim":36.3,"movimento":"zoom-out","imagens":["assets/c09a.png","assets/c09b.png"]},
+  {"n":10,"quem":"Narrador","texto":"A criatura seria a prova mais importante da história do planeta.","pausa":0.1,"camada":"seria","ini":36.4,"fim":40.8,"movimento":"zoom-in","imagens":["assets/c10a.png","assets/c10b.png"]},
+  {"n":11,"quem":"Narrador","texto":"Varginha viraria a cidade mais vigiada do mundo.","pausa":0.1,"camada":"seria","ini":40.9,"fim":44.1,"movimento":"zoom-out","imagens":["assets/c11a.png","assets/c11b.png"]},
+  {"n":12,"quem":"Narrador","texto":"Cientistas e curiosos lotariam hotéis, estradas e padarias.","pausa":0.1,"camada":"seria","ini":44.2,"fim":47.4,"movimento":"esq","imagens":["assets/c12a.png","assets/c12b.png"]},
+  {"n":13,"quem":"Narrador","texto":"O terreno baldio valeria mais que um bairro inteiro.","pausa":0.1,"camada":"seria","ini":47.5,"fim":51.1,"movimento":"zoom-in","imagens":["assets/c13a.png","assets/c13b.png"]},
+  {"n":14,"quem":"Narrador","texto":"Outros países iriam querer explicações do Brasil.","pausa":0.1,"camada":"seria","ini":51.2,"fim":54,"movimento":"dir","imagens":["assets/c14a.png","assets/c14b.png"]},
+  {"n":15,"quem":"Narrador","texto":"E toda escola teria que reescrever o livro de ciências.","pausa":0.1,"camada":"seria","ini":54.1,"fim":58.1,"movimento":"cima","imagens":["assets/c15a.png","assets/c15b.png"]},
+  {"n":16,"quem":"Narrador","texto":"Agora imagine você, voltando para casa naquela tarde.","pausa":0.1,"camada":"voce","ini":58.2,"fim":61.4,"movimento":"zoom-in","imagens":["assets/c16a.png","assets/c16b.png"]},
+  {"n":17,"quem":"Narrador","texto":"Você contaria o que viu?","pausa":0.1,"camada":"voce","ini":61.5,"fim":63.5,"movimento":"baixo","imagens":["assets/c17a.png"]},
+  {"n":18,"quem":"Narrador","texto":"Ou ficaria calado para não virar piada?","pausa":0.3,"camada":"voce","ini":63.8,"fim":66.6,"movimento":"zoom-out","imagens":["assets/c18a.png","assets/c18b.png"]}
+];

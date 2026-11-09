@@ -1,0 +1,21 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"Imagine acordar com seu dinheiro preso.","pausa":0,"camada":"seria","inteiro":true,"ini":0,"fim":2.4,"imagens":["assets/c01a.png"]},
+  {"n":2,"quem":"Narrador","texto":"Em março de 1990, isso aconteceu no Brasil.","pausa":0.1,"camada":"foi","ini":2.5,"fim":5.7,"movimento":"zoom-out","imagens":["assets/c02a.png","assets/c02b.png"],"filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"Um dia depois da posse do novo presidente, veio o anúncio.","pausa":0.1,"camada":"foi","ini":5.8,"fim":10.2,"movimento":"esq","imagens":["assets/c03a.png","assets/c03b.png"],"filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"Conta corrente, poupança e aplicações entraram no bloqueio.","pausa":0.1,"camada":"foi","ini":10.3,"fim":13.5,"movimento":"zoom-in","imagens":["assets/c04a.png","assets/c04b.png"],"filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"Acima de 50 mil cruzados novos, o dinheiro ficou preso.","pausa":0.1,"camada":"foi","ini":13.6,"fim":17.6,"movimento":"dir","imagens":["assets/c05a.png","assets/c05b.png"],"filtro":"flashback"},
+  {"n":6,"quem":"Narrador","texto":"O prazo era de 18 meses.","pausa":0.1,"camada":"foi","ini":17.7,"fim":20.1,"movimento":"cima","imagens":["assets/c06a.png"],"filtro":"flashback"},
+  {"n":7,"quem":"Narrador","texto":"Na época, a inflação chegava a 80% ao mês.","pausa":0.1,"camada":"foi","ini":20.2,"fim":23.8,"movimento":"zoom-in","imagens":["assets/c07a.png","assets/c07b.png"],"filtro":"flashback"},
+  {"n":8,"quem":"Narrador","texto":"E naquele ano, a economia entrou em recessão.","pausa":0.1,"camada":"foi","ini":23.9,"fim":27.1,"movimento":"baixo","imagens":["assets/c08a.png","assets/c08b.png"],"filtro":"flashback"},
+  {"n":9,"quem":"Narrador","texto":"O bloqueio tinha prazo. Agora imagine se não tivesse.","pausa":0.4,"camada":"seria","ini":27.5,"fim":31.1,"movimento":"zoom-out","imagens":["assets/c09a.png","assets/c09b.png"]},
+  {"n":10,"quem":"Narrador","texto":"No primeiro dia, seu cartão não pagaria nem o almoço.","pausa":0.1,"camada":"seria","ini":31.2,"fim":35.2,"movimento":"zoom-in","imagens":["assets/c10a.png","assets/c10b.png"]},
+  {"n":11,"quem":"Narrador","texto":"O Pix não ajudaria: seu saldo apareceria, mas não sairia.","pausa":0.1,"camada":"seria","ini":35.3,"fim":39.3,"movimento":"zoom-out","imagens":["assets/c11a.png","assets/c11b.png"]},
+  {"n":12,"quem":"Narrador","texto":"O aluguel venceria, e você não teria como pagar.","pausa":0.1,"camada":"seria","ini":39.4,"fim":43,"movimento":"esq","imagens":["assets/c12a.png","assets/c12b.png"]},
+  {"n":13,"quem":"Narrador","texto":"A sua empresa também não conseguiria pagar salário.","pausa":0.1,"camada":"seria","ini":43.1,"fim":46.3,"movimento":"zoom-in","imagens":["assets/c13a.png","assets/c13b.png"]},
+  {"n":14,"quem":"Narrador","texto":"No mercado, as pessoas trocariam o que têm em casa por comida.","pausa":0.1,"camada":"seria","ini":46.4,"fim":51.2,"movimento":"dir","imagens":["assets/c14a.png","assets/c14b.png"]},
+  {"n":15,"quem":"Narrador","texto":"Uma nota no bolso valeria mais que o saldo inteiro.","pausa":0.1,"camada":"seria","ini":51.3,"fim":55.3,"movimento":"cima","imagens":["assets/c15a.png","assets/c15b.png"]},
+  {"n":16,"quem":"Narrador","texto":"Em um mês, a rua inteira estaria vendendo o que tem.","pausa":0.1,"camada":"seria","ini":55.4,"fim":59.8,"movimento":"zoom-in","imagens":["assets/c16a.png","assets/c16b.png"]},
+  {"n":17,"quem":"Narrador","texto":"Agora abra o aplicativo do seu banco.","pausa":0.1,"camada":"voce","ini":59.9,"fim":62.7,"movimento":"baixo","imagens":["assets/c17a.png","assets/c17b.png"]},
+  {"n":18,"quem":"Narrador","texto":"Olhe o saldo e imagine esse número congelado.","pausa":0.1,"camada":"voce","ini":62.8,"fim":66,"movimento":"zoom-out","imagens":["assets/c18a.png","assets/c18b.png"]},
+  {"n":19,"quem":"Narrador","texto":"Quantos dias você aguentaria sem ele?","pausa":0.3,"camada":"voce","ini":66.3,"fim":68.7,"movimento":"zoom-in","imagens":["assets/c19a.png"]}
+];

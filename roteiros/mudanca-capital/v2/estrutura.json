@@ -1,0 +1,168 @@
+{
+  "slug": "mudanca-capital-v2",
+  "titulo": "Uma cidade pronta poderia parecer vazia.",
+  "pergunta": "Construir uma capital é o mesmo que construir uma vida?",
+  "pista": "chave de uma casa nova",
+  "virada": "A obra poderia terminar antes de existir uma rotina compartilhada no lugar.",
+  "resposta": "O que faria uma cidade nova virar sua casa?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.todamateria.com.br/a-construcao-de-brasilia/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Uma cidade pronta poderia parecer vazia.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar chave de uma casa nova",
+      "revela": "Uma cidade pronta poderia parecer vazia.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "De 1956 a 1960, o Brasil construiu uma capital do zero.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "De 1956 a 1960, o Brasil construiu uma capital do zero.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Ela saiu do Rio de Janeiro e foi para o Planalto Central.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Ela saiu do Rio de Janeiro e foi para o Planalto Central.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O Plano Piloto ficou pronto em cerca de quatro anos.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "O Plano Piloto ficou pronto em cerca de quatro anos.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria recomeçar organizando a casa, o caminho do trabalho e os horários da família.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Você tentaria recomeçar organizando a casa, o caminho do trabalho e os horários da família.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O governo anunciaria uma nova capital no meio do mapa.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "O governo anunciaria uma nova capital no meio do mapa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Sua cidade poderia virar a próxima, ou perder tudo.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Sua cidade poderia virar a próxima, ou perder tudo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas conhecer o endereço não criaria de uma vez as amizades e os serviços da sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Mas conhecer o endereço não criaria de uma vez as amizades e os serviços da sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Imóvel em lugar nenhum valeria uma fortuna da noite para o dia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Imóvel em lugar nenhum valeria uma fortuna da noite para o dia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Milhares de pessoas mudariam com os móveis nas costas.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Milhares de pessoas mudariam com os móveis nas costas.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você reconheceria a fachada antes de reconhecer a vizinhança.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "Você reconheceria a fachada antes de reconhecer a vizinhança.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A obra poderia terminar antes de existir uma rotina compartilhada no lugar.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "A obra poderia terminar antes de existir uma rotina compartilhada no lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A chave abriria a porta no primeiro dia. O sentimento de estar em casa levaria outro tempo.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "A chave abriria a porta no primeiro dia. O sentimento de estar em casa levaria outro tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que faria uma cidade nova virar sua casa?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em chave de uma casa nova",
+      "revela": "O que faria uma cidade nova virar sua casa?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

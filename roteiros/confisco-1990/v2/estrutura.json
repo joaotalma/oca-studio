@@ -1,0 +1,178 @@
+{
+  "slug": "confisco-1990-v2",
+  "titulo": "Seu saldo apareceria. Seu almoço, não.",
+  "pergunta": "Para que serve dinheiro que você não consegue usar?",
+  "pista": "número do saldo na tela",
+  "virada": "Possuir um valor e ter acesso a ele seriam experiências diferentes.",
+  "resposta": "Quanto da sua rotina depende de conseguir usar esse saldo?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://memoria.ebc.com.br/agenciabrasil/noticia/2010-03-16/ha-20-anos-governo-collor-anunciava-confisco-de-parte-das-contas-correntes-e-da-poupanca",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Seu saldo apareceria. Seu almoço, não.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar número do saldo na tela",
+      "revela": "Seu saldo apareceria. Seu almoço, não.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em março de 1990, isso aconteceu no Brasil.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em março de 1990, isso aconteceu no Brasil.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Conta corrente, poupança e aplicações entraram no bloqueio.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Conta corrente, poupança e aplicações entraram no bloqueio.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O prazo era de 18 meses.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "O prazo era de 18 meses.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria pagar de outro jeito, abrindo outro aplicativo ou procurando outro cartão.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Você tentaria pagar de outro jeito, abrindo outro aplicativo ou procurando outro cartão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No primeiro dia, seu cartão não pagaria nem o almoço.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "No primeiro dia, seu cartão não pagaria nem o almoço.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O Pix não ajudaria: seu saldo apareceria, mas não sairia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "O Pix não ajudaria: seu saldo apareceria, mas não sairia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Só que trocar a tela não resolveria se o bloqueio alcançasse o mesmo dinheiro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Só que trocar a tela não resolveria se o bloqueio alcançasse o mesmo dinheiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O aluguel venceria, e você não teria como pagar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "O aluguel venceria, e você não teria como pagar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A sua empresa também não conseguiria pagar salário.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "A sua empresa também não conseguiria pagar salário.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você refaria as contas do mês tentando descobrir qual compromisso poderia esperar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Você refaria as contas do mês tentando descobrir qual compromisso poderia esperar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Adiar uma compra resolveria só uma parte: outras pessoas também estariam contando com aquele pagamento.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Adiar uma compra resolveria só uma parte: outras pessoas também estariam contando com aquele pagamento.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Possuir um valor e ter acesso a ele seriam experiências diferentes.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Possuir um valor e ter acesso a ele seriam experiências diferentes.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "O número continuaria lá. O que sumiria seria a liberdade que você associava a ele.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "O número continuaria lá. O que sumiria seria a liberdade que você associava a ele.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Quanto da sua rotina depende de conseguir usar esse saldo?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em número do saldo na tela",
+      "revela": "Quanto da sua rotina depende de conseguir usar esse saldo?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

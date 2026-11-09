@@ -1,0 +1,198 @@
+{
+  "slug": "congelamento-1986-v2",
+  "titulo": "O preço pararia. A compra também.",
+  "pergunta": "O que vale uma etiqueta barata numa prateleira vazia?",
+  "pista": "etiqueta de preço",
+  "virada": "A promessa de preço acessível dependeria de existir produto para comprar.",
+  "resposta": "Você procuraria o menor preço ou o produto disponível?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.camara.leg.br/radio/programas/271185-28-de-janeiro-de-1986-governo-sarney-lanca-plano-cruzado-06-47",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "O preço pararia. A compra também.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar etiqueta de preço",
+      "revela": "O preço pararia. A compra também.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 1986, um plano econômico congelou preços no Brasil.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1986, um plano econômico congelou preços no Brasil.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O consumo esquentou, e os produtos começaram a faltar.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "O consumo esquentou, e os produtos começaram a faltar.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Principalmente a carne bovina.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Principalmente a carne bovina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você chegaria ao mercado com a conta pronta, esperando finalmente comprar mais.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Você chegaria ao mercado com a conta pronta, esperando finalmente comprar mais.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O preço seria o mesmo, mas a prateleira estaria vazia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "O preço seria o mesmo, mas a prateleira estaria vazia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Vizinhos fotografariam a etiqueta do mercado.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Vizinhos fotografariam a etiqueta do mercado.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas repetir o preço de ontem não colocaria de volta o produto que faltasse hoje.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Mas repetir o preço de ontem não colocaria de volta o produto que faltasse hoje.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Grupos de mensagem avisariam onde chegou frango.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Grupos de mensagem avisariam onde chegou frango.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O churrasco de domingo viraria evento raro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "O churrasco de domingo viraria evento raro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você perguntaria quando chegaria a próxima entrega.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Você perguntaria quando chegaria a próxima entrega.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Ao receber uma resposta incerta, teria que escolher entre esperar e procurar outra loja.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Ao receber uma resposta incerta, teria que escolher entre esperar e procurar outra loja.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O caminho para economizar começaria a custar tempo.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "O caminho para economizar começaria a custar tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Sua lista continuaria a mesma, mas a compra já não dependeria só da quantia que trouxe no bolso.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Sua lista continuaria a mesma, mas a compra já não dependeria só da quantia que trouxe no bolso.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A promessa de preço acessível dependeria de existir produto para comprar.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "A promessa de preço acessível dependeria de existir produto para comprar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A etiqueta seria a mesma. O que ela permitiria levar para casa teria mudado.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "A etiqueta seria a mesma. O que ela permitiria levar para casa teria mudado.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você procuraria o menor preço ou o produto disponível?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em etiqueta de preço",
+      "revela": "Você procuraria o menor preço ou o produto disponível?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

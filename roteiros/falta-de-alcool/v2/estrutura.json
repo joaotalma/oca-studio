@@ -1,0 +1,178 @@
+{
+  "slug": "falta-de-alcool-v2",
+  "titulo": "Seu carro funcionaria. Mas não sairia.",
+  "pergunta": "O que acontece quando o combustível da sua rotina desaparece?",
+  "pista": "chave na mão e tanque vazio",
+  "virada": "O valor do carro dependeria de uma rede fora da garagem.",
+  "resposta": "Você tentaria manter o carro ou mudar sua rotina?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://agencia.fapesp.br/programa-de-bioetanol-brasileiro-enfrenta-sua-maior-crise/15707",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Seu carro funcionaria. Mas não sairia.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar chave na mão e tanque vazio",
+      "revela": "Seu carro funcionaria. Mas não sairia.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Nos anos 70, o Brasil criou um programa de álcool combustível.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Nos anos 70, o Brasil criou um programa de álcool combustível.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Era a resposta aos choques no preço do petróleo.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Era a resposta aos choques no preço do petróleo.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 1989, ele começou a faltar nas bombas.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1989, ele começou a faltar nas bombas.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria vender o carro para resolver o problema de uma vez.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Você tentaria vender o carro para resolver o problema de uma vez.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Seu carro funcionaria com um único líquido que sumiu.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Seu carro funcionaria com um único líquido que sumiu.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A fila no posto começaria antes do sol nascer.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "A fila no posto começaria antes do sol nascer.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Só que outros motoristas poderiam ter a mesma ideia; trocar de dono não criaria combustível.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Só que outros motoristas poderiam ter a mesma ideia; trocar de dono não criaria combustível.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O carro parado viraria decoração de garagem.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "O carro parado viraria decoração de garagem.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Todo mundo tentaria vender o seu ao mesmo tempo.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Todo mundo tentaria vender o seu ao mesmo tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você calcularia o que ainda poderia fazer com o combustível restante.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Você calcularia o que ainda poderia fazer com o combustível restante.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Uma viagem para buscar mais talvez consumisse justamente a reserva que tentava preservar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Uma viagem para buscar mais talvez consumisse justamente a reserva que tentava preservar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O valor do carro dependeria de uma rede fora da garagem.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "O valor do carro dependeria de uma rede fora da garagem.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A chave ainda ligaria o painel. Quem mandaria no trajeto seria o abastecimento.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "A chave ainda ligaria o painel. Quem mandaria no trajeto seria o abastecimento.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria manter o carro ou mudar sua rotina?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em chave na mão e tanque vazio",
+      "revela": "Você tentaria manter o carro ou mudar sua rotina?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

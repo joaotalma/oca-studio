@@ -1,0 +1,178 @@
+{
+  "slug": "transamazonica-v2",
+  "titulo": "Sua rua poderia decidir o seu mês.",
+  "pergunta": "O que depende de uma estrada além de chegar em casa?",
+  "pista": "encomenda esperando passagem",
+  "virada": "O obstáculo de uma viagem alcançaria escola, trabalho e abastecimento ao mesmo tempo.",
+  "resposta": "O que deixaria de chegar à sua casa?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://portalamazonia.com/amazonia/relembre-a-historia-da-transamazonica-a-utopica-rodovia-na-amazonia",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Sua rua poderia decidir o seu mês.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar encomenda esperando passagem",
+      "revela": "Sua rua poderia decidir o seu mês.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A estrada virou símbolo do Brasil Grande.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "A estrada virou símbolo do Brasil Grande.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "As obras começaram em outubro de 1970, perto de Altamira.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "As obras começaram em outubro de 1970, perto de Altamira.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "E em 1972, o primeiro trecho foi inaugurado.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "E em 1972, o primeiro trecho foi inaugurado.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria antecipar a viagem, juntando o máximo de tarefas numa única saída.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Você tentaria antecipar a viagem, juntando o máximo de tarefas numa única saída.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Seu endereço dependeria da chuva.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Seu endereço dependeria da chuva.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A entrega do mercado viria uma vez por mês, se viesse.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "A entrega do mercado viria uma vez por mês, se viesse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas uma interrupção no caminho desfaria vários planos de uma vez, não apenas o trajeto.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Mas uma interrupção no caminho desfaria vários planos de uma vez, não apenas o trajeto.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Seu filho faltaria na escola por causa de um buraco.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Seu filho faltaria na escola por causa de um buraco.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "E a promessa de asfalto viraria tradição de família.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "E a promessa de asfalto viraria tradição de família.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você juntaria a encomenda com outros pedidos para aproveitar a mesma passagem.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Você juntaria a encomenda com outros pedidos para aproveitar a mesma passagem.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Quando alguém perguntasse pelo atraso, a resposta envolveria muito mais que um pacote.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Quando alguém perguntasse pelo atraso, a resposta envolveria muito mais que um pacote.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O obstáculo de uma viagem alcançaria escola, trabalho e abastecimento ao mesmo tempo.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "O obstáculo de uma viagem alcançaria escola, trabalho e abastecimento ao mesmo tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A encomenda parada mostraria que a estrada também faz parte de dentro da sua casa.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "A encomenda parada mostraria que a estrada também faz parte de dentro da sua casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que deixaria de chegar à sua casa?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "O que deixaria de chegar à sua casa?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

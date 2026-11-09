@@ -1,0 +1,187 @@
+{
+  "slug": "greve-caminhoneiros-2018-v2",
+  "titulo": "Sua geladeira depende de uma estrada.",
+  "pergunta": "O que chegaria à sua casa se os caminhões não voltassem?",
+  "pista": "prateleira da geladeira",
+  "virada": "Mesmo uma solução para o combustível continuaria dependendo de outras entregas.",
+  "resposta": "Qual item da sua casa não depende dessa viagem?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2018-05/veja-os-impactos-apos-oito-dias-de-paralisacao-dos-caminhoneiros",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Sua geladeira depende de uma estrada.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar prateleira da geladeira",
+      "revela": "Sua geladeira depende de uma estrada.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 2018, eles pararam por dez dias.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 2018, eles pararam por dez dias.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No Rio, postos ficaram com as bombas secas.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "No Rio, postos ficaram com as bombas secas.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria resolver primeiro o transporte, procurando uma alternativa para o próprio carro.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Você tentaria resolver primeiro o transporte, procurando uma alternativa para o próprio carro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No primeiro mês, gasolina seria mais disputada que dinheiro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "No primeiro mês, gasolina seria mais disputada que dinheiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "As ruas ficariam vazias e o metrô, lotado.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "As ruas ficariam vazias e o metrô, lotado.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Só que chegar ao mercado não adiantaria se a mercadoria também tivesse parado na estrada.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Só que chegar ao mercado não adiantaria se a mercadoria também tivesse parado na estrada.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Quem tem carro elétrico seria o dono da cidade.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Quem tem carro elétrico seria o dono da cidade.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Até precisar de uma peça, que também viria de caminhão.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Até precisar de uma peça, que também viria de caminhão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No segundo mês, o mercado abriria sem ter o que vender.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "No segundo mês, o mercado abriria sem ter o que vender.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Comida valeria mais do que salário.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Comida valeria mais do que salário.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria separar o que foi produzido perto de casa.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Você tentaria separar o que foi produzido perto de casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mesmo assim, poderia encontrar embalagens, peças e ferramentas que vieram de longe.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Mesmo assim, poderia encontrar embalagens, peças e ferramentas que vieram de longe.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mesmo uma solução para o combustível continuaria dependendo de outras entregas.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Mesmo uma solução para o combustível continuaria dependendo de outras entregas.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A geladeira vazia mostraria que a viagem mais importante não era a sua.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "A geladeira vazia mostraria que a viagem mais importante não era a sua.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Qual item da sua casa não depende dessa viagem?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em prateleira da geladeira",
+      "revela": "Qual item da sua casa não depende dessa viagem?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

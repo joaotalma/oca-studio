@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"E se Recife fosse holandês até hoje?","pausa":0,"camada":"seria","inteiro":true,"ini":0,"fim":2.8,"imagens":["assets/c01a.png"]},
+  {"n":2,"quem":"Narrador","texto":"Em 1630, uma esquadra holandesa chegou a Pernambuco.","pausa":0.1,"camada":"foi","ini":2.9,"fim":6.1,"movimento":"zoom-out","imagens":["assets/c02a.png","assets/c02b.png"],"filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"Eram cerca de sete mil homens.","pausa":0.1,"camada":"foi","ini":6.2,"fim":8.6,"movimento":"esq","imagens":["assets/c03a.png"],"filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"Em fevereiro, eles tomaram Olinda e levaram a capital para Recife.","pausa":0.1,"camada":"foi","ini":8.7,"fim":13.1,"movimento":"zoom-in","imagens":["assets/c04a.png","assets/c04b.png"],"filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"Depois, o governo de Maurício de Nassau mudou a cidade.","pausa":0.1,"camada":"foi","ini":13.2,"fim":17.2,"movimento":"dir","imagens":["assets/c05a.png","assets/c05b.png"],"filtro":"flashback"},
+  {"n":6,"quem":"Narrador","texto":"Recife teria passado de 40 para 380 casas.","pausa":0.1,"camada":"foi","ini":17.3,"fim":20.5,"movimento":"cima","imagens":["assets/c06a.png","assets/c06b.png"],"filtro":"flashback"},
+  {"n":7,"quem":"Narrador","texto":"Ganhou pontes, palácios e ruas pavimentadas.","pausa":0.1,"camada":"foi","ini":20.6,"fim":23,"movimento":"zoom-in","imagens":["assets/c07a.png"],"filtro":"flashback"},
+  {"n":8,"quem":"Narrador","texto":"Mas, em 1654, Recife foi cercada, e os holandeses perderam a colônia.","pausa":0.1,"camada":"foi","ini":23.1,"fim":27.9,"movimento":"baixo","imagens":["assets/c08a.png","assets/c08b.png"],"filtro":"flashback"},
+  {"n":9,"quem":"Narrador","texto":"O Brasil seguiu inteiro. Agora imagine se eles tivessem vencido.","pausa":0.4,"camada":"seria","ini":28.3,"fim":32.3,"movimento":"zoom-out","imagens":["assets/c09a.png","assets/c09b.png"]},
+  {"n":10,"quem":"Narrador","texto":"O Nordeste poderia ser outro país.","pausa":0.1,"camada":"seria","ini":32.4,"fim":34.8,"movimento":"zoom-in","imagens":["assets/c10a.png"]},
+  {"n":11,"quem":"Narrador","texto":"Você precisaria de passaporte para ir de Salvador a Recife.","pausa":0.1,"camada":"seria","ini":34.9,"fim":38.9,"movimento":"zoom-out","imagens":["assets/c11a.png","assets/c11b.png"]},
+  {"n":12,"quem":"Narrador","texto":"As placas de rua estariam em holandês.","pausa":0.1,"camada":"seria","ini":39,"fim":41.8,"movimento":"esq","imagens":["assets/c12a.png","assets/c12b.png"]},
+  {"n":13,"quem":"Narrador","texto":"O português seria língua estrangeira na escola de Olinda.","pausa":0.1,"camada":"seria","ini":41.9,"fim":45.5,"movimento":"zoom-in","imagens":["assets/c13a.png","assets/c13b.png"]},
+  {"n":14,"quem":"Narrador","texto":"O carnaval de lá talvez nem existisse.","pausa":0.1,"camada":"seria","ini":45.6,"fim":48.4,"movimento":"dir","imagens":["assets/c14a.png","assets/c14b.png"]},
+  {"n":15,"quem":"Narrador","texto":"Nomes como Jan e Pieter seriam comuns em Caruaru.","pausa":0.1,"camada":"seria","ini":48.5,"fim":52.1,"movimento":"cima","imagens":["assets/c15a.png","assets/c15b.png"]},
+  {"n":16,"quem":"Narrador","texto":"O craque da seleção holandesa poderia ter nascido em Recife.","pausa":0.1,"camada":"seria","ini":52.2,"fim":56.2,"movimento":"zoom-in","imagens":["assets/c16a.png","assets/c16b.png"]},
+  {"n":17,"quem":"Narrador","texto":"E a Copa teria um novo clássico: Brasil contra Nova Holanda.","pausa":0.1,"camada":"seria","ini":56.3,"fim":60.7,"movimento":"baixo","imagens":["assets/c17a.png","assets/c17b.png"]},
+  {"n":18,"quem":"Narrador","texto":"Agora pense na sua família.","pausa":0.1,"camada":"voce","ini":60.8,"fim":62.8,"movimento":"zoom-out","imagens":["assets/c18a.png"]},
+  {"n":19,"quem":"Narrador","texto":"De que lado da fronteira ela estaria?","pausa":0.1,"camada":"voce","ini":62.9,"fim":65.7,"movimento":"zoom-in","imagens":["assets/c19a.png","assets/c19b.png"]},
+  {"n":20,"quem":"Narrador","texto":"Você ainda seria brasileiro?","pausa":0.3,"camada":"voce","ini":66,"fim":67.6,"movimento":"zoom-out","imagens":["assets/c20a.png"]}
+];

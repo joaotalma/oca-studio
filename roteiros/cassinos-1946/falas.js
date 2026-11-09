@@ -1,0 +1,21 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se seu emprego virasse crime amanhã?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Em 30 de abril de 1946, um decreto mudou tudo para muita gente.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 8.1, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Os cassinos foram fechados em todo o território nacional.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 8.2, "fim": 11.8, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "A manchete saiu nos jornais dias depois.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 11.9, "fim": 14.7, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "O motivo exato nunca foi definitivamente esclarecido.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 14.8, "fim": 17.6, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "E várias hipóteses circulam até hoje.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 17.7, "fim": 20.1, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Foi com os cassinos. Agora imagine se fosse com a sua profissão.", "pausa": 0.4, "imagem": "assets/cena07.png", "camada": "seria", "ini": 20.5, "fim": 25.3, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Você acordaria com o seu trabalho proibido por um papel.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "seria", "ini": 25.4, "fim": 29.4, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "O crachá não abriria mais a porta.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 29.5, "fim": 32.3, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "O curso que você fez não valeria nada.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 32.4, "fim": 35.6, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "As pessoas continuariam fazendo escondido o que você fazia às claras.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 35.7, "fim": 40.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Sua família perguntaria o que fazer no mês seguinte.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 40.2, "fim": 43.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Colegas virariam concorrentes por qualquer vaga.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 43.9, "fim": 46.3, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E toda a sua cidade teria que aprender outro ofício.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 46.4, "fim": 50.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Em uma semana, ninguém mais falaria no assunto.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 50.5, "fim": 53.7, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "E alguém lembraria de você só pela antiga profissão.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 53.8, "fim": 57.4, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Agora olhe para o seu trabalho.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "voce", "ini": 57.5, "fim": 59.9, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Ele existe por causa de qual lei?", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 60, "fim": 62.8, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "O que você faria se ela mudasse amanhã?", "pausa": 0.3, "imagem": "assets/cena19.png", "camada": "voce", "ini": 63.1, "fim": 66.3, "movimento": "zoom-in"}
+];

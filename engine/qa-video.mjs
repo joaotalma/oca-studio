@@ -18,8 +18,9 @@ import { fileURLToPath } from 'node:url';
 const args = process.argv.slice(2);
 const flags = new Set(args.filter((a) => a.startsWith('--')));
 const iDur = args.indexOf('--duracao');
+const iLeitura = args.indexOf('--leitura');
 const faixa = iDur >= 0 ? args[iDur + 1].split(',').map(Number) : [30, 90];
-const [pasta, video] = args.filter((a, i) => !a.startsWith('--') && (iDur < 0 || i !== iDur + 1));
+const [pasta, video] = args.filter((a, i) => !a.startsWith('--') && (iDur < 0 || i !== iDur + 1) && (iLeitura < 0 || i !== iLeitura + 1));
 const uso = 'uso: node engine/qa-video.mjs <pasta em render/> <video.mp4> [--rascunho] [--mudo] [--sem-duracao] [--duracao a,b]';
 const parar = (msg) => { console.error(msg); process.exit(2); };
 
@@ -94,7 +95,10 @@ if (falas?.length) {
 }
 
 // gate, rodado na pasta do filme
-const resultadoGate = spawnSync(process.execPath, [gate, 'film.html', '--mp4', videoAbs], {
+const pausas = iLeitura>=0 ? JSON.parse(fs.readFileSync(args[iLeitura+1],'utf8')) : [];
+if(!Array.isArray(pausas)||pausas.some(p=>!Number.isFinite(p.ini)||!Number.isFinite(p.fim)||p.ini<0||p.fim<=p.ini||p.fim>duracao+.05||!p.motivo))parar('Pausas de leitura precisam de intervalo válido e justificativa.');
+if(pausas.length)anotar('Pausas visuais','DECLARADAS',`${pausas.length} intervalos justificados, ver ${args[iLeitura+1]}; exigem conferência à vista, não aprovação automática.`);
+const resultadoGate = spawnSync(process.execPath, [gate, 'film.html', '--mp4', videoAbs,...(pausas.length?['--holds',pausas.map(p=>`${p.ini}-${p.fim}`).join(',')]:[])], {
   cwd: pastaAbs, encoding: 'utf8', maxBuffer: 1 << 26,
   env: { ...process.env, W: String(streamVideo.width), H: String(streamVideo.height), PLAYWRIGHT_NODE_MODULES: path.join(raiz, 'node_modules') },
 });

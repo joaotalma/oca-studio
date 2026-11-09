@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se o Rio falasse francês?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.4},
+  {"n": 2, "quem": "Narrador", "texto": "Em novembro de 1555, cerca de seiscentas pessoas chegaram à Baía de Guanabara.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.5, "fim": 7.7, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Vinham da França em duas naus.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.8, "fim": 10.2, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Era a França Antártica.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 10.3, "fim": 11.9, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Os portugueses destruíram o forte francês, mas não acabaram com eles.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 12, "fim": 16.4, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Em 1565, fundaram o Rio de Janeiro como base militar.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.5, "fim": 20.5, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Em janeiro de 1567, os franceses foram expulsos.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 20.6, "fim": 23.8, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "O Rio ficou com Portugal. Agora imagine se a França tivesse vencido.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 24.2, "fim": 29, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "O Cristo teria outro nome e talvez nem existisse.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 29.1, "fim": 32.7, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Ipanema seria uma palavra difícil de pronunciar em Paris.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 32.8, "fim": 36.4, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "O samba teria sotaque francês.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 36.5, "fim": 38.5, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "O boteco se chamaria bistrô.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 38.6, "fim": 40.6, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Você aprenderia francês na escola sem ter escolha.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 40.7, "fim": 43.9, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E o Brasil teria um vizinho dentro de casa.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 44, "fim": 47.6, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "O futebol seria paixão, mas com outro vocabulário.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 47.7, "fim": 50.9, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "E todo cardápio de padaria teria acento estranho.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 51, "fim": 54.2, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "A praia de domingo teria nome difícil.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 54.3, "fim": 57.1, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Agora pense na sua primeira palavra do dia.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 57.2, "fim": 60.4, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Em que língua ela estaria?", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 60.5, "fim": 62.5, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Você ainda seria carioca ou seria francês?", "pausa": 0.3, "imagem": "assets/cena20.png", "camada": "voce", "ini": 62.8, "fim": 65.6, "movimento": "zoom-out"}
+];

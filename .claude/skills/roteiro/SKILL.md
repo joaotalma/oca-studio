@@ -14,7 +14,9 @@ O roteiro é do João. Você rascunha a partir do ângulo dele, ou formata o tex
 
 ## Passos
 
-1. **Escreva por blocos:** gancho (0 a 3 s), prova (3 a 10 s), desenvolvimento com uma virada, e fecho.
+Antes de escrever, leia `docs/DIRECAO-VISUAL.md`. Defina pergunta, mecanismo, pista, virada e resposta em `estrutura.json`; cada fala inclui função, ação visível, informação nova e ligação com a anterior. Compile com `node engine/gerar-roteiro.mjs roteiros/<slug>/estrutura.json`. O programa valida e produz `roteiro.md`, `falas.js`, `video.js` e `direcao.json`; não substitui a escrita editorial. Fontes conferidas são obrigatórias para fatos. Radar e referências atuais: `docs/PROMPT-PESQUISA.md`. Não preencher duração com generalidades nem prometer viralização.
+
+1. **Escreva por blocos:** gancho (0 a 3 s), prova (3 a 10 s), desenvolvimento com uma virada, e fecho. Se `canal/canal.md` definir uma estrutura própria, siga a dele. Para a hipótese, use "seria" e marque a fala como `camada: 'seria'` ou `'voce'`; só o que está em `fontes.md` pode ser dito como "foi".
 2. **Escreva para o ouvido:** frases de até 15 palavras. Leia em voz alta mentalmente e corte o que trava.
 3. **Confira contra as fontes:** nenhum fato fora de `fontes.md`. Em SÓ COMENTÁRIO, nada de trecho, personagem ou cena da obra.
 4. **Gere os dados da engine** no formato de `templates/<template>/README.md`. Em `falas.js`, a primeira fala é o gancho, com `inteiro: true`, e cada fala fica em uma linha de JSON válido.

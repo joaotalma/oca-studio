@@ -6,6 +6,8 @@ set -euo pipefail
 pasta="${1:?pasta do roteiro}"; pasta="${pasta%/}"; shift
 raiz="$(cd "$(dirname "$0")/.." && pwd)"
 slug="$(basename "$pasta")"
+slug_config="$(sed -nE "s/.*slug: *'([a-z0-9-]+)'.*/\1/p" "$pasta/video.js" | head -1)"
+slug="${slug_config:-$slug}"
 audio="$raiz/audio/$slug"; film="$raiz/render/$slug"
 W=1080; H=1920; FPS=30; qa=(); musica=()
 while [ $# -gt 0 ]; do
@@ -28,6 +30,11 @@ else
   echo "Sem narração em $audio: render mudo, com os tempos estimados."
 fi
 
+# A base neutra é preparada só na montagem solicitada, nunca ao editar o motor.
+# Evita acumular a luz antiga do SVG com a fonte dinâmica do cenário 3D.
+if ! node "$raiz/engine/preparar-cenas3d.mjs" "$pasta" --camadas-prontas; then
+  node "$raiz/engine/desenhar-cenas.mjs" "$pasta"
+fi
 bash "$raiz/engine/preparar-film.sh" "$pasta" >/dev/null
 (cd "$film" && W=$W H=$H node export.mjs "$FPS" imagem.mp4)
 

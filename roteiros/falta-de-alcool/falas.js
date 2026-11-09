@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Imagine seu carro sem combustível no país.", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Nos anos 70, o Brasil criou um programa de álcool combustível.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Era a resposta aos choques no preço do petróleo.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 11, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Mas em 1985, o petróleo voltou a cair.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 11.1, "fim": 14.3, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Os subsídios ao álcool foram retirados.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 14.4, "fim": 16.8, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Em 1989, ele começou a faltar nas bombas.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.9, "fim": 20.1, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "E a credibilidade do programa foi abalada.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 20.2, "fim": 23, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "A crise passou. Agora imagine se você acordasse com isso amanhã.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 23.4, "fim": 27.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Seu carro funcionaria com um único líquido que sumiu.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.9, "fim": 31.5, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "A fila no posto começaria antes do sol nascer.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 31.6, "fim": 35.2, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Vizinhos trocariam dicas de onde ainda tem.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 35.3, "fim": 38.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "O carro parado viraria decoração de garagem.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 38.2, "fim": 41, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Todo mundo tentaria vender o seu ao mesmo tempo.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 41.1, "fim": 44.7, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "Ninguém compraria.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 44.8, "fim": 45.6, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E você voltaria a descobrir a linha de ônibus do seu bairro.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 45.7, "fim": 50.5, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "O mecânico adaptaria motor de qualquer jeito.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 50.6, "fim": 53.4, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "A bicicleta do seu pai voltaria da garagem.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 53.5, "fim": 56.7, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E a carona viraria moeda entre colegas.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 56.8, "fim": 59.6, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora olhe para o seu tanque.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 59.7, "fim": 62.1, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Quantos quilômetros ainda faltam?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 62.2, "fim": 63.8, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Até onde você consegue chegar sem ele?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 64.1, "fim": 66.9, "movimento": "esq"}
+];

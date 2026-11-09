@@ -1,0 +1,187 @@
+{
+  "slug": "holandeses-recife-v2",
+  "titulo": "Você precisaria traduzir a própria cidade.",
+  "pergunta": "O que uma outra história mudaria no seu pertencimento?",
+  "pista": "placa com o nome da cidade",
+  "virada": "Bandeira e língua não explicariam sozinhas a identidade de quem vive ali.",
+  "resposta": "O que faria esse lugar continuar sendo sua casa?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.historiadomundo.com.br/idade-moderna/invasoes-holandesas.htm",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Você precisaria traduzir a própria cidade.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar placa com o nome da cidade",
+      "revela": "Você precisaria traduzir a própria cidade.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 1630, uma esquadra holandesa chegou a Pernambuco.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1630, uma esquadra holandesa chegou a Pernambuco.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em fevereiro, eles tomaram Olinda e levaram a capital para Recife.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em fevereiro, eles tomaram Olinda e levaram a capital para Recife.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria reconhecer o caminho de casa pelas ruas e pelos edifícios familiares.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Você tentaria reconhecer o caminho de casa pelas ruas e pelos edifícios familiares.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O Nordeste poderia ser outro país.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "O Nordeste poderia ser outro país.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você precisaria de passaporte para ir de Salvador a Recife.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Você precisaria de passaporte para ir de Salvador a Recife.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas uma escola e outra língua mudariam a forma de aprender o nome desses lugares.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Mas uma escola e outra língua mudariam a forma de aprender o nome desses lugares.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "As placas de rua estariam em holandês.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "As placas de rua estariam em holandês.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O português seria língua estrangeira na escola de Olinda.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "O português seria língua estrangeira na escola de Olinda.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você encontraria a família reunida falando de um lugar cujo nome mudou.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Você encontraria a família reunida falando de um lugar cujo nome mudou.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Os caminhos e as lembranças não caberiam inteiros numa troca de bandeiras.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Os caminhos e as lembranças não caberiam inteiros numa troca de bandeiras.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A história teria passado por quem vive ali.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "A história teria passado por quem vive ali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Antes de escolher uma identidade pronta, seria preciso ouvir como essas pessoas chamariam a própria casa.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Antes de escolher uma identidade pronta, seria preciso ouvir como essas pessoas chamariam a própria casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Bandeira e língua não explicariam sozinhas a identidade de quem vive ali.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Bandeira e língua não explicariam sozinhas a identidade de quem vive ali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A placa seria diferente. As lembranças de quem cresceu ali continuariam tendo endereço.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "A placa seria diferente. As lembranças de quem cresceu ali continuariam tendo endereço.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que faria esse lugar continuar sendo sua casa?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "O que faria esse lugar continuar sendo sua casa?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

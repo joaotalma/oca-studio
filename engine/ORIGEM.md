@@ -37,6 +37,18 @@ Skill `take-one`, versão 0.1.0 do `package.json`. Ela não tem git, então a ve
 
 `tempo.js`, `fatiar-narracao.py`, `estimar-tempos.mjs` e `montar.sh`.
 
+Estudo de 2026-11-08: `experimentos/2d-cenario3d/`, criado no Plotline. Perspectiva 3D procedural em Canvas, com recortes do personagem dos episódios já aprovados. Usa o exportador local existente, sem ler ou copiar arquivos de outro projeto. Não altera o template ilustrado nem a estética aprovada do canal.
+
+Evolução no mesmo dia, a pedido de João após aprovar o exemplo: `ambiente3d.js`, `preparar-cenas3d.mjs`, `camadas3d.mjs` e os testes em `testes/ambiente3d.test.mjs` promovem o estudo ao fluxo do template ilustrado. O motor é independente do experimento e dos seus temas. Adiciona estrelas/nuvens por horário, preenchimento neutro mais claro e fontes de luz compartilhadas pelo cenário e personagem. `fundos3d-legados.json` é um snapshot textual dos fundos gerados pela própria `cenas-lib.py`, usado para reconhecer cenas antigas. Nenhum arquivo de outro projeto foi copiado. A mudança foi verificada sem renderizar imagens ou vídeos.
+
 ## Dependências
 
 Node com `playwright-core`, Google Chrome, FFmpeg, e Python com NumPy. No Windows, rode os `.sh` pelo Git Bash.
+
+## Fluxo de voz e revisão v2 — 2026-11-08
+
+A pedido explícito do João, foi consultado `se-vira-tico/scripts/gerar-vozes-elevenlabs.mjs`, `scripts/elevenlabs-criar-vozes.mjs` e `docs/VOZES.md`. Nova implementação independente: `voz-elevenlabs.mjs`, usando a API REST, sem importar SDK, arquivos ou vozes daquele projeto em tempo de execução. A chave foi transferida uma única vez para `.env.local` do Plotline, ignorado pelo git. O projeto de origem não foi alterado.
+
+O plano Starter ativo e a inclusão de licença comercial foram conferidos na API e em https://elevenlabs.io/pricing. João autorizou criar uma voz original jovem e empolgante, em lugar do clone que ainda não estava disponível. O registro fica em `canal/voz-elevenlabs.json`; não é clone nem imitação da voz do João. Prévias e áudios ficam fora do git. A autorização desta conversa inclui a produção do apagão revisado; não aprova automaticamente outras pautas, vídeos ou publicação.
+
+`gerar-roteiro.mjs`, `revisar-catalogo.mjs`, `desenvolvimentos-v2.json`, `cenas-apagao-v2.mjs` e `fatiar-alinhamento.py` foram criados no Plotline. O alinhamento real substitui a escolha de pausas por tamanho. O motor visual ganhou câmera parada, trajetórias explícitas e aparelhos 3D; saiu a rotação automática de movimentos na montagem de planos. Direção e pesquisa estão em `docs/DIRECAO-VISUAL.md` e `docs/PROMPT-PESQUISA.md`.

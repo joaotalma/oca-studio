@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"Imagine o governo medindo sua luz.","pausa":0,"camada":"seria","inteiro":true,"ini":0,"fim":2.4,"imagens":["assets/c01a.png"]},
+  {"n":2,"quem":"Narrador","texto":"Em 2001, o Brasil viveu um programa de racionamento de energia.","pausa":0.1,"camada":"foi","ini":2.5,"fim":6.9,"movimento":"zoom-out","imagens":["assets/c02a.png","assets/c02b.png"],"filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"A meta era economizar 20%.","pausa":0.1,"camada":"foi","ini":7,"fim":9,"movimento":"esq","imagens":["assets/c03a.png"],"filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"Empresas e casas que não cumprissem podiam ter a luz cortada.","pausa":0.1,"camada":"foi","ini":9.1,"fim":13.5,"movimento":"zoom-in","imagens":["assets/c04a.png","assets/c04b.png"],"filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"A punição chegou ao Senado.","pausa":0.1,"camada":"foi","ini":13.6,"fim":15.6,"movimento":"dir","imagens":["assets/c05a.png"],"filtro":"flashback"},
+  {"n":6,"quem":"Narrador","texto":"Um senador pediu ao presidente que revogasse os cortes.","pausa":0.1,"camada":"foi","ini":15.7,"fim":19.3,"movimento":"cima","imagens":["assets/c06a.png","assets/c06b.png"],"filtro":"flashback"},
+  {"n":7,"quem":"Narrador","texto":"O medo dele era empresa quebrada e mais desemprego.","pausa":0.1,"camada":"foi","ini":19.4,"fim":23,"movimento":"zoom-in","imagens":["assets/c07a.png","assets/c07b.png"],"filtro":"flashback"},
+  {"n":8,"quem":"Narrador","texto":"Agora imagine um racionamento que nunca acabasse.","pausa":0.4,"camada":"seria","ini":23.4,"fim":26.2,"movimento":"baixo","imagens":["assets/c08a.png","assets/c08b.png"]},
+  {"n":9,"quem":"Narrador","texto":"Sua conta de luz teria uma meta, como uma dieta.","pausa":0.1,"camada":"seria","ini":26.3,"fim":30.3,"movimento":"zoom-out","imagens":["assets/c09a.png","assets/c09b.png"]},
+  {"n":10,"quem":"Narrador","texto":"Ar-condicionado viraria luxo de quem pode pagar multa.","pausa":0.1,"camada":"seria","ini":30.4,"fim":33.6,"movimento":"zoom-in","imagens":["assets/c10a.png","assets/c10b.png"]},
+  {"n":11,"quem":"Narrador","texto":"Banho quente teria hora marcada.","pausa":0.1,"camada":"seria","ini":33.7,"fim":35.7,"movimento":"zoom-out","imagens":["assets/c11a.png"]},
+  {"n":12,"quem":"Narrador","texto":"O vizinho com a luz acesa viraria assunto da rua.","pausa":0.1,"camada":"seria","ini":35.8,"fim":39.8,"movimento":"esq","imagens":["assets/c12a.png","assets/c12b.png"]},
+  {"n":13,"quem":"Narrador","texto":"Postes apagados mudariam a hora de voltar para casa.","pausa":0.1,"camada":"seria","ini":39.9,"fim":43.5,"movimento":"zoom-in","imagens":["assets/c13a.png","assets/c13b.png"]},
+  {"n":14,"quem":"Narrador","texto":"Fábricas parariam à noite, e os empregos junto.","pausa":0.1,"camada":"seria","ini":43.6,"fim":46.8,"movimento":"dir","imagens":["assets/c14a.png","assets/c14b.png"]},
+  {"n":15,"quem":"Narrador","texto":"Geladeira ou chuveiro: alguém em casa teria que escolher.","pausa":0.1,"camada":"seria","ini":46.9,"fim":50.5,"movimento":"cima","imagens":["assets/c15a.png","assets/c15b.png"]},
+  {"n":16,"quem":"Narrador","texto":"A padaria abriria só quando a meta permitisse.","pausa":0.1,"camada":"seria","ini":50.6,"fim":53.8,"movimento":"zoom-in","imagens":["assets/c16a.png","assets/c16b.png"]},
+  {"n":17,"quem":"Narrador","texto":"O elevador do seu prédio teria horário para funcionar.","pausa":0.1,"camada":"seria","ini":53.9,"fim":57.5,"movimento":"baixo","imagens":["assets/c17a.png","assets/c17b.png"]},
+  {"n":18,"quem":"Narrador","texto":"E o celular carregaria só quando fosse a sua vez.","pausa":0.1,"camada":"seria","ini":57.6,"fim":61.6,"movimento":"zoom-out","imagens":["assets/c18a.png","assets/c18b.png"]},
+  {"n":19,"quem":"Narrador","texto":"Agora olhe quantas tomadas estão ocupadas perto de você.","pausa":0.1,"camada":"voce","ini":61.7,"fim":65.3,"movimento":"zoom-in","imagens":["assets/c19a.png","assets/c19b.png"]},
+  {"n":20,"quem":"Narrador","texto":"O que você desligaria primeiro?","pausa":0.1,"camada":"voce","ini":65.4,"fim":67.4,"movimento":"zoom-out","imagens":["assets/c20a.png"]},
+  {"n":21,"quem":"Narrador","texto":"E quanto tempo aguentaria assim?","pausa":0.3,"camada":"voce","ini":67.7,"fim":69.7,"movimento":"esq","imagens":["assets/c21a.png"]}
+];

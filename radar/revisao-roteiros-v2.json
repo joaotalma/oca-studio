@@ -1,0 +1,215 @@
+[
+  {
+    "slug": "apagao-amapa",
+    "pasta": "roteiros\\apagao-amapa\\v2",
+    "palavras": 161,
+    "duracao": 66.53,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "bendego",
+    "pasta": "roteiros\\bendego\\v2",
+    "palavras": 160,
+    "duracao": 66.25,
+    "avisos": []
+  },
+  {
+    "slug": "canudos-submersa",
+    "pasta": "roteiros\\canudos-submersa\\v2",
+    "palavras": 168,
+    "duracao": 69.45,
+    "avisos": []
+  },
+  {
+    "slug": "carros-importados",
+    "pasta": "roteiros\\carros-importados\\v2",
+    "palavras": 164,
+    "duracao": 67.85,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "cassinos-1946",
+    "pasta": "roteiros\\cassinos-1946\\v2",
+    "palavras": 172,
+    "duracao": 70.93,
+    "avisos": []
+  },
+  {
+    "slug": "compra-do-acre",
+    "pasta": "roteiros\\compra-do-acre\\v2",
+    "palavras": 167,
+    "duracao": 69.05,
+    "avisos": []
+  },
+  {
+    "slug": "confisco-1990",
+    "pasta": "roteiros\\confisco-1990\\v2",
+    "palavras": 163,
+    "duracao": 67.33,
+    "avisos": []
+  },
+  {
+    "slug": "congelamento-1986",
+    "pasta": "roteiros\\congelamento-1986\\v2",
+    "palavras": 174,
+    "duracao": 71.97,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "corte-portuguesa",
+    "pasta": "roteiros\\corte-portuguesa\\v2",
+    "palavras": 162,
+    "duracao": 66.81,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "eclipse-sobral",
+    "pasta": "roteiros\\eclipse-sobral\\v2",
+    "palavras": 169,
+    "duracao": 69.97,
+    "avisos": []
+  },
+  {
+    "slug": "et-de-varginha",
+    "pasta": "roteiros\\et-de-varginha\\v2",
+    "palavras": 161,
+    "duracao": 66.53,
+    "avisos": []
+  },
+  {
+    "slug": "falta-de-alcool",
+    "pasta": "roteiros\\falta-de-alcool\\v2",
+    "palavras": 160,
+    "duracao": 66.13,
+    "avisos": []
+  },
+  {
+    "slug": "fordlandia",
+    "pasta": "roteiros\\fordlandia\\v2",
+    "palavras": 173,
+    "duracao": 71.33,
+    "avisos": []
+  },
+  {
+    "slug": "franca-antartica",
+    "pasta": "roteiros\\franca-antartica\\v2",
+    "palavras": 162,
+    "duracao": 67.05,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "geada-negra",
+    "pasta": "roteiros\\geada-negra\\v2",
+    "palavras": 166,
+    "duracao": 68.53,
+    "avisos": []
+  },
+  {
+    "slug": "greve-caminhoneiros-2018",
+    "pasta": "roteiros\\greve-caminhoneiros-2018\\v2",
+    "palavras": 165,
+    "duracao": 68.25,
+    "avisos": []
+  },
+  {
+    "slug": "guerra-da-lagosta",
+    "pasta": "roteiros\\guerra-da-lagosta\\v2",
+    "palavras": 164,
+    "duracao": 67.73,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "hiperinflacao",
+    "pasta": "roteiros\\hiperinflacao\\v2",
+    "palavras": 162,
+    "duracao": 66.93,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "holandeses-recife",
+    "pasta": "roteiros\\holandeses-recife\\v2",
+    "palavras": 175,
+    "duracao": 72.25,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "ilha-queimada-grande",
+    "pasta": "roteiros\\ilha-queimada-grande\\v2",
+    "palavras": 169,
+    "duracao": 69.85,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "linha-telefonica",
+    "pasta": "roteiros\\linha-telefonica\\v2",
+    "palavras": 161,
+    "duracao": 66.41,
+    "avisos": []
+  },
+  {
+    "slug": "mudanca-capital",
+    "pasta": "roteiros\\mudanca-capital\\v2",
+    "palavras": 166,
+    "duracao": 68.41,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "noite-dos-ovnis",
+    "pasta": "roteiros\\noite-dos-ovnis\\v2",
+    "palavras": 161,
+    "duracao": 66.53,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "ratanaba",
+    "pasta": "roteiros\\ratanaba\\v2",
+    "palavras": 163,
+    "duracao": 67.45,
+    "avisos": []
+  },
+  {
+    "slug": "reserva-informatica",
+    "pasta": "roteiros\\reserva-informatica\\v2",
+    "palavras": 162,
+    "duracao": 66.93,
+    "avisos": []
+  },
+  {
+    "slug": "sete-quedas",
+    "pasta": "roteiros\\sete-quedas\\v2",
+    "palavras": 163,
+    "duracao": 67.45,
+    "avisos": [
+      "Há fala com mais de 15 palavras; conferir respiração."
+    ]
+  },
+  {
+    "slug": "transamazonica",
+    "pasta": "roteiros\\transamazonica\\v2",
+    "palavras": 164,
+    "duracao": 67.73,
+    "avisos": []
+  }
+]

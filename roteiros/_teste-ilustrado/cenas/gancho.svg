@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+<defs>
+  <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#071318"/><stop offset=".5" stop-color="#123840"/><stop offset="1" stop-color="#050c0f"/></linearGradient>
+  <linearGradient id="gp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d2a31"/><stop offset="1" stop-color="#1f5a60"/></linearGradient>
+  <linearGradient id="gq" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#0d2a31"/><stop offset="1" stop-color="#1f5a60"/></linearGradient>
+  <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset=".05" stop-color="#17404e"/><stop offset=".52" stop-color="#d4bfae"/><stop offset=".92" stop-color="#fff"/></linearGradient>
+  <linearGradient id="gb" x1="0" y1="0" x2="1" y2="0"><stop offset=".8" stop-color="#000"/><stop offset=".94" stop-color="#ffb25d"/></linearGradient>
+  <linearGradient id="gc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".5"/><stop offset="1" stop-color="#ffb25d" stop-opacity="0"/></linearGradient>
+  <mask id="gm" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><use href="#frente" transform="translate(30 800) scale(2.3)" filter="url(#branco)"/></mask>
+</defs>
+<rect width="1080" height="1920" fill="url(#gf)"/>
+<!-- luz fria do fundo do corredor -->
+<g filter="url(#b12)"><rect x="470" y="430" width="140" height="330" fill="#ffd9a0" opacity=".85"/></g>
+<rect x="500" y="470" width="80" height="260" fill="#fff0d4" opacity=".8"/>
+<!-- teto com lâmpadas em perspectiva -->
+<path d="M0 0 H1080 L620 420 H460 Z" fill="#081a20"/>
+<g fill="#ffe2b0"><path d="M500 410 H580 L590 424 H490 Z" opacity=".55"/><path d="M455 300 H625 L650 340 H430 Z" opacity=".75"/><path d="M340 110 H740 L810 210 H270 Z" opacity=".95"/></g>
+<!-- prateleiras vazias -->
+<path d="M0 90 L460 420 V760 L0 1500 Z" fill="url(#gp)" stroke="#050c0f" stroke-width="6"/>
+<path d="M1080 90 L620 420 V760 L1080 1500 Z" fill="url(#gq)" stroke="#050c0f" stroke-width="6"/>
+<g stroke="#ffcf8a" stroke-width="9" opacity=".9">
+  <path d="M0 330 L460 505"/><path d="M0 600 L460 590"/><path d="M0 880 L460 675"/><path d="M0 1170 L460 750"/>
+  <path d="M1080 330 L620 505"/><path d="M1080 600 L620 590"/><path d="M1080 880 L620 675"/><path d="M1080 1170 L620 750"/>
+</g>
+<g stroke="#050c0f" stroke-width="10"><path d="M150 195 V1250 M300 310 V1000 M930 195 V1250 M780 310 V1000"/></g>
+<!-- caixas caídas: restos do que acabou -->
+<g stroke="#050c0f" stroke-width="5"><path d="M38 548 L108 556 L104 604 L34 596 Z" fill="#b5532f"/><path d="M968 842 L1040 852 L1032 900 L962 888 Z" fill="#ead9b4"/><path d="M340 620 L388 616 L392 650 L344 654 Z" fill="#e8b23f"/></g>
+<!-- chão brilhante -->
+<path d="M460 760 H620 L1080 1500 V1920 H0 V1500 Z" fill="#0a1a20"/>
+<g filter="url(#b12)"><path d="M480 780 H600 L720 1400 H360 Z" fill="#ffd9a0" opacity=".35"/></g>
+<path d="M270 210 H810 L1080 1300 H0 Z" fill="url(#gc)" opacity=".35"/>
+<!-- personagem em primeiro plano -->
+<g mask="url(#gm)">
+  <use href="#frente" transform="translate(30 800) scale(2.3)"/>
+  <rect width="1080" height="1920" fill="url(#gl)" style="mix-blend-mode:multiply"/>
+  <rect width="1080" height="1920" fill="url(#gb)" style="mix-blend-mode:screen"/>
+</g>
+</svg>

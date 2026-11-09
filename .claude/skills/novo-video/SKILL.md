@@ -9,6 +9,8 @@ Roda a cadeia na ordem. Não pula etapa e não decide pelo João nos pontos de a
 
 ## Entradas
 
+Antes de escolher ou retomar uma pauta, faça uma consulta estratégica curta com `docs/PROMPT-PESQUISA.md` e registre a data. Se o João já escolheu o tema, confirme a janela e procure referências atuais opcionais sem trocar o ângulo dele. Sinal fraco pode resultar em nenhuma referência; não fabricar tendência nem gastar créditos novos sem autorização.
+
 - Um tema, ou um candidato de `radar/`. Sem isso, rode `radar`.
 - `canal/canal.md` preenchido. Em branco, rode `configurar-canal` e pare.
 
@@ -20,7 +22,7 @@ Roda a cadeia na ordem. Não pula etapa e não decide pelo João nos pontos de a
 | 2 | `pesquisa` | `fontes.md` | Segue |
 | 3 | `roteiro` | `roteiro.md`, `falas.js`, `video.js` | **PARA: aprovação 1** |
 | 4 | `montar`, fase âncoras | Imagens-âncora ou folha de quadros | **PARA: aprovação 2** |
-| 5 | João grava | `audio/<slug>/narracao.*` | Espera o arquivo |
+| 5 | João grava ou gera com o clone | `audio/<slug>/narracao.*` | Espera o arquivo |
 | 6 | `montar`, fase final | Vídeo em `render/<slug>/` | Segue |
 | 7 | `qa` | `qa.md` | Reprovado volta a `montar` |
 | 8 | Entrega | Vídeo e relatório | **PARA: aprovação 3** |
@@ -46,7 +48,7 @@ As três aprovações registradas em `roteiro.md` com a data, QA aprovado e `pos
 ## Nunca
 
 - Publicar ou agendar. A publicação é manual, nas contas do João.
-- Gerar a voz. Sem a gravação, a cadeia espera ou entrega um render mudo identificado como tal.
+- Gerar voz sem autorização explícita e licença verificada. A voz original jovem aprovada em 2026-11-08 usa `canal/voz-elevenlabs.json`; seguir a autorização do João para cada produção.
 - Rodar vários vídeos sem aprovar um roteiro por vez.
 
 ## Retomar

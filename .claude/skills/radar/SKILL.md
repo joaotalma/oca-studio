@@ -12,6 +12,8 @@ description: Procura o que está em alta (Google Trends, vidIQ, livros, filmes, 
 
 ## Passos
 
+Use `docs/PROMPT-PESQUISA.md` como contrato da rodada: novidades, retornos, temas duráveis com gatilho e referências culturais atuais. Diferencie demanda observada, hipótese de retenção e resultados desconhecidos. Pesquise memes, música, famosos e hábitos quando ajudarem a história; registre origem, janela, uso indireto original e alternativa sem a referência. Não copie áudio, imagem ou letra por estar em alta. Não simule acesso a Trends/feeds nem retenção privada. A pesquisa é acionada antes da pauta; não agenda publicações nem cria rotina recorrente sem pedido.
+
 1. **Colete** em Google Trends, vidIQ, listas de livros, filmes e séries, e vídeos mais vistos em pt-BR.
 2. **Avise antes de gastar** créditos ou uso pago de qualquer ferramenta.
 3. **Registre a evidência** de cada candidato: link, data, número visto e o tamanho do canal de origem. Um post isolado é hipótese. Procure o padrão em mais de um criador.

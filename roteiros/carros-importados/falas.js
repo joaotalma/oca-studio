@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Imagine não poder comprar carro de fora.", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Em 1976, o Brasil proibiu a importação de carros novos.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 6.9, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "A proibição durou catorze anos.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7, "fim": 9, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Em 9 de maio de 1990, a importação foi liberada.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 9.1, "fim": 13.1, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Montadoras entraram no país ao longo daquela década.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 13.2, "fim": 16.4, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "E importadoras passaram a trazer modelos a pedido dos clientes.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.5, "fim": 20.5, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "A porta abriu. Agora imagine se fechasse de novo amanhã.", "pausa": 0.4, "imagem": "assets/cena07.png", "camada": "seria", "ini": 20.9, "fim": 24.9, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Nenhum carro novo de fora entraria no país.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "seria", "ini": 25, "fim": 28.2, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Os importados da garagem do vizinho valeriam uma fortuna.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 28.3, "fim": 31.9, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Peça viraria caça ao tesouro.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 32, "fim": 34, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Oficinas inventariam soluções que nenhum manual prevê.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 34.1, "fim": 36.9, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Quem tivesse dinheiro faria réplicas em fibra.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 37, "fim": 39.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Um carro de dez anos seria vendido como novidade.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 39.9, "fim": 43.5, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E o sonho de consumo seria aquele modelo que ninguém mais fabrica.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 43.6, "fim": 48.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Fábricas nacionais não teriam com quem competir.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 48.5, "fim": 51.3, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Mecânicos virariam artistas.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 51.4, "fim": 52.6, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "O vizinho mostraria o carro como quem mostra obra de arte.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 52.7, "fim": 57.1, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E o trânsito pareceria uma foto antiga.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 57.2, "fim": 60, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora olhe para o carro mais próximo.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 60.1, "fim": 62.9, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Ele existiria nesse Brasil?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 63, "fim": 64.6, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Qual carro você nunca teria visto?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 64.9, "fim": 67.3, "movimento": "esq"}
+];

@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se os caças tivessem alcançado?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.4},
+  {"n": 2, "quem": "Narrador", "texto": "Em 19 de maio de 1986, luzes apareceram no céu de vários estados.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.5, "fim": 7.7, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Foram registrados pelo menos 21 objetos não identificados.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.8, "fim": 11, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "A Força Aérea mandou cinco caças atrás deles.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 11.1, "fim": 14.3, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Nenhum obteve sucesso.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 14.4, "fim": 15.6, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Quatro dias depois, o ministro chamou a imprensa.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 15.7, "fim": 18.9, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "E disse que, tecnicamente, não havia explicação.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19, "fim": 21.8, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Até hoje é um mistério. Agora imagine se um caça tivesse chegado perto.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 22.2, "fim": 27.4, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "O piloto veria o que ninguém jamais viu.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.5, "fim": 30.7, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "O rádio da base ficaria em silêncio por alguns segundos.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 30.8, "fim": 34.8, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "O governo teria que decidir o que contar.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 34.9, "fim": 38.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "A notícia sairia em todos os jornais do planeta.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 38.2, "fim": 41.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Outros países mandariam aviões para o céu do Brasil.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 41.9, "fim": 45.5, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E o seu bairro viveria olhando para cima.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 45.6, "fim": 48.8, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Ninguém dormiria tranquilo de janela aberta.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 48.9, "fim": 51.3, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Cada estrela no céu viraria motivo de desconfiança.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 51.4, "fim": 54.6, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "E a escola pararia para ouvir o noticiário.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 54.7, "fim": 57.9, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Agora pense naquela noite.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 58, "fim": 59.6, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Você teria saído na rua para ver?", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 59.7, "fim": 62.5, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Ou trancaria a porta e fingiria que nada aconteceu?", "pausa": 0.3, "imagem": "assets/cena20.png", "camada": "voce", "ini": 62.8, "fim": 66.4, "movimento": "zoom-out"}
+];

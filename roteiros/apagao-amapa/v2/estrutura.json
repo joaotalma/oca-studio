@@ -1,0 +1,178 @@
+{
+  "slug": "apagao-amapa-v2",
+  "titulo": "Sua geladeira aguentaria semanas sem luz?",
+  "pergunta": "O que você protegeria quando a bateria acabasse?",
+  "pista": "bateria do celular",
+  "virada": "A urgência sairia da tela e chegaria à comida e à água.",
+  "resposta": "Qual necessidade você tentaria resolver primeiro?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.poder360.com.br/brasil/governo-diz-que-apos-22-dias-de-apagao-energia-foi-restabelecida-no-amapa/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Sua geladeira aguentaria semanas sem luz?",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar bateria do celular",
+      "revela": "Sua geladeira aguentaria semanas sem luz?",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 3 de novembro de 2020, um transformador pegou fogo no Amapá.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 3 de novembro de 2020, um transformador pegou fogo no Amapá.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Treze dos dezesseis municípios ficaram no escuro.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Treze dos dezesseis municípios ficaram no escuro.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Faltou energia, e houve corrida por água.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Faltou energia, e houve corrida por água.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria poupar a bateria, desligando tudo que parecesse dispensável.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Você tentaria poupar a bateria, desligando tudo que parecesse dispensável.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No primeiro dia, parece até uma aventura.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "No primeiro dia, parece até uma aventura.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No segundo, o celular morre e a água para de subir.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "No segundo, o celular morre e a água para de subir.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas o celular carregado não faria a água subir nem manteria a comida fria.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Mas o celular carregado não faria a água subir nem manteria a comida fria.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A comida do congelador vira o jantar do prédio inteiro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "A comida do congelador vira o jantar do prédio inteiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Quem tem gerador vira a pessoa mais importante da rua.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Quem tem gerador vira a pessoa mais importante da rua.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você guardaria o carregador como se ele ainda pudesse resolver alguma coisa.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Você guardaria o carregador como se ele ainda pudesse resolver alguma coisa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Ao procurar ajuda, descobriria que a casa ao lado dependeria da mesma rede.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Ao procurar ajuda, descobriria que a casa ao lado dependeria da mesma rede.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A urgência sairia da tela e chegaria à comida e à água.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "A urgência sairia da tela e chegaria à comida e à água.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A bateria seria só o aviso. O problema estaria no que sua casa precisa para funcionar.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "A bateria seria só o aviso. O problema estaria no que sua casa precisa para funcionar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Qual necessidade você tentaria resolver primeiro?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em bateria do celular",
+      "revela": "Qual necessidade você tentaria resolver primeiro?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

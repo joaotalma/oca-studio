@@ -1,0 +1,188 @@
+{
+  "slug": "sete-quedas-v2",
+  "titulo": "Você trocaria uma paisagem por energia?",
+  "pergunta": "É possível recuperar um lugar sem discutir o que o substituiu?",
+  "pista": "paisagem refletida na água",
+  "virada": "A imagem desejada esconderia uma escolha entre usos diferentes do mesmo espaço.",
+  "resposta": "Que custo você consideraria antes de escolher?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://en.wikipedia.org/wiki/Gua%C3%ADra_Falls",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Você trocaria uma paisagem por energia?",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar paisagem refletida na água",
+      "revela": "Você trocaria uma paisagem por energia?",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "No rio Paraná, entre Brasil e Paraguai, existia um conjunto imenso de cachoeiras.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "No rio Paraná, entre Brasil e Paraguai, existia um conjunto imenso de cachoeiras.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Era o Salto de Sete Quedas.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Era o Salto de Sete Quedas.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "E em 1982, o lago da usina cobriu tudo.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "E em 1982, o lago da usina cobriu tudo.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria imaginar o passeio, o barulho e a primeira fotografia daquele lugar.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Você tentaria imaginar o passeio, o barulho e a primeira fotografia daquele lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O lago baixaria, e o barulho voltaria aos poucos.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "O lago baixaria, e o barulho voltaria aos poucos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Guaíra receberia gente do mundo inteiro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Guaíra receberia gente do mundo inteiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas voltar a paisagem também exigiria discutir a função que aquele espaço ganhou depois.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Mas voltar a paisagem também exigiria discutir a função que aquele espaço ganhou depois.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A energia do país teria que vir de outro lugar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A energia do país teria que vir de outro lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A sua conta de luz entraria na discussão.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A sua conta de luz entraria na discussão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria colocar os dois desejos na mesma fotografia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Você tentaria colocar os dois desejos na mesma fotografia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas uma decisão sobre aquele espaço envolveria quem conhece a paisagem e quem depende do uso atual.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Mas uma decisão sobre aquele espaço envolveria quem conhece a paisagem e quem depende do uso atual.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Nenhum botão apagaria essa discussão.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Nenhum botão apagaria essa discussão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A imagem desejada esconderia uma escolha entre usos diferentes do mesmo espaço.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A imagem desejada esconderia uma escolha entre usos diferentes do mesmo espaço.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A fotografia não mostraria sozinha todas as pessoas alcançadas pela decisão.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A fotografia não mostraria sozinha todas as pessoas alcançadas pela decisão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Que custo você consideraria antes de escolher?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Que custo você consideraria antes de escolher?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "slug": "guerra-da-lagosta-v2",
+  "titulo": "Uma lagosta colocaria um país em disputa.",
+  "pergunta": "Como uma palavra pode mudar uma fronteira de interesses?",
+  "pista": "lagosta e linha no mapa",
+  "virada": "A discussão sobre o animal esconderia uma disputa por acesso e controle.",
+  "resposta": "Você olharia para o animal ou para o mapa?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.gazetadopovo.com.br/vida-e-cidadania/a-lagosta-e-nossa-24v9shy09i5lw3gg583pln8em/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Uma lagosta colocaria um país em disputa.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar lagosta e linha no mapa",
+      "revela": "Uma lagosta colocaria um país em disputa.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Entre 1961 e 1963, Brasil e França disputaram lagostas no Nordeste.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Entre 1961 e 1963, Brasil e França disputaram lagostas no Nordeste.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A França dizia que a lagosta anda dando saltos, então seria peixe.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "A França dizia que a lagosta anda dando saltos, então seria peixe.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria encerrar a briga olhando apenas para o animal e para como ele se move.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Você tentaria encerrar a briga olhando apenas para o animal e para como ele se move.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O primeiro tiro sairia no meio do mar, por causa de um crustáceo.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "O primeiro tiro sairia no meio do mar, por causa de um crustáceo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Os jornais do mundo inteiro dariam risada.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Os jornais do mundo inteiro dariam risada.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas a resposta também mudaria quem poderia explorar aquele pedaço do mar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Mas a resposta também mudaria quem poderia explorar aquele pedaço do mar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Até a primeira notícia ruim chegar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Até a primeira notícia ruim chegar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Praias do Nordeste teriam navios no horizonte.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Praias do Nordeste teriam navios no horizonte.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você acompanharia a linha do mapa antes de escolher uma definição.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Você acompanharia a linha do mapa antes de escolher uma definição.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Descobriria que uma discussão aparentemente pequena pode esconder interesses muito maiores que o exemplo usado nela.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Descobriria que uma discussão aparentemente pequena pode esconder interesses muito maiores que o exemplo usado nela.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A pergunta mudaria de tamanho.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "A pergunta mudaria de tamanho.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A discussão sobre o animal esconderia uma disputa por acesso e controle.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "A discussão sobre o animal esconderia uma disputa por acesso e controle.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A lagosta continuaria pequena. O interesse por trás da definição seria enorme.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "A lagosta continuaria pequena. O interesse por trás da definição seria enorme.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você olharia para o animal ou para o mapa?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em lagosta e linha no mapa",
+      "revela": "Você olharia para o animal ou para o mapa?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

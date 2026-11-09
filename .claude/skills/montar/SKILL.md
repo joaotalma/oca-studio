@@ -7,8 +7,10 @@ description: Transforma roteiro aprovado e a narração do João em vídeo, usan
 
 ## Entradas
 
+Leia `docs/DIRECAO-VISUAL.md` e o `direcao.json` do roteiro quando houver. Não escolher câmera por alternância nem reutilizar automaticamente a arte de um roteiro reescrito. Voice Design ElevenLabs só com autorização explícita do João; configuração independente em `canal/voz-elevenlabs.json`, licença verificada e chave em ambiente. Fluxo local: `node engine/voz-elevenlabs.mjs criar` uma vez; `narrar <pasta>` para um texto autorizado. A autorização de criar uma voz original não implica que ela seja clone do João. A exceção de produção integral desta conversa está registrada no apagão v2; não eliminar os pontos de aprovação dos próximos vídeos.
+
 - `roteiros/<slug>/` com roteiro aprovado, `falas.js` e `video.js`
-- Na fase final, `audio/<slug>/narracao.wav` (ou `.m4a`, `.mp3`, `.flac`) gravada pelo João
+- Na fase final, `audio/<slug>/narracao.wav` (ou `.m4a`, `.mp3`, `.flac`) gravada pelo João ou gerada por ele com o clone da própria voz
 
 ## Fase 1: âncoras
 
@@ -46,5 +48,5 @@ O script corta a narração nas pausas, sincroniza, mixa, masteriza a -16 LUFS, 
 
 ## Nunca
 
-- Gerar a voz. Sem gravação, o script entrega render mudo, e isso precisa ser dito ao João.
+- Gerar voz sem autorização explícita e licença verificada. Quando autorizado, usar o perfil independente do Plotline e registrar o uso; fora disso, entregar render mudo identificado.
 - Usar template só especificado sem antes implementar e validar com um teste curto.

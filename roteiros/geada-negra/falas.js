@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Uma noite acabou com o café paranaense.", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Em 1975, o Paraná colheu 10,2 milhões de sacas de café.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Era 48% da produção do Brasil.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 9.8, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "A colheita terminou antes de 18 de julho.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 9.9, "fim": 13.1, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Naquele dia, veio a geada negra.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 13.2, "fim": 15.6, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Na safra seguinte, a produção despencou para 3,8 mil sacas.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 15.7, "fim": 19.7, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "A participação do estado caiu para 0,1%.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19.8, "fim": 22.6, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "O Paraná mudou para sempre. Agora imagine uma noite assim hoje.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 23, "fim": 27.4, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Você dormiria em um estado e acordaria em outro.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.5, "fim": 31.1, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "O preço do café na padaria dobraria em poucas semanas.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 31.2, "fim": 35.2, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Famílias olhariam para a lavoura preta sem saber o que fazer.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 35.3, "fim": 39.7, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Cidades inteiras perderiam o motivo de existir.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 39.8, "fim": 42.6, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Caminhões iriam embora levando mudança.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 42.7, "fim": 44.7, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E o cafezinho de todo dia viraria luxo.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 44.8, "fim": 48, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Bancos cobrariam dívidas de quem não tem mais nada.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 48.1, "fim": 51.7, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Fazendas trocariam de cultura em um ano.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 51.8, "fim": 54.6, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Os cafés da cidade fechariam um a um.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 54.7, "fim": 57.9, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E a próxima noite fria daria medo em todo mundo.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 58, "fim": 62, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora olhe para a sua xícara.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 62.1, "fim": 64.5, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "De onde veio esse café?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 64.6, "fim": 66.6, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "E se ele nunca mais chegasse?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 66.9, "fim": 69.3, "movimento": "esq"}
+];

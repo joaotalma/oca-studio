@@ -13,6 +13,8 @@ Marcas: **[relato]** vem de criador ou fórum; **[hipótese]** é inferência a 
 
 ## Roteiro
 
+**Revisão v2, solicitada em 2026-11-08:** usar `docs/DIRECAO-VISUAL.md` e `engine/gerar-roteiro.mjs`. Antes dos blocos, definir pergunta central, mecanismo de progressão, pista, virada e entrega. Gancho/prova/desenvolvimento/fecho são funções, não obrigação de preencher intervalos. Contexto precisa aumentar vínculo, risco ou compreensão; cortar o que apenas adia a promessa. Referências atuais entram pelo radar em `docs/PROMPT-PESQUISA.md`. Tudo permanece hipótese até medição do próprio canal.
+
 | Bloco | Tempo | Função |
 |---|---|---|
 | Gancho | 0 a 3 s | Contradição ou melhor momento, sem apresentação |
@@ -39,7 +41,7 @@ Marcas: **[relato]** vem de criador ou fórum; **[hipótese]** é inferência a 
 |---|---|---|
 | `chat` | Conversa rolando, com texto no ritmo da fala | Funcional |
 | `caixa-texto` | Relato revelado aos poucos em uma caixa de texto | Especificado |
-| `ilustrado` | Imagens estáticas, Ken Burns leve e palavras-chave | Especificado |
+| `ilustrado` | Personagem 2D em cenário com profundidade, câmera motivada e palavras-chave | Funcional; direção em `docs/DIRECAO-VISUAL.md` |
 
 Nos dois primeiros, a tela quase não muda: quem segura a atenção é o texto aparecendo com a voz. Por isso o QA mede o tempo sem texto novo em vez de cobrar movimento.
 

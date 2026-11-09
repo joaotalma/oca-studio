@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se Sete Quedas voltasse?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2},
+  {"n": 2, "quem": "Narrador", "texto": "No rio Paraná, entre Brasil e Paraguai, existia um conjunto imenso de cachoeiras.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.1, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Era o Salto de Sete Quedas.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 9.8, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Os dois países disputavam aquele lugar.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 9.9, "fim": 12.3, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Em 1973, um acordo autorizou a usina de Itaipu.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 12.4, "fim": 16, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "E em 1982, o lago da usina cobriu tudo.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.1, "fim": 19.7, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "As cachoeiras deixaram de existir.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19.8, "fim": 21.8, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Elas estão debaixo da água. Agora imagine se voltassem.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 22.2, "fim": 25.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "O lago baixaria, e o barulho voltaria aos poucos.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 25.9, "fim": 29.5, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Guaíra receberia gente do mundo inteiro.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 29.6, "fim": 32, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Hotéis nasceriam onde hoje há silêncio.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 32.1, "fim": 34.5, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "A energia do país teria que vir de outro lugar.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 34.6, "fim": 38.6, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "A sua conta de luz entraria na discussão.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 38.7, "fim": 41.9, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "Quem nunca viu as cachoeiras choraria na primeira visita.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 42, "fim": 45.6, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E o Brasil teria que escolher entre a luz e a paisagem.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 45.7, "fim": 50.5, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Pescadores mudariam de profissão outra vez.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 50.6, "fim": 53, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Famílias voltariam para ver onde moraram.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 53.1, "fim": 55.5, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E cada cartão-postal custaria uma briga de bilhões.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 55.6, "fim": 58.8, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora pense em um lugar que você ama.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 58.9, "fim": 62.1, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Quanto de energia valeria perdê-lo?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 62.2, "fim": 64.2, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Você apertaria o botão?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 64.5, "fim": 66.1, "movimento": "esq"}
+];

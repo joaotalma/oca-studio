@@ -1,7 +1,10 @@
 node_modules/
 __pycache__/
+.tmp/
 *.log
 .env
+.env.*
+audio/elevenlabs/
 render/*
 !render/.gitkeep
 audio/**/*.wav
