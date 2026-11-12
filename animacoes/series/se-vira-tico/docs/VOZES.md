@@ -67,9 +67,9 @@ Descrição em texto e semente fixa não seguram a voz: cada fala sorteava uma p
 ## Do áudio ao vídeo
 
 ```bash
-python scripts/sincronizar.py episodios/ep01 audio/ep01
-python scripts/mixar.py audio/ep01 render/ep01_mix.wav
-bash scripts/masterizar.sh render/ep01_mix.wav render/ep01_master.wav
+python ../../motor/audio/sincronizar.py episodios/ep01 audio/ep01
+python ../../motor/audio/mixar.py audio/ep01 render/ep01_mix.wav
+bash ../../motor/audio/masterizar.sh render/ep01_mix.wav render/ep01_master.wav
 ```
 
 - `sincronizar.py` apara as falas e gera `tempos.js`, que leva o filme do tempo do roteiro para o tempo real e faz a boca seguir o volume.

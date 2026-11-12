@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import {compilar} from '../gerar-roteiro.mjs';
+import {compilar} from '../roteiro/gerar-roteiro.mjs';
 const base=()=>JSON.parse(fs.readFileSync(new URL('../../series/misterios-do-brasil/roteiros/apagao-2001/v2/estrutura.json',import.meta.url),'utf8'));
 test('fato sem fonte conferida não pode virar fala factual',()=>{
  const e=base();e.fontes.F01.situacao='nao-conferido';assert.throws(()=>compilar(e),/fonte conferida/);
@@ -18,7 +18,7 @@ test('geração liga direção a todas as falas e preserva separação de hipót
  assert.equal(r.falas[0].pausa,0);assert.ok(r.falas[0].fim<=3);
 });
 test('câmera parada e trajetória explícita independem da ordem dos quadros',()=>{
- const sandbox=vm.createContext({});vm.runInContext(fs.readFileSync(new URL('../ambiente3d.js',import.meta.url),'utf8'),sandbox);
+ const sandbox=vm.createContext({});vm.runInContext(fs.readFileSync(new URL('../cenas/ambiente3d.js',import.meta.url),'utf8'),sandbox);
  const m=sandbox.Plotline3D,c=m.config({tipo:'sala'}),plain=x=>JSON.parse(JSON.stringify(x));
  assert.deepEqual(plain(m.camera(c,0,4,'parado')),plain(m.camera(c,1,4,'parado')));
  const scene={...c,camera:{de:[0,2,-5],para:[1,2,-4],alvo:[0,1,3]}};

@@ -22,14 +22,15 @@ Frente de animações da Oca Studio. Aqui ficam o motor, os templates e as séri
 
 O fluxo de produção é a skill `novo-video`, que para em três pontos de aprovação. Se `canal.md` da série estiver em branco, rode antes a skill `configurar-canal`.
 
-## Motores
+## Motor
 
-Por enquanto existem dois motores com a mesma raiz:
+Há **um motor só**, em `motor/` (veja `motor/README.md`). Todas as séries usam ele:
 
-- `motor/` é genérico, sem elenco fixo, e é usado pelos templates (Mistérios e Filmes).
-- `series/se-vira-tico/personagens/` é o motor de produção do Tico, que já entregou os episódios 1 a 6.
+- `motor/personagem/` tem o rig com elenco, os cenários e o motor de cena. É usado pelo Tico. Ele tem dois estilos, `ESTILO_RIG = 'organico'` (padrão, o v4 aprovado pelo João em 2026-11-09) e `'classico'`. Os eps. 1 a 6 do Tico fixam o clássico no `ep.js`.
+- `motor/cenas/`, `motor/audio/`, `motor/roteiro/` e `motor/qa/` são usados por todas as séries. O `mixar.py` tem o modo episódio (trilha sintetizada do Tico) e o modo `--narrado`.
+- Mudou o motor? Prove com `motor/qa/quadros.mjs` (gravar antes e comparar depois) que os vídeos prontos não mudaram.
 
-O padrão definido para personagem é o **ator orgânico v4**, aprovado pelo João em 2026-11-09. Ele está em `estudos/ator-organico-v4/`, e a versão adaptada ao Tico está em `estudos/tico-rig-organico/`. Unir os dois motores num só é a fase 2 (veja `PROXIMOS-PASSOS.md`). Só faça isso com um teste de render de cada série antes e depois.
+O ator orgânico v4 dos Mistérios (`estudos/ator-organico-v4/`, em Canvas) segue como estudo de referência do personagem "você"; as cenas dos Mistérios ainda são desenhadas por `motor/cenas/`.
 
 ## Regras
 

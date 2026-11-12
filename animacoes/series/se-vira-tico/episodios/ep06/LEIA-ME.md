@@ -8,7 +8,7 @@ O vídeo já contém legendas; o SRT é uma cópia editável. As duas falas simu
 
 Fontes: HTML/JS/SVG do episódio, vozes por fala e master estéreo. O filme é desenhado por window.renderFrame(tempoReal), após window.READY=true, a 1080 × 1920 e 30 fps, por um servidor local. Muxar com audio/master.wav. Não é necessária chave para reproduzir os assets fornecidos. Nenhum arquivo de ambiente está incluído.
 
-A fonte do rig continua em personagens/chars.js no próprio projeto Tico. A direção é dados de episódio; a produção foi orquestrada em Plotline/producao/tico-ep06-v2 sem unificar as engines. O figurino sem crachá e a altura de legenda por fala são opcionais e preservam os desenhos anteriores.
+A fonte do rig continua em ../../motor/personagem/chars.js no próprio projeto Tico. A direção é dados de episódio; a produção foi orquestrada em Plotline/producao/tico-ep06-v2 sem unificar as engines. O figurino sem crachá e a altura de legenda por fala são opcionais e preservam os desenhos anteriores.
 
 Vozes do elenco já existente no ElevenLabs: 10 falas reaproveitadas, 10 novas;249 novos caracteres. Música e efeitos sintetizados no próprio projeto. Leia qa.md para as medições e limites de avaliação.
 

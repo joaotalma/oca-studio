@@ -7,7 +7,7 @@ description: Transforma roteiro aprovado e a narração do João em vídeo, usan
 
 ## Entradas
 
-Leia `docs/DIRECAO-VISUAL.md` e o `direcao.json` do roteiro quando houver. Não escolher câmera por alternância nem reutilizar automaticamente a arte de um roteiro reescrito. Voice Design ElevenLabs só com autorização explícita do João; configuração independente em `series/misterios-do-brasil/canal/voz-elevenlabs.json`, licença verificada e chave em ambiente. Fluxo local: `node motor/voz-elevenlabs.mjs criar` uma vez; `narrar <pasta>` para um texto autorizado. A autorização de criar uma voz original não implica que ela seja clone do João. A exceção de produção integral desta conversa está registrada no apagão v2; não eliminar os pontos de aprovação dos próximos vídeos.
+Leia `docs/DIRECAO-VISUAL.md` e o `direcao.json` do roteiro quando houver. Não escolher câmera por alternância nem reutilizar automaticamente a arte de um roteiro reescrito. Voice Design ElevenLabs só com autorização explícita do João; configuração independente em `series/misterios-do-brasil/canal/voz-elevenlabs.json`, licença verificada e chave em ambiente. Fluxo local: `node motor/audio/voz-elevenlabs.mjs criar` uma vez; `narrar <pasta>` para um texto autorizado. A autorização de criar uma voz original não implica que ela seja clone do João. A exceção de produção integral desta conversa está registrada no apagão v2; não eliminar os pontos de aprovação dos próximos vídeos.
 
 - `series/misterios-do-brasil/roteiros/<slug>/` com roteiro aprovado, `falas.js` e `video.js`
 - Na fase final, `audio/<slug>/narracao.wav` (ou `.m4a`, `.mp3`, `.flac`) gravada pelo João ou gerada por ele com o clone da própria voz
@@ -44,7 +44,7 @@ O script corta a narração nas pausas, sincroniza, mixa, masteriza a -16 LUFS, 
 
 ## Critério de pronto
 
-`motor/qa-video.mjs` aprova os itens medidos, e o vídeo vai para a skill `qa`.
+`motor/qa/qa-video.mjs` aprova os itens medidos, e o vídeo vai para a skill `qa`.
 
 ## Nunca
 

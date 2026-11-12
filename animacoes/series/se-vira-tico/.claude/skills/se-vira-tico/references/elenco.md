@@ -1,6 +1,6 @@
 # Elenco
 
-História: `docs/BIBLIA.md`. Aparência: `personagens/chars.js`; se houver diferença, vale o código. Cada um acerta em parte e erra em parte, para a sátira nunca escolher lado.
+História: `docs/BIBLIA.md`. Aparência: `../../motor/personagem/chars.js`; se houver diferença, vale o código. Cada um acerta em parte e erra em parte, para a sátira nunca escolher lado.
 
 ## Tico (Tiago Almeida), 31
 

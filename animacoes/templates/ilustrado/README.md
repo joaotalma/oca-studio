@@ -6,7 +6,7 @@ Personagem 2D aprovado em cenário 3D estilizado, com legenda no ritmo da voz e 
 
 ## Motor 3D padrão
 
-`motor/montar.sh` verifica as camadas e prepara as texturas neutras quando necessário. `motor/preparar-film.sh` copia `motor/ambiente3d.js` e compila `cenas3d.js` a partir dos SVGs e das configurações do episódio. Não depende da pasta do experimento nem de seus dois temas.
+`motor/montar.sh` verifica as camadas e prepara as texturas neutras quando necessário. `motor/preparar-film.sh` copia `motor/cenas/ambiente3d.js` e compila `cenas3d.js` a partir dos SVGs e das configurações do episódio. Não depende da pasta do experimento nem de seus dois temas.
 
 - Estrelas determinísticas à noite e nuvens lentas de dia, apenas em ambientes externos e atrás dos volumes.
 - Preenchimento neutro mais claro no personagem (`preenchimento: 0.22`), independente da animação das fontes. A intensidade, o lado e a cor da janela/poste afetam cenário, personagem, sombra e luz no chão no mesmo instante.
@@ -49,7 +49,7 @@ Verificação sem render: `node --test motor/testes/ambiente3d.test.mjs`.
 Na pasta `series/misterios-do-brasil/roteiros/<slug>/`:
 
 - **`cenas/*.svg`:** cenas em 1080 x 1920. Podem usar o personagem aprovado com `<use href="#frente"/>` ou `<use href="#perfil"/>`.
-- **`assets/*.png`:** gerados das cenas por `node motor/desenhar-cenas.mjs series/misterios-do-brasil/roteiros/<slug>`. É o que passa pela aprovação de imagens-âncora.
+- **`assets/*.png`:** gerados das cenas por `node motor/cenas/desenhar-cenas.mjs series/misterios-do-brasil/roteiros/<slug>`. É o que passa pela aprovação de imagens-âncora.
 - **`assets/*-albedo.png` e `*-pisca-albedo.png`:** cor-base neutra do personagem, preparada sem a iluminação fixa do SVG para receber a luz 3D. Não altera o desenho ou a roupa. Registradas em `assets/camadas.js`.
 - **`video.js`:** `const VIDEO = { template: 'ilustrado', paleta: 'roxo' };`, com uma paleta de `paletas.js`.
 - **`falas.js`:** uma fala por linha, em JSON válido.
@@ -66,7 +66,7 @@ Na pasta `series/misterios-do-brasil/roteiros/<slug>/`:
 | `destaque` | não | Palavras em âmbar na legenda |
 | `inteiro` | não | Use na primeira fala, o gancho: texto grande e completo desde o primeiro quadro, com avanço rápido sobre a imagem |
 | `pausa` | não | Segundos de silêncio antes da fala. Padrão: 0,25 |
-| `ini`, `fim` | sim | Tempo no roteiro. Preenchidos por `motor/estimar-tempos.mjs` |
+| `ini`, `fim` | sim | Tempo no roteiro. Preenchidos por `motor/audio/estimar-tempos.mjs` |
 
 ## Regras
 
@@ -81,8 +81,8 @@ Revisão v2: `docs/DIRECAO-VISUAL.md` define a direção. `direcao.json` registr
 ## Montar
 
 ```bash
-node motor/estimar-tempos.mjs series/misterios-do-brasil/roteiros/<slug>/falas.js
-node motor/desenhar-cenas.mjs series/misterios-do-brasil/roteiros/<slug>
+node motor/audio/estimar-tempos.mjs series/misterios-do-brasil/roteiros/<slug>/falas.js
+node motor/cenas/desenhar-cenas.mjs series/misterios-do-brasil/roteiros/<slug>
 bash motor/montar.sh series/misterios-do-brasil/roteiros/<slug>
 ```
 

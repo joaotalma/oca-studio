@@ -47,7 +47,7 @@ Antes de criar ou alterar uma pose, leia `personagens/MONTAGEM_DO_RIG.md`. O ess
 - **Vista:** os humanos só têm vista de frente, e o Fiscal só tem perfil, virado para a esquerda. Não escreva cena que dependa de outra vista: liste a necessidade em `poses_novas.md`. Andar é um passo sem sair do lugar; o deslocamento vem da animação da posição.
 - Precisa de pose ou expressão nova? Liste em `poses_novas.md` na pasta do episódio em vez de inventar no filme.
 - Para experimentar poses, abra `personagens/estudio.html`. O botão "Exportar JSON" dá os valores prontos.
-- A fonte do rig é `personagens/chars.js`. Não edite as cópias nas pastas de episódio. Depois de mudar o rig, rode `node gen-assets.js` na pasta `personagens`.
+- A fonte do rig é `../../motor/personagem/chars.js`. Não edite as cópias nas pastas de episódio. Depois de mudar o rig, rode `node gen-assets.js` na pasta `personagens`.
 
 ### Motor do episódio
 
@@ -55,7 +55,7 @@ Cada episódio é dado, não código novo. Siga `episodios/ep01`:
 
 - `roteiro.md` é a fonte das falas e dos tempos. `node scripts/gerar-falas.mjs episodios/epNN` gera `falas.js` a partir dele.
 - `ep.js` define planos, câmera, poses, telas e latidos.
-- `personagens/motor.js` e `personagens/cenarios.js` são compartilhados. Só crie cenário ou objeto novo quando a história pedir.
+- `../../motor/personagem/motor.js` e `../../motor/personagem/cenarios.js` são compartilhados. Só crie cenário ou objeto novo quando a história pedir.
 - `continua: true` marca um plano que segue o anterior sem corte; comece a câmera dele onde a anterior parou.
 - `impactos` lista só impactos propositais, como um estouro. Trocas de legenda e entradas de objeto precisam ser suavizadas, não declaradas.
 

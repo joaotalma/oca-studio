@@ -1,5 +1,5 @@
 // Gera as folhas de personagens em assets/. Uso: cd personagens && node gen-assets.js
-const { CHARS, FISCAL, EXPR_ORDER, NOMES_EXPR, SHOE_H, drawChar, drawDog } = require('./chars.js');
+const { CHARS, FISCAL, EXPR_ORDER, NOMES_EXPR, SHOE_H, drawChar, drawDog } = require('../../../motor/personagem/chars.js');
 const fs = require('fs');
 
 const FUNDO = '#fff3d6', TEXTO = '#7a5a44', SOMBRA = '#1b100b';

@@ -1,5 +1,5 @@
 'use strict';
-/* O estudo foi aprovado em 10/11/2026 e as formas orgânicas passaram para personagens/chars.js (RigOrganico).
+/* O estudo foi aprovado em 10/11/2026 e as formas orgânicas passaram para personagens/chars.js, hoje animacoes/motor/personagem/chars.js (RigOrganico).
    Este arquivo ficou como ponte: o estudo continua comparando o estilo 'classico' (em cima) com o 'organico'
    (embaixo) pela chave setEstiloRig, sem duplicar o código do rig. */
 const Organico = (() => {

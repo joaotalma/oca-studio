@@ -238,7 +238,7 @@ Confirmado no quadro de 4,8 s: os dois troncos terminam no ar, acima do guidão.
 
 **Correção pedida:** pernas completas em ambos, dobradas e apoiadas na moto durante a corrida; durante o voo, manter quadris, joelhos, pés e moto coerentes. A moto pousa normalmente, sem pane causada pela lombada. Reenquadrar e rever as camadas para que a carroceria esconda apenas o que realmente deveria encobrir. Apenas remover `semPernas` não garante uma pose sentada convincente.
 
-**Correção pedida para Letícia:** ficar atrás do piloto, ligeiramente à direita e angulada, com quadril e pernas apoiados na garupa. Hoje a separação lateral e a ausência do assento visível fazem parecer que flutua. Conferir aberto, closes, salto e pouso. O rig atual só tem vista frontal; qualquer nova vista deve ser resolvida na fonte `personagens/chars.js`, documentada em `poses_novas.md` e propagada pelo fluxo de assets, nunca editando apenas a cópia do episódio.
+**Correção pedida para Letícia:** ficar atrás do piloto, ligeiramente à direita e angulada, com quadril e pernas apoiados na garupa. Hoje a separação lateral e a ausência do assento visível fazem parecer que flutua. Conferir aberto, closes, salto e pouso. O rig atual só tem vista frontal; qualquer nova vista deve ser resolvida na fonte `../../motor/personagem/chars.js`, documentada em `poses_novas.md` e propagada pelo fluxo de assets, nunca editando apenas a cópia do episódio.
 
 ## 2. Bloqueia — cadência e troca antes do pedido da Lua
 
@@ -266,7 +266,7 @@ Hoje imagem e mixagem programam latidos após “temporário”, “Às oito eu 
 
 ## 5. Bloqueia — Letícia desliza ao desembarcar
 
-**Local:** prédio chique, aproximadamente 62–65 s; `ep.js`, ator Letícia no plano iniciado em `I(33)`; `personagens/motor.js`, `atorSVG`.
+**Local:** prédio chique, aproximadamente 62–65 s; `ep.js`, ator Letícia no plano iniciado em `I(33)`; `../../motor/personagem/motor.js`, `atorSVG`.
 
 Confirmado na sequência de quadros: Letícia se desloca lateralmente com pernas praticamente na mesma pose. O ator usa `movX`, mas não define ciclo de passo. O motor só interpola a posição; não cria caminhada automaticamente.
 
@@ -276,7 +276,7 @@ Confirmado na sequência de quadros: Letícia se desloca lateralmente com pernas
 
 ## 6. Bloqueia — Tico precisa andar ao lado da moto de frente
 
-**Local:** montagem da volta, aproximadamente 69–72 s; `ep.js`, `empurra`, `frenteEmpurra`, `MOTO_X`, `EMPURRA_X`, `bracoAte`; `personagens/cenarios.js`, `motoFrenteSVG`.
+**Local:** montagem da volta, aproximadamente 69–72 s; `ep.js`, `empurra`, `frenteEmpurra`, `MOTO_X`, `EMPURRA_X`, `bracoAte`; `../../motor/personagem/cenarios.js`, `motoFrenteSVG`.
 
 Os quadros mostram o corpo do Tico encoberto pela moto, como se estivesse atrás ou montado. Apesar do nome, `motoFrenteSVG` desenha uma vista em três quartos, com banco e roda traseira deslocados lateralmente; ela é sobreposta ao ator inteiro por `frenteEmpurra`.
 
@@ -284,7 +284,7 @@ Os quadros mostram o corpo do Tico encoberto pela moto, como se estivesse atrás
 
 ## 7. Bloqueia — Lua aparece com dois celulares
 
-**Local:** pedido da carona e áudio perto do fim; `ep.js`, `NA_PORTA` e plano de `I(35)`; renderização de objetos em `personagens/chars.js` e sua cópia gerada no episódio.
+**Local:** pedido da carona e áudio perto do fim; `ep.js`, `NA_PORTA` e plano de `I(35)`; renderização de objetos em `../../motor/personagem/chars.js` e sua cópia gerada no episódio.
 
 Confirmado nos quadros: Lua parece segurar um celular em cada mão, tanto na conversa quanto no áudio. As poses do episódio pedem café à direita (`propR: 'cup'`) e celular à esquerda (`propL: 'phone'`). É necessário conferir a geração dos objetos e eventual divergência da cópia local do rig; a declaração da pose, sozinha, não garante o resultado visual correto.
 

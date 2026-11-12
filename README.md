@@ -14,7 +14,7 @@ Agência de IA do João. Cada frente tem a sua pasta. Oca é a casa indígena em
 
 | Pasta | O que tem |
 |---|---|
-| [`motor/`](animacoes/motor/) | motor de render, rig, cenários, áudio e QA |
+| [`motor/`](animacoes/motor/) | motor único de todas as séries: personagem (rig orgânico e clássico), cenas, áudio, roteiro e QA |
 | [`templates/`](animacoes/templates/) | chat, ilustrado e filmes |
 | [`series/se-vira-tico/`](animacoes/series/se-vira-tico/) | Se Vira, Tico: elenco, episódios, vozes e resultados |
 | [`series/misterios-do-brasil/`](animacoes/series/misterios-do-brasil/) | Mistérios do Brasil (nome a definir): canal, roteiros e pautas |

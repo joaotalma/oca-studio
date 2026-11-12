@@ -2,7 +2,7 @@
 
 ## Moto de frente
 
-`motoRetaSVG`, em `personagens/cenarios.js`, desenha a moto apontada para a câmera. A parte `fundo` vai atrás do piloto, e a parte `frente`, na frente dele.
+`motoRetaSVG`, em `../../motor/personagem/cenarios.js`, desenha a moto apontada para a câmera. A parte `fundo` vai atrás do piloto, e a parte `frente`, na frente dele.
 
 ## Os dois na moto
 
@@ -26,5 +26,5 @@ Passos alternados presos ao deslocamento, que param quando ela chega à porta. E
 ## Outros
 
 - **Cheirando a axila:** braço levantado, cabeça virada para ele e fedor saindo do braço até o nariz.
-- **Xícara:** redesenhada em `personagens/chars.js`, com alça e vapor, para não parecer celular.
+- **Xícara:** redesenhada em `../../motor/personagem/chars.js`, com alça e vapor, para não parecer celular.
 - **Vendedor de paçoca:** personagem novo, calvo e barrigudo, sentado num banco, com a caixa no colo.

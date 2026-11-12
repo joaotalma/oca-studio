@@ -143,7 +143,7 @@
   function desenharCamadas(p, cam, t, esc, dx, dy) {
     const semente = planos.indexOf(p) * 1.7, d = t - p.ini, TAU = Math.PI * 2;
     noPlano(PARALAXE.fundo, esc, dx, dy, () => g.drawImage(imagens.get(cam.fundo), 0, 0, 1080, 1920));
-    // As camadas que se mexem vêm de motor/desenhar-cenas.mjs com sobra em volta (caixa), para o corte não aparecer.
+    // As camadas que se mexem vêm de motor/cenas/desenhar-cenas.mjs com sobra em volta (caixa), para o corte não aparecer.
     const [bx, by, bw, bh] = cam.caixa || [0, 0, 1080, 1920];
     const camada = (nome) => g.drawImage(imagens.get(cam[nome]), bx, by, bw, bh);
     if (cam.voce) noPlano(PARALAXE.voce, esc, dx, dy, () => {

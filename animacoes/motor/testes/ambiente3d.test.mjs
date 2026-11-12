@@ -4,10 +4,10 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import vm from 'node:vm';
-import {compilar,preparar,validarCena,camadasProntas} from '../preparar-cenas3d.mjs';
-import {corBaseDoPersonagem} from '../camadas3d.mjs';
+import {compilar,preparar,validarCena,camadasProntas} from '../cenas/preparar-cenas3d.mjs';
+import {corBaseDoPersonagem} from '../cenas/camadas3d.mjs';
 
-const source=fs.readFileSync(new URL('../ambiente3d.js',import.meta.url),'utf8');
+const source=fs.readFileSync(new URL('../cenas/ambiente3d.js',import.meta.url),'utf8');
 const ctx=vm.createContext({});vm.runInContext(source,ctx);const engine=ctx.Plotline3D;
 const plain=x=>JSON.parse(JSON.stringify(x));
 

@@ -22,8 +22,8 @@ done
 
 narracao="$(ls "$audio"/narracao.* 2>/dev/null | head -1 || true)"
 if [ -n "$narracao" ]; then
-  python "$raiz/motor/fatiar-narracao.py" "$narracao" "$pasta/falas.js" "$audio"
-  python "$raiz/motor/sincronizar.py" "$pasta" "$audio"
+  python "$raiz/motor/audio/fatiar-narracao.py" "$narracao" "$pasta/falas.js" "$audio"
+  python "$raiz/motor/audio/sincronizar.py" "$pasta" "$audio"
 else
   rm -f "$pasta/tempos.js"
   qa+=(--mudo)
@@ -32,18 +32,18 @@ fi
 
 # A base neutra é preparada só na montagem solicitada, nunca ao editar o motor.
 # Evita acumular a luz antiga do SVG com a fonte dinâmica do cenário 3D.
-if ! node "$raiz/motor/preparar-cenas3d.mjs" "$pasta" --camadas-prontas; then
-  node "$raiz/motor/desenhar-cenas.mjs" "$pasta"
+if ! node "$raiz/motor/cenas/preparar-cenas3d.mjs" "$pasta" --camadas-prontas; then
+  node "$raiz/motor/cenas/desenhar-cenas.mjs" "$pasta"
 fi
 bash "$raiz/motor/preparar-film.sh" "$pasta" >/dev/null
 (cd "$film" && W=$W H=$H node export.mjs "$FPS" imagem.mp4)
 
 final="$film/$slug.mp4"
 if [ -n "$narracao" ]; then
-  python "$raiz/motor/mixar.py" "$audio" "$film/mix.wav" ${musica[@]+"${musica[@]}"}
-  bash "$raiz/motor/masterizar.sh" "$film/mix.wav" "$film/master.wav"
+  python "$raiz/motor/audio/mixar.py" "$audio" "$film/mix.wav" --narrado ${musica[@]+"${musica[@]}"}
+  bash "$raiz/motor/audio/masterizar.sh" "$film/mix.wav" "$film/master.wav"
   ffmpeg -v error -y -i "$film/imagem.mp4" -i "$film/master.wav" -c:v copy -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart "$final"
 else
   ffmpeg -v error -y -i "$film/imagem.mp4" -c:v copy -movflags +faststart "$final"
 fi
-node "$raiz/motor/qa-video.mjs" "$film" "$final" ${qa[@]+"${qa[@]}"}
+node "$raiz/motor/qa/qa-video.mjs" "$film" "$final" ${qa[@]+"${qa[@]}"}

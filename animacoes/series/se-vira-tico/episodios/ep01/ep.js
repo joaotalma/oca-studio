@@ -1,4 +1,5 @@
 'use strict';
+ESTILO_RIG = 'classico'; // fixado na Oca Studio (2026-11-12): episódio feito com o rig clássico
 // Episódio 1: dados de planos, poses e telas. Falas e tempos vêm de falas.js, gerado do roteiro.
 // Os tempos aqui são os do roteiro; tempos.js os leva para o tempo real das vozes.
 const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };

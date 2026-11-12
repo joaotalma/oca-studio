@@ -1,4 +1,5 @@
 'use strict';
+ESTILO_RIG = 'classico'; // fixado na Oca Studio (2026-11-12): episódio feito com o rig clássico
 // Episódio 4: É Só Uma Corrida. Planos, poses e telas. Falas e tempos vêm de falas.js e tempos.js.
 const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };
 const suave = (p) => { p = Math.max(0, Math.min(1, p)); return p * p * (3 - 2 * p); };

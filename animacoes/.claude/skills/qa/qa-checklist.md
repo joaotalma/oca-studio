@@ -1,6 +1,6 @@
 # Checklist de QA
 
-"Automático" é medido por `motor/qa-video.mjs`. "À vista" é conferido em uma folha de quadros ou assistindo. "João" só ele decide.
+"Automático" é medido por `motor/qa/qa-video.mjs`. "À vista" é conferido em uma folha de quadros ou assistindo. "João" só ele decide.
 
 ## Automático
 

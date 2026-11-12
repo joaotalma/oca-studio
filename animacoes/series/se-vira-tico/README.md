@@ -22,6 +22,6 @@ cd personagens
 node gen-assets.js
 ```
 
-O rig está em `personagens/chars.js`, e as regras de montagem em `personagens/MONTAGEM_DO_RIG.md`. Para experimentar poses e expressões, abra `personagens/estudio.html` no navegador. Os episódios ficam em `episodios/`.
+O rig está em `../../motor/personagem/chars.js`, e as regras de montagem em `personagens/MONTAGEM_DO_RIG.md`. Para experimentar poses e expressões, abra `personagens/estudio.html` no navegador. Os episódios ficam em `episodios/`.
 
 Vídeos e áudios finais não vão para o git: guarde-os no Drive.

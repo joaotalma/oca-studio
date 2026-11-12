@@ -19,10 +19,11 @@ if [ -f "$pasta/tempos.js" ]; then cp "$pasta/tempos.js" "$film/"; else echo '//
 [ -d "$pasta/assets" ] && cp -r "$pasta/assets" "$film/"
 if [ "$template" = "ilustrado" ]; then
   # Só prepara dados e copia o motor; não gera imagens, voz nem vídeo.
-  node "$raiz/motor/preparar-cenas3d.mjs" "$pasta" "$film"
+  node "$raiz/motor/cenas/preparar-cenas3d.mjs" "$pasta" "$film"
 fi
 # Template com personagem: um arquivo .usa-rig na pasta do template traz o motor e o rig
 if [ -f "$raiz/templates/$template/.usa-rig" ]; then
-  cp "$raiz/motor/rig/chars.js" "$raiz/motor/cenarios.js" "$raiz/motor/motor.js" "$film/"
+  cp "$raiz/motor/personagem/chars.js" "$raiz/motor/personagem/cenarios.js" "$film/"
+  cat "$raiz/motor/personagem/acabamento.js" "$raiz/motor/personagem/motor.js" > "$film/motor.js"
 fi
 echo "$film"

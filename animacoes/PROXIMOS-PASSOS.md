@@ -14,15 +14,19 @@ O nome final da agência é **Oca Studio** (antes se pensava em Blink Studio). O
 - [x] As branches do Tico `ep04`, `ep05-v2`, `t1-formato` e `visual-plotline` viraram `tico/*` no repositório novo, com o trabalho não commitado das worktrees. O rig orgânico do Tico foi copiado para `estudos/tico-rig-organico/`.
 - [x] A v3 e a transferência visual foram para `estudos/_arquivo/`. Os scripts do Codex para o ep06 foram para `series/se-vira-tico/episodios/ep06/producao-codex/`.
 
-**Fase 2, um motor só (pendente, com teste antes e depois):**
+**Fase 2, um motor só (feita em 2026-11-12, com teste antes e depois):**
 
-- [ ] Gravar uma referência de render: um episódio do Tico e um roteiro dos Mistérios, comparando quadro a quadro.
-- [ ] Juntar `motor/` com `series/se-vira-tico/personagens/` (motor, chars, cenarios e acabamento), tendo o rig orgânico v4 como padrão e o rig clássico só para reabrir episódios antigos.
-- [ ] Separar o motor em `render/`, `rig/`, `cenarios/`, `cenas/`, `audio/` e `qa/`.
-- [ ] Áudio com uma versão de cada script: usar o `mixar` do Tico (trilha e efeitos como opção) e o `sincronizar` do motor, e trocar os `mixagem.py` de cada episódio por dados de configuração.
-- [ ] QA único (`qa-video`) também para o Tico, no lugar do `qa-episodio`.
+- [x] Quadros de referência com `motor/qa/quadros.mjs`: Tico ep01 a ep06, ep05 orgânico da branch `tico/ep05-v2`, `click` (filmes) e `_exemplo-chat`. Depois da unificação, todos ficaram com os 24 quadros iguais.
+- [x] Rig único em `motor/personagem/`: o rig do ep06 e o rig orgânico da branch foram juntados, com `ESTILO_RIG` (`organico` por padrão e `classico` fixado nos eps. 1 a 6). As duas cozinhas da Lua ficaram; cada uma aparece no seu estilo. As cópias paradas do rig (`motor/motor.js`, `motor/rig/` e `motor/cenarios.js`) saíram.
+- [x] Motor separado em `personagem/`, `cenas/`, `audio/`, `roteiro/`, `qa/` e `take-one/`.
+- [x] Áudio único: um `mixar.py` (modo episódio e `--narrado`), um `sincronizar.py` e um `masterizar.sh`. A mixagem e a sincronia do Tico (ep05) e do apagão v2 ficaram iguais byte a byte. Os `mixagem.py` dos episódios continuam, porque são dados do episódio (deixas e músicas), não motor.
+- [x] QA único: o `qa-episodio.mjs` do Tico virou um invólucro do `motor/qa/qa-video.mjs`, que ganhou `--sem-texto` e `--checklist`.
+- [x] O Tico usa o Take One de `motor/take-one/`, que recebeu o `frames.mjs` usado pelo estudo visual-2d.
+- [x] `click` saiu dos Mistérios e foi para `series/filmes/roteiros/`, porque usa o template filmes.
 - [ ] Trazer para o motor o que valer dos scripts do Codex do ep06: entonação, abertura em 3 s e empacotamento.
 - [ ] Escolher, com o João, a versão de cada episódio que vale entre as branches `tico/*` e juntar na `main`.
+- [ ] Juntar os templates `ilustrado` e `filmes`, que são quase iguais (94 linhas de diferença). Antes, o `_filme-show-de-truman` precisa de cenas para ter quadros de referência.
+- [ ] Separar o elenco do Tico (`CHARS` e os ajustes por personagem) do rig quando outra série precisar de personagem com rig.
 - [ ] Manter o teste de fundo 3D como etapa própria, ainda pendente.
 
 ## Prioridade: feedback do piloto do apagão v2
@@ -89,7 +93,7 @@ Histórico das versões anteriores, preservadas:
 
 ### Estética definitiva
 
-**Atualização de 2026-11-08:** João aprovou o caminho de personagem 2D em cenário 3D no exemplo de Varginha/apagão e pediu estrelas à noite, nuvens de dia e personagem menos escuro sem perder as luzes dinâmicas. Isso agora é padrão do motor ilustrado (`motor/ambiente3d.js`), com direção e horário por cena. As próximas montagens preparam a base neutra do personagem automaticamente quando faltar ou estiver desatualizada. Cenas manuais sem marcas de camada ainda precisam ser separadas; fundos personalizados não identificados são preservados com aviso até receberem direção própria em `cenas3d.json`.
+**Atualização de 2026-11-08:** João aprovou o caminho de personagem 2D em cenário 3D no exemplo de Varginha/apagão e pediu estrelas à noite, nuvens de dia e personagem menos escuro sem perder as luzes dinâmicas. Isso agora é padrão do motor ilustrado (`motor/cenas/ambiente3d.js`), com direção e horário por cena. As próximas montagens preparam a base neutra do personagem automaticamente quando faltar ou estiver desatualizada. Cenas manuais sem marcas de camada ainda precisam ser separadas; fundos personalizados não identificados são preservados com aviso até receberem direção própria em `cenas3d.json`.
 
 Na primeira atualização do motor não houve novo render. Depois foi produzido o piloto do apagão v2, descrito acima; as demais prévias continuam sendo da versão anterior. Conferir as novas âncoras e o QA na montagem de cada final. A próxima evolução deve atender ao feedback de mais cor e luminosidade.
 
@@ -97,7 +101,7 @@ Histórico da versão anterior, aprovada em 2026-11-07 com o piloto do ET de Var
 
 - [x] ET de Varginha (piloto)
 - [x] Confisco, apagão de 2001, Recife e hiperinflação (reprocessados em 2026-11-07; falta João assistir)
-- [ ] Vídeos 7 a 30 (as cenas precisam ser geradas de novo com `python -I motor/desenhar-lote2.py` antes)
+- [ ] Vídeos 7 a 30 (as cenas precisam ser geradas de novo com `python -I motor/cenas/desenhar-lote2.py` antes)
 - [ ] Greve dos caminhoneiros: as cenas foram feitas à mão e não têm marcas de camada; precisam ser redesenhadas
 - [ ] Revisar as folhas e as prévias de cada lote reprocessado
 

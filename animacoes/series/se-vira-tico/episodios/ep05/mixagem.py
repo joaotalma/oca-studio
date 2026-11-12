@@ -1,4 +1,4 @@
-"""Som do episódio 5. Lido por scripts/mixar.py; os tempos estão no tempo do roteiro (os mesmos do ep.js)."""
+"""Som do episódio 5. Lido por ../../motor/audio/mixar.py; os tempos estão no tempo do roteiro (os mesmos do ep.js)."""
 
 COR, TITULO, SABADO, TROCA, CARRO_T, MALA, GPS, GANHOS = 1.5, 12.8, 13.8, 28.1, 29.6, 34.1, 36.2, 37.6
 NOTE, CLIQUE, AUDIO, MAPA, TRANSITO, RESPOSTA, DECIDE, VOTO, TIMER, COBRE, FIM = 40.1, 42.6, 44.6, 49.2, 50.6, 52.1, 53.6, 55.1, 60.1, 63.4, 65.1

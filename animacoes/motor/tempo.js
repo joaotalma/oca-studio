@@ -1,5 +1,5 @@
 'use strict';
-// Mapa entre o tempo real do áudio e o tempo do roteiro. TEMPOS vem de tempos.js, gerado por motor/sincronizar.py.
+// Mapa entre o tempo real do áudio e o tempo do roteiro. TEMPOS vem de tempos.js, gerado por motor/audio/sincronizar.py.
 // Sem narração gravada, os dois tempos são iguais e o vídeo usa só os tempos de falas.js.
 function tempoDoVideo() {
   const TP = typeof TEMPOS !== 'undefined' ? TEMPOS : null;

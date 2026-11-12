@@ -1,4 +1,5 @@
 'use strict';
+ESTILO_RIG = 'classico'; // fixado na Oca Studio (2026-11-12): episódio feito com o rig clássico
 // Episódio 3: O Dia Errado. Planos, poses e telas. Falas e tempos vêm de falas.js, gerado do roteiro.
 // PROVISÓRIO: os tempos sem fala são do roteiro (2,96 palavras/s) e mudam quando a voz for medida.
 const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };

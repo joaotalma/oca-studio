@@ -9,7 +9,7 @@
 - **Mentira:** ainda não existe. Nasce no fim, quando a Lua faz a pergunta e o público vota.
 - **Riso que engasga:** a Marlene, sozinha e sem bolo, depois da votação.
 - **Aprendizado:** pedir ajuda não é fracassar. Chega na abertura do episódio 2, quando ele liga para o Jão.
-- **Tempos:** os das tabelas são do roteiro. `scripts/sincronizar.py` leva cada um para o tempo real do áudio, e o filme final tem 86,5 s.
+- **Tempos:** os das tabelas são do roteiro. `../../motor/audio/sincronizar.py` leva cada um para o tempo real do áudio, e o filme final tem 86,5 s.
 
 ## Ritmo
 

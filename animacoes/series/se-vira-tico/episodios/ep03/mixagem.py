@@ -1,4 +1,4 @@
-"""Som do episódio 3. Lido por scripts/mixar.py; os tempos estão no tempo do roteiro (já encurtado, ver J no ep.js)."""
+"""Som do episódio 3. Lido por ../../motor/audio/mixar.py; os tempos estão no tempo do roteiro (já encurtado, ver J no ep.js)."""
 
 # Tempos fixos do ep.js, no tempo do roteiro
 COR_VOLTA = 7.45        # a lembrança acaba e a cor volta

@@ -75,14 +75,14 @@ Exceção opcional para edição com votação realmente reaberta: `participacao
 ## Auditoria e integração com o gerador
 
 ```text
-node motor/rubrica-roteiros.mjs estrutura.json
-node motor/rubrica-roteiros.mjs estrutura.json --json
-node motor/rubrica-roteiros.mjs estrutura.json --saida-json auditoria.json --saida-md auditoria.md
+node motor/roteiro/rubrica-roteiros.mjs estrutura.json
+node motor/roteiro/rubrica-roteiros.mjs estrutura.json --json
+node motor/roteiro/rubrica-roteiros.mjs estrutura.json --saida-json auditoria.json --saida-md auditoria.md
 ```
 
 O auditor não bloqueia conteúdo, não renderiza, não publica e não atribui nota de viralização. Confere campos, alguns placeholders, repetição literal e riscos declarados de continuidade/participação. `campos-presentes` significa apenas que essas verificações não encontraram lacunas; não comprova que a pergunta foi bem respondida nem que a história prende atenção. Erros de arquivo/JSON/uso da CLI geram erro operacional distinto de avisos editoriais.
 
-`motor/gerar-roteiro.mjs` continua sendo o compilador **narrado** com os requisitos existentes (`camada`, função, ação, fontes e demais decisões). Ele só adiciona auditoria quando existe `editorial`; então retorna `auditoriaEditorial`, junta os avisos aos já existentes e grava `auditoria-editorial.json`/`.md`. Não converte contratos de diálogo automaticamente nem afrouxa a validação de fatos. Sem `editorial`, preserva o retorno legado e não cria esses arquivos.
+`motor/roteiro/gerar-roteiro.mjs` continua sendo o compilador **narrado** com os requisitos existentes (`camada`, função, ação, fontes e demais decisões). Ele só adiciona auditoria quando existe `editorial`; então retorna `auditoriaEditorial`, junta os avisos aos já existentes e grava `auditoria-editorial.json`/`.md`. Não converte contratos de diálogo automaticamente nem afrouxa a validação de fatos. Sem `editorial`, preserva o retorno legado e não cria esses arquivos.
 
 ## De onde vieram os princípios
 

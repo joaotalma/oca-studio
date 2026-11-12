@@ -52,5 +52,5 @@ Dois saltos, dentro da regra de três tempos.
 ## Rig e cenários novos
 
 - **Personagens:** `ceo` (cabelo grisalho, óculos, terno, gravata vermelha e crachá "CEO") e `junior` (topete com gel, camisa azul e gravata, mais baixo que o pai). A variação `despenteado: true` do Júnior desmancha o gel.
-- **Cenários em `personagens/cenarios.js`:** `box` (fora do episódio), `kitnet`, `kitnetNoite`, `escritorio`, `salaReuniao`, `casaJao`, `janelas`, `janelaTico` e `janelaLua`.
+- **Cenários em `../../motor/personagem/cenarios.js`:** `box` (fora do episódio), `kitnet`, `kitnetNoite`, `escritorio`, `salaReuniao`, `casaJao`, `janelas`, `janelaTico` e `janelaLua`.
 - **Objetos:** `onibusSVG`, `perfumeSVG` e `nuvemPerfumeSVG`. Papel, canetão, vidro e telas ficam no `ep.js`. Fundo das janelas: bandeira preta e branca genérica para o Tico, sem escudo de time, e estante de livros para a Lua.

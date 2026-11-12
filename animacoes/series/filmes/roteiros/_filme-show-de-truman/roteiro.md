@@ -11,7 +11,7 @@ Fonte da checagem: https://www.imdb.com/title/tt0120382 (conferido em 2026-11-07
 
 - **Template:** filmes (paleta crepusculo, olhos de cinema, notas em `hud` e veredito em `carimbo`)
 - **Fontes:** `fontes.md`
-- **Duração estimada:** 144 palavras, 60,0 s a 150 ppm, medido com `motor/estimar-tempos.mjs`. Está no limite: se a narração real passar, corte texto em vez de acelerar. A fala 1 dura 5,2 s, acima dos 3 s do template; o João manteve assim de propósito em 2026-11-07. Medir depois com `motor/estimar-tempos.mjs`.
+- **Duração estimada:** 144 palavras, 60,0 s a 150 ppm, medido com `motor/audio/estimar-tempos.mjs`. Está no limite: se a narração real passar, corte texto em vez de acelerar. A fala 1 dura 5,2 s, acima dos 3 s do template; o João manteve assim de propósito em 2026-11-07. Medir depois com `motor/audio/estimar-tempos.mjs`.
 
 ## Texto
 

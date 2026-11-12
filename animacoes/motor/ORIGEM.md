@@ -58,3 +58,21 @@ A pedido explícito do João, foi consultado `se-vira-tico/scripts/gerar-vozes-e
 O plano Starter ativo e a inclusão de licença comercial foram conferidos na API e em https://elevenlabs.io/pricing. João autorizou criar uma voz original jovem e empolgante, em lugar do clone que ainda não estava disponível. O registro fica em `series/misterios-do-brasil/canal/voz-elevenlabs.json`; não é clone nem imitação da voz do João. Prévias e áudios ficam fora do git. A autorização desta conversa inclui a produção do apagão revisado; não aprova automaticamente outras pautas, vídeos ou publicação.
 
 `gerar-roteiro.mjs`, `revisar-catalogo.mjs`, `desenvolvimentos-v2.json`, `cenas-apagao-v2.mjs` e `fatiar-alinhamento.py` foram criados no Plotline. O alinhamento real substitui a escolha de pausas por tamanho. O motor visual ganhou câmera parada, trajetórias explícitas e aparelhos 3D; saiu a rotação automática de movimentos na montagem de planos. Direção e pesquisa estão em `docs/DIRECAO-VISUAL.md` e `docs/PROMPT-PESQUISA.md`.
+
+## Oca Studio: motor único — 2026-11-12
+
+Na unificação dos projetos na Oca Studio, `engine/` passou a se chamar `motor/` e foi separado por função (`personagem/`, `cenas/`, `audio/`, `roteiro/`, `qa/` e `take-one/`).
+
+| Antes | Agora | Como |
+|---|---|---|
+| Tico `personagens/chars.js` (ep06) + branch `ep05-v2` (rig orgânico) | `personagem/chars.js` | Merge de três vias a partir do commit `babe949` do Tico. Conflito único: as duas linhas `pupil`/`graphicEyes` do ep06 foram mantidas. `ESTILO_RIG` escolhe o estilo |
+| Tico `personagens/cenarios.js` + branch `ep05-v2` | `personagem/cenarios.js` | Merge de três vias. As duas versões de `cenaCozinhaLua`, `caixaDoceSVG`, `timerSVG` e `notebookSVG` ficaram com os sufixos `Classico` e `Organico`, e a função de mesmo nome escolhe pelo estilo do rig |
+| Tico `personagens/motor.js` e `acabamento.js` + branch | `personagem/motor.js` e `acabamento.js` | Merge sem conflito |
+| `engine/motor.js`, `engine/rig/chars.js` e `engine/cenarios.js` | removidos | Eram cópias antigas do rig do Tico e nenhum template as usava |
+| Tico `scripts/mixar.py` + `engine/mixar.py` | `audio/mixar.py` | Os efeitos do Plotline eram idênticos aos do Tico. O modo narrado virou `--narrado` |
+| Tico `scripts/sincronizar.py` + `engine/sincronizar.py` | `audio/sincronizar.py` | Episódio com `ep.js`: arquivos `NN_personagem.mp3`, sem `fx` por fala e duração padrão de 87 s, como antes |
+| Tico `scripts/masterizar.sh` | `audio/masterizar.sh` | Eram idênticos |
+| Tico skill `qa-episodio.mjs` | invólucro de `qa/qa-video.mjs` | Duração por episódio, `--sem-texto` e lista do Tico |
+| skill take-one `scripts/frames.mjs` | `take-one/frames.mjs` | Cópia sem alteração (SHA-256 `c4e58a6e9d0de6c5`), MIT |
+
+Verificação: `qa/quadros.mjs` gravou 24 quadros antes e depois da unificação para os eps. 1 a 6 do Tico, para o ep05 orgânico da branch `tico/ep05-v2`, para `click` e para `_exemplo-chat`, e todos ficaram idênticos. A mixagem e a sincronia do Tico ep05 e do apagão v2 também ficaram idênticas byte a byte. Além disso, passaram os 21 testes do motor, o teste de acabamento do Tico e os testes do estudo visual-2d.

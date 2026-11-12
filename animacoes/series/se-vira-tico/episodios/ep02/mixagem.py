@@ -1,4 +1,4 @@
-"""Som do episódio 2. Lido por scripts/mixar.py; os tempos estão no tempo do roteiro, presos às falas."""
+"""Som do episódio 2. Lido por ../../motor/audio/mixar.py; os tempos estão no tempo do roteiro, presos às falas."""
 
 
 def config(mx, I, E):

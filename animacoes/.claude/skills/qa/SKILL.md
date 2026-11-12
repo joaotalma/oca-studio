@@ -16,7 +16,7 @@ description: Confere um vídeo montado com medições automáticas, folha de qua
 1. **Medições:**
 
 ```bash
-node motor/qa-video.mjs render/<slug> render/<slug>/<slug>.mp4
+node motor/qa/qa-video.mjs render/<slug> render/<slug>/<slug>.mp4
 ```
 
 2. **À vista:** extraia uma folha de quadros, olhe de fato cada um e confira o primeiro quadro, a virada e o último.

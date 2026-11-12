@@ -1,4 +1,4 @@
-"""Som do episódio 4. Lido por scripts/mixar.py; os tempos estão no tempo do roteiro (os mesmos do ep.js)."""
+"""Som do episódio 4. Lido por ../../motor/audio/mixar.py; os tempos estão no tempo do roteiro (os mesmos do ep.js)."""
 
 COR, TUDO, QUARTO, PAGINA, APAGA, SOZINHO, TITULO, GARAGEM = 1.5, 4.0, 6.0, 7.4, 10.0, 10.8, 12.3, 13.3
 APAGANDO, DIARIA, CHAVE, GPS, VENTILA, CORRIDA, PORTA = 21.3, 22.8, 26.9, 27.4, 31.4, 31.9, 33.1

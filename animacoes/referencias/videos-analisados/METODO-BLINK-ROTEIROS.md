@@ -47,7 +47,7 @@ As falas devem funcionar ao ouvido. Ler em voz alta, identificar referências am
 
 ## Contrato editorial por versão
 
-Usar um objeto `editorial` na estrutura do vídeo. Os campos registram decisões, não um placar de qualidade. O [prompt compartilhado](C:/Users/joaot/Projetos/plotline/referencias/videos-analisados/PROMPT-ROTEIROS-BLINK.md) orienta a escrita; o avaliador em `motor/rubrica-roteiros.mjs` confere campos e inconsistências para revisão.
+Usar um objeto `editorial` na estrutura do vídeo. Os campos registram decisões, não um placar de qualidade. O [prompt compartilhado](C:/Users/joaot/Projetos/plotline/referencias/videos-analisados/PROMPT-ROTEIROS-BLINK.md) orienta a escrita; o avaliador em `motor/roteiro/rubrica-roteiros.mjs` confere campos e inconsistências para revisão.
 
 | Campo | Decisão que precisa ser legível |
 |---|---|
@@ -93,7 +93,7 @@ Exemplo de contrato, referente ao caminho confirmado para EP6 e não a falas def
 
 O compilador narrado do Plotline continua separado do formato de diálogo do Tico. Não compilar os personagens como um único narrador só para satisfazer uma API. O contrato é compartilhável; a encenação, a voz e as fontes de produção continuam específicas. Campos presentes não comprovam que uma piada funciona nem que uma ação é executável no rig.
 
-Implementação desta entrega: `motor/rubrica-roteiros.mjs` oferece `avaliarEditorial(estrutura)` e relatórios de avisos, sem score. `motor/gerar-roteiro.mjs` aplica a auditoria quando existe `editorial`, preservando a entrada legada sem esse objeto. A integração e os casos de compatibilidade receberam onze testes, sete da rubrica e quatro legados, conforme verificação da implementação. Isso comprova comportamento do programa, não eficácia de retenção.
+Implementação desta entrega: `motor/roteiro/rubrica-roteiros.mjs` oferece `avaliarEditorial(estrutura)` e relatórios de avisos, sem score. `motor/roteiro/gerar-roteiro.mjs` aplica a auditoria quando existe `editorial`, preservando a entrada legada sem esse objeto. A integração e os casos de compatibilidade receberam onze testes, sete da rubrica e quatro legados, conforme verificação da implementação. Isso comprova comportamento do programa, não eficácia de retenção.
 
 ## Duas revisões antes de produzir
 

@@ -36,7 +36,7 @@ Likes e views foram informados pelo João. Sem analytics privados ou teste contr
 
 | Problema | Evidência | Correção |
 |---|---|---|
-| Ator como recorte | `motor/ambiente3d.js`, função `actor`: imagem completa, rotação e escala globais pequenas | Partes articuladas e pose por intenção. Rosto separado da textura corporal. |
+| Ator como recorte | `motor/cenas/ambiente3d.js`, função `actor`: imagem completa, rotação e escala globais pequenas | Partes articuladas e pose por intenção. Rosto separado da textura corporal. |
 | Piscar como único gesto facial | Alternância entre albedos normal/fechado, fase local por plano | Pálpebras independentes, olhar antecipando cabeça e piscadas no tempo absoluto. |
 | Boca congelada | `desenhar-cenas.mjs` escolhe um rosto de `rostos.json` e gera a imagem inteira | Boca, mandíbula e bochechas controláveis. Fala alinhada ao áudio real: volume não identifica fonemas. |
 | Verbo sem execução | Abrir/desligar/compartilhar aparecem como troca de estado ou insert; falta mão + objeto + contato | Ação com alvo, alcance, contato e consequência. Se faltar capacidade, avisar; não fingir execução. |

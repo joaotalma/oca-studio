@@ -46,7 +46,7 @@ Uma correção mexe só nos arquivos do dono do problema. Ninguém declara concl
 
 | Papel | Dono de |
 |---|---|
-| Personagens e rostos | `personagens/chars.js` |
+| Personagens e rostos | `../../motor/personagem/chars.js` |
 | Cenários e objetos | Cenários e objetos do episódio |
 | Animação e câmera | Modelo do episódio, gestos, planos |
 | Áudio e legenda | Áudio, `timeline.json`, legendas |

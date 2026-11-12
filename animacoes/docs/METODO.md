@@ -13,9 +13,9 @@ Marcas: **[relato]** vem de criador ou fórum; **[hipótese]** é inferência a 
 
 ## Roteiro
 
-**Integração editorial de 2026-11-11:** usar `referencias/videos-analisados/PROMPT-ROTEIROS-BLINK.md` para declarar promessa, contexto de entrada, progressão, entrega local, continuidade e participação. A origem paginada dos critérios está nesse prompt; a síntese do método fica em `referencias/videos-analisados/METODO-BLINK-ROTEIROS.md`. `motor/rubrica-roteiros.mjs` confere presença e alguns indícios literais, sem nota de viralização ou aprovação automática. No compilador narrado, a auditoria só é aplicada quando a estrutura traz `editorial`; contratos antigos e a validação factual continuam preservados. O comando independente também lê contratos de diálogo sem convertê-los ao template de narração. Ler PDFs e editar prompts/validadores não ajusta pesos de modelo nem demonstra ganho de retenção.
+**Integração editorial de 2026-11-11:** usar `referencias/videos-analisados/PROMPT-ROTEIROS-BLINK.md` para declarar promessa, contexto de entrada, progressão, entrega local, continuidade e participação. A origem paginada dos critérios está nesse prompt; a síntese do método fica em `referencias/videos-analisados/METODO-BLINK-ROTEIROS.md`. `motor/roteiro/rubrica-roteiros.mjs` confere presença e alguns indícios literais, sem nota de viralização ou aprovação automática. No compilador narrado, a auditoria só é aplicada quando a estrutura traz `editorial`; contratos antigos e a validação factual continuam preservados. O comando independente também lê contratos de diálogo sem convertê-los ao template de narração. Ler PDFs e editar prompts/validadores não ajusta pesos de modelo nem demonstra ganho de retenção.
 
-**Revisão v2, solicitada em 2026-11-08:** usar `docs/DIRECAO-VISUAL.md` e `motor/gerar-roteiro.mjs`. Antes dos blocos, definir pergunta central, mecanismo de progressão, pista, virada e entrega. Gancho/prova/desenvolvimento/fecho são funções, não obrigação de preencher intervalos. Contexto precisa aumentar vínculo, risco ou compreensão; cortar o que apenas adia a promessa. Referências atuais entram pelo radar em `docs/PROMPT-PESQUISA.md`. Tudo permanece hipótese até medição do próprio canal.
+**Revisão v2, solicitada em 2026-11-08:** usar `docs/DIRECAO-VISUAL.md` e `motor/roteiro/gerar-roteiro.mjs`. Antes dos blocos, definir pergunta central, mecanismo de progressão, pista, virada e entrega. Gancho/prova/desenvolvimento/fecho são funções, não obrigação de preencher intervalos. Contexto precisa aumentar vínculo, risco ou compreensão; cortar o que apenas adia a promessa. Referências atuais entram pelo radar em `docs/PROMPT-PESQUISA.md`. Tudo permanece hipótese até medição do próprio canal.
 
 | Bloco | Tempo | Função |
 |---|---|---|
@@ -49,7 +49,7 @@ Nos dois primeiros, a tela quase não muda: quem segura a atenção é o texto a
 
 ## Som e entrega
 
-- **Voz:** em primeiro plano, a -16 LUFS, medida por `motor/masterizar.sh`.
+- **Voz:** em primeiro plano, a -16 LUFS, medida por `motor/audio/masterizar.sh`.
 - **Música:** baixa, opcional e com licença comercial anotada. Efeitos curtos valem mais que trilha contínua. [relato]
 - **Arquivo:** 1080 x 1920, H.264, 30 fps, áudio AAC.
 - **Área segura:** o template de chat mantém o essencial entre y = 250 e y = 1490, e entre x = 60 e x = 950. São valores de partida, sem fonte oficial. Confirme na página de cada plataforma.

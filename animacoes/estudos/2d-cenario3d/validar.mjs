@@ -1,7 +1,7 @@
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 const dir='render/exemplo-2d-3d',video=`${dir}/exemplo-2d-3d-v3.mp4`;
-const qa=spawnSync(process.execPath,['motor/qa-video.mjs',dir,video,'--mudo','--sem-duracao'],{encoding:'utf8',maxBuffer:64*1024*1024});
+const qa=spawnSync(process.execPath,['motor/qa/qa-video.mjs',dir,video,'--mudo','--sem-duracao'],{encoding:'utf8',maxBuffer:64*1024*1024});
 const log=(qa.stdout||'')+(qa.stderr||'');fs.writeFileSync(`${dir}/qa-automatico-v3.txt`,log);console.log(log);
 const probe=spawnSync('ffprobe',['-v','error','-show_entries','stream=codec_type,width,height,r_frame_rate,nb_frames:format=duration,size','-of','json',video],{encoding:'utf8'});
 fs.writeFileSync(`${dir}/arquivo-v3.json`,probe.stdout||'{}');console.log(probe.stdout);

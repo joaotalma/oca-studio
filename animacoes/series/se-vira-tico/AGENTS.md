@@ -8,7 +8,9 @@ Este arquivo vale para o Claude Code e para o Codex. Responda ao autor em portug
 - **História:** `docs/BIBLIA.md`. Ela ainda traz nomes antigos: valem os do `README.md`.
 - **Decisões pendentes:** `episodios/BACKLOG.md`.
 - **Vozes:** `docs/VOZES.md`.
-- **Render no Windows:** `docs/NOTAS_WINDOWS.md`. Use o Git Bash. Os scripts de render ficam em `~/.claude/skills/take-one/scripts/`.
+- **Render no Windows:** `docs/NOTAS_WINDOWS.md`. Use o Git Bash.
+- **Motor (Oca Studio):** o Tico usa o motor único em `../../motor/`. O rig, os cenários e o motor de cena ficam em `motor/personagem/`; mixagem, sincronia e masterização em `motor/audio/`; QA em `motor/qa/`; e o exportador Take One em `motor/take-one/`. Aqui ficam só os dados da série: episódios (com `mixagem.py`), vozes, assets do elenco e a bíblia.
+- **Estilo do rig:** o padrão é o orgânico (pupila preta, membros curvos, sombra). Os eps. 1 a 6 fixam `ESTILO_RIG = 'classico'` no `ep.js` para continuarem iguais. Episódio novo usa o orgânico, a não ser que o autor peça o clássico.
 
 ## Regras do projeto
 
@@ -16,7 +18,7 @@ Este arquivo vale para o Claude Code e para o Codex. Responda ao autor em portug
 - **Licença das vozes:** os eps. 1 e 2 usam OmniVoice, de licença não comercial: não monetize esses dois e mantenha o crédito na legenda. Do ep. 3 em diante as vozes são do ElevenLabs (`docs/VOZES.md`). Antes de monetizar, confirme na página oficial que o plano do autor permite uso comercial.
 - **Git:** depois que o autor aceitar uma alteração, faça o commit e o push na branch de trabalho sem perguntar de novo. Inclua só os arquivos dessa alteração e nunca envie direto para a `main`. Merge só a pedido do autor.
 - **Arquivos fora do git:** vídeos e áudios finais ficam fora do git, com cópia no Drive. Referências de voz ficam em `audio/vozes/`; não as apague.
-- **Rig:** edite `personagens/chars.js`, nunca as cópias nas pastas de episódio.
+- **Rig:** edite `../../motor/personagem/chars.js`, nunca as cópias nas pastas de episódio. Ele é compartilhado: depois de mexer, rode `motor/qa/quadros.mjs comparar` nos episódios para garantir que nenhum episódio pronto mudou sem querer.
 - **Obras de terceiros:** não copie personagens, músicas ou cenas de outras obras.
 
 ## Quem faz o quê

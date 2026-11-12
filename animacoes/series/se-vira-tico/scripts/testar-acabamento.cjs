@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..');
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'tico-acabamento-'));
  const posix=p=>p.replace(/\\/g,'/').replace(/^([A-Za-z]):/,(_,d)=>'/'+d.toLowerCase());
  cp.execFileSync(process.platform==='win32'?'C:/Program Files/Git/bin/bash.exe':'bash',[posix(path.join(root,'scripts/preparar-film.sh')),posix(tmp)],{cwd:root,stdio:'pipe'});
- for(const f of ['personagens/acabamento.js','personagens/chars.js','personagens/motor.js'])cp.execFileSync(process.execPath,['--check',path.join(root,f)]);
+ for(const f of ['../../motor/personagem/acabamento.js','../../motor/personagem/chars.js','../../motor/personagem/motor.js'])cp.execFileSync(process.execPath,['--check',path.join(root,f)]);
  fs.writeFileSync(path.join(tmp,'ep.js'),`const EPISODIO={duracao:10,falas:[],visual:{ambiente:'claro'},planos:[{ini:0,fim:10,cena:'vazio',cam:[[0,540,960,1]],fundo:t=>SerieVisual.rua(t),atores:[{id:'leticia',x:540,y:1590,s:1.4,poses:[[0,{expr:'feliz',armR:[18,150],propR:{tipo:'phone',live:{audiencia:37}}}]]}]}]};`);
  fs.writeFileSync(path.join(tmp,'film.html'),'<meta charset="utf-8"><script src="chars.js"></script><script src="cenarios.js"></script><script src="ep.js"></script><canvas id="c"></canvas><script src="motor.js"></script>');
  const browser=await chromium.launch({executablePath:process.platform==='win32'?'C:/Program Files/Google/Chrome/Application/chrome.exe':process.env.CHROME_PATH,headless:true});

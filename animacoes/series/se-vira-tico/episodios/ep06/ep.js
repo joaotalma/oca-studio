@@ -1,4 +1,5 @@
 'use strict';
+ESTILO_RIG = 'classico'; // fixado na Oca Studio (2026-11-12): episódio feito com o rig clássico
 const EPISODIO=(()=>{
  const F=Object.fromEntries(FALAS.map(f=>[f.n,f])),I=n=>F[n].ini,E=n=>F[n].fim;
  const q=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)};
