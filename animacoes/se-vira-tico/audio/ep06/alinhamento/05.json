@@ -1,0 +1,36 @@
+{
+ "n": 5,
+ "texto": "Você achou que eu não chegava.",
+ "palavras": [
+  {
+   "palavra": "Você",
+   "ini": 0,
+   "fim": 0.348
+  },
+  {
+   "palavra": "achou",
+   "ini": 0.383,
+   "fim": 0.604
+  },
+  {
+   "palavra": "que",
+   "ini": 0.65,
+   "fim": 0.731
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.755,
+   "fim": 0.813
+  },
+  {
+   "palavra": "não",
+   "ini": 0.859,
+   "fim": 0.964
+  },
+  {
+   "palavra": "chegava.",
+   "ini": 0.998,
+   "fim": 1.718
+  }
+ ]
+}

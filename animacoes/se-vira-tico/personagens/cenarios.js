@@ -434,6 +434,43 @@ function ventiladorSVG(x, y, k, t) {
     + `<circle cx="0" cy="0" r="10" fill="#55606c" stroke="${OUT}" stroke-width="2"/>` + '</g>';
 }
 
+/* ---------- ep. 5: cozinha da Lua, com bancada na frente (desenhada no plano) ---------- */
+function cenaCozinhaLua(dia = true) {
+  const fundo = ceuSerie(!dia, dia ? 'ceuCzd' : 'ceuCzn') + silhuetaSerie(900, !dia);
+  let meio = `<path fill-rule="evenodd" d="M-700 -300 H1800 V1700 H-700Z M640 330 H980 V760 H640Z" fill="${dia ? '#efd9b0' : '#b89a78'}"/>`
+    + ret(630, 320, 360, 450, 'none', 0, 10) + stroke('M810 320 V770', OUT, 8) + ret(610, 760, 400, 24, '#efe3cf', 3);
+  for (let i = -8; i < 20; i++) for (let j = 0; j < 4; j++) meio += `<rect x="${i * 70 + (j % 2) * 35}" y="${880 + j * 70}" width="66" height="66" fill="${(i + j) % 3 ? (dia ? '#cfe3ef' : '#9fb3c4') : (dia ? '#e9f2f8' : '#b5c6d4')}"/>`;
+  meio += ret(-300, 600, 560, 24, '#7a5a44', 4, 3) + [0, 1, 2, 3].map((i) => ret(-260 + i * 120, 500, 80, 100, ['#e8736f', '#f2d36b', '#8fd3e8', '#a8b94c'][i], 10, 3)).join('')
+    + txt(-220, 560, 'AÇÚCAR', 14, OUT) + ret(330, 420, 200, 120, '#fff6e6', 8, 3) + txt(430, 470, 'Doces', 26, '#c23b3b') + txt(430, 510, 'da Lua', 26, '#c23b3b')
+    + (dia ? '' : `<ellipse cx="300" cy="300" rx="260" ry="180" fill="#ffd98a" opacity=".22"/>` + ell(300, 300, 40, 40, '#ffe6a0', OUT, 3));
+  const chao = `<rect x="-900" y="${CHAO - 40}" width="2900" height="420" fill="${dia ? '#c9b893' : '#8f7f62'}"/>`;
+  return [{ f: .3, svg: fundo }, { f: .92, svg: meio }, { f: 1, svg: chao }];
+}
+// Bancada: tampo e frente de madeira. y é a altura do tampo.
+function bancadaSVG(y = 1180) { return ret(-300, y, 1680, 40, '#e9dcc0', 6, 4) + ret(-300, y + 40, 1680, 700, '#b96d53', 0, 4) + [0, 1, 2, 3, 4].map((i) => ret(-200 + i * 300, y + 90, 240, 300, '#a8604a', 10, 3) + ell(-80 + i * 300, y + 120, 16, 7, '#e2b13f', OUT, 2)).join(''); }
+function caixaDoceSVG(x, y, k = 1, laco = '#e8736f') {
+  return `<g transform="translate(${x} ${y}) scale(${k})">` + ret(-60, -70, 120, 70, '#fff6e6', 8, 3) + ret(-64, -84, 128, 22, '#f4e7c9', 6, 3)
+    + ret(-8, -84, 16, 84, laco, 0, 0) + shape('M0 -86 Q-26 -112 -30 -92 Q-28 -78 0 -86Z', laco, 2) + shape('M0 -86 Q26 -112 30 -92 Q28 -78 0 -86Z', laco, 2) + '</g>';
+}
+function pilhaCaixasSVG(x, y, k = 1) { let s = ''; [[-130, 0], [0, 0], [130, 0], [-65, -84], [65, -84], [0, -168]].forEach(([dx, dy], i) => { s += caixaDoceSVG(x + dx * k, y + dy * k, k, ['#e8736f', '#8fd3e8', '#f2d36b'][i % 3]); }); return s; }
+function piaSVG(x, y, t = 0, treme = 0) {
+  let s = ret(x - 170, y - 10, 340, 30, '#c7cbd0', 8, 3) + stroke(`M${x + 120} ${y - 10} V${y - 120} Q${x + 120} ${y - 150} ${x + 80} ${y - 150}`, '#9aa3aa', 14);
+  for (let i = 0; i < 6; i++) { const w = Math.sin(t * 22 + i) * treme * (i + 1) * 1.5; s += `<ellipse cx="${x - 40 + w}" cy="${y - 20 - i * 26}" rx="${110 - i * 6}" ry="20" fill="${i % 2 ? '#f4f6f8' : '#dfe7e4'}" stroke="${OUT}" stroke-width="3"/>`; }
+  return s + ret(x - 150, y - 210, 50, 80, '#c9774f', 8, 3) + ret(x + 20, y - 200, 40, 70, '#8fd3e8', 8, 3);
+}
+function notebookSVG(x, y, k = 1, abertura = 1, tela = '') {
+  const h = 230 * abertura;
+  return `<g transform="translate(${x} ${y}) scale(${k})">` + ret(-200, -14, 400, 26, '#9aa3aa', 6, 3)
+    + (abertura > .05 ? `<path d="M-180 -14 L180 -14 L170 ${-14 - h} L-170 ${-14 - h}Z" fill="#3b3f4a" stroke="${OUT}" stroke-width="3"/>` + `<g opacity="${Math.max(0, Math.min(1, (abertura - .3) / .6)).toFixed(2)}">${tela}</g>` : '') + '</g>';
+}
+function timerSVG(x, y, k = 1, toca = 0) { const d = toca ? Math.sin(toca * 60) * 6 : 0; return `<g transform="translate(${x + d} ${y}) scale(${k})">` + ell(0, 0, 60, 60, '#e8736f', OUT, 4) + ell(0, 0, 44, 44, '#fff6e6', OUT, 3) + stroke('M0 0 L0 -32 M0 0 L22 10', OUT, 5) + ret(-16, -76, 32, 18, '#9aa3aa', 4, 3) + (toca ? stroke('M-80 -60 l-20 -20 M80 -60 l20 -20 M-90 0 h-26 M90 0 h26', OUT, 5) : '') + '</g>'; }
+// Cama de solteiro com colcha, para o quarto da Lua
+function camaSVG(x, y) { return ret(x, y - 220, 560, 60, '#e9e4d8', 20, 3) + ret(x, y - 170, 560, 170, '#ae5d49', 16, 3) + ret(x + 20, y - 260, 160, 70, '#f4f1ea', 24, 3) + ret(x - 10, y - 330, 30, 330, '#7a5a44', 6, 3) + [0, 1, 2].map((i) => stroke(`M${x + 120 + i * 140} ${y - 160} V${y - 20}`, '#8e4b3b', 4)).join(''); }
+function cenaQuartoLuaCama() {
+  const [f, m, c] = cenaQuartoLua();
+  return [f, { f: m.f, svg: m.svg + camaSVG(560, 1560) }, c];
+}
+
 const CENARIOS = { vazio: () => [], rua: () => cenaRua(false), ruaNoite: () => cenaRua(false, true), ruaBorracharia: () => cenaRua(true), borracharia: cenaBorracharia, porta: () => cenaPorta(false), portaAberta: () => cenaPorta(true), portaDiaAberta: () => cenaPorta(true, true), predioChique: cenaPredioChique, casa: cenaCasa,
-  box: cenaBox, kitnet: () => cenaKitnet(true), kitnetNoite: () => cenaKitnet(false), escritorio: cenaEscritorio, salaReuniao: cenaSalaReuniao, casaJao: () => cenaCasaJao(false), casaJaoDia: () => cenaCasaJao(true), quartoLua: cenaQuartoLua, janelas: cenaJanelas,
+  box: cenaBox, kitnet: () => cenaKitnet(true), kitnetNoite: () => cenaKitnet(false), escritorio: cenaEscritorio, salaReuniao: cenaSalaReuniao, casaJao: () => cenaCasaJao(false), casaJaoDia: () => cenaCasaJao(true), quartoLua: cenaQuartoLua, quartoLuaCama: cenaQuartoLuaCama, cozinhaLua: () => cenaCozinhaLua(true), cozinhaLuaNoite: () => cenaCozinhaLua(false), janelas: cenaJanelas,
   janelaTico: () => cenaJanelaClose('#9a6a55', INT_TICO(), '#c9a27a'), janelaLua: () => cenaJanelaClose('#5f7a7a', INT_LUA(), '#d9b48c') };

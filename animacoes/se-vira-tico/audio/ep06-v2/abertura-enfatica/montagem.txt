@@ -1,0 +1,4 @@
+file 'C:/Users/joaot/Projetos/se-vira-tico/render/ep06_v4_intro.mp4'
+file 'C:/Users/joaot/Projetos/se-vira-tico/render/ep06_v2_final.mp4'
+inpoint 3.0
+outpoint 64.1

@@ -82,13 +82,14 @@ const VISEME = { closed: 'closed', small: 'vsmall', open: 'vopen', wide: 'vwide'
 function eyeSVG(d, side, E, blink) {
   const x = side * 21, y = -20, rx = 12.5, ry = 9.5 * (E.open || 1), line = '#2b2024';
   const look = E.look || [0, 0], px = x + look[0] - side * 1, py = y + 1 + look[1];
+  if (E.graphicEyes && blink > 0) return `<g transform="translate(0 -20) scale(1 ${Math.max(.025,1-blink)}) translate(0 20)">${eyeSVG(d, side, E, 0)}</g>`;
   const kind = blink ? 'suave' : E.eye;
   let s = '';
   if (kind === 'arco') return stroke(`M${x - 12} ${y + 4} Q${x} ${y - 9} ${x + 12} ${y + 4}`, line, 3);
   if (kind === 'suave') return stroke(`M${x - 12} ${y} Q${x} ${y + 7} ${x + 12} ${y}`, line, 3) + (d.lashes ? stroke(`M${x + side * 12} ${y} l${side * 4} -3`, line, 2) : '');
   s += ell(x, y, rx, ry, '#f8f3e8', line, 2.2);
   const pS = E.pupil || 1;
-  s += ell(px, py, 5.6 * pS, 6.4 * pS, d.iris) + ell(px, py, 3 * pS, 3.8 * pS, '#171719') + ell(px - 1.4, py - 2.2, 1.6, 1.8, '#fff');
+  s += E.graphicEyes ? ell(px, py, 4.7 * pS, 5.4 * pS, '#171719') + ell(px - 1.4, py - 2.2, 1.5, 1.6, '#fff') : ell(px, py, 5.6 * pS, 6.4 * pS, d.iris) + ell(px, py, 3 * pS, 3.8 * pS, '#171719') + ell(px - 1.4, py - 2.2, 1.6, 1.8, '#fff');
   const lid = E.lid != null ? E.lid : d.lid;
   if (lid > 0) { const ly = y - ry + 2 * ry * lid;
     s += fillOnly(`M${x - rx - 2.5} ${y - ry - 3.5}L${x + rx + 2.5} ${y - ry - 3.5}L${x + rx + 2.5} ${ly}Q${x} ${ly - 2.5} ${x - rx - 2.5} ${ly}Z`, d.skin);
@@ -145,7 +146,7 @@ function headSVG(d, E, pose) {
   if (d.beard) s += fillOnly('M-44 6 Q-43 47 -10 56 Q0 62 13 56 Q43 46 44 6 Q34 15 25 15 Q0 8 -24 15 Q-35 15 -44 6Z', '#211c1d') + fillOnly('M-17 21 Q0 15 17 21 Q19 34 0 37 Q-19 34 -17 21Z', sk, 'opacity=".28"');
   if (E.blush) s += ell(-28, 2, 11, 6.5, '#d9604f', 'none', 0, 'opacity=".42"') + ell(28, 2, 11, 6.5, '#d9604f', 'none', 0, 'opacity=".42"');
   s += stroke('M-5 -8 Q-10 5 -6 10 Q0 14 7 10', sh, 2.2);
-  const blink = pose.blink >= .5;
+  const blink = pose.graphicEyes ? pose.blink : pose.blink >= .5;
   for (const side of [-1, 1]) s += eyeSVG(d, side, E, blink);
   for (const side of [-1, 1]) s += browSVG(d, side, E);
   const kind = pose.mouth ? VISEME[pose.mouth] : E.mouth;
@@ -248,6 +249,7 @@ function neckSVG(d, sy, hy) {
   return s;
 }
 function badgeSVG(d, sy) {
+  if (d.semCracha) return ''; // figurino de encontro, opcional; desenho legado preservado.
   if (d.cracha) return stroke(`M-16 ${sy + 18} L-26 ${sy + 70} M16 ${sy + 18} L-14 ${sy + 70}`, '#3c4a5a', 2.4) + `<rect x="-50" y="${sy + 70}" width="60" height="36" rx="4" fill="#eef0f0" stroke="${OUT}" stroke-width="2.4"/><text x="-20" y="${sy + 96}" text-anchor="middle" font-family="Arial Black, Arial" font-weight="900" font-size="19" fill="#b8323c">${d.cracha}</text>`;
   if (d.key !== 'lua') return '';
   return stroke(`M-14 ${sy + 16} L0 ${sy + 52} L14 ${sy + 16}`, '#566d86', 2.6) + `<rect x="-14" y="${sy + 52}" width="28" height="36" rx="3" fill="#eef0f0" stroke="${OUT}" stroke-width="2.4"/><rect x="-9" y="${sy + 58}" width="18" height="10" rx="1" fill="#566d86"/><rect x="-9" y="${sy + 73}" width="18" height="3" fill="#a7afb7"/><rect x="-9" y="${sy + 79}" width="12" height="3" fill="#a7afb7"/>`;
@@ -279,6 +281,9 @@ function drawChar(d, pose = {}) {
   const Pz = Object.assign({ armL: [-9, -5], armR: [9, 5], legL: [-4, -2], legR: [4, 2], lean: 0, head: 0, expr: 'neutro', mouth: null, blink: 0, breath: 0, liftL: 0, liftR: 0, propL: null, propR: null, frente: null, sentado: false, bag: null, semPernas: false }, pose);
   const comBag = Pz.bag != null ? Pz.bag : d.key === 'jao';
   const E = Object.assign({}, EXPR[Pz.expr] || EXPR.neutro);
+  if (Pz.look) E.look = Pz.look;
+  if (Pz.pupil != null) E.pupil = Pz.pupil;
+  if (Pz.graphicEyes) E.graphicEyes = true;
   const L = legs(d, Pz), low = Pz.semPernas ? 10 + d.thigh + d.shin : Math.max(L.L.A[1], L.R.A[1]), rootY = -(low + SHOE_H[d.shoe]);
   const sy = -d.torso, hy = sy - d.neck - 49 * d.hs;
   const up = `<g transform="rotate(${r2(Pz.lean)}) translate(0 ${r2(-Pz.breath)})">`;

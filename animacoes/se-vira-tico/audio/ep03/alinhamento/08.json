@@ -1,0 +1,36 @@
+{
+ "n": 8,
+ "texto": "Ela chegou atrasada por minha causa.",
+ "palavras": [
+  {
+   "palavra": "Ela",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "chegou",
+   "ini": 0.24,
+   "fim": 0.48
+  },
+  {
+   "palavra": "atrasada",
+   "ini": 0.56,
+   "fim": 1.12
+  },
+  {
+   "palavra": "por",
+   "ini": 1.2,
+   "fim": 1.36
+  },
+  {
+   "palavra": "minha",
+   "ini": 1.44,
+   "fim": 1.76
+  },
+  {
+   "palavra": "causa.",
+   "ini": 1.84,
+   "fim": 2.56
+  }
+ ]
+}

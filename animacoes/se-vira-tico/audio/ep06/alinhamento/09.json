@@ -1,0 +1,16 @@
+{
+ "n": 9,
+ "texto": "Eu desmarco…",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.221
+  },
+  {
+   "palavra": "desmarco…",
+   "ini": 0.279,
+   "fim": 1.207
+  }
+ ]
+}

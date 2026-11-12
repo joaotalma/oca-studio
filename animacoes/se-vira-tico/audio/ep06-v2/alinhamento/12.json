@@ -1,0 +1,41 @@
+{
+ "n": 12,
+ "texto": "Tico, eu preciso te contar uma coisa.",
+ "palavras": [
+  {
+   "palavra": "Tico,",
+   "ini": 0,
+   "fim": 0.395
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.418,
+   "fim": 0.499
+  },
+  {
+   "palavra": "preciso",
+   "ini": 0.534,
+   "fim": 0.871
+  },
+  {
+   "palavra": "te",
+   "ini": 0.917,
+   "fim": 0.998
+  },
+  {
+   "palavra": "contar",
+   "ini": 1.068,
+   "fim": 1.347
+  },
+  {
+   "palavra": "uma",
+   "ini": 1.37,
+   "fim": 1.509
+  },
+  {
+   "palavra": "coisa.",
+   "ini": 1.567,
+   "fim": 2.183
+  }
+ ]
+}

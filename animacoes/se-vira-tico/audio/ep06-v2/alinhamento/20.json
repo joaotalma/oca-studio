@@ -1,0 +1,41 @@
+{
+ "n": 20,
+ "texto": "Não sei. Mas eu quis estar aqui.",
+ "palavras": [
+  {
+   "palavra": "Não",
+   "ini": 0,
+   "fim": 0.313
+  },
+  {
+   "palavra": "sei.",
+   "ini": 0.36,
+   "fim": 0.639
+  },
+  {
+   "palavra": "Mas",
+   "ini": 0.882,
+   "fim": 1.08
+  },
+  {
+   "palavra": "eu",
+   "ini": 1.126,
+   "fim": 1.196
+  },
+  {
+   "palavra": "quis",
+   "ini": 1.242,
+   "fim": 1.405
+  },
+  {
+   "palavra": "estar",
+   "ini": 1.474,
+   "fim": 1.73
+  },
+  {
+   "palavra": "aqui.",
+   "ini": 1.776,
+   "fim": 2.322
+  }
+ ]
+}

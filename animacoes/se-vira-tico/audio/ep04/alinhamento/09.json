@@ -1,0 +1,31 @@
+{
+ "n": 9,
+ "texto": "Você passou perfume no cinto?",
+ "palavras": [
+  {
+   "palavra": "Você",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "passou",
+   "ini": 0.32,
+   "fim": 0.56
+  },
+  {
+   "palavra": "perfume",
+   "ini": 0.64,
+   "fim": 1.12
+  },
+  {
+   "palavra": "no",
+   "ini": 1.2,
+   "fim": 1.36
+  },
+  {
+   "palavra": "cinto?",
+   "ini": 1.44,
+   "fim": 2.24
+  }
+ ]
+}

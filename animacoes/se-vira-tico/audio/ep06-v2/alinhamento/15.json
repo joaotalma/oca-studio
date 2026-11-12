@@ -1,0 +1,21 @@
+{
+ "n": 15,
+ "texto": "Eu te amo.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.221
+  },
+  {
+   "palavra": "te",
+   "ini": 0.302,
+   "fim": 0.464
+  },
+  {
+   "palavra": "amo.",
+   "ini": 0.58,
+   "fim": 1.161
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "n": 37,
+ "texto": "Tico, tô te esperando. Se eu mandar bem nessa reunião, tudo pode mudar. Muito obrigada por me ajudar.",
+ "palavras": [
+  {
+   "palavra": "Tico,",
+   "ini": 0,
+   "fim": 0.56
+  },
+  {
+   "palavra": "tô",
+   "ini": 0.64,
+   "fim": 0.8
+  },
+  {
+   "palavra": "te",
+   "ini": 0.84,
+   "fim": 0.88
+  },
+  {
+   "palavra": "esperando.",
+   "ini": 1.04,
+   "fim": 1.6
+  },
+  {
+   "palavra": "Se",
+   "ini": 1.92,
+   "fim": 2
+  },
+  {
+   "palavra": "eu",
+   "ini": 2.04,
+   "fim": 2.08
+  },
+  {
+   "palavra": "mandar",
+   "ini": 2.16,
+   "fim": 2.48
+  },
+  {
+   "palavra": "bem",
+   "ini": 2.56,
+   "fim": 2.8
+  },
+  {
+   "palavra": "nessa",
+   "ini": 2.92,
+   "fim": 3.08
+  },
+  {
+   "palavra": "reunião,",
+   "ini": 3.12,
+   "fim": 3.84
+  },
+  {
+   "palavra": "tudo",
+   "ini": 3.88,
+   "fim": 4.16
+  },
+  {
+   "palavra": "pode",
+   "ini": 4.24,
+   "fim": 4.4
+  },
+  {
+   "palavra": "mudar.",
+   "ini": 4.48,
+   "fim": 4.96
+  },
+  {
+   "palavra": "Muito",
+   "ini": 5.36,
+   "fim": 5.68
+  },
+  {
+   "palavra": "obrigada",
+   "ini": 5.72,
+   "fim": 6.24
+  },
+  {
+   "palavra": "por",
+   "ini": 6.32,
+   "fim": 6.4
+  },
+  {
+   "palavra": "me",
+   "ini": 6.44,
+   "fim": 6.48
+  },
+  {
+   "palavra": "ajudar.",
+   "ini": 6.56,
+   "fim": 7.28
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "n": 10,
+ "texto": "Às oito eu posso.",
+ "palavras": [
+  {
+   "palavra": "Às",
+   "ini": 0,
+   "fim": 0.209
+  },
+  {
+   "palavra": "oito",
+   "ini": 0.302,
+   "fim": 0.534
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.557,
+   "fim": 0.615
+  },
+  {
+   "palavra": "posso.",
+   "ini": 0.673,
+   "fim": 1.254
+  }
+ ]
+}

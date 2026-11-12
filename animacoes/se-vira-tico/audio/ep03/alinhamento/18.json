@@ -1,0 +1,31 @@
+{
+ "n": 18,
+ "texto": "Esse é o meu menino.",
+ "palavras": [
+  {
+   "palavra": "Esse",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "é",
+   "ini": 0.64,
+   "fim": 0.693
+  },
+  {
+   "palavra": "o",
+   "ini": 0.747,
+   "fim": 0.8
+  },
+  {
+   "palavra": "meu",
+   "ini": 0.88,
+   "fim": 1.04
+  },
+  {
+   "palavra": "menino.",
+   "ini": 1.16,
+   "fim": 1.92
+  }
+ ]
+}

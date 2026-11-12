@@ -1,0 +1,26 @@
+{
+ "n": 10,
+ "texto": "O cinto tava precisando.",
+ "palavras": [
+  {
+   "palavra": "O",
+   "ini": 0,
+   "fim": 0.08
+  },
+  {
+   "palavra": "cinto",
+   "ini": 0.24,
+   "fim": 0.56
+  },
+  {
+   "palavra": "tava",
+   "ini": 0.64,
+   "fim": 0.88
+  },
+  {
+   "palavra": "precisando.",
+   "ini": 0.96,
+   "fim": 2.08
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "n": 8,
+ "texto": "Às oito tá entregue.",
+ "palavras": [
+  {
+   "palavra": "Às",
+   "ini": 0,
+   "fim": 0.186
+  },
+  {
+   "palavra": "oito",
+   "ini": 0.279,
+   "fim": 0.499
+  },
+  {
+   "palavra": "tá",
+   "ini": 0.557,
+   "fim": 0.627
+  },
+  {
+   "palavra": "entregue.",
+   "ini": 0.662,
+   "fim": 1.486
+  }
+ ]
+}

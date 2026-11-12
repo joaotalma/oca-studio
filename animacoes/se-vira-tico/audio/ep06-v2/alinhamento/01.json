@@ -1,0 +1,31 @@
+{
+ "n": 1,
+ "texto": "Preciso entregar até as oito.",
+ "palavras": [
+  {
+   "palavra": "Preciso",
+   "ini": 0,
+   "fim": 0.499
+  },
+  {
+   "palavra": "entregar",
+   "ini": 0.522,
+   "fim": 0.929
+  },
+  {
+   "palavra": "até",
+   "ini": 0.975,
+   "fim": 1.138
+  },
+  {
+   "palavra": "as",
+   "ini": 1.207,
+   "fim": 1.289
+  },
+  {
+   "palavra": "oito.",
+   "ini": 1.37,
+   "fim": 1.858
+  }
+ ]
+}

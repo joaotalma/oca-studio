@@ -1,0 +1,36 @@
+{
+ "n": 8,
+ "texto": "Sexta. Cinema às oito. Você pode?",
+ "palavras": [
+  {
+   "palavra": "Sexta.",
+   "ini": 0,
+   "fim": 0.557
+  },
+  {
+   "palavra": "Cinema",
+   "ini": 0.58,
+   "fim": 0.929
+  },
+  {
+   "palavra": "às",
+   "ini": 0.952,
+   "fim": 1.01
+  },
+  {
+   "palavra": "oito.",
+   "ini": 1.091,
+   "fim": 1.324
+  },
+  {
+   "palavra": "Você",
+   "ini": 1.347,
+   "fim": 1.556
+  },
+  {
+   "palavra": "pode?",
+   "ini": 1.637,
+   "fim": 2.276
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "n": 17,
+ "texto": "Eu me inscrevi num curso de confeitaria. Em Porto Alegre.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.128
+  },
+  {
+   "palavra": "me",
+   "ini": 0.151,
+   "fim": 0.209
+  },
+  {
+   "palavra": "inscrevi",
+   "ini": 0.232,
+   "fim": 0.639
+  },
+  {
+   "palavra": "num",
+   "ini": 0.685,
+   "fim": 0.789
+  },
+  {
+   "palavra": "curso",
+   "ini": 0.848,
+   "fim": 1.138
+  },
+  {
+   "palavra": "de",
+   "ini": 1.184,
+   "fim": 1.242
+  },
+  {
+   "palavra": "confeitaria.",
+   "ini": 1.277,
+   "fim": 2.067
+  },
+  {
+   "palavra": "Em",
+   "ini": 2.241,
+   "fim": 2.38
+  },
+  {
+   "palavra": "Porto",
+   "ini": 2.438,
+   "fim": 2.694
+  },
+  {
+   "palavra": "Alegre.",
+   "ini": 2.728,
+   "fim": 3.39
+  }
+ ]
+}

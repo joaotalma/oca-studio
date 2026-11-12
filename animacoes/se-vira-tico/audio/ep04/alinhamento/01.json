@@ -1,0 +1,31 @@
+{
+ "n": 1,
+ "texto": "\"Outro assunto\" com três parágrafos?",
+ "palavras": [
+  {
+   "palavra": "\"Outro",
+   "ini": 0,
+   "fim": 0.534
+  },
+  {
+   "palavra": "assunto\"",
+   "ini": 0.557,
+   "fim": 1.033
+  },
+  {
+   "palavra": "com",
+   "ini": 1.068,
+   "fim": 1.207
+  },
+  {
+   "palavra": "três",
+   "ini": 1.254,
+   "fim": 1.451
+  },
+  {
+   "palavra": "parágrafos?",
+   "ini": 1.509,
+   "fim": 2.276
+  }
+ ]
+}

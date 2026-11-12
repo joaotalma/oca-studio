@@ -1,0 +1,21 @@
+{
+ "n": 7,
+ "texto": "É corrida, tá?",
+ "palavras": [
+  {
+   "palavra": "É",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "corrida,",
+   "ini": 0.28,
+   "fim": 0.8
+  },
+  {
+   "palavra": "tá?",
+   "ini": 0.96,
+   "fim": 1.44
+  }
+ ]
+}

@@ -22,7 +22,7 @@ const motor = (() => {
           if (t >= tk) p[campo] = v;
           else if (t >= tk - TRANS && de) { const q = suave((t - tk + TRANS) / TRANS); p[campo] = v.map((x, i) => x + (de[i] - x) * (1 - q)); }
         } else if (typeof v === 'number' && campo !== 'blink') {
-          const de = p[campo] == null ? v : p[campo];
+          const de = p[campo] == null ? (EPISODIO.graphicEyes && ['head','lean','liftL','liftR','breath'].includes(campo) ? 0 : v) : p[campo];
           if (t >= tk) p[campo] = v;
           else if (t >= tk - TRANS) p[campo] = de + (v - de) * suave((t - tk + TRANS) / TRANS);
         } else if (t >= tk) {
@@ -31,7 +31,7 @@ const motor = (() => {
         }
       }
     }
-    if (Math.abs(t - trocaExpr) < .07) p.blink = 1;
+    if (Math.abs(t - trocaExpr) < (EPISODIO.graphicEyes ? .12 : .07)) p.blink = EPISODIO.graphicEyes ? 1-Math.abs(t-trocaExpr)/.12 : 1;
     return p;
   }
   function falaAtiva(id, t) { return EPISODIO.falas.find((f) => QUEM[f.quem] === id && t >= f.ini && t < f.fim); }
@@ -63,7 +63,8 @@ const motor = (() => {
     if (a.xF) x = a.xF(t);
     if (a.yF) y = a.yF(t);
     if (a.movX) { const [t0, t1, x0, x1] = a.movX; x = x0 + (x1 - x0) * suave((t - t0) / (t1 - t0)); }
-    const blink = pz.blink || (((t + f * 1.31) % 3.7) < .13 ? 1 : 0);
+    const bp = (t + f * 1.31) % 3.7;
+    const blink = pz.blink || (EPISODIO.graphicEyes ? (bp < .26 ? Math.sin(Math.PI * bp / .26) ** 2 : 0) : (bp < .13 ? 1 : 0));
     const breath = 1.5 + Math.sin(t * 1.9 + f) * 1.5;
     if (a.id === 'fiscal') {
       const lat = (EPISODIO.latidos || []).some((b) => t >= b && t < b + .32);
@@ -71,7 +72,7 @@ const motor = (() => {
       if (lat) { po.mouth = 1; po.head -= 9; po.expr = po.expr || 'bravo'; }
       return `<g transform="translate(${x} ${y}) scale(${sx * .9} ${s * .9})">${drawDog(po)}</g>`;
     }
-    const po = { armL: [-9, -5], armR: [9, 5], ...pz, blink, breath };
+    const po = { armL: [-9, -5], armR: [9, 5], graphicEyes: EPISODIO.graphicEyes || false, ...pz, blink, breath };
     const bal = Math.sin(t * 1.5 + f) * 1.3, fala = falaAtiva(a.id, t);
     po.armL = [po.armL[0] + bal, po.armL[1] + bal * 1.6]; po.armR = [po.armR[0] + bal * .8, po.armR[1] - bal * 1.4];
     // O balanço de cabeça entra e sai aos poucos: nunca salta no início ou no fim da fala
@@ -123,6 +124,11 @@ const motor = (() => {
   }
   const FADE = .13;
   function blocosDe(f) {
+    if (f.palavras && f.palavras.length) {
+      const out = [];
+      for (let i=0;i<f.palavras.length;i+=3) { const ws=f.palavras.slice(i,i+3); out.push({b:ws.map(w=>w.palavra),ini:ws[0].ini,fim:ws[ws.length-1].fim}); }
+      return out;
+    }
     const blocos = []; let atual = [];
     for (const w of f.texto.split(' ')) { atual.push(w); if (atual.length === 3 || /[.!?,:]$/.test(w)) { blocos.push(atual); atual = []; } }
     if (atual.length) blocos.push(atual);
@@ -130,7 +136,7 @@ const motor = (() => {
     let acum = 0; return blocos.map((b, i) => { const ini = f.ini + acum / tot * d; acum += letras[i]; return { b, ini, fim: f.ini + acum / tot * d }; });
   }
   function desenhaBloco(pal, f, alfa) {
-    const y = 1360, destaque = (EPISODIO.destaques || {})[f.n];
+    const y = f.legendaY ?? EPISODIO.legendaY ?? 1360, destaque = (EPISODIO.destaques || {})[f.n];
     g.save(); g.globalAlpha = alfa; g.textAlign = 'left'; g.textBaseline = 'middle'; g.lineJoin = 'round';
     g.font = '900 60px Arial Black, Arial, sans-serif';
     let total = g.measureText(pal.join(' ')).width;
@@ -158,7 +164,7 @@ const motor = (() => {
   }
   function cartao(x, y, w, h, cor) { g.beginPath(); g.roundRect(x, y, w, h, 22); g.fillStyle = cor; g.fill(); g.lineWidth = 5; g.strokeStyle = '#1b100b'; g.stroke(); }
   const texto = (s, x, y, tam, cor = '#fff', alinha = 'center') => { g.font = `900 ${tam}px Arial Black, Arial, sans-serif`; g.textAlign = alinha; g.textBaseline = 'middle'; g.fillStyle = cor; g.fillText(s, x, y); };
-  function telas(t) { for (const e of EPISODIO.telas || []) if (t >= e.ini && t < e.fim) e.desenha((t - e.ini) / (e.fim - e.ini), t - e.ini, { g, cartao, texto, sai, suave }); }
+  function telas(t) { for (const e of EPISODIO.telas || []) if (t >= e.ini && t < e.fim) { g.save(); if(EPISODIO.suavizarTelas && e.fim < EPISODIO.duracao) g.globalAlpha=Math.min(1,e.ini===0?1:(t-e.ini)/.18,(e.fim-t)/.18); e.desenha((t - e.ini) / (e.fim - e.ini), t - e.ini, { g, cartao, texto, sai, suave }); g.restore(); } }
 
   window.FILM_DURATION = TP ? TP.duracao : EPISODIO.duracao;
   window.CUTS = EPISODIO.planos.filter((p) => !p.continua).map((p) => p.ini).filter((t) => t > 0).concat(EPISODIO.impactos || []).map(paraReal);

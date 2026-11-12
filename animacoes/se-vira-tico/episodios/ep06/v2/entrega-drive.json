@@ -1,0 +1,56 @@
+[
+  {
+    "arquivo": "ep06_final.mp4",
+    "bytes": 23645531,
+    "sha256": "99ca95a29efa9926216fb58885ecbdd971105a398520d8326b1c984569039c77",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_capa.png",
+    "bytes": 205650,
+    "sha256": "64f9cf623337bbe77a65a4d2169e5c9999096b2e05985ece10340182a9da3fbb",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_story.png",
+    "bytes": 198413,
+    "sha256": "92f134d8405362bd7ac314bcf1541ca192fe2d8a24282f68f9fa11ea01eaaa22",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_fontes.zip",
+    "bytes": 9781976,
+    "sha256": "ae2c8612119aa87ab5aebf231a3d87a865aef70ea155d74fb45c6c4fd2205ed4",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_legendas.srt",
+    "bytes": 1895,
+    "sha256": "24941213ae605283f5a768638b777eab59bf0f10506a928bdb5b3c532d62ae5c",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_LEIA-ME.md",
+    "bytes": 1609,
+    "sha256": "f4c6091ec91f680613fcd8e60999aad8d345212e49d1900f507475203c5c9598",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_postagem.md",
+    "bytes": 1931,
+    "sha256": "1428afcb34300bf397b3d006137ef1abe80ec964b0a3f960c32ac0fecdaa357c",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_qa.md",
+    "bytes": 2475,
+    "sha256": "2f442ebef215e56a688078910338dc06593ca9891476109d5e9ea2fb5929d741",
+    "copia_identica": true
+  },
+  {
+    "arquivo": "ep06_roteiro.md",
+    "bytes": 4373,
+    "sha256": "da49b0544eb7b799ec1aefa196192986686102a99ed5becd204774725d002826",
+    "copia_identica": true
+  }
+]

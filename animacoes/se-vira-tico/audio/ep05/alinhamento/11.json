@@ -1,0 +1,21 @@
+{
+ "n": 11,
+ "texto": "Tô imaginando. Quanto?",
+ "palavras": [
+  {
+   "palavra": "Tô",
+   "ini": 0,
+   "fim": 0.12
+  },
+  {
+   "palavra": "imaginando.",
+   "ini": 0.16,
+   "fim": 1.04
+  },
+  {
+   "palavra": "Quanto?",
+   "ini": 1.36,
+   "fim": 2.08
+  }
+ ]
+}

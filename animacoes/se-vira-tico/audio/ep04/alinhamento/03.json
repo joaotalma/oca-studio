@@ -1,0 +1,31 @@
+{
+ "n": 3,
+ "texto": "Então respeita o agora. Apaga.",
+ "palavras": [
+  {
+   "palavra": "Então",
+   "ini": 0,
+   "fim": 0.32
+  },
+  {
+   "palavra": "respeita",
+   "ini": 0.4,
+   "fim": 1.12
+  },
+  {
+   "palavra": "o",
+   "ini": 1.16,
+   "fim": 1.2
+  },
+  {
+   "palavra": "agora.",
+   "ini": 1.32,
+   "fim": 2.04
+  },
+  {
+   "palavra": "Apaga.",
+   "ini": 2.24,
+   "fim": 3.28
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "n": 6,
+ "texto": "Vou chamar a Lua pra sair. Pra compensar.",
+ "palavras": [
+  {
+   "palavra": "Vou",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "chamar",
+   "ini": 0.2,
+   "fim": 0.48
+  },
+  {
+   "palavra": "a",
+   "ini": 0.52,
+   "fim": 0.56
+  },
+  {
+   "palavra": "Lua",
+   "ini": 0.64,
+   "fim": 0.88
+  },
+  {
+   "palavra": "pra",
+   "ini": 0.96,
+   "fim": 1.04
+  },
+  {
+   "palavra": "sair.",
+   "ini": 1.12,
+   "fim": 1.52
+  },
+  {
+   "palavra": "Pra",
+   "ini": 1.76,
+   "fim": 1.84
+  },
+  {
+   "palavra": "compensar.",
+   "ini": 1.92,
+   "fim": 2.8
+  }
+ ]
+}

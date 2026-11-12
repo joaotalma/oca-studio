@@ -1,0 +1,21 @@
+{
+ "n": 10,
+ "texto": "Pra você, imagina.",
+ "palavras": [
+  {
+   "palavra": "Pra",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "você,",
+   "ini": 0.2,
+   "fim": 0.84
+  },
+  {
+   "palavra": "imagina.",
+   "ini": 0.96,
+   "fim": 1.92
+  }
+ ]
+}

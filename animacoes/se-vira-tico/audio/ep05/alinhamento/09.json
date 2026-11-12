@@ -1,0 +1,16 @@
+{
+ "n": 9,
+ "texto": "Quanto fica?",
+ "palavras": [
+  {
+   "palavra": "Quanto",
+   "ini": 0,
+   "fim": 0.32
+  },
+  {
+   "palavra": "fica?",
+   "ini": 0.4,
+   "fim": 1.12
+  }
+ ]
+}

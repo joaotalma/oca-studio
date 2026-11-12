@@ -1,0 +1,21 @@
+{
+ "n": 19,
+ "texto": "E a gente?",
+ "palavras": [
+  {
+   "palavra": "E",
+   "ini": 0,
+   "fim": 0.081
+  },
+  {
+   "palavra": "a",
+   "ini": 0.151,
+   "fim": 0.197
+  },
+  {
+   "palavra": "gente?",
+   "ini": 0.255,
+   "fim": 0.975
+  }
+ ]
+}

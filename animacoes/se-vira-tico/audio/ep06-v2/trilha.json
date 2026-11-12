@@ -1,0 +1,47 @@
+{
+  "loops": {
+    "romance": {
+      "aprovado": true,
+      "salto": 0.004,
+      "salto_limite": 0.0472,
+      "degrau_dB": 10.16,
+      "degrau_limite_dB": 11.53,
+      "clique": 0.05098,
+      "clique_limite": 0.06781
+    },
+    "apuro": {
+      "aprovado": true,
+      "salto": 0.0,
+      "salto_limite": 0.0229,
+      "degrau_dB": 65.18,
+      "degrau_limite_dB": 66.18,
+      "clique": 0.00027,
+      "clique_limite": 0.00039
+    },
+    "alegre": {
+      "aprovado": true,
+      "salto": 0.0023,
+      "salto_limite": 0.0963,
+      "degrau_dB": 16.6,
+      "degrau_limite_dB": 23.24,
+      "clique": 0.06835,
+      "clique_limite": 0.08071
+    }
+  },
+  "silencio": {
+    "inicio": 41.137,
+    "fim": 42.287,
+    "pico": 0.0
+  },
+  "vozes_simultaneas": {
+    "lua_pan": [
+      0.45,
+      1
+    ],
+    "tico_pan": [
+      1,
+      0.45
+    ]
+  },
+  "duracao": 64.1
+}

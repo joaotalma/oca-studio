@@ -1,0 +1,21 @@
+{
+ "n": 12,
+ "texto": "Que cheiro bom!",
+ "palavras": [
+  {
+   "palavra": "Que",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "cheiro",
+   "ini": 0.32,
+   "fim": 0.64
+  },
+  {
+   "palavra": "bom!",
+   "ini": 0.8,
+   "fim": 1.52
+  }
+ ]
+}

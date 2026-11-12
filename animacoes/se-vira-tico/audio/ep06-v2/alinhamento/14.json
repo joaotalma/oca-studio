@@ -1,0 +1,31 @@
+{
+ "n": 14,
+ "texto": "Eu vou pra outro estado.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.267
+  },
+  {
+   "palavra": "vou",
+   "ini": 0.302,
+   "fim": 0.395
+  },
+  {
+   "palavra": "pra",
+   "ini": 0.43,
+   "fim": 0.557
+  },
+  {
+   "palavra": "outro",
+   "ini": 0.627,
+   "fim": 0.859
+  },
+  {
+   "palavra": "estado.",
+   "ini": 0.882,
+   "fim": 1.533
+  }
+ ]
+}

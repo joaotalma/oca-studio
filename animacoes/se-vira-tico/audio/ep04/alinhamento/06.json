@@ -1,0 +1,21 @@
+{
+ "n": 6,
+ "texto": "Primeiro o cinto.",
+ "palavras": [
+  {
+   "palavra": "Primeiro",
+   "ini": 0,
+   "fim": 0.48
+  },
+  {
+   "palavra": "o",
+   "ini": 0.64,
+   "fim": 0.72
+  },
+  {
+   "palavra": "cinto.",
+   "ini": 0.8,
+   "fim": 1.52
+  }
+ ]
+}

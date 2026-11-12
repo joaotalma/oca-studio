@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: story do episódio 5</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Story 1080x1920: a resposta do Tico no celular em cima, a Lua decidindo embaixo.
+// O Instagram cobre cerca de 250 px no topo e no pé: os textos ficam entre 260 e 1660.
+const contorno = (x, y, s, tam, cor, borda = 14) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+const cabecaLocal = (d) => -(10 + d.thigh + d.shin + SHOE_H[d.shoe]) - d.torso - d.neck - 73 * d.hs;
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+for (const c of CENARIOS.cozinhaLuaNoite()) s += `<g transform="translate(0 260)">${c.svg}</g>`;
+
+// A conversa, em cima
+s += ret(140, 270, 800, 520, '#efe8dc', 30, 6) + ret(140, 270, 800, 100, '#2f8f4e', 30, 0) + txt(540, 338, 'Lua', 48, '#fff');
+s += ret(170, 400, 560, 150, '#ffffff', 24, 3) + txt(195, 455, 'Você chega até as oito?', 34, OUT, 'start') + txt(195, 505, 'Senão eu chamo outra entrega.', 30, OUT, 'start');
+s += ret(390, 590, 520, 110, '#d9f2c8', 24, 3) + txt(415, 660, 'Tô a 34 min. Mas eu chego.', 34, OUT, 'start') + txt(890, 740, '✓✓', 32, '#3b8fd6', 'end');
+
+// A pergunta
+s += ret(-10, 840, 1100, 120, '#1c1f29', 0, 0) + contorno(540, 925, 'ELA CONFIA?', 84, '#f2d36b', 12);
+
+// A Lua, com o celular, atrás da bancada e das caixas
+const d = CHARS.lua, k = 1.8, y = 1180 - k * cabecaLocal(d);
+s += `<g transform="translate(400 ${y}) scale(${k})">${drawChar(d, { expr: 'pensando', semPernas: true, armL: [-9, -5], armR: [18, 150], propR: 'phone', blink: 0, breath: 0 })}</g>`;
+s += bancadaSVG(1500) + pilhaCaixasSVG(800, 1500, 1.1);
+s += `<g transform="rotate(-4 200 1060)">` + ret(40, 1000, 330, 96, '#c23b3b', 20, 6) + txt(205, 1066, 'EP. 5 NO AR', 46, '#fff6e6') + '</g>';
+
+// Chamada para o voto, no pé
+s += `<defs><linearGradient id="pe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172540" stop-opacity="0"/><stop offset=".4" stop-color="#172540" stop-opacity=".88"/><stop offset="1" stop-color="#172540" stop-opacity=".95"/></linearGradient></defs>`;
+s += `<rect x="0" y="1440" width="1080" height="480" fill="url(#pe)"/>`;
+s += contorno(540, 1565, 'VOTA NO REEL:', 58, '#fff6e6', 12);
+s += ret(80, 1600, 400, 92, '#35d04a', 20, 5) + txt(280, 1663, 'CONFIA', 52, '#08280d');
+s += ret(520, 1600, 480, 92, '#ff4f6e', 20, 5) + txt(760, 1661, 'OUTRO MOTORISTA', 38, '#3a0612');
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>

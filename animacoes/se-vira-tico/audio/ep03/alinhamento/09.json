@@ -1,0 +1,26 @@
+{
+ "n": 9,
+ "texto": "Toma. Ganhei de presente.",
+ "palavras": [
+  {
+   "palavra": "Toma.",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "Ganhei",
+   "ini": 0.8,
+   "fim": 1.12
+  },
+  {
+   "palavra": "de",
+   "ini": 1.16,
+   "fim": 1.2
+  },
+  {
+   "palavra": "presente.",
+   "ini": 1.28,
+   "fim": 2.24
+  }
+ ]
+}

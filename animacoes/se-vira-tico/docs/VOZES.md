@@ -76,3 +76,11 @@ bash scripts/masterizar.sh render/ep01_mix.wav render/ep01_master.wav
 - `mixar.py` monta falas, efeitos e trilha. Toda a trilha é sintetizada em código. Cada loop é medido na emenda e, se reprovar, a cena fica sem música. O resultado fica em `audio/ep01/trilha.json`.
 - `masterizar.sh` leva o som a -16 LUFS.
 
+
+
+## Narração pontual na abertura do EP6 — 11/11/2026
+
+Por pedido do autor, o gancho ganhou a voz jovem original já existente no Blink: “Ele vai se declarar… mas ela vai embora.” É uma cópia independente do perfil, não um clone do autor ou uma nova voz de personagem. Uso localizado nesta abertura; o elenco e o restante do episódio permanecem iguais. 40 novos caracteres; 585 acumulados sob o teto aprovado de 1.000.
+
+
+Atualização da abertura do EP6: mesma voz original jovem, agora com interpretação expressiva, destaque em ELE/MAS ELA e pausas. Modelo eleven_v3. A voz foi mantida em ritmo natural; a abertura ganhou tempo.

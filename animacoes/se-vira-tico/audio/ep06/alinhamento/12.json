@@ -1,0 +1,41 @@
+{
+ "n": 12,
+ "texto": "Lambo os dedos com esse doce gostoso.",
+ "palavras": [
+  {
+   "palavra": "Lambo",
+   "ini": 0,
+   "fim": 0.29
+  },
+  {
+   "palavra": "os",
+   "ini": 0.313,
+   "fim": 0.372
+  },
+  {
+   "palavra": "dedos",
+   "ini": 0.43,
+   "fim": 0.755
+  },
+  {
+   "palavra": "com",
+   "ini": 0.813,
+   "fim": 0.906
+  },
+  {
+   "palavra": "esse",
+   "ini": 0.952,
+   "fim": 1.103
+  },
+  {
+   "palavra": "doce",
+   "ini": 1.161,
+   "fim": 1.44
+  },
+  {
+   "palavra": "gostoso.",
+   "ini": 1.486,
+   "fim": 2.322
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "n": 3,
+ "texto": "Parabéns, Júnior!",
+ "palavras": [
+  {
+   "palavra": "Parabéns,",
+   "ini": 0,
+   "fim": 0.84
+  },
+  {
+   "palavra": "Júnior!",
+   "ini": 0.88,
+   "fim": 1.68
+  }
+ ]
+}

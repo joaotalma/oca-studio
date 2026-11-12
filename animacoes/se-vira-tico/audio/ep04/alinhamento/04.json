@@ -1,0 +1,36 @@
+{
+ "n": 4,
+ "texto": "Cinco estrelas serviu pra alguma coisa.",
+ "palavras": [
+  {
+   "palavra": "Cinco",
+   "ini": 0,
+   "fim": 0.453
+  },
+  {
+   "palavra": "estrelas",
+   "ini": 0.488,
+   "fim": 0.94
+  },
+  {
+   "palavra": "serviu",
+   "ini": 0.964,
+   "fim": 1.277
+  },
+  {
+   "palavra": "pra",
+   "ini": 1.335,
+   "fim": 1.44
+  },
+  {
+   "palavra": "alguma",
+   "ini": 1.463,
+   "fim": 1.73
+  },
+  {
+   "palavra": "coisa.",
+   "ini": 1.776,
+   "fim": 2.368
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "n": 11,
+ "texto": "A gente matava aula ali.",
+ "palavras": [
+  {
+   "palavra": "A",
+   "ini": 0,
+   "fim": 0.08
+  },
+  {
+   "palavra": "gente",
+   "ini": 0.16,
+   "fim": 0.32
+  },
+  {
+   "palavra": "matava",
+   "ini": 0.4,
+   "fim": 1.12
+  },
+  {
+   "palavra": "aula",
+   "ini": 1.24,
+   "fim": 1.4
+  },
+  {
+   "palavra": "ali.",
+   "ini": 1.44,
+   "fim": 2
+  }
+ ]
+}

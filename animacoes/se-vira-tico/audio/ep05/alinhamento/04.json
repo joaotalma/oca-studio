@@ -1,0 +1,31 @@
+{
+ "n": 4,
+ "texto": "O Fiscal mudou de calçada.",
+ "palavras": [
+  {
+   "palavra": "O",
+   "ini": 0,
+   "fim": 0.08
+  },
+  {
+   "palavra": "Fiscal",
+   "ini": 0.16,
+   "fim": 0.56
+  },
+  {
+   "palavra": "mudou",
+   "ini": 0.64,
+   "fim": 0.96
+  },
+  {
+   "palavra": "de",
+   "ini": 1.04,
+   "fim": 1.12
+  },
+  {
+   "palavra": "calçada.",
+   "ini": 1.24,
+   "fim": 2.08
+  }
+ ]
+}

@@ -33,5 +33,9 @@
   "voiceId": "ePd4yti5BMm8PtB0iafk",
   "previa": 0,
   "referencia": "vendedor"
+ },
+ "narrador_abertura_ep06": {
+  "voiceId": "6UI0A10f2tYKlXvyToXE",
+  "referencia": "Narrador jovem original do Blink; autorizado para a abertura do EP6 em11/11/2026, sem alterar o elenco."
  }
 }

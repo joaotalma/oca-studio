@@ -1,0 +1,13 @@
+{
+  "intro_s": 4.9,
+  "fim_voz": 4.83,
+  "duracao_final_s": 66,
+  "restante_pcm_identico": true,
+  "modelo": "eleven_v3",
+  "pausas_ms": [
+    120,
+    120
+  ],
+  "reforco_pronomes_db": 2.2,
+  "acumulado": 647
+}

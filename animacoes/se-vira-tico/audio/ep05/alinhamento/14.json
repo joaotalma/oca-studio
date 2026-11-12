@@ -1,0 +1,21 @@
+{
+ "n": 14,
+ "texto": "É pertinho, tá?",
+ "palavras": [
+  {
+   "palavra": "É",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "pertinho,",
+   "ini": 0.32,
+   "fim": 0.84
+  },
+  {
+   "palavra": "tá?",
+   "ini": 0.88,
+   "fim": 1.36
+  }
+ ]
+}

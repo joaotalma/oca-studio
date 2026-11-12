@@ -1,0 +1,31 @@
+{
+ "n": 18,
+ "texto": "Começa daqui a trinta dias.",
+ "palavras": [
+  {
+   "palavra": "Começa",
+   "ini": 0,
+   "fim": 0.453
+  },
+  {
+   "palavra": "daqui",
+   "ini": 0.488,
+   "fim": 0.685
+  },
+  {
+   "palavra": "a",
+   "ini": 0.72,
+   "fim": 0.743
+  },
+  {
+   "palavra": "trinta",
+   "ini": 0.801,
+   "fim": 1.126
+  },
+  {
+   "palavra": "dias.",
+   "ini": 1.207,
+   "fim": 1.95
+  }
+ ]
+}

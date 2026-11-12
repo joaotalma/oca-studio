@@ -1,0 +1,26 @@
+{
+ "n": 10,
+ "texto": "É encontro ou dedetização?",
+ "palavras": [
+  {
+   "palavra": "É",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "encontro",
+   "ini": 0.28,
+   "fim": 0.88
+  },
+  {
+   "palavra": "ou",
+   "ini": 1.12,
+   "fim": 1.28
+  },
+  {
+   "palavra": "dedetização?",
+   "ini": 1.44,
+   "fim": 2.64
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "n": 13,
+ "texto": "Os seus, né?",
+ "palavras": [
+  {
+   "palavra": "Os",
+   "ini": 0,
+   "fim": 0.325
+  },
+  {
+   "palavra": "seus,",
+   "ini": 0.348,
+   "fim": 0.731
+  },
+  {
+   "palavra": "né?",
+   "ini": 0.755,
+   "fim": 1.207
+  }
+ ]
+}

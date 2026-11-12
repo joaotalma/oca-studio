@@ -1,0 +1,21 @@
+{
+ "n": 16,
+ "texto": "Doces da Lua.",
+ "palavras": [
+  {
+   "palavra": "Doces",
+   "ini": 0,
+   "fim": 0.395
+  },
+  {
+   "palavra": "da",
+   "ini": 0.441,
+   "fim": 0.511
+  },
+  {
+   "palavra": "Lua.",
+   "ini": 0.569,
+   "fim": 1.068
+  }
+ ]
+}

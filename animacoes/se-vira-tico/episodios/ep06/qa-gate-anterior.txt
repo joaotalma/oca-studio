@@ -1,0 +1,51 @@
+QUALITY GATE   C:\Users\joaot\Projetos\se-vira-tico\episodios\ep06\film.html   viewport 1080x1920
+
+1. DETERMINISM  the same t, drawn two different ways, is the same frame
+----------------------------------------------------------
+        t=44.5s: hashes differ, PSNR 103.52 dB   (pngs in C:\Users\joaot\AppData\Local\Temp\gate-19204, removed if this check passes)
+        t=55.6s: hashes differ, PSNR 111.30 dB   (pngs in C:\Users\joaot\AppData\Local\Temp\gate-19204, removed if this check passes)
+  PASS  2 differing frame(s) within PSNR tolerance (> 45 dB)   min PSNR 103.52 dB
+        DIAGNOSIS: t=44.5s differs even cold-vs-cold, but far above 45 dB: GPU raster
+                   wobble (a few anti-aliased pixels), not an ordering bug. Within tolerance.
+  PASS  no console errors while drawing
+
+2. CONTRACT  the draw path cannot reach a clock, chance or storage
+----------------------------------------------------------
+  PASS  no forbidden call in 7 file(s) (film.html, chars.js, cenarios.js, falas.js, tempos.js, ep.js, motor.js)
+  PASS  randomness is seeded: 1 rng()/rand()/hash() call sites   no seed derived from a clock
+  ----  warn: 1 setup-time load(s): legal only before READY, never in the draw path   motor.js:270: new Image
+
+3. DEAD AIR  something visibly moves in every half second
+----------------------------------------------------------
+  PASS  no unexplained identical frames 1/30 s apart   1837 frames at 30 fps
+  PASS  no 15-frame (half-second) window under 0.5% changed area   none
+  ----  1837 frames measured   median changed 3.44%  min 0.04%
+
+4. POPS  no frame jumps 3x more than its neighbours unless it is a declared cut
+----------------------------------------------------------
+  ----  declared cuts: 1.8s, 7.954s, 9.954s, 12.611s, 15.312s, 17.738s, 21.079s, 26.537s, 31.337s, 35.790000000000006s, 37.29s, 39.711999999999996s, 42.712s, 46.900999999999996s, 49.203s, 54.203s, 56.203s, 4.12s
+  ----  declared cut   t=1.80s (frame 54, 74.7x neighbours, mean diff 80.1/255)
+  ----  declared cut   t=4.13s (frame 124, 5.4x neighbours, mean diff 10.4/255)
+  ----  declared cut   t=7.97s (frame 239, 13.8x neighbours, mean diff 41.4/255)
+  ----  declared cut   t=9.97s (frame 299, 37.3x neighbours, mean diff 73.7/255)
+  ----  declared cut   t=12.63s (frame 379, 26.4x neighbours, mean diff 37.6/255)
+  ----  declared cut   t=15.33s (frame 460, 39.8x neighbours, mean diff 33.2/255)
+  ----  declared cut   t=17.77s (frame 533, 67.0x neighbours, mean diff 33.5/255)
+  ----  declared cut   t=21.10s (frame 633, 86.2x neighbours, mean diff 43.1/255)
+  ----  declared cut   t=26.57s (frame 797, 121.1x neighbours, mean diff 69.5/255)
+  ----  declared cut   t=31.37s (frame 941, 141.3x neighbours, mean diff 70.6/255)
+  ----  declared cut   t=35.80s (frame 1074, 131.5x neighbours, mean diff 65.8/255)
+  ----  declared cut   t=37.30s (frame 1119, 122.6x neighbours, mean diff 71.7/255)
+  ----  declared cut   t=39.73s (frame 1192, 78.7x neighbours, mean diff 61.3/255)
+  ----  declared cut   t=42.73s (frame 1282, 58.4x neighbours, mean diff 34.5/255)
+  ----  declared cut   t=46.93s (frame 1408, 56.5x neighbours, mean diff 28.2/255)
+  ----  declared cut   t=49.23s (frame 1477, 162.7x neighbours, mean diff 81.3/255)
+  ----  declared cut   t=54.23s (frame 1627, 168.9x neighbours, mean diff 84.4/255)
+  ----  declared cut   t=56.23s (frame 1687, 103.2x neighbours, mean diff 51.6/255)
+        pop  t=22.43s (frame 673, 5.1x neighbours, mean diff 2.6/255)
+        pop  t=28.70s (frame 861, 6.6x neighbours, mean diff 5.7/255)
+        pop  t=46.63s (frame 1399, 8.1x neighbours, mean diff 4.6/255)
+  FAIL  no undeclared frame-difference spikes (> 3x neighbours)   3 pop(s): explain each as a cut (--cuts / window.CUTS) or fix it (ease it, stretch the flood, carry an element across)
+
+==========================================================
+GATE: FAIL   1 of 7 checks failed

@@ -1,0 +1,41 @@
+{
+ "n": 2,
+ "texto": "Ela disse agora não. Não disse nunca.",
+ "palavras": [
+  {
+   "palavra": "Ela",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "disse",
+   "ini": 0.32,
+   "fim": 0.56
+  },
+  {
+   "palavra": "agora",
+   "ini": 0.72,
+   "fim": 1.2
+  },
+  {
+   "palavra": "não.",
+   "ini": 1.28,
+   "fim": 1.72
+  },
+  {
+   "palavra": "Não",
+   "ini": 1.92,
+   "fim": 2.08
+  },
+  {
+   "palavra": "disse",
+   "ini": 2.16,
+   "fim": 2.4
+  },
+  {
+   "palavra": "nunca.",
+   "ini": 2.56,
+   "fim": 3.28
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "n": 6,
+ "texto": "Tico… eu precisava garantir.",
+ "palavras": [
+  {
+   "palavra": "Tico…",
+   "ini": 0,
+   "fim": 0.673
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.848,
+   "fim": 0.998
+  },
+  {
+   "palavra": "precisava",
+   "ini": 1.045,
+   "fim": 1.579
+  },
+  {
+   "palavra": "garantir.",
+   "ini": 1.625,
+   "fim": 2.508
+  }
+ ]
+}

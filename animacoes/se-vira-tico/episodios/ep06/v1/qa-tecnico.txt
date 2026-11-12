@@ -1,0 +1,12 @@
+
+QA  ep06_final.mp4
+------------------------------------------------------------
+APROVADO     Duração              61.23 s (esperado 61-68 s)
+APROVADO     Resolução            1080x1920 (esperado 1080x1920)
+APROVADO     Quadros por segundo  30.00 (esperado 30)
+APROVADO     Loudness             -16.4 LUFS (esperado -16 ±1)
+APROVADO     Gate do Take One     7 de 7 itens
+------------------------------------------------------------
+Conferir à vista: membros, boca, legenda e voto A/B (references/qa-checklist.md).
+
+RESULTADO: APROVADO nos itens medidos

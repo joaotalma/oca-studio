@@ -1,0 +1,46 @@
+{
+ "n": 7,
+ "texto": "É encontro ou é pra compensar a mancada?",
+ "palavras": [
+  {
+   "palavra": "É",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "encontro",
+   "ini": 0.32,
+   "fim": 0.96
+  },
+  {
+   "palavra": "ou",
+   "ini": 1.2,
+   "fim": 1.36
+  },
+  {
+   "palavra": "é",
+   "ini": 1.44,
+   "fim": 1.52
+  },
+  {
+   "palavra": "pra",
+   "ini": 1.6,
+   "fim": 1.68
+  },
+  {
+   "palavra": "compensar",
+   "ini": 1.76,
+   "fim": 2.4
+  },
+  {
+   "palavra": "a",
+   "ini": 2.44,
+   "fim": 2.48
+  },
+  {
+   "palavra": "mancada?",
+   "ini": 2.52,
+   "fim": 3.36
+  }
+ ]
+}

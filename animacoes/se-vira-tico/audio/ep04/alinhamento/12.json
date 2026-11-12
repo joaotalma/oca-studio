@@ -1,0 +1,31 @@
+{
+ "n": 12,
+ "texto": "Você matava. Eu ia junto.",
+ "palavras": [
+  {
+   "palavra": "Você",
+   "ini": 0,
+   "fim": 0.32
+  },
+  {
+   "palavra": "matava.",
+   "ini": 0.48,
+   "fim": 1.04
+  },
+  {
+   "palavra": "Eu",
+   "ini": 1.36,
+   "fim": 1.52
+  },
+  {
+   "palavra": "ia",
+   "ini": 1.6,
+   "fim": 1.68
+  },
+  {
+   "palavra": "junto.",
+   "ini": 1.76,
+   "fim": 2.4
+  }
+ ]
+}

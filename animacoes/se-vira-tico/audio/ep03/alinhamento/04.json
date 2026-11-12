@@ -1,0 +1,31 @@
+{
+ "n": 4,
+ "texto": "Lua, me manda o arquivo?",
+ "palavras": [
+  {
+   "palavra": "Lua,",
+   "ini": 0,
+   "fim": 0.64
+  },
+  {
+   "palavra": "me",
+   "ini": 0.72,
+   "fim": 0.8
+  },
+  {
+   "palavra": "manda",
+   "ini": 0.92,
+   "fim": 1.04
+  },
+  {
+   "palavra": "o",
+   "ini": 1.08,
+   "fim": 1.12
+  },
+  {
+   "palavra": "arquivo?",
+   "ini": 1.2,
+   "fim": 1.92
+  }
+ ]
+}

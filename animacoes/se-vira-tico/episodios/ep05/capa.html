@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: capa do episódio 5</title>
+<style>html,body{margin:0;background:#111}svg{display:block}</style>
+<script src="chars.js"></script>
+<script src="cenarios.js"></script>
+</head><body>
+<script>
+// Capa 1080x1920. A grade do perfil corta em 3:4 (y de 240 a 1680): título, Lua, caixas, relógio e selo ficam nessa faixa.
+const contorno = (x, y, s, tam, cor, borda = 16) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="${FONTE}" font-size="${tam}" font-weight="900" fill="${cor}" stroke="${OUT}" stroke-width="${borda}" stroke-linejoin="round" paint-order="stroke">${esc(s)}</text>`;
+const cabecaLocal = (d) => -(10 + d.thigh + d.shin + SHOE_H[d.shoe]) - d.torso - d.neck - 73 * d.hs;
+
+let s = '<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">';
+// Cozinha da Lua à noite, um pouco abaixo para o título caber em cima
+const DESCE = 160;
+for (const c of CENARIOS.cozinhaLuaNoite()) s += `<g transform="translate(0 ${DESCE})">${c.svg}</g>`;
+s += `<rect x="-10" y="-10" width="1100" height="${330 + DESCE}" fill="#b89a78"/>`;
+
+// Relógio na parede: 19h41
+s += `<g transform="translate(860 760)">` + ell(0, 0, 92, 92, '#fff6e6', OUT, 6) + stroke('M0 0 L0 -60 M0 0 L46 30', OUT, 8) + txt(0, 140, '19h41', 44, '#c23b3b') + '</g>';
+
+// Lua atrás da bancada, com o celular, sem saber se confia
+const d = CHARS.lua, k = 1.75, x = 380, y = 1090 - k * cabecaLocal(d);
+s += `<g transform="translate(${x} ${y}) scale(${k})">${drawChar(d, { expr: 'preocupado', semPernas: true, armL: [-9, -5], armR: [18, 150], propR: 'phone', head: -4, blink: 0, breath: 0 })}</g>`;
+s += bancadaSVG(1450) + pilhaCaixasSVG(760, 1450, 1.15) + timerSVG(150, 1390, 1);
+
+// Faixa escura atrás do título
+s += `<defs><linearGradient id="topo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172540" stop-opacity=".92"/><stop offset=".75" stop-color="#172540" stop-opacity=".7"/><stop offset="1" stop-color="#172540" stop-opacity="0"/></linearGradient></defs>`;
+s += `<rect x="0" y="0" width="1080" height="680" fill="url(#topo)"/>`;
+s += `<g transform="rotate(-3 540 420)">` + contorno(540, 365, 'SE VIRA,', 130, '#fff6e6', 18) + contorno(540, 565, 'TICO', 230, '#f2d36b', 22) + '</g>';
+
+// Selo do episódio
+s += `<g transform="rotate(-2 540 1570)">`
+  + ret(150, 1490, 780, 180, '#fff6e6', 26, 6)
+  + ret(120, 1452, 170, 80, '#c23b3b', 18, 6)
+  + txt(205, 1509, 'EP. 5', 44, '#fff6e6')
+  + txt(540, 1574, 'SEIS CAIXAS,', 56, OUT)
+  + txt(540, 1640, 'UM MOTORISTA ATRASADO', 46, '#c23b3b')
+  + '</g>';
+
+s += '</svg>';
+document.body.innerHTML = s;
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body></html>

@@ -1,0 +1,16 @@
+{
+ "n": 13,
+ "texto": "Eu também.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.174
+  },
+  {
+   "palavra": "também.",
+   "ini": 0.255,
+   "fim": 0.929
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "n": 3,
+ "texto": "Cinco minutos adiantado!",
+ "palavras": [
+  {
+   "palavra": "Cinco",
+   "ini": 0,
+   "fim": 0.337
+  },
+  {
+   "palavra": "minutos",
+   "ini": 0.383,
+   "fim": 0.801
+  },
+  {
+   "palavra": "adiantado!",
+   "ini": 0.871,
+   "fim": 1.765
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "n": 12,
+ "texto": "Então começa ouvindo.",
+ "palavras": [
+  {
+   "palavra": "Então",
+   "ini": 0,
+   "fim": 0.32
+  },
+  {
+   "palavra": "começa",
+   "ini": 0.4,
+   "fim": 0.96
+  },
+  {
+   "palavra": "ouvindo.",
+   "ini": 1.12,
+   "fim": 2.08
+  }
+ ]
+}

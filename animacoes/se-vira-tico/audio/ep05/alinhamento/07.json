@@ -1,0 +1,41 @@
+{
+ "n": 7,
+ "texto": "A minha começa com uma pia cheia.",
+ "palavras": [
+  {
+   "palavra": "A",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "minha",
+   "ini": 0.28,
+   "fim": 0.56
+  },
+  {
+   "palavra": "começa",
+   "ini": 0.64,
+   "fim": 1.12
+  },
+  {
+   "palavra": "com",
+   "ini": 1.2,
+   "fim": 1.28
+  },
+  {
+   "palavra": "uma",
+   "ini": 1.36,
+   "fim": 1.44
+  },
+  {
+   "palavra": "pia",
+   "ini": 1.6,
+   "fim": 1.92
+  },
+  {
+   "palavra": "cheia.",
+   "ini": 2,
+   "fim": 2.8
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "n": 2,
+ "texto": "Isso não estava no meu curso!",
+ "palavras": [
+  {
+   "palavra": "Isso",
+   "ini": 0,
+   "fim": 0.244
+  },
+  {
+   "palavra": "não",
+   "ini": 0.279,
+   "fim": 0.395
+  },
+  {
+   "palavra": "estava",
+   "ini": 0.43,
+   "fim": 0.801
+  },
+  {
+   "palavra": "no",
+   "ini": 0.836,
+   "fim": 0.894
+  },
+  {
+   "palavra": "meu",
+   "ini": 0.929,
+   "fim": 1.033
+  },
+  {
+   "palavra": "curso!",
+   "ini": 1.091,
+   "fim": 1.625
+  }
+ ]
+}

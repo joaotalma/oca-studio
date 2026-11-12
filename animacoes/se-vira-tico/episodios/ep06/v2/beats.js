@@ -1,0 +1,1 @@
+const B = {"abertura": 0, "turbo": 7.2, "traseira": 7.58, "chegada": 10.714, "dias": 23.798000000000002, "agenda": 27.471, "cinema": 31.072, "juntos": 39.983000000000004, "silencio": 41.137, "doce": 42.467, "encerramento": 59.772, "fim": 64.072};

@@ -1,0 +1,46 @@
+{
+ "n": 1,
+ "texto": "Eu tava fedendo. Fiquei com vergonha e fugi.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "tava",
+   "ini": 0.24,
+   "fim": 0.4
+  },
+  {
+   "palavra": "fedendo.",
+   "ini": 0.48,
+   "fim": 1.36
+  },
+  {
+   "palavra": "Fiquei",
+   "ini": 1.52,
+   "fim": 1.8
+  },
+  {
+   "palavra": "com",
+   "ini": 1.84,
+   "fim": 1.92
+  },
+  {
+   "palavra": "vergonha",
+   "ini": 2,
+   "fim": 2.72
+  },
+  {
+   "palavra": "e",
+   "ini": 2.8,
+   "fim": 2.88
+  },
+  {
+   "palavra": "fugi.",
+   "ini": 2.92,
+   "fim": 3.6
+  }
+ ]
+}
