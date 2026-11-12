@@ -1,13 +1,13 @@
 ---
 name: configurar-canal
-description: Preenche ou revisa canal/canal.md com o João por meio de perguntas guiadas sobre tema, tom, personagem, voz, plataformas, direitos, o que evitar e regra de corte. Use ao definir o nicho, quando canal.md estiver em branco ou quando ele quiser mudar algo do canal.
+description: Preenche ou revisa series/misterios-do-brasil/canal/canal.md com o João por meio de perguntas guiadas sobre tema, tom, personagem, voz, plataformas, direitos, o que evitar e regra de corte. Use ao definir o nicho, quando canal.md estiver em branco ou quando ele quiser mudar algo do canal.
 ---
 
 # configurar-canal
 
 ## Entradas
 
-- `canal/canal.md`, com as perguntas guiadas
+- `series/misterios-do-brasil/canal/canal.md`, com as perguntas guiadas
 - Critérios de nicho em `docs/GUIA.md`, seção "Escolha de nicho e formato"
 
 ## Passos
@@ -21,7 +21,7 @@ description: Preenche ou revisa canal/canal.md com o João por meio de perguntas
 
 ## Saída
 
-`canal/canal.md` preenchido.
+`series/misterios-do-brasil/canal/canal.md` preenchido.
 
 ## Critério de pronto
 

@@ -153,7 +153,7 @@
   const ultimo = FALAS[FALAS.length - 1];
   window.FILM_DURATION = TP ? TP.duracao : ultimo.fim + (VIDEO.folga ?? 0.8);
   // A tela quase não muda por decisão de formato: entre palavras não há o que cobrar de "tela parada".
-  // O limite que vale aqui é o tempo sem texto novo, medido em engine/qa-video.mjs.
+  // O limite que vale aqui é o tempo sem texto novo, medido em motor/qa-video.mjs.
   window.HOLDS = [[0, window.FILM_DURATION]];
   window.CUTS = [];
 

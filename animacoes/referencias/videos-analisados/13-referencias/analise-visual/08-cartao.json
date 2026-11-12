@@ -1,0 +1,341 @@
+{
+  "id": "08-cartao",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.36,
+      "text": "Boa noite gente, eu fechei a fatura do cartão da família, viu?"
+    },
+    {
+      "start": 3.36,
+      "end": 4.52,
+      "text": "Segue os valores!"
+    },
+    {
+      "start": 4.52,
+      "end": 11.38,
+      "text": "Mãe 320, eu 270, Luana 180 e Tia Neide 2870!"
+    },
+    {
+      "start": 11.38,
+      "end": 12.82,
+      "text": "Todo mundo já pagou!"
+    },
+    {
+      "start": 12.82,
+      "end": 14.22,
+      "text": "Só falta Tia Neide!"
+    },
+    {
+      "start": 14.22,
+      "end": 15.32,
+      "text": "Quase 3 mil?"
+    },
+    {
+      "start": 15.32,
+      "end": 17.36,
+      "text": "Tia, o que foi que aconteceu?"
+    },
+    {
+      "start": 17.36,
+      "end": 19.68,
+      "text": "Ué, foi da viagem né?"
+    },
+    {
+      "start": 19.68,
+      "end": 25.36,
+      "text": "Passei o hotel, lembrancinha, massagem, jantazinho, nada demais!"
+    },
+    {
+      "start": 25.36,
+      "end": 28.32,
+      "text": "Então Tia, mas você não falou que usar o cartão pra tudo isso né?"
+    },
+    {
+      "start": 28.44,
+      "end": 34.28,
+      "text": "Gente, eu tava precisando, depois de tudo que eu passei com Jorge, eu merecia um descanso né?"
+    },
+    {
+      "start": 34.28,
+      "end": 37.88,
+      "text": "Mãe Neide, isso aqui é gasto de 4 pessoas no mês inteiro!"
+    },
+    {
+      "start": 37.88,
+      "end": 39.76,
+      "text": "Você gastou sozinho 5 dias?"
+    },
+    {
+      "start": 39.76,
+      "end": 41.48,
+      "text": "É, e todo mês tem isso!"
+    },
+    {
+      "start": 41.48,
+      "end": 44.4,
+      "text": "Um drama, uma fatura gigante e sobra pra gente segurar!"
+    },
+    {
+      "start": 44.4,
+      "end": 46.32,
+      "text": "Ai, que exagero Luana!"
+    },
+    {
+      "start": 46.32,
+      "end": 49.4,
+      "text": "Cês parece que nunca passaram por uma fase difícil na vida!"
+    },
+    {
+      "start": 49.4,
+      "end": 51.4,
+      "text": "Todo mundo tem fase difícil Tia!"
+    },
+    {
+      "start": 51.4,
+      "end": 53.96,
+      "text": "Mas ninguém joga tudo no cartão da família e depois some, não?"
+    },
+    {
+      "start": 53.96,
+      "end": 56.68,
+      "text": "Eu não sumi, eu só tô habitando estresse!"
+    },
+    {
+      "start": 56.68,
+      "end": 58.8,
+      "text": "Vocês são muito pesados às vezes!"
+    },
+    {
+      "start": 58.8,
+      "end": 62.44,
+      "text": "Pesado esse valor aqui, 2.870 não é um errinho não!"
+    },
+    {
+      "start": 62.44,
+      "end": 63.6,
+      "text": "É falta de noção!"
+    },
+    {
+      "start": 63.6,
+      "end": 65.76,
+      "text": "E sinceramente, eu não tenho como cobrir isso!"
+    },
+    {
+      "start": 65.76,
+      "end": 67.4,
+      "text": "Tia, cê vai ter que resolver!"
+    },
+    {
+      "start": 67.4,
+      "end": 69.36,
+      "text": "Passei lá, pedi ajuda, sei lá!"
+    },
+    {
+      "start": 69.36,
+      "end": 70.84,
+      "text": "Mas o banco cobra de mim!"
+    },
+    {
+      "start": 70.84,
+      "end": 72.4,
+      "text": "Eu tô desempregado, gente!"
+    },
+    {
+      "start": 72.4,
+      "end": 74.28,
+      "text": "Eu não posso inventar dinheiro não!"
+    },
+    {
+      "start": 74.28,
+      "end": 75.64,
+      "text": "Vê se entenda isso aí!"
+    },
+    {
+      "start": 75.64,
+      "end": 77.0,
+      "text": "A gente entende Neide!"
+    },
+    {
+      "start": 77.0,
+      "end": 80.44,
+      "text": "Mas você viajou, gastou, foi pro spa pra restaurante chique!"
+    },
+    {
+      "start": 80.44,
+      "end": 81.96,
+      "text": "E agora quer que a gente banque?"
+    },
+    {
+      "start": 81.96,
+      "end": 84.52,
+      "text": "Ah pronto, agora virou o julgamento coletivo!"
+    },
+    {
+      "start": 84.52,
+      "end": 86.84,
+      "text": "Não é julgamento, é só realidade!"
+    },
+    {
+      "start": 86.84,
+      "end": 88.6,
+      "text": "Você usou, precisa pagar!"
+    },
+    {
+      "start": 88.6,
+      "end": 90.08,
+      "text": "A gente não vai dividir esse valor!"
+    },
+    {
+      "start": 90.08,
+      "end": 91.36,
+      "text": "E não tem como adiar não!"
+    },
+    {
+      "start": 91.36,
+      "end": 92.32,
+      "text": "Venha se dia 12!"
+    },
+    {
+      "start": 92.32,
+      "end": 94.32,
+      "text": "Ou paga, ou bloqueia o meu nome!"
+    },
+    {
+      "start": 94.32,
+      "end": 95.12,
+      "text": "Legal!"
+    },
+    {
+      "start": 95.12,
+      "end": 96.24,
+      "text": "Que família viu?"
+    },
+    {
+      "start": 96.24,
+      "end": 98.52,
+      "text": "Pra ir das minhas fotos na praia, vocês servem!"
+    },
+    {
+      "start": 98.52,
+      "end": 101.08,
+      "text": "Mas pra ajudar de verdade, some todo mundo!"
+    },
+    {
+      "start": 101.08,
+      "end": 103.48,
+      "text": "Ajudar não é cobrir o erro dos outros sempre não!"
+    },
+    {
+      "start": 103.48,
+      "end": 105.48,
+      "text": "A gente avisou várias vezes Tia!"
+    },
+    {
+      "start": 105.48,
+      "end": 106.8,
+      "text": "Você que não quis respeitar!"
+    },
+    {
+      "start": 106.8,
+      "end": 107.64,
+      "text": "Sabe de uma coisa?"
+    },
+    {
+      "start": 107.64,
+      "end": 109.92,
+      "text": "Pode tirar meu acesso desse cartãozinho ridículo!"
+    },
+    {
+      "start": 109.92,
+      "end": 111.2,
+      "text": "Eu não queria mesmo!"
+    },
+    {
+      "start": 111.2,
+      "end": 112.4,
+      "text": "Todo pão duro!"
+    },
+    {
+      "start": 112.4,
+      "end": 113.48,
+      "text": "Família gelada!"
+    },
+    {
+      "start": 113.48,
+      "end": 114.24,
+      "text": "Gelada não!"
+    },
+    {
+      "start": 114.28,
+      "end": 115.44,
+      "text": "Só cansada!"
+    },
+    {
+      "start": 115.44,
+      "end": 117.04,
+      "text": "A gente já passou pano demais!"
+    },
+    {
+      "start": 117.04,
+      "end": 118.16,
+      "text": "Vocês vão ver!"
+    },
+    {
+      "start": 118.16,
+      "end": 120.04,
+      "text": "Um dia vocês vão precisar de mim de novo!"
+    },
+    {
+      "start": 120.04,
+      "end": 121.4,
+      "text": "Aí eu vou lembrar disso aqui!"
+    },
+    {
+      "start": 121.4,
+      "end": 125.56,
+      "text": "Eu tô saindo do grupo e boa sorte com essa família organizada de vocês!"
+    },
+    {
+      "start": 125.56,
+      "end": 128.32,
+      "text": "Pronto, agora ela vai postar em direitinha no Facebook!"
+    },
+    {
+      "start": 128.32,
+      "end": 131.6,
+      "text": "Eu aposto 10 contos que vem textinho até amanhã de manhã cedo!"
+    },
+    {
+      "start": 131.6,
+      "end": 134.72,
+      "text": "Vai ter a história chorando com filtro de borboleta!"
+    },
+    {
+      "start": 134.72,
+      "end": 137.52,
+      "text": "E se você gostou aí com a sabor de suje dessa história, já não esquece!"
+    },
+    {
+      "start": 137.52,
+      "end": 138.72,
+      "text": "Sega a gente, clica aqui!"
+    },
+    {
+      "start": 138.72,
+      "end": 140.8,
+      "text": "Ajuda bastante e você nem sai do vídeo!"
+    },
+    {
+      "start": 140.8,
+      "end": 142.48,
+      "text": "E me diz aí, tá gostando da história?"
+    },
+    {
+      "start": 142.48,
+      "end": 143.84,
+      "text": "Porque já já, você é a parte 2!"
+    }
+  ],
+  "words": 461
+}

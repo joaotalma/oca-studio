@@ -1,12 +1,12 @@
 # Checklist de QA
 
-"Automático" é medido por `engine/qa-video.mjs`. "À vista" é conferido em uma folha de quadros ou assistindo. "João" só ele decide.
+"Automático" é medido por `motor/qa-video.mjs`. "À vista" é conferido em uma folha de quadros ou assistindo. "João" só ele decide.
 
 ## Automático
 
 | Item | Critério |
 |---|---|
-| Duração | 30 a 90 s, ou a faixa de `canal/canal.md` |
+| Duração | 30 a 90 s, ou a faixa de `series/misterios-do-brasil/canal/canal.md` |
 | Resolução | 1080x1920; rascunho 540x960 |
 | Quadros por segundo | 30; rascunho 15 |
 | Loudness | -16 LUFS, ±1 LU; não cobrado em rascunho ou render mudo |

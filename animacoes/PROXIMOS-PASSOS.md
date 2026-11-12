@@ -1,16 +1,29 @@
 # Próximos passos
 
-Atualizado em 2026-11-10. Inclui o feedback do piloto, a evolução visual aprovada e a futura unificação no Blink Studio. Publicação continua manual.
+Atualizado em 2026-11-12. Inclui a unificação na Oca Studio, o feedback do piloto e a evolução visual aprovada. Publicação continua manual.
 
-## Para depois: unificar os projetos no Blink Studio — 2026-11-10
+## Unificação na Oca Studio — 2026-11-12
 
-Pedido do João: registrar como tarefa futura como reunir tudo em um único projeto. Nome escolhido: **Blink Studio**. A migração não começa neste pedido.
+O nome final da agência é **Oca Studio** (antes se pensava em Blink Studio). O repositório privado é `joaotalma/oca-studio`. Plotline e Se Vira, Tico foram importados com histórico, e o Plotline virou a frente `animacoes/`.
 
-- [ ] Planejar a estrutura do estúdio com motor compartilhado e pastas próprias para Plotline e Se Vira, Tico.
-- [ ] Mapear código, personagens, cenários, roteiros, pesquisa, vozes, configurações e arquivos de produção dos dois projetos; identificar duplicações e diferenças entre SVG e Canvas.
-- [ ] Definir os componentes compartilhados: curvas/articulações, olhos/bocas, atuação, sombras, câmera, sincronização, render e revisão. Preservar identidade, elenco, história, vozes e regras de cada série.
-- [ ] Preparar a migração por etapas, preservando históricos, versões aprovadas, arquivos locais e trabalho em andamento; definir instruções e fluxo de Git para o projeto central.
-- [ ] Validar uma cena de cada série no estúdio central antes de adotar o fluxo unificado. Manter o teste de fundo 3D como etapa própria, ainda pendente.
+**Fase 1, reorganização (feita em 2026-11-12):**
+
+- [x] Estrutura `motor/`, `templates/`, `series/`, `referencias/`, `estudos/` e `docs/`.
+- [x] Tico em `series/se-vira-tico/`. Mistérios (canal, roteiros, radar e personagem) em `series/misterios-do-brasil/`. Filmes em `series/filmes/`.
+- [x] As 13 referências analisadas e as transcrições, que estavam fora do git, foram para `referencias/videos-analisados/`. O método Blink, os outliers e a pesquisa da reconstrução do Tico também foram para `referencias/`.
+- [x] As branches do Tico `ep04`, `ep05-v2`, `t1-formato` e `visual-plotline` viraram `tico/*` no repositório novo, com o trabalho não commitado das worktrees. O rig orgânico do Tico foi copiado para `estudos/tico-rig-organico/`.
+- [x] A v3 e a transferência visual foram para `estudos/_arquivo/`. Os scripts do Codex para o ep06 foram para `series/se-vira-tico/episodios/ep06/producao-codex/`.
+
+**Fase 2, um motor só (pendente, com teste antes e depois):**
+
+- [ ] Gravar uma referência de render: um episódio do Tico e um roteiro dos Mistérios, comparando quadro a quadro.
+- [ ] Juntar `motor/` com `series/se-vira-tico/personagens/` (motor, chars, cenarios e acabamento), tendo o rig orgânico v4 como padrão e o rig clássico só para reabrir episódios antigos.
+- [ ] Separar o motor em `render/`, `rig/`, `cenarios/`, `cenas/`, `audio/` e `qa/`.
+- [ ] Áudio com uma versão de cada script: usar o `mixar` do Tico (trilha e efeitos como opção) e o `sincronizar` do motor, e trocar os `mixagem.py` de cada episódio por dados de configuração.
+- [ ] QA único (`qa-video`) também para o Tico, no lugar do `qa-episodio`.
+- [ ] Trazer para o motor o que valer dos scripts do Codex do ep06: entonação, abertura em 3 s e empacotamento.
+- [ ] Escolher, com o João, a versão de cada episódio que vale entre as branches `tico/*` e juntar na `main`.
+- [ ] Manter o teste de fundo 3D como etapa própria, ainda pendente.
 
 ## Prioridade: feedback do piloto do apagão v2
 
@@ -30,7 +43,7 @@ Este pedido registra tarefas; não solicita refazer agora o piloto nem renderiza
 
 ## Atuação e motor expressivo — pedido de 2026-11-09
 
-Diagnóstico em `docs/MOTOR-EXPRESSIVO-V3.md`; estudo isolado em `experimentos/ator-expressivo-v3/`. O ator atual é uma imagem inteira. O estudo testa cor mais clara e articulação de rosto/corpo, sem substituir a estética de produção.
+Diagnóstico em `estudos/MOTOR-EXPRESSIVO-V3.md`; estudo isolado em `estudos/_arquivo/ator-expressivo-v3/`. O ator atual é uma imagem inteira. O estudo testa cor mais clara e articulação de rosto/corpo, sem substituir a estética de produção.
 
 - [x] Relacionar falhas das 13 referências e do piloto com limitações do motor.
 - [x] Criar estudo com olhar, piscada, sobrancelhas, boca/dentes/língua, cabeça e braços separados.
@@ -44,13 +57,13 @@ Diagnóstico em `docs/MOTOR-EXPRESSIVO-V3.md`; estudo isolado em `experimentos/a
 
 João considerou a atuação bem melhor, mas pediu traços arredondados em pernas, cotovelos e roupa, sombra mais viva e dentes expressivos. Acrescentou que os olhos ainda pareciam sem vida, apesar das pálpebras.
 
-- [x] Preparar revisão isolada em `experimentos/ator-organico-v4/`, preservando a v3 para comparação.
+- [x] Preparar revisão isolada em `estudos/ator-organico-v4/`, preservando a v3 para comparação.
 - [x] Desenhar contornos curvos para mangas/calças, caimento e tênis arredondados.
 - [x] Projetar sombra da silhueta e separar penumbra do contato sob as solas.
 - [x] Redesenhar boca/arcada com queixo e bochechas acompanhando o sorriso.
 - [x] Rever olhos: íris, cobertura, foco, assimetria, reflexo e tensão de sobrancelhas por intenção.
 - [x] Testar a direção posterior do João: olho sem íris colorida, com pupila preta, foco para ambos os lados, brilho e variação de tamanho por emoção. Opção colorida preservada para comparação.
-- [x] João avaliou e aprovou o comparativo v4 em 2026-11-09: “Ficou perfeito!”. Desenho de referência em `personagens/voce-v4.md`.
+- [x] João avaliou e aprovou o comparativo v4 em 2026-11-09: “Ficou perfeito!”. Desenho de referência em `series/misterios-do-brasil/personagens/voce-v4.md`.
 - [ ] Testar depois o personagem v4 aprovado com fundo 3D estilizado: luz compartilhada, sombra, oclusão, escala/perspectiva e cores claras. Preservar o desenho e as expressões; depois conferir a integração no motor de produção.
 
 ## Transferência visual 2D para o Se Vira, Tico — 2026-11-09
@@ -61,7 +74,7 @@ João considerou a atuação bem melhor, mas pediu traços arredondados em perna
 
 ## Onde paramos
 
-- **Entrega v2 atual:** 28 roteiros revisados com originais preservados; índice em `radar/revisao-roteiros-v2.md`. Gerador, guia visual e prompt de pesquisa estratégica estão integrados ao fluxo.
+- **Entrega v2 atual:** 28 roteiros revisados com originais preservados; índice em `series/misterios-do-brasil/radar/revisao-roteiros-v2.md`. Gerador, guia visual e prompt de pesquisa estratégica estão integrados ao fluxo.
 - **Piloto do apagão v2:** completo, com áudio, 1080 x 1920, 30 fps e aproximadamente 72 s. Verificações técnicas aprovadas com pausas de leitura justificadas. João gostou da narração e do vídeo, mas pediu pauta mais forte e visual mais claro/colorido para a próxima versão.
 - **Aprovação editorial:** o feedback do piloto não aprova as outras 27 versões v2 nem torna a pauta do apagão prioritária.
 
@@ -76,15 +89,15 @@ Histórico das versões anteriores, preservadas:
 
 ### Estética definitiva
 
-**Atualização de 2026-11-08:** João aprovou o caminho de personagem 2D em cenário 3D no exemplo de Varginha/apagão e pediu estrelas à noite, nuvens de dia e personagem menos escuro sem perder as luzes dinâmicas. Isso agora é padrão do motor ilustrado (`engine/ambiente3d.js`), com direção e horário por cena. As próximas montagens preparam a base neutra do personagem automaticamente quando faltar ou estiver desatualizada. Cenas manuais sem marcas de camada ainda precisam ser separadas; fundos personalizados não identificados são preservados com aviso até receberem direção própria em `cenas3d.json`.
+**Atualização de 2026-11-08:** João aprovou o caminho de personagem 2D em cenário 3D no exemplo de Varginha/apagão e pediu estrelas à noite, nuvens de dia e personagem menos escuro sem perder as luzes dinâmicas. Isso agora é padrão do motor ilustrado (`motor/ambiente3d.js`), com direção e horário por cena. As próximas montagens preparam a base neutra do personagem automaticamente quando faltar ou estiver desatualizada. Cenas manuais sem marcas de camada ainda precisam ser separadas; fundos personalizados não identificados são preservados com aviso até receberem direção própria em `cenas3d.json`.
 
 Na primeira atualização do motor não houve novo render. Depois foi produzido o piloto do apagão v2, descrito acima; as demais prévias continuam sendo da versão anterior. Conferir as novas âncoras e o QA na montagem de cada final. A próxima evolução deve atender ao feedback de mais cor e luminosidade.
 
-Histórico da versão anterior, aprovada em 2026-11-07 com o piloto do ET de Varginha. Reprocessar um vídeo por vez, com calma, usando `bash engine/reprocessar.sh <slug>`.
+Histórico da versão anterior, aprovada em 2026-11-07 com o piloto do ET de Varginha. Reprocessar um vídeo por vez, com calma, usando `bash motor/reprocessar.sh <slug>`.
 
 - [x] ET de Varginha (piloto)
 - [x] Confisco, apagão de 2001, Recife e hiperinflação (reprocessados em 2026-11-07; falta João assistir)
-- [ ] Vídeos 7 a 30 (as cenas precisam ser geradas de novo com `python -I engine/desenhar-lote2.py` antes)
+- [ ] Vídeos 7 a 30 (as cenas precisam ser geradas de novo com `python -I motor/desenhar-lote2.py` antes)
 - [ ] Greve dos caminhoneiros: as cenas foram feitas à mão e não têm marcas de camada; precisam ser redesenhadas
 - [ ] Revisar as folhas e as prévias de cada lote reprocessado
 
@@ -108,15 +121,15 @@ Histórico da versão anterior, aprovada em 2026-11-07 com o piloto do ET de Var
 
 ### Voz
 
-- [x] Criar voz original jovem no ElevenLabs, autorizada pelo João; perfil em `canal/voz-elevenlabs.json`.
+- [x] Criar voz original jovem no ElevenLabs, autorizada pelo João; perfil em `series/misterios-do-brasil/canal/voz-elevenlabs.json`.
 - [x] Conferir plano pago ativo e licença comercial na página oficial.
-- [x] Medir o piloto e registrar o ritmo em `canal/canal.md`; João gostou da narração.
+- [x] Medir o piloto e registrar o ritmo em `series/misterios-do-brasil/canal/canal.md`; João gostou da narração.
 - [ ] Conferir o ritmo real de cada nova gravação, sem acelerar texto para caber.
 
 ### Canal
 
 - [ ] Definir as palavras proibidas, depois de ouvir a voz.
-- [ ] Confirmar os padrões marcados como "a confirmar" em `canal/canal.md`.
+- [ ] Confirmar os padrões marcados como "a confirmar" em `series/misterios-do-brasil/canal/canal.md`.
 - [ ] Confirmar o arquivo final do canal.
 - [ ] Decidir se o tom muda em temas mais leves, como lagosta e França no Rio.
 - [ ] Conferir quando o rótulo de IA é obrigatório no Instagram.
@@ -145,19 +158,19 @@ João pediu commit de toda a entrega em 2026-11-08. Consultar `git log` para o i
 
 ## Onde está cada coisa
 
-- **Canal:** `canal/canal.md`
-- **Pauta e calendário:** `radar/pauta-30-videos.md`
-- **Roteiros 7 a 30:** `radar/roteiros-videos-7-a-30.md`
-- **Paletas:** `radar/paletas-30-videos.md`
-- **Personagem e rostos:** `personagens/`
-- **Cada vídeo:** `roteiros/<nome-do-vídeo>/`
+- **Canal:** `series/misterios-do-brasil/canal/canal.md`
+- **Pauta e calendário:** `series/misterios-do-brasil/radar/pauta-30-videos.md`
+- **Roteiros 7 a 30:** `series/misterios-do-brasil/radar/roteiros-videos-7-a-30.md`
+- **Paletas:** `series/misterios-do-brasil/radar/paletas-30-videos.md`
+- **Personagem e rostos:** `series/misterios-do-brasil/personagens/`
+- **Cada vídeo:** `series/misterios-do-brasil/roteiros/<nome-do-vídeo>/`
 
 ## Reconstrução de roteiros e método Blink — 2026-11-11
 
-Pedido: analisar três PDFs de produção/roteiro, cruzar os roteiros do Tico com cinco resultados de Instagram/Reels e propor versões para Shorts/TikTok. Relatório em `reports/Reconstrução do Tico em vídeos curtos.md`; método em `docs/METODO-BLINK-ROTEIROS.md`; índice dos rascunhos em `roteiros/se-vira-tico/reconstrucao-2026-11-11/README.md`.
+Pedido: analisar três PDFs de produção/roteiro, cruzar os roteiros do Tico com cinco resultados de Instagram/Reels e propor versões para Shorts/TikTok. Relatório em `referencias/pesquisas/reconstrucao-tico/relatorio.md`; método em `referencias/videos-analisados/METODO-BLINK-ROTEIROS.md`; índice dos rascunhos em `series/se-vira-tico/reconstrucao/reconstrucao-2026-11-11/README.md`.
 
 - [x] Ler os três PDFs, identificar páginas úteis e separar princípios de orientações históricas de plataforma.
-- [x] Auditar as métricas recebidas e preservar snapshots/divergências em `canal/series/se-vira-tico/`, sem misturar com o canal Plotline.
+- [x] Auditar as métricas recebidas e preservar snapshots/divergências em `series/se-vira-tico/resultados/`, sem misturar com o canal Plotline.
 - [x] Auditar cânone e roteiros EP1–6, distinguindo produção, pré-roteiro e variantes locais não aprovadas.
 - [x] Registrar decisões do João: EP6 segue OUTRO MOTORISTA; remakes EP1–5 mantêm acontecimentos e usam perguntas retrospectivas.
 - [x] Incorporar contrato editorial, prompt e rubrica de avisos ao método, com compatibilidade do gerador narrado e testes; não houve ajuste de pesos de IA.

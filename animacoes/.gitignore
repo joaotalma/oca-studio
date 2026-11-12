@@ -11,8 +11,8 @@ audio/**/*.wav
 audio/**/*.mp3
 audio/**/*.m4a
 audio/**/*.flac
-roteiros/**/*.wav
-roteiros/**/*.mp3
-roteiros/**/*.m4a
-roteiros/**/*.mp4
+series/**/roteiros/**/*.wav
+series/**/roteiros/**/*.mp3
+series/**/roteiros/**/*.m4a
+series/**/roteiros/**/*.mp4
 templates/**/film-*.html

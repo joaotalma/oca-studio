@@ -1,6 +1,6 @@
 ---
 name: pesquisa
-description: Reúne e confere os fatos de um tema aprovado e mede vídeos de referência, gravando fontes em roteiros/<slug>/fontes.md. Use depois da etiqueta de direitos e antes de escrever o roteiro, ou quando o João pedir para checar um fato ou medir uma referência.
+description: Reúne e confere os fatos de um tema aprovado e mede vídeos de referência, gravando fontes em series/misterios-do-brasil/roteiros/<slug>/fontes.md. Use depois da etiqueta de direitos e antes de escrever o roteiro, ou quando o João pedir para checar um fato ou medir uma referência.
 ---
 
 # pesquisa
@@ -8,7 +8,7 @@ description: Reúne e confere os fatos de um tema aprovado e mede vídeos de ref
 ## Entradas
 
 - Tema, ângulo e etiqueta de direitos
-- `canal/canal.md`
+- `series/misterios-do-brasil/canal/canal.md`
 
 ## Passos
 
@@ -20,7 +20,7 @@ description: Reúne e confere os fatos de um tema aprovado e mede vídeos de ref
 
 ## Saída
 
-`roteiros/<slug>/fontes.md`:
+`series/misterios-do-brasil/roteiros/<slug>/fontes.md`:
 
 ```markdown
 # Fontes: <tema>

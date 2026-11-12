@@ -1,0 +1,125 @@
+# Nesse mundo: a foto de daqui a 25 anos
+
+Transcrição automática integral das falas, sem resumo ou reescrita. Pode conter erros de reconhecimento, nomes, números e pontuação; não foi revisada integralmente à escuta. Os tempos marcam trechos de fala, não cada palavra individual. Textos exclusivamente visuais não estão incluídos.
+
+Início e término de cada trecho fornecidos pelo reconhecimento de fala.
+
+Arquivo original: 📸 NESSE MUNDO #1 — a foto de daqui a 25 anos.No dia da foto da escola, toda criança recebe uma .mp4
+
+[00:00:00.000 → 00:00:04.280] Nesse mundo, no dia da foto da escola, toda criança recebe uma foto dela mesma daqui
+
+[00:00:04.280 → 00:00:05.520] a 25 anos.
+
+[00:00:05.520 → 00:00:06.880] Só que a foto tem um defeito.
+
+[00:00:06.880 → 00:00:09.280] Ela mostra um momento só, e não explica nada.
+
+[00:00:09.280 → 00:00:11.480] A Kemele se viu cantando num palco gigante.
+
+[00:00:11.480 → 00:00:13.640] No outro dia, já tinha fila para pedir autógrafo.
+
+[00:00:13.640 → 00:00:16.840] O Caio se viu atrás das grades, ninguém mais sem todo o lado dele.
+
+[00:00:16.840 → 00:00:19.480] E ninguém levava essas fotos mais a sério do que a professora Dalva.
+
+[00:00:19.480 → 00:00:23.360] Ela pregava a foto de cada aluno na parede e jurava que sabia exatamente o que cada
+
+[00:00:23.360 → 00:00:24.360] um ia ser.
+
+[00:00:24.360 → 00:00:26.840] Até que chegou a foto do Juminho, e ninguém entendeu nada.
+
+[00:00:26.840 → 00:00:30.760] Ele, adulto, de roupa azul de hospital, do lado de um médico e de um paciente.
+
+[00:00:30.760 → 00:00:32.080] A cidade inteira decidiu.
+
+[00:00:32.080 → 00:00:34.160] O Juminho ia ser um cirurgião brilhante.
+
+[00:00:34.160 → 00:00:35.240] Só tinha um problema.
+
+[00:00:35.240 → 00:00:37.120] O Juminho era o pior aluno da escola.
+
+[00:00:37.120 → 00:00:39.960] Errava até 2 mais 2, e a sala inteira ria dele.
+
+[00:00:39.960 → 00:00:41.720] A professora Dalva perdeu a paciência.
+
+[00:00:41.720 → 00:00:43.560] Todo santo dia era o mesmo grito.
+
+[00:00:43.560 → 00:00:45.970] Juminho!
+
+[00:00:45.970 → 00:00:49.370] Um dia, a mãe dele, a dona Nade, foi na escola saber como o filho estava.
+
+[00:00:49.370 → 00:00:50.170] E ouviu isso.
+
+[00:00:50.170 → 00:00:52.290] Esse menino é o caso mais perdido que eu já tive.
+
+[00:00:52.290 → 00:00:54.970] Com foto ou sem foto, ele nunca vai ser médico.
+
+[00:00:54.970 → 00:00:56.810] A dona Nade saiu de lá arrasada.
+
+[00:00:56.850 → 00:01:00.370] Tirou o Juminho da escola, mudou de cidade, e ele sumiu da vida da Dalva.
+
+[00:01:00.370 → 00:01:03.210] 25 anos depois, a professora Dalva recebe uma notícia.
+
+[00:01:03.210 → 00:01:04.730] O coração dela estava falhando.
+
+[00:01:04.730 → 00:01:06.490] Ela precisava de uma cirurgia dificílima.
+
+[00:01:06.490 → 00:01:08.490] E só um cirurgião no país conseguia fazer.
+
+[00:01:08.490 → 00:01:09.970] Sem escolha, ela aceitou.
+
+[00:01:09.970 → 00:01:11.450] Foram horas na mesa de cirurgia.
+
+[00:01:11.450 → 00:01:12.570] E deu tudo certo.
+
+[00:01:12.570 → 00:01:15.850] Quando ela abriu os olhos, devagar, viu um médico jovem do lado da cama,
+
+[00:01:15.850 → 00:01:16.850] sorrindo pra ela.
+
+[00:01:16.850 → 00:01:18.050] E aí ela lembrou da foto.
+
+[00:01:18.050 → 00:01:20.850] A roupa azul de hospital, o médico, o paciente...
+
+[00:01:20.850 → 00:01:22.690] Será que era o Juminho?
+
+[00:01:22.690 → 00:01:25.970] O menino que ela chamou de caso perdido, tinha provado que ela estava errada.
+
+[00:01:26.010 → 00:01:28.010] Com lágrimas nos olhos, ela tentou agradecer.
+
+[00:01:28.010 → 00:01:29.010] O briga.
+
+[00:01:29.570 → 00:01:31.850] Mas de repente, alguma coisa deu muito errado.
+
+[00:01:31.850 → 00:01:33.010] Ela não conseguia respirar.
+
+[00:01:33.010 → 00:01:34.210] O rosto foi ficando azul.
+
+[00:01:34.210 → 00:01:35.890] E ela levantou a mão, desesperada.
+
+[00:01:35.890 → 00:01:37.450] Ela morreu antes de conseguir falar.
+
+[00:01:37.450 → 00:01:38.690] O cirurgião ficou em choque.
+
+[00:01:38.690 → 00:01:40.050] A cirurgia tinha sido perfeita.
+
+[00:01:40.050 → 00:01:41.290] Como a paciente morre assim?
+
+[00:01:41.290 → 00:01:43.890] Ele foi checar os aparelhos e viu um homem parado na tomada,
+
+[00:01:43.890 → 00:01:45.370] segurando um aspirador de pó.
+
+[00:01:45.370 → 00:01:49.210] Era o Juminho, o mesmo menino que ela chamou de caso perdido 25 anos antes.
+
+[00:01:49.210 → 00:01:50.210] A foto não mentiu.
+
+[00:01:50.210 → 00:01:51.650] Ele trabalhava mesmo num hospital.
+
+[00:01:51.650 → 00:01:52.650] Só que não era cirurgião.
+
+[00:01:52.650 → 00:01:53.570] Não era nem médico.
+
+[00:01:53.570 → 00:01:54.450] Era o faxineiro.
+
+[00:01:54.490 → 00:01:57.210] E para ligar o aspirador, ele tinha tirado da tomada sem querer
+
+[00:01:57.210 → 00:01:59.210] a máquina que fazia a professora Dalva respirar.

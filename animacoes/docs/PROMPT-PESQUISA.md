@@ -1,6 +1,6 @@
 # Prompt de pesquisa estratégica do Plotline
 
-Use este prompt em uma sessão com navegação. Substitua a data pela data local do Brasil e leia canal/canal.md, canal/regras.md e os radares anteriores quando disponíveis.
+Use este prompt em uma sessão com navegação. Substitua a data pela data local do Brasil e leia series/misterios-do-brasil/canal/canal.md, series/misterios-do-brasil/canal/regras.md e os radares anteriores quando disponíveis.
 
 ---
 

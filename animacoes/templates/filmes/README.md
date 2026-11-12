@@ -8,8 +8,8 @@
 
 | Técnica | Onde está |
 |---|---|
-| Íris com brilho quadrado, brilho pequeno, sombra da pálpebra e reflexo do que o personagem vê | `engine/desenhar-cenas.mjs`, com `olhos: 'cinema'` em `video.js`; o reflexo vem de `reflexo()` em `engine/cenas-filmes.py` |
-| Céu de fim de tarde (roxo para laranja), sol estourado atrás do personagem e contorno de luz | `ceu()`, `sol()` e `contorno_luz()` em `engine/cenas-filmes.py`; paletas em `paletas.js` |
+| Íris com brilho quadrado, brilho pequeno, sombra da pálpebra e reflexo do que o personagem vê | `motor/desenhar-cenas.mjs`, com `olhos: 'cinema'` em `video.js`; o reflexo vem de `reflexo()` em `motor/cenas-filmes.py` |
+| Céu de fim de tarde (roxo para laranja), sol estourado atrás do personagem e contorno de luz | `ceu()`, `sol()` e `contorno_luz()` em `motor/cenas-filmes.py`; paletas em `paletas.js` |
 | Profundidade: fundo desfocado e cabeças escuras muito desfocadas em primeiro plano | `fundo_desfocado()` e `silhuetas_frente()` |
 | Poeira brilhando no ar e bolhas de luz fora de foco | `desenharParticulas` em `filmes.js` |
 | Vazamento de luz quente que respira | `desenharLuz` |
@@ -34,13 +34,13 @@ Os campos do `ilustrado` continuam valendo, inclusive `selo`.
 
 ## Rosto por cena
 
-Uma cena pode trocar a expressão do "você" com o comentário `<!--rosto:bravo-->` no SVG. `engine/desenhar-filmes.py` faz isso com `voce(enquadramento, 'bravo')`. As opções estão em `personagens/rostos.json`. Com olhos de cinema, a sobrancelha fica mais grossa e não há cílios, para o rosto não ler como feminino (ajuste pedido pelo João em 2026-11-07).
+Uma cena pode trocar a expressão do "você" com o comentário `<!--rosto:bravo-->` no SVG. `motor/desenhar-filmes.py` faz isso com `voce(enquadramento, 'bravo')`. As opções estão em `series/misterios-do-brasil/personagens/rostos.json`. Com olhos de cinema, a sobrancelha fica mais grossa e não há cílios, para o rosto não ler como feminino (ajuste pedido pelo João em 2026-11-07).
 
 ## Ritmo e animação
 
 O ritmo vem das trocas de imagem (duas imagens nas falas longas), não de cortes na mesma imagem. Cada imagem tem um movimento de câmera só, lento e contínuo; o "vai e vem" de aberto e fechado foi tirado a pedido do João em 2026-11-07.
 
-**Camadas:** `engine/desenhar-cenas.mjs` separa cada cena marcada em fundo, boneco (com uma versão de olhos fechados) e frente, e grava `assets/camadas.js`. O template anima cada camada:
+**Camadas:** `motor/desenhar-cenas.mjs` separa cada cena marcada em fundo, boneco (com uma versão de olhos fechados) e frente, e grava `assets/camadas.js`. O template anima cada camada:
 - **Boneco:** respira, balança, sobe e desce de leve, pisca a cada 2,6 a 4 s e sobe um pouco ao entrar na cena.
 - **Frente:** os objetos flutuam devagar.
 - **Profundidade:** o fundo anda menos que a câmera e a frente anda mais.
@@ -48,7 +48,7 @@ O ritmo vem das trocas de imagem (duas imagens nas falas longas), não de cortes
 - **Piscada:** troca seca de olho aberto para fechado, sem meio-termo. No close extremo do olho, ponha `<!--sempisca-->` na cena.
 - **Sem vazio embaixo:** boneco e frente são desenhados com 520 px de sobra abaixo do quadro. No enquadramento só do tronco, o movimento nunca mostra o corte do corpo. Com os pés em cena, o boneco fica preso ao chão: não sobe, só respira e balança a partir dos pés, e anda junto com o fundo (ajuste pedido pelo João em 2026-11-07).
 
-**Marcas no SVG:** `voce()` em `engine/desenhar-filmes.py` já põe `<!--P-->`, `<!--/P-->` e o pivô. Em cena sem personagem, ponha `FRENTE` antes dos objetos que devem flutuar.
+**Marcas no SVG:** `voce()` em `motor/desenhar-filmes.py` já põe `<!--P-->`, `<!--/P-->` e o pivô. Em cena sem personagem, ponha `FRENTE` antes dos objetos que devem flutuar.
 
 ## `video.js`
 
@@ -69,7 +69,7 @@ Paletas: `crepusculo`, `noite-azul`, `vela`, `neon`, `verao` e `tempestade`.
 ## Montar
 
 ```bash
-node engine/estimar-tempos.mjs roteiros/<slug>/falas.js
-node engine/desenhar-cenas.mjs roteiros/<slug>
-bash engine/montar.sh roteiros/<slug>
+node motor/estimar-tempos.mjs series/misterios-do-brasil/roteiros/<slug>/falas.js
+node motor/desenhar-cenas.mjs series/misterios-do-brasil/roteiros/<slug>
+bash motor/montar.sh series/misterios-do-brasil/roteiros/<slug>
 ```

@@ -11,7 +11,7 @@ Só o João publica, nas contas dele. Não use ferramenta que poste, agende ou e
 
 - Vídeo com aprovação 3
 - `roteiro.md`, `fontes.md` e `qa.md`
-- Seção 6 de `canal/canal.md`
+- Seção 6 de `series/misterios-do-brasil/canal/canal.md`
 
 ## Passos
 
@@ -23,7 +23,7 @@ Só o João publica, nas contas dele. Não use ferramenta que poste, agende ou e
 
 ## Saída
 
-`roteiros/<slug>/postagem.md`:
+`series/misterios-do-brasil/roteiros/<slug>/postagem.md`:
 
 ```markdown
 # Postagem: <slug>

@@ -11,8 +11,8 @@ Roda a cadeia na ordem. Não pula etapa e não decide pelo João nos pontos de a
 
 Antes de escolher ou retomar uma pauta, faça uma consulta estratégica curta com `docs/PROMPT-PESQUISA.md` e registre a data. Se o João já escolheu o tema, confirme a janela e procure referências atuais opcionais sem trocar o ângulo dele. Sinal fraco pode resultar em nenhuma referência; não fabricar tendência nem gastar créditos novos sem autorização.
 
-- Um tema, ou um candidato de `radar/`. Sem isso, rode `radar`.
-- `canal/canal.md` preenchido. Em branco, rode `configurar-canal` e pare.
+- Um tema, ou um candidato de `series/misterios-do-brasil/radar/`. Sem isso, rode `radar`.
+- `series/misterios-do-brasil/canal/canal.md` preenchido. Em branco, rode `configurar-canal` e pare.
 
 ## Cadeia
 
@@ -39,7 +39,7 @@ Em cada um: mostre o material, diga o que decidir e espere um sim explícito. Si
 
 ## Saídas
 
-Pasta `roteiros/<slug>/` completa e `render/<slug>/<slug>.mp4`.
+Pasta `series/misterios-do-brasil/roteiros/<slug>/` completa e `render/<slug>/<slug>.mp4`.
 
 ## Critério de pronto
 
@@ -48,9 +48,9 @@ As três aprovações registradas em `roteiro.md` com a data, QA aprovado e `pos
 ## Nunca
 
 - Publicar ou agendar. A publicação é manual, nas contas do João.
-- Gerar voz sem autorização explícita e licença verificada. A voz original jovem aprovada em 2026-11-08 usa `canal/voz-elevenlabs.json`; seguir a autorização do João para cada produção.
+- Gerar voz sem autorização explícita e licença verificada. A voz original jovem aprovada em 2026-11-08 usa `series/misterios-do-brasil/canal/voz-elevenlabs.json`; seguir a autorização do João para cada produção.
 - Rodar vários vídeos sem aprovar um roteiro por vez.
 
 ## Retomar
 
-Veja o que existe em `roteiros/<slug>/` e as aprovações em `roteiro.md`, e continue da primeira etapa sem aprovação.
+Veja o que existe em `series/misterios-do-brasil/roteiros/<slug>/` e as aprovações em `roteiro.md`, e continue da primeira etapa sem aprovação.

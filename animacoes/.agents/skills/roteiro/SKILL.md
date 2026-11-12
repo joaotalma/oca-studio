@@ -9,24 +9,24 @@ O roteiro é do João. Você rascunha a partir do ângulo dele, ou formata o tex
 
 ## Entradas
 
-- `roteiros/<slug>/fontes.md`, o ângulo escolhido e a etiqueta de direitos
-- `canal/canal.md`, `canal/regras.md` e `docs/METODO.md`
+- `series/misterios-do-brasil/roteiros/<slug>/fontes.md`, o ângulo escolhido e a etiqueta de direitos
+- `series/misterios-do-brasil/canal/canal.md`, `series/misterios-do-brasil/canal/regras.md` e `docs/METODO.md`
 
 ## Passos
 
-Antes de escrever, leia `docs/DIRECAO-VISUAL.md`. Defina pergunta, mecanismo, pista, virada e resposta em `estrutura.json`; cada fala inclui função, ação visível, informação nova e ligação com a anterior. Compile com `node engine/gerar-roteiro.mjs roteiros/<slug>/estrutura.json`. O programa valida e produz `roteiro.md`, `falas.js`, `video.js` e `direcao.json`; não substitui a escrita editorial. Fontes conferidas são obrigatórias para fatos. Radar e referências atuais: `docs/PROMPT-PESQUISA.md`. Não preencher duração com generalidades nem prometer viralização.
+Antes de escrever, leia `docs/DIRECAO-VISUAL.md`. Defina pergunta, mecanismo, pista, virada e resposta em `estrutura.json`; cada fala inclui função, ação visível, informação nova e ligação com a anterior. Compile com `node motor/gerar-roteiro.mjs series/misterios-do-brasil/roteiros/<slug>/estrutura.json`. O programa valida e produz `roteiro.md`, `falas.js`, `video.js` e `direcao.json`; não substitui a escrita editorial. Fontes conferidas são obrigatórias para fatos. Radar e referências atuais: `docs/PROMPT-PESQUISA.md`. Não preencher duração com generalidades nem prometer viralização.
 
-1. **Escreva por blocos:** gancho (0 a 3 s), prova (3 a 10 s), desenvolvimento com uma virada, e fecho. Se `canal/canal.md` definir uma estrutura própria, siga a dele. Para a hipótese, use "seria" e marque a fala como `camada: 'seria'` ou `'voce'`; só o que está em `fontes.md` pode ser dito como "foi".
+1. **Escreva por blocos:** gancho (0 a 3 s), prova (3 a 10 s), desenvolvimento com uma virada, e fecho. Se `series/misterios-do-brasil/canal/canal.md` definir uma estrutura própria, siga a dele. Para a hipótese, use "seria" e marque a fala como `camada: 'seria'` ou `'voce'`; só o que está em `fontes.md` pode ser dito como "foi".
 2. **Escreva para o ouvido:** frases de até 15 palavras. Leia em voz alta mentalmente e corte o que trava.
 3. **Confira contra as fontes:** nenhum fato fora de `fontes.md`. Em SÓ COMENTÁRIO, nada de trecho, personagem ou cena da obra.
 4. **Gere os dados da engine** no formato de `templates/<template>/README.md`. Em `falas.js`, a primeira fala é o gancho, com `inteiro: true`, e cada fala fica em uma linha de JSON válido.
 5. **Estime os tempos:**
 
 ```bash
-node engine/estimar-tempos.mjs roteiros/<slug>/falas.js --ppm <ritmo do canal.md>
+node motor/estimar-tempos.mjs series/misterios-do-brasil/roteiros/<slug>/falas.js --ppm <ritmo do canal.md>
 ```
 
-6. **Confira a duração** contra `canal/canal.md`. Corte texto em vez de acelerar.
+6. **Confira a duração** contra `series/misterios-do-brasil/canal/canal.md`. Corte texto em vez de acelerar.
 
 ## Saídas
 
@@ -41,7 +41,7 @@ Os segundos ficam só em `falas.js`, para não existirem duas versões.
 - Uma virada identificada
 - Duração dentro da faixa, com a contagem de palavras
 - Cada fato ligado a uma fonte
-- `node engine/estimar-tempos.mjs` roda sem erro
+- `node motor/estimar-tempos.mjs` roda sem erro
 
 ## Aprovação
 

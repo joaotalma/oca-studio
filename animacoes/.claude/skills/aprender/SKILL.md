@@ -1,6 +1,6 @@
 ---
 name: aprender
-description: Registra o resultado dos vídeos publicados em canal/resultados.csv, aplica a regra de corte e propõe promover padrões a regras em canal/regras.md. Use quando o João trouxer números de um post, pedir uma leitura dos resultados ou quiser decidir se segue um padrão.
+description: Registra o resultado dos vídeos publicados em series/misterios-do-brasil/canal/resultados.csv, aplica a regra de corte e propõe promover padrões a regras em series/misterios-do-brasil/canal/regras.md. Use quando o João trouxer números de um post, pedir uma leitura dos resultados ou quiser decidir se segue um padrão.
 ---
 
 # aprender
@@ -8,8 +8,8 @@ description: Registra o resultado dos vídeos publicados em canal/resultados.csv
 ## Entradas
 
 - Números que o João trouxer, ou lidos das contas dele com a permissão dele
-- `canal/resultados.csv`, `canal/regras.md`, seção 9 de `canal/canal.md`
-- `roteiros/<slug>/postagem.md`
+- `series/misterios-do-brasil/canal/resultados.csv`, `series/misterios-do-brasil/canal/regras.md`, seção 9 de `series/misterios-do-brasil/canal/canal.md`
+- `series/misterios-do-brasil/roteiros/<slug>/postagem.md`
 
 ## Passos
 
@@ -21,7 +21,7 @@ description: Registra o resultado dos vídeos publicados em canal/resultados.csv
 
 ## Promover um padrão a regra
 
-Só entra em `canal/regras.md` se:
+Só entra em `series/misterios-do-brasil/canal/regras.md` se:
 
 - Apareceu em mais de um vídeo da própria conta, com a variável isolada
 - Tem métrica e vídeos citados
@@ -31,9 +31,9 @@ Uma regra que os dados novos contradizem é revista, com o motivo anotado. Marca
 
 ## Saídas
 
-- `canal/resultados.csv` atualizado
+- `series/misterios-do-brasil/canal/resultados.csv` atualizado
 - Leitura curta na conversa, com a decisão da regra de corte
-- Se aprovada, uma nova linha em `canal/regras.md`
+- Se aprovada, uma nova linha em `series/misterios-do-brasil/canal/regras.md`
 
 ## Critério de pronto
 

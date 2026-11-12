@@ -7,8 +7,8 @@ description: Procura o que está em alta (Google Trends, vidIQ, livros, filmes, 
 
 ## Entradas
 
-- `canal/canal.md`. Sem nicho, o radar é exploratório e deve dizer isso no relatório.
-- `canal/regras.md` e radares anteriores, para não repetir candidatos
+- `series/misterios-do-brasil/canal/canal.md`. Sem nicho, o radar é exploratório e deve dizer isso no relatório.
+- `series/misterios-do-brasil/canal/regras.md` e radares anteriores, para não repetir candidatos
 
 ## Passos
 
@@ -23,7 +23,7 @@ Use `docs/PROMPT-PESQUISA.md` como contrato da rodada: novidades, retornos, tema
 
 ## Saída
 
-`radar/AAAA-MM-DD.md` com uma tabela: tema, por que agora, evidência, etiqueta, ângulo possível, template.
+`series/misterios-do-brasil/radar/AAAA-MM-DD.md` com uma tabela: tema, por que agora, evidência, etiqueta, ângulo possível, template.
 
 ## Critério de pronto
 

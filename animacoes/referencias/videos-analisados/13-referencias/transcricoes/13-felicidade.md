@@ -1,0 +1,59 @@
+# Nesse mundo: você para de envelhecer no dia mais feliz
+
+Transcrição automática integral das falas, sem resumo ou reescrita. Pode conter erros de reconhecimento, nomes, números e pontuação; não foi revisada integralmente à escuta. Os tempos marcam trechos de fala, não cada palavra individual. Textos exclusivamente visuais não estão incluídos.
+
+Início e término de cada trecho fornecidos pelo reconhecimento de fala.
+
+Arquivo original: vidssave.com Nesse mundo, você para de envelhecer no dia mais feliz da sua vida. A cidade inteira ficou jovem para sempre... menos o seu Antônio e a dona Rosa. 🌍 E você, já viveu o seu dia mais feliz_ 👇 #animação.mp4
+
+[00:00:00.000 → 00:00:04.340] Nesse mundo, você para de envelhecer no dia mais feliz da sua vida.
+
+[00:00:04.340 → 00:00:09.680] Mas o corpo só para quando tem certeza de que nenhum outro dia vai ser melhor.
+
+[00:00:09.680 → 00:00:12.600] A Paula parou aos 25, no casamento.
+
+[00:00:12.600 → 00:00:15.640] O Marcos aos 19, no gol do título.
+
+[00:00:15.640 → 00:00:18.640] A cidade inteira era jovem, para sempre.
+
+[00:00:18.640 → 00:00:20.060] Menos o seu Antônio.
+
+[00:00:20.060 → 00:00:22.440] Ele se casou com a dona Rosa aos 20.
+
+[00:00:22.440 → 00:00:25.140] Todo mundo esperou que os dois parassem no altar.
+
+[00:00:25.140 → 00:00:26.060] Não pararam.
+
+[00:00:26.060 → 00:00:29.480] Vieram os filhos, os netos, os cabelos brancos.
+
+[00:00:29.480 → 00:00:31.040] E a cidade coxichava.
+
+[00:00:31.040 → 00:00:32.120] Coitados.
+
+[00:00:32.120 → 00:00:33.760] Nunca foram felizes.
+
+[00:00:33.760 → 00:00:36.820] Aos 90, eram os únicos velhos da cidade.
+
+[00:00:36.820 → 00:00:39.720] Mas ninguém sabia o que ia acontecer naquela inverno.
+
+[00:00:39.720 → 00:00:42.560] Em uma manhã fria, a dona Rosa não acordou.
+
+[00:00:42.560 → 00:00:44.660] E no velório, todo mundo viu.
+
+[00:00:44.660 → 00:00:47.360] O seu Antônio tinha parado de envelhecer.
+
+[00:00:47.360 → 00:00:50.600] Porque sem ela, nenhum dia ia ser melhor.
+
+[00:00:50.600 → 00:00:52.280] Foi aí que a cidade entendeu.
+
+[00:00:52.280 → 00:00:57.240] Ele nunca tinha parado, porque cada dia com a Rosa foi mais feliz que o anterior.
+
+[00:00:57.280 → 00:00:58.680] 70 anos.
+
+[00:00:58.680 → 00:01:00.680] Todo dia, um pouco melhor.
+
+[00:01:00.680 → 00:01:05.440] E os vizinhos, jovens para sempre, perceberam o que aquilo dizia sobre eles.
+
+[00:01:05.440 → 00:01:10.200] Que desde aquele casamento, desde aquele gol, nada de melhor tinha acontecido.
+
+[00:01:10.200 → 00:01:15.760] Na praça, o seu Antônio continua no mesmo banco, com 90 anos para sempre.

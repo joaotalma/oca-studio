@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {avaliarEditorial,relatorioMarkdown} from '../engine/rubrica-roteiros.mjs';
-import {compilar,gerar} from '../engine/gerar-roteiro.mjs';
+import {avaliarEditorial,relatorioMarkdown} from '../motor/rubrica-roteiros.mjs';
+import {compilar,gerar} from '../motor/gerar-roteiro.mjs';
 
 function contrato(){return {promessa:'Tico tenta esconder da Lua que perdeu a corrida.',contextoNovo:'Lua espera na calçada; Tico chega com o aplicativo cancelado.',perguntaLocal:'Tico vai contar por que ficou para trás?',payoffLocal:'Lua percebe o cancelamento e chama outro motorista.',escalada:['Tico esconde a tela cancelada quando Lua se aproxima.','O telefone anuncia a corrida cancelada na frente dela.'],continuidade:{entrada:'Lua ainda espera a carona combinada.',saida:'Lua parte com outro motorista e Tico fica com o bilhete.'},participacao:{tipo:'retrospectiva',pergunta:'Você teria contado antes ou esperado a pergunta dela?'},publicadoAnteriormente:true,hipoteseTeste:'Comparar uma abertura pela consequência, mantendo o restante da edição estável e a mesma idade de coleta.'};}
 function estrutura(){return {slug:'teste-editorial',titulo:'Teste',pergunta:'Qual consequência?',mecanismo:'tentativa e consequência',pista:'tela apagada',virada:'o aviso toca',resposta:'ela percebe',fontes:{},falas:Array.from({length:6},(_,i)=>({texto:i===0?'Sua corrida sumiu.':'Ele tenta explicar e ela olha a tela.',camada:'seria',funcao:i===0?'gancho':'desenvolvimento',acao:'O telefone mostra o cancelamento.',revela:'A tentativa muda a situação.',causa:'A tela contradiz a desculpa.'}))};}
@@ -48,7 +48,7 @@ test('CLI emite JSON/Markdown e não bloqueia conteúdo por aviso editorial',()=
   fs.mkdirSync(path.resolve('.tmp'),{recursive:true});const dir=fs.mkdtempSync(path.resolve('.tmp/rubrica-teste-'));
   const file=path.join(dir,'estrutura.json'),json=path.join(dir,'auditoria.json'),md=path.join(dir,'auditoria.md');
   const e=estrutura();e.editorial=contrato();e.editorial.participacao.tipo='futura';fs.writeFileSync(file,JSON.stringify(e));
-  const run=spawnSync(process.execPath,[path.resolve('engine/rubrica-roteiros.mjs'),file,'--json','--saida-json',json,'--saida-md',md],{encoding:'utf8'});
+  const run=spawnSync(process.execPath,[path.resolve('motor/rubrica-roteiros.mjs'),file,'--json','--saida-json',json,'--saida-md',md],{encoding:'utf8'});
   assert.equal(run.status,0,run.stderr);const r=JSON.parse(run.stdout);assert.ok(r.avisos.some(a=>a.codigo==='FUTURA_EM_PUBLICADO'));
   assert.deepEqual(JSON.parse(fs.readFileSync(json,'utf8')),r);assert.match(fs.readFileSync(md,'utf8'),/FUTURA_EM_PUBLICADO/);
   const produzido=gerar(file);assert.equal(produzido.auditoriaEditorial.estado,'revisar-campos');assert.ok(fs.existsSync(path.join(dir,'auditoria-editorial.json')));assert.ok(fs.existsSync(path.join(dir,'falas.js')));

@@ -4,11 +4,11 @@ Solicitada por João após a análise de 13 referências locais em 2026-11-08. S
 
 ## Antes de desenhar
 
-**Aprovação de 2026-11-09:** a referência de desenho/atuação agora é `personagens/voce-v4.md`, aprovada pelo João no comparativo de `experimentos/ator-organico-v4/`. Olhos com pupila preta sem íris colorida, contornos arredondados e boca expressiva. O teste desse ator com fundo 3D foi pedido para depois e continua pendente; não confundir referência aprovada com integração já realizada.
+**Aprovação de 2026-11-09:** a referência de desenho/atuação agora é `series/misterios-do-brasil/personagens/voce-v4.md`, aprovada pelo João no comparativo de `estudos/ator-organico-v4/`. Olhos com pupila preta sem íris colorida, contornos arredondados e boca expressiva. O teste desse ator com fundo 3D foi pedido para depois e continua pendente; não confundir referência aprovada com integração já realizada.
 
-**Evolução proposta em 2026-11-09:** consultar `docs/MOTOR-EXPRESSIVO-V3.md`. O estudo em `experimentos/ator-expressivo-v3/` não substitui o renderer nem a ficha aprovada. Para verbos como abrir, pegar, entregar ou desligar, conferir alvo, gesto, contato e consequência visível. Trocar para outra imagem do objeto não comprova execução da ação pelo personagem.
+**Evolução proposta em 2026-11-09:** consultar `estudos/MOTOR-EXPRESSIVO-V3.md`. O estudo em `estudos/_arquivo/ator-expressivo-v3/` não substitui o renderer nem a ficha aprovada. Para verbos como abrir, pegar, entregar ou desligar, conferir alvo, gesto, contato e consequência visível. Trocar para outra imagem do objeto não comprova execução da ação pelo personagem.
 
-Cada estrutura.json define pergunta, mecanismo, pista, virada e resposta. Cada fala registra função, ação visível, informação nova, ligação causal, enquadramento e motivo do corte. O compilador engine/gerar-roteiro.mjs produz roteiro.md, falas.js e direcao.json. Ele valida o contrato; a seleção e a escrita continuam sendo trabalho editorial humano/assistido, não uma fórmula que garante audiência.
+Cada estrutura.json define pergunta, mecanismo, pista, virada e resposta. Cada fala registra função, ação visível, informação nova, ligação causal, enquadramento e motivo do corte. O compilador motor/gerar-roteiro.mjs produz roteiro.md, falas.js e direcao.json. Ele valida o contrato; a seleção e a escrita continuam sendo trabalho editorial humano/assistido, não uma fórmula que garante audiência.
 
 Escolha uma progressão: tentativa/consequência; cadeia de dependências; vantagem/custo; interpretação/revelação; dilema. Contexto histórico permanece apenas quando estabelece risco, regra ou pista. A mudança de fato para hipótese não conta sozinha como virada. Cada fato precisa de fonte conferida. Tempos ficam em falas.js, sem segunda linha do tempo.
 
@@ -39,7 +39,7 @@ Não há regra de cortar a cada X segundos. Não alternar zoom/direções por n�
 
 Antes do render completo, verificar quadro de abertura, prova, reação, virada e fecho em resolução de entrega, mais sequências curtas dos movimentos. Conferir corte associado à fala real e evitar reutilizar imagens antigas depois de alterar a narração. Validar determinismo, ausência de erros, legibilidade, duração, áudio e loudness; registrar limites do QA. A voz e a avaliação artística final pertencem ao João.
 
-O detector de movimento contínuo pode sinalizar uma pausa legítima de leitura. Não criar movimento artificial para satisfazê-lo nem dispensar o filme inteiro. Conferir os trechos sinalizados, preservar o relatório bruto e registrar só as sustentações justificadas em `pausas-visuais.json` com `ini`, `fim` e `motivo`. Rodar `engine/qa-video.mjs ... --leitura <arquivo>` apenas depois da conferência à vista. A declaração identifica uma escolha de direção; não comprova retenção nem substitui a inspeção.
+O detector de movimento contínuo pode sinalizar uma pausa legítima de leitura. Não criar movimento artificial para satisfazê-lo nem dispensar o filme inteiro. Conferir os trechos sinalizados, preservar o relatório bruto e registrar só as sustentações justificadas em `pausas-visuais.json` com `ini`, `fim` e `motivo`. Rodar `motor/qa-video.mjs ... --leitura <arquivo>` apenas depois da conferência à vista. A declaração identifica uma escolha de direção; não comprova retenção nem substitui a inspeção.
 
 ## Radar
 

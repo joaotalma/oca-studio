@@ -13,9 +13,9 @@ Marcas: **[relato]** vem de criador ou fórum; **[hipótese]** é inferência a 
 
 ## Roteiro
 
-**Integração editorial de 2026-11-11:** usar `docs/PROMPT-ROTEIROS-BLINK.md` para declarar promessa, contexto de entrada, progressão, entrega local, continuidade e participação. A origem paginada dos critérios está nesse prompt; a síntese do método fica em `docs/METODO-BLINK-ROTEIROS.md`. `engine/rubrica-roteiros.mjs` confere presença e alguns indícios literais, sem nota de viralização ou aprovação automática. No compilador narrado, a auditoria só é aplicada quando a estrutura traz `editorial`; contratos antigos e a validação factual continuam preservados. O comando independente também lê contratos de diálogo sem convertê-los ao template de narração. Ler PDFs e editar prompts/validadores não ajusta pesos de modelo nem demonstra ganho de retenção.
+**Integração editorial de 2026-11-11:** usar `referencias/videos-analisados/PROMPT-ROTEIROS-BLINK.md` para declarar promessa, contexto de entrada, progressão, entrega local, continuidade e participação. A origem paginada dos critérios está nesse prompt; a síntese do método fica em `referencias/videos-analisados/METODO-BLINK-ROTEIROS.md`. `motor/rubrica-roteiros.mjs` confere presença e alguns indícios literais, sem nota de viralização ou aprovação automática. No compilador narrado, a auditoria só é aplicada quando a estrutura traz `editorial`; contratos antigos e a validação factual continuam preservados. O comando independente também lê contratos de diálogo sem convertê-los ao template de narração. Ler PDFs e editar prompts/validadores não ajusta pesos de modelo nem demonstra ganho de retenção.
 
-**Revisão v2, solicitada em 2026-11-08:** usar `docs/DIRECAO-VISUAL.md` e `engine/gerar-roteiro.mjs`. Antes dos blocos, definir pergunta central, mecanismo de progressão, pista, virada e entrega. Gancho/prova/desenvolvimento/fecho são funções, não obrigação de preencher intervalos. Contexto precisa aumentar vínculo, risco ou compreensão; cortar o que apenas adia a promessa. Referências atuais entram pelo radar em `docs/PROMPT-PESQUISA.md`. Tudo permanece hipótese até medição do próprio canal.
+**Revisão v2, solicitada em 2026-11-08:** usar `docs/DIRECAO-VISUAL.md` e `motor/gerar-roteiro.mjs`. Antes dos blocos, definir pergunta central, mecanismo de progressão, pista, virada e entrega. Gancho/prova/desenvolvimento/fecho são funções, não obrigação de preencher intervalos. Contexto precisa aumentar vínculo, risco ou compreensão; cortar o que apenas adia a promessa. Referências atuais entram pelo radar em `docs/PROMPT-PESQUISA.md`. Tudo permanece hipótese até medição do próprio canal.
 
 | Bloco | Tempo | Função |
 |---|---|---|
@@ -31,7 +31,7 @@ Marcas: **[relato]** vem de criador ou fórum; **[hipótese]** é inferência a 
 
 ## Visual
 
-- **Personagem fixo:** uma descrição imutável, colada igual em todo prompt, guardada em `personagens/` e versionada.
+- **Personagem fixo:** uma descrição imutável, colada igual em todo prompt, guardada em `series/misterios-do-brasil/personagens/` e versionada.
 - **Plano:** um enquadramento e no máximo um movimento de câmera.
 - **Estilo:** sem fotorrealismo.
 - **Primeiro quadro:** forte e já com o gancho. [relato]
@@ -49,7 +49,7 @@ Nos dois primeiros, a tela quase não muda: quem segura a atenção é o texto a
 
 ## Som e entrega
 
-- **Voz:** em primeiro plano, a -16 LUFS, medida por `engine/masterizar.sh`.
+- **Voz:** em primeiro plano, a -16 LUFS, medida por `motor/masterizar.sh`.
 - **Música:** baixa, opcional e com licença comercial anotada. Efeitos curtos valem mais que trilha contínua. [relato]
 - **Arquivo:** 1080 x 1920, H.264, 30 fps, áudio AAC.
 - **Área segura:** o template de chat mantém o essencial entre y = 250 e y = 1490, e entre x = 60 e x = 950. São valores de partida, sem fonte oficial. Confirme na página de cada plataforma.
@@ -58,7 +58,7 @@ Nos dois primeiros, a tela quase não muda: quem segura a atenção é o texto a
 ## Teste e corte
 
 - **Teste pequeno antes de escalar:** valide o ritmo em 15 s antes do vídeo inteiro.
-- **Regra de corte escrita ANTES de publicar**, em `canal/canal.md`. Ponto de partida: 6 a 15 vídeos por padrão, revisar o gancho com 15 a 20, abandonar por volta de 30 sem sinal. Os números vêm de criadores e são hipótese a ajustar. [hipótese]
+- **Regra de corte escrita ANTES de publicar**, em `series/misterios-do-brasil/canal/canal.md`. Ponto de partida: 6 a 15 vídeos por padrão, revisar o gancho com 15 a 20, abandonar por volta de 30 sem sinal. Os números vêm de criadores e são hipótese a ajustar. [hipótese]
 - **Uma variável por vez:** gancho, tema ou duração.
 - **Métricas, em ordem:** retenção em 3 s e 20 s, visualização completa, compartilhamentos e salvamentos, seguidores por vídeo.
 - **Receita:** planeje como se fosse zero no primeiro ano. Nenhum número de ganho foi verificado.
@@ -77,4 +77,4 @@ Posts isolados, sem dados de retenção. Tudo aqui é hipótese.
 
 ## A confirmar nas páginas oficiais
 
-Monetização e conteúdo alterado ou sintético no YouTube; conteúdo gerado por IA e Creator Rewards no TikTok; rótulo de IA no Instagram. O guia não conseguiu abrir nenhuma dessas páginas. Anote a data da conferência em `canal/canal.md`.
+Monetização e conteúdo alterado ou sintético no YouTube; conteúdo gerado por IA e Creator Rewards no TikTok; rótulo de IA no Instagram. O guia não conseguiu abrir nenhuma dessas páginas. Anote a data da conferência em `series/misterios-do-brasil/canal/canal.md`.

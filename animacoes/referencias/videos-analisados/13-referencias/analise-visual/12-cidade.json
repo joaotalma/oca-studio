@@ -1,0 +1,256 @@
+{
+  "id": "12-cidade",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.96,
+      "text": "Se cada pessoa construir a casa onde quiser, a cidade vira uma bagunça."
+    },
+    {
+      "start": 4.96,
+      "end": 9.6,
+      "text": "Casa em cima do rio, casa torta no morro, casa grudada na outra."
+    },
+    {
+      "start": 9.6,
+      "end": 12.16,
+      "text": "E logo ninguém consegue nem passar."
+    },
+    {
+      "start": 12.16,
+      "end": 15.56,
+      "text": "Então você derruba tudo e começa do zero."
+    },
+    {
+      "start": 15.56,
+      "end": 22.28,
+      "text": "Você divide o terreno em quarteirões, deixa espaço para as ruas e marca no chão onde cada casa vai ficar."
+    },
+    {
+      "start": 22.28,
+      "end": 24.08,
+      "text": "Esses são os lotes."
+    },
+    {
+      "start": 24.08,
+      "end": 26.8,
+      "text": "Mas o terreno é cheio de morro e de buraco."
+    },
+    {
+      "start": 26.8,
+      "end": 28.72,
+      "text": "E casa no torto racha."
+    },
+    {
+      "start": 28.72,
+      "end": 33.24,
+      "text": "Então você passa as máquinas, que deixam o chão todo no nível certo."
+    },
+    {
+      "start": 33.24,
+      "end": 35.36,
+      "text": "Essa é a terra plenagem."
+    },
+    {
+      "start": 35.36,
+      "end": 37.92,
+      "text": "Agora você já podia levantar as casas."
+    },
+    {
+      "start": 37.92,
+      "end": 40.4,
+      "text": "Só que ninguém ia ter água na torneira."
+    },
+    {
+      "start": 40.4,
+      "end": 48.6,
+      "text": "Então, antes de qualquer casa, você enterra canos debaixo das ruas e coloca a caixa d'água da cidade lá no alto do morro."
+    },
+    {
+      "start": 48.6,
+      "end": 51.8,
+      "text": "Para a água descer sozinha com a força da gravidade."
+    },
+    {
+      "start": 51.8,
+      "end": 53.8,
+      "text": "Esse é o reservatório."
+    },
+    {
+      "start": 53.8,
+      "end": 57.12,
+      "text": "Mas toda a água que entra numa casa precisa sair."
+    },
+    {
+      "start": 57.16,
+      "end": 64.56,
+      "text": "Então você enterra outros canos todos inclinados, para sujeira descer sozinha até uma estação que limpa a água."
+    },
+    {
+      "start": 64.56,
+      "end": 66.72,
+      "text": "Essa é a rede de esgoto."
+    },
+    {
+      "start": 66.72,
+      "end": 71.0,
+      "text": "Só que quando cai um temporal, a água da chuva não tem para onde ir."
+    },
+    {
+      "start": 71.0,
+      "end": 72.4,
+      "text": "E a cidade alaga."
+    },
+    {
+      "start": 72.4,
+      "end": 78.52,
+      "text": "Então você abre boeiros nas calçadas e enterra canos gigantes que levam essa água embora."
+    },
+    {
+      "start": 78.52,
+      "end": 80.52,
+      "text": "Essas são as galerias."
+    },
+    {
+      "start": 80.52,
+      "end": 82.92,
+      "text": "Agora sim você pode fechar a rua."
+    },
+    {
+      "start": 82.96,
+      "end": 88.4,
+      "text": "Você aperta bem a terra, joga uma camada de brita e por cima o asfalto."
+    },
+    {
+      "start": 88.4,
+      "end": 93.2,
+      "text": "Ou seja, debaixo de cada rua tem uma cidade inteira escondida."
+    },
+    {
+      "start": 93.2,
+      "end": 95.72,
+      "text": "Mas uma cidade no escuro não funciona."
+    },
+    {
+      "start": 95.72,
+      "end": 99.92,
+      "text": "Então você traz energia de uma usina por fios de alta tensão."
+    },
+    {
+      "start": 99.92,
+      "end": 103.8,
+      "text": "Só que ela chega tão forte que queimaria tudo dentro de casa."
+    },
+    {
+      "start": 103.8,
+      "end": 107.56,
+      "text": "Então você baixa a voltagem antes de ir para os postes."
+    },
+    {
+      "start": 107.56,
+      "end": 109.56,
+      "text": "Essa é a subestação."
+    },
+    {
+      "start": 109.56,
+      "end": 111.84,
+      "text": "Agora a cidade precisa de emprego."
+    },
+    {
+      "start": 111.88,
+      "end": 115.28,
+      "text": "Então você constrói uma fábrica do lado das casas."
+    },
+    {
+      "start": 115.28,
+      "end": 118.6,
+      "text": "Só que a fumaça e o barulho incomodam todo mundo."
+    },
+    {
+      "start": 118.6,
+      "end": 123.72,
+      "text": "Então você leva a fábrica para um canto da cidade, do lado para onde o vento sopra."
+    },
+    {
+      "start": 123.72,
+      "end": 125.84,
+      "text": "Essa é a zona industrial."
+    },
+    {
+      "start": 125.84,
+      "end": 130.12,
+      "text": "Mas tem um fazendeiro com plantação e vaca bem no meio da cidade."
+    },
+    {
+      "start": 130.12,
+      "end": 133.6,
+      "text": "Ocupando um espaço onde caberiam centenas de casas."
+    },
+    {
+      "start": 133.6,
+      "end": 138.52,
+      "text": "Então você leva a fazenda para fora, em volta da cidade onde sobra a terra."
+    },
+    {
+      "start": 138.52,
+      "end": 141.4,
+      "text": "E de lá ela manda comida para todo mundo."
+    },
+    {
+      "start": 141.44,
+      "end": 143.32,
+      "text": "Essa é a zona rural."
+    },
+    {
+      "start": 143.32,
+      "end": 146.48,
+      "text": "Mas uma cidade só de casas ainda não tem vida."
+    },
+    {
+      "start": 146.48,
+      "end": 151.96,
+      "text": "Então você coloca escolas, postos de saúde, praças e linhas de ônibus."
+    },
+    {
+      "start": 151.96,
+      "end": 156.84,
+      "text": "Só que com tanta gente junto, o lixo começa a se amontoar nas calçadas."
+    },
+    {
+      "start": 156.84,
+      "end": 162.28,
+      "text": "Então você coloca caminhões que recolhem o lixo e levam para bem longe das casas."
+    },
+    {
+      "start": 162.28,
+      "end": 167.24,
+      "text": "Num buraco com o chão forrado, para a sujeira não vazar para a água debaixo da terra."
+    },
+    {
+      "start": 167.24,
+      "end": 169.36,
+      "text": "Esse é o aterro sanitário."
+    },
+    {
+      "start": 169.4,
+      "end": 170.4,
+      "text": "Parabéns!"
+    },
+    {
+      "start": 170.4,
+      "end": 172.56,
+      "text": "Você construiu uma cidade."
+    },
+    {
+      "start": 172.56,
+      "end": 175.56,
+      "text": "Comente Cidade, se você sabia dessa."
+    },
+    {
+      "start": 175.56,
+      "end": 177.64,
+      "text": "E segue o Senhor Bigute Explica."
+    }
+  ],
+  "words": 487
+}

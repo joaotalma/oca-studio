@@ -8,7 +8,7 @@ description: Classifica um tema, obra ou história como LIVRE, SÓ COMENTÁRIO o
 ## Entradas
 
 - Tema, obra ou premissa
-- `docs/DIREITOS.md` e a seção 7 de `canal/canal.md`
+- `docs/DIREITOS.md` e a seção 7 de `series/misterios-do-brasil/canal/canal.md`
 
 ## Passos
 
