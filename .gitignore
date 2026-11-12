@@ -1,0 +1,17 @@
+# Geral: cada frente tem também o seu .gitignore
+node_modules/
+__pycache__/
+.tmp/
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# Mídia pesada fica fora do git
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.flac
