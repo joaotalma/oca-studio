@@ -1,0 +1,61 @@
+{
+ "n": 16,
+ "texto": "Filho, fiz sua marmita pra amanhã. Estagiário tem que comer bem!",
+ "palavras": [
+  {
+   "palavra": "Filho,",
+   "ini": 0,
+   "fim": 0.8
+  },
+  {
+   "palavra": "fiz",
+   "ini": 0.88,
+   "fim": 1.12
+  },
+  {
+   "palavra": "sua",
+   "ini": 1.16,
+   "fim": 1.28
+  },
+  {
+   "palavra": "marmita",
+   "ini": 1.36,
+   "fim": 1.84
+  },
+  {
+   "palavra": "pra",
+   "ini": 1.92,
+   "fim": 2
+  },
+  {
+   "palavra": "amanhã.",
+   "ini": 2.12,
+   "fim": 2.56
+  },
+  {
+   "palavra": "Estagiário",
+   "ini": 2.88,
+   "fim": 3.76
+  },
+  {
+   "palavra": "tem",
+   "ini": 3.92,
+   "fim": 4.16
+  },
+  {
+   "palavra": "que",
+   "ini": 4.2,
+   "fim": 4.24
+  },
+  {
+   "palavra": "comer",
+   "ini": 4.32,
+   "fim": 4.64
+  },
+  {
+   "palavra": "bem!",
+   "ini": 4.8,
+   "fim": 5.52
+  }
+ ]
+}

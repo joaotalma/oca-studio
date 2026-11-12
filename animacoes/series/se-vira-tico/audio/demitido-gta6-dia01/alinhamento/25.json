@@ -1,0 +1,41 @@
+{
+ "n": 25,
+ "texto": "Opção dois: passear cachorro. Quinze por cachorro.",
+ "palavras": [
+  {
+   "palavra": "Opção",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "dois:",
+   "ini": 0.48,
+   "fim": 1.08
+  },
+  {
+   "palavra": "passear",
+   "ini": 1.28,
+   "fim": 1.68
+  },
+  {
+   "palavra": "cachorro.",
+   "ini": 1.72,
+   "fim": 2.56
+  },
+  {
+   "palavra": "Quinze",
+   "ini": 2.8,
+   "fim": 3.12
+  },
+  {
+   "palavra": "por",
+   "ini": 3.28,
+   "fim": 3.44
+  },
+  {
+   "palavra": "cachorro.",
+   "ini": 3.48,
+   "fim": 4.32
+  }
+ ]
+}

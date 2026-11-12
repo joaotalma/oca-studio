@@ -32,7 +32,9 @@
  "vendedor": {
   "voiceId": "ePd4yti5BMm8PtB0iafk",
   "previa": 0,
-  "referencia": "vendedor"
+  "referencia": "vendedor",
+  "apagada": "2026-11-12",
+  "nota": "Apagada pelo João no site do ElevenLabs para liberar vaga para a voz do Kauã (limite de 10 vozes). Os áudios do ep02 e do ep06 já existem; regravar o Vendedor exige voz nova."
  },
  "narrador_abertura_ep06": {
   "voiceId": "6UI0A10f2tYKlXvyToXE",
@@ -54,5 +56,21 @@
   "referencia": "tico",
   "estabilidade": 0.72,
   "nota": "Tico narrando em primeira pessoa (ep. 5 em diante): mesma voz, registro mais calmo"
+ },
+ "rose": {
+  "voiceId": "8d3vk9bGIKfaIQMRc3zB",
+  "referencia": "cida",
+  "nota": "Dona Rose (mãe do Kauã) usa a voz da Dona Cida, por decisão do João em 12/11/2026."
+ },
+ "kaua": {
+  "voiceId": "xnxp3g3b3Yk60SjFf0S7",
+  "previa": 0,
+  "referencia": null
+ },
+ "kauanarra": {
+  "voiceId": "xnxp3g3b3Yk60SjFf0S7",
+  "referencia": "kaua",
+  "estabilidade": 0.72,
+  "nota": "Kauã narrando (Demitido Antes do GTA): mesma voz, registro mais calmo."
  }
 }

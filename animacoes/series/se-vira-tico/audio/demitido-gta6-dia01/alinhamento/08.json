@@ -1,0 +1,76 @@
+{
+ "n": 8,
+ "texto": "Eu era estagiário. O último pagamento cai dia cinco. O jogo sai dia dezenove.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "era",
+   "ini": 0.24,
+   "fim": 0.32
+  },
+  {
+   "palavra": "estagiário.",
+   "ini": 0.4,
+   "fim": 1.28
+  },
+  {
+   "palavra": "O",
+   "ini": 1.44,
+   "fim": 1.52
+  },
+  {
+   "palavra": "último",
+   "ini": 1.56,
+   "fim": 1.84
+  },
+  {
+   "palavra": "pagamento",
+   "ini": 1.92,
+   "fim": 2.48
+  },
+  {
+   "palavra": "cai",
+   "ini": 2.56,
+   "fim": 2.72
+  },
+  {
+   "palavra": "dia",
+   "ini": 2.84,
+   "fim": 2.96
+  },
+  {
+   "palavra": "cinco.",
+   "ini": 3.12,
+   "fim": 3.68
+  },
+  {
+   "palavra": "O",
+   "ini": 3.84,
+   "fim": 3.92
+  },
+  {
+   "palavra": "jogo",
+   "ini": 4,
+   "fim": 4.4
+  },
+  {
+   "palavra": "sai",
+   "ini": 4.48,
+   "fim": 4.64
+  },
+  {
+   "palavra": "dia",
+   "ini": 4.72,
+   "fim": 4.88
+  },
+  {
+   "palavra": "dezenove.",
+   "ini": 4.96,
+   "fim": 5.84
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "n": 13,
+ "texto": "Aí o grupo acordou.",
+ "palavras": [
+  {
+   "palavra": "Aí",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "o",
+   "ini": 0.48,
+   "fim": 0.56
+  },
+  {
+   "palavra": "grupo",
+   "ini": 0.64,
+   "fim": 0.88
+  },
+  {
+   "palavra": "acordou.",
+   "ini": 0.96,
+   "fim": 1.76
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "n": 5,
+ "texto": "Eu abri o PDF do Júnior. O Júnior é filho do dono.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "abri",
+   "ini": 0.24,
+   "fim": 0.4
+  },
+  {
+   "palavra": "o",
+   "ini": 0.44,
+   "fim": 0.48
+  },
+  {
+   "palavra": "PDF",
+   "ini": 0.56,
+   "fim": 1.04
+  },
+  {
+   "palavra": "do",
+   "ini": 1.08,
+   "fim": 1.12
+  },
+  {
+   "palavra": "Júnior.",
+   "ini": 1.28,
+   "fim": 1.88
+  },
+  {
+   "palavra": "O",
+   "ini": 2.08,
+   "fim": 2.16
+  },
+  {
+   "palavra": "Júnior",
+   "ini": 2.24,
+   "fim": 2.64
+  },
+  {
+   "palavra": "é",
+   "ini": 2.8,
+   "fim": 2.88
+  },
+  {
+   "palavra": "filho",
+   "ini": 2.96,
+   "fim": 3.2
+  },
+  {
+   "palavra": "do",
+   "ini": 3.24,
+   "fim": 3.28
+  },
+  {
+   "palavra": "dono.",
+   "ini": 3.36,
+   "fim": 4
+  }
+ ]
+}

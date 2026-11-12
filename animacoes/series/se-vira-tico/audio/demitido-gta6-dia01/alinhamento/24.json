@@ -1,0 +1,101 @@
+{
+ "n": 24,
+ "texto": "Opção um: fantasia de celular na porta da loja. Oitenta por dia. Num calor de trinta e quatro graus.",
+ "palavras": [
+  {
+   "palavra": "Opção",
+   "ini": 0,
+   "fim": 0.48
+  },
+  {
+   "palavra": "um:",
+   "ini": 0.56,
+   "fim": 1.28
+  },
+  {
+   "palavra": "fantasia",
+   "ini": 1.4,
+   "fim": 1.92
+  },
+  {
+   "palavra": "de",
+   "ini": 2,
+   "fim": 2.04
+  },
+  {
+   "palavra": "celular",
+   "ini": 2.08,
+   "fim": 2.64
+  },
+  {
+   "palavra": "na",
+   "ini": 2.72,
+   "fim": 2.8
+  },
+  {
+   "palavra": "porta",
+   "ini": 2.96,
+   "fim": 3.2
+  },
+  {
+   "palavra": "da",
+   "ini": 3.28,
+   "fim": 3.36
+  },
+  {
+   "palavra": "loja.",
+   "ini": 3.44,
+   "fim": 3.96
+  },
+  {
+   "palavra": "Oitenta",
+   "ini": 4.16,
+   "fim": 4.64
+  },
+  {
+   "palavra": "por",
+   "ini": 4.8,
+   "fim": 4.88
+  },
+  {
+   "palavra": "dia.",
+   "ini": 4.96,
+   "fim": 5.48
+  },
+  {
+   "palavra": "Num",
+   "ini": 5.68,
+   "fim": 5.76
+  },
+  {
+   "palavra": "calor",
+   "ini": 5.84,
+   "fim": 6.08
+  },
+  {
+   "palavra": "de",
+   "ini": 6.16,
+   "fim": 6.4
+  },
+  {
+   "palavra": "trinta",
+   "ini": 6.44,
+   "fim": 6.72
+  },
+  {
+   "palavra": "e",
+   "ini": 6.8,
+   "fim": 6.88
+  },
+  {
+   "palavra": "quatro",
+   "ini": 6.92,
+   "fim": 7.2
+  },
+  {
+   "palavra": "graus.",
+   "ini": 7.36,
+   "fim": 8.16
+  }
+ ]
+}

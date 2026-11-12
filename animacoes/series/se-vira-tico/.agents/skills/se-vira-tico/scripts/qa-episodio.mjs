@@ -28,7 +28,8 @@ if (!fs.existsSync(path.join(path.resolve(pasta), 'chars.js'))) {
 // Eps. 1 e 2 têm cerca de 90 s; do ep. 3 ao 6, pouco mais de 60 s (decisão do autor em 7/11/2026; acima de 1 min por causa da monetização).
 // T2 (ep. 7 em diante): teste de 1:45 a 2:20, aprovado pelo autor em 12/11/2026 a partir do método Temporada Viral.
 const NUM_EP = Number((pasta.match(/ep(\d+)/) || [])[1] || 0);
-const duracao = NUM_EP >= 7 ? '105,140' : NUM_EP >= 3 ? '61,68' : '85,95';
+// Spin-off "Demitido Antes do GTA" (demitido-gta6/diaNN): teste dos episódios longos antes da T2, de 1:45 a 2:20.
+const duracao = /demitido-gta6/.test(pasta.replace(/\\/g, '/')) ? '105,140' : NUM_EP >= 7 ? '105,140' : NUM_EP >= 3 ? '61,68' : '85,95';
 const r = spawnSync(process.execPath, [qa, pasta, video, ...flags, '--duracao', duracao, '--sem-texto',
   '--checklist', 'membros, boca, legenda e voto A/B (references/qa-checklist.md)'], { stdio: 'inherit' });
 process.exit(r.status ?? 2);

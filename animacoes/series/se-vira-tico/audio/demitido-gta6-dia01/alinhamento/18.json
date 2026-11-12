@@ -1,0 +1,101 @@
+{
+ "n": 18,
+ "texto": "Ninguém sabe. Nem a minha mãe. Amanhã, às oito, eu vou sair de casa pra trabalhar... em lugar nenhum.",
+ "palavras": [
+  {
+   "palavra": "Ninguém",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "sabe.",
+   "ini": 0.56,
+   "fim": 1.16
+  },
+  {
+   "palavra": "Nem",
+   "ini": 1.36,
+   "fim": 1.52
+  },
+  {
+   "palavra": "a",
+   "ini": 1.56,
+   "fim": 1.6
+  },
+  {
+   "palavra": "minha",
+   "ini": 1.64,
+   "fim": 1.76
+  },
+  {
+   "palavra": "mãe.",
+   "ini": 1.84,
+   "fim": 2.36
+  },
+  {
+   "palavra": "Amanhã,",
+   "ini": 2.64,
+   "fim": 3.28
+  },
+  {
+   "palavra": "às",
+   "ini": 3.36,
+   "fim": 3.52
+  },
+  {
+   "palavra": "oito,",
+   "ini": 3.6,
+   "fim": 4.08
+  },
+  {
+   "palavra": "eu",
+   "ini": 4.12,
+   "fim": 4.16
+  },
+  {
+   "palavra": "vou",
+   "ini": 4.24,
+   "fim": 4.32
+  },
+  {
+   "palavra": "sair",
+   "ini": 4.4,
+   "fim": 4.56
+  },
+  {
+   "palavra": "de",
+   "ini": 4.64,
+   "fim": 4.8
+  },
+  {
+   "palavra": "casa",
+   "ini": 4.88,
+   "fim": 5.04
+  },
+  {
+   "palavra": "pra",
+   "ini": 5.12,
+   "fim": 5.2
+  },
+  {
+   "palavra": "trabalhar...",
+   "ini": 5.24,
+   "fim": 6.4
+  },
+  {
+   "palavra": "em",
+   "ini": 6.48,
+   "fim": 6.56
+  },
+  {
+   "palavra": "lugar",
+   "ini": 6.6,
+   "fim": 6.96
+  },
+  {
+   "palavra": "nenhum.",
+   "ini": 7.04,
+   "fim": 7.76
+  }
+ ]
+}

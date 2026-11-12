@@ -1,0 +1,16 @@
+{
+ "n": 17,
+ "texto": "Valeu, mãe.",
+ "palavras": [
+  {
+   "palavra": "Valeu,",
+   "ini": 0,
+   "fim": 0.427
+  },
+  {
+   "palavra": "mãe.",
+   "ini": 0.453,
+   "fim": 1.04
+  }
+ ]
+}

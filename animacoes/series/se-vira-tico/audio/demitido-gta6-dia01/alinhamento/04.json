@@ -1,0 +1,36 @@
+{
+ "n": 4,
+ "texto": "Kauã, como que abre um PDF?",
+ "palavras": [
+  {
+   "palavra": "Kauã,",
+   "ini": 0,
+   "fim": 0.64
+  },
+  {
+   "palavra": "como",
+   "ini": 0.72,
+   "fim": 0.96
+  },
+  {
+   "palavra": "que",
+   "ini": 1.04,
+   "fim": 1.12
+  },
+  {
+   "palavra": "abre",
+   "ini": 1.2,
+   "fim": 1.44
+  },
+  {
+   "palavra": "um",
+   "ini": 1.48,
+   "fim": 1.52
+  },
+  {
+   "palavra": "PDF?",
+   "ini": 1.68,
+   "fim": 2.48
+  }
+ ]
+}

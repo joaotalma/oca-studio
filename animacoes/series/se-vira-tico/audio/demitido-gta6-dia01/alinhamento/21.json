@@ -1,0 +1,31 @@
+{
+ "n": 21,
+ "texto": "Aí o Léo me marcou.",
+ "palavras": [
+  {
+   "palavra": "Aí",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "o",
+   "ini": 0.48,
+   "fim": 0.56
+  },
+  {
+   "palavra": "Léo",
+   "ini": 0.64,
+   "fim": 0.8
+  },
+  {
+   "palavra": "me",
+   "ini": 0.88,
+   "fim": 0.96
+  },
+  {
+   "palavra": "marcou.",
+   "ini": 1.08,
+   "fim": 1.76
+  }
+ ]
+}

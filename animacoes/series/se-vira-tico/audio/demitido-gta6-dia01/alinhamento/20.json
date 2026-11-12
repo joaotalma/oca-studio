@@ -1,0 +1,76 @@
+{
+ "n": 20,
+ "texto": "Se você também já fingiu que tava tudo bem, fica comigo. São seis dias.",
+ "palavras": [
+  {
+   "palavra": "Se",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "você",
+   "ini": 0.2,
+   "fim": 0.4
+  },
+  {
+   "palavra": "também",
+   "ini": 0.48,
+   "fim": 0.8
+  },
+  {
+   "palavra": "já",
+   "ini": 0.88,
+   "fim": 0.96
+  },
+  {
+   "palavra": "fingiu",
+   "ini": 1.04,
+   "fim": 1.36
+  },
+  {
+   "palavra": "que",
+   "ini": 1.44,
+   "fim": 1.52
+  },
+  {
+   "palavra": "tava",
+   "ini": 1.56,
+   "fim": 1.76
+  },
+  {
+   "palavra": "tudo",
+   "ini": 1.84,
+   "fim": 2.08
+  },
+  {
+   "palavra": "bem,",
+   "ini": 2.16,
+   "fim": 2.8
+  },
+  {
+   "palavra": "fica",
+   "ini": 2.88,
+   "fim": 3.04
+  },
+  {
+   "palavra": "comigo.",
+   "ini": 3.12,
+   "fim": 3.92
+  },
+  {
+   "palavra": "São",
+   "ini": 4,
+   "fim": 4.16
+  },
+  {
+   "palavra": "seis",
+   "ini": 4.24,
+   "fim": 4.48
+  },
+  {
+   "palavra": "dias.",
+   "ini": 4.56,
+   "fim": 5.28
+  }
+ ]
+}

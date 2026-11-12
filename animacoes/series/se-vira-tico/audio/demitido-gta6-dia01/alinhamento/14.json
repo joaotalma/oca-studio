@@ -1,0 +1,101 @@
+{
+ "n": 14,
+ "texto": "Todo mundo comprou. A noite do lançamento vai ser na casa do Léo. Cada um leva o seu controle.",
+ "palavras": [
+  {
+   "palavra": "Todo",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "mundo",
+   "ini": 0.32,
+   "fim": 0.48
+  },
+  {
+   "palavra": "comprou.",
+   "ini": 0.56,
+   "fim": 1.16
+  },
+  {
+   "palavra": "A",
+   "ini": 1.36,
+   "fim": 1.44
+  },
+  {
+   "palavra": "noite",
+   "ini": 1.52,
+   "fim": 1.68
+  },
+  {
+   "palavra": "do",
+   "ini": 1.76,
+   "fim": 1.84
+  },
+  {
+   "palavra": "lançamento",
+   "ini": 1.92,
+   "fim": 2.48
+  },
+  {
+   "palavra": "vai",
+   "ini": 2.52,
+   "fim": 2.64
+  },
+  {
+   "palavra": "ser",
+   "ini": 2.72,
+   "fim": 2.8
+  },
+  {
+   "palavra": "na",
+   "ini": 2.88,
+   "fim": 2.96
+  },
+  {
+   "palavra": "casa",
+   "ini": 3,
+   "fim": 3.2
+  },
+  {
+   "palavra": "do",
+   "ini": 3.28,
+   "fim": 3.36
+  },
+  {
+   "palavra": "Léo.",
+   "ini": 3.4,
+   "fim": 3.92
+  },
+  {
+   "palavra": "Cada",
+   "ini": 4.16,
+   "fim": 4.4
+  },
+  {
+   "palavra": "um",
+   "ini": 4.48,
+   "fim": 4.64
+  },
+  {
+   "palavra": "leva",
+   "ini": 4.72,
+   "fim": 4.907
+  },
+  {
+   "palavra": "o",
+   "ini": 4.933,
+   "fim": 4.96
+  },
+  {
+   "palavra": "seu",
+   "ini": 5.04,
+   "fim": 5.2
+  },
+  {
+   "palavra": "controle.",
+   "ini": 5.32,
+   "fim": 6
+  }
+ ]
+}

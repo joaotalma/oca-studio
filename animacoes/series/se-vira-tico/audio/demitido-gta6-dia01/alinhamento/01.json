@@ -1,0 +1,66 @@
+{
+ "n": 1,
+ "texto": "Faltam seis dias pro GTA seis. Eu tenho três reais e vinte.",
+ "palavras": [
+  {
+   "palavra": "Faltam",
+   "ini": 0,
+   "fim": 0.48
+  },
+  {
+   "palavra": "seis",
+   "ini": 0.56,
+   "fim": 0.8
+  },
+  {
+   "palavra": "dias",
+   "ini": 0.96,
+   "fim": 1.28
+  },
+  {
+   "palavra": "pro",
+   "ini": 1.36,
+   "fim": 1.44
+  },
+  {
+   "palavra": "GTA",
+   "ini": 1.52,
+   "fim": 1.92
+  },
+  {
+   "palavra": "seis.",
+   "ini": 2,
+   "fim": 2.64
+  },
+  {
+   "palavra": "Eu",
+   "ini": 2.8,
+   "fim": 2.96
+  },
+  {
+   "palavra": "tenho",
+   "ini": 3.04,
+   "fim": 3.28
+  },
+  {
+   "palavra": "três",
+   "ini": 3.36,
+   "fim": 3.6
+  },
+  {
+   "palavra": "reais",
+   "ini": 3.68,
+   "fim": 4
+  },
+  {
+   "palavra": "e",
+   "ini": 4.08,
+   "fim": 4.16
+  },
+  {
+   "palavra": "vinte.",
+   "ini": 4.24,
+   "fim": 4.88
+  }
+ ]
+}

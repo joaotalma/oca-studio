@@ -1,0 +1,36 @@
+{
+ "n": 15,
+ "texto": "E eu? Eu sou o salgadinho.",
+ "palavras": [
+  {
+   "palavra": "E",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "eu?",
+   "ini": 0.28,
+   "fim": 0.48
+  },
+  {
+   "palavra": "Eu",
+   "ini": 0.88,
+   "fim": 1.04
+  },
+  {
+   "palavra": "sou",
+   "ini": 1.12,
+   "fim": 1.28
+  },
+  {
+   "palavra": "o",
+   "ini": 1.32,
+   "fim": 1.36
+  },
+  {
+   "palavra": "salgadinho.",
+   "ini": 1.44,
+   "fim": 2.4
+  }
+ ]
+}

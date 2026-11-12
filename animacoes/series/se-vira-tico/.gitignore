@@ -19,3 +19,12 @@ __pycache__/
 render/.pieces-*/
 # Local secrets written by `elevenlabs onboard`
 /.env.local
+
+# cópias do motor feitas por scripts/preparar-film.sh nos episódios do spin-off
+demitido-gta6/*/chars.js
+demitido-gta6/*/cenarios.js
+demitido-gta6/*/motor.js
+demitido-gta6/*/export.mjs
+demitido-gta6/*/serve.mjs
+demitido-gta6/*/springs.js
+demitido-gta6/*/gate.mjs

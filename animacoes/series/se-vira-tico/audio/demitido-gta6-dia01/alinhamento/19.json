@@ -1,0 +1,111 @@
+{
+ "n": 19,
+ "texto": "Fiz a conta. Pra chegar lá, eu preciso de setenta e quatro reais por dia. Eu não fazia isso nem empregado.",
+ "palavras": [
+  {
+   "palavra": "Fiz",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "a",
+   "ini": 0.24,
+   "fim": 0.32
+  },
+  {
+   "palavra": "conta.",
+   "ini": 0.4,
+   "fim": 0.8
+  },
+  {
+   "palavra": "Pra",
+   "ini": 1.12,
+   "fim": 1.2
+  },
+  {
+   "palavra": "chegar",
+   "ini": 1.28,
+   "fim": 1.6
+  },
+  {
+   "palavra": "lá,",
+   "ini": 1.68,
+   "fim": 2.08
+  },
+  {
+   "palavra": "eu",
+   "ini": 2.16,
+   "fim": 2.24
+  },
+  {
+   "palavra": "preciso",
+   "ini": 2.36,
+   "fim": 2.64
+  },
+  {
+   "palavra": "de",
+   "ini": 2.72,
+   "fim": 2.88
+  },
+  {
+   "palavra": "setenta",
+   "ini": 3.04,
+   "fim": 3.44
+  },
+  {
+   "palavra": "e",
+   "ini": 3.52,
+   "fim": 3.6
+  },
+  {
+   "palavra": "quatro",
+   "ini": 3.64,
+   "fim": 3.84
+  },
+  {
+   "palavra": "reais",
+   "ini": 3.92,
+   "fim": 4.16
+  },
+  {
+   "palavra": "por",
+   "ini": 4.32,
+   "fim": 4.48
+  },
+  {
+   "palavra": "dia.",
+   "ini": 4.56,
+   "fim": 4.96
+  },
+  {
+   "palavra": "Eu",
+   "ini": 5.36,
+   "fim": 5.44
+  },
+  {
+   "palavra": "não",
+   "ini": 5.52,
+   "fim": 5.6
+  },
+  {
+   "palavra": "fazia",
+   "ini": 5.64,
+   "fim": 6
+  },
+  {
+   "palavra": "isso",
+   "ini": 6.08,
+   "fim": 6.24
+  },
+  {
+   "palavra": "nem",
+   "ini": 6.32,
+   "fim": 6.48
+  },
+  {
+   "palavra": "empregado.",
+   "ini": 6.56,
+   "fim": 7.52
+  }
+ ]
+}

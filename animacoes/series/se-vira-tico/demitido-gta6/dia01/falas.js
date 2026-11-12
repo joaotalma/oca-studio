@@ -1,0 +1,30 @@
+// Falas do Dia 1, com os tempos do roteiro (estimados a 2,8 palavras por segundo).
+// Depois da gravação, motor/audio/sincronizar.py leva tudo para o tempo real (tempos.js).
+const FALAS = [
+ { "n": 1, "ini": 0.2, "fim": 4.6, "quem": "Kauã (narração)", "texto": "Faltam seis dias pro GTA 6. Eu tenho três reais e vinte." },
+ { "n": 2, "ini": 5.0, "fim": 9.4, "quem": "Kauã (narração)", "texto": "Ontem eu fui demitido. Por e-mail. O e-mail tinha emoji." },
+ { "n": 3, "ini": 10.2, "fim": 12.4, "quem": "Kauã (narração)", "texto": "Foi assim. Ontem, quatro da tarde." },
+ { "n": 4, "ini": 12.8, "fim": 15.0, "quem": "Júnior", "texto": "Kauã, como que abre um PDF?" },
+ { "n": 5, "ini": 15.4, "fim": 19.2, "quem": "Kauã (narração)", "texto": "Eu abri o PDF do Júnior. O Júnior é filho do dono." },
+ { "n": 6, "ini": 19.6, "fim": 22.4, "quem": "CEO", "texto": "Kauã! Você é o futuro dessa empresa!" },
+ { "n": 7, "ini": 23.2, "fim": 25.6, "quem": "Kauã (narração)", "texto": "No mesmo segundo, chegou o e-mail." },
+ { "n": 8, "ini": 27.4, "fim": 32.6, "quem": "Kauã (narração)", "texto": "Eu era estagiário. O último pagamento cai dia cinco. O jogo sai dia dezenove." },
+ { "n": 9, "ini": 33.4, "fim": 38.6, "quem": "Kauã (narração)", "texto": "O PS5 eu tenho. O problema é o controle. Ele anda sozinho pra esquerda." },
+ { "n": 10, "ini": 39.4, "fim": 42.4, "quem": "Kauã (narração)", "texto": "Assoprei. Passei fita. Coloquei na geladeira." },
+ { "n": 11, "ini": 44.2, "fim": 46.4, "quem": "Kauã", "texto": "Fica parado, pelo amor de Deus." },
+ { "n": 12, "ini": 47.0, "fim": 49.2, "quem": "Kauã (narração)", "texto": "Ele não obedece. Ele sugere." },
+ { "n": 13, "ini": 50.4, "fim": 51.8, "quem": "Kauã (narração)", "texto": "Aí o grupo acordou." },
+ { "n": 14, "ini": 56.6, "fim": 64.4, "quem": "Kauã (narração)", "texto": "Todo mundo comprou. A noite do lançamento vai ser na casa do Léo. Cada um leva o seu controle." },
+ { "n": 15, "ini": 70.4, "fim": 72.4, "quem": "Kauã (narração)", "texto": "E eu? Eu sou o salgadinho." },
+ { "n": 16, "ini": 75.0, "fim": 79.4, "quem": "Dona Rose", "texto": "Filho, fiz sua marmita pra amanhã. Estagiário tem que comer bem!" },
+ { "n": 17, "ini": 79.8, "fim": 80.8, "quem": "Kauã", "texto": "Valeu, mãe." },
+ { "n": 18, "ini": 82.0, "fim": 89.0, "quem": "Kauã (narração)", "texto": "Ninguém sabe. Nem a minha mãe. Amanhã, às oito, eu vou sair de casa pra trabalhar... em lugar nenhum." },
+ { "n": 19, "ini": 90.4, "fim": 97.4, "quem": "Kauã (narração)", "texto": "Fiz a conta. Pra chegar lá, eu preciso de setenta e quatro reais por dia. Eu não fazia isso nem empregado." },
+ { "n": 20, "ini": 98.4, "fim": 103.4, "quem": "Kauã (narração)", "texto": "Se você também já fingiu que tava tudo bem, fica comigo. São seis dias." },
+ { "n": 21, "ini": 104.4, "fim": 105.8, "quem": "Kauã (narração)", "texto": "Aí o Léo me marcou." },
+ { "n": 22, "ini": 110.8, "fim": 115.0, "quem": "Kauã (narração)", "texto": "Mandei já garanti. Agora a mentira tem seis dias pra virar verdade." },
+ { "n": 23, "ini": 115.4, "fim": 117.2, "quem": "Kauã (narração)", "texto": "Abri o grupo de bicos do bairro." },
+ { "n": 24, "ini": 117.6, "fim": 123.0, "quem": "Kauã (narração)", "texto": "Opção um: fantasia de celular na porta da loja. Oitenta por dia. Num calor de trinta e quatro graus." },
+ { "n": 25, "ini": 123.4, "fim": 125.6, "quem": "Kauã (narração)", "texto": "Opção dois: passear cachorro. Quinze por cachorro." },
+ { "n": 26, "ini": 126.4, "fim": 128.0, "quem": "Kauã (narração)", "texto": "Eu tenho medo de cachorro." }
+];

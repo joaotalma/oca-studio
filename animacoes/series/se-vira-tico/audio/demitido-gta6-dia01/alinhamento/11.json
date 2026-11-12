@@ -1,0 +1,36 @@
+{
+ "n": 11,
+ "texto": "Fica parado, pelo amor de Deus.",
+ "palavras": [
+  {
+   "palavra": "Fica",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "parado,",
+   "ini": 0.4,
+   "fim": 1.04
+  },
+  {
+   "palavra": "pelo",
+   "ini": 1.2,
+   "fim": 1.36
+  },
+  {
+   "palavra": "amor",
+   "ini": 1.44,
+   "fim": 1.84
+  },
+  {
+   "palavra": "de",
+   "ini": 1.92,
+   "fim": 2
+  },
+  {
+   "palavra": "Deus.",
+   "ini": 2.08,
+   "fim": 2.96
+  }
+ ]
+}

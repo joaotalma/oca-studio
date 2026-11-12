@@ -59,6 +59,9 @@ const CHARS = {
   junior: { key: 'junior', name: 'Júnior', emoji: '🧴', papel: 'Filho do CEO', desc: 'Recém-chegado e recém-promovido: educado, perfumado e sem saber abrir um arquivo.', paleta: ['#f0c09a', '#3a2a20', '#cfe3ef', '#3e4450'],
     skin: '#f0c09a', shade: '#cf9a76', hair: '#3a2a20', hairHi: '#9a7a5e', iris: '#5a4a3a', cloth: '#cfe3ef', clothD: '#9fbccc', pants: '#3e4450', pantsD: '#2a2f38', shoe: 'bota',
     hs: 1.24, neck: 14, neckW: 18, torso: 160, sw: 58, waist: 46, hem: 50, hw: 44, armU: 88, armF: 84, ru: 13, re: 11, rw: 9, sleeve: .9, thigh: 120, shin: 116, rt: 25, rk: 18, ra: 15.5, lid: .12, browW: 3.6, jaw: 'm', gravata: '#2a4f8a' },
+  kaua: { key: 'kaua', name: 'Kauã', emoji: '🎮', papel: 'Demitido antes do GTA', desc: 'Ex-estagiário de TI, 21 anos, sobrinho do Jão. Foi demitido por e-mail seis dias antes do GTA 6 e disse aos amigos que "já garantiu".', paleta: ['#a86b48', '#1d1716', '#2f6f5e', '#4a4f5a'],
+    skin: '#a86b48', shade: '#80503a', hair: '#1d1716', hairHi: '#3e302b', iris: '#3a2a20', cloth: '#2f6f5e', clothD: '#225247', pants: '#4a4f5a', pantsD: '#363a42', shoe: 'chinelo', meia: '#e9e6df',
+    hs: 1.27, neck: 13, neckW: 20, torso: 166, sw: 64, waist: 54, hem: 56, hw: 46, armU: 90, armF: 86, ru: 14.5, re: 12.5, rw: 10, sleeve: .96, thigh: 134, shin: 130, rt: 25, rk: 19, ra: 16, lid: .28, bags: true, browW: 4.6, jaw: 'm', capuz: true, headset: '#22252b' },
 };
 const EXPR = {
   neutro: { mouth: 'flat' }, cansado: { lid: .55, bags: true, browIn: -2, browY: 2, mouth: 'flat' },
@@ -137,6 +140,9 @@ function hairFront(d) {
   if (d.key === 'ceo') return shape('M-45 -24 Q-54 -50 -40 -70 Q-30 -82 -14 -86 Q-26 -70 -34 -40Z', h) + shape('M45 -24 Q54 -50 40 -70 Q30 -82 14 -86 Q26 -70 34 -40Z', h) + stroke('M-10 -90 Q0 -94 12 -90 M-4 -84 Q4 -88 10 -84', hi, 2.4);
   if (d.key === 'junior' && d.despenteado) return shape('M-45 -40 L-56 -70 -38 -66 -44 -96 -22 -82 -16 -112 0 -88 12 -116 22 -88 42 -104 38 -78 58 -80 46 -54 47 -38 Q20 -62 0 -60 Q-22 -62 -45 -40Z', h) + stroke('M-30 -72 L-18 -84 M6 -96 L14 -80 M30 -90 L34 -76', hi, 2.4);
   if (d.key === 'junior') return shape('M-45 -38 Q-52 -84 -16 -98 Q-4 -126 30 -122 Q52 -118 50 -100 Q40 -106 28 -102 Q50 -86 47 -38 Q30 -66 0 -68 Q-26 -66 -45 -38Z', h) + stroke('M-32 -70 Q-12 -88 18 -92 M-20 -60 Q4 -78 34 -80 M4 -106 Q22 -118 42 -112', hi, 3) + ell(22, -104, 7, 3, '#ffffff', 'none', 0, 'opacity=".75"') + ell(-14, -84, 6, 2.5, '#ffffff', 'none', 0, 'opacity=".6"');
+  if (d.key === 'kaua') return union([{ d: 'M-45 -40 Q-52 -86 -20 -100 Q0 -106 20 -100 Q52 -86 45 -40 Q34 -60 0 -62 Q-34 -60 -45 -40Z' },
+      circ([-38, -72], 10), circ([-30, -91], 12), circ([-12, -104], 13), circ([8, -106], 13), circ([26, -97], 12), circ([38, -79], 10)], h)
+    + stroke('M-35 -96 Q-30 -102 -23 -99 M-17 -111 Q-11 -116 -4 -112 M3 -113 Q9 -118 16 -113 M22 -104 Q28 -106 32 -100', hi, 2.4);
   if (d.key === 'marlene' || d.key === 'cida') return shape('M-44 -34 C-58 -66 -38 -92 -14 -88 C4 -100 40 -92 44 -60 Q50 -46 43 -32 Q36 -58 14 -66 Q-14 -60 -44 -34Z', h) + stroke('M-30 -68 Q-20 -80 -6 -78 M14 -82 Q28 -78 34 -62', hi, 2.6);
   return '';
 }
@@ -206,7 +212,7 @@ function handSVG(d, side, w, a, prop) {
 }
 function footSVG(d, side, c) {
   const sh = d.shoe; let s = '';
-  if (sh === 'chinelo') s = shape('M-11 -14 L-12 7 Q-19 13 -22 21 L25 21 Q20 12 12 7 L12 -14Z', d.skin) + ell(-14, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(-5, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(4, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(13, 18, 3, 2.3, '#f0b28d', d.shade, .7) + shape('M-27 20 Q0 15 30 20 Q35 26 28 28 L-25 28 Q-32 26 -27 20Z', '#2c2c30') + stroke('M-20 19 Q-6 6 1 13 Q9 6 23 19', '#c88739', 3.4);
+  if (sh === 'chinelo') s = shape('M-11 -14 L-12 7 Q-19 13 -22 21 L25 21 Q20 12 12 7 L12 -14Z', d.meia || d.skin) + (d.meia ? '' : ell(-14, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(-5, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(4, 18, 3, 2.3, '#f0b28d', d.shade, .7) + ell(13, 18, 3, 2.3, '#f0b28d', d.shade, .7)) + shape('M-27 20 Q0 15 30 20 Q35 26 28 28 L-25 28 Q-32 26 -27 20Z', '#2c2c30') + stroke('M-20 19 Q-6 6 1 13 Q9 6 23 19', '#c88739', 3.4);
   if (sh === 'tenis') s = shape('M-12 -14 L-13 4 Q-23 11 -24 22 L27 22 Q26 10 13 4 L13 -14Z', '#f1ece2') + stroke('M-7 2 L7 2 M-9 8 L9 8 M-11 14 L12 14', '#ae5d49', 2) + shape('M-27 20 Q0 17 30 20 L30 26 Q0 30 -27 26Z', '#ae5d49', 2.2);
   if (sh === 'bota') s = shape('M-18 -18 L-19 6 Q-29 12 -30 24 L33 24 Q32 11 19 6 L19 -18Z', '#4f3c2e') + stroke('M-7 -10 L7 -10 M-8 -2 L8 -2 M-9 6 L9 6', '#c9a877', 2.2) + shape('M-33 22 L36 22 L36 30 Q0 33 -33 30Z', '#262226');
   if (sh === 'scarpin') s = shape('M-9 -14 L-10 6 Q-14 11 -15 15 L17 15 Q15 10 10 6 L10 -14Z', d.skin) + shape('M-17 11 Q0 20 19 11 Q24 20 20 27 L-16 27 Q-21 20 -17 11Z', '#26212b');
@@ -254,6 +260,10 @@ function neckSVG(d, sy, hy) {
   let s = shape(`M${-nw} ${top} L${-nw} ${base - 4} Q0 ${base + 16} ${nw} ${base - 4} L${nw} ${top}Z`, d.skin);
   s += fillOnly(`M${-nw + 1.4} ${top} L${-nw + 1.4} ${sy - 5} Q0 ${sy + 8} ${nw - 1.4} ${sy - 5} L${nw - 1.4} ${top}Z`, d.shade, 'opacity=".75"');
   if (d.key === 'tico' || d.key === 'jao') s += stroke(`M${-nw - 3} ${base - 5} Q0 ${base + 18} ${nw + 3} ${base - 5}`, d.clothD, 4.5);
+  if (d.capuz) s += shape(`M${-nw - 12} ${base - 10} Q${-nw - 18} ${base + 10} ${-nw + 2} ${base + 14} Q0 ${base + 24} ${nw - 2} ${base + 14} Q${nw + 18} ${base + 10} ${nw + 12} ${base - 10} Q0 ${base + 8} ${-nw - 12} ${base - 10}Z`, d.clothD, 2.4)
+    + stroke(`M-7 ${base + 18} L-9 ${base + 46} M7 ${base + 18} L9 ${base + 44}`, '#ece8df', 2.2) + ell(-9, base + 48, 2.4, 2.4, '#ece8df') + ell(9, base + 46, 2.4, 2.4, '#ece8df');
+  if (d.headset) s += stroke(`M${-nw - 6} ${base - 2} Q0 ${base + 20} ${nw + 6} ${base - 2}`, d.headset, 5) + ell(-nw - 11, base - 4, 12, 15, d.headset, OUT, 2.4) + ell(nw + 11, base - 4, 12, 15, d.headset, OUT, 2.4)
+    + ell(-nw - 11, base - 4, 7, 9, '#3a3f48') + ell(nw + 11, base - 4, 7, 9, '#3a3f48') + ell(-nw - 11, base - 4, 2.2, 2.2, '#3fd17a') + ell(nw + 11, base - 4, 2.2, 2.2, '#3fd17a');
   if (d.key === 'lua') s += shape(`M${-nw - 3} ${sy - 7} L-3 ${sy + 18} L${-nw - 15} ${sy + 22} Z`, '#c56f59', 2.2) + shape(`M${nw + 3} ${sy - 7} L3 ${sy + 18} L${nw + 15} ${sy + 22} Z`, '#c56f59', 2.2);
   return s;
 }

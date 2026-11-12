@@ -1,0 +1,66 @@
+{
+ "n": 22,
+ "texto": "Mandei já garanti. Agora a mentira tem seis dias pra virar verdade.",
+ "palavras": [
+  {
+   "palavra": "Mandei",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "já",
+   "ini": 0.48,
+   "fim": 0.72
+  },
+  {
+   "palavra": "garanti.",
+   "ini": 0.8,
+   "fim": 1.48
+  },
+  {
+   "palavra": "Agora",
+   "ini": 1.68,
+   "fim": 1.96
+  },
+  {
+   "palavra": "a",
+   "ini": 2,
+   "fim": 2.04
+  },
+  {
+   "palavra": "mentira",
+   "ini": 2.08,
+   "fim": 2.48
+  },
+  {
+   "palavra": "tem",
+   "ini": 2.64,
+   "fim": 2.8
+  },
+  {
+   "palavra": "seis",
+   "ini": 2.88,
+   "fim": 3.12
+  },
+  {
+   "palavra": "dias",
+   "ini": 3.28,
+   "fim": 3.52
+  },
+  {
+   "palavra": "pra",
+   "ini": 3.6,
+   "fim": 3.68
+  },
+  {
+   "palavra": "virar",
+   "ini": 3.76,
+   "fim": 3.96
+  },
+  {
+   "palavra": "verdade.",
+   "ini": 4,
+   "fim": 4.8
+  }
+ ]
+}

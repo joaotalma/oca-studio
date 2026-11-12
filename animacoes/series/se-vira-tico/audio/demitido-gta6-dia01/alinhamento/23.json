@@ -1,0 +1,41 @@
+{
+ "n": 23,
+ "texto": "Abri o grupo de bicos do bairro.",
+ "palavras": [
+  {
+   "palavra": "Abri",
+   "ini": 0,
+   "fim": 0.32
+  },
+  {
+   "palavra": "o",
+   "ini": 0.36,
+   "fim": 0.4
+  },
+  {
+   "palavra": "grupo",
+   "ini": 0.48,
+   "fim": 0.72
+  },
+  {
+   "palavra": "de",
+   "ini": 0.8,
+   "fim": 0.96
+  },
+  {
+   "palavra": "bicos",
+   "ini": 1,
+   "fim": 1.36
+  },
+  {
+   "palavra": "do",
+   "ini": 1.4,
+   "fim": 1.44
+  },
+  {
+   "palavra": "bairro.",
+   "ini": 1.52,
+   "fim": 2.24
+  }
+ ]
+}

@@ -39,6 +39,7 @@ Análise em `referencias/videos-analisados/temporada-viral-metodo.md`, aplicada 
 - [x] Formato explicativo dos Mistérios (`series/misterios-do-brasil/FORMATO-EXPLICATIVO.md`).
 - [x] Estimativa de créditos do ElevenLabs antes de gravar (`--confirmar`).
 - [ ] Na bíblia da T2 do Tico: a frase da série, o gancho fixo do segundo zero e os dois finais de cada voto.
+- [ ] **Teste dos episódios longos (1:45 a 2:20) no spin-off "Demitido Antes do GTA"** (`series/se-vira-tico/demitido-gta6/`), de 13 a 19/11, antes de adotar o formato na T2. Medir o tempo assistido, quem pulou nos 3 s, comentários e envios.
 - [ ] Reescrever uma pauta dos Mistérios no formato explicativo e comparar com a versão v2.
 - [ ] Depois de 3 episódios da T2, comparar o tempo médio assistido e os comentários com a T1 (de 18 a 33 s assistidos) na skill `aprender`.
 

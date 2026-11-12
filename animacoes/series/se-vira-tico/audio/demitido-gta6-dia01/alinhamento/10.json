@@ -1,0 +1,36 @@
+{
+ "n": 10,
+ "texto": "Assoprei. Passei fita. Coloquei na geladeira.",
+ "palavras": [
+  {
+   "palavra": "Assoprei.",
+   "ini": 0,
+   "fim": 0.92
+  },
+  {
+   "palavra": "Passei",
+   "ini": 1.12,
+   "fim": 1.44
+  },
+  {
+   "palavra": "fita.",
+   "ini": 1.52,
+   "fim": 2.12
+  },
+  {
+   "palavra": "Coloquei",
+   "ini": 2.32,
+   "fim": 2.72
+  },
+  {
+   "palavra": "na",
+   "ini": 2.76,
+   "fim": 2.8
+  },
+  {
+   "palavra": "geladeira.",
+   "ini": 2.88,
+   "fim": 3.68
+  }
+ ]
+}

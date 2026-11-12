@@ -34,6 +34,9 @@ export const PERSONAGENS = {
     texto: 'Mãe, vó, gente, eu tenho quarenta anos, eu pago aluguel, eu tenho emprego. Não precisa de chapeuzinho, de verdade, eu tô bem.' },
   junior: { ref: 'vendedor', desc: 'Brazilian Portuguese young man around 25, light polished voice, polite and a bit naive, rich-kid office tone.',
     texto: 'Oi, gente, prazer! Eu sou o Júnior, o novo gerente. Alguém me manda o arquivo da apresentação? Eu não achei a pasta compartilhada.' },
+  // Spin-off "Demitido Antes do GTA": voz original criada só por descrição (sem clipe de referência), autorizada pelo João em 12/11/2026.
+  kaua: { ref: null, desc: 'Brazilian Portuguese young man around 21, youthful mid-pitched voice, ironic and tired gamer who stayed up until 3am, fast casual urban Brazilian slang, self-deprecating humor, friendly and expressive.',
+    texto: 'Faltam seis dias pro GTA 6 e eu tenho três reais e vinte. Fui demitido por e-mail, e o e-mail tinha emoji. Mas tá tudo bem, eu tô ótimo, sério.' },
 };
 
 const client = new ElevenLabsClient();
@@ -42,8 +45,8 @@ async function previas(lista) {
   fs.mkdirSync(PREVIAS, { recursive: true });
   for (const nome of lista) {
     const p = PERSONAGENS[nome];
-    const ref = fs.readFileSync(path.join(RAIZ, 'audio', 'vozes', `${p.ref}.wav`)).toString('base64');
-    const r = await client.textToVoice.design({ voiceDescription: p.desc, modelId: 'eleven_ttv_v3', text: p.texto, referenceAudioBase64: ref, promptStrength: .25, outputFormat: 'mp3_44100_128', seed: 7 });
+    const ref = p.ref ? fs.readFileSync(path.join(RAIZ, 'audio', 'vozes', `${p.ref}.wav`)).toString('base64') : null;
+    const r = await client.textToVoice.design({ voiceDescription: p.desc, modelId: 'eleven_ttv_v3', text: p.texto, ...(ref ? { referenceAudioBase64: ref, promptStrength: .25 } : {}), outputFormat: 'mp3_44100_128', seed: 7 });
     const ids = {};
     r.previews.forEach((pv, i) => {
       fs.writeFileSync(path.join(PREVIAS, `${nome}_${i}.mp3`), Buffer.from(pv.audioBase64, 'base64'));

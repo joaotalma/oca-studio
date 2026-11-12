@@ -1,0 +1,81 @@
+{
+ "n": 9,
+ "texto": "O PS cinco eu tenho. O problema é o controle. Ele anda sozinho pra esquerda.",
+ "palavras": [
+  {
+   "palavra": "O",
+   "ini": 0,
+   "fim": 0.08
+  },
+  {
+   "palavra": "PS",
+   "ini": 0.16,
+   "fim": 0.48
+  },
+  {
+   "palavra": "cinco",
+   "ini": 0.56,
+   "fim": 0.72
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.8,
+   "fim": 0.88
+  },
+  {
+   "palavra": "tenho.",
+   "ini": 0.96,
+   "fim": 1.52
+  },
+  {
+   "palavra": "O",
+   "ini": 1.68,
+   "fim": 1.72
+  },
+  {
+   "palavra": "problema",
+   "ini": 1.76,
+   "fim": 2.32
+  },
+  {
+   "palavra": "é",
+   "ini": 2.36,
+   "fim": 2.4
+  },
+  {
+   "palavra": "o",
+   "ini": 2.44,
+   "fim": 2.48
+  },
+  {
+   "palavra": "controle.",
+   "ini": 2.56,
+   "fim": 3.36
+  },
+  {
+   "palavra": "Ele",
+   "ini": 3.52,
+   "fim": 3.68
+  },
+  {
+   "palavra": "anda",
+   "ini": 3.8,
+   "fim": 3.92
+  },
+  {
+   "palavra": "sozinho",
+   "ini": 4.08,
+   "fim": 4.48
+  },
+  {
+   "palavra": "pra",
+   "ini": 4.56,
+   "fim": 4.64
+  },
+  {
+   "palavra": "esquerda.",
+   "ini": 4.72,
+   "fim": 5.44
+  }
+ ]
+}

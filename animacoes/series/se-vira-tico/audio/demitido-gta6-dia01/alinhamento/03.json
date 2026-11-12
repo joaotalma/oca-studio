@@ -1,0 +1,36 @@
+{
+ "n": 3,
+ "texto": "Foi assim. Ontem, quatro da tarde.",
+ "palavras": [
+  {
+   "palavra": "Foi",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "assim.",
+   "ini": 0.24,
+   "fim": 0.76
+  },
+  {
+   "palavra": "Ontem,",
+   "ini": 0.96,
+   "fim": 1.6
+  },
+  {
+   "palavra": "quatro",
+   "ini": 1.68,
+   "fim": 1.92
+  },
+  {
+   "palavra": "da",
+   "ini": 2,
+   "fim": 2.08
+  },
+  {
+   "palavra": "tarde.",
+   "ini": 2.16,
+   "fim": 2.8
+  }
+ ]
+}

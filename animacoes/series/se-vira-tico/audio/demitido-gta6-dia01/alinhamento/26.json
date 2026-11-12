@@ -1,0 +1,31 @@
+{
+ "n": 26,
+ "texto": "Eu tenho medo de cachorro.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "tenho",
+   "ini": 0.24,
+   "fim": 0.48
+  },
+  {
+   "palavra": "medo",
+   "ini": 0.56,
+   "fim": 0.84
+  },
+  {
+   "palavra": "de",
+   "ini": 0.88,
+   "fim": 0.96
+  },
+  {
+   "palavra": "cachorro.",
+   "ini": 1,
+   "fim": 2
+  }
+ ]
+}

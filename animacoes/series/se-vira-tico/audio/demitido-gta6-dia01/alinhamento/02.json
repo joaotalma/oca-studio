@@ -1,0 +1,56 @@
+{
+ "n": 2,
+ "texto": "Ontem eu fui demitido. Por e-mail. O e-mail tinha emoji.",
+ "palavras": [
+  {
+   "palavra": "Ontem",
+   "ini": 0,
+   "fim": 0.56
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.64,
+   "fim": 0.8
+  },
+  {
+   "palavra": "fui",
+   "ini": 0.88,
+   "fim": 0.96
+  },
+  {
+   "palavra": "demitido.",
+   "ini": 1.04,
+   "fim": 1.92
+  },
+  {
+   "palavra": "Por",
+   "ini": 2.16,
+   "fim": 2.32
+  },
+  {
+   "palavra": "e-mail.",
+   "ini": 2.36,
+   "fim": 3.12
+  },
+  {
+   "palavra": "O",
+   "ini": 3.36,
+   "fim": 3.4
+  },
+  {
+   "palavra": "e-mail",
+   "ini": 3.44,
+   "fim": 3.84
+  },
+  {
+   "palavra": "tinha",
+   "ini": 3.92,
+   "fim": 4.08
+  },
+  {
+   "palavra": "emoji.",
+   "ini": 4.4,
+   "fim": 4.96
+  }
+ ]
+}

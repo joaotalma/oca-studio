@@ -1,0 +1,31 @@
+{
+ "n": 12,
+ "texto": "Ele não obedece. Ele sugere.",
+ "palavras": [
+  {
+   "palavra": "Ele",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "não",
+   "ini": 0.293,
+   "fim": 0.4
+  },
+  {
+   "palavra": "obedece.",
+   "ini": 0.48,
+   "fim": 1.36
+  },
+  {
+   "palavra": "Ele",
+   "ini": 1.52,
+   "fim": 1.76
+  },
+  {
+   "palavra": "sugere.",
+   "ini": 1.92,
+   "fim": 2.8
+  }
+ ]
+}

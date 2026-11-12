@@ -1,0 +1,36 @@
+{
+ "n": 7,
+ "texto": "No mesmo segundo, chegou o e-mail.",
+ "palavras": [
+  {
+   "palavra": "No",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "mesmo",
+   "ini": 0.28,
+   "fim": 0.48
+  },
+  {
+   "palavra": "segundo,",
+   "ini": 0.56,
+   "fim": 1.28
+  },
+  {
+   "palavra": "chegou",
+   "ini": 1.36,
+   "fim": 1.6
+  },
+  {
+   "palavra": "o",
+   "ini": 1.64,
+   "fim": 1.68
+  },
+  {
+   "palavra": "e-mail.",
+   "ini": 1.72,
+   "fim": 2.48
+  }
+ ]
+}
