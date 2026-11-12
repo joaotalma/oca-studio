@@ -1,0 +1,21 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se a Amazônia virasse cidade americana?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Em 1927, Henry Ford criou uma cidade no meio da Amazônia.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Ele queria produzir borracha para os seus carros.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 10.6, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "O plano era tirar látex de seringueiras.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 10.7, "fim": 13.5, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "O lugar ganhou um nome: Fordlândia.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 13.6, "fim": 16, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Em 1930, um fungo inutilizou os seringais.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.1, "fim": 18.9, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "E a cidade nunca entregou o látex que a empresa queria.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19, "fim": 23.4, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "O sonho deu errado. Agora imagine se tivesse dado certo.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 23.8, "fim": 27.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "A floresta teria avenidas planejadas como no interior dos Estados Unidos.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.9, "fim": 32.3, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "A sirene da fábrica marcaria a hora de acordar.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 32.4, "fim": 36, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "O inglês seria a língua do chefe e da placa da rua.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 36.1, "fim": 40.9, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Seu avô poderia ter trabalhado em uma linha de montagem no Tapajós.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 41, "fim": 45.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Outras montadoras iriam querer a sua própria cidade.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 45.9, "fim": 49.1, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "A Amazônia teria subúrbios, cercas brancas e lanchonetes.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 49.2, "fim": 52.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E o mapa do Brasil teria uma Detroit tropical.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 52.5, "fim": 56.1, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "E o Tapajós teria hora do rush.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 56.2, "fim": 59, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Agora pense na sua cidade.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "voce", "ini": 59.1, "fim": 61.1, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Quem decidiu como ela seria?", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 61.2, "fim": 63.2, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Você moraria em uma cidade com dono?", "pausa": 0.3, "imagem": "assets/cena19.png", "camada": "voce", "ini": 63.5, "fim": 66.3, "movimento": "zoom-in"}
+];

@@ -1,0 +1,14 @@
+{
+  "voiceId": "6UI0A10f2tYKlXvyToXE",
+  "nome": "Plotline — narrador jovem",
+  "modelo": "eleven_v4",
+  "estabilidade": 0.6,
+  "similaridade": 0.8,
+  "autorizacao": "João autorizou criar voz original jovem e empolgante nesta conversa, 2026-11-08.",
+  "licenca": {
+    "plano": "starter ativo, conferido via API em 2026-11-08",
+    "fonte": "https://elevenlabs.io/pricing",
+    "situacao": "licença comercial incluída no plano pago"
+  },
+  "origem": "Adaptação independente do fluxo ElevenLabs do Se Vira, Tico; sem voz ou áudio do elenco."
+}

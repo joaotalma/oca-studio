@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Imagine proibir computador de fora.", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2},
+  {"n": 2, "quem": "Narrador", "texto": "Em outubro de 1984, o Brasil criou a reserva de mercado da informática.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.1, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Enquanto isso, lá fora, os computadores pessoais explodiam.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 10.6, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "A reserva beneficiava empresas nacionais.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 10.7, "fim": 12.7, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Com o fim dela, a maioria quebrou.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 12.8, "fim": 15.6, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Elas não conseguiam concorrer com as estrangeiras.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 15.7, "fim": 18.5, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "A reserva acabou. Agora imagine se ela tivesse continuado até hoje.", "pausa": 0.4, "imagem": "assets/cena07.png", "camada": "seria", "ini": 18.9, "fim": 23.3, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "O seu celular seria de uma marca que só existe aqui.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "seria", "ini": 23.4, "fim": 27.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Ele custaria o preço de uma moto.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.9, "fim": 30.7, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Os aplicativos de fora nunca chegariam.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 30.8, "fim": 33.2, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Haveria fila para comprar um modelo de três anos atrás.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 33.3, "fim": 37.3, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Alguém traria aparelhos escondidos na mala.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 37.4, "fim": 39.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Um programador brasileiro teria que inventar tudo do zero.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 39.9, "fim": 43.5, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "Talvez surgisse um gênio nacional.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 43.6, "fim": 45.6, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Ou talvez a gente ainda estivesse esperando.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 45.7, "fim": 48.5, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Cada atualização levaria anos para chegar.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 48.6, "fim": 51, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Jogos seriam passados de mão em mão.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 51.1, "fim": 53.9, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "O computador do vizinho seria atração da rua.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 54, "fim": 57.2, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora olhe para o aparelho na sua mão.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 57.3, "fim": 60.5, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Quantos países ajudaram a fazer ele?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 60.6, "fim": 63, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Você pagaria o dobro por um feito só aqui?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 63.3, "fim": 66.9, "movimento": "esq"}
+];

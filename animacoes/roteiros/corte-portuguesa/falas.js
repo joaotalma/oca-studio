@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se Lisboa fosse aqui até hoje?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "As tropas de Napoleão ameaçavam invadir Portugal.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 5.7, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Com apoio da Inglaterra, a corte fugiu para o Brasil.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 5.8, "fim": 9.8, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Foram aproximadamente 34 embarcações.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 9.9, "fim": 11.5, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Em 8 de março de 1808, eles desembarcaram no Rio de Janeiro.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 11.6, "fim": 16.4, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "A primeira decisão foi abrir os portos.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.5, "fim": 19.3, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Anos depois, o rei voltou para Portugal.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19.4, "fim": 22.2, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Eles voltaram. Agora imagine se nunca tivessem voltado.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 22.6, "fim": 25.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "O Rio seria a capital de um império dos dois lados do Atlântico.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 25.9, "fim": 31.1, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Lisboa seria a cidade do interior da história.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 31.2, "fim": 34.4, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Português de Portugal seria sotaque de província.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 34.5, "fim": 37.3, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Portugueses viriam tentar a vida na metrópole, aqui.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 37.4, "fim": 40.6, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "O dia da Independência talvez nunca existisse.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 40.7, "fim": 43.5, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "Você teria um rei no noticiário da noite.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 43.6, "fim": 46.8, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E o seu feriado de setembro seria um dia comum.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 46.9, "fim": 50.9, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Os museus de Lisboa guardariam só as lembranças do rei.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 51, "fim": 55, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "As grandes decisões sairiam de um palácio no Rio.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 55.1, "fim": 58.7, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E o turista português pediria visto para entrar.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 58.8, "fim": 62, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora pense no seu sobrenome.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 62.1, "fim": 64.1, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "De onde ele veio mesmo?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 64.2, "fim": 66.2, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Você se sentiria súdito ou cidadão?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 66.5, "fim": 68.9, "movimento": "esq"}
+];

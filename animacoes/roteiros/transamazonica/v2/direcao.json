@@ -1,0 +1,171 @@
+{
+  "versao": 2,
+  "slug": "transamazonica-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "O que depende de uma estrada além de chegar em casa?",
+  "pista": "encomenda esperando passagem",
+  "virada": "O obstáculo de uma viagem alcançaria escola, trabalho e abastecimento ao mesmo tempo.",
+  "resposta": "O que deixaria de chegar à sua casa?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar encomenda esperando passagem",
+      "revela": "Sua rua poderia decidir o seu mês.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "A estrada virou símbolo do Brasil Grande.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "As obras começaram em outubro de 1970, perto de Altamira.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "E em 1972, o primeiro trecho foi inaugurado.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Você tentaria antecipar a viagem, juntando o máximo de tarefas numa única saída.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Seu endereço dependeria da chuva.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "A entrega do mercado viria uma vez por mês, se viesse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Mas uma interrupção no caminho desfaria vários planos de uma vez, não apenas o trajeto.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Seu filho faltaria na escola por causa de um buraco.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "E a promessa de asfalto viraria tradição de família.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Você juntaria a encomenda com outros pedidos para aproveitar a mesma passagem.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "Quando alguém perguntasse pelo atraso, a resposta envolveria muito mais que um pacote.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "O obstáculo de uma viagem alcançaria escola, trabalho e abastecimento ao mesmo tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "A encomenda parada mostraria que a estrada também faz parte de dentro da sua casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em encomenda esperando passagem",
+      "revela": "O que deixaria de chegar à sua casa?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

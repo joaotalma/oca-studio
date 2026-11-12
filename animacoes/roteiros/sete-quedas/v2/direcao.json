@@ -1,0 +1,181 @@
+{
+  "versao": 2,
+  "slug": "sete-quedas-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "É possível recuperar um lugar sem discutir o que o substituiu?",
+  "pista": "paisagem refletida na água",
+  "virada": "A imagem desejada esconderia uma escolha entre usos diferentes do mesmo espaço.",
+  "resposta": "Que custo você consideraria antes de escolher?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar paisagem refletida na água",
+      "revela": "Você trocaria uma paisagem por energia?",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "No rio Paraná, entre Brasil e Paraguai, existia um conjunto imenso de cachoeiras.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Era o Salto de Sete Quedas.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "E em 1982, o lago da usina cobriu tudo.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Você tentaria imaginar o passeio, o barulho e a primeira fotografia daquele lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "O lago baixaria, e o barulho voltaria aos poucos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Guaíra receberia gente do mundo inteiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Mas voltar a paisagem também exigiria discutir a função que aquele espaço ganhou depois.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A energia do país teria que vir de outro lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A sua conta de luz entraria na discussão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Você tentaria colocar os dois desejos na mesma fotografia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Mas uma decisão sobre aquele espaço envolveria quem conhece a paisagem e quem depende do uso atual.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Nenhum botão apagaria essa discussão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A imagem desejada esconderia uma escolha entre usos diferentes do mesmo espaço.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "A fotografia não mostraria sozinha todas as pessoas alcançadas pela decisão.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 17,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em paisagem refletida na água",
+      "revela": "Que custo você consideraria antes de escolher?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

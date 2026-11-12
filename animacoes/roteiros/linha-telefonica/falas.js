@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Já ter telefone foi sinal de riqueza.", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Antes de 1998, uma linha de telefone no Brasil era quase um investimento.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 8.1, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Quem comprava virava uma espécie de acionista da companhia.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 8.2, "fim": 11.8, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "O valor era devolvido depois de um tempo.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 11.9, "fim": 15.1, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Havia quem alugasse linhas para ganhar dinheiro.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 15.2, "fim": 18, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "E a linha era patrimônio declarado no imposto de renda.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 18.1, "fim": 22.1, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Esse tempo passou. Agora imagine o seu celular funcionando assim.", "pausa": 0.4, "imagem": "assets/cena07.png", "camada": "seria", "ini": 22.5, "fim": 26.5, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "O número custaria o preço de um carro.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "seria", "ini": 26.6, "fim": 29.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Você entraria em uma fila de anos para ter um.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 29.9, "fim": 33.9, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Filhos herdariam a linha da família.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 34, "fim": 36.4, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Pedir o Wi-Fi do vizinho seria quase um pedido de casamento.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 36.5, "fim": 40.9, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Mandar mensagem seria coisa de rico.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 41, "fim": 43.4, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "O corretor de linhas seria uma profissão.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 43.5, "fim": 46.3, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E perder o celular seria perder um imóvel.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 46.4, "fim": 49.6, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Empresas pequenas passariam meses sem atender ninguém.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 49.7, "fim": 52.5, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "A lista telefônica voltaria a ser poder.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 52.6, "fim": 55.4, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "E o Natal teria fila para falar com a avó.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 55.5, "fim": 59.5, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Agora olhe para o seu celular.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 59.6, "fim": 62, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Quanto ele vale para você?", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 62.1, "fim": 64.1, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Você venderia o seu número hoje?", "pausa": 0.3, "imagem": "assets/cena20.png", "camada": "voce", "ini": 64.4, "fim": 66.8, "movimento": "zoom-out"}
+];

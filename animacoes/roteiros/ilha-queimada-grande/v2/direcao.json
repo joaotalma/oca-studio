@@ -1,0 +1,181 @@
+{
+  "versao": 2,
+  "slug": "ilha-queimada-grande-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "Uma paisagem bonita é motivo suficiente para entrar?",
+  "pista": "barco diante da ilha",
+  "virada": "A distância que parece um obstáculo também pode ser parte da proteção do lugar.",
+  "resposta": "Você escolheria chegar mais perto ou preservar a distância?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar barco diante da ilha",
+      "revela": "Você pisaria onde não deveria estar?",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Entre Peruíbe e Itanhaém, existe uma ilha chamada Queimada Grande.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "É conhecida como Ilha das Cobras.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Você tentaria encontrar uma maneira segura de conhecer o lugar sem alterar sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Barcos de turismo fariam fila no costão de pedra.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Alguém venderia selfie com cobra.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Mas transformar a curiosidade em visita também mudaria aquilo que despertou seu interesse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Em um verão, a primeira emergência chegaria ao continente.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Colecionadores tentariam levar uma jararaca escondida.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Você poderia observar de longe e aprender o que não conhecia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "A vontade de chegar seria compreensível, mas não transformaria qualquer acesso em boa ideia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Nem toda curiosidade precisa terminar numa pegada.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Conhecer o motivo da distância também poderia mudar a maneira como você olharia para aquele lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "A distância que parece um obstáculo também pode ser parte da proteção do lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "O barco não precisaria tocar a areia para a paisagem continuar impressionante.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 17,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Você escolheria chegar mais perto ou preservar a distância?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

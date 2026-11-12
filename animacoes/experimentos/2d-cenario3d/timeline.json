@@ -1,0 +1,18 @@
+{
+  "meta":{"w":1080,"h":1920,"fps":30,"dur":16,"clock":"reads","register":"editorial","loop":false},
+  "scenes":[
+    {"id":"varginha","start":0,"end":8,"beats":{"revelacao":3.2},"transitionOut":{"type":"cut","dur":0,"why":"Duas historias aprovadas; mesmo personagem e rua, outra hipotese."}},
+    {"id":"apagao","start":8,"end":16,"beats":{"janelaAcende":11.25,"janela":12},"transitionOut":{"type":"end","dur":0,"why":"A janela acesa responde a rua escura."}}
+  ],
+  "cuts":[8],
+  "hero":{"t":12,"what":"Uma janela permanece acesa na rua apagada."},
+  "captions":[
+    {"from":0,"to":4,"text":"E se fosse verdade em Varginha?","src":"et-de-varginha/falas.js:1"},
+    {"from":4,"to":8,"text":"Você contaria o que viu?","src":"et-de-varginha/falas.js:17"},
+    {"from":8,"to":12,"text":"Postes apagados mudariam a hora de voltar para casa.","src":"apagao-2001/falas.js:13"},
+    {"from":12,"to":16,"text":"O vizinho com a luz acesa viraria assunto da rua.","src":"apagao-2001/falas.js:12"}
+  ],
+  "texts":[{"id":"hook","text":"E se fosse verdade em Varginha?","from":0,"to":4,"role":"hook","px":96,"box":[100,275,860,320]}],
+  "silences":[{"from":0,"to":16}],
+  "terms":[]
+}

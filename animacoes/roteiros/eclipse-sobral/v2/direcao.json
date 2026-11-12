@@ -1,0 +1,191 @@
+{
+  "versao": 2,
+  "slug": "eclipse-sobral-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "Uma descoberta deixa de existir quando ninguém consegue observá-la?",
+  "pista": "placa fotográfica",
+  "virada": "A nuvem esconderia a observação, não alteraria o fenômeno.",
+  "resposta": "Você confiaria numa ideia antes de conseguir vê-la?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar placa fotográfica",
+      "revela": "Uma nuvem poderia esconder a prova.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1919, cientistas britânicos foram a Sobral, no Ceará.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Queriam fotografar um eclipse total do Sol.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "E testar uma previsão de Einstein.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Você montaria os instrumentos e esperaria o instante que não poderia repetir naquele dia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Os cientistas voltariam para casa sem nenhuma prova.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Einstein teria que esperar outro eclipse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Se o céu fechasse, insistir na câmera não abriria um espaço entre as nuvens.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Outro país ficaria com o crédito da descoberta.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Cientistas discutiriam por muito mais tempo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Você guardaria as placas vazias, porque a viagem ainda teria registrado uma tentativa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Outra equipe precisaria repetir a pergunta em outro lugar e momento.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "O fracasso de uma foto não encerraria uma ideia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "A espera mostraria por que uma boa explicação precisa continuar podendo ser colocada à prova.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "A nuvem esconderia a observação, não alteraria o fenômeno.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 17,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "A foto poderia faltar. A pergunta dos cientistas continuaria esperando outra oportunidade.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 18,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em placa fotográfica",
+      "revela": "Você confiaria numa ideia antes de conseguir vê-la?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

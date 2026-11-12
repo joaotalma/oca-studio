@@ -1,0 +1,20 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"O preço pararia. A compra também.","camada":"seria","pausa":0,"ini":0,"fim":2.4,"inteiro":true,"movimento":"parado"},
+  {"n":2,"quem":"Narrador","texto":"Em 1986, um plano econômico congelou preços no Brasil.","camada":"foi","pausa":0.12,"ini":2.52,"fim":6.12,"inteiro":false,"movimento":"parado","fonte":"F01","filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"O consumo esquentou, e os produtos começaram a faltar.","camada":"foi","pausa":0.12,"ini":6.24,"fim":9.84,"inteiro":false,"movimento":"parado","fonte":"F01","filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"Principalmente a carne bovina.","camada":"foi","pausa":0.12,"ini":9.96,"fim":11.56,"inteiro":false,"movimento":"parado","fonte":"F01","filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"Agora imagine esse cenário chegando à sua rotina.","camada":"seria","pausa":0.12,"ini":11.68,"fim":14.88,"inteiro":false,"movimento":"parado"},
+  {"n":6,"quem":"Narrador","texto":"Você chegaria ao mercado com a conta pronta, esperando finalmente comprar mais.","camada":"seria","pausa":0.12,"ini":15,"fim":19.8,"inteiro":false,"movimento":"parado"},
+  {"n":7,"quem":"Narrador","texto":"O preço seria o mesmo, mas a prateleira estaria vazia.","camada":"seria","pausa":0.12,"ini":19.92,"fim":23.92,"inteiro":false,"movimento":"parado"},
+  {"n":8,"quem":"Narrador","texto":"Vizinhos fotografariam a etiqueta do mercado.","camada":"seria","pausa":0.12,"ini":24.04,"fim":26.44,"inteiro":false,"movimento":"parado"},
+  {"n":9,"quem":"Narrador","texto":"Mas repetir o preço de ontem não colocaria de volta o produto que faltasse hoje.","camada":"seria","pausa":0.12,"ini":26.56,"fim":32.56,"inteiro":false,"movimento":"parado"},
+  {"n":10,"quem":"Narrador","texto":"Grupos de mensagem avisariam onde chegou frango.","camada":"seria","pausa":0.12,"ini":32.68,"fim":35.48,"inteiro":false,"movimento":"parado"},
+  {"n":11,"quem":"Narrador","texto":"O churrasco de domingo viraria evento raro.","camada":"seria","pausa":0.12,"ini":35.6,"fim":38.4,"inteiro":false,"movimento":"parado"},
+  {"n":12,"quem":"Narrador","texto":"Você perguntaria quando chegaria a próxima entrega.","camada":"seria","pausa":0.12,"ini":38.52,"fim":41.32,"inteiro":false,"movimento":"parado"},
+  {"n":13,"quem":"Narrador","texto":"Ao receber uma resposta incerta, teria que escolher entre esperar e procurar outra loja.","camada":"seria","pausa":0.12,"ini":41.44,"fim":47.04,"inteiro":false,"movimento":"parado"},
+  {"n":14,"quem":"Narrador","texto":"O caminho para economizar começaria a custar tempo.","camada":"seria","pausa":0.12,"ini":47.16,"fim":50.36,"inteiro":false,"movimento":"parado"},
+  {"n":15,"quem":"Narrador","texto":"Sua lista continuaria a mesma, mas a compra já não dependeria só da quantia que trouxe no bolso.","camada":"seria","pausa":0.12,"ini":50.48,"fim":57.68,"inteiro":false,"movimento":"parado"},
+  {"n":16,"quem":"Narrador","texto":"A promessa de preço acessível dependeria de existir produto para comprar.","camada":"seria","pausa":0.45,"ini":58.13,"fim":62.53,"inteiro":false,"movimento":"zoom-in"},
+  {"n":17,"quem":"Narrador","texto":"A etiqueta seria a mesma. O que ela permitiria levar para casa teria mudado.","camada":"seria","pausa":0.12,"ini":62.65,"fim":68.25,"inteiro":false,"movimento":"parado"},
+  {"n":18,"quem":"Narrador","texto":"Você procuraria o menor preço ou o produto disponível?","camada":"voce","pausa":0.12,"ini":68.37,"fim":71.97,"inteiro":false,"movimento":"parado"}
+];

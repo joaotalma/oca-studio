@@ -1,0 +1,177 @@
+{
+  "slug": "cassinos-1946-v2",
+  "titulo": "Seu crachá não abriria mais a porta.",
+  "pergunta": "O que acontece quando um trabalho permitido deixa de ser?",
+  "pista": "crachá que já não abre a porta",
+  "virada": "A experiência continuaria com você, mesmo quando o trabalho perdesse seu lugar.",
+  "resposta": "O que do seu trabalho continuaria valendo?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.migalhas.com.br/quentes/465286/apos-80-anos-o-que-aproxima-ou-nao-proibicoes-de-cassinos-e-bets",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Seu crachá não abriria mais a porta.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar crachá que já não abre a porta",
+      "revela": "Seu crachá não abriria mais a porta.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 30 de abril de 1946, um decreto mudou tudo para muita gente.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 30 de abril de 1946, um decreto mudou tudo para muita gente.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Os cassinos foram fechados em todo o território nacional.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Os cassinos foram fechados em todo o território nacional.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você procuraria outra empresa, levando o mesmo currículo e os mesmos anos de experiência.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Você procuraria outra empresa, levando o mesmo currículo e os mesmos anos de experiência.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você acordaria com o seu trabalho proibido por um papel.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Você acordaria com o seu trabalho proibido por um papel.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O crachá não abriria mais a porta.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "O crachá não abriria mais a porta.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas a dificuldade não seria trocar de patrão: naquele cenário, a atividade inteira estaria proibida.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Mas a dificuldade não seria trocar de patrão: naquele cenário, a atividade inteira estaria proibida.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "As pessoas continuariam fazendo escondido o que você fazia às claras.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "As pessoas continuariam fazendo escondido o que você fazia às claras.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Sua família perguntaria o que fazer no mês seguinte.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Sua família perguntaria o que fazer no mês seguinte.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você guardaria o uniforme para uma entrevista que talvez nem existisse naquela área.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Você guardaria o uniforme para uma entrevista que talvez nem existisse naquela área.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Precisaria traduzir sua experiência para uma vaga com outro nome.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "Precisaria traduzir sua experiência para uma vaga com outro nome.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que parecia apenas uma mudança no papel alcançaria o horário da casa.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "O que parecia apenas uma mudança no papel alcançaria o horário da casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A experiência continuaria com você, mesmo quando o trabalho perdesse seu lugar.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "A experiência continuaria com você, mesmo quando o trabalho perdesse seu lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "O crachá perderia a função. Você ainda precisaria descobrir onde usar o que sabe.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "O crachá perderia a função. Você ainda precisaria descobrir onde usar o que sabe.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O que do seu trabalho continuaria valendo?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em crachá que já não abre a porta",
+      "revela": "O que do seu trabalho continuaria valendo?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    }
+  ]
+}

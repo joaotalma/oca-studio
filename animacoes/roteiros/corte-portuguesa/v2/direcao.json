@@ -1,0 +1,161 @@
+{
+  "versao": 2,
+  "slug": "corte-portuguesa-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "Como seria viver no lugar de onde saem as ordens?",
+  "pista": "mapa com o Atlântico no centro",
+  "virada": "Trocar o centro do mapa mudaria a forma de contar a mesma história.",
+  "resposta": "Você se imaginaria súdito ou cidadão desse país?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar mapa com o Atlântico no centro",
+      "revela": "A metrópole ficaria deste lado do oceano.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "As tropas de Napoleão ameaçavam invadir Portugal.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Com apoio da Inglaterra, a corte fugiu para o Brasil.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Você tentaria reconhecer o seu país nos feriados, nos nomes das ruas e nas notícias.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "O Rio seria a capital de um império dos dois lados do Atlântico.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Portugueses viriam tentar a vida na metrópole, aqui.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Mas chamar um lugar de centro também mudaria quem seria tratado como distante.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "O dia da Independência talvez nunca existisse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Os museus de Lisboa guardariam só as lembranças do rei.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Você abriria o livro da escola e procuraria a parte em que seu país ganha autonomia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Talvez a pergunta sobre quem decide continuasse presente sob outros símbolos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Trocar o centro do mapa mudaria a forma de contar a mesma história.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "O oceano seria o mesmo. O lado de onde você olha para ele mudaria a história.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Você se imaginaria súdito ou cidadão desse país?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

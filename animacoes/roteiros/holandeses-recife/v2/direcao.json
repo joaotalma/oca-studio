@@ -1,0 +1,181 @@
+{
+  "versao": 2,
+  "slug": "holandeses-recife-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "O que uma outra história mudaria no seu pertencimento?",
+  "pista": "placa com o nome da cidade",
+  "virada": "Bandeira e língua não explicariam sozinhas a identidade de quem vive ali.",
+  "resposta": "O que faria esse lugar continuar sendo sua casa?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar placa com o nome da cidade",
+      "revela": "Você precisaria traduzir a própria cidade.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1630, uma esquadra holandesa chegou a Pernambuco.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em fevereiro, eles tomaram Olinda e levaram a capital para Recife.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Você tentaria reconhecer o caminho de casa pelas ruas e pelos edifícios familiares.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "O Nordeste poderia ser outro país.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Você precisaria de passaporte para ir de Salvador a Recife.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Mas uma escola e outra língua mudariam a forma de aprender o nome desses lugares.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "As placas de rua estariam em holandês.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "O português seria língua estrangeira na escola de Olinda.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Você encontraria a família reunida falando de um lugar cujo nome mudou.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Os caminhos e as lembranças não caberiam inteiros numa troca de bandeiras.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "A história teria passado por quem vive ali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Antes de escolher uma identidade pronta, seria preciso ouvir como essas pessoas chamariam a própria casa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "Bandeira e língua não explicariam sozinhas a identidade de quem vive ali.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "A placa seria diferente. As lembranças de quem cresceu ali continuariam tendo endereço.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 17,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em placa com o nome da cidade",
+      "revela": "O que faria esse lugar continuar sendo sua casa?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

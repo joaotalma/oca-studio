@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"E se os caminhões nunca voltassem?","pausa":0,"imagem":"assets/gancho.png","camada":"seria","inteiro":true,"destaque":["nunca","voltassem"],"ini":0,"fim":2.4},
+  {"n":2,"quem":"Narrador","texto":"Em 2018, eles pararam por dez dias.","imagem":"assets/fila.png","camada":"foi","destaque":["2018","dez","dias"],"ini":2.5,"fim":5.3,"movimento":"zoom-in","pausa":0.1},
+  {"n":3,"quem":"Narrador","texto":"Dez dias bastaram.","imagem":"assets/calendario.png","camada":"foi","ini":5.4,"fim":6.6,"movimento":"zoom-in","pausa":0.1},
+  {"n":4,"quem":"Narrador","texto":"No Rio, postos ficaram com as bombas secas.","imagem":"assets/bomba.png","camada":"foi","movimento":"zoom-out","destaque":["bombas","secas"],"ini":6.7,"fim":9.9,"pausa":0.1},
+  {"n":5,"quem":"Narrador","texto":"Motoristas enfrentaram filas enormes para encher o tanque.","imagem":"assets/carros.png","camada":"foi","destaque":["filas"],"ini":10,"fim":13.2,"movimento":"cima","pausa":0.1},
+  {"n":6,"quem":"Narrador","texto":"Supermercados ficaram sem diversos produtos.","imagem":"assets/prateleira.png","camada":"foi","destaque":["sem"],"ini":13.3,"fim":15.3,"movimento":"esq","pausa":0.1},
+  {"n":7,"quem":"Narrador","texto":"Em São Paulo, a oferta da Ceagesp caiu quase pela metade.","imagem":"assets/caixas.png","camada":"foi","destaque":["metade"],"ini":15.4,"fim":19.8,"movimento":"dir","pausa":0.1},
+  {"n":8,"quem":"Narrador","texto":"Dez aeroportos ficaram sem combustível.","imagem":"assets/aeroporto.png","camada":"foi","movimento":"esq","destaque":["aeroportos"],"ini":19.9,"fim":21.9,"pausa":0.1},
+  {"n":9,"quem":"Narrador","texto":"A Fazenda estimou a conta em 15 bilhões de reais.","imagem":"assets/conta.png","camada":"foi","destaque":["15","bilhões"],"ini":22,"fim":26,"movimento":"zoom-in","pausa":0.1},
+  {"n":10,"quem":"Narrador","texto":"Mas a greve acabou. Agora imagine se ela nunca acabasse.","pausa":0.4,"imagem":"assets/rosto.png","camada":"seria","destaque":["nunca","acabasse"],"ini":26.4,"fim":30.4,"movimento":"zoom-in"},
+  {"n":11,"quem":"Narrador","texto":"No primeiro mês, gasolina seria mais disputada que dinheiro.","imagem":"assets/galao.png","camada":"seria","destaque":["gasolina"],"ini":30.5,"fim":34.1,"movimento":"zoom-out","pausa":0.1},
+  {"n":12,"quem":"Narrador","texto":"As ruas ficariam vazias e o metrô, lotado.","imagem":"assets/metro.png","camada":"seria","destaque":["metrô"],"ini":34.2,"fim":37.4,"movimento":"dir","pausa":0.1},
+  {"n":13,"quem":"Narrador","texto":"Quem tem carro elétrico seria o dono da cidade.","imagem":"assets/eletrico.png","camada":"seria","movimento":"baixo","destaque":["dono"],"ini":37.5,"fim":41.1,"pausa":0.1},
+  {"n":14,"quem":"Narrador","texto":"Até precisar de uma peça, que também viria de caminhão.","imagem":"assets/peca.png","camada":"seria","destaque":["caminhão"],"ini":41.2,"fim":45.2,"movimento":"esq","pausa":0.1},
+  {"n":15,"quem":"Narrador","texto":"No segundo mês, o mercado abriria sem ter o que vender.","imagem":"assets/loja.png","camada":"seria","destaque":["sem"],"ini":45.3,"fim":49.7,"movimento":"zoom-in","pausa":0.1},
+  {"n":16,"quem":"Narrador","texto":"Comida valeria mais do que salário.","imagem":"assets/tomate.png","camada":"seria","destaque":["comida"],"ini":49.8,"fim":52.2,"movimento":"zoom-in","pausa":0.1},
+  {"n":17,"quem":"Narrador","texto":"Quem tem horta no quintal seria a pessoa mais rica da rua.","imagem":"assets/horta.png","camada":"seria","movimento":"dir","destaque":["horta"],"ini":52.3,"fim":57.1,"pausa":0.1},
+  {"n":18,"quem":"Narrador","texto":"Agora olhe para a sua geladeira.","pausa":0.1,"imagem":"assets/geladeira.png","camada":"voce","destaque":["sua"],"ini":57.2,"fim":59.6,"movimento":"zoom-in"},
+  {"n":19,"quem":"Narrador","texto":"Conte o que ali não chegou de caminhão.","imagem":"assets/dentro.png","camada":"voce","destaque":["caminhão"],"ini":59.7,"fim":62.9,"movimento":"cima","pausa":0.1},
+  {"n":20,"quem":"Narrador","texto":"Quantos dias a sua casa aguentaria?","pausa":0.3,"imagem":"assets/final.png","camada":"voce","destaque":["quantos","dias"],"ini":63.2,"fim":65.6,"movimento":"zoom-in"}
+];

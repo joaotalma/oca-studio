@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se chovesse em Sobral em 1919?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Em 1919, cientistas britânicos foram a Sobral, no Ceará.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 6.5, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Queriam fotografar um eclipse total do Sol.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 6.6, "fim": 9.4, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "E testar uma previsão de Einstein.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 9.5, "fim": 11.9, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "A luz das estrelas se curvaria perto do Sol.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 12, "fim": 15.6, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Outra equipe, na África, teve o céu encoberto.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 15.7, "fim": 18.9, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Em Sobral, o céu estava limpo.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19, "fim": 21.4, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "As placas registraram 12 estrelas.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "foi", "ini": 21.5, "fim": 23.5, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Deu certo. Agora imagine se o céu de Sobral tivesse fechado.", "pausa": 0.4, "imagem": "assets/cena09.png", "camada": "seria", "ini": 23.9, "fim": 28.3, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Os cientistas voltariam para casa sem nenhuma prova.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 28.4, "fim": 31.6, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Einstein teria que esperar outro eclipse.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 31.7, "fim": 34.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "O nome dele demoraria mais para virar sinônimo de gênio.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 34.2, "fim": 38.2, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Sobral seria só mais uma cidade do interior no mapa.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 38.3, "fim": 42.3, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "Nenhum museu lembraria aquela manhã.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 42.4, "fim": 44.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E uma nuvem teria mudado os livros de ciência.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 44.5, "fim": 48.1, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Outro país ficaria com o crédito da descoberta.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 48.2, "fim": 51.4, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Cientistas discutiriam por muito mais tempo.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 51.5, "fim": 53.9, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E uma foto em outro lugar mudaria tudo.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 54, "fim": 57.2, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora olhe para o céu da sua cidade.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 57.3, "fim": 60.5, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Quantas coisas dependem de um dia de sol?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 60.6, "fim": 63.8, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "O que mudaria na sua vida com uma nuvem?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 64.1, "fim": 67.7, "movimento": "esq"}
+];

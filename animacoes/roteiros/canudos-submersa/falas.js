@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se a seca revelasse uma cidade?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "No sertão da Bahia, o açude de Cocorobó represou o rio Vaza-Barris.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 7.7, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Debaixo dele ficou a segunda Canudos.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.8, "fim": 10.2, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "O vilarejo foi desocupado em 1968 para o açude encher.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 10.3, "fim": 14.3, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Os moradores se mudaram para perto.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 14.4, "fim": 16.8, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Quase 30 anos depois, veio a seca.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.9, "fim": 19.7, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "E as ruínas foram voltando à superfície.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 19.8, "fim": 22.6, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Entre torrões de lodo, surgiu a igreja da segunda Canudos.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "foi", "ini": 22.7, "fim": 26.7, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Já aconteceu lá. Agora imagine se acontecesse na sua cidade.", "pausa": 0.4, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.1, "fim": 31.1, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "O rio baixaria, e a torre de uma igreja apareceria.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 31.2, "fim": 35.2, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Sua avó reconheceria a rua onde nasceu.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 35.3, "fim": 38.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Pessoas caminhariam entre portas que levam a lugar nenhum.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 38.2, "fim": 41.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Alguém acharia um objeto com o nome da família.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 41.9, "fim": 45.5, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "A cidade inteira iria ver, em silêncio.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 45.6, "fim": 48.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E quando a chuva voltasse, tudo sumiria de novo.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 48.5, "fim": 52.1, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Historiadores correriam para medir cada pedra.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 52.2, "fim": 54.6, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Crianças brincariam onde antes era o altar.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 54.7, "fim": 57.5, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E os mais velhos contariam a história de novo.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 57.6, "fim": 61.2, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora pense na casa onde você cresceu.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 61.3, "fim": 64.1, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "O que ainda estaria lá dentro?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 64.2, "fim": 66.6, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Você voltaria para olhar?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 66.9, "fim": 68.5, "movimento": "esq"}
+];

@@ -1,0 +1,171 @@
+{
+  "versao": 2,
+  "slug": "fordlandia-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "Uma cidade pode ser planejada sem entender o lugar?",
+  "pista": "planta da cidade",
+  "virada": "Desenhar a solução no papel não garantiria controlar o ambiente e a vida local.",
+  "resposta": "Você mudaria o plano ou insistiria no modelo?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar planta da cidade",
+      "revela": "Uma cidade perfeita poderia não funcionar.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1927, Henry Ford criou uma cidade no meio da Amazônia.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Ele queria produzir borracha para os seus carros.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "O plano era tirar látex de seringueiras.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Você tentaria repetir o modelo que funcionou em outro lugar, começando pelas construções.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "A floresta teria avenidas planejadas como no interior dos Estados Unidos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "A sirene da fábrica marcaria a hora de acordar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Mas cada dificuldade exigiria entender a região, em vez de apenas copiar o desenho.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "O inglês seria a língua do chefe e da placa da rua.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Seu avô poderia ter trabalhado em uma linha de montagem no Tapajós.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Você olharia a planta pronta antes de olhar pela janela.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Para mudar a rotina, precisaria aceitar que o terreno não é uma página em branco.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Desenhar a solução no papel não garantiria controlar o ambiente e a vida local.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "A cidade poderia parecer pronta por fora e continuar sem resolver a razão de existir.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em planta da cidade",
+      "revela": "Você mudaria o plano ou insistiria no modelo?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

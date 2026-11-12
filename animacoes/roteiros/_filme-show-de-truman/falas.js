@@ -1,0 +1,17 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"Imagine que todo dia você acorda, vai pro trabalho e volta pra casa.","pausa":0,"imagem":"assets/cena01.png","camada":"voce","inteiro":true,"ini":0,"fim":5.2},
+  {"n":2,"quem":"Narrador","texto":"Tudo normal. O vizinho te dá bom-dia. Sua esposa te espera pro jantar.","pausa":0.1,"imagem":"assets/cena02.png","camada":"voce","movimento":"esq","ini":5.3,"fim":10.5},
+  {"n":3,"quem":"Narrador","texto":"Mas tem um detalhe que você nunca percebeu.","pausa":0.3,"imagem":"assets/cena03.png","camada":"voce","movimento":"zoom-in","destaque":["detalhe"],"ini":10.8,"fim":14},
+  {"n":4,"quem":"Narrador","texto":"Desde que você nasceu, cada passo seu passa ao vivo na TV.","pausa":0.2,"imagem":"assets/cena04.png","camada":"voce","movimento":"zoom-out","destaque":["ao","vivo"],"ini":14.2,"fim":19},
+  {"n":5,"quem":"Narrador","texto":"Essa é a vida do Truman, em O Show de Truman, de 1998.","pausa":0.1,"imagem":"assets/cena05.png","camada":"seria","selo":"O FILME","movimento":"dir","destaque":["Show","de","Truman"],"ini":19.1,"fim":24.3},
+  {"n":6,"quem":"Narrador","texto":"Câmeras escondidas em tudo. A esposa, o amigo, os vizinhos: todos atores.","pausa":0.1,"imagem":"assets/cena06.png","camada":"seria","selo":"O FILME","movimento":"esq","destaque":["atores"],"ini":24.4,"fim":29.2},
+  {"n":7,"quem":"Narrador","texto":"Até que, numa manhã, um holofote cai do céu na frente dele.","pausa":0.1,"imagem":"assets/cena07.png","camada":"seria","selo":"O FILME","movimento":"baixo","destaque":["holofote"],"ini":29.3,"fim":34.1},
+  {"n":8,"quem":"Narrador","texto":"E o Truman começa a desconfiar de tudo.","pausa":0.1,"imagem":"assets/cena08.png","camada":"seria","selo":"O FILME","movimento":"zoom-in","ini":34.2,"fim":37.4},
+  {"n":9,"quem":"Narrador","texto":"Será que ele consegue sair? Isso, só vendo.","pausa":0.1,"imagem":"assets/cena09.png","camada":"seria","selo":"O FILME","movimento":"cima","ini":37.5,"fim":40.7},
+  {"n":10,"quem":"Narrador","texto":"A crítica diz que o filme previu os reality shows antes de eles existirem.","pausa":0.3,"imagem":"assets/cena10.png","camada":"foi","selo":"A INTERNET DIZ","movimento":"zoom-in","destaque":["reality","shows"],"ini":41,"fim":46.6},
+  {"n":11,"quem":"Narrador","texto":"IMDb: 8,2. Crítica: 94%. Público: 89%.","pausa":0.1,"imagem":"assets/cena11.png","camada":"foi","selo":"NOTA","movimento":"zoom-out","destaque":["8,2","94%","89%"],"ini":46.7,"fim":49.1,"hud":[{"rotulo":"IMDb","valor":8.2},{"rotulo":"Crítica","valor":94,"sufixo":"%"},{"rotulo":"Público","valor":89,"sufixo":"%"}]},
+  {"n":12,"quem":"Narrador","texto":"Nota Plotline: 88 de 100.","pausa":0.2,"imagem":"assets/cena11.png","camada":"foi","selo":"NOTA","destaque":["88"],"ini":49.3,"fim":51.3,"hud":{"rotulo":"Nota Plotline","valor":88}},
+  {"n":13,"quem":"Narrador","texto":"Vale a pena.","pausa":0.3,"imagem":"assets/cena12.png","camada":"voce","selo":"VALE A PENA","movimento":"zoom-in","destaque":["Vale","a","pena"],"ini":51.6,"fim":52.8,"carimbo":"VALE A PENA"},
+  {"n":14,"quem":"Narrador","texto":"Pra assistir, tá no [PLATAFORMA A CONFERIR].","pausa":0.1,"imagem":"assets/cena13.png","camada":"foi","selo":"ONDE ASSISTIR","movimento":"dir","ini":52.9,"fim":55.7},
+  {"n":15,"quem":"Narrador","texto":"E aí: quem garante que ninguém está assistindo a sua?","pausa":0.3,"imagem":"assets/cena14.png","camada":"voce","movimento":"zoom-in","destaque":["assistindo"],"ini":56,"fim":60}
+];

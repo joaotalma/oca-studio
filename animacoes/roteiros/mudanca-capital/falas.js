@@ -1,0 +1,21 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Imagine mudar a capital em quatro anos.", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "De 1956 a 1960, o Brasil construiu uma capital do zero.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Ela saiu do Rio de Janeiro e foi para o Planalto Central.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 12.2, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "O Plano Piloto ficou pronto em cerca de quatro anos.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 12.3, "fim": 16.3, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Calcula-se que cerca de 60 mil operários foram para lá.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 16.4, "fim": 20.4, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Eles ficaram conhecidos como candangos.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 20.5, "fim": 22.5, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "E seis meses antes do fim, a verba já tinha acabado.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 22.6, "fim": 27, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Brasília ficou pronta. Agora imagine fazer isso de novo em 2030.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 27.4, "fim": 31.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "O governo anunciaria uma nova capital no meio do mapa.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 31.9, "fim": 35.9, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Sua cidade poderia virar a próxima, ou perder tudo.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 36, "fim": 39.6, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Imóvel em lugar nenhum valeria uma fortuna da noite para o dia.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 39.7, "fim": 44.5, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Milhares de pessoas mudariam com os móveis nas costas.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 44.6, "fim": 48.2, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Os ministérios funcionariam em contêineres.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 48.3, "fim": 50.3, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E Brasília viraria a nova cidade esquecida.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 50.4, "fim": 53.2, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Os deputados reclamariam do voo novo.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 53.3, "fim": 55.7, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "E o Rio sentiria saudade outra vez.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 55.8, "fim": 58.6, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Agora escolha um lugar no mapa.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "voce", "ini": 58.7, "fim": 61.1, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Onde você colocaria a capital?", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 61.2, "fim": 63.2, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Você se mudaria para lá amanhã?", "pausa": 0.3, "imagem": "assets/cena19.png", "camada": "voce", "ini": 63.5, "fim": 65.9, "movimento": "zoom-in"}
+];

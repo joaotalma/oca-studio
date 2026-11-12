@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se o Acre fosse da Bolívia?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "O Acre já pertenceu à Bolívia.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 5.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Mas a região era ocupada por seringueiros brasileiros.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 5.4, "fim": 8.6, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Isso gerou conflito e a Revolução Acreana.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 8.7, "fim": 11.5, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Em 17 de novembro de 1903, veio o Tratado de Petrópolis.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 11.6, "fim": 16, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "O Brasil pagou 2 milhões de libras esterlinas à Bolívia.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.1, "fim": 20.1, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "E o Acre passou a ser brasileiro.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 20.2, "fim": 23, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Foi assim que ficou. Agora imagine se esse tratado nunca tivesse existido.", "pausa": 0.4, "imagem": "assets/cena08.png", "camada": "seria", "ini": 23.4, "fim": 28.2, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Rio Branco seria uma cidade boliviana.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 28.3, "fim": 30.7, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "A piada de que o Acre não existe nunca teria nascido.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 30.8, "fim": 35.2, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Você precisaria de passaporte para comer lá.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 35.3, "fim": 38.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "A seleção boliviana teria jogadores com sotaque do Norte.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 38.2, "fim": 41.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Os seringueiros teriam outra bandeira.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 41.9, "fim": 43.9, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E o Brasil teria um formato diferente no mapa da escola.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 44, "fim": 48.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Viajar para lá exigiria trocar dinheiro.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 48.5, "fim": 50.9, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "As fronteiras da floresta teriam outro dono.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 51, "fim": 53.8, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "O mapa escolar teria um contorno a menos.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 53.9, "fim": 57.1, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E muita gente teria nascido com outra nacionalidade.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 57.2, "fim": 60.4, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora pegue um mapa do Brasil.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 60.5, "fim": 62.9, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Tente desenhar sem aquele pedaço.", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 63, "fim": 65, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Você notaria que falta alguma coisa?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 65.3, "fim": 67.7, "movimento": "esq"}
+];

@@ -1,0 +1,171 @@
+{
+  "versao": 2,
+  "slug": "noite-dos-ovnis-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "Qual evidência transformaria uma perseguição em resposta?",
+  "pista": "ponto luminoso no radar",
+  "virada": "Chegar mais perto não garantiria compreender o que foi observado.",
+  "resposta": "O que você aceitaria como prova?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar ponto luminoso no radar",
+      "revela": "Alcançar a luz resolveria o mistério?",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 19 de maio de 1986, luzes apareceram no céu de vários estados.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "A Força Aérea mandou cinco caças atrás deles.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Você tentaria registrar posição, direção e horário antes de explicar o que estava vendo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "O piloto veria o que ninguém jamais viu.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "O rádio da base ficaria em silêncio por alguns segundos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Mas a vontade de encontrar uma resposta poderia ser mais rápida que a verificação.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "O governo teria que decidir o que contar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "A notícia sairia em todos os jornais do planeta.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Você guardaria o registro para comparar com outras observações.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Se os relatos discordassem, precisaria preservar a diferença em vez de encaixar tudo numa única explicação.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Uma pergunta aberta não seria uma resposta escondida.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "Chegar mais perto não garantiria compreender o que foi observado.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "O ponto no radar seria uma observação. A origem dele continuaria sendo outra pergunta.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em ponto luminoso no radar",
+      "revela": "O que você aceitaria como prova?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

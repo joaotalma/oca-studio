@@ -1,0 +1,20 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"Uma nuvem poderia esconder a prova.","camada":"seria","pausa":0,"ini":0,"fim":2.4,"inteiro":true,"movimento":"parado"},
+  {"n":2,"quem":"Narrador","texto":"Em 1919, cientistas britânicos foram a Sobral, no Ceará.","camada":"foi","pausa":0.12,"ini":2.52,"fim":6.12,"inteiro":false,"movimento":"parado","fonte":"F01","filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"Queriam fotografar um eclipse total do Sol.","camada":"foi","pausa":0.12,"ini":6.24,"fim":9.04,"inteiro":false,"movimento":"parado","fonte":"F01","filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"E testar uma previsão de Einstein.","camada":"foi","pausa":0.12,"ini":9.16,"fim":11.56,"inteiro":false,"movimento":"parado","fonte":"F01","filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"Agora imagine esse cenário chegando à sua rotina.","camada":"seria","pausa":0.12,"ini":11.68,"fim":14.88,"inteiro":false,"movimento":"parado"},
+  {"n":6,"quem":"Narrador","texto":"Você montaria os instrumentos e esperaria o instante que não poderia repetir naquele dia.","camada":"seria","pausa":0.12,"ini":15,"fim":20.6,"inteiro":false,"movimento":"parado"},
+  {"n":7,"quem":"Narrador","texto":"Os cientistas voltariam para casa sem nenhuma prova.","camada":"seria","pausa":0.12,"ini":20.72,"fim":23.92,"inteiro":false,"movimento":"parado"},
+  {"n":8,"quem":"Narrador","texto":"Einstein teria que esperar outro eclipse.","camada":"seria","pausa":0.12,"ini":24.04,"fim":26.44,"inteiro":false,"movimento":"parado"},
+  {"n":9,"quem":"Narrador","texto":"Se o céu fechasse, insistir na câmera não abriria um espaço entre as nuvens.","camada":"seria","pausa":0.12,"ini":26.56,"fim":32.16,"inteiro":false,"movimento":"parado"},
+  {"n":10,"quem":"Narrador","texto":"Outro país ficaria com o crédito da descoberta.","camada":"seria","pausa":0.12,"ini":32.28,"fim":35.48,"inteiro":false,"movimento":"parado"},
+  {"n":11,"quem":"Narrador","texto":"Cientistas discutiriam por muito mais tempo.","camada":"seria","pausa":0.12,"ini":35.6,"fim":38,"inteiro":false,"movimento":"parado"},
+  {"n":12,"quem":"Narrador","texto":"Você guardaria as placas vazias, porque a viagem ainda teria registrado uma tentativa.","camada":"seria","pausa":0.12,"ini":38.12,"fim":43.32,"inteiro":false,"movimento":"parado"},
+  {"n":13,"quem":"Narrador","texto":"Outra equipe precisaria repetir a pergunta em outro lugar e momento.","camada":"seria","pausa":0.12,"ini":43.44,"fim":47.84,"inteiro":false,"movimento":"parado"},
+  {"n":14,"quem":"Narrador","texto":"O fracasso de uma foto não encerraria uma ideia.","camada":"seria","pausa":0.12,"ini":47.96,"fim":51.56,"inteiro":false,"movimento":"parado"},
+  {"n":15,"quem":"Narrador","texto":"A espera mostraria por que uma boa explicação precisa continuar podendo ser colocada à prova.","camada":"seria","pausa":0.12,"ini":51.68,"fim":57.68,"inteiro":false,"movimento":"parado"},
+  {"n":16,"quem":"Narrador","texto":"A nuvem esconderia a observação, não alteraria o fenômeno.","camada":"seria","pausa":0.45,"ini":58.13,"fim":61.73,"inteiro":false,"movimento":"zoom-in"},
+  {"n":17,"quem":"Narrador","texto":"A foto poderia faltar. A pergunta dos cientistas continuaria esperando outra oportunidade.","camada":"seria","pausa":0.12,"ini":61.85,"fim":66.65,"inteiro":false,"movimento":"parado"},
+  {"n":18,"quem":"Narrador","texto":"Você confiaria numa ideia antes de conseguir vê-la?","camada":"voce","pausa":0.12,"ini":66.77,"fim":69.97,"inteiro":false,"movimento":"parado"}
+];

@@ -1,0 +1,171 @@
+{
+  "versao": 2,
+  "slug": "et-de-varginha-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "O que separaria uma experiência pessoal de uma prova?",
+  "pista": "registro do que você diz ter visto",
+  "virada": "Ter certeza do que viu não bastaria para demonstrar o que aconteceu.",
+  "resposta": "Você contaria imediatamente ou tentaria registrar primeiro?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar registro do que você diz ter visto",
+      "revela": "Você contaria o que ninguém acreditaria?",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em janeiro de 1996, no sul de Minas, três jovens contaram uma história.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Disseram ter visto uma criatura estranha em um terreno baldio.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1997, o Exército abriu um inquérito.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Você tentaria explicar o encontro, repetindo os detalhes para não esquecer nenhum deles.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "A criatura seria a prova mais importante da história do planeta.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Varginha viraria a cidade mais vigiada do mundo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Mas cada pessoa pediria uma prova diferente; sua convicção não seria uma fotografia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Cientistas e curiosos lotariam hotéis, estradas e padarias.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Outros países iriam querer explicações do Brasil.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Você anotaria o horário e procuraria saber se outra pessoa tinha visto a mesma coisa.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Uma lembrança diferente obrigaria você a reconsiderar um detalhe.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Ter certeza do que viu não bastaria para demonstrar o que aconteceu.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "A história poderia correr o mundo antes de alguém conseguir verificar o primeiro detalhe.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em registro do que você diz ter visto",
+      "revela": "Você contaria imediatamente ou tentaria registrar primeiro?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

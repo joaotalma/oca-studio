@@ -1,0 +1,1707 @@
+{
+  "slug": "apagao-2001-v2",
+  "titulo": "Geladeira ou banho quente?",
+  "paleta": "eletrico",
+  "pergunta": "O que você protegeria quando economizar exigisse escolher?",
+  "mecanismo": "tentativa → limite → solução compartilhada → novo custo",
+  "pista": "A geladeira permanece ligada enquanto outras coisas são desligadas.",
+  "virada": "Compartilhar um aparelho não elimina a responsabilidade por sua conta.",
+  "resposta": "A escolha passa de conforto para o que você não pode perder.",
+  "fontes": {
+    "F01": {
+      "url": "https://www12.senado.leg.br/noticias/materias/2001/10/17/iris-rezende-pede-suspensao-dos-cortes-de-energia",
+      "descricao": "Meta de 20% e possibilidade de corte no racionamento de 2001",
+      "situacao": "conferido",
+      "evidencia": "Página oficial localizada novamente por busca em 2026-11-08; Senado, 17/10/2001."
+    }
+  },
+  "autorizacao": "João autorizou nesta conversa, em 2026-11-08, ajustar o gerador, produzir um vídeo e criar uma voz original jovem no ElevenLabs. Esta é autorização de execução; avaliação artística do vídeo final permanece com João.",
+  "falas": [
+    {
+      "texto": "Geladeira ou banho quente: escolha um.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Duas escolhas: porta da geladeira iluminada e chuveiro quente",
+      "revela": "Geladeira ou banho quente: escolha um.",
+      "imagem": "assets/v01.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cozinha",
+      "motivoCorte": "Duas escolhas: porta da geladeira iluminada e chuveiro quente",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -0.25,
+            0,
+            3
+          ],
+          "altura": 2.85
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              -1.7,
+              0,
+              3
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Em 2001, o Brasil viveu um programa de racionamento de energia.",
+      "camada": "foi",
+      "funcao": "prova",
+      "acao": "Uma casa perde luz enquanto as outras permanecem acesas",
+      "revela": "Em 2001, o Brasil viveu um programa de racionamento de energia.",
+      "fonte": "F01",
+      "imagem": "assets/v02.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cidade",
+      "motivoCorte": "Uma casa perde luz enquanto as outras permanecem acesas",
+      "cena3d": {
+        "tipo": "rua",
+        "periodo": "noite",
+        "preenchimento": 0.34,
+        "luzes": [
+          {
+            "tipo": "poste",
+            "posicao": [
+              2.7,
+              4,
+              4
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "camera": {
+          "de": [
+            -0.4,
+            2.7,
+            -5
+          ],
+          "para": [
+            0.4,
+            2.8,
+            -5.5
+          ],
+          "alvo": [
+            0,
+            2,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "texto": "A meta era economizar vinte por cento.",
+      "camada": "foi",
+      "funcao": "prova",
+      "acao": "Medidor destaca a meta histórica",
+      "revela": "A meta era economizar vinte por cento.",
+      "fonte": "F01",
+      "imagem": "assets/v03.png",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "ambiente": "medidor",
+      "motivoCorte": "Medidor destaca a meta histórica",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "medidor",
+            "posicao": [
+              0,
+              0.3,
+              2
+            ]
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.4,
+            -2.5
+          ],
+          "para": [
+            0.05,
+            2.4,
+            -2.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Quem não cumprisse a meta podia ter a luz cortada.",
+      "camada": "foi",
+      "funcao": "prova",
+      "acao": "Rua demonstra a consequência do corte",
+      "revela": "Quem não cumprisse a meta podia ter a luz cortada.",
+      "fonte": "F01",
+      "imagem": "assets/v04.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cidade",
+      "motivoCorte": "Rua demonstra a consequência do corte",
+      "cena3d": {
+        "tipo": "rua",
+        "periodo": "noite",
+        "preenchimento": 0.34,
+        "luzes": [
+          {
+            "tipo": "poste",
+            "posicao": [
+              2.7,
+              4,
+              4
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "camera": {
+          "de": [
+            -0.4,
+            2.7,
+            -5
+          ],
+          "para": [
+            0.4,
+            2.8,
+            -5.5
+          ],
+          "alvo": [
+            0,
+            2,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Agora imagine essa regra sem data para acabar.",
+      "camada": "seria",
+      "funcao": "situacao",
+      "acao": "Voltar à cozinha da abertura",
+      "revela": "Agora imagine essa regra sem data para acabar.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v05.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cozinha",
+      "motivoCorte": "Voltar à cozinha da abertura",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          },
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              -1.35,
+              0,
+              3.6
+            ],
+            "ligada": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Você começaria desligando a televisão e as luzes dos quartos vazios.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Televisão apaga; lâmpadas dos cômodos vazios deixam de iluminar",
+      "revela": "Você começaria desligando a televisão e as luzes dos quartos vazios.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v06.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "sala",
+      "motivoCorte": "Televisão apaga; lâmpadas dos cômodos vazios deixam de iluminar",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "televisao",
+            "posicao": [
+              1,
+              0.2,
+              3
+            ],
+            "ligada": false
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "A conta cairia. Mas a geladeira continuaria ligada o dia inteiro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "A geladeira permanece acesa no ambiente escuro",
+      "revela": "A conta cairia. Mas a geladeira continuaria ligada o dia inteiro.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v07.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cozinha",
+      "motivoCorte": "A geladeira permanece acesa no ambiente escuro",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          },
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              -1.35,
+              0,
+              3.6
+            ],
+            "ligada": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Você reduziria o banho. Ao sair, ainda se perguntaria: foi suficiente?",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Água do chuveiro diminui; personagem pensa",
+      "revela": "Você reduziria o banho. Ao sair, ainda se perguntaria: foi suficiente?",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v08.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "banho",
+      "motivoCorte": "Água do chuveiro diminui; personagem pensa",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Na cozinha, a comida da semana estaria atrás daquela porta.",
+      "camada": "seria",
+      "funcao": "pista",
+      "acao": "Abrir o enquadramento para prateleiras de comida",
+      "revela": "Na cozinha, a comida da semana estaria atrás daquela porta.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v09.png",
+      "enquadramento": "detalhe",
+      "movimento": "zoom-in",
+      "ambiente": "comida",
+      "motivoCorte": "Abrir o enquadramento para prateleiras de comida",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              0,
+              0,
+              2
+            ],
+            "ligada": true,
+            "aberta": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0,
+            2.3,
+            -2.8
+          ],
+          "para": [
+            0.06,
+            2.3,
+            -2.6
+          ],
+          "alvo": [
+            0,
+            1.8,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Desligar a geladeira não seria economia: seria arriscar o que você já comprou.",
+      "camada": "seria",
+      "funcao": "custo",
+      "acao": "Alimento e tomada no mesmo enquadramento",
+      "revela": "Desligar a geladeira não seria economia: seria arriscar o que você já comprou.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v10.png",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "ambiente": "comida",
+      "motivoCorte": "Alimento e tomada no mesmo enquadramento",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              0,
+              0,
+              2
+            ],
+            "ligada": true,
+            "aberta": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0,
+            2.3,
+            -2.8
+          ],
+          "para": [
+            0.06,
+            2.3,
+            -2.6
+          ],
+          "alvo": [
+            0,
+            1.8,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Então você tentaria dividir uma geladeira com o vizinho.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Duas casas ligadas a uma geladeira central",
+      "revela": "Então você tentaria dividir uma geladeira com o vizinho.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v11.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "vizinhos",
+      "motivoCorte": "Duas casas ligadas a uma geladeira central",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.4,
+            0,
+            3.2
+          ],
+          "altura": 3
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              0,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          }
+        ],
+        "camera": {
+          "de": [
+            0,
+            2.6,
+            -5
+          ],
+          "para": [
+            0.25,
+            2.6,
+            -5.3
+          ],
+          "alvo": [
+            0,
+            1.9,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Uma geladeira para duas casas. A ideia pareceria resolver tudo.",
+      "camada": "seria",
+      "funcao": "solucao",
+      "acao": "Uma porta, dois caminhos de casa",
+      "revela": "Uma geladeira para duas casas. A ideia pareceria resolver tudo.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v12.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "vizinhos",
+      "motivoCorte": "Uma porta, dois caminhos de casa",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.4,
+            0,
+            3.2
+          ],
+          "altura": 3
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              0,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          }
+        ],
+        "camera": {
+          "de": [
+            0,
+            2.6,
+            -5
+          ],
+          "para": [
+            0.25,
+            2.6,
+            -5.3
+          ],
+          "alvo": [
+            0,
+            1.9,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Mas ela estaria na tomada de alguém. A conta também teria um dono.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Acompanhar o fio até o medidor de uma casa",
+      "revela": "Mas ela estaria na tomada de alguém. A conta também teria um dono.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v13.png",
+      "enquadramento": "detalhe",
+      "movimento": "zoom-in",
+      "ambiente": "medidor",
+      "motivoCorte": "Acompanhar o fio até o medidor de uma casa",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              1,
+              2.5,
+              2
+            ],
+            "cor": "#f3b583",
+            "intensidade": 0.5
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "medidor",
+            "posicao": [
+              0,
+              0.3,
+              2
+            ]
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.4,
+            -2.5
+          ],
+          "para": [
+            0.05,
+            2.4,
+            -2.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Economizar deixaria de ser uma decisão individual. Você precisaria negociar com a rua.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Revelar a rua da qual as casas fazem parte",
+      "revela": "Economizar deixaria de ser uma decisão individual. Você precisaria negociar com a rua.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v14.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cidade",
+      "motivoCorte": "Revelar a rua da qual as casas fazem parte",
+      "cena3d": {
+        "tipo": "rua",
+        "periodo": "noite",
+        "preenchimento": 0.34,
+        "luzes": [
+          {
+            "tipo": "poste",
+            "posicao": [
+              2.7,
+              4,
+              4
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "camera": {
+          "de": [
+            -0.4,
+            2.7,
+            -5
+          ],
+          "para": [
+            0.4,
+            2.8,
+            -5.5
+          ],
+          "alvo": [
+            0,
+            2,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Aquele barulho constante, que você mal percebia, viraria um sinal de tranquilidade.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Voltar à geladeira com luz quente discreta",
+      "revela": "Aquele barulho constante, que você mal percebia, viraria um sinal de tranquilidade.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v15.png",
+      "enquadramento": "medio",
+      "movimento": "zoom-in",
+      "ambiente": "cozinha",
+      "motivoCorte": "Voltar à geladeira com luz quente discreta",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          },
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              -1.35,
+              0,
+              3.6
+            ],
+            "ligada": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "O motor da geladeira ainda estaria funcionando.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Próximo do aparelho que permanece ligado",
+      "revela": "O motor da geladeira ainda estaria funcionando.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v16.png",
+      "enquadramento": "detalhe",
+      "movimento": "zoom-in",
+      "ambiente": "detalhe",
+      "motivoCorte": "Próximo do aparelho que permanece ligado",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              0,
+              0,
+              2.3
+            ],
+            "ligada": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0.1,
+            1.9,
+            -2.6
+          ],
+          "para": [
+            0.1,
+            1.9,
+            -2.4
+          ],
+          "alvo": [
+            0,
+            1.7,
+            2.3
+          ]
+        }
+      }
+    },
+    {
+      "texto": "A pergunta não seria qual aparelho você usa mais. Seria qual você pode perder.",
+      "camada": "seria",
+      "funcao": "entrega",
+      "acao": "Personagem encara as duas opções",
+      "revela": "A pergunta não seria qual aparelho você usa mais. Seria qual você pode perder.",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v17.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "cozinha",
+      "motivoCorte": "Personagem encara as duas opções",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -1.15,
+            0,
+            2.3
+          ],
+          "altura": 3.45
+        },
+        "objetos": [
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          },
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              -1.35,
+              0,
+              3.6
+            ],
+            "ligada": true
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    },
+    {
+      "texto": "Banho quente ou a comida da semana: qual você protegeria primeiro?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Composição estável: comida de um lado, banho do outro",
+      "revela": "Banho quente ou a comida da semana: qual você protegeria primeiro?",
+      "causa": "A escolha anterior leva à próxima necessidade; ver ação e informação nova",
+      "imagem": "assets/v18.png",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "ambiente": "escolha",
+      "motivoCorte": "Composição estável: comida de um lado, banho do outro",
+      "cena3d": {
+        "tipo": "sala",
+        "periodo": "noite",
+        "detalhes": true,
+        "cores": {
+          "parede": "#869a9a",
+          "lateral": "#617e86",
+          "chao": "#4e514d"
+        },
+        "preenchimento": 0.38,
+        "luzes": [
+          {
+            "tipo": "janela",
+            "posicao": [
+              2.975,
+              2.7,
+              5.5
+            ],
+            "cor": "#a4c9f5",
+            "intensidade": 0.55
+          },
+          {
+            "tipo": "pontual",
+            "posicao": [
+              -2.5,
+              3.2,
+              2
+            ],
+            "cor": "#ffd39b",
+            "intensidade": 0.8
+          }
+        ],
+        "personagem": {
+          "posicao": [
+            -0.25,
+            0,
+            3
+          ],
+          "altura": 2.85
+        },
+        "objetos": [
+          {
+            "tipo": "geladeira",
+            "posicao": [
+              1,
+              0,
+              3.6
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "chuveiro",
+            "posicao": [
+              -1.7,
+              0,
+              3
+            ],
+            "ligada": true
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -3,
+              0,
+              5
+            ],
+            "tamanho": [
+              2,
+              1.7,
+              1.2
+            ],
+            "cor": "#586d75"
+          },
+          {
+            "tipo": "caixa",
+            "posicao": [
+              -2.8,
+              1.75,
+              5
+            ],
+            "tamanho": [
+              1.5,
+              0.12,
+              1.1
+            ],
+            "cor": "#c5ac88"
+          }
+        ],
+        "camera": {
+          "de": [
+            0.05,
+            2.5,
+            -4.5
+          ],
+          "para": [
+            0.13,
+            2.48,
+            -4.25
+          ],
+          "alvo": [
+            0,
+            1.9,
+            2.8
+          ]
+        }
+      }
+    }
+  ]
+}

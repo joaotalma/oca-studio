@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se a estrada nunca terminasse?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.4},
+  {"n": 2, "quem": "Narrador", "texto": "Em 1970, uma ideia nasceu de uma visita ao Nordeste em seca.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.5, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Levar nordestinos para áreas pouco povoadas do Norte.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 10.6, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "A estrada virou símbolo do Brasil Grande.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 10.7, "fim": 13.5, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "As obras começaram em outubro de 1970, perto de Altamira.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 13.6, "fim": 17.6, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "E em 1972, o primeiro trecho foi inaugurado.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 17.7, "fim": 20.9, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Ela ainda desafia quem passa. Agora imagine morar no meio dela.", "pausa": 0.4, "imagem": "assets/cena07.png", "camada": "seria", "ini": 21.3, "fim": 25.7, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Seu endereço dependeria da chuva.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "seria", "ini": 25.8, "fim": 27.8, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "A entrega do mercado viria uma vez por mês, se viesse.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 27.9, "fim": 32.3, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "Atolar seria parte da rotina de todo verão amazônico.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 32.4, "fim": 36, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Seu filho faltaria na escola por causa de um buraco.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 36.1, "fim": 40.1, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "O motorista seria o homem mais informado da região.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 40.2, "fim": 43.8, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Vizinhos puxariam o seu carro com trator.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 43.9, "fim": 46.7, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E a promessa de asfalto viraria tradição de família.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 46.8, "fim": 50.4, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "Uma ponte caída mudaria o mês inteiro.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 50.5, "fim": 53.3, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "E o posto mais próximo estaria a horas.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 53.4, "fim": 56.6, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Você planejaria tudo olhando para o céu.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 56.7, "fim": 59.5, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Agora pense na rua da sua casa.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 59.6, "fim": 62.4, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "O que chega por ela hoje?", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 62.5, "fim": 64.9, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "O que pararia se ela sumisse?", "pausa": 0.3, "imagem": "assets/cena20.png", "camada": "voce", "ini": 65.2, "fim": 67.6, "movimento": "zoom-out"}
+];

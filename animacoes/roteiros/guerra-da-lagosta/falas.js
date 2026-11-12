@@ -1,0 +1,23 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "E se o Brasil lutasse por lagosta?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.8},
+  {"n": 2, "quem": "Narrador", "texto": "Entre 1961 e 1963, Brasil e França disputaram lagostas no Nordeste.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.9, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "A França dizia que a lagosta anda dando saltos, então seria peixe.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 12.2, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Um comandante brasileiro respondeu com ironia.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 12.3, "fim": 14.7, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "Se é assim, o canguru é uma ave.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 14.8, "fim": 18, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Em 1963, navios franceses foram enviados ao litoral.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 18.1, "fim": 21.3, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "Tropas brasileiras se armaram.", "pausa": 0.1, "imagem": "assets/cena07.png", "camada": "foi", "ini": 21.4, "fim": 23, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "Mas a França recuou.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "foi", "ini": 23.1, "fim": 24.7, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "Ninguém atirou. Agora imagine se alguém tivesse atirado.", "pausa": 0.4, "imagem": "assets/cena09.png", "camada": "seria", "ini": 25.1, "fim": 28.3, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "O primeiro tiro sairia no meio do mar, por causa de um crustáceo.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 28.4, "fim": 33.6, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "Os jornais do mundo inteiro dariam risada.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 33.7, "fim": 36.5, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Até a primeira notícia ruim chegar.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 36.6, "fim": 39, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "Praias do Nordeste teriam navios no horizonte.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 39.1, "fim": 41.9, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "Lagosta sairia dos restaurantes e entraria nos discursos.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 42, "fim": 45.2, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "E os livros de história teriam um capítulo inacreditável.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 45.3, "fim": 48.9, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Pescadores virariam heróis ou alvos.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 49, "fim": 51, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "Escolas dariam aula sobre a Batalha da Lagosta.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 51.1, "fim": 54.3, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "E o prato caro viraria símbolo de orgulho nacional.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "seria", "ini": 54.4, "fim": 58, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "Agora pense no último prato caro que você comeu.", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 58.1, "fim": 61.7, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Você iria à guerra por ele?", "pausa": 0.1, "imagem": "assets/cena20.png", "camada": "voce", "ini": 61.8, "fim": 64.2, "movimento": "zoom-out"},
+  {"n": 21, "quem": "Narrador", "texto": "Qual seria o motivo mais absurdo?", "pausa": 0.3, "imagem": "assets/cena21.png", "camada": "voce", "ini": 64.5, "fim": 66.9, "movimento": "esq"}
+];

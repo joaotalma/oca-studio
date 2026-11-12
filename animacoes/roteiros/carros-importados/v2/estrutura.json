@@ -1,0 +1,188 @@
+{
+  "slug": "carros-importados-v2",
+  "titulo": "Seu carro viraria peça de museu.",
+  "pergunta": "O carro raro continuaria sendo uma vantagem?",
+  "pista": "chave de um carro parado",
+  "virada": "A raridade que valorizaria o carro também dificultaria mantê-lo funcionando.",
+  "resposta": "Você escolheria exclusividade ou facilidade para consertar?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://garagem360.com.br/30-anos-de-importacao-carros-1990",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Seu carro viraria peça de museu.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar chave de um carro parado",
+      "revela": "Seu carro viraria peça de museu.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 1976, o Brasil proibiu a importação de carros novos.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 1976, o Brasil proibiu a importação de carros novos.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A proibição durou catorze anos.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "A proibição durou catorze anos.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em 9 de maio de 1990, a importação foi liberada.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 9 de maio de 1990, a importação foi liberada.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você pensaria em guardar o carro: quanto mais raro, mais especial ele pareceria.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Você pensaria em guardar o carro: quanto mais raro, mais especial ele pareceria.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Nenhum carro novo de fora entraria no país.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Nenhum carro novo de fora entraria no país.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Os importados da garagem do vizinho valeriam uma fortuna.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Os importados da garagem do vizinho valeriam uma fortuna.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Só que uma peça pequena poderia deixar aquele patrimônio inteiro parado na garagem.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Só que uma peça pequena poderia deixar aquele patrimônio inteiro parado na garagem.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Peça viraria caça ao tesouro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Peça viraria caça ao tesouro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Oficinas inventariam soluções que nenhum manual prevê.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Oficinas inventariam soluções que nenhum manual prevê.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você procuraria o código da peça, em vez de admirar o carro inteiro.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Você procuraria o código da peça, em vez de admirar o carro inteiro.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Um detalhe quase invisível passaria a valer mais para sua rotina do que a aparência da garagem.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Um detalhe quase invisível passaria a valer mais para sua rotina do que a aparência da garagem.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Até um comprador perguntaria se ele ainda pode rodar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Até um comprador perguntaria se ele ainda pode rodar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A raridade que valorizaria o carro também dificultaria mantê-lo funcionando.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "A raridade que valorizaria o carro também dificultaria mantê-lo funcionando.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "A chave continuaria na sua mão. O poder de sair de casa, talvez não.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "A chave continuaria na sua mão. O poder de sair de casa, talvez não.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você escolheria exclusividade ou facilidade para consertar?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em chave de um carro parado",
+      "revela": "Você escolheria exclusividade ou facilidade para consertar?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

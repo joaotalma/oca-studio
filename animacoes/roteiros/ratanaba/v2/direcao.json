@@ -1,0 +1,181 @@
+{
+  "versao": 2,
+  "slug": "ratanaba-v2",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "pergunta": "Quando uma história atraente passa a parecer uma prova?",
+  "pista": "mensagem recebida no celular",
+  "virada": "A circulação da história poderia parecer confirmação sem acrescentar evidência.",
+  "resposta": "O que faria você parar antes de encaminhar?",
+  "planos": [
+    {
+      "fala": 1,
+      "funcao": "gancho",
+      "acao": "Mostrar mensagem recebida no celular",
+      "revela": "Você compartilharia antes de conferir?",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 2,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Em 2022, uma história viralizou no Brasil.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 3,
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Uma cidade perdida chamada Ratanabá, sob a Amazônia.",
+      "causa": "abertura/contexto",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 4,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "causa": "abertura/contexto",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 5,
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Você tentaria descobrir a origem da imagem, em vez de contar quantas vezes ela apareceu.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 6,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Toda a história humana teria que ser reescrita.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 7,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Governos disputariam cada metro de terra.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 8,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Mas cada cópia repetiria a mesma promessa; muitas publicações poderiam vir de uma única fonte.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 9,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "A floresta pagaria o preço da descoberta.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 10,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Vendedores de mapa falso enriqueceriam.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 11,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Você abriria os links procurando uma pesquisa identificável, não outra publicação repetindo a mesma frase.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 12,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Ao voltar à origem, poderia descobrir que a suposta confirmação também citava uma cópia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 13,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "O círculo pareceria uma cadeia de provas.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 14,
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "Parar o encaminhamento seria a primeira decisão que você realmente controlaria naquela história.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 15,
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "A circulação da história poderia parecer confirmação sem acrescentar evidência.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 16,
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "O celular mostraria uma multidão acreditando. Isso não mostraria a cidade existindo.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    },
+    {
+      "fala": 17,
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em mensagem recebida no celular",
+      "revela": "O que faria você parar antes de encaminhar?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado",
+      "motivoCorte": "mudança de informação"
+    }
+  ]
+}

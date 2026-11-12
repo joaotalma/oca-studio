@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n":1,"quem":"Narrador","texto":"Imagine o preço subir enquanto você compra.","pausa":0,"camada":"seria","inteiro":true,"ini":0,"fim":2.8,"imagens":["assets/c01a.png"]},
+  {"n":2,"quem":"Narrador","texto":"No Brasil, isso já foi rotina.","pausa":0.1,"camada":"foi","ini":2.9,"fim":5.3,"movimento":"zoom-out","imagens":["assets/c02a.png"],"filtro":"flashback"},
+  {"n":3,"quem":"Narrador","texto":"Funcionários remarcavam preços a todo momento com máquinas de etiquetar.","pausa":0.1,"camada":"foi","ini":5.4,"fim":9.4,"movimento":"esq","imagens":["assets/c03a.png","assets/c03b.png"],"filtro":"flashback"},
+  {"n":4,"quem":"Narrador","texto":"Em oito anos, antes do real, o país teve quatro moedas.","pausa":0.1,"camada":"foi","ini":9.5,"fim":13.9,"movimento":"zoom-in","imagens":["assets/c04a.png","assets/c04b.png"],"filtro":"flashback"},
+  {"n":5,"quem":"Narrador","texto":"A inflação anual chegou perto de 2.500%.","pausa":0.1,"camada":"foi","ini":14,"fim":16.8,"movimento":"dir","imagens":["assets/c05a.png","assets/c05b.png"],"filtro":"flashback"},
+  {"n":6,"quem":"Narrador","texto":"Nos piores momentos, os preços subiam cerca de 82% em um mês.","pausa":0.1,"camada":"foi","ini":16.9,"fim":21.7,"movimento":"cima","imagens":["assets/c06a.png","assets/c06b.png"],"filtro":"flashback"},
+  {"n":7,"quem":"Narrador","texto":"Em junho de 1994, a alta do mês ainda foi de 47,5%.","pausa":0.1,"camada":"foi","ini":21.8,"fim":26.6,"movimento":"zoom-in","imagens":["assets/c07a.png","assets/c07b.png"],"filtro":"flashback"},
+  {"n":8,"quem":"Narrador","texto":"Em julho, já com o real, caiu para 6,8%.","pausa":0.1,"camada":"foi","ini":26.7,"fim":30.3,"movimento":"baixo","imagens":["assets/c08a.png","assets/c08b.png"],"filtro":"flashback"},
+  {"n":9,"quem":"Narrador","texto":"Aquele tempo passou. Agora imagine se voltasse amanhã, com tudo no celular.","pausa":0.4,"camada":"seria","ini":30.7,"fim":35.5,"movimento":"zoom-out","imagens":["assets/c09a.png","assets/c09b.png"]},
+  {"n":10,"quem":"Narrador","texto":"O preço no aplicativo mudaria entre o carrinho e o Pix.","pausa":0.1,"camada":"seria","ini":35.6,"fim":40,"movimento":"zoom-in","imagens":["assets/c10a.png","assets/c10b.png"]},
+  {"n":11,"quem":"Narrador","texto":"Seu salário perderia valor antes da conta chegar.","pausa":0.1,"camada":"seria","ini":40.1,"fim":43.3,"movimento":"zoom-out","imagens":["assets/c11a.png","assets/c11b.png"]},
+  {"n":12,"quem":"Narrador","texto":"Você correria ao mercado no dia do pagamento.","pausa":0.1,"camada":"seria","ini":43.4,"fim":46.6,"movimento":"esq","imagens":["assets/c12a.png","assets/c12b.png"]},
+  {"n":13,"quem":"Narrador","texto":"O aluguel seria renegociado todo mês.","pausa":0.1,"camada":"seria","ini":46.7,"fim":49.1,"movimento":"zoom-in","imagens":["assets/c13a.png"]},
+  {"n":14,"quem":"Narrador","texto":"Ninguém saberia dizer quanto custa um pão.","pausa":0.1,"camada":"seria","ini":49.2,"fim":52,"movimento":"dir","imagens":["assets/c14a.png","assets/c14b.png"]},
+  {"n":15,"quem":"Narrador","texto":"Guardar dinheiro pareceria piada.","pausa":0.1,"camada":"seria","ini":52.1,"fim":53.7,"movimento":"cima","imagens":["assets/c15a.png"]},
+  {"n":16,"quem":"Narrador","texto":"A dívida viraria assunto de toda refeição.","pausa":0.1,"camada":"seria","ini":53.8,"fim":56.6,"movimento":"zoom-in","imagens":["assets/c16a.png","assets/c16b.png"]},
+  {"n":17,"quem":"Narrador","texto":"E uma moeda nova apareceria em poucos anos.","pausa":0.1,"camada":"seria","ini":56.7,"fim":59.9,"movimento":"baixo","imagens":["assets/c17a.png","assets/c17b.png"]},
+  {"n":18,"quem":"Narrador","texto":"Agora olhe o preço do seu café.","pausa":0.1,"camada":"voce","ini":60,"fim":62.8,"movimento":"zoom-out","imagens":["assets/c18a.png","assets/c18b.png"]},
+  {"n":19,"quem":"Narrador","texto":"Dobre esse valor em um mês.","pausa":0.1,"camada":"voce","ini":62.9,"fim":65.3,"movimento":"zoom-in","imagens":["assets/c19a.png"]},
+  {"n":20,"quem":"Narrador","texto":"Quanto do seu salário sobraria?","pausa":0.3,"camada":"voce","ini":65.6,"fim":67.6,"movimento":"zoom-out","imagens":["assets/c20a.png"]}
+];

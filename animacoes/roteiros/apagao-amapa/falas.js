@@ -1,0 +1,22 @@
+const FALAS = [
+  {"n": 1, "quem": "Narrador", "texto": "Quantos dias você aguenta sem luz?", "pausa": 0, "imagem": "assets/cena01.png", "camada": "seria", "inteiro": true, "ini": 0, "fim": 2.4},
+  {"n": 2, "quem": "Narrador", "texto": "Em 3 de novembro de 2020, um transformador pegou fogo no Amapá.", "pausa": 0.1, "imagem": "assets/cena02.png", "camada": "foi", "ini": 2.5, "fim": 7.3, "movimento": "zoom-out"},
+  {"n": 3, "quem": "Narrador", "texto": "Treze dos dezesseis municípios ficaram no escuro.", "pausa": 0.1, "imagem": "assets/cena03.png", "camada": "foi", "ini": 7.4, "fim": 10.2, "movimento": "esq"},
+  {"n": 4, "quem": "Narrador", "texto": "Faltou energia, e houve corrida por água.", "pausa": 0.1, "imagem": "assets/cena04.png", "camada": "foi", "ini": 10.3, "fim": 13.1, "movimento": "zoom-in"},
+  {"n": 5, "quem": "Narrador", "texto": "A comida também passou a ser racionada.", "pausa": 0.1, "imagem": "assets/cena05.png", "camada": "foi", "ini": 13.2, "fim": 16, "movimento": "dir"},
+  {"n": 6, "quem": "Narrador", "texto": "Foram 22 dias até o governo dizer que a luz voltou.", "pausa": 0.1, "imagem": "assets/cena06.png", "camada": "foi", "ini": 16.1, "fim": 20.5, "movimento": "cima"},
+  {"n": 7, "quem": "Narrador", "texto": "O Amapá viveu isso. Agora imagine essa escuridão na sua cidade.", "pausa": 0.4, "imagem": "assets/cena07.png", "camada": "seria", "ini": 20.9, "fim": 25.3, "movimento": "zoom-in"},
+  {"n": 8, "quem": "Narrador", "texto": "No primeiro dia, parece até uma aventura.", "pausa": 0.1, "imagem": "assets/cena08.png", "camada": "seria", "ini": 25.4, "fim": 28.2, "movimento": "baixo"},
+  {"n": 9, "quem": "Narrador", "texto": "No segundo, o celular morre e a água para de subir.", "pausa": 0.1, "imagem": "assets/cena09.png", "camada": "seria", "ini": 28.3, "fim": 32.7, "movimento": "zoom-out"},
+  {"n": 10, "quem": "Narrador", "texto": "A comida do congelador vira o jantar do prédio inteiro.", "pausa": 0.1, "imagem": "assets/cena10.png", "camada": "seria", "ini": 32.8, "fim": 36.8, "movimento": "zoom-in"},
+  {"n": 11, "quem": "Narrador", "texto": "O caixa eletrônico não funciona, e o Pix também não.", "pausa": 0.1, "imagem": "assets/cena11.png", "camada": "seria", "ini": 36.9, "fim": 40.9, "movimento": "zoom-out"},
+  {"n": 12, "quem": "Narrador", "texto": "Quem tem gerador vira a pessoa mais importante da rua.", "pausa": 0.1, "imagem": "assets/cena12.png", "camada": "seria", "ini": 41, "fim": 45, "movimento": "esq"},
+  {"n": 13, "quem": "Narrador", "texto": "As noites ficam mais longas.", "pausa": 0.1, "imagem": "assets/cena13.png", "camada": "seria", "ini": 45.1, "fim": 47.1, "movimento": "zoom-in"},
+  {"n": 14, "quem": "Narrador", "texto": "E na terceira semana, ninguém lembra como era antes.", "pausa": 0.1, "imagem": "assets/cena14.png", "camada": "seria", "ini": 47.2, "fim": 50.8, "movimento": "dir"},
+  {"n": 15, "quem": "Narrador", "texto": "As crianças fariam a lição à luz de vela.", "pausa": 0.1, "imagem": "assets/cena15.png", "camada": "seria", "ini": 50.9, "fim": 54.5, "movimento": "cima"},
+  {"n": 16, "quem": "Narrador", "texto": "Remédios que precisam de geladeira seriam perdidos.", "pausa": 0.1, "imagem": "assets/cena16.png", "camada": "seria", "ini": 54.6, "fim": 57.4, "movimento": "zoom-in"},
+  {"n": 17, "quem": "Narrador", "texto": "E vizinhos dividiriam o pouco que sobrou.", "pausa": 0.1, "imagem": "assets/cena17.png", "camada": "seria", "ini": 57.5, "fim": 60.3, "movimento": "baixo"},
+  {"n": 18, "quem": "Narrador", "texto": "Agora olhe para a sua tomada.", "pausa": 0.1, "imagem": "assets/cena18.png", "camada": "voce", "ini": 60.4, "fim": 62.8, "movimento": "zoom-out"},
+  {"n": 19, "quem": "Narrador", "texto": "O que você faria primeiro?", "pausa": 0.1, "imagem": "assets/cena19.png", "camada": "voce", "ini": 62.9, "fim": 64.9, "movimento": "zoom-in"},
+  {"n": 20, "quem": "Narrador", "texto": "Quantos dias a sua casa aguentaria?", "pausa": 0.3, "imagem": "assets/cena20.png", "camada": "voce", "ini": 65.2, "fim": 67.6, "movimento": "zoom-out"}
+];

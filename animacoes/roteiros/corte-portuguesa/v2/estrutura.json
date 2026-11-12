@@ -1,0 +1,167 @@
+{
+  "slug": "corte-portuguesa-v2",
+  "titulo": "A metrópole ficaria deste lado do oceano.",
+  "pergunta": "Como seria viver no lugar de onde saem as ordens?",
+  "pista": "mapa com o Atlântico no centro",
+  "virada": "Trocar o centro do mapa mudaria a forma de contar a mesma história.",
+  "resposta": "Você se imaginaria súdito ou cidadão desse país?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.infoescola.com/historia/a-vinda-da-corte-portuguesa-para-o-brasil/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "A metrópole ficaria deste lado do oceano.",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar mapa com o Atlântico no centro",
+      "revela": "A metrópole ficaria deste lado do oceano.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "As tropas de Napoleão ameaçavam invadir Portugal.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "As tropas de Napoleão ameaçavam invadir Portugal.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Com apoio da Inglaterra, a corte fugiu para o Brasil.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Com apoio da Inglaterra, a corte fugiu para o Brasil.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria reconhecer o seu país nos feriados, nos nomes das ruas e nas notícias.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Você tentaria reconhecer o seu país nos feriados, nos nomes das ruas e nas notícias.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O Rio seria a capital de um império dos dois lados do Atlântico.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "O Rio seria a capital de um império dos dois lados do Atlântico.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Portugueses viriam tentar a vida na metrópole, aqui.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Portugueses viriam tentar a vida na metrópole, aqui.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas chamar um lugar de centro também mudaria quem seria tratado como distante.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Mas chamar um lugar de centro também mudaria quem seria tratado como distante.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "O dia da Independência talvez nunca existisse.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "O dia da Independência talvez nunca existisse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Os museus de Lisboa guardariam só as lembranças do rei.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Os museus de Lisboa guardariam só as lembranças do rei.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você abriria o livro da escola e procuraria a parte em que seu país ganha autonomia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Você abriria o livro da escola e procuraria a parte em que seu país ganha autonomia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Talvez a pergunta sobre quem decide continuasse presente sob outros símbolos.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Talvez a pergunta sobre quem decide continuasse presente sob outros símbolos.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Trocar o centro do mapa mudaria a forma de contar a mesma história.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Trocar o centro do mapa mudaria a forma de contar a mesma história.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "O oceano seria o mesmo. O lado de onde você olha para ele mudaria a história.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "O oceano seria o mesmo. O lado de onde você olha para ele mudaria a história.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você se imaginaria súdito ou cidadão desse país?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em mapa com o Atlântico no centro",
+      "revela": "Você se imaginaria súdito ou cidadão desse país?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}

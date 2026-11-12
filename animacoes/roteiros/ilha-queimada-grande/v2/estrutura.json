@@ -1,0 +1,187 @@
+{
+  "slug": "ilha-queimada-grande-v2",
+  "titulo": "Você pisaria onde não deveria estar?",
+  "pergunta": "Uma paisagem bonita é motivo suficiente para entrar?",
+  "pista": "barco diante da ilha",
+  "virada": "A distância que parece um obstáculo também pode ser parte da proteção do lugar.",
+  "resposta": "Você escolheria chegar mais perto ou preservar a distância?",
+  "mecanismo": "tentativa e consequência; pista retomada no fecho",
+  "fontes": {
+    "F01": {
+      "url": "https://www.cnnbrasil.com.br/nacional/sudeste/sp/ilha-das-cobras-como-e-a-regiao-proibida-em-sp-onde-lancha-desapareceu/",
+      "situacao": "conferido",
+      "descricao": "Fatos reutilizados literalmente do roteiro anterior",
+      "evidencia": "Checagem registrada no fontes.md original, preservada; esta revisão não declara nova conferência de cada fonte."
+    }
+  },
+  "falas": [
+    {
+      "texto": "Você pisaria onde não deveria estar?",
+      "camada": "seria",
+      "funcao": "gancho",
+      "acao": "Mostrar barco diante da ilha",
+      "revela": "Você pisaria onde não deveria estar?",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Entre Peruíbe e Itanhaém, existe uma ilha chamada Queimada Grande.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "Entre Peruíbe e Itanhaém, existe uma ilha chamada Queimada Grande.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "É conhecida como Ilha das Cobras.",
+      "camada": "foi",
+      "fonte": "F01",
+      "funcao": "prova",
+      "acao": "Exibir o registro histórico com data e objeto associado",
+      "revela": "É conhecida como Ilha das Cobras.",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Agora imagine esse cenário chegando à sua rotina.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Agora imagine esse cenário chegando à sua rotina.",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você tentaria encontrar uma maneira segura de conhecer o lugar sem alterar sua rotina.",
+      "camada": "seria",
+      "funcao": "tentativa",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Você tentaria encontrar uma maneira segura de conhecer o lugar sem alterar sua rotina.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Barcos de turismo fariam fila no costão de pedra.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Barcos de turismo fariam fila no costão de pedra.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Alguém venderia selfie com cobra.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Alguém venderia selfie com cobra.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Mas transformar a curiosidade em visita também mudaria aquilo que despertou seu interesse.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Mas transformar a curiosidade em visita também mudaria aquilo que despertou seu interesse.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Em um verão, a primeira emergência chegaria ao continente.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Em um verão, a primeira emergência chegaria ao continente.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Colecionadores tentariam levar uma jararaca escondida.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Colecionadores tentariam levar uma jararaca escondida.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você poderia observar de longe e aprender o que não conhecia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Você poderia observar de longe e aprender o que não conhecia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A vontade de chegar seria compreensível, mas não transformaria qualquer acesso em boa ideia.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "A vontade de chegar seria compreensível, mas não transformaria qualquer acesso em boa ideia.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Nem toda curiosidade precisa terminar numa pegada.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Nem toda curiosidade precisa terminar numa pegada.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Conhecer o motivo da distância também poderia mudar a maneira como você olharia para aquele lugar.",
+      "camada": "seria",
+      "funcao": "consequencia",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Conhecer o motivo da distância também poderia mudar a maneira como você olharia para aquele lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    },
+    {
+      "texto": "A distância que parece um obstáculo também pode ser parte da proteção do lugar.",
+      "camada": "seria",
+      "funcao": "virada",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "A distância que parece um obstáculo também pode ser parte da proteção do lugar.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "proximo",
+      "movimento": "zoom-in"
+    },
+    {
+      "texto": "O barco não precisaria tocar a areia para a paisagem continuar impressionante.",
+      "camada": "seria",
+      "funcao": "retomada",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "O barco não precisaria tocar a areia para a paisagem continuar impressionante.",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "detalhe",
+      "movimento": "parado"
+    },
+    {
+      "texto": "Você escolheria chegar mais perto ou preservar a distância?",
+      "camada": "voce",
+      "funcao": "fecho",
+      "acao": "Personagem reage à mudança; foco em barco diante da ilha",
+      "revela": "Você escolheria chegar mais perto ou preservar a distância?",
+      "causa": "A tentativa anterior encontra uma limitação ou muda a escolha",
+      "enquadramento": "medio",
+      "movimento": "parado"
+    }
+  ]
+}
