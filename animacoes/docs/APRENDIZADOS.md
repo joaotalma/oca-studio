@@ -55,6 +55,15 @@ Estudo feito em 2026-11-12, a pedido do João, comparando o que os agentes entre
 17. **A voz que funcionou fica:** narrador jovem nos Mistérios, elenco fixo no ElevenLabs no Tico.
 18. **Entonação também é roteiro.** Marque as ênfases e as pausas da frase do gancho.
 
+### Plataforma (do método Temporada Viral, adotado em 12/11)
+
+19. **Nada de isca de engajamento.** "Comente X", "envie para um amigo" e "a mais comentada vence" derrubam o alcance (Meta). O voto fecha com "Vocês decidem", e as opções ficam só na tela. O QA reprova a isca. Os eps. 1 a 5 do Tico tinham "Comente X ou Y" (`erros.md` 30).
+20. **"Ep. N" só na capa,** nunca no vídeo, para quem chega sem ter visto o anterior.
+21. **Prova de que o público decide:** placar real do voto (com 10 votos ou mais) e destaque de quem comentou, sem pedir nada.
+22. **Antes de gravar voz, mostre a estimativa de créditos** do ElevenLabs. Os scripts só gravam com `--confirmar`.
+
+Fonte e análise: `referencias/videos-analisados/temporada-viral-metodo.md`.
+
 ## 3. Como o João trabalha (para acertar o processo)
 
 - **Ele decide vendo.** Mostre comparativos lado a lado (v3 contra v4, antes e depois) em vez de descrever.
@@ -74,3 +83,4 @@ Estudo feito em 2026-11-12, a pedido do João, comparando o que os agentes entre
 - [ ] Sobrou algum texto ou nome da versão anterior?
 - [ ] A duração está na faixa, medida pelo áudio real?
 - [ ] O que vai ser mostrado é a mesma versão que vai para o Drive?
+- [ ] Nenhum "comente", "envie" ou "marque" na tela, na fala ou na ficha de postagem? O voto fecha com "Vocês decidem"?

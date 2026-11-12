@@ -11,8 +11,8 @@ Monte a legenda nesta ordem, com emojis e linhas curtas. Ela precisa chamar aten
 1. **Resultado do voto anterior:** 🗳️ e a escolha em CAIXA ALTA. No ep. 1, essa linha não existe.
 2. **Gancho do episódio:** 1 ou 2 linhas com emojis do tema, por exemplo 🛵 ⭐ 🤢 ☕ 🍰.
 3. **Piada-título:** uma linha que repete a da capa.
-4. **Chamada para o voto:** 👇 "COMENTA SUA ESCOLHA:", com uma opção por linha. Cada opção tem um emoji próprio, a palavra do voto em CAIXA ALTA e meia frase dizendo o que acontece.
-5. **Promessa:** "A mais comentada abre o próximo episódio! 🔥"
+4. **Chamada para o voto:** 👇 "VOCÊS DECIDEM:", com uma opção por linha. Cada opção tem um emoji próprio, a palavra do voto em CAIXA ALTA e meia frase dizendo o que acontece.
+5. **Promessa:** "A escolha de vocês abre o próximo episódio! 🔥" Sem "comente", "a mais comentada", "mande" nem "marque": é isca de engajamento, e a Meta derruba o alcance.
 6. **Crédito das vozes:** "🎙️ Vozes geradas com ElevenLabs." a partir do ep. 3. Nos eps. 1 e 2, "🎙️ Vozes geradas com OmniVoice.", exigência da licença; não remova.
 7. **Hashtags:** no máximo 5, sempre com #SeViraTico, #Animação, #Comédia e #Humor. A quinta varia conforme o tema do episódio.
 
@@ -24,7 +24,7 @@ Cada episódio ganha `render/epNN_story.png` (de `episodios/epNN/story.html`, co
 
 ## Comentário fixado
 
-Uma linha só: 🗳️ "Vale UMA resposta só:", as duas opções com os mesmos emojis da legenda e "A mais comentada vira o ep. N+1! 👇".
+Uma linha só: 🗳️ "Vocês decidem:", as duas opções com os mesmos emojis da legenda e "O ep. N+1 sai daqui 👇". Não anuncie que vale um voto por perfil, porque as pessoas comentam menos, mas conte assim.
 
 ## Na hora de postar
 
@@ -32,7 +32,24 @@ Uma linha só: 🗳️ "Vale UMA resposta só:", as duas opções com os mesmos 
 - **Rótulo de IA:** ligado, porque as vozes são sintéticas.
 - **Horário:** por volta das 19h, sempre no mesmo horário.
 - **Primeira hora:** responda aos comentários.
-- **Contagem:** depois de 48 h, conte os votos e registre o resultado em `episodios/continuidade.md`.
+- **Contagem:** depois de 48 h, conte os votos e registre o resultado em `episodios/continuidade.md`. Um voto por perfil, por mais que a pessoa comente. Vale número, palavra ou frase. O placar só entra no episódio seguinte com 10 votos ou mais, e nunca se inventa um número.
+- **Status da conta:** confira o status da conta profissional depois de cada post. Amarelo ou vermelho indica isca ou violação; pare e reveja.
+
+## Redes (quando o autor reativar TikTok e YouTube)
+
+- **Uma pasta por rede,** com o mesmo vídeo e capa, legenda, comentário fixado e chamada próprios.
+- **Instagram:** conta profissional de criador.
+- **TikTok:** conta pessoal, nunca empresarial.
+- **YouTube:** marque sempre "não é para crianças"; senão os comentários somem e não há voto. Uma playlist por série, em ordem.
+
+## Comunidade
+
+- **Responda à mão** os primeiros comentários, escolhendo os diferentes, não os genéricos.
+- **Destaque:** no episódio seguinte, mostre na tela quem comentou muito (@), sem pedir nada.
+- **Envios dentro da história:** um personagem pode transformar envios reais em ação ("300 pessoas mandaram isso..."), nunca com o pedido "mande para um amigo". Só números reais, tirados dos insights.
+- **Nada de automação de mensagens** (ManyChat ou parecido): o autor do método Temporada Viral teve todas as contas travadas por isso.
+
+Fonte: `animacoes/referencias/videos-analisados/temporada-viral-metodo.md`.
 
 ## Exemplo (ep. 2)
 

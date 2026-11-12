@@ -61,7 +61,7 @@ Numa série com votação, o episódio seguinte começa pelo resultado. O erro �
 6. **Plantar e pagar:** o que aparece no começo volta no fim com outro sentido.
 7. **Ironia dramática:** quando possível, o público sabe algo que o personagem não sabe.
 8. **Um detalhe concreto e específico por cena,** como "chinelo com arame" ou "meio limão na geladeira".
-9. **Voto de uma palavra,** com o custo de cada lado na tela e uma última frase que pesa a escolha.
+9. **Voto de uma palavra,** com o custo de cada lado na tela e uma última frase que pesa a escolha. As opções ficam **só na tela**, em duas palavras curtas e opostas, com cores diferentes, e fecham com **"Vocês decidem"**. **Nunca "comente X"** nem "mande para um amigo": a Meta reduz a distribuição dessa isca de engajamento. A tela do voto não tem legenda.
 
 ## Como não ficar igual a todo mundo
 
@@ -88,6 +88,30 @@ A estrutura pode ser fixa. Estas três coisas variam de propósito:
 - narrador externo;
 - protagonista narrando em primeira pessoa;
 - só diálogo.
+
+## Série com voto: o método da Temporada Viral (2026-11-12)
+
+O autor de 4 das nossas 13 referências (Lucas e a moto, QI, Gênios, Biel) explicou o método dele num vídeo. A análise completa está em `animacoes/referencias/videos-analisados/temporada-viral-metodo.md`. Estas regras foram adotadas pelo autor do Tico em 12/11/2026:
+
+**Na bíblia, antes do primeiro episódio da temporada:**
+
+1. **A série cabe numa frase,** e essa frase vira a descrição de todo post.
+2. **Gancho fixo no segundo zero,** igual em todo episódio, para quem rola o feed reconhecer a série.
+3. **Os dois finais de cada voto ficam escritos antes,** e cada um muda algo de verdade: quem vive, o que o personagem carrega ou o que ele sabe. A espinha da temporada é a mesma nos dois caminhos.
+4. **Blocos de 5 a 7 episódios.** Se a série tem um mistério, a resposta dele é decidida antes.
+
+**No episódio:**
+
+5. **O quadro 0 é a capa:** voz e texto grande já no zero. **"Parte N" ou "ep. N" só na capa, nunca no vídeo,** para o Instagram não entregar o vídeo só a quem viu o anterior.
+6. **Placar real** do voto anterior logo depois do gancho, como prova de que o público mudou a história. Só com 10 votos ou mais, e nunca inventado.
+7. **Cartão da regra:** uma regra nova por episódio, num cartão na tela, no meio do vídeo. O público discute a regra.
+8. **Pedido para seguir:** uma vez só, antes do clímax, e nunca junto com o voto. Quem pede é o personagem, sem soar como isca.
+9. **O fim para um segundo antes** de a coisa acontecer.
+10. **Virada a cada 15 s, no máximo,** e imagem nova a cada 3 a 5 s.
+
+**Duração:** na T1 do Tico, de 61 a 68 s. Na T2, teste de **1:45 a 2:20**, que é a faixa dele. Desde jan/2025, o Instagram recomenda Reels de até 3 min a quem não segue. Mantenha abaixo de 3 min.
+
+**Comunidade (dentro da história, nunca como pedido):** destacar na tela quem comentou muito no episódio anterior (@) e transformar envios reais em ação ("300 pessoas mandaram, então ele faz 300 flexões"), dito por um personagem. Só com números reais.
 
 ## Referências estudadas
 

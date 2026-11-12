@@ -9,6 +9,7 @@ Material de estudo vindo de fora: vídeos de outros criadores, pesquisas e refer
 | [`videos-analisados/METODO-BLINK-ROTEIROS.md`](videos-analisados/METODO-BLINK-ROTEIROS.md) | Método de roteiro extraído das referências |
 | [`videos-analisados/PROMPT-ROTEIROS-BLINK.md`](videos-analisados/PROMPT-ROTEIROS-BLINK.md) | Prompt que aplica esse método |
 | [`videos-analisados/outliers-9-temas.md`](videos-analisados/outliers-9-temas.md) | Vídeos fora da curva em 9 temas |
+| [`videos-analisados/temporada-viral-metodo.md`](videos-analisados/temporada-viral-metodo.md) | O método da "Temporada Viral", explicado pelo autor de 4 das 13 referências: série com voto, formato explicativo e publicação. Inclui o que se aplica a nós e as regras de plataforma conferidas |
 | [`pesquisas/reconstrucao-tico/`](pesquisas/reconstrucao-tico/) | Relatório e notas (métricas, plataformas, roteiros e continuidade) da reconstrução do Tico |
 | [`visuais/`](visuais/) | Referências visuais avulsas |
 

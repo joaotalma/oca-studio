@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { conferirCreditos } from './creditos-elevenlabs.mjs';
 if(fs.existsSync('.env.local'))process.loadEnvFile('.env.local');
 const key=process.env.ELEVENLABS_API_KEY;if(!key)throw Error('Defina ELEVENLABS_API_KEY no ambiente');
 const config='series/misterios-do-brasil/canal/voz-elevenlabs.json',acao=process.argv[2];
@@ -25,8 +26,10 @@ if(acao==='criar') {
  const file=path.join(dir,'alinhamento-completo.json'),texto=falas.map(f=>f.texto).join('\n');
  if(texto.length>2200)throw Error('Este pedido ultrapassa o limite local de 2200 caracteres por narração.');
  if(fs.existsSync(file)){const old=JSON.parse(fs.readFileSync(file,'utf8'));if(old.texto!==texto)throw Error('Texto mudou: preserve a geração anterior antes de refazer.');console.log('Narração já existente preservada.');process.exit(0);}
+ if(await conferirCreditos(texto.length)) {
  const r=await request(`text-to-speech/${e.voiceId}/with-timestamps?output_format=mp3_44100_128`,{text:texto,model_id:e.modelo,language_code:'pt',voice_settings:{stability:e.estabilidade,similarity_boost:e.similaridade,speed:.96}});
  fs.writeFileSync(path.join(dir,'narracao.mp3'),Buffer.from(r.audio_base64,'base64'));
  fs.writeFileSync(file,JSON.stringify({texto,alignment:r.alignment,normalized_alignment:r.normalized_alignment},null,2));
  console.log(`Narração salva: ${texto.length} caracteres; alinhamento preservado.`);
-} else throw Error('uso: node motor/audio/voz-elevenlabs.mjs criar | narrar series/misterios-do-brasil/roteiros/<slug>');
+ }
+} else throw Error('uso: node motor/audio/voz-elevenlabs.mjs criar | narrar series/misterios-do-brasil/roteiros/<slug> [--confirmar]');

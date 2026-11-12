@@ -4,7 +4,8 @@
 
 | Item | Critério | Como conferir |
 |---|---|---|
-| Duração | 85 a 95 s nos eps. 1 e 2; 61 a 68 s do ep. 3 em diante | Automático (ffprobe) |
+| Duração | 85 a 95 s nos eps. 1 e 2; 61 a 68 s do ep. 3 ao 6; 105 a 140 s do ep. 7 em diante | Automático (ffprobe) |
+| Isca de engajamento | Nenhum "comente", "envie" ou "marque" na tela ou nas falas; o voto fecha com "Vocês decidem" | Automático (texto do `ep.js` e das falas) |
 | Resolução | 1080x1920; rascunho 540x960 | Automático (ffprobe) |
 | Quadros por segundo | 30; rascunho 15 | Automático (ffprobe) |
 | Loudness | -16 LUFS, ±1 LU; não cobrado no rascunho | Automático (ffmpeg loudnorm) |

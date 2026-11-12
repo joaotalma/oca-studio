@@ -30,6 +30,18 @@ O nome final da agência é **Oca Studio** (antes se pensava em Blink Studio). O
 - [ ] Separar o elenco do Tico (`CHARS` e os ajustes por personagem) do rig quando outra série precisar de personagem com rig.
 - [ ] Manter o teste de fundo 3D como etapa própria, ainda pendente.
 
+## Método Temporada Viral — 2026-11-12
+
+Análise em `referencias/videos-analisados/temporada-viral-metodo.md`, aplicada a pedido do João.
+
+- [x] Voto sem isca ("Vocês decidem"), com checagem no QA; ficha de postagem sem "comente".
+- [x] T2 do Tico com teste de 1:45 a 2:20; gancho fixo, placar real, cartão da regra e dois finais escritos antes.
+- [x] Formato explicativo dos Mistérios (`series/misterios-do-brasil/FORMATO-EXPLICATIVO.md`).
+- [x] Estimativa de créditos do ElevenLabs antes de gravar (`--confirmar`).
+- [ ] Na bíblia da T2 do Tico: a frase da série, o gancho fixo do segundo zero e os dois finais de cada voto.
+- [ ] Reescrever uma pauta dos Mistérios no formato explicativo e comparar com a versão v2.
+- [ ] Depois de 3 episódios da T2, comparar o tempo médio assistido e os comentários com a T1 (de 18 a 33 s assistidos) na skill `aprender`.
+
 ## Prioridade: feedback do piloto do apagão v2
 
 **O que funcionou:** João gostou da narração e da execução do vídeo. Preservar a voz original jovem, a clareza da fala, a sincronização e o caminho de personagem 2D com profundidade.

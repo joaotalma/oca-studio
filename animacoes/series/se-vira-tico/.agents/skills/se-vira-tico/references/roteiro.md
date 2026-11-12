@@ -21,6 +21,8 @@ A série é a relação do Tico com a Lua, com os altos e baixos que vêm da fal
 | Palavras faladas | 200 a 230 | Na prática, 50 a 80. Mensagens, telas e papéis vão como texto, sem voz |
 | Blocos antes do voto | Livre | No máximo quatro |
 
+**T2 (ep. 7 em diante):** teste de 1:45 a 2:20, aprovado pelo autor em 12/11/2026 (veja "Série com voto" em `docs/estrategia/FORMATO.md`). Sempre abaixo de 3 min.
+
 Meça a duração pelo ritmo das vozes do episódio anterior e anote no roteiro. A voz real costuma somar alguns segundos.
 
 ## Antes das falas: o contrato do episódio
@@ -76,6 +78,12 @@ Precedente: no ep. 4, o app manda a corrida da Lua por acaso. Ficou assim porque
 - **Memória:** depois do voto, anote em `PRE_ROTEIROS_T1.md`, na tabela "O que cada voto continua mudando", o que o caminho vencedor deixa. Nenhum episódio seguinte pode contradizer essa memória.
 - **Empate:** o Tico decide, e o episódio brinca com isso.
 - **Trecho variável curto:** só a retomada depende do voto, para a base ser produzida antes de a votação fechar.
+- **Os dois finais escritos antes:** antes de publicar, os dois caminhos do voto já estão no pré-roteiro, cada um mudando algo de verdade (quem vive, o que o personagem carrega ou o que ele sabe).
+- **Tela do voto sem isca:** a pergunta é aberta, as duas palavras ficam só na tela, cada uma com a sua cor, e fecha com **"Vocês decidem"**. Nunca "Comente X ou Y" nem "mande para um amigo" (a Meta derruba o alcance; o QA reprova). Sem legenda nessa tela.
+- **Placar real:** do ep. 2 em diante, logo depois do gancho, o resultado real do voto anterior. Só com 10 votos ou mais, e nunca inventado.
+- **Cartão da regra:** uma regra nova por episódio, num cartão no meio do vídeo.
+- **Seguir:** um pedido só, antes do clímax, feito pelo personagem e nunca junto com o voto.
+- **"Ep. N" só na capa:** o número do episódio não aparece dentro do vídeo.
 
 ## Depois do voto: o fato que volta
 

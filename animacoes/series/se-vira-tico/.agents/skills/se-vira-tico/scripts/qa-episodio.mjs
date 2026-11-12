@@ -6,7 +6,7 @@
 //   node .claude/skills/se-vira-tico/scripts/qa-episodio.mjs <pasta do filme> <video.mp4> [--rascunho] [--sem-duracao]
 //
 //   --rascunho     espera 540x960 a 15 fps e não cobra loudness
-//   --sem-duracao  não cobra a duração (85-95 s nos eps. 1 e 2, 61-68 s do 3 em diante) (para testes curtos)
+//   --sem-duracao  não cobra a duração (85-95 s nos eps. 1 e 2, 61-68 s do 3 ao 6, 105-140 s do 7 em diante) (para testes curtos)
 //
 // Saída: 0 aprovado, 1 algum item reprovado, 2 não conseguiu rodar.
 import { spawnSync } from 'node:child_process';
@@ -25,9 +25,10 @@ if (!fs.existsSync(path.join(path.resolve(pasta), 'chars.js'))) {
   console.error(`chars.js não encontrado em ${path.resolve(pasta)}. Rode: bash scripts/preparar-film.sh ${pasta}`);
   process.exit(2);
 }
-// Eps. 1 e 2 têm cerca de 90 s; do ep. 3 em diante, pouco mais de 60 s (decisão do autor em 7/11/2026; acima de 1 min por causa da monetização)
+// Eps. 1 e 2 têm cerca de 90 s; do ep. 3 ao 6, pouco mais de 60 s (decisão do autor em 7/11/2026; acima de 1 min por causa da monetização).
+// T2 (ep. 7 em diante): teste de 1:45 a 2:20, aprovado pelo autor em 12/11/2026 a partir do método Temporada Viral.
 const NUM_EP = Number((pasta.match(/ep(\d+)/) || [])[1] || 0);
-const duracao = NUM_EP >= 3 ? '61,68' : '85,95';
+const duracao = NUM_EP >= 7 ? '105,140' : NUM_EP >= 3 ? '61,68' : '85,95';
 const r = spawnSync(process.execPath, [qa, pasta, video, ...flags, '--duracao', duracao, '--sem-texto',
   '--checklist', 'membros, boca, legenda e voto A/B (references/qa-checklist.md)'], { stdio: 'inherit' });
 process.exit(r.status ?? 2);

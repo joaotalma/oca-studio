@@ -96,6 +96,18 @@ if (falas?.length && !flags.has('--sem-texto')) {
   aprovar('Tempo sem texto novo', maior <= MAX_SEM_TEXTO, `${maior.toFixed(2)} s antes da fala ${onde} (limite ${MAX_SEM_TEXTO} s)`);
 }
 
+// isca de engajamento: pedir comentário, envio ou marcação derruba a recomendação (Meta, "engagement bait").
+// Vale para o texto da tela e para as falas. O voto fecha com "Vocês decidem", e as opções ficam só na tela.
+// Ver referencias/videos-analisados/temporada-viral-metodo.md.
+const ISCA = /\b(comente|comenta|comentem|marque|marquem|envie|enviem|mande pra|mandem pra|compartilhe|compartilhem)\b/i;
+const iscas = [];
+for (const arq of ['ep.js', 'video.js', 'falas.js']) {
+  const p = path.join(pastaAbs, arq);
+  if (!fs.existsSync(p)) continue;
+  for (const m of fs.readFileSync(p, 'utf8').matchAll(/(['"`])((?:(?!\1)[^\\\n]|\\.){3,200})\1/g)) if (ISCA.test(m[2])) iscas.push(`${arq}: "${m[2].slice(0, 60)}"`);
+}
+aprovar('Sem isca de engajamento', iscas.length === 0, iscas.length ? iscas.slice(0, 3).join(' | ') : 'nenhum pedido de comentário, envio ou marcação');
+
 // gate, rodado na pasta do filme
 const pausas = iLeitura>=0 ? JSON.parse(fs.readFileSync(args[iLeitura+1],'utf8')) : [];
 if(!Array.isArray(pausas)||pausas.some(p=>!Number.isFinite(p.ini)||!Number.isFinite(p.fim)||p.ini<0||p.fim<=p.ini||p.fim>duracao+.05||!p.motivo))parar('Pausas de leitura precisam de intervalo válido e justificativa.');

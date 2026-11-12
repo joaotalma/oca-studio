@@ -20,6 +20,9 @@ Só o João publica, nas contas dele. Não use ferramenta que poste, agende ou e
 3. Liste as licenças: voz, música, imagens.
 4. Anote a variável que este vídeo testa, conforme a regra de corte.
 5. Monte a ficha para ele preencher depois de publicar.
+6. **Sem isca de engajamento** no título, na descrição e no comentário fixado: nada de "comente", "envie", "marque" ou "a mais comentada". A pergunta final é aberta. A Meta reduz a distribuição dessa isca.
+7. **Uma linha por rede** com o que muda: Instagram em conta profissional de criador; TikTok em conta pessoal; YouTube marcado como "não é para crianças". Uma playlist por série no YouTube.
+8. Lembre o João de **responder à mão** os primeiros comentários e de **não usar automação de mensagens** (ManyChat ou parecido). Fonte: `referencias/videos-analisados/temporada-viral-metodo.md`.
 
 ## Saída
 
@@ -33,7 +36,7 @@ Voz: João | Música e licença: | Imagens e licença:
 
 | Plataforma | Título | Descrição | Rótulo sintético | Regra conferida em | Publicado em | Link |
 
-Checklist: gancho em 3 s | fatos com fonte | licenças | área segura | celular com e sem som | rótulo decidido
+Checklist: gancho em 3 s | fatos com fonte | licenças | área segura | celular com e sem som | rótulo decidido | sem isca de engajamento | "não é para crianças" no YouTube
 ```
 
 ## Critério de pronto

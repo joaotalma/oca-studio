@@ -5,7 +5,7 @@ description: "Fluxo de produção dos episódios da série animada Se Vira, Tico
 
 # Se Vira, Tico
 
-Comédia romântica animada em 2D para Reels (Instagram); TikTok e YouTube estão pausados. Os eps. 1 e 2 têm cerca de 90 s; do ep. 3 em diante, pouco mais de 60 s (acima de 1 min, requisito de monetização), em vídeo vertical, e corta o clímax com duas opções A/B para o público votar. O desfecho vencedor abre o episódio seguinte.
+Comédia romântica animada em 2D para Reels (Instagram); TikTok e YouTube estão pausados. Os eps. 1 e 2 têm cerca de 90 s; do ep. 3 ao 6, pouco mais de 60 s; na T2, teste de 1:45 a 2:20 (acima de 1 min, requisito de monetização), em vídeo vertical, e corta o clímax com duas opções A/B para o público votar. O desfecho vencedor abre o episódio seguinte.
 
 **Logline:** Tico, 31, vive de bico em bico e chama o desemprego de "transição de carreira". Ao reencontrar a Lua, vizinha de infância e primeiro crush, passa a inventar mentiras e bicos cada vez mais absurdos para parecer que a vida está resolvida.
 
@@ -131,7 +131,8 @@ No rascunho, acrescente `--rascunho`: resolução e fps passam a ser 540x960 e 1
 - [ ] Boca seguindo o volume.
 - [ ] Legenda alinhada à voz real.
 - [ ] Loudness perto de -16 LUFS (TikTok).
-- [ ] Duração de 85 a 95 s nos eps. 1 e 2; de 61 a 68 s do ep. 3 em diante.
+- [ ] Duração de 85 a 95 s nos eps. 1 e 2; de 61 a 68 s do ep. 3 ao 6; de 1:45 a 2:20 do ep. 7 em diante (teste da T2).
+- [ ] Tela do voto com "Vocês decidem", sem "Comente" (o QA reprova isca de engajamento).
 - [ ] Gesto antes da palavra; expressão troca na piscada; cada corte motivado por informação nova ou reação.
 - [ ] Conflito compreensível nos primeiros 3 s, sem ter visto os episódios anteriores.
 - [ ] Toda tela de texto legível no celular sem pausar.
