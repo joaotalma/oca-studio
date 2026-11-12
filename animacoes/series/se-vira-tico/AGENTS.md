@@ -17,7 +17,7 @@ Este arquivo vale para o Claude Code e para o Codex. Responda ao autor em portug
 - **Publicação:** só o autor publica. Não poste nem agende nada.
 - **Licença das vozes:** os eps. 1 e 2 usam OmniVoice, de licença não comercial: não monetize esses dois e mantenha o crédito na legenda. Do ep. 3 em diante as vozes são do ElevenLabs (`docs/VOZES.md`). Antes de monetizar, confirme na página oficial que o plano do autor permite uso comercial.
 - **Git:** depois que o autor aceitar uma alteração, faça o commit e o push na branch de trabalho sem perguntar de novo. Inclua só os arquivos dessa alteração e nunca envie direto para a `main`. Merge só a pedido do autor.
-- **Arquivos fora do git:** vídeos e áudios finais ficam fora do git, com cópia no Drive. Referências de voz ficam em `audio/vozes/`; não as apague.
+- **Vídeos e áudios:** o vídeo final aprovado vai para `animacoes/entregas/se-vira-tico/epNN/` (ou `demitido-antes-do-gta/diaNN/`), com uma pasta por rede, e continua com cópia no Drive. Rascunhos e áudios brutos ficam fora do git, exceto as falas do spin-off, em `audio/demitido-gta6-*/`. Referências de voz ficam em `audio/vozes/`; não as apague.
 - **Rig:** edite `../../motor/personagem/chars.js`, nunca as cópias nas pastas de episódio. Ele é compartilhado: depois de mexer, rode `motor/qa/quadros.mjs comparar` nos episódios para garantir que nenhum episódio pronto mudou sem querer.
 - **Obras de terceiros:** não copie personagens, músicas ou cenas de outras obras.
 

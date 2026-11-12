@@ -28,3 +28,6 @@ demitido-gta6/*/export.mjs
 demitido-gta6/*/serve.mjs
 demitido-gta6/*/springs.js
 demitido-gta6/*/gate.mjs
+
+# Exceção (decisão do João, 12/11/2026): as falas gravadas do spin-off ficam no git, para remixar de qualquer lugar
+!audio/demitido-gta6-*/*.mp3

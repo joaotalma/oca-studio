@@ -15,3 +15,6 @@ Thumbs.db
 *.mp3
 *.m4a
 *.flac
+
+# Exceção (decisão do João, 12/11/2026): os vídeos finais aprovados ficam no git, em animacoes/entregas/
+!animacoes/entregas/**/*.mp4

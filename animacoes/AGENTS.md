@@ -43,5 +43,5 @@ O ator orgânico v4 dos Mistérios (`estudos/ator-organico-v4/`, em Canvas) segu
 - **Ganhos:** não invente números nem prometa viralização. Dados de um post isolado são hipótese.
 - **Regras de plataforma:** as do guia vêm de terceiros. Confirme na página oficial antes de decidir.
 - **Decisões:** pergunte antes do que não dá para desfazer. No resto, escolha o padrão razoável e diga qual foi.
-- **Git:** commit só a pedido. Vídeos e áudios ficam fora do git, e chaves ficam em variáveis de ambiente ou em `.env.local`.
+- **Git:** commit só a pedido. Chaves ficam em variáveis de ambiente ou em `.env.local`, nunca no git. O vídeo final aprovado de cada episódio vai para `entregas/<série>/<ep>/video.mp4`, com uma pasta por rede (capa e postagem); limite de 100 MB por arquivo. Rascunhos e áudios brutos ficam fora, exceto as falas gravadas do spin-off "Demitido Antes do GTA", que entram para permitir remixar de qualquer lugar.
 - **Referências:** o material de `referencias/` é de terceiros e serve só para estudo. Não copie personagens, trechos ou assets para os vídeos, e não publique este repositório.
