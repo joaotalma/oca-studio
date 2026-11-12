@@ -22,7 +22,7 @@ Agência de IA do João. Cada frente tem a sua pasta. Oca é a casa indígena em
 | [`referencias/`](animacoes/referencias/) | vídeos de outros criadores analisados, pesquisas e visuais |
 | [`estudos/`](animacoes/estudos/) | protótipos, entre eles o ator orgânico v4 aprovado |
 
-Branches: `main` é a linha principal. As branches `tico/ep04`, `tico/ep05-v2`, `tico/t1-formato` e `tico/visual-plotline` guardam versões paralelas do Tico que ainda vão ser escolhidas e juntadas.
+Branches: só a `main`. As versões alternativas dos episódios do Tico ficam em `episodios/ep0N/versoes/`.
 
 ## Regras gerais
 

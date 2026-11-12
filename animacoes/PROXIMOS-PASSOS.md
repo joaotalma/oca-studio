@@ -24,7 +24,8 @@ O nome final da agência é **Oca Studio** (antes se pensava em Blink Studio). O
 - [x] O Tico usa o Take One de `motor/take-one/`, que recebeu o `frames.mjs` usado pelo estudo visual-2d.
 - [x] `click` saiu dos Mistérios e foi para `series/filmes/roteiros/`, porque usa o template filmes.
 - [ ] Trazer para o motor o que valer dos scripts do Codex do ep06: entonação, abertura em 3 s e empacotamento.
-- [ ] Escolher, com o João, a versão de cada episódio que vale entre as branches `tico/*` e juntar na `main`.
+- [x] Versões oficiais escolhidas pelo João em 2026-11-12 (oficial = Drive): ep04 da branch (publicado), ep05 v2 orgânico, ep06 "A notícia". As versões anteriores estão em `episodios/ep0N/versoes/`, e as branches `tico/*` foram apagadas.
+- [x] Aprendizados com os ajustes do João em `docs/APRENDIZADOS.md`, e registro de erros do Tico trazido da branch.
 - [ ] Juntar os templates `ilustrado` e `filmes`, que são quase iguais (94 linhas de diferença). Antes, o `_filme-show-de-truman` precisa de cenas para ter quadros de referência.
 - [ ] Separar o elenco do Tico (`CHARS` e os ajustes por personagem) do rig quando outra série precisar de personagem com rig.
 - [ ] Manter o teste de fundo 3D como etapa própria, ainda pendente.

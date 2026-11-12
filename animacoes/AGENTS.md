@@ -12,6 +12,7 @@ Frente de animações da Oca Studio. Aqui ficam o motor, os templates e as séri
 | Referências externas (vídeos analisados, pesquisas, visuais) | `referencias/` |
 | Estudos e protótipos | `estudos/`. O que está em `estudos/_arquivo/` é só histórico |
 | Método, direitos e guia | `docs/METODO.md`, `docs/DIREITOS.md`, `docs/GUIA.md` e `docs/DIRECAO-VISUAL.md` |
+| **Aprendizados com os ajustes do João** | `docs/APRENDIZADOS.md`. Leia antes de escrever, produzir ou revisar qualquer vídeo, de qualquer série |
 | Plano e pendências | `PROXIMOS-PASSOS.md` |
 
 ### Séries

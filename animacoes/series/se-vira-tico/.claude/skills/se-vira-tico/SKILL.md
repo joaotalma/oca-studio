@@ -29,6 +29,10 @@ A fonte da história é `docs/BIBLIA.md`, com a temporada 1 episódio a episódi
 
 **Produção:** números de cada regra, kit do piloto e fases estão em `references/regras.md`. Respeite a ordem das fases.
 
+**Erros já cometidos:** `references/erros.md`. Releia antes de escrever, produzir ou revisar. Todo erro novo, do autor ou da conferência, entra lá na hora, com a causa e a regra que o evita.
+
+**Aprendizados da Oca Studio:** `../../docs/APRENDIZADOS.md` (a partir de `series/se-vira-tico/`), com a lógica por trás dos ajustes do autor em todas as séries.
+
 ## Rig
 
 Antes de criar ou alterar uma pose, leia `personagens/MONTAGEM_DO_RIG.md`. O essencial:

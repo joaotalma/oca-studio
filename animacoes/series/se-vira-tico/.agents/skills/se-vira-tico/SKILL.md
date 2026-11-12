@@ -29,6 +29,10 @@ A fonte da história é `docs/BIBLIA.md`, com a temporada 1 episódio a episódi
 
 **Produção:** números de cada regra, kit do piloto e fases estão em `references/regras.md`. Respeite a ordem das fases.
 
+**Erros já cometidos:** `references/erros.md`. Releia antes de escrever, produzir ou revisar. Todo erro novo, do autor ou da conferência, entra lá na hora, com a causa e a regra que o evita.
+
+**Aprendizados da Oca Studio:** `../../docs/APRENDIZADOS.md` (a partir de `series/se-vira-tico/`), com a lógica por trás dos ajustes do autor em todas as séries.
+
 ## Rig
 
 Antes de criar ou alterar uma pose, leia `personagens/MONTAGEM_DO_RIG.md`. O essencial:
@@ -95,7 +99,7 @@ Monte `film.html` com tempos estimados por um modelo de ritmo, marcados como PRO
 ```bash
 bash scripts/preparar-film.sh episodios/epNN
 cd episodios/epNN
-W=540 H=960 bash ~/.Codex/skills/take-one/scripts/render-parallel.sh 15 90 ../../render/epNN_rascunho.mp4 1 12
+W=540 H=960 bash ~/.claude/skills/take-one/scripts/render-parallel.sh 15 90 ../../render/epNN_rascunho.mp4 1 12
 ```
 
 Depois gere as vozes no ElevenLabs com `node --env-file=.env.local scripts/gerar-vozes-elevenlabs.mjs episodios/epNN audio/epNN`, como descreve `docs/VOZES.md`. Os arquivos ficam em `audio/epNN/`. Confira cada fala com transcrição e ajuste a grafia quando a pronúncia sair errada. O OmniVoice, de licença não comercial, ficou só nos eps. 1 e 2.
@@ -115,7 +119,7 @@ Depois gere as vozes no ElevenLabs com `node --env-file=.env.local scripts/gerar
 ### 6. QA
 
 ```bash
-node .Codex/skills/se-vira-tico/scripts/qa-episodio.mjs episodios/epNN render/epNN.mp4
+node .claude/skills/se-vira-tico/scripts/qa-episodio.mjs episodios/epNN render/epNN.mp4
 ```
 
 No rascunho, acrescente `--rascunho`: resolução e fps passam a ser 540x960 e 15, e a loudness não é cobrada. O script cobre os itens medidos; extraia quadros e confira os itens visuais de `references/qa-checklist.md`. Relate os reprovados como estão.
