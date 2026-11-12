@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Se Vira, Tico: teste de render</title>
+<style>html,body{margin:0;background:#111}canvas{display:block;height:100vh;width:auto;margin:auto}</style>
+<script src="springs.js"></script>
+<script src="chars.js"></script>
+</head><body><canvas id="c" width="1080" height="1920"></canvas>
+<script>
+(() => {
+const W = 1080, H = 1920, FUNDO = '#fff3d6', tico = CHARS.tico;
+const g = document.getElementById('c').getContext('2d');
+const ESCALA = 1350 / tico.H, CHAO = 1700;
+const RESPIRA_S = 3, RESPIRA_PX = 1.5;          // ciclo de 3 s, 1,5 px no topo da cabeca
+const TROCA_EXPR = 1.45;                        // o sorriso chega com o braco quase no alto
+const BRACO_DE = [10, 6], BRACO_ATE = [140, 170];
+const mix = (a, b, p) => a + (b - a) * p;
+
+function pose(t) {
+  const p = Spring.unit(t - 1, 'playful');
+  const balanco = Math.sin(t * 2 * Math.PI / RESPIRA_S);
+  return {
+    armR: [mix(BRACO_DE[0], BRACO_ATE[0], p) + balanco * 1.2, mix(BRACO_DE[1], BRACO_ATE[1], p) + balanco * 1.2],
+    expr: t < TROCA_EXPR ? 'neutro' : 'feliz',
+  };
+}
+
+function svgDoQuadro(t) {
+  const respira = (1 - Math.cos(t * 2 * Math.PI / RESPIRA_S)) / 2 * RESPIRA_PX / (tico.H * ESCALA);
+  const sy = ESCALA * (1 + respira);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">` +
+    `<g transform="translate(${W / 2} ${CHAO}) scale(${ESCALA} ${sy})">${drawChar(tico, pose(t))}</g></svg>`;
+}
+
+window.FILM_DURATION = 4;
+window.renderFrame = async (t) => {
+  const img = new Image();
+  img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgDoQuadro(t));
+  await img.decode();
+  g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'source-over'; g.filter = 'none';
+  g.fillStyle = FUNDO; g.fillRect(0, 0, W, H);
+  g.drawImage(img, 0, 0);
+};
+document.fonts.ready.then(() => { window.READY = true; });
+})();
+</script></body></html>

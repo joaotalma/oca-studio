@@ -1,0 +1,37 @@
+{
+ "tico": {
+  "voiceId": "wyEycNN7KphVSws3Ov6u",
+  "previa": 0,
+  "referencia": "tico"
+ },
+ "lua": {
+  "voiceId": "sC4SB7PNvwU5Em88dsYE",
+  "previa": 2,
+  "referencia": "lua"
+ },
+ "jao": {
+  "voiceId": "XUou9B687fb2f1D4qOey",
+  "previa": 2,
+  "referencia": "jao"
+ },
+ "leticia": {
+  "voiceId": "5n2BiIAYrNxvOnFhP0h4",
+  "previa": 2,
+  "referencia": "leticia"
+ },
+ "ceo": {
+  "voiceId": "5N1kMlRoftUSa72hIGVo",
+  "previa": 1,
+  "referencia": "borracheiro"
+ },
+ "junior": {
+  "voiceId": "jUGzs0RMu1LpNbvvinsk",
+  "previa": 1,
+  "referencia": "vendedor"
+ },
+ "vendedor": {
+  "voiceId": "ePd4yti5BMm8PtB0iafk",
+  "previa": 0,
+  "referencia": "vendedor"
+ }
+}

@@ -1,0 +1,21 @@
+node_modules/
+render/*.mp4
+render/frames/
+audio/*.wav
+audio/*.mp3
+.env
+*.log
+audio/**/*.wav
+audio/**/*.mp3
+episodios/*/chars.js
+episodios/*/export.mjs
+episodios/*/serve.mjs
+episodios/*/springs.js
+episodios/*/cenarios.js
+episodios/*/motor.js
+render/*.mp3
+render/*.wav
+__pycache__/
+render/.pieces-*/
+# Local secrets written by `elevenlabs onboard`
+/.env.local
