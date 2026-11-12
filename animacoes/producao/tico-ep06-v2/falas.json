@@ -1,0 +1,22 @@
+[
+ {"n":1,"voz":"lua","quem":"Lua","texto":"Preciso entregar até as oito."},
+ {"n":2,"voz":"tico","quem":"Tico","texto":"Trinta e quatro minutos? Duvida de mim?","reusar":"01_tico"},
+ {"n":3,"voz":"leticia","quem":"Letícia","texto":"Isso não estava no meu curso!","reusar":"02_leticia"},
+ {"n":4,"voz":"tico","quem":"Tico","texto":"Cinco minutos adiantado!","reusar":"03_tico"},
+ {"n":5,"voz":"lua","quem":"Lua","texto":"O outro já entregou.","reusar":"04_lua"},
+ {"n":6,"voz":"tico","quem":"Tico","texto":"Você achou que eu não chegava.","reusar":"05_tico"},
+ {"n":7,"voz":"lua","quem":"Lua","texto":"Tico… eu precisava garantir.","reusar":"06_lua"},
+ {"n":8,"voz":"tico","quem":"Tico","texto":"É. Claro.","reusar":"07_tico"},
+ {"n":9,"voz":"lua","quem":"Lua","texto":"Sexta. Cinema às oito. Você pode?","reusar":"08_lua"},
+ {"n":10,"voz":"tico","quem":"Tico","texto":"Eu desmarco…","reusar":"09_tico"},
+ {"n":11,"voz":"tico","quem":"Tico","texto":"Às oito eu posso.","reusar":"10_tico"},
+ {"n":12,"voz":"lua","quem":"Lua","texto":"Tico, eu preciso te contar uma coisa."},
+ {"n":13,"voz":"tico","quem":"Tico","texto":"Eu também."},
+ {"n":14,"voz":"lua","quem":"Lua","texto":"Eu vou pra outro estado."},
+ {"n":15,"voz":"tico","quem":"Tico","texto":"Eu te amo."},
+ {"n":16,"voz":"tico","quem":"Tico","texto":"Doces da Lua."},
+ {"n":17,"voz":"lua","quem":"Lua","texto":"Eu me inscrevi num curso de confeitaria. Em Porto Alegre."},
+ {"n":18,"voz":"lua","quem":"Lua","texto":"Começa daqui a trinta dias."},
+ {"n":19,"voz":"tico","quem":"Tico","texto":"E a gente?"},
+ {"n":20,"voz":"lua","quem":"Lua","texto":"Não sei. Mas eu quis estar aqui."}
+]

@@ -1,0 +1,367 @@
+{
+  "slug": "ep02",
+  "titulo": "Cinco estrelas, tanque vazio",
+  "numero": 2,
+  "formato": "dialogo",
+  "estado": "proposta_aguardando_aprovacao",
+  "tempos": "estimados_nao_alinhados_ao_audio",
+  "palavrasFaladas": 101,
+  "duracaoEstimada": 68,
+  "plataformas": [
+    "YouTube Shorts",
+    "TikTok"
+  ],
+  "embalagem": {
+    "YouTube Shorts": {
+      "title": "Quanto custaram as cinco estrelas dele? | Se Vira, Tico 2",
+      "firstFrame": "Lua pergunta sobre o trabalho e Tico admite que começou hoje; a bag e a moto situam a conversa.",
+      "description": "Ele conseguiu a nota. O resto da manhã foi embora. Você teria aparecido assim ou fugido? Pergunta retrospectiva sobre o capítulo já fechado."
+    },
+    "TikTok": {
+      "title": "Cinco estrelas. Tanque vazio. E ela esperando às oito.",
+      "firstFrame": "Tico responde à Lua: “Sou. Comecei hoje. É temporário.”; legenda acompanha, sem título parado.",
+      "description": "A avaliação veio. O horário não voltou. CARONA ou CHUVEIRO: o que você teria feito? A resposta da história já foi definida."
+    }
+  },
+  "editorial": {
+    "promessa": "Ele precisa de cinco estrelas para cumprir uma carona às oito; a única passageira usa isso contra ele.",
+    "contextoNovo": "Tico acaba de admitir que começou nas entregas. A resposta da Lua e a promessa de mototáxi cabem na primeira cena; não é preciso assistir ao reencontro.",
+    "perguntaLocal": "Quanto custa conseguir as cinco estrelas de que ele precisa?",
+    "payoffLocal": "Ele ganha a nota 5,0, mas a live consome tempo, gasolina e dignidade. A promessa está mais difícil de cumprir e o vendedor compra o curso que a humilhação vendeu.",
+    "escalada": [
+      "Promete sem experiência",
+      "App exige cinco estrelas",
+      "Letícia troca nota por live",
+      "Mais voltas rendem mais audiência e menos gasolina",
+      "Ele confirma a história do curso",
+      "Ganha a nota e volta empurrando"
+    ],
+    "continuidade": {
+      "entrada": "Verdade foi a resposta histórica à pergunta da Lua. Moto consertada, nota −0,3.",
+      "saida": "Nota 5,0 da corrida de teste substitui −0,3; regra só vale uma vez. Tanque vazio, Tico encharcado e sem aparecer para Lua. O próximo capítulo segue o caminho histórico Chuveiro, não nova contagem."
+    },
+    "participacao": {
+      "tipo": "retrospectiva",
+      "pergunta": "Você teria aparecido assim ou fugido para o chuveiro?"
+    },
+    "publicadoAnteriormente": true,
+    "hipoteseTeste": "Vincular cada volta ao aumento da audiência, perda de combustível e prazo pode sustentar a escalada sem a volta temporal da abertura original."
+  },
+  "blocos": [
+    {
+      "ini": 0,
+      "fim": 8,
+      "nome": "A admissão e a promessa",
+      "acao": "Porta do conjunto; bag e Companheira à vista, Fiscal perto. Uma pequena etiqueta situa Lua como amiga de infância. Tico admite o trabalho e, para impressionar, inventa uma habilidade nova. Fiscal só late na mentira do mototáxi.",
+      "plano": "Dupla → rostos",
+      "offset": 0.2
+    },
+    {
+      "ini": 8,
+      "fim": 15,
+      "nome": "Às oito",
+      "acao": "Lua precisa ir à reunião. O app apresenta “Teste · 5 estrelas para liberar passageiros”. Não empilhar as regras em novas telas.",
+      "plano": "Dupla → app",
+      "offset": 0.2
+    },
+    {
+      "ini": 15,
+      "fim": 22,
+      "nome": "A única passageira",
+      "acao": "Cartão pequeno “5h”. App mostra um passageiro disponível; Letícia está pronta e inicia a live. Tico aceita a condição porque precisa da avaliação.",
+      "plano": "Moto de frente; os dois sentados",
+      "offset": 0.2
+    },
+    {
+      "ini": 22,
+      "fim": 36,
+      "nome": "Mais audiência, menos gasolina",
+      "acao": "A mesma fachada passa três vezes; GPS vira novelo e a gasolina baixa. Contador da live cresce de 11 para 340. Um comentário de paçoca_do_nilton pergunta “Funciona?”. A lombada levanta e pousa a moto na palavra “voa”, preservando a gag original.",
+      "plano": "Moto → GPS → rostos",
+      "offset": 0.2
+    },
+    {
+      "ini": 36,
+      "fim": 44,
+      "nome": "O preço da avaliação",
+      "acao": "Relógio 7h20. Polegar da Letícia para sobre as estrelas. Ele olha o combustível e escolhe o que quer ouvir para encerrar a corrida.",
+      "plano": "Mão no celular → reação",
+      "offset": 0.2
+    },
+    {
+      "ini": 44,
+      "fim": 53,
+      "nome": "A nota chegou; a gasolina acabou",
+      "acao": "Letícia desce num prédio chique e dá cinco estrelas. Nota passa de −0,3 para 5,0. A moto morre às 7h31; mapa “A pé · 27 min”. Ele empurra, sua e termina na esquina do conjunto às 7h58.",
+      "plano": "Prédio → ponteiro → dois planos da caminhada",
+      "offset": 0.2
+    },
+    {
+      "ini": 53,
+      "fim": 58,
+      "nome": "A live vendeu",
+      "acao": "Em momento paralelo após terminar a live, o vendedor de paçoca vê o corte “O curso” no celular. O comentário anterior identifica a ponte; ele aperta “Comprar curso”. Não dar esse fato ao Tico.",
+      "plano": "Homem no banco → celular",
+      "offset": 1
+    },
+    {
+      "ini": 58,
+      "fim": 65,
+      "nome": "Ela está esperando",
+      "acao": "Às 7h58, Lua espera na porta e grava áudio. Tico, escondido na esquina, escuta, cheira a axila e murcha. Nota 5,0 continua visível. A promessa é importante para ela, não só para a vaidade dele.",
+      "plano": "Lua → celular → rosto do Tico",
+      "offset": 0.2
+    },
+    {
+      "ini": 65,
+      "fim": 68,
+      "nome": "O que você teria feito?",
+      "acao": "Sobre o rosto dele, sem cartela separada: “Você teria ido assim?” e CARONA / CHUVEIRO. É pergunta retrospectiva; não prometer que comentários atuais escolherão o próximo.",
+      "plano": "Rosto e moto sem combustível",
+      "offset": 0.2
+    }
+  ],
+  "falas": [
+    {
+      "quem": "Lua",
+      "texto": "Você é entregador?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 0.2,
+      "fimEstimado": 1.48,
+      "plano": "Dupla → rostos",
+      "cena": "A admissão e a promessa"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Sou. Comecei hoje. É temporário.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 1.64,
+      "fimEstimado": 3.7,
+      "plano": "Dupla → rostos",
+      "cena": "A admissão e a promessa"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Pena não ser mototáxi.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 3.86,
+      "fimEstimado": 5.53,
+      "plano": "Dupla → rostos",
+      "cena": "A admissão e a promessa"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Mototáxi eu faço.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 5.69,
+      "fimEstimado": 6.97,
+      "plano": "Dupla → rostos",
+      "cena": "A admissão e a promessa"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Reunião às oito. Tem experiência?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 8.2,
+      "fimEstimado": 10.25,
+      "plano": "Dupla → app",
+      "cena": "Às oito"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Às oito eu tenho.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 10.41,
+      "fimEstimado": 12.08,
+      "plano": "Dupla → app",
+      "cena": "Às oito"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "Cinco estrelas por um depoimento na minha live.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 15.2,
+      "fimEstimado": 18.41,
+      "plano": "Moto de frente; os dois sentados",
+      "cena": "A única passageira"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Fechado.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 18.57,
+      "fimEstimado": 19.08,
+      "plano": "Moto de frente; os dois sentados",
+      "cena": "A única passageira"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Já passamos aqui três vezes!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 22.2,
+      "fimEstimado": 24.25,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "A live subiu. Mais uma volta.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 24.41,
+      "fimEstimado": 26.85,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "Ele alugou essa moto pra vencer!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 27.01,
+      "fimEstimado": 29.45,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "E hoje ele voa!",
+      "acao": "A moto sobe e pousa na lombada no “voa”.",
+      "pausaAntes": 0,
+      "inicioEstimado": 29.61,
+      "fimEstimado": 31.28,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Tico",
+      "texto": "É emprestada!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 31.44,
+      "fimEstimado": 32.34,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "Nem moto tinha, gente!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 32.5,
+      "fimEstimado": 34.16,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Eu tenho hora marcada!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 34.32,
+      "fimEstimado": 35.99,
+      "plano": "Moto → GPS → rostos",
+      "cena": "Mais audiência, menos gasolina"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Cadê o destino?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 36.2,
+      "fimEstimado": 37.48,
+      "plano": "Mão no celular → reação",
+      "cena": "O preço da avaliação"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "Estrela é no destino. Quem te salvou?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 37.64,
+      "fimEstimado": 40.47,
+      "plano": "Mão no celular → reação",
+      "cena": "O preço da avaliação"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Você.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 40.63,
+      "fimEstimado": 41.14,
+      "plano": "Mão no celular → reação",
+      "cena": "O preço da avaliação"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "O curso.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 41.3,
+      "fimEstimado": 42.2,
+      "plano": "Mão no celular → reação",
+      "cena": "O preço da avaliação"
+    },
+    {
+      "quem": "Tico",
+      "texto": "O curso.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 42.36,
+      "fimEstimado": 43.26,
+      "plano": "Mão no celular → reação",
+      "cena": "O preço da avaliação"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "Gratidão! Cinco estrelas.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 44.2,
+      "fimEstimado": 45.48,
+      "plano": "Prédio → ponteiro → dois planos da caminhada",
+      "cena": "A nota chegou; a gasolina acabou"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Não faz isso, Companheira.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 45.64,
+      "fimEstimado": 47.31,
+      "plano": "Prédio → ponteiro → dois planos da caminhada",
+      "cena": "A nota chegou; a gasolina acabou"
+    },
+    {
+      "quem": "Vendedor",
+      "texto": "Comigo vai ser fácil.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 54,
+      "fimEstimado": 55.67,
+      "plano": "Homem no banco → celular",
+      "cena": "A live vendeu"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Tico, tô esperando. Essa reunião pode mudar tudo. Obrigada pela carona.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 58.2,
+      "fimEstimado": 62.56,
+      "plano": "Lua → celular → rosto do Tico",
+      "cena": "Ela está esperando"
+    }
+  ],
+  "participacaoEncerradaAlternativa": null
+}

@@ -13,6 +13,8 @@ Marcas: **[relato]** vem de criador ou fórum; **[hipótese]** é inferência a 
 
 ## Roteiro
 
+**Integração editorial de 2026-11-11:** usar `docs/PROMPT-ROTEIROS-BLINK.md` para declarar promessa, contexto de entrada, progressão, entrega local, continuidade e participação. A origem paginada dos critérios está nesse prompt; a síntese do método fica em `docs/METODO-BLINK-ROTEIROS.md`. `engine/rubrica-roteiros.mjs` confere presença e alguns indícios literais, sem nota de viralização ou aprovação automática. No compilador narrado, a auditoria só é aplicada quando a estrutura traz `editorial`; contratos antigos e a validação factual continuam preservados. O comando independente também lê contratos de diálogo sem convertê-los ao template de narração. Ler PDFs e editar prompts/validadores não ajusta pesos de modelo nem demonstra ganho de retenção.
+
 **Revisão v2, solicitada em 2026-11-08:** usar `docs/DIRECAO-VISUAL.md` e `engine/gerar-roteiro.mjs`. Antes dos blocos, definir pergunta central, mecanismo de progressão, pista, virada e entrega. Gancho/prova/desenvolvimento/fecho são funções, não obrigação de preencher intervalos. Contexto precisa aumentar vínculo, risco ou compreensão; cortar o que apenas adia a promessa. Referências atuais entram pelo radar em `docs/PROMPT-PESQUISA.md`. Tudo permanece hipótese até medição do próprio canal.
 
 | Bloco | Tempo | Função |

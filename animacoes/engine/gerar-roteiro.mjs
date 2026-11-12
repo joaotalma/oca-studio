@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {avaliarEditorial,relatorioMarkdown} from './rubrica-roteiros.mjs';
 
 // Compila decisões editoriais explícitas; não inventa fatos nem promete desempenho.
 export function compilar(e,{ppm=150}={}) {
@@ -20,12 +21,18 @@ export function compilar(e,{ppm=150}={}) {
   });
   if(falas[0].fim>3)throw Error('Gancho excede 3 s no ritmo estimado');
   const avisos=[];
+  const auditoriaEditorial=Object.hasOwn(e,'editorial')?avaliarEditorial(e):undefined;
+  if(auditoriaEditorial)avisos.push(...auditoriaEditorial.avisos.map(a=>`Editorial (${a.codigo}, ${a.campo}): ${a.mensagem}`));
   if(t<65||t>75)avisos.push(`Duração ${t.toFixed(1)} s fora do alvo 65–75; revisar texto/ritmo, nunca preencher com frase vazia.`);
   if(e.falas.some(f=>f.texto.split(/\s+/).length>15))avisos.push('Há fala com mais de 15 palavras; conferir respiração.');
-  return {falas,palavras,duracao:t,avisos,direcao:{versao:2,slug:e.slug,mecanismo:e.mecanismo,pergunta:e.pergunta,pista:e.pista,virada:e.virada,resposta:e.resposta,planos:e.falas.map((f,i)=>({fala:i+1,funcao:f.funcao,acao:f.acao,revela:f.revela,causa:f.causa||'abertura/contexto',enquadramento:f.enquadramento||'medio',movimento:f.movimento||'parado',motivoCorte:f.motivoCorte||'mudança de informação',...(f.cena3d?{cena3d:f.cena3d}:{})}))}};
+  return {falas,palavras,duracao:t,avisos,...(auditoriaEditorial?{auditoriaEditorial}:{}),direcao:{versao:2,slug:e.slug,mecanismo:e.mecanismo,pergunta:e.pergunta,pista:e.pista,virada:e.virada,resposta:e.resposta,planos:e.falas.map((f,i)=>({fala:i+1,funcao:f.funcao,acao:f.acao,revela:f.revela,causa:f.causa||'abertura/contexto',enquadramento:f.enquadramento||'medio',movimento:f.movimento||'parado',motivoCorte:f.motivoCorte||'mudança de informação',...(f.cena3d?{cena3d:f.cena3d}:{})}))}};
 }
 export function gerar(file,{ppm=150}={}) {
   const e=JSON.parse(fs.readFileSync(file,'utf8')),dir=path.dirname(file),r=compilar(e,{ppm});
+  if(r.auditoriaEditorial){
+    fs.writeFileSync(path.join(dir,'auditoria-editorial.json'),JSON.stringify(r.auditoriaEditorial,null,2)+'\n');
+    fs.writeFileSync(path.join(dir,'auditoria-editorial.md'),relatorioMarkdown(r.auditoriaEditorial));
+  }
   fs.writeFileSync(path.join(dir,'falas.js'),'const FALAS = [\n'+r.falas.map(f=>'  '+JSON.stringify(f)).join(',\n')+'\n];\n');
   fs.writeFileSync(path.join(dir,'direcao.json'),JSON.stringify(r.direcao,null,2)+'\n');
   fs.writeFileSync(path.join(dir,'video.js'),`const VIDEO = { template: 'ilustrado', slug: '${e.slug}', paleta: '${e.paleta||'petroleo'}', rosto: 'curioso', olhos: 'cinema', dissolve: 0.08, folga: 0.6 };\n`);

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 1000"><defs>
+  <style>
+    .l{stroke:#1f1519;stroke-linejoin:round;stroke-linecap:round}
+    .f{stroke:#1f1519;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    .t{font-family:Arial,Helvetica,sans-serif;fill:#1f1519}
+  </style>
+  <linearGradient id="jk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8f3f2a"/><stop offset=".55" stop-color="#b5532f"/><stop offset="1" stop-color="#c8643a"/></linearGradient>
+  <linearGradient id="jn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f2d48"/><stop offset="1" stop-color="#32466b"/></linearGradient>
+  <linearGradient id="sk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a86f4f"/><stop offset=".6" stop-color="#c58a63"/><stop offset="1" stop-color="#d49a71"/></linearGradient>
+  <linearGradient id="refl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9aa5ad"/><stop offset=".5" stop-color="#eef3f5"/><stop offset="1" stop-color="#aeb9c0"/></linearGradient>
+  <linearGradient id="luz" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a3560"/><stop offset=".5" stop-color="#c4b0ae"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="borda" x1="0" y1="0" x2="1" y2="0"><stop offset=".84" stop-color="#000"/><stop offset="1" stop-color="#c8682c"/></linearGradient>
+  <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111729"/><stop offset=".65" stop-color="#2b2340"/><stop offset="1" stop-color="#7a3f2a"/></linearGradient>
+  <filter id="branco"><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/></filter>
+  <filter id="b12"><feGaussianBlur stdDeviation="12"/></filter>
+  <filter id="b6"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="grao"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/><feColorMatrix type="saturate" values="0"/></filter>
+  <clipPath id="painel"><rect x="990" y="60" width="480" height="1000" rx="18"/></clipPath>
+
+  </defs><!-- cabeça -->
+    <path class="l" stroke-width="5" fill="url(#sk)" d="M144 192 Q144 130 220 130 Q296 130 296 192 L296 262 Q296 344 220 344 Q144 344 144 262 Z"/>
+    <path class="l" stroke-width="5" fill="#c58a63" d="M140 232 Q124 232 126 256 Q128 278 146 276 Z"/><path class="l" stroke-width="5" fill="#d49a71" d="M300 232 Q316 232 314 256 Q312 278 294 276 Z"/>
+    <!-- costeletas -->
+    <path fill="#20161c" d="M144 180 L160 180 L158 236 L146 246 Z M296 180 L280 180 L282 236 L294 246 Z"/>
+    <!-- cabelo cacheado em volume -->
+    <path class="l" stroke-width="5" fill="#20161c" d="M132 214 a30 30 0 0 1 -6 -54 a32 32 0 0 1 28 -50 a34 34 0 0 1 48 -28 a36 36 0 0 1 56 -2 a34 34 0 0 1 50 26 a32 32 0 0 1 30 52 a30 30 0 0 1 -30 56 Q298 190 276 182 a20 20 0 0 1 -32 -6 a20 20 0 0 1 -36 2 a20 20 0 0 1 -34 -2 a20 20 0 0 1 -26 12 Q150 192 132 214 Z"/>
+    <g class="f" style="stroke:#6f5661" stroke-width="3.5">
+      <path d="M150 128 q14 -13 28 -1 q-6 14 -17 8 q-3 -7 5 -8"/><path d="M196 100 q16 -13 31 -1 q-7 16 -19 9 q-4 -8 5 -9"/><path d="M226 122 q14 -10 25 2 q-6 12 -16 6"/>
+      <path d="M134 172 q12 -12 25 -2 q-5 12 -14 7"/><path d="M168 156 q12 -9 22 1 q-6 10 -13 5"/><path d="M204 146 q14 -10 26 2 q-6 11 -15 6"/><path d="M178 126 q9 -7 17 1"/><path d="M304 166 q12 -6 20 7 q-7 8 -13 3"/><path d="M152 196 q8 -8 16 -3"/>
+    </g>
+    <g class="f" style="stroke:#a78d99" stroke-width="3"><path d="M166 104 q14 -10 26 -8"/><path d="M216 84 q14 -5 26 -1"/><path d="M130 142 q5 -12 16 -18"/></g>
+    <!-- mecha prateada -->
+    <path class="l" fill="#cdd4d9" stroke-width="4" d="M254 92 Q236 116 256 134 Q274 150 256 174 Q290 170 292 138 Q292 108 254 92 Z"/>
+    <path class="f" style="stroke:#7f8b93" stroke-width="3" d="M266 110 Q282 126 276 150"/><path class="f" style="stroke:#ffffff" stroke-width="3" d="M262 102 Q276 108 282 120"/>
+    <circle cx="266" cy="300" r="3.6" fill="#3b2318"/></svg>

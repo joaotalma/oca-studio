@@ -3,7 +3,7 @@
 Tudo que depende do nicho fica aqui, e só aqui. Em branco de propósito. A skill `configurar-canal` preenche com você.
 
 **Estado:** em preenchimento. Voz original ElevenLabs e licença comercial definidas em 2026-11-08; faltam palavras proibidas e confirmação final das demais preferências.
-**Última revisão:** 2026-11-08
+**Última revisão:** 2026-11-09
 
 ## 1. Tema e ângulo
 
@@ -25,6 +25,7 @@ Tudo que depende do nicho fica aqui, e só aqui. Em branco de propósito. A skil
 
 - **Vai ter personagem fixo?** Sim: a figura "você", que vive cada "Imagine...".
 - **Rosto:** a expressão muda de cena para cena; a identidade continua a mesma.
+- **Personagem expressivo aprovado em 2026-11-09:** João aprovou o comparativo v4, com contornos arredondados, roupa com caimento, boca/arcada expressivas e olhos de pupila preta sem íris colorida, variando foco, tamanho e brilho por emoção. Referência em `personagens/voce-v4.md` e `experimentos/ator-organico-v4/`. Preservar esse desenho. O próximo teste, pedido para depois, é combiná-lo com fundo 3D estilizado e conferir luz, sombra, perspectiva e oclusão sem perder cor/legibilidade. A integração no template continua pendente; não renderizar novo teste só por registrar esta aprovação.
 - **Estética atual (evolução aprovada em 2026-11-08, exemplo de Varginha e apagão):** personagem 2D em cenário 3D estilizado, com volume, perspectiva, sombra de contato e movimentos de câmera intencionais. Enquadramentos preenchidos, sem excesso de chão vazio ou movimento solto de objetos. Preservar respiração, balanço leve, piscada, identidade do personagem, reação nas falas longas, olho de cinema e cor de passado nos trechos "ACONTECEU".
   - **Céu:** estrelas discretas nas cenas externas noturnas; nuvens com movimento lento nas externas de dia. Céu fica atrás do cenário, nunca sobre personagem, edifícios, texto ou interiores.
   - **Luz:** personagem um pouco mais claro que no exemplo, com preenchimento neutro suave. As fontes dinâmicas continuam dominando direção, cor e instante do acendimento. Janela à direita ilumina a direita; fonte à esquerda ilumina a esquerda. Sombras seguem a direção oposta. Não acumular iluminação fixa da imagem com a dinâmica.

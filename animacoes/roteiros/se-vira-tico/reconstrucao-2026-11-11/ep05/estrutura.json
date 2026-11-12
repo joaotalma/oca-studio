@@ -1,0 +1,259 @@
+{
+  "slug": "ep05",
+  "titulo": "Às oito tá entregue",
+  "numero": 5,
+  "formato": "dialogo",
+  "estado": "proposta_aguardando_aprovacao",
+  "tempos": "estimados_nao_alinhados_ao_audio",
+  "palavrasFaladas": 53,
+  "duracaoEstimada": 60,
+  "plataformas": [
+    "YouTube Shorts",
+    "TikTok"
+  ],
+  "embalagem": {
+    "YouTube Shorts": {
+      "title": "Ele prometeu às oito. Estava a 34 minutos. | Se Vira, Tico 5",
+      "firstFrame": "Seis caixas prontas; relógio 19h40 e GPS 34 min; Lua pergunta “Você chega até as oito?”.",
+      "description": "Dessa vez, ele apagou o “tô chegando”. Você teria esperado? A pergunta é retrospectiva: a história seguiu com outro motorista."
+    },
+    "TikTok": {
+      "title": "Prometeu às 20h. O GPS não concordou.",
+      "firstFrame": "Prazo 20h e 34 min de caminho no primeiro quadro, com a pergunta da Lua. Sem silhueta ou interrogação.",
+      "description": "Seis caixas, um prazo e uma corrida “pertinho”. CONFIA ou OUTRO MOTORISTA: o que você teria escolhido? A história original já tem resultado."
+    }
+  },
+  "editorial": {
+    "promessa": "Ele promete entregar os doces às oito sem conferir o próprio dia. Quando percebe que não chega, consegue avisar?",
+    "contextoNovo": "Primeiro quadro: seis caixas, relógio 19h40, prazo 20h e GPS 34 min. É um compromisso impossível de cumprir no prazo, compreensível sem conhecer a série. Um único recuo explica como ele prometeu; a história então volta ao ponto da pergunta.",
+    "perguntaLocal": "Na hora do atraso, ele vai repetir “tô chegando” ou contar a distância real?",
+    "payoffLocal": "Apaga “tô chegando” e avisa que está a 34 min. Lua passa a ter informação para decidir; isso possibilita a escolha histórica deoutromotorista.",
+    "escalada": [
+      "Recebe uma chance de ser sincero",
+      "Promete entrega sem conferir a agenda",
+      "Divulga os doces enquanto trabalha",
+      "Corrida pertinho dá 38 km",
+      "Prazo 20h e distância 34 min entram em conflito",
+      "Ele admite o limite e Lua pode resolver"
+    ],
+    "continuidade": {
+      "entrada": "Verdade foi o caminho histórico do EP. 4. Lua sabe que ele fugiu por vergonha; ele continua motorista do carro alugado.",
+      "saida": "Lua está na cozinha às 19h41, seis caixas prontas e polegar em Chamar outra entrega. Curso em Porto Alegre foi só inscrito; Tico não sabe do sonho. O resultado confirmado posteriormente é OUTRO MOTORISTA."
+    },
+    "participacao": {
+      "tipo": "retrospectiva",
+      "pergunta": "Você teria esperado por ele ou chamado outra entrega?"
+    },
+    "publicadoAnteriormente": true,
+    "hipoteseTeste": "Promessa clara, menos retomada e aviso honesto como entrega antes da pergunta podem tornar o dilema compreensível para quem encontra o vídeo no feed."
+  },
+  "blocos": [
+    {
+      "ini": 0,
+      "fim": 4,
+      "nome": "Vinte minutos, trinta e quatro de caminho",
+      "acao": "Já no primeiro quadro, cozinha e GPS em dois planos simples: prazo 20h, relógio 19h40 e “34 min”. Seis caixas prontas. Não usar silhueta/interrogação ou mistério de traição.",
+      "plano": "Lua → mapa legível",
+      "offset": 0.2
+    },
+    {
+      "ini": 4,
+      "fim": 12,
+      "nome": "A verdade anterior",
+      "acao": "Um único recuo de contexto, marcado “Antes daquela entrega”. Fim da corrida anterior: Tico admite por que fugiu da carona; Lua cobra aviso e depois consegue rir. Daqui em diante, avançar até retomar as 19h40, sem novo flashback.",
+      "plano": "Rostos e retrovisor",
+      "offset": 0.2
+    },
+    {
+      "ini": 12,
+      "fim": 24,
+      "nome": "Seis caixas e uma promessa",
+      "acao": "Sobreposição “Sábado, 14h”. Cozinha com seis caixas, pia cheia e caderno. Ela contrata entrega; ele promete sem olhar o celular que mostra “Corrida agendada: 18h30”. Na negociação, o texto “Entrega combinada: R$ 20” encerra o preço; ela entrega amostra e cartões Doces da Lua.",
+      "plano": "Bancada → dupla → telefone no bolso e mãos",
+      "offset": 0.2
+    },
+    {
+      "ini": 24,
+      "fim": 35,
+      "nome": "O carro também trabalha",
+      "acao": "Amostra no painel. Vendedor fareja; Tico acha que é perfume, mas ele aponta o doce. Tico entrega cartão da Lua. Letícia entra com mala enorme e diz que é perto; GPS mostra 38 km/chegada 19h05. Pequeno extrato preserva ganhos R$ 142/gasolina R$ 58/diária R$ 0, sem exigir decorar números.",
+      "plano": "Carro → reação → GPS",
+      "offset": 0.8
+    },
+    {
+      "ini": 35,
+      "fim": 39,
+      "nome": "A inscrição",
+      "acao": "Cozinha, relógio 19h. Lua envia inscrição: “Confeitaria · Porto Alegre”. Ela clica e lê “Inscrição enviada”. Tico não vê e não sabe. Não confundir inscrição com aprovação.",
+      "plano": "Notebook → mão → rosto",
+      "offset": 0.2
+    },
+    {
+      "ini": 39,
+      "fim": 44,
+      "nome": "Quem descansa",
+      "acao": "Passagem posterior à inscrição, ainda antes da mensagem das 19h40. Timer toca; caderno “Descansar a massa”. Lua leva o pote à cama, cobre como se fosse alguém e permanece em pé. Não afirmar que a inscrição disparou o timer.",
+      "plano": "Caderno → pote → cama e rosto",
+      "offset": 0.2
+    },
+    {
+      "ini": 44,
+      "fim": 56,
+      "nome": "A resposta que faltava",
+      "acao": "Retorno ao ponto exato do início, marcado “19h40 · agora”. Completa o áudio: “Senão, chamo outra entrega”. O mapa ainda mostra 34 min. Tico olha trânsito e Letícia no banco de trás, apaga “tô chegando” e envia “Tô a 34 min. Mas eu chego”. Dar pelo menos 3 s à mensagem já pronta. Lua lê às 19h41. A abertura não precisa ser repetida inteira.",
+      "plano": "Áudio → mapa → mensagem → rosto da Lua",
+      "offset": 0.2
+    },
+    {
+      "ini": 56,
+      "fim": 60,
+      "nome": "Uma decisão com informação",
+      "acao": "Polegar da Lua sobre “Chamar outra entrega”. Sobre a ação: “Você teria esperado?” com CONFIA / OUTRO MOTORISTA. Não mostrar carro chegando agora e não criar corrida perigosa; os dois caminhos continuam possíveis para a personagem naquele instante, mas a pergunta atual é retrospectiva.",
+      "plano": "Mão e rosto; pergunta sobre a história já fechada",
+      "offset": 0.2
+    }
+  ],
+  "falas": [
+    {
+      "quem": "Lua",
+      "texto": "Você chega até as oito?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 0.2,
+      "fimEstimado": 2.25,
+      "plano": "Lua → mapa legível",
+      "cena": "Vinte minutos, trinta e quatro de caminho"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Fugi porque eu tava fedendo.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 4.2,
+      "fimEstimado": 6.25,
+      "plano": "Rostos e retrovisor",
+      "cena": "A verdade anterior"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Podia ter avisado.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 6.41,
+      "fimEstimado": 7.7,
+      "plano": "Rostos e retrovisor",
+      "cena": "A verdade anterior"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Fedendo quanto?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 7.86,
+      "fimEstimado": 8.76,
+      "plano": "Rostos e retrovisor",
+      "cena": "A verdade anterior"
+    },
+    {
+      "quem": "Tico",
+      "texto": "O Fiscal mudou de calçada.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 8.92,
+      "fimEstimado": 10.97,
+      "plano": "Rostos e retrovisor",
+      "cena": "A verdade anterior"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Você leva essas seis caixas às oito?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 12.2,
+      "fimEstimado": 15.02,
+      "plano": "Bancada → dupla → telefone no bolso e mãos",
+      "cena": "Seis caixas e uma promessa"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Às oito tá entregue.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 15.18,
+      "fimEstimado": 16.85,
+      "plano": "Bancada → dupla → telefone no bolso e mãos",
+      "cena": "Seis caixas e uma promessa"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Quanto?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 17.01,
+      "fimEstimado": 17.53,
+      "plano": "Bancada → dupla → telefone no bolso e mãos",
+      "cena": "Seis caixas e uma promessa"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Pra você, imagina.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 17.69,
+      "fimEstimado": 18.97,
+      "plano": "Bancada → dupla → telefone no bolso e mãos",
+      "cena": "Seis caixas e uma promessa"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Tô imaginando. Quanto?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 19.13,
+      "fimEstimado": 20.41,
+      "plano": "Bancada → dupla → telefone no bolso e mãos",
+      "cena": "Seis caixas e uma promessa"
+    },
+    {
+      "quem": "Vendedor",
+      "texto": "Que cheiro bom!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 24.8,
+      "fimEstimado": 26.08,
+      "plano": "Carro → reação → GPS",
+      "cena": "O carro também trabalha"
+    },
+    {
+      "quem": "Tico",
+      "texto": "É dela. Eu só dirijo.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 26.24,
+      "fimEstimado": 28.3,
+      "plano": "Carro → reação → GPS",
+      "cena": "O carro também trabalha"
+    },
+    {
+      "quem": "Letícia",
+      "texto": "É pertinho, tá?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 28.46,
+      "fimEstimado": 29.74,
+      "plano": "Carro → reação → GPS",
+      "cena": "O carro também trabalha"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Senão, chamo outra entrega.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 44.2,
+      "fimEstimado": 45.87,
+      "plano": "Áudio → mapa → mensagem → rosto da Lua",
+      "cena": "A resposta que faltava"
+    }
+  ],
+  "participacaoEncerradaAlternativa": null
+}

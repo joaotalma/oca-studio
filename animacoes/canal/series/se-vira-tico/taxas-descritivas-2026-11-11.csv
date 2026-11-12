@@ -1,0 +1,6 @@
+﻿episodio,snapshot,denominador,views,views_aproximadas,interacoes_informadas,soma_categorias,divergencia_interacoes,interacoes_por_view_pct,categorias_por_view_pct,seguidores_por_mil_views,compartilhamentos_por_mil_views,salvamentos_por_mil_views,tempo_assistido_div_views_s_auditoria,tempo_medio_informado_s,comparabilidade
+1,mais_recente_relatado,views informadas deste snapshot,2569,False,116,113,3,4.515,4.399,0.0,0.389,1.946,27.256,33,"idades de publicação diferentes/desconhecidas; descritivo, sem ranking causal"
+2,mais_recente_relatado,views informadas deste snapshot,2565,False,73,73,0,2.846,2.846,1.17,0.0,1.559,20.795,26,"idades de publicação diferentes/desconhecidas; descritivo, sem ranking causal"
+3,mais_recente_relatado,views informadas deste snapshot,2283,False,81,81,0,3.548,3.548,0.438,0.0,1.314,14.901,18,"idades de publicação diferentes/desconhecidas; descritivo, sem ranking causal"
+4,mais_recente_relatado,views informadas deste snapshot,898,False,40,40,0,4.454,4.454,2.227,1.114,4.454,17.84,24,"idades de publicação diferentes/desconhecidas; descritivo, sem ranking causal"
+5,mais_recente_relatado,views informadas deste snapshot,1800,True,54,54,0,3.0,3.0,0.556,1.111,0.556,17.867,22,"idades de publicação diferentes/desconhecidas; descritivo, sem ranking causal"

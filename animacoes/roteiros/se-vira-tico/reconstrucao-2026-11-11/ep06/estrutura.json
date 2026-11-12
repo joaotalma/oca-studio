@@ -1,0 +1,265 @@
+{
+  "slug": "ep06",
+  "titulo": "Às oito eu posso",
+  "numero": 6,
+  "formato": "dialogo",
+  "estado": "proposta_aguardando_aprovacao",
+  "tempos": "estimados_nao_alinhados_ao_audio",
+  "palavrasFaladas": 43,
+  "duracaoEstimada": 41,
+  "plataformas": [
+    "YouTube Shorts",
+    "TikTok"
+  ],
+  "embalagem": {
+    "YouTube Shorts": {
+      "title": "Ele chegou tarde. Dessa vez, avisou. | Se Vira, Tico 6",
+      "firstFrame": "Tico diante da bancada vazia; 20h14; texto “Ele chegou depois da entrega”.",
+      "description": "Ela resolveu a entrega sem ele. Dias depois, o convite é dela. Beija ou não beija? Só trate como voto se a votação ainda estiver aberta e este upload participar da contagem; depois, use a pergunta retrospectiva do roteiro."
+    },
+    "TikTok": {
+      "title": "Chegou tarde. Mas dessa vez falou a verdade.",
+      "firstFrame": "Tico entra: “Cheguei!”; a bancada já está vazia e o relógio marca 20h14.",
+      "description": "Avisar também é uma forma de ajudar. BEIJA ou NÃO BEIJA? Usar como votação somente enquanto estiver aberta e com regra de contagem definida; após fechar: “Você teria beijado ou esperado?”."
+    }
+  },
+  "editorial": {
+    "promessa": "Depois de chegar tarde, Tico consegue mostrar que está mudando?",
+    "contextoNovo": "Primeiro quadro: cozinha com bancada vazia, relógio 20h14 e Tico chegando; uma linha informa “Ele chegou depois da entrega”. Não exige lembrar o EP. 5.",
+    "perguntaLocal": "Ele continua prometendo para agradar ou consegue combinar algo que realmente pode cumprir?",
+    "payoffLocal": "Lua resolveu a entrega porque ele avisou; no convite do cinema ele consulta o app antes de aceitar. A aproximação nasce da escolha dela, não de pagamento pelo favor.",
+    "escalada": [
+      "Chega tarde e vê que ela resolveu",
+      "Ela o convida por vontade própria",
+      "Ele quase promete demais, mas confere",
+      "O encontro aproxima os dois",
+      "A notificação revela ao público que ela vai viajar"
+    ],
+    "continuidade": {
+      "entrada": "OUTRO MOTORISTA venceu EP. 5. Lua leu o aviso às 19h41; as caixas saíram às 19h45. Tico chega às 20h14 e não recebe os R$ 20.",
+      "saida": "Sexta, cinema às 20h. Público já sabia da inscrição do EP. 5; só no final deste EP. 6 conhece a aprovação, o início em 30 dias e a confirmação até amanhã. Tico não sabe. Beijo ainda não ocorreu e não estabelece namoro."
+    },
+    "participacao": {
+      "tipo": "futura",
+      "pergunta": "Ela beija ou não beija?"
+    },
+    "publicadoAnteriormente": false,
+    "hipoteseTeste": "Entrada curta com consequência concreta e crescimento mostrado em ação podem tornar a aproximação compreensível para novos espectadores; verificar curva e compreensão, sem atribuir causalidade."
+  },
+  "blocos": [
+    {
+      "ini": 0,
+      "fim": 7,
+      "nome": "A entrega já foi",
+      "acao": "Relógio 20h14. Tico entra na cozinha; caixas já saíram às 19h45 com outro motorista. Texto único “Ele chegou depois da entrega”. Lua termina de guardar a bancada. Não mostrar pagamento de R$ 20 ao Tico.",
+      "plano": "Médio da cozinha → reação dos dois",
+      "offset": 0.2
+    },
+    {
+      "ini": 7,
+      "fim": 15,
+      "nome": "Um convite que cabe",
+      "acao": "Sobreposição “Dias depois · sexta”. Lua o convida por vontade própria. Ele começa a oferecer tudo, para e consulta o turno no app. Não transformar a consulta em tela longa.",
+      "plano": "Dupla → mão no app → rosto",
+      "offset": 0.2
+    },
+    {
+      "ini": 15,
+      "fim": 17,
+      "nome": "Antes de sair",
+      "acao": "Lua arrumada recebe notificação. O espectador vê apenas luz no celular e a reação dela; o conteúdo NÃO é mostrado nem legível. Ela guarda o aparelho quando toca a campainha. Tico ainda não sabe do curso.",
+      "plano": "Próximo da Lua; tela virada para ela",
+      "offset": 0.2
+    },
+    {
+      "ini": 17,
+      "fim": 27,
+      "nome": "O doce e a frase",
+      "acao": "Cinema: somente luz e reações, sem filme de terceiros. Lua oferece um doce feito por ela. Tico prova; começa uma frase e se atrapalha. Ela escolhe brincar, sem obrigação de retribuir nada. Reservar cerca de 1 s para oferecer/provar, a pausa curta depois de “Eu te...” e 1–2 s para a reação do elogio. Não sustentar o quadro por dez segundos depois da fala.",
+      "plano": "Médio com ambos e doce → próximos de reação",
+      "offset": 1.2
+    },
+    {
+      "ini": 27,
+      "fim": 35,
+      "nome": "O que ela não contou",
+      "acao": "O celular vibra na bolsa; ela pega e lê. Só agora o público vê o conteúdo: “APROVADA · Confeitaria / Porto Alegre · em 30 dias / Confirme sua vaga até amanhã”. Cerca de 5 s de leitura e 3 s para pegar/olhar/reagir. Tico olha a tela do cinema e não vê o aparelho. Não narrar nem insinuar traição.",
+      "plano": "Mão na bolsa → detalhe legível → rosto da Lua",
+      "offset": 0.2
+    },
+    {
+      "ini": 35,
+      "fim": 37,
+      "nome": "O gesto",
+      "acao": "Ela bloqueia o celular e o guarda. Tico olha para ela; os dois diminuem a distância. O conteúdo da aprovação já foi lido pelo público, mas segue desconhecido por ele.",
+      "plano": "Dupla próxima, olhos e distância entre os dois",
+      "offset": 0.2
+    },
+    {
+      "ini": 37,
+      "fim": 41,
+      "nome": "O gesto ainda está aberto",
+      "acao": "Sobre o gesto em curso, sem congelar: “Ela beija ou não beija?” e BEIJA / NÃO BEIJA. Não mostrar beijo nem resultado. Cortar na aproximação; a regra de que beijo não define namoro fica nas notas de continuidade, fora da tela.",
+      "plano": "Dupla próxima; o gesto fica suspenso",
+      "offset": 0.2
+    }
+  ],
+  "falas": [
+    {
+      "quem": "Tico",
+      "texto": "Cheguei!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 0.2,
+      "fimEstimado": 0.71,
+      "plano": "Médio da cozinha → reação dos dois",
+      "cena": "A entrega já foi"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Já foram. Obrigada por avisar.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 0.87,
+      "fimEstimado": 2.93,
+      "plano": "Médio da cozinha → reação dos dois",
+      "cena": "A entrega já foi"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Não fiz nada.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 3.09,
+      "fimEstimado": 4.37,
+      "plano": "Médio da cozinha → reação dos dois",
+      "cena": "A entrega já foi"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Fez. Eu consegui resolver.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 4.53,
+      "fimEstimado": 6.2,
+      "plano": "Médio da cozinha → reação dos dois",
+      "cena": "A entrega já foi"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Cinema às oito. Você pode?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 7.2,
+      "fimEstimado": 9.25,
+      "plano": "Dupla → mão no app → rosto",
+      "cena": "Um convite que cabe"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Eu desmarco...",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 9.41,
+      "fimEstimado": 10.31,
+      "plano": "Dupla → mão no app → rosto",
+      "cena": "Um convite que cabe"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Às oito eu posso.",
+      "acao": "Só dizer depois de conferir o turno.",
+      "pausaAntes": 1,
+      "inicioEstimado": 11.47,
+      "fimEstimado": 13.14,
+      "plano": "Dupla → mão no app → rosto",
+      "cena": "Um convite que cabe"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Então tá marcado.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 13.3,
+      "fimEstimado": 14.58,
+      "plano": "Dupla → mão no app → rosto",
+      "cena": "Um convite que cabe"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Eu te...",
+      "acao": "Pausa curta; ele se assusta com o começo da frase.",
+      "pausaAntes": 0,
+      "inicioEstimado": 18.2,
+      "fimEstimado": 19.1,
+      "plano": "Médio com ambos e doce → próximos de reação",
+      "cena": "O doce e a frase"
+    },
+    {
+      "quem": "Tico",
+      "texto": "...falei que esse doce tá perfeito?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 19.26,
+      "fimEstimado": 21.7,
+      "plano": "Médio com ambos e doce → próximos de reação",
+      "cena": "O doce e a frase"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Você ainda não falou nada.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 21.86,
+      "fimEstimado": 23.91,
+      "plano": "Médio com ambos e doce → próximos de reação",
+      "cena": "O doce e a frase"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Então... tá perfeito.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 24.07,
+      "fimEstimado": 25.35,
+      "plano": "Médio com ambos e doce → próximos de reação",
+      "cena": "O doce e a frase"
+    }
+  ],
+  "participacaoEncerradaAlternativa": {
+    "texto": "Você teria beijado ou esperado?",
+    "opcoes": [
+      "BEIJAVA",
+      "ESPERAVA"
+    ],
+    "regra": "Substituir a chamada ativa se o upload sair após encerrar o voto ou não participar da contagem válida."
+  },
+  "variantesDeFala": [
+    {
+      "nome": "Piada original do autor — alternativa completa",
+      "bloco": "O doce e a frase",
+      "intervalo": "17–27 s, ESTIMADO",
+      "falas": [
+        {
+          "quem": "Tico",
+          "texto": "Eu te...",
+          "inicioEstimado": 18.2,
+          "fimEstimado": 19.1
+        },
+        {
+          "quem": "Tico",
+          "texto": "...lambo os dedos com esse doce gostoso.",
+          "inicioEstimado": 19.6,
+          "fimEstimado": 22.9
+        },
+        {
+          "quem": "Lua",
+          "texto": "Os seus, né?",
+          "inicioEstimado": 23.2,
+          "fimEstimado": 24.6
+        }
+      ],
+      "acao": "Ela oferece o doce; ele prova. Pausa depois do começo da frase, susto dele, olhar dela para a mão e risada curta. Trocar somente o bloco do cinema. O humor deve ser escolhido pelo João; nenhuma das versões foi testada com público."
+    }
+  ]
+}

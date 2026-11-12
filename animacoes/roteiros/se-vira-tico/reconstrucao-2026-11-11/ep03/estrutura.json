@@ -1,0 +1,195 @@
+{
+  "slug": "ep03",
+  "titulo": "Pedir desculpa antes do lanche",
+  "numero": 3,
+  "formato": "dialogo",
+  "estado": "proposta_aguardando_aprovacao",
+  "tempos": "estimados_nao_alinhados_ao_audio",
+  "palavrasFaladas": 37,
+  "duracaoEstimada": 50,
+  "plataformas": [
+    "YouTube Shorts",
+    "TikTok"
+  ],
+  "embalagem": {
+    "YouTube Shorts": {
+      "title": "Ele furou a carona e quis compensar com um lanche | Se Vira, Tico 3",
+      "firstFrame": "Lua esperando e o áudio dela; ele se esconde do próprio cheiro. Texto curto “Ele prometeu uma carona”.",
+      "description": "Pedir desculpa veio antes do convite. Você teria aceitado o lanche? Pergunta retrospectiva; a recusa e suas consequências já fazem parte da história."
+    },
+    "TikTok": {
+      "title": "Um lanche resolve uma mancada dessas?",
+      "firstFrame": "Tico escuta “Tô te esperando” e cheira a camiseta antes de desistir.",
+      "description": "Ela perdeu a reunião. Ele precisava começar ouvindo. ACEITA ou AGORA NÃO: o que você teria respondido?"
+    }
+  },
+  "editorial": {
+    "promessa": "Depois de furar a carona, ele consegue assumir a mancada antes de tentar um encontro?",
+    "contextoNovo": "Primeiro quadro mostra Lua esperando e o áudio “Tô te esperando”; Tico cheira a camiseta e envia que não vai. A consequência é visível sem conhecer a votação anterior.",
+    "perguntaLocal": "Ele vai ouvir o que aconteceu com ela ou tentar pagar a culpa com um convite?",
+    "payoffLocal": "Na janela ele pergunta como foi, assume a culpa e só então oferece o lanche. O convite não apaga a promoção perdida nem obriga uma resposta positiva.",
+    "escalada": [
+      "Foge por vergonha",
+      "Lua perde a reunião",
+      "A promoção vai para Júnior",
+      "Tenta compensar com encontro",
+      "Jão o faz ouvir",
+      "Ele assume a culpa antes do convite"
+    ],
+    "continuidade": {
+      "entrada": "Caminho histórico Chuveiro: ele não levou Lua; não inventar que apareceu de carona.",
+      "saida": "Lua ainda não respondeu ao lanche. Moto voltou ao Jão com tanque vazio; Tico recebeu perfume. Próximo episódio segue AGORA NÃO; conversa continua por papéis entre janelas."
+    },
+    "participacao": {
+      "tipo": "retrospectiva",
+      "pergunta": "Depois dessa mancada, você teria aceitado o lanche?"
+    },
+    "publicadoAnteriormente": true,
+    "hipoteseTeste": "Mostrar a falha e sua consequência logo na entrada, reduzir áudio repetido e dar leitura confortável à conversa por papéis pode diminuir o custo de contexto."
+  },
+  "blocos": [
+    {
+      "ini": 0,
+      "fim": 6,
+      "nome": "A carona que não veio",
+      "acao": "Às 7h58, Lua já espera. Tico ouve “Tô te esperando”, cheira a camiseta, foge para casa e SÓ ENTÃO envia: “Não vou conseguir te levar. Aconteceu umas coisas aqui.” A mensagem é tardia e vaga: ele não assume o cheiro nem permite organizar a carona a tempo. Não transformar isso em aviso honesto antecipado nem inventar mensagem apagada.",
+      "plano": "Lua → reação dele → mensagem",
+      "offset": 0.2
+    },
+    {
+      "ini": 6,
+      "fim": 17,
+      "nome": "A reunião",
+      "acao": "Lua desce do ônibus e chega à porta fechada da sala. Pelo vidro, Júnior recebe a promoção; ele abre uma fresta para pedir o trabalho que ela preparou. No mesmo momento, o CEO o trata como filho. A mensagem “Cheguei atrasada” chega ao Tico.",
+      "plano": "Porta de vidro → reações e celular",
+      "offset": 2
+    },
+    {
+      "ini": 17,
+      "fim": 29,
+      "nome": "Encontro ou compensação?",
+      "acao": "Sobreposição “20h”. Tico devolve a chave da Companheira ao Jão, com tanque vazio. Jão percebe a culpa, entrega perfume; Tico borrifa demais e tosse.",
+      "plano": "Dupla com moto → rostos",
+      "offset": 0.2
+    },
+    {
+      "ini": 29,
+      "fim": 46,
+      "nome": "De janela para janela",
+      "acao": "A mensagem “Olha pra janela” é breve. Os prédios opostos aparecem juntos uma vez. Cinco papéis, com tempo de leitura: Tico “DESCULPA. COMO FOI LÁ?” (29–33); Lua “NÃO FOI.” (33–35); Tico “A CULPA É MINHA.” (35–38); Lua “TALVEZ.” (38–40); Tico “TE PAGO UM LANCHE?” (40–44). De 44–46 ela pensa. Se animar escrita, começar antes do close ou redistribuir tempo; nunca exigir pausar para ler.",
+      "plano": "Aberto das duas janelas → alternância de próximos com papéis",
+      "offset": 0.2
+    },
+    {
+      "ini": 46,
+      "fim": 50,
+      "nome": "Uma pergunta, não uma dívida",
+      "acao": "Sobre a Lua pensando: “Você teria aceitado o lanche?” e ACEITA / AGORA NÃO. O convite não apaga o dia ruim, não decide namoro e não abre novo voto para mudar a sequência histórica.",
+      "plano": "Próximo da Lua com papel no campo",
+      "offset": 0.2
+    }
+  ],
+  "falas": [
+    {
+      "quem": "Lua",
+      "texto": "Tô te esperando.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 0.2,
+      "fimEstimado": 1.48,
+      "plano": "Lua → reação dele → mensagem",
+      "cena": "A carona que não veio"
+    },
+    {
+      "quem": "CEO",
+      "texto": "Parabéns, Júnior!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 8,
+      "fimEstimado": 8.9,
+      "plano": "Porta de vidro → reações e celular",
+      "cena": "A reunião"
+    },
+    {
+      "quem": "Júnior",
+      "texto": "Lua, me manda a apresentação?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 9.06,
+      "fimEstimado": 11.11,
+      "plano": "Porta de vidro → reações e celular",
+      "cena": "A reunião"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Mando.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 11.27,
+      "fimEstimado": 11.79,
+      "plano": "Porta de vidro → reações e celular",
+      "cena": "A reunião"
+    },
+    {
+      "quem": "CEO",
+      "texto": "Esse é o meu menino.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 11.95,
+      "fimEstimado": 14,
+      "plano": "Porta de vidro → reações e celular",
+      "cena": "A reunião"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Ela se atrasou por minha causa.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 17.2,
+      "fimEstimado": 19.64,
+      "plano": "Dupla com moto → rostos",
+      "cena": "Encontro ou compensação?"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Vou chamar pra sair. Pra compensar.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 19.8,
+      "fimEstimado": 22.24,
+      "plano": "Dupla com moto → rostos",
+      "cena": "Encontro ou compensação?"
+    },
+    {
+      "quem": "Jão",
+      "texto": "É encontro ou multa?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 22.4,
+      "fimEstimado": 24.06,
+      "plano": "Dupla com moto → rostos",
+      "cena": "Encontro ou compensação?"
+    },
+    {
+      "quem": "Jão",
+      "texto": "Encontro ou dedetização?",
+      "acao": "Depois de ele atravessar a nuvem de perfume.",
+      "pausaAntes": 0,
+      "inicioEstimado": 24.22,
+      "fimEstimado": 25.51,
+      "plano": "Dupla com moto → rostos",
+      "cena": "Encontro ou compensação?"
+    },
+    {
+      "quem": "Jão",
+      "texto": "Começa ouvindo.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 25.67,
+      "fimEstimado": 26.57,
+      "plano": "Dupla com moto → rostos",
+      "cena": "Encontro ou compensação?"
+    }
+  ],
+  "participacaoEncerradaAlternativa": null
+}

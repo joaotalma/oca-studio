@@ -1,0 +1,267 @@
+{
+  "slug": "ep04",
+  "titulo": "É corrida, tá?",
+  "numero": 4,
+  "formato": "dialogo",
+  "estado": "proposta_aguardando_aprovacao",
+  "tempos": "estimados_nao_alinhados_ao_audio",
+  "palavrasFaladas": 65,
+  "duracaoEstimada": 57,
+  "plataformas": [
+    "YouTube Shorts",
+    "TikTok"
+  ],
+  "embalagem": {
+    "YouTube Shorts": {
+      "title": "Ela disse “agora não”. Depois entrou no carro dele. | Se Vira, Tico 4",
+      "firstFrame": "Lua mostra “AGORA NÃO”; Tico responde “TUDO BEM”. Não sugerir que ele a perseguiu.",
+      "description": "Era uma corrida paga. O assunto pessoal foi escolha dela. Você teria contado a verdade? Pergunta sobre uma decisão já encerrada."
+    },
+    "TikTok": {
+      "title": "É corrida, tá? O perfume no cinto entregou ele.",
+      "firstFrame": "Resposta curta na janela seguida da tentativa de mandar um textão, que Jão manda apagar.",
+      "description": "O agora não continua valendo. A corrida trouxe a pergunta que ele evitava. VERDADE ou DESCULPA: o que você teria dito?"
+    }
+  },
+  "editorial": {
+    "promessa": "Ele consegue respeitar o “agora não” quando a Lua entra no carro dele?",
+    "contextoNovo": "Uma resposta curta por papel estabelece a recusa e Tico aceita. O Jão interrompe a mensagem que ele quase manda; a situação humana se entende antes do bico mudar.",
+    "perguntaLocal": "Ele vai transformar uma corrida paga em tentativa de encontro?",
+    "payoffLocal": "Ele apaga a mensagem insistente e respeita o limite da corrida. Lua decide entrar, percebe o perfume e é ela quem abre o assunto pessoal.",
+    "escalada": [
+      "Aceita o agora não",
+      "Quase manda três parágrafos",
+      "Apaga e passa a trabalhar",
+      "A passageira é Lua",
+      "Ela separa corrida e encontro",
+      "A lembrança da escola abre a pergunta que ele evitava"
+    ],
+    "continuidade": {
+      "entrada": "AGORA NÃO é o caminho histórico; não houve encontro. Perfume veio de Jão e a nota está 5,0.",
+      "saida": "Lua perguntou por que ele fugiu; a resposta histórica seguinte é Verdade. A avaliação do passageiro do ventilador cai para uma estrela e a nota do Tico vai a 3,0. Carro alugado, primeira diária grátis."
+    },
+    "participacao": {
+      "tipo": "retrospectiva",
+      "pergunta": "Naquela hora, você teria contado a verdade?"
+    },
+    "publicadoAnteriormente": true,
+    "hipoteseTeste": "Recusa breve dentro da ação, fala cedo e limite explícito da corrida podem melhorar compreensão sem depender da memória das janelas."
+  },
+  "blocos": [
+    {
+      "ini": 0,
+      "fim": 5,
+      "nome": "Agora não",
+      "acao": "Lua mostra “AGORA NÃO. NÃO TÔ COM CABEÇA”. Tico responde “TUDO BEM”. As frases já estão escritas quando levantam; reservar leitura, sem animação letra por letra.",
+      "plano": "Dupla de janelas → papel e rosto",
+      "offset": 0.2
+    },
+    {
+      "ini": 5,
+      "fim": 8,
+      "nome": "O que ela guarda",
+      "acao": "Lua pega o caderno da avó, abre em “Descansar 40 minutos” e o abraça. A luz dela apaga; ele baixa o papel. Manter a receita curta, sem título de página longa.",
+      "plano": "Quarto da Lua → janela do Tico",
+      "offset": 0.2
+    },
+    {
+      "ini": 8,
+      "fim": 18,
+      "nome": "O textão que não vai",
+      "acao": "Sobreposição “Três dias depois”. Na garagem, Jão lê o rascunho que começa “Mudando de assunto”. Ele devolve o aparelho; Tico apaga. A recusa é respeitada na ação.",
+      "plano": "Dupla → celular",
+      "offset": 0.2
+    },
+    {
+      "ini": 18,
+      "fim": 23,
+      "nome": "As estrelas viram chave",
+      "acao": "No app: “Nota 5,0 · primeira diária grátis”. Chave de carro alugado passa para Tico. A moto continua com Jão; não gerar um carro por mágica.",
+      "plano": "App → chave",
+      "offset": 1
+    },
+    {
+      "ini": 23,
+      "fim": 31,
+      "nome": "O passageiro e o caminho",
+      "acao": "Carro de frente. GPS aponta para longe do bairro da Lua (“Rota 14 km”). O vendedor de paçoca está atrás com ventilador no colo. Mesmo depois da resposta, ele liga: cabelos voam.",
+      "plano": "Carro → GPS → retrovisor",
+      "offset": 1.8
+    },
+    {
+      "ini": 31,
+      "fim": 42,
+      "nome": "É corrida",
+      "acao": "Nova corrida: Lua, endereço do conjunto. Ela decide entrar e mantém a mão na porta ao estabelecer o limite. Tico limpa um banco já limpo. Ela puxa o cinto, sente o perfume; ele tenta disfarçar.",
+      "plano": "Porta → motorista → retrovisor",
+      "offset": 1.2
+    },
+    {
+      "ini": 42,
+      "fim": 51,
+      "nome": "A escola",
+      "acao": "Muro e portão da escola passam pela janela. Os dois reconhecem o lugar; ela ri e escolhe perguntar. Tico aperta o volante e fica sem resposta.",
+      "plano": "Carro → rostos → mão no volante",
+      "offset": 0.7
+    },
+    {
+      "ini": 51,
+      "fim": 55,
+      "nome": "A conta do ventilador",
+      "acao": "Um toque do app quebra o silêncio. Avaliação de uma estrela: “Não deixou ligar o ventilador”. Nota muda de 5,0 para 3,0. É a avaliação daquele passageiro, não da Lua.",
+      "plano": "Celular → motorista",
+      "offset": 1.3
+    },
+    {
+      "ini": 55,
+      "fim": 57,
+      "nome": "O que você teria dito?",
+      "acao": "Sobre o rosto dele e com a pergunta já preparada pela cena: “Você contava?” e VERDADE / DESCULPA. A chamada é curta e retrospectiva; não prometer mudar a história.",
+      "plano": "Próximo; sem cartela de saída",
+      "offset": 0.2
+    }
+  ],
+  "falas": [
+    {
+      "quem": "Jão",
+      "texto": "Três parágrafos pra mudar de assunto?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 8.2,
+      "fimEstimado": 10.64,
+      "plano": "Dupla → celular",
+      "cena": "O textão que não vai"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Ela disse agora não. Não disse nunca.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 10.8,
+      "fimEstimado": 13.62,
+      "plano": "Dupla → celular",
+      "cena": "O textão que não vai"
+    },
+    {
+      "quem": "Jão",
+      "texto": "Então respeita o agora. Apaga.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 13.78,
+      "fimEstimado": 15.83,
+      "plano": "Dupla → celular",
+      "cena": "O textão que não vai"
+    },
+    {
+      "quem": "Jão",
+      "texto": "Cinco estrelas serviram pra alguma coisa.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 19,
+      "fimEstimado": 21.44,
+      "plano": "App → chave",
+      "cena": "As estrelas viram chave"
+    },
+    {
+      "quem": "Vendedor",
+      "texto": "Esse pode ligar?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 24.8,
+      "fimEstimado": 26.08,
+      "plano": "Carro → GPS → retrovisor",
+      "cena": "O passageiro e o caminho"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Primeiro o cinto.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 26.24,
+      "fimEstimado": 27.53,
+      "plano": "Carro → GPS → retrovisor",
+      "cena": "O passageiro e o caminho"
+    },
+    {
+      "quem": "Lua",
+      "texto": "É corrida, tá?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 32.2,
+      "fimEstimado": 33.48,
+      "plano": "Porta → motorista → retrovisor",
+      "cena": "É corrida"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Eu sei.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 33.64,
+      "fimEstimado": 34.54,
+      "plano": "Porta → motorista → retrovisor",
+      "cena": "É corrida"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Você passou perfume no cinto?",
+      "acao": "Só depois de ela puxar e cheirar o cinto.",
+      "pausaAntes": 1,
+      "inicioEstimado": 35.7,
+      "fimEstimado": 37.76,
+      "plano": "Porta → motorista → retrovisor",
+      "cena": "É corrida"
+    },
+    {
+      "quem": "Tico",
+      "texto": "O cinto tava precisando.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 37.92,
+      "fimEstimado": 39.58,
+      "plano": "Porta → motorista → retrovisor",
+      "cena": "É corrida"
+    },
+    {
+      "quem": "Lua",
+      "texto": "A gente matava aula ali.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 42.7,
+      "fimEstimado": 44.75,
+      "plano": "Carro → rostos → mão no volante",
+      "cena": "A escola"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Você matava. Eu ia junto.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 44.91,
+      "fimEstimado": 46.97,
+      "plano": "Carro → rostos → mão no volante",
+      "cena": "A escola"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Por que você sumiu naquele dia?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 47.13,
+      "fimEstimado": 49.56,
+      "plano": "Carro → rostos → mão no volante",
+      "cena": "A escola"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Ele ligou do mesmo jeito.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 52.3,
+      "fimEstimado": 54.35,
+      "plano": "Celular → motorista",
+      "cena": "A conta do ventilador"
+    }
+  ],
+  "participacaoEncerradaAlternativa": null
+}

@@ -1,0 +1,347 @@
+{
+  "slug": "ep01",
+  "titulo": "O bolo tinha dona",
+  "numero": 1,
+  "formato": "dialogo",
+  "estado": "proposta_aguardando_aprovacao",
+  "tempos": "estimados_nao_alinhados_ao_audio",
+  "palavrasFaladas": 96,
+  "duracaoEstimada": 72,
+  "plataformas": [
+    "YouTube Shorts",
+    "TikTok"
+  ],
+  "embalagem": {
+    "YouTube Shorts": {
+      "title": "Ele pagou o pneu com um bolo que não era dele | Se Vira, Tico 1",
+      "firstFrame": "Pneu estourando no primeiro segundo; texto “Primeira entrega · moto emprestada”.",
+      "description": "Um conserto resolvido. Um aniversário sem bolo. Na frente do crush, você teria contado a verdade? Pergunta sobre a história já concluída."
+    },
+    "TikTok": {
+      "title": "Consertou a moto. O bolo tinha dona.",
+      "firstFrame": "O pneu da Companheira explode e interrompe o otimismo do primeiro dia.",
+      "description": "O primeiro dia de entrega cobrou caro. Você teria contado a verdade para ela? Esta é a reconstrução da história original; a pergunta não altera os próximos capítulos."
+    }
+  },
+  "editorial": {
+    "promessa": "Como um entregador sem dinheiro paga o prejuízo da moto emprestada?",
+    "contextoNovo": "Primeiro quadro: pneu estoura na moto emprestada, com Tico segurando o guidão. Um recuo único de oito segundos mostra a chave e a responsabilidade; o presente retorna à conta do conserto.",
+    "perguntaLocal": "Como ele vai consertar a moto sem dinheiro, e quem paga pela solução?",
+    "payoffLocal": "Ele troca o bolo de uma entrega perdida pelo conserto; a última imagem mostra que o bolo tinha dona e a esperteza custou o aniversário de alguém.",
+    "escalada": [
+      "Assume o prejuízo",
+      "Pneu estoura e a entrega é perdida",
+      "Encontra um bolo que não é dele",
+      "Consegue a troca",
+      "Reencontra a Lua e teme admitir o trabalho",
+      "O custo do bolo aparece"
+    ],
+    "continuidade": {
+      "entrada": "Primeiro dia de entrega depois de três meses sem trabalho; Jão empresta a Companheira.",
+      "saida": "Moto consertada, nota −0,3 e dívida do conserto quitada. Lua pergunta se é entregador; a escolha histórica seguinte é Verdade. A idosa Marlene não é a mãe do Tico."
+    },
+    "participacao": {
+      "tipo": "retrospectiva",
+      "pergunta": "Na frente do crush, você teria contado a verdade?"
+    },
+    "publicadoAnteriormente": true,
+    "hipoteseTeste": "Risco concreto na abertura, ordem linear e solução com consequência podem tornar a história acessível antes de conhecer o elenco."
+  },
+  "blocos": [
+    {
+      "ini": 0,
+      "fim": 4,
+      "nome": "O pneu emprestado",
+      "acao": "O pneu estoura já no primeiro segundo. Tico segura a moto; o nome Companheira aparece gasto na lateral. Texto curto “Primeira entrega · moto emprestada”. Não começar com cartão ou apresentação.",
+      "plano": "Guidão → pneu → reação",
+      "offset": 0.2
+    },
+    {
+      "ini": 4,
+      "fim": 12,
+      "nome": "A chave e a regra",
+      "acao": "Uma única retomada de contexto, marcada “Duas horas antes”. Jão entrega a chave, aponta para os andares e fixa a responsabilidade. Tico já ajeita a bag. Voltar ao mesmo pneu no bloco seguinte.",
+      "plano": "Dupla com moto e chave",
+      "offset": 0.2
+    },
+    {
+      "ini": 12,
+      "fim": 17,
+      "nome": "A conta",
+      "acao": "Cor e presente voltam no pneu furado. App: “Entrega perdida · nota −0,3”. Placa do conserto: “R$ 120”. A dívida aparece uma vez; a ação não precisa reexplicar o empréstimo.",
+      "plano": "Pneu → app → placa",
+      "offset": 0.2
+    },
+    {
+      "ini": 17,
+      "fim": 24,
+      "nome": "A ideia errada",
+      "acao": "Placa “Pneu · R$ 120”. Ele abre a bag: “Feliz 80 anos, Marlene”. Dedos param no nome. Uma hesitação real precede a ideia; não apagar a dona do bolo.",
+      "plano": "Placa → bolo → rosto",
+      "offset": 1.8
+    },
+    {
+      "ini": 24,
+      "fim": 41,
+      "nome": "Um aniversário que ninguém pediu",
+      "acao": "Tico entra com bolo e vela, canta um recado original. O borracheiro entende a troca. Terminar com chave de roda e pneu novo em contato, deixando o conserto visualmente comprovado.",
+      "plano": "Dupla; próximos de reação e objeto",
+      "offset": 0.2
+    },
+    {
+      "ini": 41,
+      "fim": 46,
+      "nome": "Outra entrega",
+      "acao": "A dívida do conserto volta a R$ 0. Notificação de jantar no conjunto Esperança. Ele sai com a moto consertada e uma nova bag de jantar; não confundir com o bolo já entregue ao borracheiro.",
+      "plano": "Mão na moto → app → rua",
+      "offset": 1
+    },
+    {
+      "ini": 46,
+      "fim": 55,
+      "nome": "O interfone",
+      "acao": "Tico chega ao conjunto, junto do Fiscal. Lua só aparece pela voz do interfone. Depois de “dois minutos”, o Fiscal late e aparece “Dez minutos depois”, com Tico brincando com o cachorro.",
+      "plano": "Interfone → Tico/Fiscal",
+      "offset": 0.2
+    },
+    {
+      "ini": 55,
+      "fim": 65,
+      "nome": "A cliente",
+      "acao": "Lua abre a porta com crachá, dedo erguido, e reconhece o Tico. Uma pequena etiqueta “Crush de infância” orienta o recém-chegado. O dedo baixa; os dois riem, e a pergunta surge.",
+      "plano": "Dupla → rostos",
+      "offset": 0.2
+    },
+    {
+      "ini": 65,
+      "fim": 72,
+      "nome": "O custo do bolo",
+      "acao": "Corta para a idosa Marlene, sozinha diante da mesa de aniversário. Ela acende e assopra uma vela num pão francês. Sem música triste exagerada. A pergunta “Você teria contado a verdade?” aparece sobre a reação final, com VERDADE / HISTÓRIA. Não anunciar votação futura.",
+      "plano": "Mesa → pão e rosto",
+      "offset": 0.2
+    }
+  ],
+  "falas": [
+    {
+      "quem": "Tico",
+      "texto": "Hoje muda tudo...",
+      "acao": "A explosão corta o otimismo.",
+      "pausaAntes": 0,
+      "inicioEstimado": 0.2,
+      "fimEstimado": 1.48,
+      "plano": "Guidão → pneu → reação",
+      "cena": "O pneu emprestado"
+    },
+    {
+      "quem": "Jão",
+      "texto": "Pega. Qualquer prejuízo é teu. Entregador não sobe.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 4.2,
+      "fimEstimado": 7.41,
+      "plano": "Dupla com moto e chave",
+      "cena": "A chave e a regra"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Três meses parado. Hoje eu volto.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 7.57,
+      "fimEstimado": 10,
+      "plano": "Dupla com moto e chave",
+      "cena": "A chave e a regra"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Perdi a entrega e a nota.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 12.2,
+      "fimEstimado": 14.64,
+      "plano": "Pneu → app → placa",
+      "cena": "A conta"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Esse bolo tem dona...",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 18.8,
+      "fimEstimado": 20.47,
+      "plano": "Placa → bolo → rosto",
+      "cena": "A ideia errada"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Ah. Já sei!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 20.63,
+      "fimEstimado": 21.91,
+      "plano": "Placa → bolo → rosto",
+      "cena": "A ideia errada"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Parabéns, meu amigo! Hoje é seu grande dia!",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 24.2,
+      "fimEstimado": 27.41,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Borracheiro",
+      "texto": "Não é meu aniversário.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 27.57,
+      "fimEstimado": 29.24,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Recado cantado. Cento e vinte.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 29.4,
+      "fimEstimado": 31.45,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Borracheiro",
+      "texto": "Não pedi. E não tenho.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 31.61,
+      "fimEstimado": 33.66,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Então... conserta o pneu?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 33.82,
+      "fimEstimado": 35.49,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Borracheiro",
+      "texto": "Quem é Marlene?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 35.65,
+      "fimEstimado": 36.93,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Você. Até ficar pronto.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 37.09,
+      "fimEstimado": 38.76,
+      "plano": "Dupla; próximos de reação e objeto",
+      "cena": "Um aniversário que ninguém pediu"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Segunda chance.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 42,
+      "fimEstimado": 42.9,
+      "plano": "Mão na moto → app → rua",
+      "cena": "Outra entrega"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Seu jantar chegou.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 46.2,
+      "fimEstimado": 47.48,
+      "plano": "Interfone → Tico/Fiscal",
+      "cena": "O interfone"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Sobe, por favor.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 47.64,
+      "fimEstimado": 48.93,
+      "plano": "Interfone → Tico/Fiscal",
+      "cena": "O interfone"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Entregador não sobe, senhora.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 49.09,
+      "fimEstimado": 50.76,
+      "plano": "Interfone → Tico/Fiscal",
+      "cena": "O interfone"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Senhora? Desço em dois minutos.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 50.92,
+      "fimEstimado": 52.97,
+      "plano": "Interfone → Tico/Fiscal",
+      "cena": "O interfone"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Tico? Do bloco quatro?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 55.2,
+      "fimEstimado": 56.87,
+      "plano": "Dupla → rostos",
+      "cena": "A cliente"
+    },
+    {
+      "quem": "Tico",
+      "texto": "Boa noite... minha senhora.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 57.03,
+      "fimEstimado": 58.7,
+      "plano": "Dupla → rostos",
+      "cena": "A cliente"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Você não mudou nada.",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 58.86,
+      "fimEstimado": 60.53,
+      "plano": "Dupla → rostos",
+      "cena": "A cliente"
+    },
+    {
+      "quem": "Lua",
+      "texto": "Espera. Você é entregador?",
+      "acao": "",
+      "pausaAntes": 0,
+      "inicioEstimado": 60.69,
+      "fimEstimado": 62.35,
+      "plano": "Dupla → rostos",
+      "cena": "A cliente"
+    }
+  ],
+  "participacaoEncerradaAlternativa": null
+}
