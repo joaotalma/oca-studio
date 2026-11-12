@@ -12,14 +12,14 @@ const FALAS = [
   "ini": 16.1,
   "fim": 18.9,
   "quem": "Tico",
-  "texto": "Ela disse agora não. Não disse nunca."
+  "texto": "Ela disse outro dia. Não disse qual."
  },
  {
   "n": 3,
   "ini": 19.1,
   "fim": 21.2,
   "quem": "Jão",
-  "texto": "Então respeita o agora. Apaga."
+  "texto": "Então espera ela dizer. Apaga."
  },
  {
   "n": 4,
@@ -31,71 +31,85 @@ const FALAS = [
  {
   "n": 5,
   "ini": 28.8,
-  "fim": 30,
-  "quem": "Vendedor",
-  "texto": "Esse pode ligar?"
+  "fim": 31.6,
+  "quem": "Dona Cida",
+  "texto": "Minha netinha faz aniversário hoje!"
  },
  {
   "n": 6,
-  "ini": 30.2,
-  "fim": 31.4,
+  "ini": 31.8,
+  "fim": 32.4,
   "quem": "Tico",
-  "texto": "Primeiro o cinto."
+  "texto": "Que legal."
  },
  {
   "n": 7,
-  "ini": 33.7,
-  "fim": 34.9,
+  "ini": 32.6,
+  "fim": 35,
+  "quem": "Dona Cida",
+  "texto": "Ela ainda dorme de luz acesa, coitadinha."
+ },
+ {
+  "n": 8,
+  "ini": 35.2,
+  "fim": 35.8,
+  "quem": "Tico",
+  "texto": "Uhum."
+ },
+ {
+  "n": 9,
+  "ini": 38.1,
+  "fim": 39.3,
   "quem": "Lua",
   "texto": "É corrida, tá?"
  },
  {
-  "n": 8,
-  "ini": 35.1,
-  "fim": 35.8,
+  "n": 10,
+  "ini": 39.5,
+  "fim": 40.2,
   "quem": "Tico",
   "texto": "Eu sei."
  },
  {
-  "n": 9,
-  "ini": 37.1,
-  "fim": 39.2,
+  "n": 11,
+  "ini": 41.5,
+  "fim": 43.6,
   "quem": "Lua",
   "texto": "Você passou perfume no cinto?"
  },
  {
-  "n": 10,
-  "ini": 39.4,
-  "fim": 41.1,
+  "n": 12,
+  "ini": 43.8,
+  "fim": 45.5,
   "quem": "Tico",
   "texto": "O cinto tava precisando."
  },
  {
-  "n": 11,
-  "ini": 42.9,
-  "fim": 44.9,
+  "n": 13,
+  "ini": 47.3,
+  "fim": 49.3,
   "quem": "Lua",
   "texto": "A gente matava aula ali."
  },
  {
-  "n": 12,
-  "ini": 45.1,
-  "fim": 47.1,
+  "n": 14,
+  "ini": 49.5,
+  "fim": 51.5,
   "quem": "Tico",
   "texto": "Você matava. Eu ia junto."
  },
  {
-  "n": 13,
-  "ini": 48.8,
-  "fim": 51.6,
+  "n": 15,
+  "ini": 53.2,
+  "fim": 56,
   "quem": "Lua",
   "texto": "Tico... por que você sumiu naquele dia?"
  },
  {
-  "n": 14,
-  "ini": 59.3,
-  "fim": 61.1,
-  "quem": "Tico",
-  "texto": "Ele ligou do mesmo jeito."
+  "n": 16,
+  "ini": 64.1,
+  "fim": 66.3,
+  "quem": "Kelly",
+  "texto": "Vó... eu tenho quarenta anos."
  }
 ];

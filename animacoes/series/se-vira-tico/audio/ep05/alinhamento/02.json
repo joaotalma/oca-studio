@@ -1,31 +1,41 @@
 {
  "n": 2,
- "texto": "Você podia ter me avisado.",
+ "texto": "Eu fugi da carona porque tava fedendo.",
  "palavras": [
   {
-   "palavra": "Você",
+   "palavra": "Eu",
    "ini": 0,
-   "fim": 0.24
+   "fim": 0.16
   },
   {
-   "palavra": "podia",
-   "ini": 0.32,
+   "palavra": "fugi",
+   "ini": 0.24,
+   "fim": 0.4
+  },
+  {
+   "palavra": "da",
+   "ini": 0.48,
    "fim": 0.56
   },
   {
-   "palavra": "ter",
-   "ini": 0.64,
-   "fim": 0.72
+   "palavra": "carona",
+   "ini": 0.68,
+   "fim": 1.04
   },
   {
-   "palavra": "me",
-   "ini": 0.8,
-   "fim": 0.88
+   "palavra": "porque",
+   "ini": 1.12,
+   "fim": 1.36
   },
   {
-   "palavra": "avisado.",
-   "ini": 1.04,
-   "fim": 2
+   "palavra": "tava",
+   "ini": 1.4,
+   "fim": 1.68
+  },
+  {
+   "palavra": "fedendo.",
+   "ini": 1.84,
+   "fim": 2.72
   }
  ]
 }

@@ -1,41 +1,31 @@
 {
- "n": 13,
- "texto": "Tico... por que você sumiu naquele dia?",
+ "n": 11,
+ "texto": "A gente matava aula ali.",
  "palavras": [
   {
-   "palavra": "Tico...",
+   "palavra": "A",
    "ini": 0,
-   "fim": 0.96
+   "fim": 0.08
   },
   {
-   "palavra": "por",
-   "ini": 1.04,
+   "palavra": "gente",
+   "ini": 0.16,
+   "fim": 0.32
+  },
+  {
+   "palavra": "matava",
+   "ini": 0.4,
    "fim": 1.12
   },
   {
-   "palavra": "que",
-   "ini": 1.2,
-   "fim": 1.28
+   "palavra": "aula",
+   "ini": 1.24,
+   "fim": 1.4
   },
   {
-   "palavra": "você",
-   "ini": 1.32,
-   "fim": 1.52
-  },
-  {
-   "palavra": "sumiu",
-   "ini": 1.6,
+   "palavra": "ali.",
+   "ini": 1.44,
    "fim": 2
-  },
-  {
-   "palavra": "naquele",
-   "ini": 2.08,
-   "fim": 2.4
-  },
-  {
-   "palavra": "dia?",
-   "ini": 2.48,
-   "fim": 3.12
   }
  ]
 }

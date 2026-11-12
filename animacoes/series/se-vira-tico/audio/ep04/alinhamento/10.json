@@ -1,26 +1,16 @@
 {
- "n": 10,
- "texto": "O cinto tava precisando.",
+ "n": 8,
+ "texto": "Eu sei.",
  "palavras": [
   {
-   "palavra": "O",
+   "palavra": "Eu",
    "ini": 0,
-   "fim": 0.08
+   "fim": 0.24
   },
   {
-   "palavra": "cinto",
-   "ini": 0.24,
-   "fim": 0.56
-  },
-  {
-   "palavra": "tava",
-   "ini": 0.64,
+   "palavra": "sei.",
+   "ini": 0.44,
    "fim": 0.88
-  },
-  {
-   "palavra": "precisando.",
-   "ini": 0.96,
-   "fim": 2.08
   }
  ]
 }

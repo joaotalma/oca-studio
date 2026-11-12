@@ -1,0 +1,56 @@
+{
+ "n": 17,
+ "texto": "Você chega até as oito? Senão eu chamo outra entrega.",
+ "palavras": [
+  {
+   "palavra": "Você",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "chega",
+   "ini": 0.32,
+   "fim": 0.48
+  },
+  {
+   "palavra": "até",
+   "ini": 0.56,
+   "fim": 0.72
+  },
+  {
+   "palavra": "as",
+   "ini": 0.84,
+   "fim": 0.96
+  },
+  {
+   "palavra": "oito?",
+   "ini": 1,
+   "fim": 1.44
+  },
+  {
+   "palavra": "Senão",
+   "ini": 1.76,
+   "fim": 2
+  },
+  {
+   "palavra": "eu",
+   "ini": 2.08,
+   "fim": 2.16
+  },
+  {
+   "palavra": "chamo",
+   "ini": 2.2,
+   "fim": 2.4
+  },
+  {
+   "palavra": "outra",
+   "ini": 2.48,
+   "fim": 2.64
+  },
+  {
+   "palavra": "entrega.",
+   "ini": 2.72,
+   "fim": 3.52
+  }
+ ]
+}

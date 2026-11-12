@@ -1,16 +1,26 @@
 {
  "n": 9,
- "texto": "Quanto fica?",
+ "texto": "Sem olhar a agenda.",
  "palavras": [
   {
-   "palavra": "Quanto",
+   "palavra": "Sem",
    "ini": 0,
    "fim": 0.32
   },
   {
-   "palavra": "fica?",
+   "palavra": "olhar",
    "ini": 0.4,
-   "fim": 1.12
+   "fim": 0.72
+  },
+  {
+   "palavra": "a",
+   "ini": 0.747,
+   "fim": 0.773
+  },
+  {
+   "palavra": "agenda.",
+   "ini": 0.8,
+   "fim": 1.68
   }
  ]
 }

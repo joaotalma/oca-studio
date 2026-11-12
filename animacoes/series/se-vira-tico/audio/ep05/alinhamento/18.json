@@ -1,0 +1,51 @@
+{
+ "n": 18,
+ "texto": "Trinta e quatro minutos. Eu ia mandar \"tô chegando\".",
+ "palavras": [
+  {
+   "palavra": "Trinta",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "e",
+   "ini": 0.32,
+   "fim": 0.4
+  },
+  {
+   "palavra": "quatro",
+   "ini": 0.44,
+   "fim": 0.64
+  },
+  {
+   "palavra": "minutos.",
+   "ini": 0.72,
+   "fim": 1.52
+  },
+  {
+   "palavra": "Eu",
+   "ini": 1.68,
+   "fim": 1.76
+  },
+  {
+   "palavra": "ia",
+   "ini": 1.84,
+   "fim": 1.92
+  },
+  {
+   "palavra": "mandar",
+   "ini": 2,
+   "fim": 2.4
+  },
+  {
+   "palavra": "\"tô",
+   "ini": 2.64,
+   "fim": 2.8
+  },
+  {
+   "palavra": "chegando\".",
+   "ini": 2.88,
+   "fim": 3.76
+  }
+ ]
+}

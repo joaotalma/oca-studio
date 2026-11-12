@@ -37,5 +37,22 @@
  "narrador_abertura_ep06": {
   "voiceId": "6UI0A10f2tYKlXvyToXE",
   "referencia": "Narrador jovem original do Blink; autorizado para a abertura do EP6 em11/11/2026, sem alterar o elenco."
+ },
+ "cida": {
+  "voiceId": "8d3vk9bGIKfaIQMRc3zB",
+  "previa": 0,
+  "referencia": "lua"
+ },
+ "neta": {
+  "voiceId": "chZmaSPsqt26mRN9q0rP",
+  "previa": 0,
+  "referencia": "leticia"
+ },
+ "narrador": {
+  "voiceId": "wyEycNN7KphVSws3Ov6u",
+  "previa": 0,
+  "referencia": "tico",
+  "estabilidade": 0.72,
+  "nota": "Tico narrando em primeira pessoa (ep. 5 em diante): mesma voz, registro mais calmo"
  }
 }

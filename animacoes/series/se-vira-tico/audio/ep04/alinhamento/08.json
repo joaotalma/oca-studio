@@ -1,16 +1,11 @@
 {
  "n": 8,
- "texto": "Eu sei.",
+ "texto": "Uhum.",
  "palavras": [
   {
-   "palavra": "Eu",
+   "palavra": "Uhum.",
    "ini": 0,
-   "fim": 0.24
-  },
-  {
-   "palavra": "sei.",
-   "ini": 0.44,
-   "fim": 0.88
+   "fim": 0.8
   }
  ]
 }

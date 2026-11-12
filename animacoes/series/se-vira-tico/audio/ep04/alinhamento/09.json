@@ -1,31 +1,21 @@
 {
- "n": 9,
- "texto": "Você passou perfume no cinto?",
+ "n": 7,
+ "texto": "É corrida, tá?",
  "palavras": [
   {
-   "palavra": "Você",
+   "palavra": "É",
    "ini": 0,
-   "fim": 0.24
+   "fim": 0.16
   },
   {
-   "palavra": "passou",
-   "ini": 0.32,
-   "fim": 0.56
+   "palavra": "corrida,",
+   "ini": 0.28,
+   "fim": 0.8
   },
   {
-   "palavra": "perfume",
-   "ini": 0.64,
-   "fim": 1.12
-  },
-  {
-   "palavra": "no",
-   "ini": 1.2,
-   "fim": 1.36
-  },
-  {
-   "palavra": "cinto?",
-   "ini": 1.44,
-   "fim": 2.24
+   "palavra": "tá?",
+   "ini": 0.96,
+   "fim": 1.44
   }
  ]
 }

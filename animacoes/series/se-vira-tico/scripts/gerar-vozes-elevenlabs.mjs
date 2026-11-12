@@ -37,7 +37,7 @@ for (const f of falas) {
   if (!vozes[f.voz]) { console.error('sem voz no registro:', f.voz); process.exit(1); }
   const r = await client.textToSpeech.convertWithTimestamps(vozes[f.voz].voiceId, {
     text: f.texto, modelId: MODELO, ...(MODELO === 'eleven_multilingual_v2' ? {} : { languageCode: 'pt' }), outputFormat: 'mp3_44100_128',
-    voiceSettings: { stability: Number(process.env.ESTABILIDADE || .5), similarityBoost: .8 },
+    voiceSettings: { stability: Number(process.env.ESTABILIDADE || vozes[f.voz].estabilidade || .5), similarityBoost: .8 }, // o narrador usa a voz do Tico, mais estável e calma
   });
   fs.writeFileSync(mp3, Buffer.from(r.audioBase64, 'base64'));
   fs.writeFileSync(path.join(saida, 'alinhamento', `${f.n}.json`), JSON.stringify({ n: Number(f.n), texto: f.texto, palavras: palavras(r.alignment) }, null, 1));

@@ -1,21 +1,16 @@
 {
  "n": 6,
- "texto": "Primeiro o cinto.",
+ "texto": "Que legal.",
  "palavras": [
   {
-   "palavra": "Primeiro",
+   "palavra": "Que",
    "ini": 0,
-   "fim": 0.48
+   "fim": 0.16
   },
   {
-   "palavra": "o",
-   "ini": 0.64,
-   "fim": 0.72
-  },
-  {
-   "palavra": "cinto.",
-   "ini": 0.8,
-   "fim": 1.52
+   "palavra": "legal.",
+   "ini": 0.48,
+   "fim": 1.04
   }
  ]
 }

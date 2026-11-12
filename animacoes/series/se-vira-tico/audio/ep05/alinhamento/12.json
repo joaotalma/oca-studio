@@ -1,21 +1,21 @@
 {
  "n": 12,
- "texto": "Que cheiro bom!",
+ "texto": "Tô imaginando. Quanto?",
  "palavras": [
   {
-   "palavra": "Que",
+   "palavra": "Tô",
    "ini": 0,
-   "fim": 0.16
+   "fim": 0.12
   },
   {
-   "palavra": "cheiro",
-   "ini": 0.32,
-   "fim": 0.64
+   "palavra": "imaginando.",
+   "ini": 0.16,
+   "fim": 1.2
   },
   {
-   "palavra": "bom!",
-   "ini": 0.8,
-   "fim": 1.52
+   "palavra": "Quanto?",
+   "ini": 1.36,
+   "fim": 2.08
   }
  ]
 }

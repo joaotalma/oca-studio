@@ -1,21 +1,31 @@
 {
  "n": 5,
- "texto": "Esse pode ligar?",
+ "texto": "Minha netinha faz aniversário hoje!",
  "palavras": [
   {
-   "palavra": "Esse",
+   "palavra": "Minha",
    "ini": 0,
-   "fim": 0.48
+   "fim": 0.24
   },
   {
-   "palavra": "pode",
-   "ini": 0.72,
+   "palavra": "netinha",
+   "ini": 0.32,
    "fim": 0.88
   },
   {
-   "palavra": "ligar?",
+   "palavra": "faz",
    "ini": 0.96,
-   "fim": 1.68
+   "fim": 1.12
+  },
+  {
+   "palavra": "aniversário",
+   "ini": 1.2,
+   "fim": 1.92
+  },
+  {
+   "palavra": "hoje!",
+   "ini": 2,
+   "fim": 2.88
   }
  ]
 }

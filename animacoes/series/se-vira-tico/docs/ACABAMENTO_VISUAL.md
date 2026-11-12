@@ -22,3 +22,25 @@ Testar legibilidade do celular, mãos, direção da luz, escala em profundidade 
 
 Referência de princípios de iluminação: Practical Lighting on Toy Story 4, Pixar/SIGGRAPH 2019 — fontes de luz ligadas ao ambiente e resposta coerente em dia/noite. A implementação é uma adaptação 2D, não simulação física 3D.
 https://history.siggraph.org/wp-content/uploads/2022/09/2019-Talks-Tu_Practical-Lighting-on-Toy-Story-4.pdf
+
+## Formas orgânicas, olhos, boca e sombra (desde 10/11/2026)
+
+O João aprovou o estudo `estudos/visual-2d` em 10/11/2026. Ele adapta ao elenco do Tico as técnicas 2D aprovadas no Plotline (`render/referencias-plotline-2d`). Desde então, o rig desenha no estilo `organico` por padrão. `setEstiloRig('classico')` volta exatamente ao desenho dos eps. 1 a 4, e os episódios publicados guardam as próprias cópias, que não mudam.
+
+| Recurso | Onde | Regra |
+|---|---|---|
+| Membros curvos | `chars.js`, `RigOrganico.arm` e `RigOrganico.lower` | Cotovelo e joelho redondos, com pivôs e comprimentos do rig. Manga e calça terminam com barra reta. A barra da calça termina pela distância real até o tornozelo, para o pé nunca ficar solto. |
+| Volume da roupa | `RigOrganico.torso`, sombra interna dos membros | Sombra do lado oposto à luz, dobras só quando a junta dobra e vinco na calça. |
+| Olhos | `RigOrganico.eye` | Pupila preta, sem íris colorida. Foco comum dos dois olhos (`pose.look`). A pupila é maior na alegria e menor no susto, com brilho pequeno do lado da luz. Na desconfiança, um olho fecha mais que o outro. |
+| Boca | `RigOrganico.mouth` | Arcada curva recortada na boca e língua no riso e nos visemas abertos. O `forcado` estica os cantos sem subir, com as duas arcadas fechadas, e nunca vira alegria sincera. |
+| Sombra | `sombraSVG` e `motor.js` | Contato sob cada sola e projeção da silhueta no chão, para longe da luz. Com `sombra: { parede: true }` no plano ou no episódio, ela sobe pela parede logo atrás. `sombra: false` desliga. Ordem: cenário, sombras e atores. Só vale para quem pisa no chão do cenário, sem `y` próprio e com pernas. |
+| Porta do Conjunto | `cenarios.js`, `PortaRica` | Camadas, materiais e luz motivada. Os objetos novos pertencem ao lugar. Placas, vaso, lixeira, fios e reboco foram mantidos. |
+
+**Ainda não coberto:**
+- o Fiscal, que tem rig próprio;
+- a fala sincronizada com as bocas novas;
+- os outros cenários;
+- perfil e 3/4;
+- fundo 3D.
+
+Teste em `estudos/visual-2d/testar.mjs`, que verifica determinismo, valores finitos e todos os personagens e expressões.

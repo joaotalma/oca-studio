@@ -1,31 +1,31 @@
 {
- "n": 11,
- "texto": "A gente matava aula ali.",
+ "n": 9,
+ "texto": "Você passou perfume no cinto?",
  "palavras": [
   {
-   "palavra": "A",
+   "palavra": "Você",
    "ini": 0,
-   "fim": 0.08
+   "fim": 0.24
   },
   {
-   "palavra": "gente",
-   "ini": 0.16,
-   "fim": 0.32
+   "palavra": "passou",
+   "ini": 0.32,
+   "fim": 0.56
   },
   {
-   "palavra": "matava",
-   "ini": 0.4,
+   "palavra": "perfume",
+   "ini": 0.64,
    "fim": 1.12
   },
   {
-   "palavra": "aula",
-   "ini": 1.24,
-   "fim": 1.4
+   "palavra": "no",
+   "ini": 1.2,
+   "fim": 1.36
   },
   {
-   "palavra": "ali.",
+   "palavra": "cinto?",
    "ini": 1.44,
-   "fim": 2
+   "fim": 2.24
   }
  ]
 }

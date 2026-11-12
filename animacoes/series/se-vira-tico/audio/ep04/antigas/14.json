@@ -1,0 +1,31 @@
+{
+ "n": 14,
+ "texto": "Ele ligou do mesmo jeito.",
+ "palavras": [
+  {
+   "palavra": "Ele",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "ligou",
+   "ini": 0.36,
+   "fim": 0.56
+  },
+  {
+   "palavra": "do",
+   "ini": 0.64,
+   "fim": 0.8
+  },
+  {
+   "palavra": "mesmo",
+   "ini": 0.88,
+   "fim": 1.2
+  },
+  {
+   "palavra": "jeito.",
+   "ini": 1.28,
+   "fim": 2
+  }
+ ]
+}

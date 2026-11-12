@@ -1,36 +1,21 @@
 {
  "n": 6,
- "texto": "Toda fábrica começou com seis caixas.",
+ "texto": "Sábado. Seis caixas.",
  "palavras": [
   {
-   "palavra": "Toda",
+   "palavra": "Sábado.",
    "ini": 0,
-   "fim": 0.24
+   "fim": 0.64
   },
   {
-   "palavra": "fábrica",
-   "ini": 0.4,
-   "fim": 0.88
-  },
-  {
-   "palavra": "começou",
+   "palavra": "Seis",
    "ini": 1.04,
-   "fim": 1.36
-  },
-  {
-   "palavra": "com",
-   "ini": 1.44,
-   "fim": 1.6
-  },
-  {
-   "palavra": "seis",
-   "ini": 1.76,
-   "fim": 2
+   "fim": 1.28
   },
   {
    "palavra": "caixas.",
-   "ini": 2.08,
-   "fim": 2.96
+   "ini": 1.36,
+   "fim": 2.24
   }
  ]
 }

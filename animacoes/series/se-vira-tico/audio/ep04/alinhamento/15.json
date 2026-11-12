@@ -1,0 +1,41 @@
+{
+ "n": 13,
+ "texto": "Tico... por que você sumiu naquele dia?",
+ "palavras": [
+  {
+   "palavra": "Tico...",
+   "ini": 0,
+   "fim": 0.96
+  },
+  {
+   "palavra": "por",
+   "ini": 1.04,
+   "fim": 1.12
+  },
+  {
+   "palavra": "que",
+   "ini": 1.2,
+   "fim": 1.28
+  },
+  {
+   "palavra": "você",
+   "ini": 1.32,
+   "fim": 1.52
+  },
+  {
+   "palavra": "sumiu",
+   "ini": 1.6,
+   "fim": 2
+  },
+  {
+   "palavra": "naquele",
+   "ini": 2.08,
+   "fim": 2.4
+  },
+  {
+   "palavra": "dia?",
+   "ini": 2.48,
+   "fim": 3.12
+  }
+ ]
+}

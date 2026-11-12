@@ -1,21 +1,46 @@
 {
  "n": 14,
- "texto": "É pertinho, tá?",
+ "texto": "Pertinho, pra Letícia, é o aeroporto. Com live.",
  "palavras": [
   {
-   "palavra": "É",
+   "palavra": "Pertinho,",
    "ini": 0,
-   "fim": 0.16
+   "fim": 0.8
   },
   {
-   "palavra": "pertinho,",
-   "ini": 0.32,
-   "fim": 0.84
-  },
-  {
-   "palavra": "tá?",
+   "palavra": "pra",
    "ini": 0.88,
-   "fim": 1.36
+   "fim": 0.96
+  },
+  {
+   "palavra": "Letícia,",
+   "ini": 1.08,
+   "fim": 1.76
+  },
+  {
+   "palavra": "é",
+   "ini": 1.8,
+   "fim": 1.84
+  },
+  {
+   "palavra": "o",
+   "ini": 1.88,
+   "fim": 1.92
+  },
+  {
+   "palavra": "aeroporto.",
+   "ini": 1.96,
+   "fim": 2.84
+  },
+  {
+   "palavra": "Com",
+   "ini": 3.04,
+   "fim": 3.2
+  },
+  {
+   "palavra": "live.",
+   "ini": 3.28,
+   "fim": 3.92
   }
  ]
 }

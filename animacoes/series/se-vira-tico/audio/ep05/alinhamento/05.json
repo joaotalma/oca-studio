@@ -1,36 +1,31 @@
 {
  "n": 5,
- "texto": "Seis caixas. Não é uma fábrica.",
+ "texto": "Da próxima vez, me avisa.",
  "palavras": [
   {
-   "palavra": "Seis",
+   "palavra": "Da",
    "ini": 0,
-   "fim": 0.4
+   "fim": 0.16
   },
   {
-   "palavra": "caixas.",
-   "ini": 0.56,
-   "fim": 1.44
+   "palavra": "próxima",
+   "ini": 0.2,
+   "fim": 0.56
   },
   {
-   "palavra": "Não",
-   "ini": 1.6,
-   "fim": 1.76
+   "palavra": "vez,",
+   "ini": 0.64,
+   "fim": 1.08
   },
   {
-   "palavra": "é",
-   "ini": 1.84,
-   "fim": 1.92
+   "palavra": "me",
+   "ini": 1.12,
+   "fim": 1.2
   },
   {
-   "palavra": "uma",
-   "ini": 2,
+   "palavra": "avisa.",
+   "ini": 1.32,
    "fim": 2.08
-  },
-  {
-   "palavra": "fábrica.",
-   "ini": 2.24,
-   "fim": 3.12
   }
  ]
 }

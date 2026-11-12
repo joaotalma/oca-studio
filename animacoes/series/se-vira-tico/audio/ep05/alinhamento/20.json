@@ -1,0 +1,51 @@
+{
+ "n": 20,
+ "texto": "Agora era ela quem decidia se podia contar comigo.",
+ "palavras": [
+  {
+   "palavra": "Agora",
+   "ini": 0,
+   "fim": 0.56
+  },
+  {
+   "palavra": "era",
+   "ini": 0.64,
+   "fim": 0.88
+  },
+  {
+   "palavra": "ela",
+   "ini": 0.96,
+   "fim": 1.2
+  },
+  {
+   "palavra": "quem",
+   "ini": 1.28,
+   "fim": 1.44
+  },
+  {
+   "palavra": "decidia",
+   "ini": 1.52,
+   "fim": 2
+  },
+  {
+   "palavra": "se",
+   "ini": 2.08,
+   "fim": 2.16
+  },
+  {
+   "palavra": "podia",
+   "ini": 2.24,
+   "fim": 2.48
+  },
+  {
+   "palavra": "contar",
+   "ini": 2.6,
+   "fim": 2.8
+  },
+  {
+   "palavra": "comigo.",
+   "ini": 2.88,
+   "fim": 3.6
+  }
+ ]
+}

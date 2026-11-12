@@ -1,31 +1,31 @@
 {
- "n": 14,
- "texto": "Ele ligou do mesmo jeito.",
+ "n": 12,
+ "texto": "Você matava. Eu ia junto.",
  "palavras": [
   {
-   "palavra": "Ele",
+   "palavra": "Você",
    "ini": 0,
-   "fim": 0.24
+   "fim": 0.32
   },
   {
-   "palavra": "ligou",
-   "ini": 0.36,
-   "fim": 0.56
+   "palavra": "matava.",
+   "ini": 0.48,
+   "fim": 1.04
   },
   {
-   "palavra": "do",
-   "ini": 0.64,
-   "fim": 0.8
+   "palavra": "Eu",
+   "ini": 1.36,
+   "fim": 1.52
   },
   {
-   "palavra": "mesmo",
-   "ini": 0.88,
-   "fim": 1.2
+   "palavra": "ia",
+   "ini": 1.6,
+   "fim": 1.68
   },
   {
-   "palavra": "jeito.",
-   "ini": 1.28,
-   "fim": 2
+   "palavra": "junto.",
+   "ini": 1.76,
+   "fim": 2.4
   }
  ]
 }

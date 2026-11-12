@@ -3,12 +3,12 @@
   "aprovado": true,
   "bpm": 112,
   "duracao_loop_s": 8.571,
-  "salto": 0.0023,
-  "salto_limite": 0.0961,
+  "salto": 0.0024,
+  "salto_limite": 0.098,
   "degrau_dB": 16.6,
   "degrau_limite_dB": 23.24,
-  "clique": 0.07087,
-  "clique_limite": 0.08234
+  "clique": 0.06958,
+  "clique_limite": 0.08078
  },
  "lembranca": {
   "aprovado": true,
@@ -37,11 +37,11 @@
   "bpm": 88,
   "duracao_loop_s": 10.909,
   "salto": 0.004,
-  "salto_limite": 0.0473,
+  "salto_limite": 0.0464,
   "degrau_dB": 10.16,
   "degrau_limite_dB": 11.53,
-  "clique": 0.04382,
-  "clique_limite": 0.06133
+  "clique": 0.04657,
+  "clique_limite": 0.06356
  },
  "voto": {
   "aprovado": true,

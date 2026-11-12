@@ -1,6 +1,6 @@
 {
  "n": 13,
- "texto": "É dela. Eu só dirijo.",
+ "texto": "É pertinho, tá?",
  "palavras": [
   {
    "palavra": "É",
@@ -8,24 +8,14 @@
    "fim": 0.16
   },
   {
-   "palavra": "dela.",
-   "ini": 0.2,
+   "palavra": "pertinho,",
+   "ini": 0.32,
    "fim": 0.8
   },
   {
-   "palavra": "Eu",
-   "ini": 0.88,
-   "fim": 1.04
-  },
-  {
-   "palavra": "só",
-   "ini": 1.12,
-   "fim": 1.2
-  },
-  {
-   "palavra": "dirijo.",
-   "ini": 1.28,
-   "fim": 2.08
+   "palavra": "tá?",
+   "ini": 0.92,
+   "fim": 1.36
   }
  ]
 }

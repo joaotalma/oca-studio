@@ -1,157 +1,216 @@
 # Episódio 5: Dá Tempo?
 
-**Status:** aprovado pelo autor, no caminho **VERDADE** do ep. 4 (variante "Corrida + VERDADE" do `pre_roteiro.md`, histórico Chuveiro). A história anda só para a frente: o gancho das 7h58 com "Mais cedo" saiu, e a abertura retoma o fim do ep. 4 dentro do carro, com o filtro de lembrança. Tempos estimados pelo ritmo das vozes do ElevenLabs no ep. 4, em que a voz real ficou praticamente igual ao roteiro.
+**Status:** no formato novo (`docs/estrategia/FORMATO.md`), no caminho **VERDADE** do ep. 4, narrado pelo Tico do começo ao fim. Aprovado pelo autor em 9/11/2026. Na mesma data, ganhou dois ajustes pedidos pelo autor:
+- o gancho passou a ser o "tô chegando";
+- o que está em jogo passou a ser o sonho da Lua, não só a entrega.
 
-**O fio:** "às oito tá entregue". O Tico quer ser alguém com quem a Lua pode contar e promete antes de conferir o próprio dia. A Lua testa o sonho em segredo, e no fim é ela quem decide se confia nele.
+A versão anterior ao formato está no histórico do git (commit `1f43368`).
 
-**Em 3 frases:** No carro, o Tico conta a verdade (fugiu porque estava fedendo), e a Lua, depois de cobrar, ri. No sábado, ela vai vender seis caixas de doce, e ele promete entregar às oito sem olhar a agenda, enquanto leva uma caixa de amostra no carro para divulgar. Às 19h40 ele está a 34 minutos dela por causa de uma corrida "pertinho"; ela, que acabou de se inscrever escondida num curso de confeitaria em outro estado, pergunta se ele chega, e ele responde a verdade: está longe, mas chega. Agora a escolha é dela.
+**Como a narração funciona:**
+- O Tico conta a história em primeira pessoa e no passado, como quem lembra.
+- Os outros personagens têm falas curtas, só onde a voz deles faz a piada ou a virada.
+- Quem narra no passado pode admitir o que não sabia na hora.
+- A narração dispensa sincronia de boca.
 
-- **Absurdo:** a passageira diz "é pertinho" e a corrida dá 38 km; o carro cheira tanto a doce que os passageiros acham que é o perfume.
-- **Mentira:** nenhuma. O erro do Tico é prometer sem conferir; quando a conta chega, ele responde a verdade.
-- **Riso que engasga:** o retorno. O caderno manda "Descansar a massa", e ela põe a massa para dormir na cama dela, coberta, enquanto ela mesma continua de pé.
-- **Momento de verdade:** a abertura. O Tico diz o que evitava, e a verdade aproxima os dois.
-- **Repetição que cresce:** o cheiro (do Tico no ep. 2, do perfume no ep. 4, do doce agora); o Fiscal volta como piada; o caderno da avó passa de "Descansar 40 minutos" para "Descansar a massa", e quem ganha a cama é a massa.
-- **Semente da T2:** a inscrição no curso de confeitaria em outro estado, só na imagem. O Tico não fica sabendo.
+## A linha do episódio
+
+O gancho, o clímax e o voto seguem a mesma linha: **não mandar "tô chegando"**.
+
+1. **Gancho:** o público escolheu a verdade. Por isso, hoje ele não pode usar a mentira que todo mundo já contou: "tô chegando", estando longe. Esta é a situação que todo mundo reconhece, e ela vem logo na primeira frase, junto com o lugar absurdo, o aeroporto.
+2. **Promessa:** a Lua ri da confissão e pede que, da próxima vez, ele avise.
+3. **O que está em jogo:** "É só um teste. Se der certo, eu tento a confeitaria." O atraso dele ameaça o sonho dela, não só R$ 20.
+4. **Problema:** ele promete às oito sem olhar a agenda e aceita uma corrida até o aeroporto.
+5. **Clímax:** ele digita "tô chegando", lembra do pedido e avisa a verdade. O clímax paga a primeira frase do episódio.
+6. **Voto:** agora é ela quem decide se ainda pode contar com ele.
+
+**Em 3 frases:**
+1. O público escolheu a verdade: o Tico conta à Lua que fugiu da carona porque estava fedendo, e ela pede que, da próxima vez, ele avise.
+2. No sábado, ela aposta na primeira encomenda para decidir se tenta a confeitaria. Ele promete entregar às oito sem olhar a agenda e aceita uma corrida "pertinho" até o aeroporto.
+3. Enquanto ele volta no trânsito, ela se inscreve escondida num curso em Porto Alegre e pergunta se ele chega. Ele quase manda "tô chegando", mas avisa a verdade, e a decisão passa a ser dela.
+
+## Contrato
+
+| Item | Neste episódio |
+|---|---|
+| **Gancho (0–7 s)** | "Vocês escolheram que eu falasse a verdade pro meu crush. Então eu não podia mandar 'tô chegando'... do aeroporto." |
+| **Situação reconhecível** | Mandar "tô chegando" sem nem estar perto |
+| **O que está em jogo** | "Se der certo, eu tento a confeitaria." A entrega decide se ela arrisca o sonho |
+| **Fio** | "Às oito tá entregue." |
+| **Relógio** | "ENTREGA 20h00", no canto da tela, da promessa até o voto |
+| **Caso do episódio** | A primeira encomenda da Lua e a corrida "pertinho" da Letícia |
+| **Pista** | "Da próxima vez, me avisa." Volta no clímax e muda a resposta dele |
+| **Reinterpretação** | "É só um teste." Repetida sobre a inscrição em outro estado, a frase passa a significar o contrário |
+| **Ironia dramática** | "Enquanto isso, ela fazia algo que não me contou." |
+| **Ponto sem volta** | Ele mesmo aceita a corrida de 38 km |
+| **Entrega** | Ele avisa a verdade em vez de "tô chegando" |
+| **Voto** | CONFIA ou OUTRO MOTORISTA. Os dois custam: o cliente pode cancelar, ou as caixas saem sem ele |
+| **O que fica** | Ela sabe que ele avisa o limite, nos dois caminhos. E ela mesma guardou um segredo, que é o gancho do ep. 6 |
 
 ## Linha do tempo
 
-Três tempos, dois cartões, nenhuma volta.
-
 | Cena | Hora | Marca |
 |---|---|---|
-| Abertura: a verdade | fim da corrida do ep. 4 | Filtro de lembrança no primeiro plano, depois cor |
-| 1. Seis caixas | sábado, 14h | Cartão "Sábado, 14h" |
-| 2. O carro que cheira a doce | mesma tarde | Continua; o céu escurece |
-| 3. A inscrição | sábado, 19h | Relógio da tela do notebook |
-| 4. Dá tempo? | sábado, 19h40 | Relógio do mapa e da cozinha |
-| Retorno | sábado, 19h40 | Continua |
+| Abertura: a verdade | fim da corrida do ep. 4 | Continua em cor, sem filtro |
+| 1. Seis caixas | sábado, 14h | Narração: "Sábado." |
+| 2. Pertinho | sábado, 18h30 | Relógio do canto |
+| 3. A inscrição | sábado, 19h25 | Narração: "Enquanto isso" e relógio do notebook |
+| 4. Dá tempo? | sábado, 19h40 | Relógio do canto e do mapa |
+| Retorno | sábado, 19h41 | Continua |
 
 ## Medição
 
+Ritmo de cerca de 2,3 palavras por segundo nas falas e 2,8 na narração.
+
 | Medida | Valor | Regra |
 |---|---|---|
-| Falas | 15 | |
-| Palavras faladas | 72 | |
-| Duração no roteiro | 65,1 s | 61 a 68 s |
+| Primeira fala | 0,2 s | Até 0,5 s |
+| Falas | 12 de personagens, 9 narradas | Falas de personagens curtas |
+| Palavras faladas | 127 (68 narradas) | Até cerca de 150 |
+| Duração no roteiro | 65,1 s (com a voz real, 67,1 s) | 61 a 68 s |
+| Maior trecho sem fala | 1,8 s, no retorno | O silêncio fica para o riso que engasga e o retorno |
 
 | Cena | Tempo | Duração |
 |---|---|---|
-| Abertura: a verdade | 0,0–12,8 | 12,8 s |
-| Título | 12,8–13,8 | 1,0 s |
-| 1. Seis caixas | 13,8–29,6 | 15,8 s |
-| 2. O carro que cheira a doce | 29,6–40,1 | 10,5 s |
-| 3. A inscrição | 40,1–44,6 | 4,5 s |
-| 4. Dá tempo? | 44,6–55,1 | 10,5 s |
-| Votação | 55,1–60,1 | 5,0 s |
-| Retorno | 60,1–65,1 | 5,0 s |
+| Abertura: a verdade | 0,0–14,9 | 14,9 s |
+| 1. Seis caixas | 14,9–28,6 | 13,7 s |
+| 2. Pertinho | 28,6–33,9 | 5,3 s |
+| 3. A inscrição | 33,9–40,1 | 6,2 s |
+| 4. Dá tempo? | 40,1–56,4 | 16,3 s |
+| Votação | 56,4–61,4 | 5,0 s |
+| Retorno | 61,4–65,1 | 3,7 s |
+
+## Perguntas abertas
+
+| Tempo | Abre | Fecha |
+|---|---|---|
+| 0,2 s | Por que ele estava no aeroporto, e ele vai mandar "tô chegando"? | 48,9 s: não manda, ele avisa |
+| 6,7 s | Qual foi a verdade? | 6,7 s: fugiu porque estava fedendo |
+| 9,7 s | Fedendo quanto? | 10,7 s: o Fiscal mudou de calçada |
+| 16,2 s | A encomenda vai dar certo? | Fica para o voto e o ep. 6 |
+| 20,8 s | Ele cumpre às oito? | Fica para o voto |
+| 30,9 s | Aeroporto: dá tempo? | 43,9 s: não dá, são 34 min |
+| 34,0 s | O que ela não contou? | O público vê, e fica para o ep. 6 |
+| 51,6 s | Ela confia? | Fica para o voto |
 
 ## Corrente de causa e consequência
 
 | Cena | O que acontece | O que isso provoca |
 |---|---|---|
-| Abertura | O Tico conta que fugiu de vergonha | A Lua cobra, depois ri: a verdade aproxima |
-| 1 | Ela vai vender seis caixas | Ele promete entregar às oito sem olhar a agenda; o preço fica combinado |
-| 2 | Ele divulga os doces no carro | Os passageiros querem o contato dela; uma corrida "pertinho" o leva para longe |
-| 3 | Ela se inscreve no curso, sozinha | O público sabe; o Tico, não |
-| 4 | Ela pergunta se ele chega | Ele diz que está a 34 minutos, mas chega; a decisão passa para ela |
+| Abertura | O público escolheu a verdade, e ele conta | Ela ri e pede que, da próxima vez, ele avise |
+| 1 | Ela aposta o sonho na primeira encomenda | Ele promete às oito sem olhar a corrida das 18h30 |
+| 2 | A Letícia diz "pertinho", e ele aceita | O aeroporto fica a 38 km, e ele volta no trânsito |
+| 3 | Sozinha, ela repete "é só um teste" e se inscreve em Porto Alegre | O público sabe; o Tico, não |
+| 4 | Ela pergunta se ele chega | Ele quase manda "tô chegando", lembra do pedido e avisa; a decisão passa para ela |
 
 ## Cenas
 
-### Abertura: a verdade (0,0–12,8 s)
+### Abertura: a verdade (0,0–14,9 s)
 
-Retoma o último plano do ep. 4, os olhos da Lua no retrovisor, com o filtro de lembrança. A cor volta quando o Tico responde. Fim de tarde, mesmo carro alugado. **Quer:** ele, não perder a Lua de novo. **Obstáculo:** a vergonha. **Virada:** ele conta. **Fecho:** ela ri.
-
-| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
-|---|---|---|---|---|---|---|---|
-|  | 0,0–1,5 |  | **Sem fala** | triste | Filtro de lembrança. Os olhos da Lua no retrovisor, como no fim do ep. 4 | Close do retrovisor | Silêncio |
-| 1 | 1,6–4,3 | Tico | Eu tava fedendo. Fiquei com vergonha e fugi. | envergonhado | A cor volta. As mãos apertam o volante; ele não olha para trás | Close do Tico | |
-|  | 4,3–5,3 |  | **Sem fala** | surpreso | Os olhos dela no retrovisor, parados | Close do retrovisor | |
-| 2 | 5,4–7,3 | Lua | Você podia ter me avisado. | triste | Cruza os braços no banco de trás | Close da Lua | |
-|  | 7,3–8,0 |  | **Sem fala** | triste | Ele baixa o olhar e concorda com a cabeça | Close do Tico | |
-| 3 | 8,1–9,0 | Lua | Fedendo quanto? | pensando | Desfaz os braços, curiosa | Close da Lua | |
-| 4 | 9,2–11,0 | Tico | O Fiscal mudou de calçada. | envergonhado | Sério, como quem dá um dado técnico | Close do Tico | |
-|  | 11,0–12,8 |  | **Sem fala** | rindo | Ela ri de verdade e tapa a boca. Ele sorri pelo retrovisor | Carro de frente, os dois | Riso dela, abafado |
-
-### Título (12,8–13,8 s)
-
-`SerieVisual.abertura({ linha1: 'DÁ TEMPO?' })`.
-
-### 1. Seis caixas (13,8–29,6 s)
-
-Cozinha da Lua, de dia. Seis caixas de doce na bancada, a pia cheia de louça, o caderno da avó aberto. **Quer:** ela, testar o sonho sem largar nada; ele, ser útil. **Obstáculo:** o horário. **Virada:** ele promete sem olhar a agenda. **Fecho:** o preço combinado e a caixa de amostra.
+Continua o carro do fim do ep. 4, no fim de tarde, já em cor. **Quer:** ele, não perder a Lua de novo. **Obstáculo:** a vergonha. **Virada:** ele conta. **Fecho:** o pedido dela.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-|  | 13,8–14,5 |  | **Sem fala** | feliz | Cartão "Sábado, 14h". As seis caixas em pilha, com laço | Plano médio da bancada | |
-| 5 | 14,5–16,7 | Lua | Seis caixas. Não é uma fábrica. | envergonhado | Arruma o laço de uma caixa | Dupla | |
-| 6 | 16,9–19,2 | Tico | Toda fábrica começou com seis caixas. | feliz | Aponta as caixas como quem apresenta um prédio | Close do Tico | |
-| 7 | 19,4–21,9 | Lua | A minha começa com uma pia cheia. | cansado | Aponta a pia com a cabeça; a louça quase cai | Dupla, com a pia | Louça |
-| 8 | 22,1–23,8 | Tico | Às oito tá entregue. | forcado | Estufa o peito. No bolso dele, o celular acende: "Corrida agendada: 18h30". Ele não olha | Close do Tico | Vibração |
-| 9 | 24,0–24,8 | Lua | Quanto fica? | neutro | | Close da Lua | |
-| 10 | 25,0–26,2 | Tico | Pra você, imagina. | feliz | Abana a mão | Close do Tico | |
-| 11 | 26,4–28,1 | Lua | Tô imaginando. Quanto? | lado | Sobrancelha levantada | Close da Lua | |
-|  | 28,1–29,6 |  | **Sem fala** | feliz | Na tela: "Entrega combinada: R$ 20". Ela entrega a ele uma caixinha de amostra e um maço de cartões "Doces da Lua" | Close das mãos | |
+| 1 | 0,2–6,6 | Tico (narração) | Vocês escolheram que eu falasse a verdade pro meu crush. Então eu não podia mandar "tô chegando"... do aeroporto. |  | Os olhos da Lua no retrovisor, esperando. No canto, por 1 s, o selo "VERDADE ✓" da votação do ep. 4. Em "tô chegando", a câmera vai até o rosto dele, travado | Close do retrovisor, depois do Tico | Pisca-pisca |
+| 2 | 6,7–9,6 | Tico | Eu fugi da carona porque tava fedendo. | envergonhado | As mãos apertam o volante. Ele não olha para trás | Close do Tico | |
+| 3 | 9,7–10,6 | Lua | Fedendo quanto? | pensando | Desfaz os braços, curiosa | Close da Lua | |
+| 4 | 10,7–12,5 | Tico | O Fiscal mudou de calçada. | envergonhado | Sério, como quem dá um dado técnico | Close do Tico | |
+|  | 12,5–13,3 |  | **Sem fala** | rindo | Inserção de 0,5 s: o Fiscal atravessa a rua de focinho erguido. Volta para a Lua, rindo e tapando a boca | Fiscal, depois close da Lua | Riso abafado |
+| 5 | 13,4–14,9 | Lua | Da próxima vez, me avisa. | feliz | Ainda rindo, aponta para ele pelo retrovisor | Carro de frente, os dois | O sinal abre |
 
-### 2. O carro que cheira a doce (29,6–40,1 s)
+### 1. Seis caixas (14,9–28,6 s)
 
-A mesma tarde, no carro alugado. A caixinha de amostra no painel. **Quer:** ele, divulgar os doces. **Obstáculo:** o dia dele também é de corridas. **Virada:** a corrida "pertinho". **Fecho:** o dinheiro que sobrou.
+Cozinha da Lua, sábado à tarde: seis caixas com laço, a pia cheia e o caderno da avó aberto. **Quer:** ela, testar o sonho; ele, ser útil. **Obstáculo:** o dia dele também tem corridas. **Virada:** ele promete sem olhar a agenda. **Fecho:** o preço combinado e o relógio na tela.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-|  | 29,6–30,2 |  | **Sem fala** | feliz | Carro de frente, a caixinha no painel. O vendedor de paçoca no banco de trás, farejando | Carro de frente | |
-| 12 | 30,3–31,4 | Vendedor | Que cheiro bom! | feliz | Fecha os olhos e respira fundo | Close do retrovisor | |
-|  | 31,4–32,2 |  | **Sem fala** | feliz | O Tico ajeita a gola, orgulhoso, achando que é o perfume. O vendedor aponta a caixinha | Carro de frente | |
-| 13 | 32,3–34,1 | Tico | É dela. Eu só dirijo. | envergonhado | Entrega um cartão "Doces da Lua" para trás | Close do Tico | |
-|  | 34,1–34,9 |  | **Sem fala** | surpreso | A Letícia entra com uma mala do tamanho dela | Carro de frente | Porta |
-| 14 | 35,0–36,2 | Letícia | É pertinho, tá? | feliz | Sorriso de live | Close do retrovisor | |
-|  | 36,2–37,6 |  | **Sem fala** |  | Tela do GPS: "Destino: 38 km. Chegada 19h05" | Tela do GPS | GPS |
-|  | 37,6–40,1 |  | **Sem fala** | cansado | No celular: "Ganhos hoje: R$ 142. Gasolina: R$ 58. Diária: R$ 0". Mensagem do Jão: "Quanto sobrou?" | Tela cheia | Plim |
+| 6 | 15,0–16,1 | Tico (narração) | Sábado. Seis caixas. |  | A Lua amarra o laço da sexta caixa. A louça da pia balança | Plano médio da bancada | |
+| 7 | 16,2–20,6 | Lua | É só um teste. Se der certo, eu tento a confeitaria. | envergonhado | Arruma um laço e olha o caderno da avó. Atrás dela, o crachá do trabalho pendurado na porta | Dupla | |
+| 8 | 20,8–22,2 | Tico | Às oito tá entregue. | forcado | Estufa o peito. Entra no canto da tela o relógio: "ENTREGA 20h00 · faltam 5h46" | Close do Tico | |
+| 9 | 22,2–23,7 | Tico (narração) | Sem olhar a agenda. |  | No bolso dele, o celular acende: "Corrida agendada: 18h30" | Close do bolso | Vibração |
+| 10 | 23,8–24,6 | Lua | Quanto fica? | neutro | | Close da Lua | |
+| 11 | 24,8–26,0 | Tico | Pra você, imagina. | feliz | Abana a mão | Close do Tico | |
+| 12 | 26,2–27,8 | Lua | Tô imaginando. Quanto? | lado | Sobrancelha levantada | Close da Lua | |
+|  | 27,8–28,6 |  | **Sem fala** | feliz | Na tela: "Entrega combinada: R$ 20". Ela estende a mão, e ele aperta | Close das mãos | |
 
-### 3. A inscrição (40,1–44,6 s)
+### 2. Pertinho (28,6–33,9 s)
 
-Sábado, 19h, na cozinha da Lua. As caixas fechadas, prontas. Sem fala: o público fica sabendo, o Tico não. **Quer:** ela, uma chance. **Obstáculo:** o medo. **Virada:** ela envia. **Fecho:** ela fecha o notebook.
-
-| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
-|---|---|---|---|---|---|---|---|
-|  | 40,1–41,6 |  | **Sem fala** | pensando | No notebook: "Inscrição: Curso de Confeitaria. Porto Alegre, RS". O relógio da tela marca 19h00 | Tela do notebook | |
-|  | 41,6–43,0 |  | **Sem fala** | preocupado | O dedo dela para em cima de "Enviar". Ela respira e clica | Close da mão | Clique |
-|  | 43,0–44,6 |  | **Sem fala** | aliviado | "Inscrição enviada." Ela fecha o notebook e olha as caixas | Close da Lua | |
-
-### 4. Dá tempo? (44,6–55,1 s)
-
-Sábado, 19h40. **Quer:** ela, uma resposta honesta. **Obstáculo:** ele está longe. **Virada:** ele conta a verdade. **Fecho:** o polegar dela sobre "Chamar outra entrega".
+O carro alugado, no mesmo sábado. **Quer:** ele, fazer uma corrida antes da entrega. **Obstáculo:** a passageira mede distância em gratidão. **Virada:** ele mesmo aceita. **Fecho:** está longe e voltando no trânsito.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-|  | 44,6–45,4 |  | **Sem fala** | preocupado | A Lua grava um áudio, com as caixas atrás | Plano médio | |
-| 15 | 45,5–49,2 | Lua | Você chega até as oito? Senão eu chamo outra entrega. | preocupado | Celular perto da boca | Close da Lua | "Lua: áudio 0:04" |
-|  | 49,2–50,6 |  | **Sem fala** |  | Mapa: "19h40. 34 min até a Lua" | Tela do mapa | GPS |
-|  | 50,6–52,1 |  | **Sem fala** | preocupado | O Tico no carro, parado no trânsito, com a Letícia falando ao telefone atrás. O suor volta | Close do Tico | Buzinas |
-|  | 52,1–53,6 |  | **Sem fala** | preocupado | Ele apaga "tô chegando" e manda: "Tô a 34 min. Mas eu chego." | Tela cheia | Enviar |
-|  | 53,6–55,1 |  | **Sem fala** | pensando | A Lua lê. O relógio da cozinha marca 19h41. No app, o polegar dela para em cima de "Chamar outra entrega". Corte seco | Close da Lua, depois do polegar | Silêncio |
+|  | 28,6–29,4 |  | **Sem fala** | surpreso | Relógio do canto: "18h30 · faltam 1h30". A Letícia entra com uma mala do tamanho dela e um ring light | Carro de frente | Porta |
+| 13 | 29,5–30,8 | Letícia | É pertinho, tá? | feliz | Sorriso de live. Ele faz a conta nos dedos e dá a partida | Close do retrovisor, depois do Tico | Motor |
+| 14 | 30,9–33,9 | Tico (narração) | Pertinho, pra Letícia, é o aeroporto. Com live. |  | GPS: "Aeroporto · 38 km". Depois, a tela da live: "AO VIVO · Motorista da gratidão", com os comentários "ele chega a tempo?" e "tá suando kkk". O carro passa pela placa "Embarque" | Tela do GPS, tela da live, carro de frente | Plim dos comentários |
 
-### Votação (55,1–60,1 s)
+### 3. A inscrição (33,9–40,1 s)
 
-Tela da votação com as duas setas, sobre o close da Lua em preto e branco: "QUAL VAI SER, LUA?" **CONFIA** (espera o Tico, e o risco de atrasar fica com os dois) / **OUTRO MOTORISTA** (chama outra entrega agora, e as caixas chegam sem ele). A decisão é dela; nenhum caminho autoriza o Tico a dirigir de forma perigosa nem a abandonar a passageira. Sem fala.
-
-### Retorno (60,1–65,1 s)
+A cozinha da Lua, às 19h25. As caixas estão prontas. **Quer:** ela, uma chance. **Obstáculo:** o medo. **Virada:** ela envia. **Fecho:** fecha o notebook e olha as caixas.
 
 | # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
 |---|---|---|---|---|---|---|---|
-|  | 60,1–61,6 |  | **Sem fala** |  | O timer toca na cozinha. No caderno da avó, a página aberta: "Descansar a massa" | Close do caderno | Timer |
-|  | 61,6–63,4 |  | **Sem fala** | pensando | Ela põe a massa num pote, leva para o quarto e deixa em cima da cama | Plano médio, no quarto da Lua | Passos |
-|  | 63,4–65,1 |  | **Sem fala** | aliviado | Cobre o pote com o cobertor, ajeita a ponta como quem põe alguém para dormir, e fica olhando. Ela continua de pé | Close do pote e da Lua | A música para |
+| 15 | 34,0–37,3 | Tico (narração) | Enquanto isso, ela fazia algo que não me contou. |  | Notebook: "Inscrição: Curso de Confeitaria · Porto Alegre, RS". Relógio da tela: 19h25. O dedo dela sobre "Enviar" | Tela do notebook, depois close da mão | |
+| 16 | 37,4–38,8 | Lua | É só um teste. | pensando | Baixinho, para si | Close da Lua | |
+|  | 38,8–40,1 |  | **Sem fala** | aliviado | Ela clica. "Inscrição enviada." Fecha o notebook e olha as seis caixas | Close da tela, depois da Lua | Clique |
 
-## O que precisa ser criado
+### 4. Dá tempo? (40,1–56,4 s)
 
-- **Cenários:** cozinha da Lua (bancada, pia cheia, seis caixas de doce com laço, caderno da avó, notebook, timer). Carro, retrovisor, telas e quarto da Lua já existem do ep. 4; o quarto ganha a cama.
-- **Telas:** agenda de corrida, entrega combinada, ganhos e mensagem do Jão, GPS, inscrição no notebook, áudio da Lua, mapa, resposta do Tico, botão "Chamar outra entrega" e votação.
-- **Objetos:** caixas de doce, caixinha de amostra, cartões "Doces da Lua", mala gigante da Letícia, notebook, timer, pote de massa e cobertor.
-- **Personagens:** Letícia e vendedor como passageiros. Desenhos e vozes já existem.
-- **Vozes:** todas já estão no ElevenLabs.
+Sábado, 19h40. **Quer:** ela, uma resposta honesta. **Obstáculo:** ele está longe e quer parecer que dá conta. **Virada:** ele lembra do pedido dela. **Fecho:** o polegar dela sobre "Chamar outra entrega".
 
-## Para o autor decidir
+| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
+|---|---|---|---|---|---|---|---|
+| 17 | 40,2–43,8 | Lua | Você chega até as oito? Senão eu chamo outra entrega. | preocupado | Grava um áudio com as caixas atrás. Relógio do canto: "19h40 · faltam 20 min" | Close da Lua | "Lua: áudio 0:04" |
+| 18 | 43,9–47,3 | Tico (narração) | Trinta e quatro minutos. Eu ia mandar "tô chegando". |  | Mapa: "34 min até a Lua". Ele, parado no trânsito, digita "tô chegando" e o dedo para | Tela do mapa, depois do celular | Teclas |
+|  | 47,3–48,8 |  | **Sem fala** | feliz | Lembrança com filtro: a Lua no retrovisor, "Da próxima vez, me avisa." (o áudio da fala 5) | Close do retrovisor | |
+| 19 | 48,9–50,1 | Tico (narração) | Então eu avisei. |  | Ele apaga e manda: "Tô a 34 min. Mas eu chego." | Tela cheia | Enviar |
+|  | 50,1–51,5 |  | **Sem fala** | preocupado | Ela lê. No celular dela entra: "Cliente: se atrasar, cancelo." | Close do celular dela | Plim |
+| 20 | 51,6–55,4 | Tico (narração) | Agora era ela quem decidia se podia contar comigo. |  | O polegar dela sobre "Chamar outra entrega". Relógio: 19h41. Ao fundo, o caderno da avó aberto. A câmera aproxima devagar | Close da Lua, depois do polegar | |
+|  | 55,4–56,4 |  | **Sem fala** | pensando | O polegar parado. Corte seco | Close do polegar | Silêncio |
 
-- **Cidade do curso:** usei Porto Alegre, RS, como a cidade em outro estado. Se a T2 já tem outra cidade em mente, troco.
-- **Preço da entrega:** R$ 20, combinado na tela. Passa a valer no ep. 6.
-- **Voto do ep. 4:** o roteiro parte de VERDADE. Confirme a contagem antes de produzir.
+### Votação (56,4–61,4 s)
+
+A tela da votação, com as duas setas, sobre o close da Lua em preto e branco, com a pergunta "QUAL VAI SER, LUA?":
+
+| Opção | O que acontece | O que custa |
+|---|---|---|
+| **CONFIA** | Ela espera o Tico | O cliente pode cancelar, e o teste do sonho fica em risco |
+| **OUTRO MOTORISTA** | Chama outra entrega agora | As caixas saem sem ele |
+
+A decisão é dela. Nenhum caminho autoriza o Tico a dirigir de forma perigosa. Sem fala.
+
+### Retorno (61,4–65,1 s)
+
+Paga o caderno da avó do ep. 4 ("Descansar 40 minutos").
+
+| # | Tempo | Quem | Fala | Expressão | Ação | Plano | Som ou objeto |
+|---|---|---|---|---|---|---|---|
+|  | 61,4–62,3 |  | **Sem fala** |  | O timer toca. O caderno da avó aberto em "Descansar a massa" | Close do caderno | Timer |
+|  | 62,3–63,1 |  | **Sem fala** | pensando | Ela põe a massa num pote, leva para o quarto e cobre com o cobertor, como quem põe alguém para dormir | Plano médio do quarto | Passos |
+| 21 | 63,2–65,0 | Tico (narração) | A massa descansou. Ela, não. |  | Ela continua de pé, olhando o pote | Close da Lua | A música para |
+
+## Conferência
+
+- [x] Primeira fala aos 0,2 s, sem título nem tela de leitura antes dos 15 s.
+- [x] O gancho tem uma situação que todo mundo reconhece ("tô chegando"), um lugar absurdo (o aeroporto) e o voto como causa. O clímax paga a primeira frase.
+- [x] O que está em jogo é o sonho dela, dito por ela, e não só a entrega.
+- [x] O relógio fica na tela da promessa até o voto.
+- [x] O Tico decide (aceita a corrida, avisa a verdade), e nada se resolve por sorte.
+- [x] A narração nunca repete o que a imagem já mostra.
+- [x] "É só um teste" muda de sentido.
+- [x] As duas opções do voto custam algo, e o custo aparece na tela antes do voto.
+- [x] O extra paga um objeto plantado (o caderno da avó).
+- [x] O Fiscal não late: ninguém mente na presença dele.
+- [ ] Teste de voz: a narração do Tico precisa de um registro mais calmo e próximo que as falas dele em cena. Gerar duas versões e comparar.
+- [ ] A lembrança da fala 5 dura 1,5 s, acima do limite de 1 s da regra. Decidir se a exceção vale.
+
+## Produção
+
+- **Vozes:** Tico (falas e narração), Lua e Letícia, todas já no ElevenLabs. O `gerar-falas.mjs` precisa aceitar "Tico (narração)" como personagem, com a voz `tico`. Conferir antes de gerar.
+- **Cenários:** cozinha da Lua (bancada, pia cheia, seis caixas com laço, caderno da avó, notebook, crachá na porta, timer) e quarto com cama. Carro, retrovisor e telas já existem do ep. 4. Placa "Embarque" do aeroporto.
+- **Telas:** selo "VERDADE ✓", relógio do canto, corrida agendada, entrega combinada, GPS, live da Letícia com comentários, inscrição no notebook, áudio, mapa, resposta do Tico, mensagem do cliente, botão "Chamar outra entrega" e votação.
+- **Objetos:** caixas de doce, mala gigante e ring light da Letícia, notebook, timer, pote de massa e cobertor.
+
+---
+
+## Comentários do autor
+
+<!-- Escreva seus comentários abaixo. Esta seção fica reservada ao autor. -->

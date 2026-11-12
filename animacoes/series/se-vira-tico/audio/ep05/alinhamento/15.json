@@ -1,55 +1,50 @@
 {
  "n": 15,
- "texto": "Você chega até as oito? Senão eu chamo outra entrega.",
+ "texto": "Enquanto isso, ela fazia algo que não me contou.",
  "palavras": [
   {
-   "palavra": "Você",
+   "palavra": "Enquanto",
    "ini": 0,
-   "fim": 0.24
+   "fim": 0.4
   },
   {
-   "palavra": "chega",
-   "ini": 0.32,
-   "fim": 0.56
+   "palavra": "isso,",
+   "ini": 0.48,
+   "fim": 1.04
   },
   {
-   "palavra": "até",
-   "ini": 0.64,
-   "fim": 0.8
+   "palavra": "ela",
+   "ini": 1.16,
+   "fim": 1.28
   },
   {
-   "palavra": "as",
-   "ini": 0.88,
-   "fim": 0.96
+   "palavra": "fazia",
+   "ini": 1.32,
+   "fim": 1.68
   },
   {
-   "palavra": "oito?",
-   "ini": 1,
-   "fim": 1.44
-  },
-  {
-   "palavra": "Senão",
+   "palavra": "algo",
    "ini": 1.76,
    "fim": 2
   },
   {
-   "palavra": "eu",
-   "ini": 2.08,
-   "fim": 2.16
+   "palavra": "que",
+   "ini": 2.16,
+   "fim": 2.32
   },
   {
-   "palavra": "chamo",
-   "ini": 2.2,
-   "fim": 2.4
+   "palavra": "não",
+   "ini": 2.4,
+   "fim": 2.56
   },
   {
-   "palavra": "outra",
-   "ini": 2.48,
-   "fim": 2.64
+   "palavra": "me",
+   "ini": 2.64,
+   "fim": 2.72
   },
   {
-   "palavra": "entrega.",
-   "ini": 2.72,
+   "palavra": "contou.",
+   "ini": 2.84,
    "fim": 3.52
   }
  ]

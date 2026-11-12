@@ -2,9 +2,9 @@
 
 Só o autor publica. Este arquivo deixa pronto o que vai na postagem.
 
-- **Vídeo:** `render/ep04_final.mp4` (1080x1920, 30 fps, 62 s, -16 LUFS), com cópia no Drive. Segue o caminho AGORA NÃO do ep. 3.
+- **Vídeo:** `render/ep04_final.mp4` (1080x1920, 30 fps, 67 s, -16 LUFS), com cópia no Drive. Segue o caminho ACEITA do ep. 3: a Lua aceita o lanche pelo WhatsApp, mas para outro dia.
 - **Capa:** `render/ep04_capa.png`. **Story:** `render/ep04_story.png`.
-- **Vozes:** ElevenLabs, plano Starter, com licença comercial. O vendedor ganhou voz nova neste episódio.
+- **Vozes:** ElevenLabs, plano Starter, com licença comercial. A Dona Cida e a Kelly, a "netinha" de 40 anos, ganharam vozes novas neste episódio.
 
 ## Instagram (Reels): pronto para postar
 
@@ -13,8 +13,8 @@ Os arquivos ficam no Drive, em `Se Vira, Tico/`.
 **Legenda** (copie tudo daqui):
 
 ```
-🗳️ Vocês escolheram AGORA NÃO: a Lua recusou o lanche.
-E o Tico respeitou... até o app mandar a corrida dela. 🚗📲
+🗳️ Vocês escolheram ACEITA: a Lua topou o lanche... outro dia. ☕
+E o Tico esperou... até o app mandar a corrida dela. 🚗📲
 
 É só uma corrida. Com perfume no cinto. 🌸
 

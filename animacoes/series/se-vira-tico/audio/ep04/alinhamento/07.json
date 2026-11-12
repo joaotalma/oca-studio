@@ -1,21 +1,41 @@
 {
  "n": 7,
- "texto": "É corrida, tá?",
+ "texto": "Ela ainda dorme de luz acesa, coitadinha.",
  "palavras": [
   {
-   "palavra": "É",
+   "palavra": "Ela",
    "ini": 0,
-   "fim": 0.16
+   "fim": 0.24
   },
   {
-   "palavra": "corrida,",
-   "ini": 0.28,
-   "fim": 0.8
+   "palavra": "ainda",
+   "ini": 0.32,
+   "fim": 0.56
   },
   {
-   "palavra": "tá?",
+   "palavra": "dorme",
+   "ini": 0.64,
+   "fim": 0.92
+  },
+  {
+   "palavra": "de",
    "ini": 0.96,
-   "fim": 1.44
+   "fim": 1.04
+  },
+  {
+   "palavra": "luz",
+   "ini": 1.08,
+   "fim": 1.28
+  },
+  {
+   "palavra": "acesa,",
+   "ini": 1.6,
+   "fim": 2.08
+  },
+  {
+   "palavra": "coitadinha.",
+   "ini": 2.12,
+   "fim": 3.28
   }
  ]
 }

@@ -1,0 +1,31 @@
+{
+ "n": 21,
+ "texto": "A massa descansou. Ela, não.",
+ "palavras": [
+  {
+   "palavra": "A",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "massa",
+   "ini": 0.24,
+   "fim": 0.56
+  },
+  {
+   "palavra": "descansou.",
+   "ini": 0.68,
+   "fim": 1.48
+  },
+  {
+   "palavra": "Ela,",
+   "ini": 1.68,
+   "fim": 2.2
+  },
+  {
+   "palavra": "não.",
+   "ini": 2.32,
+   "fim": 2.88
+  }
+ ]
+}

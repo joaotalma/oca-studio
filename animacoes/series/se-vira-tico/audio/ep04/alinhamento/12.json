@@ -1,31 +1,26 @@
 {
- "n": 12,
- "texto": "Você matava. Eu ia junto.",
+ "n": 10,
+ "texto": "O cinto tava precisando.",
  "palavras": [
   {
-   "palavra": "Você",
+   "palavra": "O",
    "ini": 0,
-   "fim": 0.32
+   "fim": 0.08
   },
   {
-   "palavra": "matava.",
-   "ini": 0.48,
-   "fim": 1.04
+   "palavra": "cinto",
+   "ini": 0.24,
+   "fim": 0.56
   },
   {
-   "palavra": "Eu",
-   "ini": 1.36,
-   "fim": 1.52
+   "palavra": "tava",
+   "ini": 0.64,
+   "fim": 0.88
   },
   {
-   "palavra": "ia",
-   "ini": 1.6,
-   "fim": 1.68
-  },
-  {
-   "palavra": "junto.",
-   "ini": 1.76,
-   "fim": 2.4
+   "palavra": "precisando.",
+   "ini": 0.96,
+   "fim": 2.08
   }
  ]
 }

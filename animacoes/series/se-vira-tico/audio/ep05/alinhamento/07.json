@@ -1,41 +1,61 @@
 {
  "n": 7,
- "texto": "A minha começa com uma pia cheia.",
+ "texto": "É só um teste. Se der certo, eu tento a confeitaria.",
  "palavras": [
   {
-   "palavra": "A",
+   "palavra": "É",
    "ini": 0,
    "fim": 0.16
   },
   {
-   "palavra": "minha",
-   "ini": 0.28,
-   "fim": 0.56
+   "palavra": "só",
+   "ini": 0.2,
+   "fim": 0.28
   },
   {
-   "palavra": "começa",
-   "ini": 0.64,
-   "fim": 1.12
+   "palavra": "um",
+   "ini": 0.32,
+   "fim": 0.48
   },
   {
-   "palavra": "com",
-   "ini": 1.2,
-   "fim": 1.28
+   "palavra": "teste.",
+   "ini": 0.76,
+   "fim": 1.2
   },
   {
-   "palavra": "uma",
+   "palavra": "Se",
    "ini": 1.36,
    "fim": 1.44
   },
   {
-   "palavra": "pia",
-   "ini": 1.6,
-   "fim": 1.92
+   "palavra": "der",
+   "ini": 1.56,
+   "fim": 1.68
   },
   {
-   "palavra": "cheia.",
-   "ini": 2,
+   "palavra": "certo,",
+   "ini": 1.76,
+   "fim": 2.4
+  },
+  {
+   "palavra": "eu",
+   "ini": 2.44,
+   "fim": 2.48
+  },
+  {
+   "palavra": "tento",
+   "ini": 2.64,
    "fim": 2.8
+  },
+  {
+   "palavra": "a",
+   "ini": 2.84,
+   "fim": 2.88
+  },
+  {
+   "palavra": "confeitaria.",
+   "ini": 2.96,
+   "fim": 3.92
   }
  ]
 }

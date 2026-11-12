@@ -1,46 +1,101 @@
 {
  "n": 1,
- "texto": "Eu tava fedendo. Fiquei com vergonha e fugi.",
+ "texto": "Vocês escolheram que eu falasse a verdade pro meu crush. Então eu não podia mandar \"tô chegando\"... do aeroporto.",
  "palavras": [
   {
-   "palavra": "Eu",
+   "palavra": "Vocês",
    "ini": 0,
-   "fim": 0.16
-  },
-  {
-   "palavra": "tava",
-   "ini": 0.24,
    "fim": 0.4
   },
   {
-   "palavra": "fedendo.",
+   "palavra": "escolheram",
    "ini": 0.48,
-   "fim": 1.36
+   "fim": 0.96
   },
   {
-   "palavra": "Fiquei",
-   "ini": 1.52,
-   "fim": 1.8
+   "palavra": "que",
+   "ini": 1,
+   "fim": 1.04
   },
   {
-   "palavra": "com",
-   "ini": 1.84,
-   "fim": 1.92
+   "palavra": "eu",
+   "ini": 1.08,
+   "fim": 1.12
   },
   {
-   "palavra": "vergonha",
-   "ini": 2,
-   "fim": 2.72
+   "palavra": "falasse",
+   "ini": 1.2,
+   "fim": 1.52
   },
   {
-   "palavra": "e",
-   "ini": 2.8,
-   "fim": 2.88
+   "palavra": "a",
+   "ini": 1.547,
+   "fim": 1.573
   },
   {
-   "palavra": "fugi.",
-   "ini": 2.92,
-   "fim": 3.6
+   "palavra": "verdade",
+   "ini": 1.6,
+   "fim": 2.16
+  },
+  {
+   "palavra": "pro",
+   "ini": 2.24,
+   "fim": 2.32
+  },
+  {
+   "palavra": "meu",
+   "ini": 2.36,
+   "fim": 2.48
+  },
+  {
+   "palavra": "crush.",
+   "ini": 2.56,
+   "fim": 3.04
+  },
+  {
+   "palavra": "Então",
+   "ini": 3.36,
+   "fim": 3.68
+  },
+  {
+   "palavra": "eu",
+   "ini": 3.72,
+   "fim": 3.76
+  },
+  {
+   "palavra": "não",
+   "ini": 3.84,
+   "fim": 3.92
+  },
+  {
+   "palavra": "podia",
+   "ini": 4,
+   "fim": 4.24
+  },
+  {
+   "palavra": "mandar",
+   "ini": 4.36,
+   "fim": 4.64
+  },
+  {
+   "palavra": "\"tô",
+   "ini": 4.88,
+   "fim": 5.04
+  },
+  {
+   "palavra": "chegando\"...",
+   "ini": 5.12,
+   "fim": 6.16
+  },
+  {
+   "palavra": "do",
+   "ini": 6.2,
+   "fim": 6.24
+  },
+  {
+   "palavra": "aeroporto.",
+   "ini": 6.28,
+   "fim": 7.2
   }
  ]
 }

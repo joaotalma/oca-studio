@@ -28,6 +28,10 @@ export const PERSONAGENS = {
     texto: 'Parabéns a todos pelo trimestre! Esse menino aqui vai longe, eu sempre disse: talento vem de berço, e esta empresa é uma família.' },
   vendedor: { ref: 'vendedor', desc: 'Brazilian Portuguese man in his late 40s, low hoarse street-vendor voice, hopeful and chatty, believes in himself, warm working-class accent.',
     texto: 'Olha a paçoca, freguês, tá fresquinha! Eu vendo nessa rua faz muito tempo, e hoje o dia ainda vai melhorar, pode escrever o que eu tô dizendo.' },
+  cida: { ref: 'lua', desc: 'Brazilian Portuguese grandmother around 75, thin slightly shaky elderly voice, sweet and nonstop chatty, proud grandma who talks fast about her granddaughter, warm suburban accent.',
+    texto: 'Ai, meu filho, deixa eu te contar: a minha netinha faz aniversário hoje, e eu comprei balão, chapeuzinho, docinho, tudo que ela gosta, viu?' },
+  neta: { ref: 'leticia', desc: 'Brazilian Portuguese woman around 40, mid-low tired voice, patient and embarrassed, dry humor, speaks slowly like someone who has had this conversation many times.',
+    texto: 'Mãe, vó, gente, eu tenho quarenta anos, eu pago aluguel, eu tenho emprego. Não precisa de chapeuzinho, de verdade, eu tô bem.' },
   junior: { ref: 'vendedor', desc: 'Brazilian Portuguese young man around 25, light polished voice, polite and a bit naive, rich-kid office tone.',
     texto: 'Oi, gente, prazer! Eu sou o Júnior, o novo gerente. Alguém me manda o arquivo da apresentação? Eu não achei a pasta compartilhada.' },
 };

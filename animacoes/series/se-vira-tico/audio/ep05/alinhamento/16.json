@@ -1,0 +1,26 @@
+{
+ "n": 16,
+ "texto": "É só um teste.",
+ "palavras": [
+  {
+   "palavra": "É",
+   "ini": 0,
+   "fim": 0.16
+  },
+  {
+   "palavra": "só",
+   "ini": 0.2,
+   "fim": 0.32
+  },
+  {
+   "palavra": "um",
+   "ini": 0.4,
+   "fim": 0.48
+  },
+  {
+   "palavra": "teste.",
+   "ini": 0.56,
+   "fim": 1.44
+  }
+ ]
+}

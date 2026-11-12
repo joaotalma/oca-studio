@@ -1,0 +1,21 @@
+{
+ "n": 5,
+ "texto": "Esse pode ligar?",
+ "palavras": [
+  {
+   "palavra": "Esse",
+   "ini": 0,
+   "fim": 0.48
+  },
+  {
+   "palavra": "pode",
+   "ini": 0.72,
+   "fim": 0.88
+  },
+  {
+   "palavra": "ligar?",
+   "ini": 0.96,
+   "fim": 1.68
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "n": 3,
- "texto": "Então respeita o agora. Apaga.",
+ "texto": "Então espera ela dizer. Apaga.",
  "palavras": [
   {
    "palavra": "Então",
@@ -8,24 +8,24 @@
    "fim": 0.32
   },
   {
-   "palavra": "respeita",
-   "ini": 0.4,
-   "fim": 1.12
+   "palavra": "espera",
+   "ini": 0.52,
+   "fim": 0.76
   },
   {
-   "palavra": "o",
-   "ini": 1.16,
-   "fim": 1.2
+   "palavra": "ela",
+   "ini": 0.8,
+   "fim": 0.96
   },
   {
-   "palavra": "agora.",
-   "ini": 1.32,
-   "fim": 2.04
+   "palavra": "dizer.",
+   "ini": 1,
+   "fim": 1.68
   },
   {
    "palavra": "Apaga.",
-   "ini": 2.24,
-   "fim": 3.28
+   "ini": 1.84,
+   "fim": 2.72
   }
  ]
 }

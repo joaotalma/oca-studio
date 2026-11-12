@@ -1,12 +1,12 @@
 'use strict';
-ESTILO_RIG = 'classico'; // fixado na Oca Studio (2026-11-12): episódio feito com o rig clássico
+ESTILO_RIG = 'classico'; // fixado na Oca Studio (2026-11-12): episódio publicado com o rig clássico
 // Episódio 4: É Só Uma Corrida. Planos, poses e telas. Falas e tempos vêm de falas.js e tempos.js.
 const sai = (p) => { p = Math.max(0, Math.min(1, p)); return 1 - (1 - p) * (1 - p); };
 const suave = (p) => { p = Math.max(0, Math.min(1, p)); return p * p * (3 - 2 * p); };
 const clamp01 = (p) => Math.max(0, Math.min(1, p));
 const F = Object.fromEntries(FALAS.map((f) => [f.n, f]));
 const I = (n) => F[n].ini, E = (n) => F[n].fim;
-const FIM_DO_EP = 61.8;
+const FIM_DO_EP = 67.2;
 const NOITE = { ambiente: 'noite', lado: 'direita' };
 const SEM_COR = () => .1; // mesmo filtro de lembrança dos eps. 2 e 3
 
@@ -25,6 +25,14 @@ function bracoAte(lado, alvo, d, x, y, s) {
   const up = base - lado * abre;
   return [up, up + lado * (180 - curva)];
 }
+function bracoFora(lado, alvo, d, x, y, s) {
+  const [ox, oy] = ombroDe(lado, d, x, y, s);
+  const a = d.armU * s, b = d.armF * s, dx = alvo[0] - ox, dy = alvo[1] - oy, dist = Math.min(a + b - 2, Math.hypot(dx, dy));
+  const base = Math.atan2(dx, dy) * 180 / Math.PI, abre = Math.acos(clamp01((a * a + dist * dist - b * b) / (2 * a * dist))) * 180 / Math.PI;
+  const curva = Math.acos(clamp01((a * a + b * b - dist * dist) / (2 * a * b))) * 180 / Math.PI;
+  const up = base + lado * abre;
+  return [up, up - lado * (180 - curva)];
+}
 const mao = (d, p, s, r = 1) => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${(d.rw * 1.75 * s * r).toFixed(1)}" fill="${d.skin}" stroke="${OUT}" stroke-width="3.2"/>`;
 const passo = (t, ritmo, amp = 1) => { const f = Math.sin(t * ritmo * Math.PI); return { liftL: Math.max(0, f) * amp, liftR: Math.max(0, -f) * amp, armL: [-14 - f * 20 * amp, -20 - f * 30 * amp], armR: [14 - f * 20 * amp, 20 - f * 30 * amp] }; };
 
@@ -35,9 +43,28 @@ function quebra(texto, max) {
   if (a) linhas.push(a);
   return linhas;
 }
-const moldura = (conteudo) => `<rect x="-200" y="-200" width="1480" height="2320" fill="#1c2a45"/>` + ret(190, 110, 700, 1500, '#23252f', 60) + ret(220, 170, 640, 1380, '#efe8dc', 18, 0) + conteudo;
+const FUNDO_TELA = `<defs><radialGradient id="brilhoTela" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#34507a"/><stop offset="1" stop-color="#16203a"/></radialGradient></defs><rect x="-200" y="-200" width="1480" height="2320" fill="url(#brilhoTela)"/>`
+  + [[120, 300, 70], [980, 420, 50], [90, 1500, 90], [1000, 1650, 60], [960, 980, 34]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#ffd98a" opacity=".1"/>`).join('');
+const PAPEL_PAREDE = [0, 1, 2, 3, 4, 5, 6, 7].map((i) => `<circle cx="${270 + (i % 4) * 160}" cy="${400 + Math.floor(i / 4) * 420 + (i % 2) * 90}" r="26" fill="none" stroke="#d9cfbf" stroke-width="5"/>`).join('');
+const moldura = (conteudo) => FUNDO_TELA + `<rect x="200" y="124" width="700" height="1500" rx="60" fill="#000" opacity=".25"/>` + ret(190, 110, 700, 1500, '#23252f', 60)
+  + ret(884, 420, 14, 120, '#23252f', 6, 0) + ret(884, 580, 14, 80, '#23252f', 6, 0) + ret(220, 170, 640, 1380, '#efe8dc', 18, 0) + PAPEL_PAREDE + conteudo + `<circle cx="540" cy="140" r="9" fill="#3b3f4a"/>`;
 const cabecalho = (nome, cor = '#2f8f4e') => ret(220, 170, 640, 140, cor, 18, 0) + `<circle cx="300" cy="240" r="40" fill="${nome === 'Lua' ? '#e9b18b' : '#d59a6e'}" stroke="#fff" stroke-width="4"/>` + txt(370, 258, nome, 46, '#fff', 'start');
 const RASCUNHO = 'Mudando de assunto... Sobre aquele dia, eu queria explicar que não foi bem do jeito que pareceu. Primeiro: a moto. Segundo: o cheiro, que não era meu, era da situação. Terceiro: eu ensaiei um discurso. Quarto: eu sei que você disse agora não, mas tecnicamente isso aqui é outro assunto.';
+// Conversa: [quem, texto, tempo em que chega]. Antes de cada mensagem da Lua, "digitando...".
+const telaConversa = (msgs) => (t) => {
+  let s = cabecalho('Lua') + ret(470, 345, 140, 50, '#e1f0f7', 25, 0) + txt(540, 380, 'Hoje', 28, '#55606c'), y = 430;
+  const digitando = msgs.some(([q, , tm]) => q === 'lua' && t > tm - .45 && t < tm);
+  for (const [q, texto, tm] of msgs) {
+    if (t < tm) continue;
+    const a = sai((t - tm) / .2), linhas = quebra(texto, 18), h = 70 + linhas.length * 52, w = Math.min(560, 70 + Math.max(...linhas.map((l) => l.length)) * 23), x = q === 'lua' ? 245 : 835 - w;
+    s += `<g opacity="${a.toFixed(2)}" transform="translate(0 ${(16 * (1 - a)).toFixed(1)})">` + ret(x, y, w, h, q === 'lua' ? '#ffffff' : '#d4f5c4', 24, 2) + linhas.map((l, i) => txt(x + 30, y + 62 + i * 52, l, 40, '#2a1f22', 'start')).join('') + txt(x + w - 20, y + h - 14, q === 'lua' ? '23:41' : '23:42 ✓✓', 22, '#7a8a90', 'end') + '</g>';
+    y += h + 28;
+  }
+  if (digitando) s += ret(250, y, 150, 70, '#ffffff', 30, 2) + [0, 1, 2].map((i) => `<circle cx="${290 + i * 36}" cy="${y + 35}" r="${(9 + 3 * Math.max(0, Math.sin(t * 9 - i))).toFixed(1)}" fill="#9aa3aa"/>`).join('');
+  return moldura(s + ret(220, 1430, 640, 120, '#f7f3ec', 0, 0) + ret(250, 1452, 480, 76, '#ffffff', 38, 2) + txt(290, 1502, 'Mensagem', 32, '#9aa3aa', 'start') + `<circle cx="790" cy="1490" r="38" fill="#2f8f4e"/>`);
+};
+const CONVERSA = [['lua', 'Aceito o lanche.', 2.0], ['lua', 'Mas outro dia? Hoje tô sem cabeça.', 3.0], ['tico', 'Fechado. Quando você quiser.', 5.8]];
+
 // O rascunho rola para cima; ao apagar, some do fim para o começo
 const telaRascunho = (t0, t1, apagando) => (t) => {
   const linhas = quebra(RASCUNHO, 26), q = clamp01((t - t0) / (t1 - t0));
@@ -55,10 +82,10 @@ const telaCorrida = () => moldura(ret(220, 170, 640, 140, '#2a4f8a', 18, 0) + tx
   + ret(260, 470, 560, 560, '#fff6e6', 26, 3) + `<circle cx="540" cy="600" r="80" fill="#e9b18b" stroke="${OUT}" stroke-width="5"/>` + txt(540, 760, 'Lua M.', 64) + txt(540, 830, '★ 4,9', 46, '#e2a91f') + txt(540, 910, 'Conjunto Esperança', 36, '#55606c')
   + ret(320, 1100, 440, 110, '#1f9e33', 30, 3) + txt(540, 1172, 'Aceitar', 50, '#fff'));
 const telaAvaliacao = (t0) => (t) => {
-  const q = sai((t - t0 - .5) / .5), nota = (5 - 2 * q).toFixed(1).replace('.', ',');
+  const nota = '5,0';
   return moldura(ret(220, 170, 640, 140, '#2a4f8a', 18, 0) + txt(540, 262, 'Avaliação', 50, '#fff')
-    + ret(260, 470, 560, 520, '#fff6e6', 26, 3) + txt(540, 580, 'Passageiro avaliou:', 40) + txt(540, 690, '★☆☆☆☆', 80, '#e2a91f') + txt(540, 790, '"Não deixou ligar', 36, '#55606c') + txt(540, 840, 'o ventilador."', 36, '#55606c')
-    + ret(330, 1060, 420, 110, '#2a1f22', 20, 3) + txt(540, 1132, `Nota: ${nota}`, 50, q > .5 ? '#ff6a5a' : '#7fe08a'));
+    + ret(260, 470, 560, 520, '#fff6e6', 26, 3) + txt(540, 580, 'Passageira avaliou:', 40) + txt(540, 690, '★★★★★', 80, '#e2a91f') + txt(540, 790, '"Motorista ótimo,', 36, '#55606c') + txt(540, 840, 'concordou com tudo."', 36, '#55606c')
+    + ret(330, 1060, 420, 110, '#2a1f22', 20, 3) + txt(540, 1132, `Nota: ${nota}`, 50, '#7fe08a'));
 };
 
 /* ---------- papéis na janela (mesma mecânica do ep. 3) ---------- */
@@ -117,8 +144,18 @@ function batidaPapel(quem, t0, t1, texto, o = {}) {
 const LUA_PENSA = (ini, fim, cam, extra = {}) => {
   const d = CHARS.lua, s = 1.9, y = yParaCabeca(d, s, ALTURA_CABECA), pena = [588, 838];
   return { ini, fim, cena: 'janelaLua', cobrePernas: true, visual: { ambiente: 'noite', lado: 'esquerda' }, cam, ...extra,
-    atores: [{ id: 'lua', x: 540, y, s, dyn: (t) => ({ semPernas: true, armR: bracoAte(1, [pena[0] + 6, pena[1] + 12], d, 540, y, s), armL: [-12, -6], frente: 'R', head: Math.sin((t - ini) * 1.3) * 4 }), poses: [[0, { expr: 'pensando' }]] }],
-    frente: () => ret(-200, 1240, 1480, 900, '#5f7a7a', 0, 0) + ret(110, 1222, 860, 40, '#e9e1d2', 6, 3) + canetao([pena[0] + 40, pena[1] - 10]) + mao(d, pena, s) };
+    atores: [{ id: 'lua', x: 540, y, s, dyn: (t) => ({ semPernas: true, armR: [9, 5], armL: [-9, -5], head: Math.sin((t - ini) * 1.3) * 4 }), poses: [[0, { expr: 'pensando' }]] }],
+    frente: () => ret(-200, 1240, 1480, 900, '#5f7a7a', 0, 0) + ret(110, 1222, 860, 40, '#e9e1d2', 6, 3) };
+};
+
+/* ---------- o Tico na janela, lendo no celular ---------- */
+const TICO_CELULAR = (ini, fim, poses, cam) => {
+  const d = CHARS.tico, s = 1.9, y = yParaCabeca(d, s, ALTURA_CABECA), mD = [590, 1120];
+  return { ini, fim, cena: 'janelaTico', cobrePernas: true, visual: { ambiente: 'noite', lado: 'direita' }, cam,
+    atores: [{ id: 'tico', x: 540, y, s, dyn: (t) => ({ semPernas: true, armL: [-9, -5], armR: bracoFora(1, mD, d, 540, y, s), head: 6 + Math.sin((t - ini) * 1.6) * 2 }), poses }],
+    frente: () => `<ellipse cx="540" cy="760" rx="230" ry="260" fill="#cfe8ff" opacity=".16"/>`
+      + `<g transform="rotate(-6 590 1060)">` + ret(535, 950, 110, 190, '#23252f', 18, 4) + ell(561, 976, 10, 10, '#55606c', OUT, 2) + '</g>'
+      + mao(d, mD, s) + ret(-200, 1240, 1480, 900, '#9a6a55', 0, 0) + ret(110, 1222, 860, 40, '#e9e1d2', 6, 3) };
 };
 
 /* ---------- personagens nas janelas do plano aberto ---------- */
@@ -147,12 +184,12 @@ const PAS = { x: 370, s: .8 };                         // banco de trás
 const pasY = (id) => yParaCabeca(CHARS[id], PAS.s, 805);
 const pegaVolante = (t, aperta = 0) => {
   const tr = Math.sin(t * 3.1) * 4 + (aperta ? Math.sin(t * 40) * 3 * aperta : 0);
-  return [[VOL[0] - 112 * CK, VOL[1] - 8 + tr], [VOL[0] + 112 * CK, VOL[1] - 8 - tr]];
+  return [[VOL[0] - 92 * CK, VOL[1] - 34 + tr], [VOL[0] + 92 * CK, VOL[1] - 34 - tr]];
 };
 const motorista = (t, expr, extra = {}) => {
   const [a, b] = pegaVolante(t, extra.aperta || 0), d = CHARS.tico;
   return { id: 'tico', x: MOT.x, y: MOT.y + Math.sin(t * 9) * 1.5, s: MOT.s,
-    dyn: (tt) => { const [aa, bb] = pegaVolante(tt, extra.aperta || 0); return { semPernas: true, armL: bracoAte(-1, aa, d, MOT.x, MOT.y, MOT.s), armR: extra.armR || bracoAte(1, bb, d, MOT.x, MOT.y, MOT.s) }; },
+    dyn: (tt) => { const [aa, bb] = pegaVolante(tt, extra.aperta || 0); return { semPernas: true, armL: bracoFora(-1, aa, d, MOT.x, MOT.y, MOT.s), armR: extra.armR || bracoFora(1, bb, d, MOT.x, MOT.y, MOT.s) }; },
     poses: extra.poses || [[0, { expr, head: extra.head || 0 }]] };
 };
 const passageiro = (id, poses, extra = {}) => ({ id, x: PAS.x, y: pasY(id), s: PAS.s, dyn: (t) => ({ semPernas: true, ...(extra.dyn ? extra.dyn(t) : {}) }), poses });
@@ -176,37 +213,71 @@ const retrovisor = (ini, fim, id, poses, o = {}) => {
         + (o.extra ? o.extra(t) : '') + `<rect x="${x}" y="${yy}" width="${w}" height="${h}" rx="40" fill="#ffffff" opacity=".07"/>` + ret(x - 14, yy - 14, w + 28, h + 28, 'none', 52, 18) + ret(530, 250, 20, 70, '#262931', 6, 3); } };
 };
 // Muro da escola passando pela janela do carro
+const nuvem = (x, y, k) => `<path transform="translate(${x.toFixed(1)} ${y}) scale(${k})" d="M-120 0 Q-120 -60 -60 -60 Q-40 -120 30 -100 Q90 -140 130 -70 Q190 -60 180 0Z" fill="#ffffff" opacity=".95"/>`;
 const ESCOLA = (t, t0) => {
-  const dx = -((t - t0) * 520) % 2600;
-  let s = `<rect x="-300" y="-300" width="1680" height="2520" fill="#9ec4dc"/>` + `<g transform="translate(${dx.toFixed(1)} 0)">`;
-  for (let k = 0; k < 2; k++) {
-    const o = k * 2600;
-    s += ret(o - 200, 700, 2600, 900, '#e9dcc0', 0, 4) + ret(o - 200, 1400, 2600, 200, '#c9b893', 0, 0)
-      + ret(o + 700, 760, 600, 700, '#3f8f5c', 10, 5) + [0, 1, 2, 3, 4, 5].map((i) => stroke(`M${o + 740 + i * 100} 780 V1440`, '#2e6b44', 10)).join('')
-      + ret(o + 560, 600, 880, 120, '#fff6e6', 10, 5) + txt(o + 1000, 680, 'ESCOLA ESTADUAL VILA ESPERANÇA', 40, '#2a4f8a')
-      + `<circle cx="${o + 250}" cy="1050" r="110" fill="#f2d36b" stroke="${OUT}" stroke-width="4"/>` + txt(o + 250, 1070, 'Sorria', 40, '#c23b3b')
-      + SerieVisual.arvore(o + 1700, 1450, 1.1) + SerieVisual.arvore(o + 2200, 1460, .9);
-  }
-  return s + '</g>';
+  const dx = -((t - t0) * 520);
+  let s = `<defs><linearGradient id="ceuEscola" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb6e0"/><stop offset="1" stop-color="#cfe6f2"/></linearGradient></defs><rect x="-300" y="-300" width="1680" height="2520" fill="url(#ceuEscola)"/>`
+    + nuvem(260 + dx * .15, 470, 1) + nuvem(820 + dx * .15, 400, .8) + nuvem(1400 + dx * .15, 520, .9);
+  s += `<g transform="translate(${dx.toFixed(1)} 0)">` + ret(-400, 700, 3200, 760, '#efe1c2', 0, 4) + ret(-400, 690, 3200, 40, '#c9774f', 0, 3) + ret(-400, 1400, 3200, 220, '#c9b893', 0, 0)
+    + [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((k) => stroke(`M${-380 + k * 330} 1420 l120 0`, '#b5a47f', 6)).join('')
+    + `<circle cx="160" cy="900" r="70" fill="#f2d36b" stroke="${OUT}" stroke-width="4"/>` + [0, 1, 2, 3, 4, 5, 6, 7].map((k) => stroke(`M${(160 + Math.cos(k * .785) * 85).toFixed(1)} ${(900 + Math.sin(k * .785) * 85).toFixed(1)} l${(Math.cos(k * .785) * 35).toFixed(1)} ${(Math.sin(k * .785) * 35).toFixed(1)}`, '#e2a91f', 6)).join('')
+    + shape('M-40 1250 L60 1150 L160 1250Z', '#e8736f', 4) + ret(-20, 1250, 160, 120, '#8fd3e8', 0, 4) + ret(300, 1150, 30, 220, '#7a5a44', 0, 3) + `<circle cx="315" cy="1120" r="80" fill="#5fae5a" stroke="${OUT}" stroke-width="4"/>`
+    + ret(720, 820, 560, 600, '#3f8f5c', 10, 5) + [0, 1, 2, 3, 4, 5].map((k) => stroke(`M${760 + k * 96} 840 V1400`, '#2e6b44', 10)).join('')
+    + ret(660, 560, 680, 170, '#fff6e6', 12, 5) + txt(1000, 632, 'ESCOLA ESTADUAL', 46, '#2a4f8a') + txt(1000, 692, 'VILA ESPERANÇA', 46, '#c23b3b')
+    + SerieVisual.arvore(1750, 1450, 1.1) + SerieVisual.arvore(2250, 1460, .9) + '</g>';
+  return s;
 };
-const janelaDoCarro = () => `<path fill-rule="evenodd" d="M-300 -300 H1380 V2220 H-300Z M90 420 Q90 320 220 320 H900 Q990 320 990 420 V1260 H90Z" fill="#d9dde0" stroke="${OUT}" stroke-width="6"/>`
+const janelaDoCarro = () => `<path fill-rule="evenodd" d="M-300 -300 H1380 V2220 H-300Z M90 420 Q90 320 220 320 H900 Q990 320 990 420 V1260 H90Z" fill="#4a4f5c" stroke="${OUT}" stroke-width="6"/>`
+  + ret(60, 1420, 960, 120, '#5b606d', 30, 4) + ret(700, 1600, 220, 70, '#3b3f4a', 30, 4) + ret(740, 1618, 140, 34, '#c7cbd0', 17, 3)
   + ret(90, 1260, 900, 40, '#2a2d34', 10, 4) + `<path d="M120 380 L300 380 L180 900 L110 900Z" fill="#ffffff" opacity=".12"/>`;
 
+/* ---------- a Dona Cida e as sacolas da festa ---------- */
+const sacola = (x, y, k, cor, alca = '#2a1f22') => `<g transform="translate(${x} ${y}) scale(${k})">` + shape('M-60 0 L-50 -130 L50 -130 L60 0Z', cor, 4) + stroke('M-28 -130 Q-28 -175 0 -175 Q28 -175 28 -130', alca, 6) + '</g>';
+const balao = (x, y, k, cor, t = 0, fio = 260, texto = '') => { const b = Math.sin(t * 2.2 + x) * 8;
+  return stroke(`M${x + b} ${y + 70 * k} Q${x - 20} ${y + 70 * k + fio / 2} ${x} ${y + 70 * k + fio}`, '#55606c', 3) + `<ellipse cx="${(x + b).toFixed(1)}" cy="${y}" rx="${56 * k}" ry="${70 * k}" fill="${cor}" stroke="${OUT}" stroke-width="4"/>`
+    + `<ellipse cx="${(x + b - 18 * k).toFixed(1)}" cy="${y - 26 * k}" rx="${12 * k}" ry="${20 * k}" fill="#ffffff" opacity=".45"/>` + (texto ? txt(x + b, y + 16 * k, texto, 44 * k, '#fff6e6') : ''); };
+const ursinho = (x, y, k) => `<g transform="translate(${x} ${y}) scale(${k})">` + ell(-34, -96, 18, 18, '#b57f5c', OUT, 3) + ell(34, -96, 18, 18, '#b57f5c', OUT, 3) + ell(0, -70, 46, 42, '#c9956c', OUT, 4) + ell(0, -56, 18, 13, '#e9c9a8', OUT, 2) + ell(-15, -78, 5, 5, OUT, OUT, 0) + ell(15, -78, 5, 5, OUT, OUT, 0) + '</g>';
+const sacolasNoBanco = (t) => sacola(PAS.x - 150, 1040, 1.05, '#e8736f') + sacola(PAS.x + 160, 1050, .95, '#8fd3e8') + ursinho(PAS.x + 40, 1010, .6) + balao(PAS.x - 110, 800, .75, '#f2d36b', t, 160);
+
+/* ---------- a festa: a "netinha" de 40 anos ---------- */
+const fachadaFesta = (t) => `<rect x="-300" y="-300" width="1680" height="2520" fill="#9fd0ea"/>` + ret(-300, 360, 1680, 1300, '#f2c7a0', 0, 4) + ret(-300, 340, 1680, 40, '#c9774f', 0, 3)
+  + ret(380, 760, 330, 840, '#7a5a44', 8, 5) + ell(660, 1200, 14, 14, '#f2d36b', OUT, 3) + ret(-60, 760, 300, 260, '#cfe6f2', 8, 5) + stroke('M90 760 V1020 M-60 890 H240', OUT, 5) + ret(840, 760, 300, 260, '#cfe6f2', 8, 5) + stroke('M990 760 V1020 M840 890 H1140', OUT, 5)
+  + stroke('M-40 520 Q540 660 1120 520', OUT, 4) + [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((k) => { const x = 20 + k * 110, y = 540 + Math.sin(k / 9 * Math.PI) * 70; return shape(`M${x} ${y} L${x + 70} ${y + 4} L${x + 36} ${y + 80}Z`, ['#e8736f', '#f2d36b', '#8fd3e8', '#a8b94c'][k % 4], 3); }).join('')
+  + ret(250, 410, 580, 110, '#fff6e6', 14, 4) + txt(540, 482, 'FELIZ ANIVERSÁRIO!', 50, '#c23b3b')
+  + balao(330, 820, 1, '#e8736f', t, 220) + balao(250, 900, .9, '#8fd3e8', t, 180) + balao(930, 760, 1.35, '#f2d36b', t, 260, '40') + balao(170, 930, .9, '#a8b94c', t, 170)
+  + `<rect x="-300" y="${CHAO - 40}" width="1680" height="420" fill="#c9b893"/>` + ret(-300, CHAO - 40, 1680, 14, '#2a1f22', 0, 0);
+
+/* ---------- rua do GPS: perspectiva até o horizonte, sem cobrir o aparelho ---------- */
+const ruaGps = (t) => {
+  const furo = 'M142 1176 H628 A46 46 0 0 1 674 1222 V1818 A46 46 0 0 1 628 1864 H142 A46 46 0 0 1 96 1818 V1222 A46 46 0 0 1 142 1176Z';
+  const off = (-t * 260) % 115;
+  return `<defs><clipPath id="semGps"><path clip-rule="evenodd" d="M-300 898 H1380 V2300 H-300Z ${furo}"/></clipPath></defs><g clip-path="url(#semGps)">`
+    + `<rect x="-300" y="898" width="1680" height="1400" fill="#a29282"/>`
+    + shape('M530 900 L590 900 Q700 1300 1240 2300 L180 2300 Q470 1300 530 900Z', '#464b57', 0)
+    + stroke('M560 902 Q600 1300 710 2300', '#e4c27d', 9).replace('/>', ` stroke-dasharray="60 55" stroke-dashoffset="${off.toFixed(1)}"/>`)
+    + stroke('M533 902 Q470 1300 180 2300 M587 902 Q700 1300 1240 2300', '#2a2d34', 6) + '</g>';
+};
+
+/* ---------- cinto da Lua no banco de trás ---------- */
+const CINTO = `M${PAS.x + 78} 830 L${PAS.x + 34} 884 L${PAS.x - 22} 1004`;
+const cintoLua = () => stroke(CINTO, '#2a2d34', 16) + stroke(CINTO, '#4a4f5c', 8) + ret(PAS.x - 36, 992, 34, 22, '#c7cbd0', 4, 3);
+
 /* ---------- Planos ---------- */
-const COR = 1.5, TUDO = 4.0, QUARTO = 6.0, PAGINA = 7.4, ABRACA = 9.0, APAGA = 10.0, SOZINHO = 10.8, TITULO = 12.3, GARAGEM = 13.3;
-const RASCUNHO_T = 14.6, APAGANDO = 21.3, DIARIA = 22.8, CHAVE = 26.9, GPS = 27.4, VENTILA = 31.4, CORRIDA = 31.9, PORTA = 33.1;
-const CHEIRA = 35.8, ESCOLA_T = 41.2, OLHOS = 48.1, APERTA = 51.7, VOTO = 53.3, DEPOIS = 57.8, SO_ELE = 59.2;
+const COR = 1.5, TUDO = 4.6, RESPOSTA = 5.6, QUARTO = 6.4, PAGINA = 7.6, ABRACA = 9.0, APAGA = 10.0, SOZINHO = 10.8, TITULO = 12.3, GARAGEM = 13.3;
+const RASCUNHO_T = 14.6, APAGANDO = 21.3, DIARIA = 22.8, CHAVE = 26.9, GPS = 27.4, CORRIDA = 36.3, PORTA = 37.5;
+const CHEIRA = 40.2, ESCOLA_T = 45.6, OLHOS = 52.5, APERTA = 56.1, VOTO = 57.7, DEPOIS = 62.2, SO_ELE = 63.6;
 const ombroTico = (x) => [x + 40, pescocoY(CHARS.tico, CHAO, 1.32) + 70];
 
 const ep04Planos = [
   // Abertura: o fim do ep. 3 com o filtro de lembrança; a cor volta quando ela escreve
   LUA_PENSA(0, COR, [[0, 540, 900, 1.3], [COR, 540, 880, 1.36, COR]], { cor: SEM_COR }),
-  { ...batidaPapel('lua', COR, TUDO, 'AGORA NÃO. NÃO TÔ COM CABEÇA.', { expr: 'cansado', escrita: .55 }), cor: (t) => .1 + .9 * sai((t - COR) / .4) },
-  batidaPapel('tico', TUDO, QUARTO, 'TUDO BEM.', { expr: 'triste', escrita: .5 }),
+  { ini: COR, fim: TUDO, cena: 'vazio', cheia: true, cam: [[COR, 540, 960, 1], [TUDO, 540, 930, 1.06, TUDO - COR]], fundo: telaConversa(CONVERSA), cor: (t) => .1 + .9 * sai((t - COR) / .4) },
+  TICO_CELULAR(TUDO, RESPOSTA, [[0, { expr: 'surpreso' }], [TUDO + .45, { expr: 'rindo' }]], [[TUDO, 540, 900, 1.3], [RESPOSTA, 540, 880, 1.38, RESPOSTA - TUDO]]),
+  { ini: RESPOSTA, fim: QUARTO, cena: 'vazio', cheia: true, cam: [[RESPOSTA, 540, 930, 1.06]], fundo: telaConversa(CONVERSA) },
   // O caderno da avó
   { ini: QUARTO, fim: PAGINA, cena: 'quartoLua', visual: NOITE, cam: [[QUARTO, 520, 960, 1.15], [PAGINA, 500, 940, 1.22, 1.4]],
-    frente: (t) => { const q = suave((t - 6.45) / .75), p = [300 + 170 * q, 900 + 180 * q]; return cadernoSVG(p[0], p[1], 1.25, -10 + 10 * q) + (t > 6.3 ? mao(CHARS.lua, [p[0] + 30, p[1] + 10], 1.32) : ''); },
-    atores: [{ id: 'lua', x: 520, dyn: (t) => { const q = suave((t - 6.45) / .75); return { armL: bracoAte(-1, [330 + 170 * q, 910 + 180 * q], CHARS.lua, 520, CHAO, 1.32) }; }, poses: [[0, { expr: 'cansado', head: -6 }], [6.6, { expr: 'pensando', head: 4 }]] }] },
+    frente: (t) => { const q = suave((t - 6.85) / .75), p = [300 + 170 * q, 900 + 180 * q]; return cadernoSVG(p[0], p[1], 1.25, -10 + 10 * q) + (t > 6.7 ? mao(CHARS.lua, [p[0] + 30, p[1] + 10], 1.32) : ''); },
+    atores: [{ id: 'lua', x: 520, dyn: (t) => { const q = suave((t - 6.85) / .75); return { armL: bracoAte(-1, [330 + 170 * q, 910 + 180 * q], CHARS.lua, 520, CHAO, 1.32) }; }, poses: [[0, { expr: 'cansado', head: -6 }], [7.0, { expr: 'pensando', head: 4 }]] }] },
   { ini: PAGINA, fim: ABRACA, cena: 'vazio', cam: [[PAGINA, 560, 980, 1.05], [ABRACA, 620, 1050, 1.18, 1.6]], fundo: (t) => paginaCaderno(t, PAGINA, ABRACA) },
   { ini: ABRACA, fim: APAGA, cena: 'quartoLua', visual: NOITE, cam: [[ABRACA, 520, 840, 1.7], [APAGA, 520, 830, 1.78, 1]],
     frente: () => cadernoSVG(520, 1030, 1.6, -4) + mao(CHARS.lua, [470, 1050], 1.32) + mao(CHARS.lua, [575, 1015], 1.32),
@@ -216,65 +287,73 @@ const ep04Planos = [
     atores: [NA_JANELA('tico', 140, 'triste'), NA_JANELA('lua', 740, 'aliviado')],
     frente: (t) => { const a = sai((t - APAGA - .25) / .15); idPapel = 0;
       return ret(130, 1200, 230, 400, '#9a6a55', 0, 0) + ret(730, 1200, 230, 400, '#5f7a7a', 0, 0) + ret(128, 1196, 224, 12, '#e9e1d2', 2, 2) + ret(728, 1196, 224, 12, '#e9e1d2', 2, 2)
-        + papelSVG(240, 1080, .3, 'TUDO BEM.', 1, false).svg + `<rect x="740" y="940" width="200" height="260" fill="#1a1f2c" opacity="${(a * .93).toFixed(2)}"/>`; } },
-  // Riso que engasga: ele sozinho, o papel descendo
-  batidaPapel('tico', SOZINHO, TITULO, 'TUDO BEM.', { pronto: true, expr: 'triste', desce: [SOZINHO + .4, TITULO - .1] }),
+        + `<ellipse cx="240" cy="1010" rx="60" ry="70" fill="#cfe8ff" opacity=".3"/>` + ret(222, 1080, 36, 60, '#23252f', 6, 2) + `<rect x="740" y="940" width="200" height="260" fill="#1a1f2c" opacity="${(a * .93).toFixed(2)}"/>`; } },
+  // Riso que engasga: o sorriso fica sozinho no escuro
+  TICO_CELULAR(SOZINHO, TITULO, [[0, { expr: 'rindo' }], [SOZINHO + .55, { expr: 'neutro' }], [SOZINHO + 1.05, { expr: 'triste' }]], [[SOZINHO, 540, 860, 1.3], [TITULO, 540, 820, 1.5, TITULO - SOZINHO]]),
   { ini: TITULO, fim: GARAGEM, cena: 'vazio', cam: [[TITULO, 540, 960, 1], [GARAGEM, 540, 945, 1.03, 1]], fundo: () => SerieVisual.abertura({ linha1: 'É SÓ UMA CORRIDA', linha2: '' }) },
   // Três dias depois, na garagem do Jão
-  { ini: GARAGEM, fim: RASCUNHO_T, cena: 'casaJaoDia', cam: [[GARAGEM, 560, 900, 1.25]], cartaz: 'Três dias depois', painel: true,
+  { ini: GARAGEM, fim: RASCUNHO_T, cena: 'casaJaoDia', cam: [[GARAGEM, 540, 900, 1.12], [RASCUNHO_T, 560, 890, 1.18, RASCUNHO_T - GARAGEM]], cartaz: 'Três dias depois', painel: true,
     fundo: () => motoSVG(980, CHAO + 10, 1.5),
-    atores: [{ id: 'tico', x: 400, poses: [[0, { expr: 'pensando' }]] }, { id: 'jao', x: 680, poses: [[0, { expr: 'lado', armR: [18, 150], propR: 'phone', head: 6 }]] }] },
+    atores: [{ id: 'tico', x: 470, poses: [[0, { expr: 'pensando' }]] }, { id: 'jao', x: 740, poses: [[0, { expr: 'lado', armR: [18, 150], propR: 'phone', head: 6 }]] }] },
   { ini: RASCUNHO_T, fim: E(1) + .1, cena: 'vazio', cheia: true, cam: [[RASCUNHO_T, 540, 960, 1], [E(1) + .1, 540, 930, 1.06, 1.3]], fundo: telaRascunho(RASCUNHO_T, E(1) + .1, false) },
-  { ini: E(1) + .1, fim: I(3) - .1, cena: 'casaJaoDia', cam: [[E(1) + .1, 400, 800, 1.85]],
-    atores: [{ id: 'tico', x: 400, dyn: (t) => ({ armR: [80 + Math.sin(t * 6) * 8, 150] }), poses: [[0, { expr: 'envergonhado' }]] }] },
+  { ini: E(1) + .1, fim: I(3) - .1, cena: 'casaJaoDia', cam: [[E(1) + .1, 470, 800, 1.85]],
+    atores: [{ id: 'tico', x: 470, dyn: (t) => ({ armR: [80 + Math.sin(t * 6) * 8, 150] }), poses: [[0, { expr: 'envergonhado' }]] }] },
   // O Jão devolve o celular; a troca de mão acontece no corte para o plano mais fechado
-  { ini: I(3) - .1, fim: I(3) + 1.2, cena: 'casaJaoDia', cam: [[I(3) - .1, 560, 880, 1.3]],
+  { ini: I(3) - .1, fim: I(3) + 1.2, cena: 'casaJaoDia', cam: [[I(3) - .1, 600, 880, 1.3]],
     fundo: () => motoSVG(980, CHAO + 10, 1.5),
-    atores: [{ id: 'tico', x: 400, poses: [[0, { expr: 'envergonhado' }]] },
-      { id: 'jao', x: 680, poses: [[0, { expr: 'neutro', armL: bracoAte(-1, [545, 1150], CHARS.jao, 680, CHAO, 1.32), propL: 'phone' }]] }] },
-  { ini: I(3) + 1.2, fim: APAGANDO, cena: 'casaJaoDia', cam: [[I(3) + 1.2, 520, 820, 1.55]],
+    atores: [{ id: 'tico', x: 470, poses: [[0, { expr: 'envergonhado' }]] },
+      { id: 'jao', x: 740, poses: [[0, { expr: 'neutro', armL: [-14, -158], propL: 'phone' }]] }] },
+  { ini: I(3) + 1.2, fim: APAGANDO, cena: 'casaJaoDia', cam: [[I(3) + 1.2, 600, 820, 1.55]],
     fundo: () => motoSVG(980, CHAO + 10, 1.5),
-    atores: [{ id: 'tico', x: 400, poses: [[0, { expr: 'triste', armR: [18, 150], propR: 'phone' }]] },
-      { id: 'jao', x: 680, poses: [[0, { expr: 'neutro', armL: [-38, 32], armR: [38, -32] }]] }] },
+    atores: [{ id: 'tico', x: 470, poses: [[0, { expr: 'triste', armR: [18, 150], propR: 'phone' }]] },
+      { id: 'jao', x: 740, poses: [[0, { expr: 'neutro', armL: [-38, 32], armR: [38, -32] }]] }] },
   { ini: APAGANDO, fim: DIARIA, cena: 'vazio', cheia: true, cam: [[APAGANDO, 540, 960, 1], [DIARIA, 540, 940, 1.05, 1.5]], fundo: telaRascunho(APAGANDO, DIARIA, true) },
   { ini: DIARIA, fim: I(4) - .1, cena: 'vazio', cheia: true, cam: [[DIARIA, 540, 960, 1], [I(4), 540, 920, 1.08, 1.5]], fundo: telaDiaria },
-  { ini: I(4) - .1, fim: CHAVE, cena: 'casaJaoDia', cam: [[I(4) - .1, 560, 880, 1.3]],
+  { ini: I(4) - .1, fim: CHAVE, cena: 'casaJaoDia', cam: [[I(4) - .1, 600, 880, 1.3]],
     fundo: () => motoSVG(980, CHAO + 10, 1.5),
-    atores: [{ id: 'tico', x: 400, poses: [[0, { expr: 'feliz', armR: [18, 150], propR: 'phone' }]] },
-      { id: 'jao', x: 680, dyn: (t) => ({ armL: bracoAte(-1, ombroTico(400 + 30 * (t > I(4) + .9 ? Math.sin((t - I(4)) * 14) * .4 : 0)), CHARS.jao, 680, CHAO, 1.32) }), poses: [[0, { expr: 'rindo' }]] }] },
+    atores: [{ id: 'tico', x: 470, poses: [[0, { expr: 'feliz', armR: [18, 150], propR: 'phone' }]] },
+      { id: 'jao', x: 740, dyn: (t) => ({ armL: bracoAte(-1, ombroTico(470 + 30 * (t > I(4) + .9 ? Math.sin((t - I(4)) * 14) * .4 : 0)), CHARS.jao, 740, CHAO, 1.32) }), poses: [[0, { expr: 'rindo' }]] }] },
   { ini: CHAVE, fim: GPS, cena: 'vazio', cam: [[CHAVE, 540, 960, 1.1], [GPS, 540, 940, 1.16, .5]],
-    fundo: (t) => `<rect x="-300" y="-300" width="1680" height="2520" fill="#e3b07c"/>` + `<circle cx="540" cy="1100" r="230" fill="${CHARS.tico.skin}" stroke="${OUT}" stroke-width="6"/>`
-      + `<g transform="translate(560 ${880 + Math.sin(t * 8) * 10}) rotate(${Math.sin(t * 6) * 6})">` + ell(0, 0, 60, 60, '#c7cbd0', OUT, 5) + ret(-14, 50, 28, 210, '#c7cbd0', 6, 4) + ret(-40, -260, 220, 120, '#f2d36b', 14, 4) + txt(70, -185, 'LOCADORA', 30, OUT) + '</g>'
-      + ret(380, 1010, 320, 70, CHARS.tico.skin, 30, 5) },
+    fundo: (t) => { const pele = CHARS.tico.skin;
+      return `<defs><filter id="desfoca" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="26"/></filter></defs>`
+        + `<rect x="-300" y="-300" width="1680" height="2520" fill="#c08a62"/>` + `<g filter="url(#desfoca)">` + ret(560, 600, 420, 1400, '#3b4d5e', 0, 0) + ret(-100, 300, 420, 300, '#3c6f9a', 20, 0)
+        + `<ellipse cx="880" cy="1500" rx="260" ry="190" fill="#c23b3b"/><ellipse cx="880" cy="1330" rx="90" ry="80" fill="#f2d36b"/>` + ret(-300, 1500, 1680, 700, '#77707a', 0, 0) + `<ellipse cx="200" cy="700" rx="200" ry="160" fill="#fff1c9" opacity=".7"/>` + '</g>'
+        + `<g transform="rotate(${(Math.sin(t * 5) * 7).toFixed(2)} 540 690)">` + ell(540, 740, 54, 54, '#c7cbd0', OUT, 6) + ell(540, 740, 36, 36, '#c08a62', 'none', 0)
+          + `<g transform="translate(540 780)">` + ell(0, 30, 44, 44, '#c7cbd0', OUT, 5) + ell(0, 30, 16, 16, '#c08a62', OUT, 3) + ret(-13, 70, 26, 230, '#c7cbd0', 6, 4) + ret(-13, 235, 44, 20, '#c7cbd0', 3, 3) + ret(-13, 270, 34, 20, '#c7cbd0', 3, 3) + '</g>'
+          + `<g transform="rotate(16 540 760)">` + ret(600, 720, 230, 120, '#f2d36b', 14, 4) + `<circle cx="624" cy="780" r="11" fill="#c08a62" stroke="${OUT}" stroke-width="3"/>` + txt(725, 792, 'LOCADORA', 32, OUT) + '</g>' + '</g>'
+        + ret(495, -200, 90, 930, pele, 45, 5) + ret(512, 640, 56, 62, '#f3d3c0', 22, 0) + stroke('M495 560 Q540 575 585 560', '#a86d4e', 4); } },
   // Motorista
   { ini: GPS, fim: I(5) - .2, cena: 'vazio', cheia: true, cam: [[GPS, 540, 960, 1], [I(5), 540, 960, 1.06, 1.2]],
-    fundo: (t) => SerieVisual.gps({ pontos: [[.5, 1], [.5, .55], [.15, .4], [0, .1]], progresso: .15 + .2 * sai((t - GPS) / 1.2), hora: '09:40', prazo: 'Rota: 14 km' }) },
-  retrovisor(I(5) - .2, E(5) + .1, 'vendedor', [[0, { expr: 'feliz', armR: [18, 60] }]], { s: 2.2, cab: 520, extra: (t) => ventiladorSVG(330, 560, 1.2, t * .05) }),
-  carroPlano(E(5) + .1, VENTILA, [[E(5) + .1, MOT.x, 820, 1.9]], [passageiro('vendedor', [[0, { expr: 'feliz' }]]), motorista(0, 'cansado')]),
-  carroPlano(VENTILA, CORRIDA, [[VENTILA, 540, 1000, 1.05]], [passageiro('vendedor', [[0, { expr: 'surpreso' }]]), motorista(0, 'surpreso')],
-    { extra: (t) => ventiladorSVG(PAS.x, 1000, .9, t) + vento(t) }),
+    fundo: (t) => SerieVisual.gps({ pontos: [[.5, 1], [.5, .55], [.15, .4], [0, .1]], progresso: .15 + .2 * sai((t - GPS) / 1.2), hora: '09:40', prazo: 'Rota: 14 km' }) + ruaGps(t) },
+  retrovisor(I(5) - .2, E(5) + .1, 'cida', [[0, { expr: 'feliz' }]], { s: 2.2, cab: 520, extra: (t) => balao(330, 470, 1, '#f2d36b', t, 120) + balao(760, 440, .8, '#e8736f', t, 120) }),
+  carroPlano(E(5) + .1, E(6) + .1, [[E(5) + .1, MOT.x, 820, 1.9]], [passageiro('cida', [[0, { expr: 'feliz' }]]), motorista(0, 'cansado')], { extra: sacolasNoBanco }),
+  carroPlano(E(6) + .1, E(7) + .1, [[E(6) + .1, 540, 1000, 1.05], [E(7) + .1, 520, 980, 1.12, E(7) - E(6)]], [passageiro('cida', [[0, { expr: 'triste', head: -5 }]]), motorista(0, 'neutro')], { extra: sacolasNoBanco }),
+  carroPlano(E(7) + .1, CORRIDA, [[E(7) + .1, 540, 1000, 1.1]], [passageiro('cida', [[0, { expr: 'feliz', mouth: 'o' }], [E(7) + .4, { expr: 'feliz' }], [E(7) + .7, { expr: 'feliz', mouth: 'o' }], [E(8) + .1, { expr: 'feliz' }], [E(8) + .35, { expr: 'feliz', mouth: 'o' }]]),
+    motorista(0, 'neutro', { poses: [0, .25, .5, .75, 1, 1.25, 1.5].map((k, i) => [E(7) + .1 + k, { expr: 'neutro', head: i % 2 ? -5 : 4 }]) })], { extra: sacolasNoBanco }),
   // É corrida
   { ini: CORRIDA, fim: PORTA, cena: 'vazio', cheia: true, cam: [[CORRIDA, 540, 960, 1], [PORTA, 540, 930, 1.07, 1.2]], fundo: telaCorrida },
-  { ini: PORTA, fim: I(7) - .1, cena: 'portaDiaAberta', cam: [[PORTA, 540, 1000, 1.05]],
+  { ini: PORTA, fim: I(9) - .1, cena: 'portaDiaAberta', cam: [[PORTA, 540, 1000, 1.05]],
     atores: [{ id: 'lua', xF: () => 540, sF: (t) => 1.32 + .2 * suave((t - PORTA) / .5), yF: (t) => CHAO + 60 * suave((t - PORTA) / .5), dyn: (t) => passo(t, 3, .7), poses: [[0, { expr: 'cansado' }]] }] },
-  carroPlano(I(7) - .1, E(7) + .1, [[I(7) - .1, PAS.x, 800, 2.0]], [passageiro('lua', [[0, { expr: 'neutro' }]]), motorista(0, 'envergonhado')], { tarde: true }),
-  carroPlano(E(7) + .1, CHEIRA, [[E(7) + .1, MOT.x, 820, 1.9]], [passageiro('lua', [[0, { expr: 'neutro' }]]), motorista(0, 'envergonhado', { armR: [80, 150] })], { tarde: true, semMaoDir: true }),
-  retrovisor(CHEIRA, I(9) - .1, 'lua', [[0, { expr: 'pensando', head: 6 }]], { s: 1.7, cab: 500, tarde: true }),
-  carroPlano(I(9) - .1, E(9) + .1, [[I(9) - .1, PAS.x, 800, 2.0]], [passageiro('lua', [[0, { expr: 'surpreso', armR: [60, 120] }]]), motorista(0, 'envergonhado')],
-    { tarde: true, extra: () => stroke(`M${PAS.x + 62} 880 Q${PAS.x + 120} 930 ${PAS.x + 95} 990 M${PAS.x - 40} 1010 L${PAS.x + 40} 900`, '#2a2d34', 14) + stroke(`M${PAS.x + 62} 880 Q${PAS.x + 120} 930 ${PAS.x + 95} 990 M${PAS.x - 40} 1010 L${PAS.x + 40} 900`, '#4a4f5c', 6) }),
-  carroPlano(E(9) + .1, ESCOLA_T, [[E(9) + .1, MOT.x, 820, 1.9]], [passageiro('lua', [[0, { expr: 'lado' }]]), motorista(0, 'forcado')], { tarde: true }),
+  carroPlano(I(9) - .1, E(9) + .1, [[I(9) - .1, PAS.x, 800, 2.0]], [passageiro('lua', [[0, { expr: 'neutro' }]]), motorista(0, 'envergonhado')], { tarde: true, extra: cintoLua }),
+  carroPlano(E(9) + .1, CHEIRA, [[E(9) + .1, MOT.x, 820, 1.9]], [passageiro('lua', [[0, { expr: 'neutro' }]]), motorista(0, 'envergonhado', { armR: [80, 150] })], { tarde: true, semMaoDir: true, extra: cintoLua }),
+  retrovisor(CHEIRA, I(11) - .1, 'lua', [[0, { expr: 'pensando', head: 6 }]], { s: 1.7, cab: 500, tarde: true }),
+  carroPlano(I(11) - .1, E(11) + .1, [[I(11) - .1, PAS.x, 800, 2.0]], [passageiro('lua', [[0, { expr: 'surpreso' }]]), motorista(0, 'envergonhado')], { tarde: true, extra: cintoLua }),
+  carroPlano(E(11) + .1, ESCOLA_T, [[E(11) + .1, MOT.x, 820, 1.9]], [passageiro('lua', [[0, { expr: 'lado' }]]), motorista(0, 'forcado')], { tarde: true, extra: cintoLua }),
   // A pergunta
-  { ini: ESCOLA_T, fim: I(11) - .1, cena: 'vazio', cam: [[ESCOLA_T, 540, 900, 1.05], [I(11), 540, 900, 1.1, 1.6]], fundo: (t) => ESCOLA(t, ESCOLA_T), frente: janelaDoCarro },
-  carroPlano(I(11) - .1, E(11) + .1, [[I(11) - .1, PAS.x, 800, 2.0]], [passageiro('lua', [[0, { expr: 'feliz', head: -6 }]]), motorista(0, 'neutro')], { tarde: true }),
-  carroPlano(E(11) + .1, E(12) + .05, [[E(11) + .1, MOT.x, 820, 1.9]], [passageiro('lua', [[0, { expr: 'feliz' }]]), motorista(0, 'feliz')], { tarde: true }),
-  carroPlano(E(12) + .05, OLHOS, [[E(12) + .05, PAS.x, 800, 2.1]], [passageiro('lua', [[0, { expr: 'rindo' }], [OLHOS - .25, { expr: 'neutro' }]]), motorista(0, 'feliz')], { tarde: true }),
-  retrovisor(OLHOS, APERTA, 'lua', [[0, { expr: 'neutro' }], [I(13) - .1, { expr: 'triste' }]], { s: 2.4, cab: 520, tarde: true, cam: [[OLHOS, 540, 600, 1.6], [APERTA, 540, 580, 1.75, APERTA - OLHOS]] }),
+  { ini: ESCOLA_T, fim: I(13) - .1, cena: 'vazio', cam: [[ESCOLA_T, 540, 900, 1.05], [I(13), 540, 900, 1.1, 1.6]], fundo: (t) => ESCOLA(t, ESCOLA_T), frente: janelaDoCarro },
+  carroPlano(I(13) - .1, E(13) + .1, [[I(13) - .1, PAS.x, 800, 2.0]], [passageiro('lua', [[0, { expr: 'feliz', head: -6 }]]), motorista(0, 'neutro')], { tarde: true, extra: cintoLua }),
+  carroPlano(E(13) + .1, E(14) + .05, [[E(13) + .1, MOT.x, 820, 1.9]], [passageiro('lua', [[0, { expr: 'feliz' }]]), motorista(0, 'feliz')], { tarde: true, extra: cintoLua }),
+  carroPlano(E(14) + .05, OLHOS, [[E(14) + .05, PAS.x, 800, 2.1]], [passageiro('lua', [[0, { expr: 'rindo' }], [OLHOS - .25, { expr: 'neutro' }]]), motorista(0, 'feliz')], { tarde: true, extra: cintoLua }),
+  retrovisor(OLHOS, APERTA, 'lua', [[0, { expr: 'neutro' }], [I(15) - .1, { expr: 'triste' }]], { s: 2.4, cab: 520, tarde: true, cam: [[OLHOS, 540, 600, 1.6], [APERTA, 540, 580, 1.75, APERTA - OLHOS]] }),
   carroPlano(APERTA, VOTO, [[APERTA, MOT.x, 860, 1.6], [VOTO, MOT.x, 840, 1.85, VOTO - APERTA]], [motorista(0, 'surpreso', { aperta: 1, poses: [[0, { expr: 'surpreso', mouth: 'small' }]] })], { tarde: true, aperta: 1 }),
   // Votação: o close do Tico em preto e branco
   { ...carroPlano(VOTO, DEPOIS, [[VOTO, MOT.x, 640, 1.15]], [motorista(0, 'surpreso', { aperta: 1, poses: [[0, { expr: 'surpreso', mouth: 'small' }]] })], { tarde: true, aperta: 1 }), cor: () => 0 },
   // Depois do voto
   { ini: DEPOIS, fim: SO_ELE, cena: 'vazio', cheia: true, cam: [[DEPOIS, 540, 960, 1], [SO_ELE, 540, 940, 1.05, 1.4]], fundo: telaAvaliacao(DEPOIS), canto: true },
-  { ...carroPlano(SO_ELE, FIM_DO_EP, [[SO_ELE, MOT.x, 820, 1.9], [FIM_DO_EP, MOT.x, 810, 2.0, FIM_DO_EP - SO_ELE]], [motorista(0, 'cansado', { armR: [18, 150], poses: [[0, { expr: 'cansado', propR: 'phone' }]] })], { semMaoDir: true }), canto: true, painel: true, notaBaixa: true },
+  { ini: SO_ELE, fim: FIM_DO_EP, cena: 'vazio', canto: true, fundo: fachadaFesta,
+    cam: [[SO_ELE, 560, 1000, 1.02], [I(16), 640, 860, 1.35, .5]],
+    atores: [{ id: 'cida', x: 470, s: 1.32, dyn: (t) => ({ armR: t > E(16) ? bracoAte(1, [598 + Math.sin(t * 14) * 6, 1130], CHARS.cida, 470, CHAO, 1.32) : [18, 30] }), poses: [[0, { expr: 'feliz' }], [E(16) + .1, { expr: 'rindo' }]] },
+      { id: 'neta', x: 660, s: 1.32, poses: [[0, { expr: 'cansado' }], [E(16) + .2, { expr: 'envergonhado' }]] }] },
 ];
 
 /* ---------- Telas sobre a imagem ---------- */
@@ -311,5 +390,5 @@ const EPISODIO = {
   visual: { ambiente: 'claro', lado: 'direita' },
   latidos: [],
   impactos: [],
-  destaques: { 1: 'parágrafos', 2: 'nunca', 3: 'apaga', 4: 'estrelas', 5: 'ligar', 6: 'cinto', 7: 'corrida', 8: 'sei', 9: 'perfume', 10: 'precisando', 11: 'aula', 12: 'junto', 13: 'sumiu', 14: 'jeito' },
+  destaques: { 1: 'parágrafos', 2: 'qual', 3: 'apaga', 4: 'estrelas', 5: 'netinha', 6: 'legal', 7: 'acesa', 8: 'Uhum', 9: 'corrida', 10: 'sei', 11: 'perfume', 12: 'precisando', 13: 'aula', 14: 'junto', 15: 'sumiu', 16: 'quarenta' },
 };

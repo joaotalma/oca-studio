@@ -5,22 +5,22 @@
   {
    "palavra": "Às",
    "ini": 0,
-   "fim": 0.186
+   "fim": 0.24
   },
   {
    "palavra": "oito",
-   "ini": 0.279,
-   "fim": 0.499
+   "ini": 0.32,
+   "fim": 0.64
   },
   {
    "palavra": "tá",
-   "ini": 0.557,
-   "fim": 0.627
+   "ini": 0.72,
+   "fim": 0.8
   },
   {
    "palavra": "entregue.",
-   "ini": 0.662,
-   "fim": 1.486
+   "ini": 0.92,
+   "fim": 1.68
   }
  ]
 }

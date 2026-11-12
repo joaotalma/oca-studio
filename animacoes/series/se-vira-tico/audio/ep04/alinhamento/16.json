@@ -1,0 +1,31 @@
+{
+ "n": 16,
+ "texto": "Vó... eu tenho quarenta anos.",
+ "palavras": [
+  {
+   "palavra": "Vó...",
+   "ini": 0,
+   "fim": 1.04
+  },
+  {
+   "palavra": "eu",
+   "ini": 1.12,
+   "fim": 1.2
+  },
+  {
+   "palavra": "tenho",
+   "ini": 1.28,
+   "fim": 1.52
+  },
+  {
+   "palavra": "quarenta",
+   "ini": 1.6,
+   "fim": 2.08
+  },
+  {
+   "palavra": "anos.",
+   "ini": 2.16,
+   "fim": 2.96
+  }
+ ]
+}
