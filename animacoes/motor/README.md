@@ -28,3 +28,7 @@ node <motor>/qa/quadros.mjs comparar /tmp/ref-epNN 24
 ```
 
 Em 2026-11-12, na unificação, os 6 episódios do Tico, o ep05 orgânico da branch `tico/ep05-v2` e os templates ilustrado e chat ficaram com todos os quadros iguais aos de antes. A mixagem e a sincronia do Tico (ep05) e do apagão v2 também ficaram iguais byte a byte.
+
+## Produção rápida e aprovação delegada
+
+Ver [FLUXO-RAPIDO.md](FLUXO-RAPIDO.md). `produzir.mjs` executa rascunho/gate, master/QA leve e, com `--entrega`, a finalização automática autorizada. `finalizar.mjs` registra o aceite com hash. Nenhuma mudança no rig, cenários ou desenho.

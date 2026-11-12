@@ -199,3 +199,11 @@ Pedido: analisar três PDFs de produção/roteiro, cruzar os roteiros do Tico co
 - [ ] Medir as versões publicadas em janelas comparáveis por plataforma. A reconstrução muda várias variáveis e não constitui teste causal.
 
 Esta entrega de roteiros não inicia a unificação dos projetos no Blink Studio e não substitui episódios publicados.
+
+## Produção e encerramento (12/11/2026)
+
+- [x] Registrar Dia 1 como aprovado explicitamente pelo João.
+- [x] Encerrar a T1 do Tico no EP6 e excluir os pré-roteiros 7–10.
+- [x] Implementar rascunho 540×960/15 fps com gate antes do master e QA final leve vinculado por hashes.
+- [x] Registrar aprovação automática autorizada na finalização da entrega.
+- [ ] Medir render paralelo no Windows com trecho curto antes de adotá-lo.

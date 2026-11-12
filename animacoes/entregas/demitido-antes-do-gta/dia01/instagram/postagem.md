@@ -52,3 +52,7 @@ Sem "comente", "a mais comentada", "mande" nem "marque": é isca de engajamento,
 - **Direitos:** SÓ COMENTÁRIO. O GTA 6 só é citado; nenhuma imagem, logotipo ou música do jogo aparece. A TV mostra um jogo genérico nosso.
 - **Vozes:** ElevenLabs, plano com licença comercial. Kauã: voz original criada por descrição. Dona Rose: voz da Dona Cida. Júnior e CEO: elenco do Tico.
 - **Música e efeitos:** sintetizados em código pelo próprio motor.
+
+## Capa revisada — 12/11/2026
+
+Por pedido do João: GTA 6 em destaque, numeral 6 com degradê de pôr do sol (pêssego, rosa e lilás), palmeiras autorais e fundo mais luminoso. Kauã e controle do próprio rig; sem logotipo ou assets do jogo. Arquivo oficial: `entregas/demitido-antes-do-gta/dia01/instagram/capa.png`. Gerador reproduzível: `series/se-vira-tico/demitido-gta6/dia01/capa.mjs`.

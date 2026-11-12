@@ -54,3 +54,7 @@ Fonte: `animacoes/referencias/videos-analisados/temporada-viral-metodo.md`.
 ## Exemplo (ep. 2)
 
 Ver `episodios/ep02/postagem.md`.
+
+## Spin-off Demitido Antes do GTA — capas
+
+Para este spin-off, seguir `demitido-gta6/GUIA-CAPAS.md`, a partir da raiz da série. Padrão do Dia 1 aprovado explicitamente pelo João em 12/11/2026: GTA 6 grande, numeral 6 em degradê de pôr do sol e palmeira autoral, Kauã no próprio rig, fundo luminoso e uma dificuldade concreta. Não aplicar automaticamente essa identidade às capas da comédia romântica do Tico.

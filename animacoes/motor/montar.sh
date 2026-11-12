@@ -9,10 +9,11 @@ slug="$(basename "$pasta")"
 slug_config="$(sed -nE "s/.*slug: *'([a-z0-9-]+)'.*/\1/p" "$pasta/video.js" | head -1)"
 slug="${slug_config:-$slug}"
 audio="$raiz/audio/$slug"; film="$raiz/render/$slug"
-W=1080; H=1920; FPS=30; qa=(); musica=()
+qa=(); producao=(); musica=()
 while [ $# -gt 0 ]; do
   case "$1" in
-    --rascunho) W=540; H=960; FPS=15; qa+=(--rascunho) ;;
+    --rascunho) producao+=(--rascunho) ;;
+    --entrega) producao+=(--entrega "$2"); shift ;;
     --sem-duracao) qa+=(--sem-duracao) ;;
     --musica) musica=(--musica "$2"); shift ;;
     *) echo "opção desconhecida: $1" >&2; exit 2 ;;
@@ -26,7 +27,7 @@ if [ -n "$narracao" ]; then
   python "$raiz/motor/audio/sincronizar.py" "$pasta" "$audio"
 else
   rm -f "$pasta/tempos.js"
-  qa+=(--mudo)
+  producao+=(--rascunho)
   echo "Sem narração em $audio: render mudo, com os tempos estimados."
 fi
 
@@ -36,14 +37,11 @@ if ! node "$raiz/motor/cenas/preparar-cenas3d.mjs" "$pasta" --camadas-prontas; t
   node "$raiz/motor/cenas/desenhar-cenas.mjs" "$pasta"
 fi
 bash "$raiz/motor/preparar-film.sh" "$pasta" >/dev/null
-(cd "$film" && W=$W H=$H node export.mjs "$FPS" imagem.mp4)
 
 final="$film/$slug.mp4"
 if [ -n "$narracao" ]; then
   python "$raiz/motor/audio/mixar.py" "$audio" "$film/mix.wav" --narrado ${musica[@]+"${musica[@]}"}
   bash "$raiz/motor/audio/masterizar.sh" "$film/mix.wav" "$film/master.wav"
-  ffmpeg -v error -y -i "$film/imagem.mp4" -i "$film/master.wav" -c:v copy -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart "$final"
-else
-  ffmpeg -v error -y -i "$film/imagem.mp4" -c:v copy -movflags +faststart "$final"
+  producao+=(--audio "$film/master.wav")
 fi
-node "$raiz/motor/qa/qa-video.mjs" "$film" "$final" ${qa[@]+"${qa[@]}"}
+node "$raiz/motor/produzir.mjs" "$film" --origem "$pasta" --saida "$final" ${producao[@]+"${producao[@]}"} ${qa[@]+"${qa[@]}"}

@@ -13,7 +13,7 @@ description: Confere um vídeo montado com medições automáticas, folha de qua
 
 ## Passos
 
-1. **Medições:**
+1. **Medições:** se `produzir.mjs` já executou o fluxo, usar os relatórios vinculados por hash em `qa-resultados/`; não repetir o gate completo no master. A chamada abaixo é a alternativa completa para investigação de um defeito. No fluxo padrão, usar `--final-leve` com o relatório válido do rascunho e o mesmo áudio, conforme `motor/FLUXO-RAPIDO.md`.
 
 ```bash
 node motor/qa/qa-video.mjs render/<slug> render/<slug>/<slug>.mp4
@@ -42,4 +42,8 @@ O QA não ouve o áudio nem julga graça ou voz. Isso é do João, que assiste n
 
 ## Aprovação
 
-Reprovado volta a `montar`. Aprovado vai para o João como vídeo final: **PARE: aprovação 3**.
+Reprovado volta a `montar`. Sem bloqueios, registrar a revisão, preparar capa/postagem e rodar `motor/finalizar.mjs`: **finalização automática autorizada pelo João**. Só João publica.
+
+## Atualização de 12/11/2026 — prevalece sobre o fluxo anterior
+
+Seguir `motor/FLUXO-RAPIDO.md`. Gate completo no rascunho 540×960/15 fps; um master 1080×1920/30 fps após passar. QA leve validado por hashes e amostras em alta; revisar as amostras. Com revisão editorial, direitos e entrega completos, `motor/finalizar.mjs` registra a aprovação final automática autorizada pelo João. Não solicitar novo aceite final; roteiro e âncoras mantêm aceite explícito. Nenhum bloqueio pode ser ignorado e só João publica.

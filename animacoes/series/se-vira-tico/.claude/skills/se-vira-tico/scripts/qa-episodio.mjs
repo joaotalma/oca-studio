@@ -15,8 +15,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const args = process.argv.slice(2);
-const flags = args.filter((a) => a.startsWith('--'));
-const [pasta, video] = args.filter((a) => !a.startsWith('--'));
+const [pasta,video,...flags] = args;
 if (!pasta || !video) { console.error('uso: node qa-episodio.mjs <pasta do filme> <video.mp4> [--rascunho] [--sem-duracao]'); process.exit(2); }
 
 const tico = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../..');

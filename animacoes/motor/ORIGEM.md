@@ -76,3 +76,7 @@ Na unificação dos projetos na Oca Studio, `engine/` passou a se chamar `motor/
 | skill take-one `scripts/frames.mjs` | `take-one/frames.mjs` | Cópia sem alteração (SHA-256 `c4e58a6e9d0de6c5`), MIT |
 
 Verificação: `qa/quadros.mjs` gravou 24 quadros antes e depois da unificação para os eps. 1 a 6 do Tico, para o ep05 orgânico da branch `tico/ep05-v2`, para `click` e para `_exemplo-chat`, e todos ficaram idênticos. A mixagem e a sincronia do Tico ep05 e do apagão v2 também ficaram idênticas byte a byte. Além disso, passaram os 21 testes do motor, o teste de acabamento do Tico e os testes do estudo visual-2d.
+
+## Fluxo rápido e finalização (12/11/2026)
+
+Implementação local da Oca Studio, a pedido do João: `produzir.mjs`, `finalizar.mjs`, `qa/registro.mjs` e relatórios JSON em `qa/qa-video.mjs`. O desenho do rig/cenários não foi alterado. O exportador existente mantém desenho e codificação, com verificação adicional do retorno do FFmpeg. Não foi importado nem ativado um renderizador paralelo externo.

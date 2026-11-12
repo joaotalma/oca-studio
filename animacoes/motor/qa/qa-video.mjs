@@ -16,13 +16,19 @@ import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { hashArquivo, hashFonte, validarRascunho } from './registro.mjs';
 
 const args = process.argv.slice(2);
 const flags = new Set(args.filter((a) => a.startsWith('--')));
-const iDur = args.indexOf('--duracao');
-const iLeitura = args.indexOf('--leitura');
-const faixa = iDur >= 0 ? args[iDur + 1].split(',').map(Number) : [30, 90];
-const [pasta, video] = args.filter((a, i) => !a.startsWith('--') && (iDur < 0 || i !== iDur + 1) && (iLeitura < 0 || i !== iLeitura + 1) && args[i - 1] !== '--checklist');
+const valores = new Set(['--duracao','--leitura','--checklist','--relatorio','--qa-rascunho','--audio-origem']);
+const pos = [], op = {};
+for(let i=0;i<args.length;i++) {
+  if(valores.has(args[i])) { if(!args[i+1] || args[i+1].startsWith('--')) throw new Error(`Falta valor para ${args[i]}`); op[args[i]]=args[++i]; }
+  else if(!args[i].startsWith('--')) pos.push(args[i]);
+}
+const iDur = args.indexOf('--duracao'), iLeitura = args.indexOf('--leitura');
+const faixa = op['--duracao'] ? op['--duracao'].split(',').map(Number) : [30,90];
+const [pasta,video] = pos;
 const uso = 'uso: node motor/qa/qa-video.mjs <pasta em render/> <video.mp4> [--rascunho] [--mudo] [--sem-duracao] [--duracao a,b]';
 const parar = (msg) => { console.error(msg); process.exit(2); };
 
@@ -35,6 +41,16 @@ const aqui = path.dirname(fileURLToPath(import.meta.url));
 const raiz = path.resolve(aqui, '..', '..');
 const gate = path.join(aqui, '..', 'take-one', 'gate.mjs');
 const pastaAbs = path.resolve(pasta), videoAbs = path.resolve(video);
+const leve = flags.has('--final-leve');
+if(leve && rascunho) parar('--final-leve não pode ser rascunho.');
+const politica = { faixa, semDuracao: flags.has('--sem-duracao'), semTexto: flags.has('--sem-texto'),
+  leitura: op['--leitura'] ? hashArquivo(op['--leitura']) : null, qa: hashArquivo(fileURLToPath(import.meta.url)), gate: hashArquivo(gate), registro: hashArquivo(path.join(aqui,'registro.mjs')) };
+const fonteInicial = hashFonte(pastaAbs);
+if(leve) {
+  try { validarRascunho(op['--qa-rascunho'],pastaAbs,op['--audio-origem'],politica); }
+  catch(e) { parar(`Final leve bloqueado: ${e.message}`); }
+}
+
 
 for (const cmd of ['ffmpeg', 'ffprobe']) {
   if (spawnSync(cmd, ['-version']).error) parar(`${cmd} não encontrado no PATH. Abra um terminal novo ou instale o FFmpeg.`);
@@ -112,6 +128,19 @@ aprovar('Sem isca de engajamento', iscas.length === 0, iscas.length ? iscas.slic
 const pausas = iLeitura>=0 ? JSON.parse(fs.readFileSync(args[iLeitura+1],'utf8')) : [];
 if(!Array.isArray(pausas)||pausas.some(p=>!Number.isFinite(p.ini)||!Number.isFinite(p.fim)||p.ini<0||p.fim<=p.ini||p.fim>duracao+.05||!p.motivo))parar('Pausas de leitura precisam de intervalo válido e justificativa.');
 if(pausas.length)anotar('Pausas visuais','DECLARADAS',`${pausas.length} intervalos justificados, ver ${args[iLeitura+1]}; exigem conferência à vista, não aprovação automática.`);
+if (leve) {
+  anotar('Gate', 'APROVADO', 'gate completo do rascunho reutilizado; fonte, áudio, regras e MP4 conferidos por SHA-256');
+  const destino = path.join(pastaAbs,'qa-resultados','amostras-final');
+  fs.mkdirSync(destino,{recursive:true});
+  let ok = true;
+  for(let n=0;n<8;n++) {
+    const t = Math.max(0,(duracao-1/fps)*n/7);
+    const out = path.join(destino,`${n}.png`);
+    const r = spawnSync('ffmpeg',['-v','error','-y','-ss',String(t),'-i',videoAbs,'-frames:v','1',out],{encoding:'utf8'});
+    ok &&= r.status===0 && fs.existsSync(out) && fs.statSync(out).size>0;
+  }
+  aprovar('Amostras do master',ok,`8 quadros em resolução original: ${destino}; decodificação, não julgamento artístico`);
+} else {
 const resultadoGate = spawnSync(process.execPath, [gate, 'film.html', '--mp4', videoAbs,...(pausas.length?['--holds',pausas.map(p=>`${p.ini}-${p.fim}`).join(',')]:[])], {
   cwd: pastaAbs, encoding: 'utf8', maxBuffer: 1 << 26,
   env: { ...process.env, W: String(streamVideo.width), H: String(streamVideo.height), PLAYWRIGHT_NODE_MODULES: path.join(raiz, 'node_modules') },
@@ -127,6 +156,9 @@ if (resultadoGate.status === 0 || resultadoGate.status === 1) {
   aprovar('Gate', false, `não rodou (saída ${resultadoGate.status}): ${linhasGate.filter(Boolean).slice(-1)[0] || resultadoGate.error?.message || ''}`);
 }
 
+}
+aprovar('Fonte estável',fonteInicial===hashFonte(pastaAbs),'nenhuma alteração durante o QA');
+
 // relatório
 const largura = Math.max(...itens.map((i) => i.nome.length));
 console.log(`\nQA  ${path.basename(videoAbs)}${rascunho ? '  (rascunho)' : ''}\n${'-'.repeat(60)}`);
@@ -135,4 +167,15 @@ const iCheck = args.indexOf('--checklist');
 console.log(`${'-'.repeat(60)}\nConferir à vista: ${iCheck >= 0 ? args[iCheck + 1] : '.claude/skills/qa/qa-checklist.md'}.`);
 const reprovou = itens.some((i) => i.estado === 'REPROVADO');
 console.log(`\nRESULTADO: ${reprovou ? 'REPROVADO' : 'APROVADO nos itens medidos'}`);
+if(op['--relatorio']) {
+  const relatorio = path.resolve(op['--relatorio']);
+  // Fora dos inputs: evita que o próprio relatório invalide o próximo passo.
+  if(!relatorio.includes(`${path.sep}qa-resultados${path.sep}`)) parar('--relatorio deve ficar em qa-resultados/.');
+  fs.mkdirSync(path.dirname(relatorio),{recursive:true});
+  fs.writeFileSync(relatorio,JSON.stringify({schema:1,quando:new Date().toISOString(),modo:rascunho?'rascunho':leve?'final-leve':'final-completo',
+    aprovado:!reprovou,mudo:flags.has('--mudo'),temAudio,fonte:fonteInicial,video:videoAbs,videoHash:hashArquivo(videoAbs),
+    audioOrigem:op['--audio-origem']?path.resolve(op['--audio-origem']):null,
+    audioOrigemHash:op['--audio-origem']?hashArquivo(op['--audio-origem']):null,politica,gateCompleto:!leve,
+    rascunho:leve?path.resolve(op['--qa-rascunho']):null,dimensoes:[streamVideo.width,streamVideo.height],fps,duracao,itens},null,2)+'\n');
+}
 process.exitCode = reprovou ? 1 : 0;

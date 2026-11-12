@@ -1,6 +1,6 @@
 # Dia 1: Três e Vinte
 
-**Estado:** aguardando aprovação do João. Vai ao ar em 13/11/2026, por volta das 19h, com voto de 24 h.
+**Estado:** vídeo final aprovado explicitamente pelo João em 12/11/2026. Vai ao ar em 13/11/2026, por volta das 19h, com voto de 24 h.
 **Duração estimada:** cerca de 2:13 (faixa de 1:45 a 2:20). São cerca de 250 palavras faladas, cerca de 90 s a 2,8 palavras por segundo, mais cerca de 43 s de imagem sem fala (chat, cartão, controle, anúncios, voto). Se o áudio real passar de 2:20, corte a fala 12 ("Ele não obedece. Ele sugere.") e o "Fica comigo".
 **Teste:** é o primeiro episódio longo, feito para testar o formato antes da T2 do Tico (veja `../BIBLIA.md`).
 **Direitos:** SÓ COMENTÁRIO. O jogo só é citado; a TV mostra um jogo genérico nosso.

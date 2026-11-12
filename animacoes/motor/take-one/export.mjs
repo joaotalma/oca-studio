@@ -27,6 +27,7 @@ const enc = process.env.ALPHA ? ['-c:v', 'prores_ks', '-profile:v', '4444', '-pi
 // SUB > 1: input runs at fps*SUB; tmix averages each run of SUB, select keeps the last of each group (= one whole group), setpts re-times to fps
 const blur = SUB > 1 ? `tmix=frames=${SUB},select='eq(mod(n\\,${SUB})\\,${SUB - 1})',setpts=N/(${fps}*TB),` : '';
 const ff = spawn('ffmpeg', ['-y', '-f', 'image2pipe', '-framerate', String(fps * SUB), '-i', '-', '-vf', `${blur}scale=${W}:${H}:flags=lanczos`, '-r', String(fps), ...enc, out], { stdio: ['pipe', 'ignore', 'inherit'] });
+const terminou = new Promise(resolve => { ff.once('error', e=>resolve({error:e})); ff.once('close', code=>resolve({code})); });
 for (let i = f0; i < frames; i++) {
   for (let k = 0; k < SUB; k++) {
     const b64 = await page.evaluate(async (t) => { await window.renderFrame(t); const c = [...document.querySelectorAll('canvas')].sort((a, b) => b.width * b.height - a.width * a.height)[0]; return c.toDataURL('image/png').split(',')[1]; }, (i + k / SUB) / fps / SLOW);
@@ -34,5 +35,6 @@ for (let i = f0; i < frames; i++) {
   }
   if (i % fps === 0) process.stdout.write(`\r${(i / fps).toFixed(0)}s / ${(duration * SLOW).toFixed(1)}s${SUB > 1 ? `  (SUB=${SUB})` : ''}`);
 }
-ff.stdin.end(); await new Promise(r => ff.on('close', r)); await browser.close(); srv.close();
+ff.stdin.end(); const resultado = await terminou; await browser.close(); srv.close();
+if(resultado.error || resultado.code !== 0) throw new Error(`FFmpeg falhou: ${resultado.error?.message || resultado.code}`);
 console.log(`\nwrote ${out}`);

@@ -151,3 +151,11 @@ Detalhes e forma de medir: `references/qa-checklist.md`.
 ## Acabamento aprovado para novos episódios
 
 Antes de montar cenas novas, leia `docs/ACABAMENTO_VISUAL.md`. Use `EPISODIO.visual` para luz de recorte e sombra por ambiente; `SerieVisual` oferece rua detalhada, abertura configurável, GPS com trajeto compartilhado e setas animadas. Live pertence à tela do aparelho. Preserve pausas de reação e proporções do cenário. Não reprepare nem rerenderize o EP2 publicado por causa dessas melhorias.
+
+## Atualização de produção (12/11/2026)
+
+A T1 terminou no EP6; roteiros 7–10 excluídos. Para o spin-off e novos episódios usar `../../motor/FLUXO-RAPIDO.md`: gate completo em 540×960/15 fps, master uma vez em 1080×1920/30 fps e QA leve. Revisão artística/editorial permanece. Finalização registra aprovação automática autorizada, sem solicitar outro aceite final. Só João publica.
+
+## Capas do spin-off
+
+Antes de criar capa de Demitido Antes do GTA, ler `demitido-gta6/GUIA-CAPAS.md` na raiz da série. Esse padrão foi aprovado explicitamente pelo João em 12/11/2026 e prevalece sobre a capa inicial do Dia 1.

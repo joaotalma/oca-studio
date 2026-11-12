@@ -19,9 +19,11 @@ entregas/
 
 ## Regras
 
-- Entra aqui **só a versão aprovada** pelo João. Rascunhos, renders mudos e intermediários ficam em `series/*/render/`, fora do git.
+- Entra aqui **só a versão aprovada** pelo João ou pelo fluxo automático que ele autorizou em 12/11/2026. Rascunhos, renders mudos e intermediários ficam em `series/*/render/`, fora do git.
 - **Arquivo de até 100 MB** (limite do GitHub). Acima disso o vídeo fica fora do git, no Google Drive, e o README do episódio diz onde está. Foi o caso do piloto do apagão v2 dos Mistérios, com 263 MB.
 - O `postagem.md` de cada rede é uma cópia da ficha do episódio. Se mudar uma, atualize a outra.
 - Só o João publica.
 
 Decisão do João em 2026-11-12: os vídeos finais passam a ficar no GitHub, para ele continuar de qualquer lugar.
+
+Cada nova finalização registra `aprovacao.json` com o hash do MP4 e a origem do aceite (manual ou automático autorizado). Dia 1 teve aprovação manual explícita em 12/11/2026. Ver `../motor/FLUXO-RAPIDO.md`.

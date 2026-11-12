@@ -54,3 +54,7 @@ A análise de vídeos do YouTube é feita pelo autor no Cowork. Se houver um res
 - **Render:** um por vez, porque os dois disputam o Chrome e a mesma pasta `render/`.
 - **Antes de editar:** rode `git status`. Se houver alteração que não é sua, não reverta nem inclua no seu commit.
 - **Worktree:** áudios, `node_modules/` e as cópias geradas nas pastas de episódio não vão para um worktree novo. Copie ou gere esses arquivos antes de renderizar nele.
+
+## Finalização e QA (12/11/2026)
+
+Usar o fluxo único em `../../motor/FLUXO-RAPIDO.md`: rascunho 540×960/15 fps com gate completo; master 1080×1920/30 fps uma vez, QA leve e aprovação final automática autorizada. Revisão editorial e de direitos continua necessária. Só João publica. A T1 do Tico termina no EP6; roteiros 7–10 excluídos.

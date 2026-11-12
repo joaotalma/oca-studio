@@ -50,3 +50,7 @@ O script corta a narração nas pausas, sincroniza, mixa, masteriza a -16 LUFS, 
 
 - Gerar voz sem autorização explícita e licença verificada. Quando autorizado, usar o perfil independente do Plotline e registrar o uso; fora disso, entregar render mudo identificado.
 - Usar template só especificado sem antes implementar e validar com um teste curto.
+
+## Atualização de 12/11/2026 — prevalece sobre o fluxo anterior
+
+Seguir `motor/FLUXO-RAPIDO.md`. Gate completo no rascunho 540×960/15 fps; um master 1080×1920/30 fps após passar. QA leve validado por hashes e amostras em alta; revisar as amostras. Com revisão editorial, direitos e entrega completos, `motor/finalizar.mjs` registra a aprovação final automática autorizada pelo João. Não solicitar novo aceite final; roteiro e âncoras mantêm aceite explícito. Nenhum bloqueio pode ser ignorado e só João publica.

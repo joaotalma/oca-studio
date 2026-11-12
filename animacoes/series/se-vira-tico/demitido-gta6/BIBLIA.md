@@ -2,7 +2,7 @@
 
 Spin-off do Se Vira, Tico em **temporada relâmpago**: 7 episódios, um por dia, de 13 a 19/11/2026 (o lançamento). Direção pedida pelo João em 2026-11-12: personagem **novo**, homem, de 18 a 25 anos, demitido antes do lançamento, sem dinheiro, com um PS5 e um controle arregaçado, e os amigos todos comprando o jogo, menos ele, por enquanto.
 
-**Estado:** aguardando aprovação do João (bíblia e roteiro do Dia 1).
+**Estado:** Dia 1 produzido e vídeo final aprovado explicitamente pelo João em 12/11/2026. Registro em `../../../entregas/demitido-antes-do-gta/dia01/aprovacao.json`.
 
 ## A série em uma frase (vira a descrição de todo post)
 
@@ -92,3 +92,7 @@ O que cada final muda vem entre parênteses: o que ele **carrega** na imagem dal
 
 1. **A voz nova do Kauã** no ElevenLabs. A regra do projeto diz que vozes novas são decisão sua. Proposta: voz original masculina e jovem (de 18 a 25 anos), carioca ou paulista, criada por descrição como o narrador dos Mistérios.
 2. **Nome e título:** Kauã, 21, e "Demitido Antes do GTA" estão provisórios.
+
+## Capas — padrão aprovado em 12/11/2026
+
+Seguir [GUIA-CAPAS.md](GUIA-CAPAS.md) antes de criar qualquer capa deste spin-off. O João aprovou a capa revisada do Dia 1: GTA 6 domina a composição, o 6 tem degradê pêssego/rosa/lilás e palmeira autoral, Kauã aparece com o controle e o fundo é luminoso. Manter essa identidade, adaptando expressão, objeto, saldo e “DIA N” à história. Fonte reproduzível: `dia01/capa.mjs`.

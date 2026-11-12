@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "estado": "aprovado",
+  "modo": "manual",
+  "aprovadoPor": "João",
+  "data": "2026-11-12",
+  "origem": "Mensagem: Esse video ja está aprovado.",
+  "video": "video.mp4",
+  "videoHash": "31d39e40b9b4f8ba0d5829e11713ab342c2485261dd6e92995b100e0384a9ce7",
+  "qa": "QA prévio da produção; não reexecutado nesta manutenção.",
+  "publicacao": "manual_pelo_Joao",
+  "capaAtualizacao": {
+    "data": "2026-11-12",
+    "arquivo": "instagram/capa.png",
+    "sha256": "cd4a3eec91005cddc939d3b1664d010fd9949de5dfd31f05ea4713e1dfbc12a0",
+    "motivo": "Pedido do João: GTA 6 grande, numeral com cores de pôr do sol, sem usar logo original.",
+    "revisao": "Conferida visualmente pelo agente; não altera o MP4 aprovado.",
+    "aprovacao": {
+      "modo": "manual",
+      "por": "João",
+      "data": "2026-11-12",
+      "origem": "Ficou PERFEITO. Coloque ja no roteiro de criação de capas para essa série."
+    }
+  }
+}
