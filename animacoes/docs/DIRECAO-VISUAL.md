@@ -4,9 +4,9 @@ Solicitada por João após a análise de 13 referências locais em 2026-11-08. S
 
 ## Antes de desenhar
 
-**Aprovação de 2026-11-09:** a referência de desenho/atuação agora é `series/misterios-do-brasil/personagens/voce-v4.md`, aprovada pelo João no comparativo de `estudos/ator-organico-v4/`. Olhos com pupila preta sem íris colorida, contornos arredondados e boca expressiva. O teste desse ator com fundo 3D foi pedido para depois e continua pendente; não confundir referência aprovada com integração já realizada.
+**Aprovação de 2026-11-09:** a referência de desenho/atuação agora é `series/misterios-do-brasil/personagens/voce-v4.md`, aprovada pelo João no comparativo de `docs/visual/`. Olhos com pupila preta sem íris colorida, contornos arredondados e boca expressiva. O teste desse ator com fundo 3D foi pedido para depois e continua pendente; não confundir referência aprovada com integração já realizada.
 
-**Evolução proposta em 2026-11-09:** consultar `estudos/MOTOR-EXPRESSIVO-V3.md`. O estudo em `estudos/_arquivo/ator-expressivo-v3/` não substitui o renderer nem a ficha aprovada. Para verbos como abrir, pegar, entregar ou desligar, conferir alvo, gesto, contato e consequência visível. Trocar para outra imagem do objeto não comprova execução da ação pelo personagem.
+**Evolução proposta em 2026-11-09:** consultar `docs/visual/MOTOR-EXPRESSIVO-V3.md`. O estudo v3 (removido na limpeza de 12/11/2026; recuperável no commit `4b2fae3`) não substitui o renderer nem a ficha aprovada. Para verbos como abrir, pegar, entregar ou desligar, conferir alvo, gesto, contato e consequência visível. Trocar para outra imagem do objeto não comprova execução da ação pelo personagem.
 
 Cada estrutura.json define pergunta, mecanismo, pista, virada e resposta. Cada fala registra função, ação visível, informação nova, ligação causal, enquadramento e motivo do corte. O compilador motor/roteiro/gerar-roteiro.mjs produz roteiro.md, falas.js e direcao.json. Ele valida o contrato; a seleção e a escrita continuam sendo trabalho editorial humano/assistido, não uma fórmula que garante audiência.
 

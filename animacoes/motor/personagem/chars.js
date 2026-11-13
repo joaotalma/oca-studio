@@ -329,7 +329,7 @@ function drawChar(d, pose = {}) {
 
 /* ================= RIG ORGÂNICO (padrão desde 10/11/2026) =================
    Técnicas aprovadas no Plotline (estudo ator-organico-v4) e adaptadas ao rig do Tico no estudo
-   estudos/visual-2d, aprovado pelo João em 10/11/2026: membros com curva e junta redonda (ribbon), pupila
+   estudo visual-2d (commit 4b2fae3), aprovado pelo João em 10/11/2026: membros com curva e junta redonda (ribbon), pupila
    preta com foco e tamanho por emoção (pupil/eyeFocus), boca com arcada curva (roundMouth) e sombra da
    silhueta. Nada é importado do Plotline. setEstiloRig('classico') volta ao desenho até o ep. 4. */
 const RigOrganico = (() => {

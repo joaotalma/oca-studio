@@ -91,7 +91,7 @@ A estrutura pode ser fixa. Estas três coisas variam de propósito:
 
 ## Série com voto: o método da Temporada Viral (2026-11-12)
 
-O autor de 4 das nossas 13 referências (Lucas e a moto, QI, Gênios, Biel) explicou o método dele num vídeo. A análise completa está em `animacoes/referencias/videos-analisados/temporada-viral-metodo.md`. Estas regras foram adotadas pelo autor do Tico em 12/11/2026:
+O autor de 4 das nossas 13 referências (Lucas e a moto, QI, Gênios, Biel) explicou o método dele num vídeo. A análise completa está em `animacoes/docs/referencias/temporada-viral-metodo.md`. Estas regras foram adotadas pelo autor do Tico em 12/11/2026:
 
 **Na bíblia, antes do primeiro episódio da temporada:**
 

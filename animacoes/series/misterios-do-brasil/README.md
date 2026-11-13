@@ -4,10 +4,10 @@ Canal de animação sobre fatos brasileiros inacreditáveis, com o gancho "Imagi
 
 | O quê | Onde |
 |---|---|
-| Configuração do canal, regras, resultados e voz | [`canal/`](canal/) |
-| Roteiros (Apagão 2001, Plano Collor, ET de Varginha e outros) | [`roteiros/`](roteiros/) |
-| Pautas, paletas e revisão v2 | [`radar/`](radar/) |
-| Personagem narrador ("você", v4 aprovado) | [`personagens/`](personagens/) |
+| Configuração do canal, regras, resultados e voz | [`canal/`](canal) |
+| Roteiros (Apagão 2001, Plano Collor, ET de Varginha e outros) | [`roteiros/`](roteiros) |
+| Pautas, paletas e revisão v2 | [`radar/`](radar) |
+| Personagem narrador ("você", v4 aprovado) | [`personagens/`](personagens) |
 | **Formato explicativo** (pergunta, jeito errado, desmontar, segredo na última peça) | [`FORMATO-EXPLICATIVO.md`](FORMATO-EXPLICATIVO.md) |
 
 Render, rodado a partir de `animacoes/` no Git Bash:

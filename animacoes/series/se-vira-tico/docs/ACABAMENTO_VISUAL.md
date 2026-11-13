@@ -25,7 +25,7 @@ https://history.siggraph.org/wp-content/uploads/2022/09/2019-Talks-Tu_Practical-
 
 ## Formas orgânicas, olhos, boca e sombra (desde 10/11/2026)
 
-O João aprovou o estudo `estudos/visual-2d` em 10/11/2026. Ele adapta ao elenco do Tico as técnicas 2D aprovadas no Plotline (`render/referencias-plotline-2d`). Desde então, o rig desenha no estilo `organico` por padrão. `setEstiloRig('classico')` volta exatamente ao desenho dos eps. 1 a 4, e os episódios publicados guardam as próprias cópias, que não mudam.
+O João aprovou o estudo visual-2d (removido na limpeza de 12/11/2026; recuperável no commit `4b2fae3`) em 10/11/2026. Ele adapta ao elenco do Tico as técnicas 2D aprovadas no Plotline (`render/referencias-plotline-2d`). Desde então, o rig desenha no estilo `organico` por padrão. `setEstiloRig('classico')` volta exatamente ao desenho dos eps. 1 a 4, e os episódios publicados guardam as próprias cópias, que não mudam.
 
 | Recurso | Onde | Regra |
 |---|---|---|
@@ -43,4 +43,4 @@ O João aprovou o estudo `estudos/visual-2d` em 10/11/2026. Ele adapta ao elenco
 - perfil e 3/4;
 - fundo 3D.
 
-Teste em `estudos/visual-2d/testar.mjs`, que verifica determinismo, valores finitos e todos os personagens e expressões.
+O teste do estudo, `testar.mjs` (mesmo commit), verifica determinismo, valores finitos e todos os personagens e expressões.

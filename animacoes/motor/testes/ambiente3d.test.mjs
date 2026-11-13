@@ -74,7 +74,7 @@ test('configuração inválida é barrada e modo anterior precisa ser explícito
  assert.throws(()=>validarCena({tipo:'rua',periodo:'noite',luzes:[{tipo:'janela',posicao:[NaN,2,3]}]},'cena'),/três números/);
  assert.throws(()=>validarCena({tipo:'rua',periodo:'noite',preenchimento:1},'cena'),/preenchimento/);
  assert.throws(()=>validarCena({tipo:'rua',periodo:'noite',luzes:[{tipo:'janela',posicao:[1,2,3],animacao:{inicio:1,duracao:-1}}]},'cena'),/acendimento/);
- const html=fs.readFileSync(new URL('../../templates/ilustrado/film.html',import.meta.url),'utf8');
+ const html=fs.readFileSync(new URL('../templates/ilustrado/film.html',import.meta.url),'utf8');
  assert.ok(html.indexOf('cenas3d.js')<html.indexOf('ilustrado.js'));assert.ok(html.indexOf('ambiente3d.js')<html.indexOf('ilustrado.js'));
  assert.match(fs.readFileSync(new URL('../preparar-film.sh',import.meta.url),'utf8'),/preparar-cenas3d\.mjs/);
 });
@@ -108,7 +108,7 @@ test('template real prepara e usa o 3D por padrão, mantendo relógio e textos',
  s.CENAS3D={'assets/a.png':{tipo:'rua',periodo:'noite'},'assets/b.png':{tipo:'sala',periodo:'dia'}};
  s.tempoDoVideo=()=>({TP:null,paraRoteiro:t=>t,paraReal:t=>t});
  const create=s.Plotline3D.create;s.Plotline3D.create=opts=>{const r=create(opts);return {...r,render(...args){events.push(args[0]);return r.render(...args);}};};
- vm.runInContext(fs.readFileSync(new URL('../../templates/ilustrado/ilustrado.js',import.meta.url),'utf8'),s);
+ vm.runInContext(fs.readFileSync(new URL('../templates/ilustrado/ilustrado.js',import.meta.url),'utf8'),s);
  await new Promise(setImmediate);assert.equal(s.READY,true);assert.equal(s.FILM_DURATION,5.8);
  await s.renderFrame(.5);await s.renderFrame(3);assert.equal(events[0].tipo,'rua');assert.equal(events[1].tipo,'sala');
  assert.ok(h.operations.some(row=>row[0]==='fillText'));assert.ok(s.CUTS.length>0);

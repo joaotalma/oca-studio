@@ -58,7 +58,7 @@ Fonte da checagem: docs/DIREITOS.md e Rockstar Newswire (conferido em 2026-11-12
 - **Risco do prazo:** 2 min por dia é cerca do dobro de arte e de voz da versão curta. Se um dia não fechar com qualidade, é melhor atrasar um episódio do que publicar um fraco. O relógio da tela acompanha a data real de cada post.
 - **O que medir no teste** (na skill `aprender`, comparando com a T1 do Tico, que teve de 18 a 33 s assistidos): tempo médio assistido, % de quem pulou nos 3 primeiros segundos, comentários por mil views e envios.
 - Só a retomada depende do voto. As duas retomadas (A e B) são renderizadas antes da contagem.
-- Aprovações do João: roteiro, imagens-âncora e vídeo final. Podem ser rápidas, mas não podem ser puladas.
+- Roteiro e âncoras exigem aceite explícito. O vídeo final tem aprovação automática autorizada em 12/11/2026, após revisão e QA; não pedir outro aceite final.
 
 ## A temporada: 7 dias e os dois finais de cada voto
 

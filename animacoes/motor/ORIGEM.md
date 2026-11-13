@@ -13,10 +13,10 @@ Repositório local `se-vira-tico`, commit `3b291564022fd43bb9789193d11258ae9718e
 | `series/se-vira-tico/personagens/cenarios.js` | `cenarios.js` | Ficaram só os utilitários e o cenário `vazio` |
 | `scripts/sincronizar.py` | `sincronizar.py` | Aceita wav, mp3, m4a e flac; repassa `fx`; a duração vem das falas |
 | `scripts/masterizar.sh` | `masterizar.sh` | Nada |
-| `scripts/preparar-film.sh` | `preparar-film.sh` | Reescrito para `series/misterios-do-brasil/roteiros/`, `render/` e `templates/` |
+| `scripts/preparar-film.sh` | `preparar-film.sh` | Reescrito para `series/misterios-do-brasil/roteiros/`, `render/` e `motor/templates/` |
 | `scripts/mixar.py` | `mixar.py` | Saíram trilha, deixas e efeitos da série; ficaram voz, efeitos genéricos e música opcional |
-| `.claude/skills/se-vira-tico/scripts/qa-episodio.mjs` | `qa-video.mjs` | Limites por opção, `--mudo`, tempo sem texto novo, gate local |
-| `.claude/skills/se-vira-tico/references/qa-checklist.md` | `.claude/skills/qa/qa-checklist.md` | Reescrito para vídeo narrado |
+| `scripts/qa-episodio.mjs` | `qa-video.mjs` | Limites por opção, `--mudo`, tempo sem texto novo, gate local |
+| `.claude/skills/se-vira-tico/references/qa-checklist.md` | `docs/QA-CHECKLIST.md` | Reescrito para vídeo narrado |
 
 **Não vieram:** `gerar-vozes.py`, `gerar-falas.mjs`, `medir-vozes.py` (OmniVoice, CC-BY-NC), vozes, assets do elenco, episódios e bíblia.
 
@@ -35,15 +35,15 @@ Skill `take-one`, versão 0.1.0 do `package.json`. Ela não tem git, então a ve
 
 ## Criados no Plotline
 
-Transferência solicitada pelo João em 2026-11-09: pacote de referência 2D em `render/transferencias/se-vira-tico-visual-2d/`, copiado para `C:/Users/joaot/Projetos/se-vira-tico/render/referencias-plotline-2d/`. Inclui estudos v3/v4, exemplos, testes, guia e licença do servidor local; 50 arquivos conferidos por SHA-256 e testes executados dentro da cópia. Não inclui chaves, vozes ou código de fundo 3D e não altera fontes de produção do Tico. A futura adaptação deve ser local e independente, sem importar o Plotline em execução. Guia e prompt em `estudos/_arquivo/TRANSFERENCIA-VISUAL-2D-TICO.md` e `estudos/_arquivo/PROMPT-TRANSFERENCIA-TICO-2D.md`.
+Transferência solicitada pelo João em 2026-11-09: pacote de referência 2D em `render/transferencias/se-vira-tico-visual-2d/`, copiado para `C:/Users/joaot/Projetos/se-vira-tico/render/referencias-plotline-2d/`. Inclui estudos v3/v4, exemplos, testes, guia e licença do servidor local; 50 arquivos conferidos por SHA-256 e testes executados dentro da cópia. Não inclui chaves, vozes ou código de fundo 3D e não altera fontes de produção do Tico. A futura adaptação deve ser local e independente, sem importar o Plotline em execução. Guia e prompt (removido na limpeza de 12/11/2026; recuperável no commit `4b2fae3`).
 
-Revisão de 2026-11-09: `estudos/ator-organico-v4/`, evolução local do estudo v3 por pedido do João. Contornos curvos, roupa, boca/arcada e olhos gráficos criados no Plotline; cabelo/orelhas derivados da mesma ficha aprovada. `anterior.mjs` preserva o ator v3 para comparação. Reutiliza o servidor local existente e não lê outro projeto. Séries citadas pelo João orientam apenas o princípio do olho sem íris colorida, sem copiar personagens ou assets.
+Revisão de 2026-11-09: `docs/visual/`, evolução local do estudo v3 por pedido do João. Contornos curvos, roupa, boca/arcada e olhos gráficos criados no Plotline; cabelo/orelhas derivados da mesma ficha aprovada. `anterior.mjs` preserva o ator v3 para comparação. Reutiliza o servidor local existente e não lê outro projeto. Séries citadas pelo João orientam apenas o princípio do olho sem íris colorida, sem copiar personagens ou assets.
 
-Estudo de 2026-11-09: `estudos/_arquivo/ator-expressivo-v3/`, com poses, desenho Canvas e articulação criados no Plotline. Os recortes vêm de `series/misterios-do-brasil/personagens/voce-ficha.svg`; membros e mãos foram adaptados para o estudo. Reutiliza o servidor local já atribuído ao Take One acima. Não copia o rig/elenco do Se Vira, Tico nem depende daquele projeto. Referências externas orientam princípios gerais, não desenhos de personagens.
+Estudo de 2026-11-09: ator expressivo v3 (removido na limpeza de 12/11/2026; recuperável no commit `4b2fae3`), com poses, desenho Canvas e articulação criados no Plotline. Os recortes vêm de `series/misterios-do-brasil/personagens/voce-ficha.svg`; membros e mãos foram adaptados para o estudo. Reutiliza o servidor local já atribuído ao Take One acima. Não copia o rig/elenco do Se Vira, Tico nem depende daquele projeto. Referências externas orientam princípios gerais, não desenhos de personagens.
 
 `tempo.js`, `fatiar-narracao.py`, `estimar-tempos.mjs` e `montar.sh`.
 
-Estudo de 2026-11-08: `estudos/2d-cenario3d/`, criado no Plotline. Perspectiva 3D procedural em Canvas, com recortes do personagem dos episódios já aprovados. Usa o exportador local existente, sem ler ou copiar arquivos de outro projeto. Não altera o template ilustrado nem a estética aprovada do canal.
+Estudo de 2026-11-08: cenário 3D procedural (removido na limpeza de 12/11/2026; recuperável no commit `4b2fae3`), criado no Plotline. Perspectiva 3D procedural em Canvas, com recortes do personagem dos episódios já aprovados. Usa o exportador local existente, sem ler ou copiar arquivos de outro projeto. Não altera o template ilustrado nem a estética aprovada do canal.
 
 Evolução no mesmo dia, a pedido de João após aprovar o exemplo: `ambiente3d.js`, `preparar-cenas3d.mjs`, `camadas3d.mjs` e os testes em `testes/ambiente3d.test.mjs` promovem o estudo ao fluxo do template ilustrado. O motor é independente do experimento e dos seus temas. Adiciona estrelas/nuvens por horário, preenchimento neutro mais claro e fontes de luz compartilhadas pelo cenário e personagem. `fundos3d-legados.json` é um snapshot textual dos fundos gerados pela própria `cenas-lib.py`, usado para reconhecer cenas antigas. Nenhum arquivo de outro projeto foi copiado. A mudança foi verificada sem renderizar imagens ou vídeos.
 

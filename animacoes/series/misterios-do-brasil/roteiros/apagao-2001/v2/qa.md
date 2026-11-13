@@ -27,7 +27,7 @@ Resultado: aprovado nos itens técnicos medidos, com sustentações curtas de le
 
 ## Feedback do João — 2026-11-08
 
-Gostou da narração e da execução do vídeo. A ideia pareceu chata, pouco lembrada e sem impacto percebido suficiente; não priorizar essa pauta por causa de sua execução técnica. O visual ficou escuro e precisa de mais cores e luminosidade, como nas referências. Próximas tarefas em `PROXIMOS-PASSOS.md`. Este feedback não significa aprovação de publicação nem validação de retenção.
+Gostou da narração e da execução do vídeo. A ideia pareceu chata, pouco lembrada e sem impacto percebido suficiente; não priorizar essa pauta por causa de sua execução técnica. O visual ficou escuro e precisa de mais cores e luminosidade, como nas referências. Próximas tarefas em `docs/PLANO.md`. Este feedback não significa aprovação de publicação nem validação de retenção.
 
 ## Publicação
 

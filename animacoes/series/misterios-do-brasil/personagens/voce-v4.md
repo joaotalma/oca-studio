@@ -2,7 +2,7 @@
 
 **Estado:** desenho e atuação do comparativo aprovados pelo João em 2026-11-09: “Ficou perfeito!”. Próximo teste solicitado para depois: esse personagem com fundo 3D. A aprovação não representa integração já feita no template de produção.
 
-**Origem da identidade:** `voce.md` e `voce-ficha.svg`, preservados. **Referência aprovada:** `estudos/ator-organico-v4/`; comparativo em `render/ator-organico-v4/comparacao-organica.mp4`, painel direito.
+**Origem da identidade:** `voce.md` e `voce-ficha.svg`, preservados. **Referência aprovada:** `docs/visual/`; comparativo em `render/ator-organico-v4/comparacao-organica.mp4`, painel direito.
 
 ## Direção aprovada
 

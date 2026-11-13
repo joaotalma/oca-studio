@@ -114,7 +114,7 @@ if (falas?.length && !flags.has('--sem-texto')) {
 
 // isca de engajamento: pedir comentário, envio ou marcação derruba a recomendação (Meta, "engagement bait").
 // Vale para o texto da tela e para as falas. O voto fecha com "Vocês decidem", e as opções ficam só na tela.
-// Ver referencias/videos-analisados/temporada-viral-metodo.md.
+// Ver docs/referencias/temporada-viral-metodo.md.
 const ISCA = /\b(comente|comenta|comentem|marque|marquem|envie|enviem|mande pra|mandem pra|compartilhe|compartilhem)\b/i;
 const iscas = [];
 for (const arq of ['ep.js', 'video.js', 'falas.js']) {
@@ -164,7 +164,7 @@ const largura = Math.max(...itens.map((i) => i.nome.length));
 console.log(`\nQA  ${path.basename(videoAbs)}${rascunho ? '  (rascunho)' : ''}\n${'-'.repeat(60)}`);
 for (const { nome, estado, detalhe } of itens) console.log(`${estado.padEnd(11)}  ${nome.padEnd(largura)}  ${detalhe}`);
 const iCheck = args.indexOf('--checklist');
-console.log(`${'-'.repeat(60)}\nConferir à vista: ${iCheck >= 0 ? args[iCheck + 1] : '.claude/skills/qa/qa-checklist.md'}.`);
+console.log(`${'-'.repeat(60)}\nConferir à vista: ${iCheck >= 0 ? args[iCheck + 1] : 'docs/QA-CHECKLIST.md'}.`);
 const reprovou = itens.some((i) => i.estado === 'REPROVADO');
 console.log(`\nRESULTADO: ${reprovou ? 'REPROVADO' : 'APROVADO nos itens medidos'}`);
 if(op['--relatorio']) {

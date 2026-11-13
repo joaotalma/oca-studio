@@ -1,0 +1,1449 @@
+{
+  "schema": 1,
+  "padrao": "ep06_fontes.zip",
+  "origem": "Pacotes do EP6 preservados antes da limpeza; arquivos originais recuperáveis byte a byte.",
+  "arquivos": {
+    "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c": {
+      "arquivo": "e73693554b31ee-00_narrador_abertura_ep06.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 74021,
+      "bytesArmazenado": 74021
+    },
+    "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3": {
+      "arquivo": "bf339f7a278f60-01_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 30972,
+      "bytesArmazenado": 30972
+    },
+    "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841": {
+      "arquivo": "64cd62fb0413fb-02_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 38077,
+      "bytesArmazenado": 38077
+    },
+    "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058": {
+      "arquivo": "2a1707fda660c2-03_leticia.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 27210,
+      "bytesArmazenado": 27210
+    },
+    "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7": {
+      "arquivo": "c10be5fa6ea986-04_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 29300,
+      "bytesArmazenado": 29300
+    },
+    "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2": {
+      "arquivo": "3e770fafcd018a-05_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 23448,
+      "bytesArmazenado": 23448
+    },
+    "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5": {
+      "arquivo": "f31539d37c0272-06_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 28464,
+      "bytesArmazenado": 28464
+    },
+    "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf": {
+      "arquivo": "bd096e3b6ef73f-07_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 41003,
+      "bytesArmazenado": 41003
+    },
+    "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a": {
+      "arquivo": "6c7afcf9f908d2-08_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 20941,
+      "bytesArmazenado": 20941
+    },
+    "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4": {
+      "arquivo": "9d39190f95972c-09_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 37659,
+      "bytesArmazenado": 37659
+    },
+    "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33": {
+      "arquivo": "2fc9c7140d89a2-10_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 20523,
+      "bytesArmazenado": 20523
+    },
+    "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5": {
+      "arquivo": "4761195f12dbb6-11_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 20941,
+      "bytesArmazenado": 20941
+    },
+    "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb": {
+      "arquivo": "f66780b88fb19e-12_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 35987,
+      "bytesArmazenado": 35987
+    },
+    "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564": {
+      "arquivo": "6017a04c1796cd-13_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 15925,
+      "bytesArmazenado": 15925
+    },
+    "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b": {
+      "arquivo": "116852a4a00e86-14_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 25538,
+      "bytesArmazenado": 25538
+    },
+    "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0": {
+      "arquivo": "9a4eceb419b5bb-15_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 19687,
+      "bytesArmazenado": 19687
+    },
+    "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c": {
+      "arquivo": "6af1c742495620-16_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 18015,
+      "bytesArmazenado": 18015
+    },
+    "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82": {
+      "arquivo": "b697280ae37fbe-17_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 55213,
+      "bytesArmazenado": 55213
+    },
+    "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46": {
+      "arquivo": "11d9233fc83fcd-18_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 32225,
+      "bytesArmazenado": 32225
+    },
+    "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995": {
+      "arquivo": "4da356e576a2ea-19_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 16761,
+      "bytesArmazenado": 16761
+    },
+    "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52": {
+      "arquivo": "4d3581d27773c3-20_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 38077,
+      "bytesArmazenado": 38077
+    },
+    "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf": {
+      "arquivo": "e97243079bc229-01.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 140186,
+      "bytesArmazenado": 122312
+    },
+    "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08": {
+      "arquivo": "e3f1876f576fa0-02.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 193950,
+      "bytesArmazenado": 173323
+    },
+    "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0": {
+      "arquivo": "c3cb08b3a5d46d-03.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 147344,
+      "bytesArmazenado": 130712
+    },
+    "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed": {
+      "arquivo": "94fda94d8e65e5-04.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 149528,
+      "bytesArmazenado": 140421
+    },
+    "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988": {
+      "arquivo": "fc1e174f8f1e2a-05.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 96114,
+      "bytesArmazenado": 85841
+    },
+    "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661": {
+      "arquivo": "d980218699e801-06.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 127300,
+      "bytesArmazenado": 103882
+    },
+    "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0": {
+      "arquivo": "94480ca401365f-07.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 205654,
+      "bytesArmazenado": 170080
+    },
+    "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561": {
+      "arquivo": "32932cb25721f5-08.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 92010,
+      "bytesArmazenado": 61145
+    },
+    "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b": {
+      "arquivo": "605b9b36abf0aa-09.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 172110,
+      "bytesArmazenado": 148604
+    },
+    "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1": {
+      "arquivo": "ecf7ba1d86269e-10.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 92252,
+      "bytesArmazenado": 84310
+    },
+    "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601": {
+      "arquivo": "b114bb5f866d4a-11.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 98094,
+      "bytesArmazenado": 84646
+    },
+    "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80": {
+      "arquivo": "b4d56cafbeb420-12.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 202304,
+      "bytesArmazenado": 179187
+    },
+    "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4": {
+      "arquivo": "0edb57e6d5c74b-13.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 77242,
+      "bytesArmazenado": 67581
+    },
+    "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d": {
+      "arquivo": "693d1c0829f695-14.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 110820,
+      "bytesArmazenado": 96442
+    },
+    "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24": {
+      "arquivo": "ec4e4398f660c5-15.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 98414,
+      "bytesArmazenado": 91568
+    },
+    "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c": {
+      "arquivo": "cdb6edd5fa1b9d-16.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 93112,
+      "bytesArmazenado": 88870
+    },
+    "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4": {
+      "arquivo": "db75e34a7ad6c8-17.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 350602,
+      "bytesArmazenado": 302010
+    },
+    "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586": {
+      "arquivo": "d1055ae4e2ce60-18.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 161054,
+      "bytesArmazenado": 145239
+    },
+    "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b": {
+      "arquivo": "e92329b5f4a998-19.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 79896,
+      "bytesArmazenado": 71196
+    },
+    "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5": {
+      "arquivo": "d0b63a6b22694b-20.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 216496,
+      "bytesArmazenado": 187112
+    },
+    "224ed282caa429548c64a2a13e9a7d17b41050243c01916d44b1c9e2dbccae35": {
+      "arquivo": "224ed282caa429-master.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 12307244,
+      "bytesArmazenado": 6636880
+    },
+    "0f4118c3d64f26f4b1f2aeef4085e7a5cd5d225c8c2efead8878adf0733ac137": {
+      "arquivo": "0f4118c3d64f26-interpretacao.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 460844,
+      "bytesArmazenado": 301151
+    },
+    "52ee3a3353182b893c80736dcdc259e29b87e8be2cc003ea085d59f6cc540db3": {
+      "arquivo": "52ee3a3353182b-interpretacao-3s.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 275518,
+      "bytesArmazenado": 182738
+    },
+    "9e574198596e30f6cc98ffa3228867d95ae5f67f01d48bd74aa092227e92dd49": {
+      "arquivo": "9e574198596e30-11_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 17597,
+      "bytesArmazenado": 17597
+    },
+    "b73c396e4742c18c7817636aedddf5ba798ee61aede891ab0d8d75979f44a25a": {
+      "arquivo": "b73c396e4742c1-12_tico.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 38077,
+      "bytesArmazenado": 38077
+    },
+    "b6056d402284d4e25c50d4e653e421605afba483b7ce2d7d75367b60ac5668a0": {
+      "arquivo": "b6056d402284d4-13_lua.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 20523,
+      "bytesArmazenado": 20523
+    },
+    "c8b2c6d1a3fa0782536f2c51ec7e2dc781f028b033a4fd89f900308c6659aa0e": {
+      "arquivo": "c8b2c6d1a3fa07-master.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 11756878,
+      "bytesArmazenado": 5608694
+    },
+    "f93a289e426e3f08d50fec7c7c9d7cc482c574787b39804e14d63fe3c1ad656f": {
+      "arquivo": "f93a289e426e3f-master.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 12307278,
+      "bytesArmazenado": 6617431
+    },
+    "fd11ab686cb79188f4e64bc4a11891c6be0cf0d210f7e206a4b0e78a4a9af8dc": {
+      "arquivo": "fd11ab686cb791-master.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 12307244,
+      "bytesArmazenado": 6652279
+    },
+    "52338a396e4557e50380c002d57b3b5916659020caacf56dcdfa54b0850cbe73": {
+      "arquivo": "52338a396e4557-narracao.mp3",
+      "compressao": "nenhuma",
+      "bytesOriginal": 36823,
+      "bytesArmazenado": 36823
+    },
+    "6d34b5ccc41a58b1a2321e4db516c23c53469405d0225055cdcf4019def63c70": {
+      "arquivo": "6d34b5ccc41a58-pronta.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 190990,
+      "bytesArmazenado": 149376
+    },
+    "32fe70c86da218430a84e36ad269178a634c9c88600ce6c495b3a040e14eb8c1": {
+      "arquivo": "32fe70c86da218-master.wav.gz",
+      "compressao": "gzip",
+      "bytesOriginal": 12672044,
+      "bytesArmazenado": 6867853
+    }
+  },
+  "pacotes": {
+    "ep06_fontes.zip": [
+      {
+        "caminho": "audio/00_narrador_abertura_ep06.mp3",
+        "sha256": "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c"
+      },
+      {
+        "caminho": "audio/01_lua.mp3",
+        "sha256": "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3"
+      },
+      {
+        "caminho": "audio/02_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/03_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/04_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/05_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/06_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/07_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/08_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/09_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/12_lua.mp3",
+        "sha256": "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb"
+      },
+      {
+        "caminho": "audio/13_tico.mp3",
+        "sha256": "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564"
+      },
+      {
+        "caminho": "audio/14_lua.mp3",
+        "sha256": "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b"
+      },
+      {
+        "caminho": "audio/15_tico.mp3",
+        "sha256": "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0"
+      },
+      {
+        "caminho": "audio/16_tico.mp3",
+        "sha256": "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c"
+      },
+      {
+        "caminho": "audio/17_lua.mp3",
+        "sha256": "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82"
+      },
+      {
+        "caminho": "audio/18_lua.mp3",
+        "sha256": "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46"
+      },
+      {
+        "caminho": "audio/19_tico.mp3",
+        "sha256": "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995"
+      },
+      {
+        "caminho": "audio/20_lua.mp3",
+        "sha256": "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52"
+      },
+      {
+        "caminho": "audio/limpas/01.wav",
+        "sha256": "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf"
+      },
+      {
+        "caminho": "audio/limpas/02.wav",
+        "sha256": "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08"
+      },
+      {
+        "caminho": "audio/limpas/03.wav",
+        "sha256": "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0"
+      },
+      {
+        "caminho": "audio/limpas/04.wav",
+        "sha256": "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed"
+      },
+      {
+        "caminho": "audio/limpas/05.wav",
+        "sha256": "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988"
+      },
+      {
+        "caminho": "audio/limpas/06.wav",
+        "sha256": "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661"
+      },
+      {
+        "caminho": "audio/limpas/07.wav",
+        "sha256": "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0"
+      },
+      {
+        "caminho": "audio/limpas/08.wav",
+        "sha256": "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561"
+      },
+      {
+        "caminho": "audio/limpas/09.wav",
+        "sha256": "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b"
+      },
+      {
+        "caminho": "audio/limpas/10.wav",
+        "sha256": "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1"
+      },
+      {
+        "caminho": "audio/limpas/11.wav",
+        "sha256": "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601"
+      },
+      {
+        "caminho": "audio/limpas/12.wav",
+        "sha256": "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80"
+      },
+      {
+        "caminho": "audio/limpas/13.wav",
+        "sha256": "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4"
+      },
+      {
+        "caminho": "audio/limpas/14.wav",
+        "sha256": "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d"
+      },
+      {
+        "caminho": "audio/limpas/15.wav",
+        "sha256": "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24"
+      },
+      {
+        "caminho": "audio/limpas/16.wav",
+        "sha256": "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c"
+      },
+      {
+        "caminho": "audio/limpas/17.wav",
+        "sha256": "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4"
+      },
+      {
+        "caminho": "audio/limpas/18.wav",
+        "sha256": "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586"
+      },
+      {
+        "caminho": "audio/limpas/19.wav",
+        "sha256": "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b"
+      },
+      {
+        "caminho": "audio/limpas/20.wav",
+        "sha256": "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "224ed282caa429548c64a2a13e9a7d17b41050243c01916d44b1c9e2dbccae35"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/narracao.mp3",
+        "sha256": "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/interpretacao.wav",
+        "sha256": "0f4118c3d64f26f4b1f2aeef4085e7a5cd5d225c8c2efead8878adf0733ac137"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/interpretacao-3s.wav",
+        "sha256": "52ee3a3353182b893c80736dcdc259e29b87e8be2cc003ea085d59f6cc540db3"
+      }
+    ],
+    "ep06_fontes_versao_anterior.zip": [
+      {
+        "caminho": "audio/01_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/02_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/03_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/04_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/05_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/06_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/07_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/08_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/09_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "9e574198596e30f6cc98ffa3228867d95ae5f67f01d48bd74aa092227e92dd49"
+      },
+      {
+        "caminho": "audio/12_tico.mp3",
+        "sha256": "b73c396e4742c18c7817636aedddf5ba798ee61aede891ab0d8d75979f44a25a"
+      },
+      {
+        "caminho": "audio/13_lua.mp3",
+        "sha256": "b6056d402284d4e25c50d4e653e421605afba483b7ce2d7d75367b60ac5668a0"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "c8b2c6d1a3fa0782536f2c51ec7e2dc781f028b033a4fd89f900308c6659aa0e"
+      }
+    ],
+    "ep06_v2_fontes.zip": [
+      {
+        "caminho": "audio/01_lua.mp3",
+        "sha256": "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3"
+      },
+      {
+        "caminho": "audio/02_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/03_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/04_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/05_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/06_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/07_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/08_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/09_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/12_lua.mp3",
+        "sha256": "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb"
+      },
+      {
+        "caminho": "audio/13_tico.mp3",
+        "sha256": "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564"
+      },
+      {
+        "caminho": "audio/14_lua.mp3",
+        "sha256": "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b"
+      },
+      {
+        "caminho": "audio/15_tico.mp3",
+        "sha256": "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0"
+      },
+      {
+        "caminho": "audio/16_tico.mp3",
+        "sha256": "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c"
+      },
+      {
+        "caminho": "audio/17_lua.mp3",
+        "sha256": "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82"
+      },
+      {
+        "caminho": "audio/18_lua.mp3",
+        "sha256": "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46"
+      },
+      {
+        "caminho": "audio/19_tico.mp3",
+        "sha256": "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995"
+      },
+      {
+        "caminho": "audio/20_lua.mp3",
+        "sha256": "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52"
+      },
+      {
+        "caminho": "audio/limpas/01.wav",
+        "sha256": "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf"
+      },
+      {
+        "caminho": "audio/limpas/02.wav",
+        "sha256": "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08"
+      },
+      {
+        "caminho": "audio/limpas/03.wav",
+        "sha256": "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0"
+      },
+      {
+        "caminho": "audio/limpas/04.wav",
+        "sha256": "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed"
+      },
+      {
+        "caminho": "audio/limpas/05.wav",
+        "sha256": "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988"
+      },
+      {
+        "caminho": "audio/limpas/06.wav",
+        "sha256": "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661"
+      },
+      {
+        "caminho": "audio/limpas/07.wav",
+        "sha256": "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0"
+      },
+      {
+        "caminho": "audio/limpas/08.wav",
+        "sha256": "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561"
+      },
+      {
+        "caminho": "audio/limpas/09.wav",
+        "sha256": "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b"
+      },
+      {
+        "caminho": "audio/limpas/10.wav",
+        "sha256": "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1"
+      },
+      {
+        "caminho": "audio/limpas/11.wav",
+        "sha256": "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601"
+      },
+      {
+        "caminho": "audio/limpas/12.wav",
+        "sha256": "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80"
+      },
+      {
+        "caminho": "audio/limpas/13.wav",
+        "sha256": "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4"
+      },
+      {
+        "caminho": "audio/limpas/14.wav",
+        "sha256": "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d"
+      },
+      {
+        "caminho": "audio/limpas/15.wav",
+        "sha256": "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24"
+      },
+      {
+        "caminho": "audio/limpas/16.wav",
+        "sha256": "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c"
+      },
+      {
+        "caminho": "audio/limpas/17.wav",
+        "sha256": "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4"
+      },
+      {
+        "caminho": "audio/limpas/18.wav",
+        "sha256": "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586"
+      },
+      {
+        "caminho": "audio/limpas/19.wav",
+        "sha256": "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b"
+      },
+      {
+        "caminho": "audio/limpas/20.wav",
+        "sha256": "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "f93a289e426e3f08d50fec7c7c9d7cc482c574787b39804e14d63fe3c1ad656f"
+      }
+    ],
+    "ep06_v3_fontes.zip": [
+      {
+        "caminho": "audio/01_lua.mp3",
+        "sha256": "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3"
+      },
+      {
+        "caminho": "audio/02_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/03_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/04_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/05_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/06_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/07_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/08_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/09_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/12_lua.mp3",
+        "sha256": "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb"
+      },
+      {
+        "caminho": "audio/13_tico.mp3",
+        "sha256": "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564"
+      },
+      {
+        "caminho": "audio/14_lua.mp3",
+        "sha256": "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b"
+      },
+      {
+        "caminho": "audio/15_tico.mp3",
+        "sha256": "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0"
+      },
+      {
+        "caminho": "audio/16_tico.mp3",
+        "sha256": "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c"
+      },
+      {
+        "caminho": "audio/17_lua.mp3",
+        "sha256": "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82"
+      },
+      {
+        "caminho": "audio/18_lua.mp3",
+        "sha256": "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46"
+      },
+      {
+        "caminho": "audio/19_tico.mp3",
+        "sha256": "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995"
+      },
+      {
+        "caminho": "audio/20_lua.mp3",
+        "sha256": "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52"
+      },
+      {
+        "caminho": "audio/limpas/01.wav",
+        "sha256": "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf"
+      },
+      {
+        "caminho": "audio/limpas/02.wav",
+        "sha256": "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08"
+      },
+      {
+        "caminho": "audio/limpas/03.wav",
+        "sha256": "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0"
+      },
+      {
+        "caminho": "audio/limpas/04.wav",
+        "sha256": "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed"
+      },
+      {
+        "caminho": "audio/limpas/05.wav",
+        "sha256": "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988"
+      },
+      {
+        "caminho": "audio/limpas/06.wav",
+        "sha256": "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661"
+      },
+      {
+        "caminho": "audio/limpas/07.wav",
+        "sha256": "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0"
+      },
+      {
+        "caminho": "audio/limpas/08.wav",
+        "sha256": "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561"
+      },
+      {
+        "caminho": "audio/limpas/09.wav",
+        "sha256": "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b"
+      },
+      {
+        "caminho": "audio/limpas/10.wav",
+        "sha256": "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1"
+      },
+      {
+        "caminho": "audio/limpas/11.wav",
+        "sha256": "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601"
+      },
+      {
+        "caminho": "audio/limpas/12.wav",
+        "sha256": "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80"
+      },
+      {
+        "caminho": "audio/limpas/13.wav",
+        "sha256": "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4"
+      },
+      {
+        "caminho": "audio/limpas/14.wav",
+        "sha256": "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d"
+      },
+      {
+        "caminho": "audio/limpas/15.wav",
+        "sha256": "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24"
+      },
+      {
+        "caminho": "audio/limpas/16.wav",
+        "sha256": "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c"
+      },
+      {
+        "caminho": "audio/limpas/17.wav",
+        "sha256": "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4"
+      },
+      {
+        "caminho": "audio/limpas/18.wav",
+        "sha256": "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586"
+      },
+      {
+        "caminho": "audio/limpas/19.wav",
+        "sha256": "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b"
+      },
+      {
+        "caminho": "audio/limpas/20.wav",
+        "sha256": "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "fd11ab686cb79188f4e64bc4a11891c6be0cf0d210f7e206a4b0e78a4a9af8dc"
+      },
+      {
+        "caminho": "audio/abertura-narrada/narracao.mp3",
+        "sha256": "52338a396e4557e50380c002d57b3b5916659020caacf56dcdfa54b0850cbe73"
+      },
+      {
+        "caminho": "audio/abertura-narrada/pronta.wav",
+        "sha256": "6d34b5ccc41a58b1a2321e4db516c23c53469405d0225055cdcf4019def63c70"
+      },
+      {
+        "caminho": "audio/00_narrador_abertura_ep06.mp3",
+        "sha256": "52338a396e4557e50380c002d57b3b5916659020caacf56dcdfa54b0850cbe73"
+      }
+    ],
+    "ep06_v3_fontes_atualizadas.zip": [
+      {
+        "caminho": "audio/01_lua.mp3",
+        "sha256": "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3"
+      },
+      {
+        "caminho": "audio/02_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/03_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/04_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/05_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/06_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/07_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/08_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/09_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/12_lua.mp3",
+        "sha256": "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb"
+      },
+      {
+        "caminho": "audio/13_tico.mp3",
+        "sha256": "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564"
+      },
+      {
+        "caminho": "audio/14_lua.mp3",
+        "sha256": "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b"
+      },
+      {
+        "caminho": "audio/15_tico.mp3",
+        "sha256": "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0"
+      },
+      {
+        "caminho": "audio/16_tico.mp3",
+        "sha256": "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c"
+      },
+      {
+        "caminho": "audio/17_lua.mp3",
+        "sha256": "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82"
+      },
+      {
+        "caminho": "audio/18_lua.mp3",
+        "sha256": "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46"
+      },
+      {
+        "caminho": "audio/19_tico.mp3",
+        "sha256": "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995"
+      },
+      {
+        "caminho": "audio/20_lua.mp3",
+        "sha256": "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52"
+      },
+      {
+        "caminho": "audio/limpas/01.wav",
+        "sha256": "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf"
+      },
+      {
+        "caminho": "audio/limpas/02.wav",
+        "sha256": "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08"
+      },
+      {
+        "caminho": "audio/limpas/03.wav",
+        "sha256": "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0"
+      },
+      {
+        "caminho": "audio/limpas/04.wav",
+        "sha256": "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed"
+      },
+      {
+        "caminho": "audio/limpas/05.wav",
+        "sha256": "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988"
+      },
+      {
+        "caminho": "audio/limpas/06.wav",
+        "sha256": "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661"
+      },
+      {
+        "caminho": "audio/limpas/07.wav",
+        "sha256": "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0"
+      },
+      {
+        "caminho": "audio/limpas/08.wav",
+        "sha256": "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561"
+      },
+      {
+        "caminho": "audio/limpas/09.wav",
+        "sha256": "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b"
+      },
+      {
+        "caminho": "audio/limpas/10.wav",
+        "sha256": "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1"
+      },
+      {
+        "caminho": "audio/limpas/11.wav",
+        "sha256": "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601"
+      },
+      {
+        "caminho": "audio/limpas/12.wav",
+        "sha256": "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80"
+      },
+      {
+        "caminho": "audio/limpas/13.wav",
+        "sha256": "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4"
+      },
+      {
+        "caminho": "audio/limpas/14.wav",
+        "sha256": "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d"
+      },
+      {
+        "caminho": "audio/limpas/15.wav",
+        "sha256": "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24"
+      },
+      {
+        "caminho": "audio/limpas/16.wav",
+        "sha256": "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c"
+      },
+      {
+        "caminho": "audio/limpas/17.wav",
+        "sha256": "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4"
+      },
+      {
+        "caminho": "audio/limpas/18.wav",
+        "sha256": "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586"
+      },
+      {
+        "caminho": "audio/limpas/19.wav",
+        "sha256": "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b"
+      },
+      {
+        "caminho": "audio/limpas/20.wav",
+        "sha256": "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "fd11ab686cb79188f4e64bc4a11891c6be0cf0d210f7e206a4b0e78a4a9af8dc"
+      },
+      {
+        "caminho": "audio/abertura-narrada/narracao.mp3",
+        "sha256": "52338a396e4557e50380c002d57b3b5916659020caacf56dcdfa54b0850cbe73"
+      },
+      {
+        "caminho": "audio/abertura-narrada/pronta.wav",
+        "sha256": "6d34b5ccc41a58b1a2321e4db516c23c53469405d0225055cdcf4019def63c70"
+      },
+      {
+        "caminho": "audio/00_narrador_abertura_ep06.mp3",
+        "sha256": "52338a396e4557e50380c002d57b3b5916659020caacf56dcdfa54b0850cbe73"
+      }
+    ],
+    "ep06_v4_fontes.zip": [
+      {
+        "caminho": "audio/00_narrador_abertura_ep06.mp3",
+        "sha256": "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c"
+      },
+      {
+        "caminho": "audio/01_lua.mp3",
+        "sha256": "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3"
+      },
+      {
+        "caminho": "audio/02_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/03_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/04_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/05_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/06_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/07_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/08_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/09_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/12_lua.mp3",
+        "sha256": "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb"
+      },
+      {
+        "caminho": "audio/13_tico.mp3",
+        "sha256": "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564"
+      },
+      {
+        "caminho": "audio/14_lua.mp3",
+        "sha256": "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b"
+      },
+      {
+        "caminho": "audio/15_tico.mp3",
+        "sha256": "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0"
+      },
+      {
+        "caminho": "audio/16_tico.mp3",
+        "sha256": "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c"
+      },
+      {
+        "caminho": "audio/17_lua.mp3",
+        "sha256": "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82"
+      },
+      {
+        "caminho": "audio/18_lua.mp3",
+        "sha256": "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46"
+      },
+      {
+        "caminho": "audio/19_tico.mp3",
+        "sha256": "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995"
+      },
+      {
+        "caminho": "audio/20_lua.mp3",
+        "sha256": "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52"
+      },
+      {
+        "caminho": "audio/limpas/01.wav",
+        "sha256": "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf"
+      },
+      {
+        "caminho": "audio/limpas/02.wav",
+        "sha256": "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08"
+      },
+      {
+        "caminho": "audio/limpas/03.wav",
+        "sha256": "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0"
+      },
+      {
+        "caminho": "audio/limpas/04.wav",
+        "sha256": "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed"
+      },
+      {
+        "caminho": "audio/limpas/05.wav",
+        "sha256": "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988"
+      },
+      {
+        "caminho": "audio/limpas/06.wav",
+        "sha256": "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661"
+      },
+      {
+        "caminho": "audio/limpas/07.wav",
+        "sha256": "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0"
+      },
+      {
+        "caminho": "audio/limpas/08.wav",
+        "sha256": "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561"
+      },
+      {
+        "caminho": "audio/limpas/09.wav",
+        "sha256": "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b"
+      },
+      {
+        "caminho": "audio/limpas/10.wav",
+        "sha256": "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1"
+      },
+      {
+        "caminho": "audio/limpas/11.wav",
+        "sha256": "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601"
+      },
+      {
+        "caminho": "audio/limpas/12.wav",
+        "sha256": "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80"
+      },
+      {
+        "caminho": "audio/limpas/13.wav",
+        "sha256": "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4"
+      },
+      {
+        "caminho": "audio/limpas/14.wav",
+        "sha256": "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d"
+      },
+      {
+        "caminho": "audio/limpas/15.wav",
+        "sha256": "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24"
+      },
+      {
+        "caminho": "audio/limpas/16.wav",
+        "sha256": "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c"
+      },
+      {
+        "caminho": "audio/limpas/17.wav",
+        "sha256": "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4"
+      },
+      {
+        "caminho": "audio/limpas/18.wav",
+        "sha256": "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586"
+      },
+      {
+        "caminho": "audio/limpas/19.wav",
+        "sha256": "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b"
+      },
+      {
+        "caminho": "audio/limpas/20.wav",
+        "sha256": "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "32fe70c86da218430a84e36ad269178a634c9c88600ce6c495b3a040e14eb8c1"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/narracao.mp3",
+        "sha256": "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/interpretacao.wav",
+        "sha256": "0f4118c3d64f26f4b1f2aeef4085e7a5cd5d225c8c2efead8878adf0733ac137"
+      }
+    ],
+    "ep06_v5_fontes.zip": [
+      {
+        "caminho": "audio/00_narrador_abertura_ep06.mp3",
+        "sha256": "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c"
+      },
+      {
+        "caminho": "audio/01_lua.mp3",
+        "sha256": "bf339f7a278f606e17d9dbd44c6cee322c21579dc6611f520cc640d6e31eaeb3"
+      },
+      {
+        "caminho": "audio/02_tico.mp3",
+        "sha256": "64cd62fb0413fb1269bd3ad90ed9a834a9700e016ebf3edb826029ee6c1d3841"
+      },
+      {
+        "caminho": "audio/03_leticia.mp3",
+        "sha256": "2a1707fda660c244932ea929e2bc09e392392ef8708f078aba6343e561219058"
+      },
+      {
+        "caminho": "audio/04_tico.mp3",
+        "sha256": "c10be5fa6ea986a33545e64235c9e9ee6a1ae61a8bce4085191e3b9d07d660c7"
+      },
+      {
+        "caminho": "audio/05_lua.mp3",
+        "sha256": "3e770fafcd018a78a3f3b4a52b41fbe0f86a6cd50cc6780a868e10374c522cc2"
+      },
+      {
+        "caminho": "audio/06_tico.mp3",
+        "sha256": "f31539d37c02722bb2cbcc576a654f9f125518f679fdcb87355c369b100aaab5"
+      },
+      {
+        "caminho": "audio/07_lua.mp3",
+        "sha256": "bd096e3b6ef73fbd959f09c995a6f6275787b18fe4172312ca801c820782dccf"
+      },
+      {
+        "caminho": "audio/08_tico.mp3",
+        "sha256": "6c7afcf9f908d2ed3ac93df46f948d25077d71df2e88e7496807418e78f39f6a"
+      },
+      {
+        "caminho": "audio/09_lua.mp3",
+        "sha256": "9d39190f95972c26bfd8af076f68f94fa304f1739e3acfd75eecfdad8fe267c4"
+      },
+      {
+        "caminho": "audio/10_tico.mp3",
+        "sha256": "2fc9c7140d89a2d095b573a64b2d9f75743587e2933627edf4bb51dfa4cabe33"
+      },
+      {
+        "caminho": "audio/11_tico.mp3",
+        "sha256": "4761195f12dbb6ef9d334d238c8b002d673750db8aba0bb7122e644f63056aa5"
+      },
+      {
+        "caminho": "audio/12_lua.mp3",
+        "sha256": "f66780b88fb19e9ea2c1aa1e56e63c9f12e1213ba31e234bba4c0c454abbdebb"
+      },
+      {
+        "caminho": "audio/13_tico.mp3",
+        "sha256": "6017a04c1796cdad47e20ae174e97fc36332417110d5b76260af2057c6711564"
+      },
+      {
+        "caminho": "audio/14_lua.mp3",
+        "sha256": "116852a4a00e866488618afa9d6e215147934e994d25111da99905fec4c4515b"
+      },
+      {
+        "caminho": "audio/15_tico.mp3",
+        "sha256": "9a4eceb419b5bb2548f3ed05849b77ac4cc01dd6af00a68f17665c366a5b0fb0"
+      },
+      {
+        "caminho": "audio/16_tico.mp3",
+        "sha256": "6af1c74249562091c9f5d28a3eee3aa7983dc31124905d62f727992169c9af4c"
+      },
+      {
+        "caminho": "audio/17_lua.mp3",
+        "sha256": "b697280ae37fbe7a78fbc42c26095044d13bc5b41afcbd1f996d16f92cd5ce82"
+      },
+      {
+        "caminho": "audio/18_lua.mp3",
+        "sha256": "11d9233fc83fcd8092e59943c4d3d487d5e819cc362def49fa9084cea9ffaf46"
+      },
+      {
+        "caminho": "audio/19_tico.mp3",
+        "sha256": "4da356e576a2ea0460d17771568b13e56aaeef7b734373c79da7c55592bf3995"
+      },
+      {
+        "caminho": "audio/20_lua.mp3",
+        "sha256": "4d3581d27773c3aacc7778b58a38813777503827dc48b151b341446341e59f52"
+      },
+      {
+        "caminho": "audio/limpas/01.wav",
+        "sha256": "e97243079bc229d3194471c187c8a1f1ea8cdad842e43399c7f5b6dd882066cf"
+      },
+      {
+        "caminho": "audio/limpas/02.wav",
+        "sha256": "e3f1876f576fa0b0369d57b78d2aff23eb34b83550461c12ba297be7760d2d08"
+      },
+      {
+        "caminho": "audio/limpas/03.wav",
+        "sha256": "c3cb08b3a5d46d315fa5da18bc2db02a0fcfc6f984f47db0714d8322b3baf2e0"
+      },
+      {
+        "caminho": "audio/limpas/04.wav",
+        "sha256": "94fda94d8e65e5e4bbe42281429ee55cdbef116ea96be3e725269fdc78205bed"
+      },
+      {
+        "caminho": "audio/limpas/05.wav",
+        "sha256": "fc1e174f8f1e2aa53db5daf437a3fd360937fe2458f67d9b07a7cd7fc73fd988"
+      },
+      {
+        "caminho": "audio/limpas/06.wav",
+        "sha256": "d980218699e8015881a88f63ef1040c83e811368cca0a52ee91789149015c661"
+      },
+      {
+        "caminho": "audio/limpas/07.wav",
+        "sha256": "94480ca401365fe33ea0b45b492baf83139ca5f836e323121d7424ef07fcbcf0"
+      },
+      {
+        "caminho": "audio/limpas/08.wav",
+        "sha256": "32932cb25721f5b337a3289f703db9fe51dd7c70770eeebc750b491e29aa1561"
+      },
+      {
+        "caminho": "audio/limpas/09.wav",
+        "sha256": "605b9b36abf0aa27f93e97b39bcec5e33afcce2262471f94e57b4e31f0f5114b"
+      },
+      {
+        "caminho": "audio/limpas/10.wav",
+        "sha256": "ecf7ba1d86269e28c2f5f254ffdfc8cf38e7af2f8e49a6aaebaae01e4e1ccbb1"
+      },
+      {
+        "caminho": "audio/limpas/11.wav",
+        "sha256": "b114bb5f866d4a9aaf889c9aed43eba9811e83eb2b7b5a7f99c457cb4e7e2601"
+      },
+      {
+        "caminho": "audio/limpas/12.wav",
+        "sha256": "b4d56cafbeb420fc0584b0d8465ad5e8d4255bb61d84ceb05cdfd1b622a7be80"
+      },
+      {
+        "caminho": "audio/limpas/13.wav",
+        "sha256": "0edb57e6d5c74b41a7b253837a587062a05370826f8c4e979883ac27983eefa4"
+      },
+      {
+        "caminho": "audio/limpas/14.wav",
+        "sha256": "693d1c0829f695ff272d0ccd390ea473cfa1d8e1d2dbda3a8f3dfb2ad1901d0d"
+      },
+      {
+        "caminho": "audio/limpas/15.wav",
+        "sha256": "ec4e4398f660c55d3376eaeb3ed5291224bc928a4fdd916dee8faa039b9b6b24"
+      },
+      {
+        "caminho": "audio/limpas/16.wav",
+        "sha256": "cdb6edd5fa1b9db698415bcebdc74217c22b49474cf110caaa6c87bd05b99c7c"
+      },
+      {
+        "caminho": "audio/limpas/17.wav",
+        "sha256": "db75e34a7ad6c87fe426ab508bd408ab4f7e2d2c2c6d787279e2e7a760ead5f4"
+      },
+      {
+        "caminho": "audio/limpas/18.wav",
+        "sha256": "d1055ae4e2ce60caf3f03992d321961eebe095167331c8788f605a0b24c9d586"
+      },
+      {
+        "caminho": "audio/limpas/19.wav",
+        "sha256": "e92329b5f4a9985f33910855d433ef44d35f7769222ac38c77e59e337591cb2b"
+      },
+      {
+        "caminho": "audio/limpas/20.wav",
+        "sha256": "d0b63a6b22694b2d5b31c7d1efbf4de73ec04bdab63f5c499b626c49ded7c2f5"
+      },
+      {
+        "caminho": "audio/master.wav",
+        "sha256": "224ed282caa429548c64a2a13e9a7d17b41050243c01916d44b1c9e2dbccae35"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/narracao.mp3",
+        "sha256": "e73693554b31eee2ecf05f8aa4e2551216ec1a36f96203a7f67e2abdfd77b33c"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/interpretacao.wav",
+        "sha256": "0f4118c3d64f26f4b1f2aeef4085e7a5cd5d225c8c2efead8878adf0733ac137"
+      },
+      {
+        "caminho": "audio/abertura-enfatica/interpretacao-3s.wav",
+        "sha256": "52ee3a3353182b893c80736dcdc259e29b87e8be2cc003ea085d59f6cc540db3"
+      }
+    ]
+  }
+}

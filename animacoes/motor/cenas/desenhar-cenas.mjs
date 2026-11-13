@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
+import { deduplicarCamadas } from './assets.mjs';
 import { corBaseDoPersonagem } from './camadas3d.mjs';
 
 const pasta = process.argv[2];
@@ -18,7 +19,7 @@ const chrome = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Applic
 // Cada template pode ter as próprias paletas; sem o arquivo, valem as do ilustrado.
 const textoVideo = fs.readFileSync(path.join(pasta, 'video.js'), 'utf8');
 const nomeTemplate = (textoVideo.match(/template: *'([a-z-]+)'/) || [])[1] || 'ilustrado';
-const arqPaletas = [`templates/${nomeTemplate}/paletas.js`, 'templates/ilustrado/paletas.js'].map((p) => path.join(raiz, p)).find((p) => fs.existsSync(p));
+const arqPaletas = [nomeTemplate==='filmes'?'motor/templates/ilustrado/paletas-filmes.js':`motor/templates/${nomeTemplate}/paletas.js`, 'motor/templates/ilustrado/paletas.js'].map((p) => path.join(raiz, p)).find((p) => fs.existsSync(p));
 const textoPaletas = fs.readFileSync(arqPaletas, 'utf8');
 const PALETAS = JSON.parse(textoPaletas.match(/const PALETAS = (\{[\s\S]*?\n\});/)[1]);
 const nomePaleta = (textoVideo.match(/paleta: *'([a-z-]+)'/) || [])[1] || 'petroleo';
@@ -157,5 +158,7 @@ for (const nome of fs.readdirSync(cenas).filter((n) => n.endsWith('.svg')).sort(
   console.log(path.join(saida, `${base}.png`), cam ? '(camadas)' : '');
 }
 await nav.close();
-// O template filmes lê este arquivo; nos outros templates ele é ignorado.
+const economia = deduplicarCamadas(pasta, CAMADAS);
+console.log(`Camadas compartilhadas: ${economia.arquivos} cópias evitadas.`);
+// Manifesto compartilhado pelos modos ilustrado e filmes.
 fs.writeFileSync(path.join(saida, 'camadas.js'), `const CAMADAS = ${JSON.stringify(CAMADAS, null, 1)};\n`);

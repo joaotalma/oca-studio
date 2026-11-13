@@ -8,7 +8,9 @@ raiz="$(cd "$(dirname "$0")/.." && pwd)"
 slug="$(basename "$pasta")"
 slug_config="$(sed -nE "s/.*slug: *'([a-z0-9-]+)'.*/\1/p" "$pasta/video.js" | head -1)"
 slug="${slug_config:-$slug}"
-audio="$raiz/audio/$slug"; film="$raiz/render/$slug"
+pasta="$(cd "$pasta" && pwd)"
+serie="${pasta%%/roteiros/*}"
+audio="$serie/audio/$slug"; film="$raiz/render/$slug"
 qa=(); producao=(); musica=()
 while [ $# -gt 0 ]; do
   case "$1" in

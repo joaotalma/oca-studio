@@ -8,7 +8,7 @@ const config='series/misterios-do-brasil/canal/voz-elevenlabs.json',acao=process
 async function request(route,data){const r=await fetch('https://api.elevenlabs.io/v1/'+route,{method:data?'POST':'GET',headers:{'xi-api-key':key,...(data?{'Content-Type':'application/json'}:{})},...(data?{body:JSON.stringify(data)}:{})});if(!r.ok)throw Error(`ElevenLabs HTTP ${r.status}: ${(await r.text()).slice(0,600)}`);return r.json();}
 if(acao==='criar') {
  if(fs.existsSync(config)){console.log('Voz existente preservada.');process.exit(0);}
- const dir='audio/elevenlabs/previas';fs.mkdirSync(dir,{recursive:true});
+ const dir='series/misterios-do-brasil/audio/elevenlabs/previas';fs.mkdirSync(dir,{recursive:true});
  const file=dir+'/design.json';
  const description='Original Brazilian Portuguese male narrator, age 25 to 30. Youthful, engaging, warm mid-pitched voice, clear Brazilian diction. Enthusiastic storytelling with genuine curiosity and cinematic tension, natural conversational energy, never shouting or sounding like a sales pitch. Measured pauses, about 150 words per minute. Dry studio audio, no music. Not an imitation of any real person.';
  let design;
@@ -22,7 +22,8 @@ if(acao==='criar') {
  const pasta=process.argv[3],e=JSON.parse(fs.readFileSync(config,'utf8'));
  const falas=vm.runInNewContext(fs.readFileSync(path.join(pasta,'falas.js'),'utf8')+';FALAS');
  const slug=vm.runInNewContext(fs.readFileSync(path.join(pasta,'video.js'),'utf8')+';VIDEO').slug||path.basename(pasta);
- const dir=path.join('audio',slug);fs.mkdirSync(dir,{recursive:true});
+ const origem=path.resolve(pasta),serie=origem.split(path.sep+'roteiros'+path.sep)[0];if(serie===origem)throw Error('Roteiro precisa estar em series/<serie>/roteiros/');
+ const dir=path.join(serie,'audio',slug);fs.mkdirSync(dir,{recursive:true});
  const file=path.join(dir,'alinhamento-completo.json'),texto=falas.map(f=>f.texto).join('\n');
  if(texto.length>2200)throw Error('Este pedido ultrapassa o limite local de 2200 caracteres por narração.');
  if(fs.existsSync(file)){const old=JSON.parse(fs.readFileSync(file,'utf8'));if(old.texto!==texto)throw Error('Texto mudou: preserve a geração anterior antes de refazer.');console.log('Narração já existente preservada.');process.exit(0);}

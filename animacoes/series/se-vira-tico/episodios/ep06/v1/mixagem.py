@@ -1,2 +1,0 @@
-def config(mx,I,E):
- return {'CUES':[(0,10.5,'apuro',.55),(28.5,33.3,'romance',.4),(33.3,42.8,'romance',.65),(42.8,53.8,'romance',.65),(58.8,60.8,'romance',.55),(60.8,65.8,'voto',.6)],'EFEITOS':[(1.3,mx.fx_clique,.25),(4.5,mx.fx_passagem,.4),(8.6,mx.fx_notificacao,.25),(30.65,mx.fx_clique,.2),(38.3,mx.fx_clique,.2),(53.8,mx.fx_notificacao,.25)],'LATIDOS':[],'VOZ_INTERFONE':set(),'APITO':set(),'MOTORES':[(1.8,8.5,.045)]}

@@ -62,7 +62,7 @@ Estudo feito em 2026-11-12, a pedido do João, comparando o que os agentes entre
 21. **Prova de que o público decide:** placar real do voto (com 10 votos ou mais) e destaque de quem comentou, sem pedir nada.
 22. **Antes de gravar voz, mostre a estimativa de créditos** do ElevenLabs. Os scripts só gravam com `--confirmar`.
 
-Fonte e análise: `referencias/videos-analisados/temporada-viral-metodo.md`.
+Fonte e análise: `docs/referencias/temporada-viral-metodo.md`.
 
 ## 3. Como o João trabalha (para acertar o processo)
 
@@ -70,7 +70,7 @@ Fonte e análise: `referencias/videos-analisados/temporada-viral-metodo.md`.
 - **Ele aprova curto** ("Ficou perfeito!") e corrige em lista. Aplique a lista inteira na mesma rodada e confira se nada antigo sobrou (`erros.md` 11).
 - **O oficial é o que está no Drive.** Antes de chamar uma versão de final, confira a cópia do Drive.
 - **Erro apontado vira regra na hora.** Ele pediu o registro permanente em 10/11. Use o `erros.md` do Tico e esta página.
-- **Ele aceita ousar no formato** (narração em primeira pessoa, relógio na tela, temporada de 60 s) quando a proposta vem com referência analisada (os 13 vídeos em `referencias/videos-analisados/`).
+- **Ele aceita ousar no formato** (narração em primeira pessoa, relógio na tela, temporada de 60 s) quando a proposta vem com referência analisada (os 13 vídeos em `docs/referencias/`).
 
 ## 4. Antes de mostrar qualquer coisa ao João
 

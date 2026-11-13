@@ -156,7 +156,7 @@ function cenaPortaClassica(aberta, dia = false) {
 }
 function cenaPorta(aberta, dia = false) { return organico() ? PortaRica.porta(aberta, dia) : cenaPortaClassica(aberta, dia); }
 /* ---------- porta do Conjunto, versão rica (padrão desde 10/11/2026) ----------
-   Estudo estudos/visual-2d, aprovado pelo João: camadas com profundidade, materiais e luz motivada (sol
+   Estudo visual-2d (fora da árvore desde 12/11/2026; commit 4b2fae3), aprovado pelo João: camadas com profundidade, materiais e luz motivada (sol
    pela direita de dia; poste, janela e porta acesas à noite). Mantém placas, vaso, lixeira, fios e reboco
    da versão clássica, que continua em cenaPortaClassica para o estilo 'classico'. */
 const PortaRica = (() => {

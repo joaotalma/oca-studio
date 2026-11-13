@@ -1,60 +1,16 @@
-# Se Vira, Tico: instruções para agentes
+# Se Vira, Tico — instruções
 
-Este arquivo vale para o Claude Code e para o Codex. Responda ao autor em português do Brasil.
+Responda em português do Brasil. Use o motor único em `../../motor/` e as dependências de `animacoes/node_modules/`.
 
-## Onde está cada coisa
-
-- **Fluxo de produção:** `.claude/skills/se-vira-tico/SKILL.md` e a pasta `references/` ao lado dele. Leia antes de escrever roteiro, montar cena, renderizar ou revisar um episódio.
-- **História:** `docs/BIBLIA.md`. Ela ainda traz nomes antigos: valem os do `README.md`.
-- **Decisões pendentes:** `episodios/BACKLOG.md`.
-- **Vozes:** `docs/VOZES.md`.
-- **Render no Windows:** `docs/NOTAS_WINDOWS.md`. Use o Git Bash.
-- **Motor (Oca Studio):** o Tico usa o motor único em `../../motor/`. O rig, os cenários e o motor de cena ficam em `motor/personagem/`; mixagem, sincronia e masterização em `motor/audio/`; QA em `motor/qa/`; e o exportador Take One em `motor/take-one/`. Aqui ficam só os dados da série: episódios (com `mixagem.py`), vozes, assets do elenco e a bíblia.
-- **Estilo do rig:** o padrão é o orgânico (pupila preta, membros curvos, sombra). Os eps. 1 a 6 fixam `ESTILO_RIG = 'classico'` no `ep.js` para continuarem iguais. Episódio novo usa o orgânico, a não ser que o autor peça o clássico.
-
-## Regras do projeto
-
-- **Publicação:** só o autor publica. Não poste nem agende nada.
-- **Licença das vozes:** os eps. 1 e 2 usam OmniVoice, de licença não comercial: não monetize esses dois e mantenha o crédito na legenda. Do ep. 3 em diante as vozes são do ElevenLabs (`docs/VOZES.md`). Antes de monetizar, confirme na página oficial que o plano do autor permite uso comercial.
-- **Git:** depois que o autor aceitar uma alteração, faça o commit e o push na branch de trabalho sem perguntar de novo. Inclua só os arquivos dessa alteração e nunca envie direto para a `main`. Merge só a pedido do autor.
-- **Vídeos e áudios:** o vídeo final aprovado vai para `animacoes/entregas/se-vira-tico/epNN/` (ou `demitido-antes-do-gta/diaNN/`), com uma pasta por rede, e continua com cópia no Drive. Rascunhos e áudios brutos ficam fora do git, exceto as falas do spin-off, em `audio/demitido-gta6-*/`. Referências de voz ficam em `audio/vozes/`; não as apague.
-- **Rig:** edite `../../motor/personagem/chars.js`, nunca as cópias nas pastas de episódio. Ele é compartilhado: depois de mexer, rode `motor/qa/quadros.mjs comparar` nos episódios para garantir que nenhum episódio pronto mudou sem querer.
-- **Obras de terceiros:** não copie personagens, músicas ou cenas de outras obras.
-
-## Quem faz o quê
-
-O autor pode trocar estes papéis a qualquer momento. Um pedido dele na conversa vale mais que esta lista. Fora do seu papel, pergunte antes de agir.
-
-- **Claude Code gera:** escreve o roteiro, monta as cenas, renderiza, mixa e roda o QA. Fica com o render porque os scripts estão fora do projeto e o sandbox do Codex pode bloqueá-los.
-- **Codex revisa:** lê o que foi entregue e aponta problemas. Só escreve em `episodios/epNN/revisao.md`, sem alterar o trabalho revisado. Pode propor uma fala ou correção, mas quem aplica é o gerador, depois da decisão do autor.
-- **O autor decide:** escolhe o que entra, resolve discordâncias e assiste ao vídeo antes de publicar. Só ele julga som e graça.
-
-A análise de vídeos do YouTube é feita pelo autor no Cowork. Se houver um resumo em arquivo, leia só quando o autor pedir: as ideias entram na série pela decisão dele.
-
-### O que revisar em cada etapa
-
-| Etapa | O gerador entrega | O revisor confere |
-|---|---|---|
-| Roteiro | Roteiro a partir do pré-roteiro vencedor | Bíblia e regras: tom, personagens, piadas, duração e votação |
-| Cenas | Poses, câmera e cenários em código | Alterações do commit: bugs e regras quebradas |
-| Vídeo | Render, mixagem e relatório de QA | Relatório e folhas de quadros: membros, boca, legenda e cortes |
-
-### Ciclo
-
-1. **Entrega:** o gerador conclui uma etapa e, quando o autor aceitar, faz o commit e o push na branch do episódio.
-2. **Revisão:** a pedido do autor, o revisor analisa esse commit e escreve em `episodios/epNN/revisao.md`.
-3. **Classificação:** cada item aponta o arquivo ou o momento do vídeo e vem marcado como **bloqueia** ou **sugestão**.
-4. **Correção:** o autor escolhe o que entra, e o gerador corrige.
-5. **Limite:** no máximo duas rodadas por etapa. Depois disso, o autor decide.
-
-## Dois agentes ao mesmo tempo
-
-- **Em turnos:** o revisor só começa depois da entrega, e o gerador só volta a editar depois da revisão. Nunca edite um arquivo que o outro agente está editando.
-- **Arquivos que afetam tudo:** só um agente por vez mexe em `personagens/` e `scripts/`.
-- **Render:** um por vez, porque os dois disputam o Chrome e a mesma pasta `render/`.
-- **Antes de editar:** rode `git status`. Se houver alteração que não é sua, não reverta nem inclua no seu commit.
-- **Worktree:** áudios, `node_modules/` e as cópias geradas nas pastas de episódio não vão para um worktree novo. Copie ou gere esses arquivos antes de renderizar nele.
-
-## Finalização e QA (12/11/2026)
-
-Usar o fluxo único em `../../motor/FLUXO-RAPIDO.md`: rascunho 540×960/15 fps com gate completo; master 1080×1920/30 fps uma vez, QA leve e aprovação final automática autorizada. Revisão editorial e de direitos continua necessária. Só João publica. A T1 do Tico termina no EP6; roteiros 7–10 excluídos.
+- Fluxo canônico: `docs/PRODUCAO.md`. Elenco, roteiro, erros, regras, postagem e checklist também ficam em `docs/`. `.agents` e `.claude` são atalhos gerados por `npm run instrucoes`, a partir de animacoes/.
+- História em `docs/BIBLIA.md`; nomes atuais no README. Dados reais em `resultados/`; propostas para Shorts/TikTok em `reconstrucao/`. Próximos passos em `../../docs/PLANO.md`.
+- T1 encerrada no EP6. Fontes oficiais em `episodios/ep01` a `ep06`. Versões anteriores e scripts específicos de produção ficam no histórico do Git, não no caminho ativo.
+- Spin-off em `demitido-gta6/`, com bíblia, episódios e `GUIA-CAPAS.md` aprovado. Não aplicar automaticamente sua identidade à série romântica.
+- Rig em `../../motor/personagem/`. Episódios antigos fixam o clássico; novos usam orgânico salvo decisão do autor. Ao alterar desenho, comparar quadros dos episódios prontos. Cópias preparadas não são fonte para editar.
+- Preparação: `bash scripts/preparar-film.sh episodios/epNN`. QA da série: `node scripts/qa-episodio.mjs <filme> <video>`. Fluxo rápido em `../../motor/FLUXO-RAPIDO.md`.
+- Roteiro e âncoras mantêm aceite explícito. Finalização automática autorizada em 12/11/2026, após revisão e QA, sem pedir novo aceite final. Só João publica; não publicar nem agendar.
+- Commit e push somente a pedido; usar branch de trabalho. Não fazer merge na main sem pedido.
+- Vídeos finais em `../../entregas/`. `render/` é saída local ignorada, não segunda entrega oficial. As fontes únicas dos pacotes do EP6 estão catalogadas em `audio/ep06/fontes.json`, com restauração byte a byte por `../../motor/audio/restaurar-fontes.mjs`.
+- Preservar vozes e configurações. Os episódios 1 e 2 usam OmniVoice com licença não comercial; manter os créditos e não monetizar esses dois. ElevenLabs segue as autorizações e licenças em `docs/VOZES.md`. Não gerar voz nem gastar créditos sem autorização.
+- Não copiar personagens, músicas, cenas ou assets de terceiros. Não inventar votos ou mudar acontecimentos já publicados ao reconstruir episódios.
+- Um render por vez. Respeitar alterações em andamento de outros agentes e nunca incluir trabalho alheio no commit sem conferir.

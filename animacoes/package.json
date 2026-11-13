@@ -1,9 +1,15 @@
 {
-  "name": "plotline",
+  "name": "oca-studio-animacoes",
   "version": "0.1.0",
-  "description": "Kit gerador de vídeos curtos narrados",
+  "description": "Kit gerador de v\u00eddeos curtos narrados",
   "private": true,
   "dependencies": {
-    "playwright-core": "^1.64.1"
+    "playwright-core": "^1.64.1",
+    "@elevenlabs/elevenlabs-js": "^2.77.0"
+  },
+  "scripts": {
+    "test": "node --test motor/testes/*.test.mjs",
+    "test:visual": "node docs/visual/testar.mjs",
+    "instrucoes": "node motor/sincronizar-instrucoes.mjs"
   }
 }

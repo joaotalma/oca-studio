@@ -1,6 +1,6 @@
 # Formato explicativo dos Mistérios
 
-Adotado pelo João em 2026-11-12, a partir do formato do Planeta Desmontado (análise em `animacoes/referencias/videos-analisados/temporada-viral-metodo.md`). Ele complementa o gancho "Imagine..." do canal e responde ao feedback do piloto do apagão: a pauta precisa despertar curiosidade **hoje**, sem depender de alguém lembrar do fato.
+Adotado pelo João em 2026-11-12, a partir do formato do Planeta Desmontado (análise em `animacoes/docs/referencias/temporada-viral-metodo.md`). Ele complementa o gancho "Imagine..." do canal e responde ao feedback do piloto do apagão: a pauta precisa despertar curiosidade **hoje**, sem depender de alguém lembrar do fato.
 
 ## A linha do vídeo (de 40 a 65 s)
 

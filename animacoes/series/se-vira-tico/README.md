@@ -1,27 +1,26 @@
 # Se Vira, Tico
 
-Comédia romântica animada em 2D para TikTok. Episódios verticais de 90 s, com votação A/B no clímax: o desfecho vencedor abre o episódio seguinte. A história está em `docs/BIBLIA.md`.
+Comédia romântica animada em 2D. A primeira temporada terminou no episódio 6; os vídeos oficiais estão em [entregas/se-vira-tico](../../entregas/se-vira-tico). O spin-off atual é [Demitido Antes do GTA](demitido-gta6/BIBLIA.md).
 
-## Elenco
+| Pasta | Conteúdo |
+|---|---|
+| episodios/ | Fontes oficiais dos seis episódios da T1 |
+| demitido-gta6/ | Bíblia, guia de capas e episódios do spin-off |
+| audio/ | Vozes, alinhamentos e fontes sonoras preservadas |
+| docs/ | Produção, história, elenco, vozes e aprendizados da série |
+| scripts/ | Comandos específicos da série; motor compartilhado em ../../motor/ |
+| personagens/ | Folhas e estudo de poses do elenco |
+| reconstrucao/ | Propostas de roteiro para Shorts/TikTok; não substituem os publicados |
+| resultados/ | Métricas reais dos vídeos |
 
-- **Tico**, 31, vive de bicos: prefere inventar a confessar
-- **Lua**, 30, vizinha de infância e primeiro crush, analista: "tá tudo ótimo"
-- **Jão**, 33, motoboy: pavio curto e coração mole
-- **Letícia**, 29, coach de mindset: "Gratidão!"
-- **Fiscal**, vira-lata do prédio: late quando alguém mente
-- **Dona Marlene**, mãe do Tico, só voz
-
-## Como rodar
-
-Requisitos: Node.js 20 ou superior, ffmpeg e Google Chrome.
-
-Para regenerar as folhas de personagens em `personagens/assets/`:
+As dependências são instaladas uma única vez em `animacoes/`. Não rodar npm install nesta pasta. As chaves locais continuam em `.env.local`, fora do Git.
 
 ```bash
-cd personagens
-node gen-assets.js
+bash scripts/preparar-film.sh episodios/ep06
+# Recupera o som original do pacote final sem API, custo ou reconversão:
+node ../../motor/audio/restaurar-fontes.mjs audio/ep06/fontes.json render/ep06-restaurado
 ```
 
-O rig está em `../../motor/personagem/chars.js`, e as regras de montagem em `personagens/MONTAGEM_DO_RIG.md`. Para experimentar poses e expressões, abra `personagens/estudio.html` no navegador. Os episódios ficam em `episodios/`.
+A restauração preserva os caminhos do pacote, incluindo `audio/master.wav`. Versões anteriores podem ser recuperadas pelo nome do pacote no catálogo. Todos os 53 áudios únicos foram preservados; WAVs estão comprimidos sem perda e MP3s mantêm os bytes originais.
 
-Vídeos e áudios finais não vão para o git: guarde-os no Drive.
+Só João publica. Finalização e QA: [../../motor/FLUXO-RAPIDO.md](../../motor/FLUXO-RAPIDO.md). Capas do spin-off: [demitido-gta6/GUIA-CAPAS.md](demitido-gta6/GUIA-CAPAS.md).

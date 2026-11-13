@@ -1,3 +1,0 @@
-def config(mx,I,E):
- data={'CUES': [(0, 7.2, 'apuro', 0.5), (7.2, 10.714, 'alegre', 0.45), (10.714, 13.171, 'alegre', 0.4), (23.798000000000002, 31.072, 'romance', 0.6), (31.072, 34.772, 'romance', 0.6), (34.772, 39.68300000000001, 'apuro', 0.25), (44.606, 52.085, 'romance', 0.45), (52.085, 58.372, 'romance', 0.45), (59.772, 64.072, 'romance', 0.65)], 'FX': [(7.2, 'fx_passagem', 0.35), (27.471, 'fx_clique', 0.2)], 'MOTORES': [(0, 10.714, 0.04)]}
- return {'CUES':data['CUES'],'EFEITOS':[(t,getattr(mx,name),g) for t,name,g in data['FX']],'MOTORES':data['MOTORES'],'LATIDOS':[],'VOZ_INTERFONE':set(),'APITO':set()}

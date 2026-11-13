@@ -1,7 +1,7 @@
 # Peças de cena do canal de filmes (template filmes). Completa motor/cenas/cenas-lib.py, sem mudá-lo.
 # Técnicas tiradas da referência de 2026-11-07: céu em degradê de fim de tarde, sol estourado,
 # silhuetas desfocadas em primeiro plano, contorno de luz, poeira no ar e efeitos com brilho frio.
-# Nada de personagem, cenário ou figurino de filme: os bonecos são arquétipos (ver templates/filmes/README.md).
+# Nada de personagem, cenário ou figurino de filme: os bonecos são arquétipos (ver motor/templates/ilustrado/FILMES.md).
 #
 # Uso: junte DEFS_FILMES às DEFS da cena e monte o corpo com as funções abaixo.
 
