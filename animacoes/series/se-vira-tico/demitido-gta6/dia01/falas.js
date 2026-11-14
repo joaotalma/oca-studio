@@ -25,6 +25,6 @@ const FALAS = [
  { "n": 22, "ini": 110.8, "fim": 115.0, "quem": "Kauã (narração)", "texto": "Mandei já garanti. Agora a mentira tem seis dias pra virar verdade." },
  { "n": 23, "ini": 115.4, "fim": 117.2, "quem": "Kauã (narração)", "texto": "Abri o grupo de bicos do bairro." },
  { "n": 24, "ini": 117.6, "fim": 123.0, "quem": "Kauã (narração)", "texto": "Opção um: fantasia de celular na porta da loja. Oitenta por dia. Num calor de trinta e quatro graus." },
- { "n": 25, "ini": 123.4, "fim": 125.6, "quem": "Kauã (narração)", "texto": "Opção dois: passear cachorro. Quinze por cachorro." },
+ { "n": 25, "ini": 123.4, "fim": 125.6, "quem": "Kauã (narração)", "texto": "Opção dois: passear com cachorro. Quinze por cachorro." },
  { "n": 26, "ini": 126.4, "fim": 128.0, "quem": "Kauã (narração)", "texto": "Eu tenho medo de cachorro." }
 ];

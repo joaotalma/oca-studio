@@ -18,3 +18,6 @@ Thumbs.db
 
 # Exceção (decisão do João, 12/11/2026): os vídeos finais aprovados ficam no git, em animacoes/entregas/
 !animacoes/entregas/**/*.mp4
+
+# Exceção solicitada por João em 14/11/2026: pacote do teste visual com seus vídeos.
+!teste_visual/*.mp4

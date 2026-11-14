@@ -135,7 +135,7 @@
   - "PASSEADOR DE CÃES. R$ 15 por cachorro." A foto mostra seis cachorros puxando guias, e um deles é enorme.
 - **23 · Kauã (narração):** "Abri o grupo de bicos do bairro."
 - **24 · Kauã (narração):** "Opção um: fantasia de celular na porta da loja. Oitenta por dia. Num calor de trinta e quatro graus."
-- **25 · Kauã (narração):** "Opção dois: passear cachorro. Quinze por cachorro."
+- **25 · Kauã (narração):** "Opção dois: passear com cachorro. Quinze por cachorro."
 - **Imagem:** um latido pelo celular; ele se encolhe na cama.
 - **26 · Kauã (narração):** "Eu tenho medo de cachorro."
 

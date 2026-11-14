@@ -28,7 +28,7 @@ Geradas no ElevenLabs com `scripts/gerar-vozes-elevenlabs.mjs` (rodar de `series
 | `22_kauanarra.mp3` | Kauã (narração) | Mandei já garanti. Agora a mentira tem seis dias pra virar verdade. |
 | `23_kauanarra.mp3` | Kauã (narração) | Abri o grupo de bicos do bairro. |
 | `24_kauanarra.mp3` | Kauã (narração) | Opção um: fantasia de celular na porta da loja. Oitenta por dia. Num calor de trinta e quatro graus. |
-| `25_kauanarra.mp3` | Kauã (narração) | Opção dois: passear cachorro. Quinze por cachorro. |
+| `25_kauanarra.mp3` | Kauã (narração) | Opção dois: passear com cachorro. Quinze por cachorro. |
 | `26_kauanarra.mp3` | Kauã (narração) | Eu tenho medo de cachorro. |
 
-Total: 26 falas, 1331 caracteres.
+Total: 26 falas, 1335 caracteres.

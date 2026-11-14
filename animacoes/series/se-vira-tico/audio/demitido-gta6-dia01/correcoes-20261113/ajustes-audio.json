@@ -1,0 +1,34 @@
+{
+  "creditosAutorizados": 154,
+  "gerados": [
+    24,
+    25
+  ],
+  "ganhoOriginal": 0.6999500405489322,
+  "ajustes": [
+    {
+      "n": 24,
+      "inicio": 118.402,
+      "fim": 126.03897916666666,
+      "velocidade": 1.0099242992566324,
+      "amostras": 366575,
+      "janelaMaster": [
+        118.357,
+        126.12397916666667
+      ]
+    },
+    {
+      "n": 25,
+      "inicio": 126.439,
+      "fim": 130.411875,
+      "velocidade": 1.0567231958384462,
+      "amostras": 190698,
+      "janelaMaster": [
+        126.394,
+        130.496875
+      ]
+    }
+  ],
+  "mixForaDasFalasIdentico": true,
+  "masterForaDasCorrecoesIdentico": true
+}

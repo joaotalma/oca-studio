@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "estado": "aprovado",
+  "modo": "automatico_autorizado",
+  "autorizadoPor": "João",
+  "autorizacao": "Pedido de aprovação automática ao finalizar, 2026-11-12",
+  "quando": "2026-11-13T13:36:47.076Z",
+  "assistidoPeloJoao": false,
+  "video": "video.mp4",
+  "videoHash": "3b1a0bc38a528a1fbf6aaf394a58d0f931e2d551224050a86785f3aae80448f3",
+  "qa": {
+    "schema": 1,
+    "quando": "2026-11-13T13:35:18.398Z",
+    "modo": "final-completo",
+    "aprovado": true,
+    "mudo": false,
+    "temAudio": true,
+    "fonte": "0f791b96c0efec03fbce561105d655e38efce7cea5ee79012f95a9cdf98bf582",
+    "video": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia01-hibrido-r2\\dia01-hibrido-r2-final.mp4",
+    "videoHash": "3b1a0bc38a528a1fbf6aaf394a58d0f931e2d551224050a86785f3aae80448f3",
+    "audioOrigem": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\series\\se-vira-tico\\audio\\demitido-gta6-dia01\\correcoes-20261113\\dia01-master-corrigido.wav",
+    "audioOrigemHash": "eee2077c1b696e8554790e46a4eae0712f35263d5fca8813e1ed58f2a789ac86",
+    "politica": {
+      "faixa": [
+        105,
+        140
+      ],
+      "semDuracao": false,
+      "semTexto": true,
+      "leitura": null,
+      "qa": "d14ee57e7623308fa4299c950111ca62357c001e72a825b7209d282d2bc2c6ef",
+      "gate": "a5c87519c79b586d24c12b4f8f4e3fc4e7d1a88e62f88376131af6003d2500c1",
+      "registro": "d95882b7e504a28aee878f8dd19c9b88f3a92fcb7f0a7ab99a64244531c950cb"
+    },
+    "gateCompleto": true,
+    "rascunho": null,
+    "dimensoes": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "duracao": 139,
+    "itens": [
+      {
+        "nome": "Duração",
+        "estado": "APROVADO",
+        "detalhe": "139.00 s (esperado 105-140 s)"
+      },
+      {
+        "nome": "Resolução",
+        "estado": "APROVADO",
+        "detalhe": "1080x1920 (esperado 1080x1920)"
+      },
+      {
+        "nome": "Quadros por segundo",
+        "estado": "APROVADO",
+        "detalhe": "30.00 (esperado 30)"
+      },
+      {
+        "nome": "Loudness",
+        "estado": "APROVADO",
+        "detalhe": "-16.1 LUFS (esperado -16 ±1)"
+      },
+      {
+        "nome": "Sem isca de engajamento",
+        "estado": "APROVADO",
+        "detalhe": "nenhum pedido de comentário, envio ou marcação"
+      },
+      {
+        "nome": "Gate",
+        "estado": "APROVADO",
+        "detalhe": "7 de 7 itens"
+      },
+      {
+        "nome": "Fonte estável",
+        "estado": "APROVADO",
+        "detalhe": "nenhuma alteração durante o QA"
+      }
+    ]
+  },
+  "revisao": {
+    "fonte": "0f791b96c0efec03fbce561105d655e38efce7cea5ee79012f95a9cdf98bf582",
+    "videoHash": "3b1a0bc38a528a1fbf6aaf394a58d0f931e2d551224050a86785f3aae80448f3",
+    "visual": true,
+    "conteudoDireitos": true,
+    "bloqueios": [],
+    "responsavel": "Codex — revisão localizada da legenda, regressão de 3806 quadros e conferência técnica completa",
+    "autorizacao": "João autorizou corrigir as duas falas e até 154 créditos; manter 34 graus.",
+    "conferencias": {
+      "imagem": {
+        "quadrosTotais": 4170,
+        "quadrosPreservados": 3806,
+        "intervaloRenderizado": [
+          121.1,
+          133.233333333333
+        ],
+        "imagemForaDoTrechoIdentica": true
+      },
+      "transcricaoAutomatica": {
+        "24": "Opção 1. Fantasia de celular na porta da loja, 80 por dia, um calor de 34 graus.",
+        "25": "Opção 2, passear com cachorro, 15 por cachorro."
+      }
+    },
+    "limites": "Transcrição automática confere as palavras, não substitui escuta subjetiva de entonação e pronúncia."
+  },
+  "publicacao": "manual_pelo_Joao",
+  "redes": [
+    "instagram"
+  ],
+  "limite": "Aprovação delegada após QA técnico; não afirma que João assistiu nem que houve julgamento artístico automático."
+}

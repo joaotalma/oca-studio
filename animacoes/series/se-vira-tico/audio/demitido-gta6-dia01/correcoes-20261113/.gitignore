@@ -1,0 +1,7 @@
+# Intermediários e cópias anteriores permanecem locais; originais anteriores já estão no histórico do Git.
+*
+!.gitignore
+!README.md
+!ajustes-audio.json
+!transcricao-conferencia.json
+!transcricao-master.json

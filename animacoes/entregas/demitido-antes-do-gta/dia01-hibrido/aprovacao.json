@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "estado": "aprovado",
+  "modo": "automatico_autorizado",
+  "autorizadoPor": "João",
+  "autorizacao": "Pedido de aprovação automática ao finalizar, 2026-11-12",
+  "quando": "2026-11-13T13:09:13.997Z",
+  "assistidoPeloJoao": false,
+  "video": "video.mp4",
+  "videoHash": "93985c53d8c4d27f1e733c7c512baef3e2e570e76950efb92d5b97b081e4382b",
+  "qa": {
+    "schema": 1,
+    "quando": "2026-11-13T13:08:46.820Z",
+    "modo": "final-completo",
+    "aprovado": true,
+    "mudo": false,
+    "temAudio": true,
+    "fonte": "a11398c2b0ca8d7b37432fbd4bb8cf236bc4923e365b5282fa126a46b904abd0",
+    "video": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia01-hibrido\\dia01-hibrido-final.mp4",
+    "videoHash": "93985c53d8c4d27f1e733c7c512baef3e2e570e76950efb92d5b97b081e4382b",
+    "audioOrigem": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\series\\se-vira-tico\\render\\demitido-gta6\\dia01_master.wav",
+    "audioOrigemHash": "44d7b67831f8aa6b8ac9faf7750a062da1b487a49c19e5515a4e125a395bba0b",
+    "politica": {
+      "faixa": [
+        105,
+        140
+      ],
+      "semDuracao": false,
+      "semTexto": true,
+      "leitura": null,
+      "qa": "d14ee57e7623308fa4299c950111ca62357c001e72a825b7209d282d2bc2c6ef",
+      "gate": "a5c87519c79b586d24c12b4f8f4e3fc4e7d1a88e62f88376131af6003d2500c1",
+      "registro": "d95882b7e504a28aee878f8dd19c9b88f3a92fcb7f0a7ab99a64244531c950cb"
+    },
+    "gateCompleto": true,
+    "rascunho": null,
+    "dimensoes": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "duracao": 138.986667,
+    "itens": [
+      {
+        "nome": "Duração",
+        "estado": "APROVADO",
+        "detalhe": "138.99 s (esperado 105-140 s)"
+      },
+      {
+        "nome": "Resolução",
+        "estado": "APROVADO",
+        "detalhe": "1080x1920 (esperado 1080x1920)"
+      },
+      {
+        "nome": "Quadros por segundo",
+        "estado": "APROVADO",
+        "detalhe": "30.00 (esperado 30)"
+      },
+      {
+        "nome": "Loudness",
+        "estado": "APROVADO",
+        "detalhe": "-16.1 LUFS (esperado -16 ±1)"
+      },
+      {
+        "nome": "Sem isca de engajamento",
+        "estado": "APROVADO",
+        "detalhe": "nenhum pedido de comentário, envio ou marcação"
+      },
+      {
+        "nome": "Gate",
+        "estado": "APROVADO",
+        "detalhe": "7 de 7 itens"
+      },
+      {
+        "nome": "Fonte estável",
+        "estado": "APROVADO",
+        "detalhe": "nenhuma alteração durante o QA"
+      }
+    ]
+  },
+  "revisao": {
+    "fonte": "a11398c2b0ca8d7b37432fbd4bb8cf236bc4923e365b5282fa126a46b904abd0",
+    "videoHash": "93985c53d8c4d27f1e733c7c512baef3e2e570e76950efb92d5b97b081e4382b",
+    "visual": true,
+    "conteudoDireitos": true,
+    "bloqueios": [],
+    "responsavel": "Codex — inspeção dos quadros do master e revisão independente das âncoras",
+    "visualAprovadoPeloJoao": true,
+    "autorizacao": "ficou bom, pode renderizar tudo — 13/11/2026",
+    "audio": "Faixa AAC copiada sem recodificação; hash igual ao vídeo aprovado.",
+    "limites": "Inspeção visual por amostragem; não afirma audição subjetiva ou ausência de qualquer falha entre amostras.",
+    "sugestoesNaoBloqueadoras": [
+      "Melhorar polegares/pegada em futura revisão do rig; não alterar os quadros agora aprovados."
+    ]
+  },
+  "publicacao": "manual_pelo_Joao",
+  "redes": [
+    "instagram"
+  ],
+  "limite": "Aprovação delegada após QA técnico; não afirma que João assistiu nem que houve julgamento artístico automático."
+}

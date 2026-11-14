@@ -9,43 +9,43 @@
   },
   {
    "palavra": "um:",
-   "ini": 0.56,
+   "ini": 0.64,
    "fim": 1.28
   },
   {
    "palavra": "fantasia",
    "ini": 1.4,
-   "fim": 1.92
+   "fim": 1.84
   },
   {
    "palavra": "de",
-   "ini": 2,
-   "fim": 2.04
+   "ini": 1.92,
+   "fim": 1.96
   },
   {
    "palavra": "celular",
-   "ini": 2.08,
-   "fim": 2.64
+   "ini": 2,
+   "fim": 2.56
   },
   {
    "palavra": "na",
-   "ini": 2.72,
-   "fim": 2.8
+   "ini": 2.64,
+   "fim": 2.72
   },
   {
    "palavra": "porta",
-   "ini": 2.96,
-   "fim": 3.2
+   "ini": 2.88,
+   "fim": 3.16
   },
   {
    "palavra": "da",
-   "ini": 3.28,
-   "fim": 3.36
+   "ini": 3.2,
+   "fim": 3.28
   },
   {
    "palavra": "loja.",
-   "ini": 3.44,
-   "fim": 3.96
+   "ini": 3.36,
+   "fim": 3.76
   },
   {
    "palavra": "Oitenta",
@@ -54,47 +54,47 @@
   },
   {
    "palavra": "por",
-   "ini": 4.8,
+   "ini": 4.72,
    "fim": 4.88
   },
   {
    "palavra": "dia.",
    "ini": 4.96,
-   "fim": 5.48
+   "fim": 5.28
   },
   {
    "palavra": "Num",
-   "ini": 5.68,
+   "ini": 5.6,
    "fim": 5.76
   },
   {
    "palavra": "calor",
    "ini": 5.84,
-   "fim": 6.08
+   "fim": 6.16
   },
   {
    "palavra": "de",
-   "ini": 6.16,
+   "ini": 6.28,
    "fim": 6.4
   },
   {
    "palavra": "trinta",
-   "ini": 6.44,
-   "fim": 6.72
+   "ini": 6.48,
+   "fim": 6.8
   },
   {
    "palavra": "e",
-   "ini": 6.8,
-   "fim": 6.88
+   "ini": 6.88,
+   "fim": 6.96
   },
   {
    "palavra": "quatro",
-   "ini": 6.92,
-   "fim": 7.2
+   "ini": 7,
+   "fim": 7.28
   },
   {
    "palavra": "graus.",
-   "ini": 7.36,
+   "ini": 7.44,
    "fim": 8.16
   }
  ]
