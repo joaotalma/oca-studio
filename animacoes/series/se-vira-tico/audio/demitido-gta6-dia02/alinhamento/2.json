@@ -1,0 +1,51 @@
+{
+ "n": 2,
+ "texto": "Ontem vocês votaram. Hoje eu sou o Celular Feliz!",
+ "palavras": [
+  {
+   "palavra": "Ontem",
+   "ini": 0.16,
+   "fim": 0.56
+  },
+  {
+   "palavra": "vocês",
+   "ini": 0.6,
+   "fim": 0.96
+  },
+  {
+   "palavra": "votaram.",
+   "ini": 1,
+   "fim": 1.96
+  },
+  {
+   "palavra": "Hoje",
+   "ini": 2.24,
+   "fim": 2.64
+  },
+  {
+   "palavra": "eu",
+   "ini": 2.72,
+   "fim": 2.96
+  },
+  {
+   "palavra": "sou",
+   "ini": 3,
+   "fim": 3.12
+  },
+  {
+   "palavra": "o",
+   "ini": 3.2,
+   "fim": 3.28
+  },
+  {
+   "palavra": "Celular",
+   "ini": 3.36,
+   "fim": 3.76
+  },
+  {
+   "palavra": "Feliz!",
+   "ini": 3.92,
+   "fim": 4.695
+  }
+ ]
+}

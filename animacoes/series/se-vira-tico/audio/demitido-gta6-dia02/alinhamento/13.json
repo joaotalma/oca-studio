@@ -1,0 +1,76 @@
+{
+ "n": 13,
+ "texto": "Seis da tarde. Oitenta reais. Menos trinta de lavagem da fantasia. Nerfaram meu salário.",
+ "palavras": [
+  {
+   "palavra": "Seis",
+   "ini": 0.16,
+   "fim": 0.32
+  },
+  {
+   "palavra": "da",
+   "ini": 0.4,
+   "fim": 0.48
+  },
+  {
+   "palavra": "tarde.",
+   "ini": 0.56,
+   "fim": 1.059
+  },
+  {
+   "palavra": "Oitenta",
+   "ini": 1.148,
+   "fim": 1.548
+  },
+  {
+   "palavra": "reais.",
+   "ini": 1.628,
+   "fim": 2.278
+  },
+  {
+   "palavra": "Menos",
+   "ini": 2.406,
+   "fim": 2.726
+  },
+  {
+   "palavra": "trinta",
+   "ini": 2.886,
+   "fim": 3.126
+  },
+  {
+   "palavra": "de",
+   "ini": 3.206,
+   "fim": 3.286
+  },
+  {
+   "palavra": "lavagem",
+   "ini": 3.406,
+   "fim": 3.766
+  },
+  {
+   "palavra": "da",
+   "ini": 3.806,
+   "fim": 3.846
+  },
+  {
+   "palavra": "fantasia.",
+   "ini": 3.926,
+   "fim": 4.722
+  },
+  {
+   "palavra": "Nerfaram",
+   "ini": 4.841,
+   "fim": 5.332
+  },
+  {
+   "palavra": "meu",
+   "ini": 5.372,
+   "fim": 5.492
+  },
+  {
+   "palavra": "salário.",
+   "ini": 5.572,
+   "fim": 6.292
+  }
+ ]
+}

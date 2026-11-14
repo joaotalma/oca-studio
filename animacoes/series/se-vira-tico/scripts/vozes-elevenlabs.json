@@ -72,5 +72,11 @@
   "referencia": "kaua",
   "estabilidade": 0.72,
   "nota": "Kauã narrando (Demitido Antes do GTA): mesma voz, registro mais calmo."
+ },
+ "kaua2": {
+  "voiceId": "QMn56k5SqrEnsOpFnAOP",
+  "previa": "kaua3t_2",
+  "referencia": null,
+  "nota": "Voz do Kauã a partir do Dia 2 (escolha do João em 14/11/2026). A `kaua` segue no Dia 1."
  }
 }

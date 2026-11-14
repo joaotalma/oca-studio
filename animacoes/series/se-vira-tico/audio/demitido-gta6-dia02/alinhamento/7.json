@@ -1,0 +1,86 @@
+{
+ "n": 7,
+ "texto": "Disputa pelo ponto da fonte. Quem ganha, é visto. Quem perde, é esquecido. Igual meu currículo.",
+ "palavras": [
+  {
+   "palavra": "Disputa",
+   "ini": 0.267,
+   "fim": 0.56
+  },
+  {
+   "palavra": "pelo",
+   "ini": 0.64,
+   "fim": 0.8
+  },
+  {
+   "palavra": "ponto",
+   "ini": 0.96,
+   "fim": 1.2
+  },
+  {
+   "palavra": "da",
+   "ini": 1.24,
+   "fim": 1.28
+  },
+  {
+   "palavra": "fonte.",
+   "ini": 1.44,
+   "fim": 2
+  },
+  {
+   "palavra": "Quem",
+   "ini": 2.16,
+   "fim": 2.32
+  },
+  {
+   "palavra": "ganha,",
+   "ini": 2.4,
+   "fim": 2.88
+  },
+  {
+   "palavra": "é",
+   "ini": 3.04,
+   "fim": 3.12
+  },
+  {
+   "palavra": "visto.",
+   "ini": 3.2,
+   "fim": 3.773
+  },
+  {
+   "palavra": "Quem",
+   "ini": 3.861,
+   "fim": 3.957
+  },
+  {
+   "palavra": "perde,",
+   "ini": 4.117,
+   "fim": 4.757
+  },
+  {
+   "palavra": "é",
+   "ini": 4.917,
+   "fim": 4.997
+  },
+  {
+   "palavra": "esquecido.",
+   "ini": 5.077,
+   "fim": 5.761
+  },
+  {
+   "palavra": "Igual",
+   "ini": 5.837,
+   "fim": 6.077
+  },
+  {
+   "palavra": "meu",
+   "ini": 6.117,
+   "fim": 6.237
+  },
+  {
+   "palavra": "currículo.",
+   "ini": 6.317,
+   "fim": 7.037
+  }
+ ]
+}
