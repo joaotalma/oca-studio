@@ -1,6 +1,6 @@
 #!/bin/bash
 # Do roteiro ao vídeo. Sem narração em audio/<slug>/, gera um render mudo com os tempos estimados.
-# Uso: bash motor/montar.sh series/misterios-do-brasil/roteiros/<slug> [--rascunho] [--sem-duracao] [--musica faixa.wav]
+# Uso: bash motor/montar.sh series/misterios-do-brasil/roteiros/<slug> [--rascunho] [--sem-duracao] [--musica faixa.wav] [--partes N]
 # Grave em audio/<slug>/narracao.wav (ou .m4a, .mp3, .flac). Rode pelo Git Bash.
 set -euo pipefail
 pasta="${1:?pasta do roteiro}"; pasta="${pasta%/}"; shift
@@ -16,6 +16,7 @@ while [ $# -gt 0 ]; do
   case "$1" in
     --rascunho) producao+=(--rascunho) ;;
     --entrega) producao+=(--entrega "$2"); shift ;;
+    --partes) producao+=(--partes "$2"); shift ;;
     --sem-duracao) qa+=(--sem-duracao) ;;
     --musica) musica=(--musica "$2"); shift ;;
     *) echo "opção desconhecida: $1" >&2; exit 2 ;;

@@ -1,0 +1,36 @@
+{
+ "n": 3,
+ "texto": "Já apareceu comprador. Vai dar certo.",
+ "palavras": [
+  {
+   "palavra": "Já",
+   "ini": 0.08,
+   "fim": 0.2
+  },
+  {
+   "palavra": "apareceu",
+   "ini": 0.24,
+   "fim": 0.72
+  },
+  {
+   "palavra": "comprador.",
+   "ini": 0.8,
+   "fim": 1.56
+  },
+  {
+   "palavra": "Vai",
+   "ini": 1.76,
+   "fim": 1.92
+  },
+  {
+   "palavra": "dar",
+   "ini": 2,
+   "fim": 2.08
+  },
+  {
+   "palavra": "certo.",
+   "ini": 2.16,
+   "fim": 2.8
+  }
+ ]
+}

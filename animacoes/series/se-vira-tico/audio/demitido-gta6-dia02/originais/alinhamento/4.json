@@ -1,0 +1,16 @@
+{
+ "n": 4,
+ "texto": "Servidor, mãe.",
+ "palavras": [
+  {
+   "palavra": "Servidor,",
+   "ini": 0.32,
+   "fim": 1.08
+  },
+  {
+   "palavra": "mãe.",
+   "ini": 1.28,
+   "fim": 1.92
+  }
+ ]
+}

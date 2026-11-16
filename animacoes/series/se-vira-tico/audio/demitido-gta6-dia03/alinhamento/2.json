@@ -1,0 +1,51 @@
+{
+ "n": 2,
+ "texto": "Vocês escolheram: vender a cadeira. Cento e cinquenta reais.",
+ "palavras": [
+  {
+   "palavra": "Vocês",
+   "ini": 0.08,
+   "fim": 0.4
+  },
+  {
+   "palavra": "escolheram:",
+   "ini": 0.48,
+   "fim": 1.24
+  },
+  {
+   "palavra": "vender",
+   "ini": 1.44,
+   "fim": 1.92
+  },
+  {
+   "palavra": "a",
+   "ini": 1.947,
+   "fim": 1.973
+  },
+  {
+   "palavra": "cadeira.",
+   "ini": 2,
+   "fim": 2.587
+  },
+  {
+   "palavra": "Cento",
+   "ini": 3.36,
+   "fim": 3.6
+  },
+  {
+   "palavra": "e",
+   "ini": 3.64,
+   "fim": 3.68
+  },
+  {
+   "palavra": "cinquenta",
+   "ini": 3.76,
+   "fim": 4.08
+  },
+  {
+   "palavra": "reais.",
+   "ini": 4.24,
+   "fim": 4.96
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "n": 11,
+ "texto": "Era o Pedrão. O Pedrão! O do garantido.",
+ "palavras": [
+  {
+   "palavra": "Era",
+   "ini": 0.069,
+   "fim": 0.16
+  },
+  {
+   "palavra": "o",
+   "ini": 0.2,
+   "fim": 0.24
+  },
+  {
+   "palavra": "Pedrão!",
+   "ini": 0.32,
+   "fim": 1.08
+  },
+  {
+   "palavra": "O",
+   "ini": 1.28,
+   "fim": 1.36
+  },
+  {
+   "palavra": "Pedrão!",
+   "ini": 1.44,
+   "fim": 2.28
+  },
+  {
+   "palavra": "O",
+   "ini": 2.549,
+   "fim": 2.56
+  },
+  {
+   "palavra": "do",
+   "ini": 2.64,
+   "fim": 2.72
+  },
+  {
+   "palavra": "garantido.",
+   "ini": 2.8,
+   "fim": 4
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "estado": "aprovado",
+  "modo": "automatico_autorizado",
+  "autorizadoPor": "João",
+  "autorizacao": "Pedido de aprovação automática ao finalizar, 2026-11-12",
+  "quando": "2026-11-15T19:37:39.857Z",
+  "assistidoPeloJoao": false,
+  "video": "video.mp4",
+  "videoHash": "95fa4c77eb1daf982c92db0274b57b910fed40112169158be87fa9a7f7091402",
+  "qa": {
+    "schema": 1,
+    "quando": "2026-11-15T19:37:28.383Z",
+    "modo": "final-leve",
+    "aprovado": true,
+    "mudo": false,
+    "temAudio": true,
+    "fonte": "6a19b38831da95a63cccd21d438ca1775a57cf7a9802c7325a309ded47d5f8a7",
+    "video": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia03-hq\\final.mp4",
+    "videoHash": "95fa4c77eb1daf982c92db0274b57b910fed40112169158be87fa9a7f7091402",
+    "audioOrigem": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia03-final\\audio-master.wav",
+    "audioOrigemHash": "5fb87b88ef04bd421b9c36735932d0cc133497a4a3796a51303f72ed285d465b",
+    "politica": {
+      "faixa": [
+        105,
+        140
+      ],
+      "semDuracao": false,
+      "semTexto": true,
+      "leitura": "c0edae38562070c5621738cc43ff0d0b7d0318789bb57233f0b5083b4ebc7947",
+      "qa": "d14ee57e7623308fa4299c950111ca62357c001e72a825b7209d282d2bc2c6ef",
+      "gate": "a5c87519c79b586d24c12b4f8f4e3fc4e7d1a88e62f88376131af6003d2500c1",
+      "registro": "d95882b7e504a28aee878f8dd19c9b88f3a92fcb7f0a7ab99a64244531c950cb"
+    },
+    "gateCompleto": false,
+    "rascunho": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia03-hq\\qa-resultados\\qa-rascunho.json",
+    "dimensoes": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "duracao": 107,
+    "itens": [
+      {
+        "nome": "Duração",
+        "estado": "APROVADO",
+        "detalhe": "107.00 s (esperado 105-140 s)"
+      },
+      {
+        "nome": "Resolução",
+        "estado": "APROVADO",
+        "detalhe": "1080x1920 (esperado 1080x1920)"
+      },
+      {
+        "nome": "Quadros por segundo",
+        "estado": "APROVADO",
+        "detalhe": "30.00 (esperado 30)"
+      },
+      {
+        "nome": "Loudness",
+        "estado": "APROVADO",
+        "detalhe": "-15.9 LUFS (esperado -16 ±1)"
+      },
+      {
+        "nome": "Sem isca de engajamento",
+        "estado": "APROVADO",
+        "detalhe": "nenhum pedido de comentário, envio ou marcação"
+      },
+      {
+        "nome": "Pausas visuais",
+        "estado": "DECLARADAS",
+        "detalhe": "6 intervalos justificados, ver series/se-vira-tico/demitido-gta6/dia03/hq/pausas-visuais.json; exigem conferência à vista, não aprovação automática."
+      },
+      {
+        "nome": "Gate",
+        "estado": "APROVADO",
+        "detalhe": "gate completo do rascunho reutilizado; fonte, áudio, regras e MP4 conferidos por SHA-256"
+      },
+      {
+        "nome": "Amostras do master",
+        "estado": "APROVADO",
+        "detalhe": "8 quadros em resolução original: C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia03-hq\\qa-resultados\\amostras-final; decodificação, não julgamento artístico"
+      },
+      {
+        "nome": "Fonte estável",
+        "estado": "APROVADO",
+        "detalhe": "nenhuma alteração durante o QA"
+      }
+    ]
+  },
+  "revisao": {
+    "fonte": "6a19b38831da95a63cccd21d438ca1775a57cf7a9802c7325a309ded47d5f8a7",
+    "videoHash": "95fa4c77eb1daf982c92db0274b57b910fed40112169158be87fa9a7f7091402",
+    "visual": true,
+    "conteudoDireitos": true,
+    "bloqueios": [],
+    "responsavel": "Claude — revisão visual e editorial própria; sem revisão independente",
+    "evidencias": [
+      "8 amostras do master em resolução original",
+      "Quadros do final conferidos (gancho, cadeira, CRAAC, regra nº 3, loja, áudio do Jão, votação 103–107 s)",
+      "Gate completo do rascunho 7/7",
+      "21 gravações reutilizadas; efeitos e música sintetizados (música mais baixa a pedido do João); 4 risadas reais e efeito Ops do pack de edição do João; música com duck sob a voz",
+      "Áudio medido no MP4 em -15,9 LUFS",
+      "Direitos: jogo de futebol genérico; GTA 6 só citado; preços da história são ficção"
+    ],
+    "limites": "Direitos pendentes: as risadas (\"Risadas de Fundo\") e o efeito \"Ops\" vêm de um pack do João em pasta chamada \"chaves\"; origem e licença não verificadas, o que pesa em publicação e monetização. Sem julgamento auditivo humano: música e posicionamento das risadas só conferidos por níveis e espectrograma. Queda do Marcos usa rotação do mesmo rig; cabelo usa os cachos aprovados.",
+    "quando": "2026-11-15T19:37:39.654Z"
+  },
+  "publicacao": "manual_pelo_Joao",
+  "redes": [
+    "instagram"
+  ],
+  "limite": "Aprovação delegada após QA técnico; não afirma que João assistiu nem que houve julgamento artístico automático."
+}

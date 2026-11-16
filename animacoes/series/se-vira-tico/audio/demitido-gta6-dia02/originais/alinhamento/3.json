@@ -1,0 +1,36 @@
+{
+ "n": 3,
+ "texto": "Filho, o que tem nessa sacola?",
+ "palavras": [
+  {
+   "palavra": "Filho,",
+   "ini": 0.16,
+   "fim": 0.64
+  },
+  {
+   "palavra": "o",
+   "ini": 0.88,
+   "fim": 0.96
+  },
+  {
+   "palavra": "que",
+   "ini": 1.04,
+   "fim": 1.12
+  },
+  {
+   "palavra": "tem",
+   "ini": 1.2,
+   "fim": 1.36
+  },
+  {
+   "palavra": "nessa",
+   "ini": 1.48,
+   "fim": 1.64
+  },
+  {
+   "palavra": "sacola?",
+   "ini": 1.68,
+   "fim": 2.64
+  }
+ ]
+}

@@ -4,6 +4,10 @@ Spin-off do Se Vira, Tico em **temporada relâmpago**: 7 episódios, um por dia,
 
 **Estado:** Dia 1 produzido e vídeo final aprovado explicitamente pelo João em 12/11/2026. Registro em `../../../entregas/demitido-antes-do-gta/dia01/aprovacao.json`.
 
+**Dia 2 concluído em 14/11/2026:** roteiro v4 e elenco aprovados pelo João; HQ V10 com luta 3D, 107,1 s após revisão do João (sem selfie/mãe, escolha única e novo CTA). Vídeo final aprovado pelo fluxo delegado após gate 7/7, revisão independente e QA do master. Registro em `../../../entregas/demitido-antes-do-gta/dia02/aprovacao.json`. Saldo final R$ 13,20; pacto com Pedrão; próximo caminho depende do voto real CADEIRA ou CAMISA. Publicação manual pelo João.
+
+**Dia 3 concluído em 15/11/2026 ("A Cadeira"):** roteiro v2 aprovado pelo João; 107 s, HQ V10, com música e risadas sintetizadas, 21 falas gravadas e efeitos sintetizados; QA 7/7 e entrega em `../../../entregas/demitido-antes-do-gta/dia03/`. Voto do Dia 2: CADEIRA (a cadeira quebra com o Marcos). Voto do Dia 3: JÃO ou NOVO, que define a retomada do Dia 4. Método do João: cada episódio é uma escada (gancho "Faltam N dias e eu só tenho R$ X" → "vou fazer A porque vocês escolheram" → ele faz A → dá errado → novo problema), e toda etapa se explica sozinha. Publicação manual pelo João.
+
 ## A série em uma frase (vira a descrição de todo post)
 
 > **O Kauã foi demitido 7 dias antes do GTA 6. Os amigos já compraram. Ele tem R$ 3,20 e um controle que anda sozinho.**
@@ -71,7 +75,7 @@ O que cada final muda vem entre parênteses: o que ele **carrega** na imagem dal
 | Dia | Relógio | O episódio | Voto | Se A vencer | Se B vencer |
 |---|---|---|---|---|---|
 | 1 (13/11) | 6 dias, R$ 3,20 | Demitido por e-mail (com emoji). Os amigos compram e ele responde "já garanti 😎". No grupo de bicos do bairro, dois anúncios | **FANTASIA** (mascote de celular na porta da loja, R$ 80 por dia, 34 °C e rosto escondido) / **CACHORROS** (passeador, R$ 15 por cachorro, e ele tem medo de cachorro) | Vira o "Celular Feliz" na porta do shopping. Os amigos passam, tiram selfie com o mascote e falam dele sem saber que é ele. (Ele **carrega** a fantasia e o calor; **descobre** que o Pedrão também está apertado) | Passeia seis cachorros, e o maior é **do CEO que o demitiu**, que não o reconhece. (Ele **carrega** um vira-lata que passa a segui-lo, o "Patrão"; **descobre** onde o CEO mora) |
-| 2 (14/11) | 5 dias | O bico rende pouco, e o grupo combina rachar a pizza da noite (R$ 40 cada). Faltam dinheiro e dignidade | **CAMA** (vende a cama e dorme na cadeira gamer até o dia 19) / **CAMISA** (vende a camisa autografada do time, o maior tesouro dele) | Dorme torto na cadeira: olheira e torcicolo daí em diante | Fica com a moldura vazia na parede, que aparece em todo episódio |
+| 2 (14/11) | 5 dias | O bico rende pouco, e o grupo combina rachar a pizza da noite (R$ 40 cada). Faltam dinheiro e dignidade | **CADEIRA** (vende a cadeira gamer e joga no chão até o dia 19; trocado de CAMA em 14/11/2026) / **CAMISA** (vende a camisa autografada do time, o maior tesouro dele) | Joga sentado no chão, com a coluna e o pescoço reclamando daí em diante | Fica com a moldura vazia na parede, que aparece em todo episódio |
 | 3 (15/11) | 4 dias | **Virada: o controle morre de vez** e o analógico sai na mão. Sem controle, não tem jogo. A meta sobe (preço a conferir) | **JÃO** (o tio conserta com ferramenta de moto) / **NOVO** (compra outro; a meta dobra) | O controle volta, mas cheira a gasolina e agora anda para a **direita** | A barra ganha um segundo item, "+ controle", e o prazo é o mesmo |
 | 4 (16/11) | 3 dias | Vende os Doces da Lua dentro do ônibus (participação da Lua, que lhe dá uma caixa) | **CANTA** (inventa um jingle) / **CHORA** (conta uma história triste, e é tudo verdade) | O jingle gruda e vira o assunto do bairro, e a melodia volta nos episódios seguintes | O ônibus inteiro se emociona e compra tudo, mas ele **descobre** que contar a verdade em voz alta vende (semente do Dia 7) |
 | 5 (17/11) | 2 dias | Aparece a "chave do GTA 6 por R$ 49" (golpe). Ele percebe na hora do Pix | **EXPÕE** (avisa o grupo do bairro e salva o Pedrão, que ia cair) / **ENROLA** (faz o golpista perder a tarde inteira) | Vira herói do bairro, e a mãe vê o post | O golpista desiste dele, e ele ganha o print mais engraçado da semana |
@@ -92,6 +96,18 @@ O que cada final muda vem entre parênteses: o que ele **carrega** na imagem dal
 
 1. **A voz nova do Kauã** no ElevenLabs. A regra do projeto diz que vozes novas são decisão sua. Proposta: voz original masculina e jovem (de 18 a 25 anos), carioca ou paulista, criada por descrição como o narrador dos Mistérios.
 2. **Nome e título:** Kauã, 21, e "Demitido Antes do GTA" estão provisórios.
+
+## Visual dos episódios — HQ V10 a partir do Dia 2 (aprovado em 14/11/2026)
+
+O João aprovou a segunda amostra HQ V10 (`dia01/estudos/hq-v10-15s-v2/`) e decidiu: **é o padrão do spin-off a partir do Dia 2**. O Dia 1 publicado fica como está, no visual híbrido (`dia01-hibrido-r2`); não refazer nem misturar estilos dentro de um mesmo episódio.
+
+- Linguagem: composição de HQ em quadro fixo, desenhada em código para cada plano (não é filtro sobre o motor com câmera). Partir de `dia01/estudos/hq-v10-15s-v2/direcao-hq.js` como referência e copiar para a pasta do dia, anotando a origem.
+- Personagens: rosto limpo, sem retícula nem papel sobre a pele; retícula só na roupa e no ambiente. Cabelo do Kauã com base firme e cachos com movimento próprio dependente do tempo; topete do Júnior deforma pelas pontas. Identidade do Kauã preservada.
+- Cor e tipografia: explosões em pêssego, rosa e lilás (a mesma família da capa); textos de destaque em faixa escura própria, letras claras e espaçadas; legenda em caixa escura com texto creme.
+- Dinheiro: mão aberta, moedas pequenas e etiqueta de papel discreta, sem repetir a explosão.
+- Cenários com vida: o quarto com cadeira gasta, livros, som, caneca, console, tomada, cabos e objetos no chão; escritório coerente com o horário da cena.
+- **Exceção do Dia 2 (decisão do João em 14/11/2026):** a luta de dança do Celular Feliz contra o Hambúrguer Louco é em **3D** (uma tela de luta de arcade dentro da história). O resto do episódio segue em HQ V10. Não vale para os outros dias sem nova decisão.
+- Cada plano novo (telas, chat, HUD, votação) precisa ser redesenhado nessa linguagem. Nos planos sem precedente, mostrar uma amostra curta ao João antes do master. O cabelo exige avaliação artística dele, não só QA.
 
 ## Capas — padrão aprovado em 12/11/2026
 

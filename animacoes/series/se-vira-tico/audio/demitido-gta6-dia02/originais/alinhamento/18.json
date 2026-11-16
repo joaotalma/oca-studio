@@ -1,0 +1,66 @@
+{
+ "n": 18,
+ "texto": "Sobraram duas coisas de valor: a cadeira gamer ou a camisa autografada.",
+ "palavras": [
+  {
+   "palavra": "Sobraram",
+   "ini": 0.08,
+   "fim": 0.56
+  },
+  {
+   "palavra": "duas",
+   "ini": 0.64,
+   "fim": 0.96
+  },
+  {
+   "palavra": "coisas",
+   "ini": 1.04,
+   "fim": 1.44
+  },
+  {
+   "palavra": "de",
+   "ini": 1.48,
+   "fim": 1.52
+  },
+  {
+   "palavra": "valor.",
+   "ini": 1.6,
+   "fim": 2.2
+  },
+  {
+   "palavra": "A",
+   "ini": 2.48,
+   "fim": 2.52
+  },
+  {
+   "palavra": "cadeira",
+   "ini": 2.56,
+   "fim": 2.88
+  },
+  {
+   "palavra": "gamer.",
+   "ini": 2.96,
+   "fim": 3.64
+  },
+  {
+   "palavra": "Ou",
+   "ini": 3.84,
+   "fim": 4.16
+  },
+  {
+   "palavra": "a",
+   "ini": 4.56,
+   "fim": 4.6
+  },
+  {
+   "palavra": "camisa",
+   "ini": 4.64,
+   "fim": 5.04
+  },
+  {
+   "palavra": "autografada.",
+   "ini": 5.12,
+   "fim": 6.24
+  }
+ ]
+}

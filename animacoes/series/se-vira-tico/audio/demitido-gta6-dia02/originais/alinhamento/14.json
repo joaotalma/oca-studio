@@ -1,0 +1,56 @@
+{
+ "n": 14,
+ "texto": "Três e vinte mais cinquenta. Cinquenta e três e vinte.",
+ "palavras": [
+  {
+   "palavra": "Três",
+   "ini": 0.08,
+   "fim": 0.32
+  },
+  {
+   "palavra": "e",
+   "ini": 0.4,
+   "fim": 0.48
+  },
+  {
+   "palavra": "vinte",
+   "ini": 0.64,
+   "fim": 0.96
+  },
+  {
+   "palavra": "mais",
+   "ini": 1.12,
+   "fim": 1.36
+  },
+  {
+   "palavra": "cinquenta.",
+   "ini": 1.48,
+   "fim": 2.28
+  },
+  {
+   "palavra": "Cinquenta",
+   "ini": 2.56,
+   "fim": 2.96
+  },
+  {
+   "palavra": "e",
+   "ini": 3.04,
+   "fim": 3.12
+  },
+  {
+   "palavra": "três",
+   "ini": 3.16,
+   "fim": 3.28
+  },
+  {
+   "palavra": "e",
+   "ini": 3.36,
+   "fim": 3.44
+  },
+  {
+   "palavra": "vinte.",
+   "ini": 3.52,
+   "fim": 4.24
+  }
+ ]
+}

@@ -37,6 +37,15 @@ export const PERSONAGENS = {
   // Spin-off "Demitido Antes do GTA": voz original criada só por descrição (sem clipe de referência), autorizada pelo João em 12/11/2026.
   kaua: { ref: null, desc: 'Brazilian Portuguese young man around 21, youthful mid-pitched voice, ironic and tired gamer who stayed up until 3am, fast casual urban Brazilian slang, self-deprecating humor, friendly and expressive.',
     texto: 'Faltam seis dias pro GTA 6 e eu tenho três reais e vinte. Fui demitido por e-mail, e o e-mail tinha emoji. Mas tá tudo bem, eu tô ótimo, sério.' },
+  // Voz nova do Kauã para o Dia 2 (decisão do João em 14/11/2026). Não substitui a `kaua` do Dia 1.
+  kaua2: { ref: null, desc: 'Brazilian Portuguese young man around 20, high-energy, very fast talker, sarcastic and funny, like a gamer telling gossip to his friends, slight raspy laugh in the throat, casual urban Paulista/Carioca slang, expressive and punchy, absolutely not a radio announcer.',
+    texto: 'Faltam cinco dias pro GTA 6. Eu tenho três e vinte. E tô vestido de celular. Hora quatro, eu achei que o calor era o chefão. Não era. Nerfaram meu salário, mano!' },
+  // 2ª rodada (as prévias kaua2 saíram desanimadas): energia muito mais alta.
+  kaua3: { ref: null, desc: 'Brazilian Portuguese young man around 19, extremely energetic and animated, hyper, loud and excited, talks very fast with big pitch swings, comedic and mischievous like a streamer or YouTuber reacting to something wild, laughs while talking, lots of enthusiasm and attitude, bright and punchy tone, never monotone, never tired, never calm, never a radio announcer.',
+    texto: '[excited] Faltam cinco dias pro GTA 6!! Eu tenho três e vinte!! E tô vestido de CELULAR, mano! [laughs] Hora quatro, eu achei que o calor era o chefão... não era! Nerfaram meu salário, pelo amor de Deus!' },
+  // Mesma descrição e seed da kaua3, lendo texto com troca de tom dentro da fala (falas 1 e 16 do Dia 2).
+  kaua3t: { ref: null, desc: 'Brazilian Portuguese young man around 19, extremely energetic and animated, hyper, loud and excited, talks very fast with big pitch swings, comedic and mischievous like a streamer or YouTuber reacting to something wild, laughs while talking, lots of enthusiasm and attitude, bright and punchy tone, never monotone, never tired, never calm, never a radio announcer.',
+    texto: '[excited] Faltam cinco dias pro GTA 6! [deflated] [sighs] Mas eu só tenho três e vinte... [muffled] [sarcastic] E tô vestido de celular. [resigned] Eu já fui o salgadinho. Não ia sentar no chão. [sarcastic] Ainda. [defeated] [sighs] Paguei. [dry] Sobraram treze e vinte e uma dignidade fatiada.' },
 };
 
 const client = new ElevenLabsClient();
@@ -46,7 +55,7 @@ async function previas(lista) {
   for (const nome of lista) {
     const p = PERSONAGENS[nome];
     const ref = p.ref ? fs.readFileSync(path.join(RAIZ, 'audio', 'vozes', `${p.ref}.wav`)).toString('base64') : null;
-    const r = await client.textToVoice.design({ voiceDescription: p.desc, modelId: 'eleven_ttv_v3', text: p.texto, ...(ref ? { referenceAudioBase64: ref, promptStrength: .25 } : {}), outputFormat: 'mp3_44100_128', seed: 7 });
+    const r = await client.textToVoice.design({ voiceDescription: p.desc, modelId: 'eleven_ttv_v3', text: p.texto, ...(ref ? { referenceAudioBase64: ref, promptStrength: .25 } : {}), outputFormat: 'mp3_44100_128', seed: Number(process.env.SEED || 7) });
     const ids = {};
     r.previews.forEach((pv, i) => {
       fs.writeFileSync(path.join(PREVIAS, `${nome}_${i}.mp3`), Buffer.from(pv.audioBase64, 'base64'));

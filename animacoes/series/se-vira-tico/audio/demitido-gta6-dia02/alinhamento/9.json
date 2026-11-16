@@ -1,0 +1,116 @@
+{
+ "n": 9,
+ "texto": "Aí o Léo e o Rafa passaram. Abraçaram o mascote e falaram que o Kauã ia longe. Eu estava a dois palmos.",
+ "palavras": [
+  {
+   "palavra": "Aí",
+   "ini": 0.08,
+   "fim": 0.24
+  },
+  {
+   "palavra": "o",
+   "ini": 0.28,
+   "fim": 0.32
+  },
+  {
+   "palavra": "Léo",
+   "ini": 0.4,
+   "fim": 0.56
+  },
+  {
+   "palavra": "e",
+   "ini": 0.64,
+   "fim": 0.667
+  },
+  {
+   "palavra": "o",
+   "ini": 0.693,
+   "fim": 0.72
+  },
+  {
+   "palavra": "Rafa",
+   "ini": 0.8,
+   "fim": 1.04
+  },
+  {
+   "palavra": "passaram.",
+   "ini": 1.2,
+   "fim": 1.704
+  },
+  {
+   "palavra": "Abraçaram",
+   "ini": 1.833,
+   "fim": 2.233
+  },
+  {
+   "palavra": "o",
+   "ini": 2.313,
+   "fim": 2.393
+  },
+  {
+   "palavra": "mascote",
+   "ini": 2.473,
+   "fim": 2.793
+  },
+  {
+   "palavra": "e",
+   "ini": 2.833,
+   "fim": 2.873
+  },
+  {
+   "palavra": "falaram",
+   "ini": 2.953,
+   "fim": 3.193
+  },
+  {
+   "palavra": "que",
+   "ini": 3.233,
+   "fim": 3.273
+  },
+  {
+   "palavra": "o",
+   "ini": 3.313,
+   "fim": 3.353
+  },
+  {
+   "palavra": "Kauã",
+   "ini": 3.406,
+   "fim": 3.593
+  },
+  {
+   "palavra": "ia",
+   "ini": 3.713,
+   "fim": 3.833
+  },
+  {
+   "palavra": "longe.",
+   "ini": 3.993,
+   "fim": 4.351
+  },
+  {
+   "palavra": "Eu",
+   "ini": 4.436,
+   "fim": 4.516
+  },
+  {
+   "palavra": "estava",
+   "ini": 4.596,
+   "fim": 4.836
+  },
+  {
+   "palavra": "a",
+   "ini": 4.996,
+   "fim": 5.049
+  },
+  {
+   "palavra": "dois",
+   "ini": 5.103,
+   "fim": 5.316
+  },
+  {
+   "palavra": "palmos.",
+   "ini": 5.356,
+   "fim": 6.116
+  }
+ ]
+}

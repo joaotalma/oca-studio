@@ -1,0 +1,36 @@
+{
+ "n": 6,
+ "texto": "O Marcos tem... um pouquinho mais.",
+ "palavras": [
+  {
+   "palavra": "O",
+   "ini": 0.16,
+   "fim": 0.2
+  },
+  {
+   "palavra": "Marcos",
+   "ini": 0.24,
+   "fim": 0.8
+  },
+  {
+   "palavra": "tem...",
+   "ini": 0.88,
+   "fim": 1.68
+  },
+  {
+   "palavra": "um",
+   "ini": 1.84,
+   "fim": 2
+  },
+  {
+   "palavra": "pouquinho",
+   "ini": 2.04,
+   "fim": 2.48
+  },
+  {
+   "palavra": "mais.",
+   "ini": 2.56,
+   "fim": 3.28
+  }
+ ]
+}

@@ -10,7 +10,7 @@ const motor=path.dirname(fileURLToPath(import.meta.url));
 const args=process.argv.slice(2), pasta=path.resolve(args.shift()||'.');
 const op={}, qa=[];
 for(let i=0;i<args.length;i++) {
-  if(['--audio','--saida','--entrega','--origem'].includes(args[i])) op[args[i]]=args[++i];
+  if(['--audio','--saida','--entrega','--origem','--partes'].includes(args[i])) op[args[i]]=args[++i];
   else if(args[i]==='--rascunho') op.rascunho=true;
   else if(['--sem-duracao','--sem-texto','--mudo'].includes(args[i])) qa.push(args[i]);
   else if(['--duracao','--leitura','--checklist'].includes(args[i])) { qa.push(args[i],args[++i]); }
@@ -21,6 +21,9 @@ if(!audio && !op.rascunho) throw new Error('Sem áudio: use --rascunho; render m
 if(audio && !fs.existsSync(audio)) throw new Error('Áudio não encontrado.');
 if(!fs.existsSync(path.join(pasta,'film.html'))) throw new Error('Prepare film.html antes de produzir.');
 const dir=path.join(pasta,'qa-resultados');fs.mkdirSync(dir,{recursive:true});
+// Trechos renderizados ao mesmo tempo (export.mjs PARTES). 3 foi o mais rápido num notebook de 8 GB (medido em 12/11/2026);
+// acima disso a memória vira o limite. --partes 1 volta ao render sequencial.
+const partes=Math.max(1,Math.round(Number(op['--partes']??process.env.PARTES??3)))||1;
 const run=(cmd,argv,env={})=>new Promise((resolve,reject)=>{
   const p=spawn(cmd,argv,{cwd:pasta,env:{...process.env,...env},stdio:'inherit'});
   p.on('error',reject);p.on('close',code=>code===0?resolve():reject(new Error(`${path.basename(cmd)} falhou (${code}). Produção interrompida.`)));
@@ -28,7 +31,7 @@ const run=(cmd,argv,env={})=>new Promise((resolve,reject)=>{
 async function render(w,h,fps,nome) {
   const fonteAntes=hashFonte(pasta);
   const imagem=path.join(dir,`${nome}-imagem.mp4`),video=path.join(dir,`${nome}.mp4`);
-  await run(process.execPath,[path.join(pasta,'export.mjs'),String(fps),imagem],{W:String(w),H:String(h),SLOW:'1',START:'0',END:'',SUB:'1',ALPHA:'',FILM:'film.html'});
+  await run(process.execPath,[path.join(pasta,'export.mjs'),String(fps),imagem],{W:String(w),H:String(h),SLOW:'1',START:'0',END:'',SUB:'1',ALPHA:'',FILM:'film.html',PARTES:String(partes)});
   if(audio) await run('ffmpeg',['-v','error','-y','-i',imagem,'-i',audio,'-c:v','copy','-c:a','aac','-b:a','192k','-ar','48000','-shortest','-movflags','+faststart',video]);
   else fs.copyFileSync(imagem,video);
   if(fonteAntes!==hashFonte(pasta)) throw new Error('Fonte mudou durante o render. Volte ao rascunho.');

@@ -1,0 +1,56 @@
+{
+ "n": 11,
+ "texto": "Era o Pedrão! O que já comprou o GTA 6.",
+ "palavras": [
+  {
+   "palavra": "Era",
+   "ini": 0,
+   "fim": 0.187
+  },
+  {
+   "palavra": "o",
+   "ini": 0.213,
+   "fim": 0.24
+  },
+  {
+   "palavra": "Pedrão!",
+   "ini": 0.32,
+   "fim": 1.12
+  },
+  {
+   "palavra": "O",
+   "ini": 1.28,
+   "fim": 1.32
+  },
+  {
+   "palavra": "que",
+   "ini": 1.36,
+   "fim": 1.44
+  },
+  {
+   "palavra": "já",
+   "ini": 1.6,
+   "fim": 1.76
+  },
+  {
+   "palavra": "comprou",
+   "ini": 1.84,
+   "fim": 2.24
+  },
+  {
+   "palavra": "o",
+   "ini": 2.28,
+   "fim": 2.32
+  },
+  {
+   "palavra": "GTA",
+   "ini": 2.4,
+   "fim": 2.72
+  },
+  {
+   "palavra": "6.",
+   "ini": 2.8,
+   "fim": 3.6
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "n": 8,
+ "texto": "Foi a cadeira, mãe! Tá... se aposentando!",
+ "palavras": [
+  {
+   "palavra": "Foi",
+   "ini": 0.56,
+   "fim": 0.72
+  },
+  {
+   "palavra": "a",
+   "ini": 0.76,
+   "fim": 0.8
+  },
+  {
+   "palavra": "cadeira,",
+   "ini": 0.88,
+   "fim": 1.4
+  },
+  {
+   "palavra": "mãe!",
+   "ini": 1.44,
+   "fim": 1.96
+  },
+  {
+   "palavra": "Tá...",
+   "ini": 2.16,
+   "fim": 2.72
+  },
+  {
+   "palavra": "se",
+   "ini": 2.96,
+   "fim": 3.04
+  },
+  {
+   "palavra": "aposentando!",
+   "ini": 3.16,
+   "fim": 4.24
+  }
+ ]
+}

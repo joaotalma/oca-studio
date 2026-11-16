@@ -99,7 +99,7 @@ Monte `film.html` com tempos estimados por um modelo de ritmo, marcados como PRO
 ```bash
 bash scripts/preparar-film.sh episodios/epNN
 cd episodios/epNN
-W=540 H=960 node export.mjs 15 ../../render/epNN_rascunho.mp4
+W=540 H=960 PARTES=3 node export.mjs 15 ../../render/epNN_rascunho.mp4
 ```
 
 Depois gere as vozes no ElevenLabs com `node --env-file=.env.local scripts/gerar-vozes-elevenlabs.mjs episodios/epNN audio/epNN`, como descreve `docs/VOZES.md`. Os arquivos ficam em `audio/epNN/`. Confira cada fala com transcrição e ajuste a grafia quando a pronúncia sair errada. O OmniVoice, de licença não comercial, ficou só nos eps. 1 e 2.

@@ -1,0 +1,51 @@
+{
+ "n": 10,
+ "texto": "O Hambúrguer pediu revanche. E a cabeça dele caiu.",
+ "palavras": [
+  {
+   "palavra": "O",
+   "ini": 0.08,
+   "fim": 0.12
+  },
+  {
+   "palavra": "Hambúrguer",
+   "ini": 0.16,
+   "fim": 0.8
+  },
+  {
+   "palavra": "pediu",
+   "ini": 0.92,
+   "fim": 1.12
+  },
+  {
+   "palavra": "revanche.",
+   "ini": 1.2,
+   "fim": 2.318
+  },
+  {
+   "palavra": "E",
+   "ini": 2.534,
+   "fim": 2.574
+  },
+  {
+   "palavra": "a",
+   "ini": 2.614,
+   "fim": 2.654
+  },
+  {
+   "palavra": "cabeça",
+   "ini": 2.734,
+   "fim": 3.134
+  },
+  {
+   "palavra": "dele",
+   "ini": 3.214,
+   "fim": 3.534
+  },
+  {
+   "palavra": "caiu.",
+   "ini": 3.854,
+   "fim": 4.654
+  }
+ ]
+}

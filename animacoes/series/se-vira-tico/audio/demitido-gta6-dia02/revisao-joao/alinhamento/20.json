@@ -1,0 +1,56 @@
+{
+ "n": 20,
+ "texto": "Vocês escolhem, mandem aí que vou ver as suas respostas.",
+ "palavras": [
+  {
+   "palavra": "Vocês",
+   "ini": 0,
+   "fim": 0.4
+  },
+  {
+   "palavra": "escolhem,",
+   "ini": 0.48,
+   "fim": 1.28
+  },
+  {
+   "palavra": "mandem",
+   "ini": 1.36,
+   "fim": 1.68
+  },
+  {
+   "palavra": "aí",
+   "ini": 1.76,
+   "fim": 2
+  },
+  {
+   "palavra": "que",
+   "ini": 2.08,
+   "fim": 2.16
+  },
+  {
+   "palavra": "vou",
+   "ini": 2.24,
+   "fim": 2.4
+  },
+  {
+   "palavra": "ver",
+   "ini": 2.48,
+   "fim": 2.56
+  },
+  {
+   "palavra": "as",
+   "ini": 2.64,
+   "fim": 2.72
+  },
+  {
+   "palavra": "suas",
+   "ini": 2.76,
+   "fim": 2.88
+  },
+  {
+   "palavra": "respostas.",
+   "ini": 3,
+   "fim": 3.92
+  }
+ ]
+}

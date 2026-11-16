@@ -1,0 +1,106 @@
+{
+ "n": 16,
+ "texto": "Eu já fui o salgadinho. Não ia sentar no chão. Ainda. Paguei. Sobraram treze e vinte e uma dignidade fatiada.",
+ "palavras": [
+  {
+   "palavra": "Eu",
+   "ini": 0.08,
+   "fim": 0.24
+  },
+  {
+   "palavra": "já",
+   "ini": 0.32,
+   "fim": 0.52
+  },
+  {
+   "palavra": "fui",
+   "ini": 0.64,
+   "fim": 0.8
+  },
+  {
+   "palavra": "o",
+   "ini": 0.84,
+   "fim": 0.88
+  },
+  {
+   "palavra": "salgadinho.",
+   "ini": 0.96,
+   "fim": 1.68
+  },
+  {
+   "palavra": "Não",
+   "ini": 2.16,
+   "fim": 2.32
+  },
+  {
+   "palavra": "ia",
+   "ini": 2.4,
+   "fim": 2.56
+  },
+  {
+   "palavra": "sentar",
+   "ini": 2.68,
+   "fim": 2.84
+  },
+  {
+   "palavra": "no",
+   "ini": 2.88,
+   "fim": 2.96
+  },
+  {
+   "palavra": "chão.",
+   "ini": 3.04,
+   "fim": 3.48
+  },
+  {
+   "palavra": "Ainda.",
+   "ini": 3.76,
+   "fim": 4.56
+  },
+  {
+   "palavra": "Paguei.",
+   "ini": 5.427,
+   "fim": 6.16
+  },
+  {
+   "palavra": "Sobraram",
+   "ini": 6.4,
+   "fim": 6.88
+  },
+  {
+   "palavra": "treze",
+   "ini": 6.96,
+   "fim": 7.28
+  },
+  {
+   "palavra": "e",
+   "ini": 7.44,
+   "fim": 7.52
+  },
+  {
+   "palavra": "vinte",
+   "ini": 7.6,
+   "fim": 7.84
+  },
+  {
+   "palavra": "e",
+   "ini": 7.867,
+   "fim": 7.893
+  },
+  {
+   "palavra": "uma",
+   "ini": 7.92,
+   "fim": 8
+  },
+  {
+   "palavra": "dignidade",
+   "ini": 8.08,
+   "fim": 8.64
+  },
+  {
+   "palavra": "fatiada.",
+   "ini": 8.72,
+   "fim": 9.68
+  }
+ ]
+}

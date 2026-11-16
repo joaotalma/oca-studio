@@ -1,0 +1,71 @@
+{
+ "n": 9,
+ "texto": "Sem cadeira. Sem os cento e cinquenta. E a barra do mesmo jeito.",
+ "palavras": [
+  {
+   "palavra": "Sem",
+   "ini": 0.208,
+   "fim": 0.24
+  },
+  {
+   "palavra": "cadeira.",
+   "ini": 0.32,
+   "fim": 1.2
+  },
+  {
+   "palavra": "Sem",
+   "ini": 1.52,
+   "fim": 1.68
+  },
+  {
+   "palavra": "os",
+   "ini": 1.76,
+   "fim": 1.84
+  },
+  {
+   "palavra": "cento",
+   "ini": 1.92,
+   "fim": 2.04
+  },
+  {
+   "palavra": "e",
+   "ini": 2.08,
+   "fim": 2.133
+  },
+  {
+   "palavra": "cinquenta.",
+   "ini": 2.187,
+   "fim": 2.84
+  },
+  {
+   "palavra": "E",
+   "ini": 3.109,
+   "fim": 3.12
+  },
+  {
+   "palavra": "a",
+   "ini": 3.2,
+   "fim": 3.28
+  },
+  {
+   "palavra": "barra",
+   "ini": 3.36,
+   "fim": 3.68
+  },
+  {
+   "palavra": "do",
+   "ini": 3.76,
+   "fim": 3.84
+  },
+  {
+   "palavra": "mesmo",
+   "ini": 4,
+   "fim": 4.4
+  },
+  {
+   "palavra": "jeito.",
+   "ini": 4.48,
+   "fim": 5.12
+  }
+ ]
+}

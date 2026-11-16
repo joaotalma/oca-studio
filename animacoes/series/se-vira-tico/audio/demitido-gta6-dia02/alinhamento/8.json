@@ -1,0 +1,76 @@
+{
+ "n": 8,
+ "texto": "Dancei como se o GTA dependesse disso. Dependia. Ganhei por um giro de cabeça.",
+ "palavras": [
+  {
+   "palavra": "Dancei",
+   "ini": 0.32,
+   "fim": 0.56
+  },
+  {
+   "palavra": "como",
+   "ini": 0.68,
+   "fim": 0.8
+  },
+  {
+   "palavra": "se",
+   "ini": 0.84,
+   "fim": 0.88
+  },
+  {
+   "palavra": "o",
+   "ini": 0.92,
+   "fim": 0.96
+  },
+  {
+   "palavra": "GTA",
+   "ini": 1.04,
+   "fim": 1.52
+  },
+  {
+   "palavra": "dependesse",
+   "ini": 1.72,
+   "fim": 2.24
+  },
+  {
+   "palavra": "disso.",
+   "ini": 2.32,
+   "fim": 2.867
+  },
+  {
+   "palavra": "Dependia.",
+   "ini": 3.113,
+   "fim": 3.729
+  },
+  {
+   "palavra": "Ganhei",
+   "ini": 3.847,
+   "fim": 4.247
+  },
+  {
+   "palavra": "por",
+   "ini": 4.287,
+   "fim": 4.327
+  },
+  {
+   "palavra": "um",
+   "ini": 4.407,
+   "fim": 4.487
+  },
+  {
+   "palavra": "giro",
+   "ini": 4.647,
+   "fim": 4.887
+  },
+  {
+   "palavra": "de",
+   "ini": 4.927,
+   "fim": 4.967
+  },
+  {
+   "palavra": "cabeça!",
+   "ini": 5.007,
+   "fim": 5.689
+  }
+ ]
+}

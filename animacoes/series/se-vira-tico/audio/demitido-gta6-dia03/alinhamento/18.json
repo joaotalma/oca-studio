@@ -1,0 +1,46 @@
+{
+ "n": 18,
+ "texto": "Sobrinho! A Companheira tá com um barulhinho, escuta...",
+ "palavras": [
+  {
+   "palavra": "Sobrinho!",
+   "ini": 0,
+   "fim": 0.84
+  },
+  {
+   "palavra": "A",
+   "ini": 1.04,
+   "fim": 1.12
+  },
+  {
+   "palavra": "Companheira",
+   "ini": 1.2,
+   "fim": 1.68
+  },
+  {
+   "palavra": "tá",
+   "ini": 1.76,
+   "fim": 1.92
+  },
+  {
+   "palavra": "com",
+   "ini": 2,
+   "fim": 2.08
+  },
+  {
+   "palavra": "um",
+   "ini": 2.12,
+   "fim": 2.16
+  },
+  {
+   "palavra": "barulhinho,",
+   "ini": 2.24,
+   "fim": 3.12
+  },
+  {
+   "palavra": "escuta...",
+   "ini": 3.28,
+   "fim": 4.08
+  }
+ ]
+}

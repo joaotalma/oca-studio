@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dia 2 - amostra 3D do gancho</title>
+<style>html,body{margin:0;background:#1b1430;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js"}}</script>
+</head><body>
+<script type="module">
+// Amostra 3D do gancho do Dia 2 (0 a 7,2 s): o Celular Feliz dançando, a tela abre e aparece o Kauã.
+// Tudo é desenhado em código (Three.js 0.160.0, ver ../vendor/three/ORIGEM.md). Nada de asset de terceiros.
+import * as THREE from 'three';
+const W = 1080, H = 1920, DUR = 7.2;
+window.FILM_DURATION = DUR;
+// Tempo de cada palavra da fala 1 (audio/demitido-gta6-dia02/alinhamento/1.json, já com as pausas apertadas)
+const PAL = [["Faltam",0.08,0.48],["cinco",0.56,0.88],["dias",1.04,1.28],["pro",1.36,1.44],["GTA",1.52,1.92],["6!",2.04,2.72],["Mas",2.98,3.14],["eu",3.18,3.22],["só",3.3,3.46],["tenho",3.5,3.78],["três",3.86,4.02],["e",4.1,4.26],["vinte.",4.42,5.04],["E",5.12,5.2],["tô",5.28,5.4],["vestido",5.44,5.84],["de",5.92,6],["celular.",6.12,7.04]];
+const FRASES = [[0,2.9,'Faltam cinco dias pro GTA 6!'],[2.9,5.1,'Mas eu só tenho três e vinte.'],[5.1,7.2,'E tô vestido de celular.']];
+const T_ABRE = 5.05;   // a tela abre quando começa "E tô vestido de celular"
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H); renderer.autoClear = false;
+document.body.appendChild(renderer.domElement);
+renderer.domElement.style.width = '100vw'; renderer.domElement.style.height = 'auto';
+
+const PAL_COR = { pele: 0xa86b48, cabelo: 0x1d1716, lilas: 0x8a6fd6, lilasD: 0x5a43a0, pessego: 0xffa98f, rosa: 0xff8fb3, suit: 0xffcf5a, suitD: 0xe0a53a, calca: 0x414d64, luva: 0xffffff, contorno: 0x2a1c45 };
+// ----- material toon com 3 tons -----
+const grad = new THREE.DataTexture(new Uint8Array([90, 90, 90, 255, 170, 170, 170, 255, 255, 255, 255, 255]), 3, 1, THREE.RGBAFormat);
+grad.minFilter = grad.magFilter = THREE.NearestFilter; grad.needsUpdate = true;
+const toon = (c, extra = {}) => new THREE.MeshToonMaterial({ color: c, gradientMap: grad, ...extra });
+// contorno por casco invertido
+const outlineMat = (t, radial = false) => new THREE.ShaderMaterial({
+  side: THREE.BackSide, uniforms: { t: { value: t }, c: { value: new THREE.Color(PAL_COR.contorno) } },
+  vertexShader: radial ? 'uniform float t; void main(){ vec3 d = normalize(vec3(position.xy,0.0)+vec3(0.0,0.0,0.0001)); gl_Position = projectionMatrix*modelViewMatrix*vec4(position + d*t,1.0); }' : 'uniform float t; void main(){ gl_Position = projectionMatrix*modelViewMatrix*vec4(position + normal*t,1.0); }',
+  fragmentShader: 'uniform vec3 c; void main(){ gl_FragColor = vec4(c,1.0); }' });
+function mesh(geo, color, t = 0.035, extra, radial = false) { const g = new THREE.Group(); const m = new THREE.Mesh(geo, toon(color, extra)); g.add(m); if (t) g.add(new THREE.Mesh(geo, outlineMat(t, radial))); return g; }
+function rrShape(w, h, r) { const s = new THREE.Shape(), x = -w / 2, y = -h / 2; s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r); s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h); s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r); s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y); return s; }
+const ext = (shape, d, b = 0.04) => new THREE.ExtrudeGeometry(shape, { depth: d, bevelEnabled: true, bevelThickness: b, bevelSize: b, bevelSegments: 3, curveSegments: 10 });
+
+// ----- cena -----
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0xe9dcf7);
+scene.add(new THREE.AmbientLight(0xffffff, 1.35));
+const sol = new THREE.DirectionalLight(0xfff1dd, 2.2); sol.position.set(-3, 6, 5); scene.add(sol);
+const contra = new THREE.DirectionalLight(0xc9b8ff, 0.9); contra.position.set(4, 3, -2); scene.add(contra);
+const cam = new THREE.PerspectiveCamera(34, W / H, 0.1, 60); scene.add(cam);
+
+function canvasTex(w, h, draw) { const c = document.createElement('canvas'); c.width = w; c.height = h; draw(c.getContext('2d'), w, h); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t; }
+
+// parede do shopping + chão + letreiro
+{
+  const parede = new THREE.Mesh(new THREE.PlaneGeometry(14, 12), new THREE.MeshBasicMaterial({ map: canvasTex(256, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#d9c6f7'); gr.addColorStop(.6, '#f6d5d9'); gr.addColorStop(1, '#ffe2c8'); g.fillStyle = gr; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(138,111,214,.18)'; for (let y = 20; y < h; y += 44) for (let x = (y / 44 % 2) * 22; x < w; x += 44) { g.beginPath(); g.arc(x, y, 4, 0, 7); g.fill(); } }) }));
+  parede.position.set(0, 3.2, -3.2); scene.add(parede);
+  const chao = new THREE.Mesh(new THREE.PlaneGeometry(14, 10), new THREE.MeshBasicMaterial({ map: canvasTex(512, 512, (g, w, h) => { for (let i = 0; i < 8; i++) for (let j = 0; j < 8; j++) { g.fillStyle = (i + j) % 2 ? '#f3e6dd' : '#e2d3ef'; g.fillRect(i * w / 8, j * h / 8, w / 8, h / 8); } }) }));
+  chao.rotation.x = -Math.PI / 2; chao.position.set(0, 0, 1); scene.add(chao);
+  const letreiro = new THREE.Mesh(new THREE.PlaneGeometry(3.0, 0.5), new THREE.MeshBasicMaterial({ transparent: true, map: canvasTex(780, 200, (g, w, h) => { g.fillStyle = '#5a43a0'; g.beginPath(); g.roundRect(6, 6, w - 12, h - 12, 38); g.fill(); g.strokeStyle = '#ffd98a'; g.lineWidth = 8; g.stroke(); g.fillStyle = '#fff4dc'; g.font = '900 96px Arial Black, Impact, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('CELULAR FELIZ', w / 2, h / 2 + 4); }) }));
+  letreiro.position.set(0, 5.59, -3.1); scene.add(letreiro);
+}
+
+// ----- o mascote Celular Feliz -----
+const mascote = new THREE.Group(); scene.add(mascote);
+const corpo = new THREE.Group(); mascote.add(corpo);
+const torso = mesh(new THREE.CapsuleGeometry(0.62, 0.8, 8, 20), PAL_COR.suit, 0.04); torso.position.y = 1.55; corpo.add(torso);
+const barriga = new THREE.Mesh(new THREE.CircleGeometry(0.42, 28), toon(0xfff2c9)); barriga.position.set(0, 1.5, 0.64); barriga.scale.set(1, 1.15, 1); corpo.add(barriga);
+const gola = mesh(new THREE.TorusGeometry(0.55, 0.12, 12, 28), PAL_COR.rosa, 0.03); gola.rotation.x = Math.PI / 2; gola.position.y = 2.32; corpo.add(gola);
+function braco(lado) { const p = new THREE.Group(); p.position.set(lado * 0.78, 2.1, 0); const b = mesh(new THREE.CapsuleGeometry(0.2, 0.75, 6, 14), PAL_COR.suit, 0.035); b.position.y = -0.5; p.add(b); const l = mesh(new THREE.SphereGeometry(0.3, 18, 14), PAL_COR.luva, 0.035); l.position.y = -1.1; p.add(l); corpo.add(p); return p; }
+const bracoE = braco(-1), bracoD = braco(1);
+function perna(lado) { const p = new THREE.Group(); p.position.set(lado * 0.3, 1.0, 0); const b = mesh(new THREE.CapsuleGeometry(0.22, 0.6, 6, 14), PAL_COR.calca, 0.035); b.position.y = -0.4; p.add(b); const s = mesh(new THREE.SphereGeometry(0.36, 16, 12), PAL_COR.rosa, 0.035); s.scale.set(1, .6, 1.4); s.position.set(0, -0.95, 0.12); p.add(s); corpo.add(p); return p; }
+const pernaE = perna(-1), pernaD = perna(1);
+
+// cabeça: carcaça de celular (oca), Kauã dentro, tela articulada no topo
+const cabeca = new THREE.Group(); cabeca.position.set(0, 3.38, 0); corpo.add(cabeca);
+{
+  const fora = rrShape(1.62, 2.12, 0.34); fora.holes.push(new THREE.Path(rrShape(1.34, 1.84, 0.26).getPoints(18).reverse()));
+  const carcaca = mesh(ext(fora, 0.62, 0.05), PAL_COR.lilas, 0.035, undefined, true); carcaca.position.z = -0.32; cabeca.add(carcaca);
+  const fundo = new THREE.Mesh(new THREE.PlaneGeometry(1.4, 1.9), toon(PAL_COR.lilasD)); fundo.position.z = -0.12; cabeca.add(fundo);
+  for (const [y, h] of [[0.35, 0.34], [-0.08, 0.34]]) { const bt = mesh(new THREE.BoxGeometry(0.07, h, 0.12), PAL_COR.pessego, 0.02); bt.position.set(0.85, y, 0); cabeca.add(bt); }
+  const ant = mesh(new THREE.CapsuleGeometry(0.035, 0.28, 4, 8), PAL_COR.pessego, 0.02); ant.position.set(-0.5, 1.2, 0); cabeca.add(ant);
+}
+// Kauã por dentro (cores da ficha: pele #a86b48, cabelo #1d1716)
+const kaua = new THREE.Group(); kaua.position.set(0, -0.04, -0.2); kaua.scale.setScalar(1.05); cabeca.add(kaua);
+const kRosto = mesh(new THREE.SphereGeometry(0.58, 32, 24), PAL_COR.pele, 0.025); kRosto.scale.set(0.98, 1.08, 0.9); kaua.add(kRosto);
+const hairBase = mesh(new THREE.SphereGeometry(0.62, 32, 18, 0, Math.PI * 2, 0, Math.PI * 0.46), PAL_COR.cabelo, 0.025); hairBase.scale.set(1.0, 0.62, 0.96); hairBase.position.set(0, 0.36, -0.02); kaua.add(hairBase);   // cabelo amassado: achatado
+const cachos = [];
+for (let i = 0; i < 5; i++) { const c = mesh(new THREE.SphereGeometry(0.15, 14, 10), PAL_COR.cabelo, 0.02); c.position.set(-0.4 + i * 0.2, 0.5 - Math.abs(i - 2) * 0.04, 0.34); kaua.add(c); cachos.push(c); }
+function olho(lado) { const g = new THREE.Group(); g.position.set(lado * 0.23, 0.08, 0.5); const b = new THREE.Mesh(new THREE.SphereGeometry(0.12, 18, 14), toon(0xffffff)); b.scale.set(1, 1.1, 0.7); g.add(b); const p = new THREE.Mesh(new THREE.SphereGeometry(0.056, 14, 10), toon(0x120c0c)); p.position.z = 0.07; g.add(p);
+  const palp = new THREE.Mesh(new THREE.SphereGeometry(0.135, 18, 12, 0, Math.PI * 2, 0, Math.PI / 2), toon(PAL_COR.pele)); palp.rotation.x = 0; palp.position.set(0, 0.0, 0.01); palp.scale.set(1.02, 1.1, 0.78); g.add(palp);
+  const oj = new THREE.Mesh(new THREE.CircleGeometry(0.12, 20), new THREE.MeshBasicMaterial({ color: 0x5a3b6b, transparent: true, opacity: .4 })); oj.scale.set(1.15, .5, 1); oj.position.set(lado * 0.01, -0.14, 0.04); g.add(oj);
+  const sob = mesh(new THREE.CapsuleGeometry(0.03, 0.17, 4, 8), PAL_COR.cabelo, 0.015); sob.rotation.z = Math.PI / 2 - lado * 0.3; sob.position.set(0, 0.2, 0.05); g.add(sob);
+  kaua.add(g); return { g, p, palp, sob }; }
+const oE = olho(-1), oD = olho(1);
+const nariz = mesh(new THREE.SphereGeometry(0.075, 12, 10), 0x95593a, 0.015); nariz.scale.set(1, 0.8, 0.9); nariz.position.set(0, -0.04, 0.53); kaua.add(nariz);
+const boca = mesh(new THREE.CapsuleGeometry(0.03, 0.2, 4, 8), 0x3a1b17, 0.012); boca.rotation.z = Math.PI / 2; boca.position.set(0, -0.3, 0.5); kaua.add(boca);
+for (const l of [-1, 1]) { const b = new THREE.Mesh(new THREE.CircleGeometry(0.1, 16), new THREE.MeshBasicMaterial({ color: 0xff5e5e, transparent: true, opacity: .45 })); b.position.set(l * 0.36, -0.14, 0.4); b.rotation.y = l * 0.35; b.scale.set(.8,.7,1); kaua.add(b); }
+
+// tela (tampa): rosto sorridente, articulada pelo topo
+const tampa = new THREE.Group(); tampa.position.set(0, 1.0, 0.33); cabeca.add(tampa);
+{
+  const miolo = mesh(ext(rrShape(1.44, 1.94, 0.3), 0.05, 0.03), PAL_COR.lilasD, 0.035, undefined, true); miolo.position.set(0, -1.0, 0); tampa.add(miolo);
+  const tex = canvasTex(512, 700, (g, w, h) => { const gr = g.createLinearGradient(0, 0, w, h); gr.addColorStop(0, '#ffb89a'); gr.addColorStop(.55, '#ff9cc2'); gr.addColorStop(1, '#b79bff'); g.fillStyle = gr; g.fillRect(0, 0, w, h);
+    g.strokeStyle = '#3a1f4a'; g.lineCap = 'round'; g.lineWidth = 22; g.beginPath(); g.arc(150, 270, 52, Math.PI * 1.1, Math.PI * 1.9); g.stroke(); g.beginPath(); g.arc(362, 270, 52, Math.PI * 1.1, Math.PI * 1.9); g.stroke();
+    g.fillStyle = '#3a1f4a'; g.beginPath(); g.moveTo(112, 380); g.quadraticCurveTo(256, 560, 400, 380); g.quadraticCurveTo(256, 420, 112, 380); g.fill(); g.fillStyle = '#ffd1d9'; g.beginPath(); g.ellipse(256, 470, 62, 30, 0, 0, 7); g.fill();
+    g.fillStyle = 'rgba(255,255,255,.5)'; for (const x of [78, 434]) { g.beginPath(); g.ellipse(x, 360, 36, 22, 0, 0, 7); g.fill(); } g.fillStyle = 'rgba(255,255,255,.18)'; g.beginPath(); g.moveTo(0, 0); g.lineTo(w * .55, 0); g.lineTo(0, h * .45); g.fill(); g.fillStyle = '#3a1f4a'; g.beginPath(); g.roundRect(w / 2 - 50, 22, 100, 14, 7); g.fill(); });
+  const tela = new THREE.Mesh(new THREE.PlaneGeometry(1.34, 1.84), new THREE.MeshBasicMaterial({ map: tex })); tela.position.set(0, -1.0, 0.1); tampa.add(tela);
+}
+
+// gotas de suor
+const gotas = []; for (let i = 0; i < 12; i++) { const g = new THREE.Mesh(new THREE.SphereGeometry(0.05, 10, 8), toon(0x9ed8ff)); g.scale.set(0.75, 1.15, 0.75); scene.add(g); gotas.push({ g, x: ((i % 2 ? 1 : -1) * (0.62 + ((i * 7) % 5) * 0.07)), off: i / 12 * 1.3, z: 0.5 + (i % 3) * 0.12 }); }
+
+// ----- HUD em 2D sobre a cena (quadro com texto creme sobre faixa escura) -----
+const hud = document.createElement('canvas'); hud.width = W; hud.height = H; const hg = hud.getContext('2d');
+const hudTex = new THREE.CanvasTexture(hud); hudTex.colorSpace = THREE.SRGBColorSpace;
+const hudScene = new THREE.Scene(), hudCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+hudScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.MeshBasicMaterial({ map: hudTex, transparent: true })));
+const FONTE = '900 {s}px "Arial Black", Impact, sans-serif';
+function faixa(x, y, w, h, r = 26) { hg.fillStyle = 'rgba(32,18,56,.92)'; hg.beginPath(); hg.roundRect(x, y, w, h, r); hg.fill(); }
+function texto(s, x, y, px, cor = '#fff1d6', esp = 3, al = 'center') { hg.font = FONTE.replace('{s}', px); hg.fillStyle = cor; hg.textAlign = al; hg.textBaseline = 'middle'; if ('letterSpacing' in hg) hg.letterSpacing = esp + 'px'; hg.fillText(s, x, y); }
+function desenhaHud(t) {
+  hg.clearRect(0, 0, W, H);
+  faixa(250, 78, 580, 100); texto('GTA 6 EM 5 DIAS', 540, 130, 46, '#fff1d6', 4);
+  // termômetro
+  const tr = Math.sin(t * 38) * 2.2; faixa(70, 78 + 0, 150, 100, 26); hg.save(); hg.translate(tr, 0); hg.fillStyle = '#fff1d6'; hg.beginPath(); hg.roundRect(98, 94, 18, 56, 9); hg.fill(); hg.fillStyle = '#ff5e6c'; hg.beginPath(); hg.arc(107, 156, 17, 0, 7); hg.fill(); hg.fillRect(101, 120 - Math.min(30, t * 5), 12, 40 + Math.min(30, t * 5)); hg.restore(); texto('34°', 170, 130, 38, '#ff9a8a', 1);
+  // barra de dinheiro
+  faixa(110, 1500, 860, 120); texto('R$ 3,20 DE R$ 449,90', 540, 1540, 44, '#fff1d6', 3);
+  hg.fillStyle = 'rgba(255,241,214,.22)'; hg.beginPath(); hg.roundRect(150, 1580, 780, 18, 9); hg.fill(); hg.fillStyle = '#ff8fb3'; hg.beginPath(); hg.roundRect(150, 1580, Math.max(14, 780 * 3.2 / 449.9), 18, 9); hg.fill();
+  // legenda (caixa escura, texto creme), uma frase por vez
+  const f = FRASES.find(([a, b]) => t >= a && t < b); if (f) { const larg = Math.min(980, 130 + f[2].length * 31); faixa(540 - larg / 2, 1690, larg, 110, 30); texto(f[2], 540, 1745, 46, '#fff1d6', 2); }
+  hudTex.needsUpdate = true;
+}
+
+// ----- animação (função pura do tempo) -----
+const sm = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+const falando = (t) => PAL.some(([, a, b]) => t >= a && t <= b);
+function pose(t) {
+  const abre = sm(T_ABRE, T_ABRE + 0.35, t) * 1.0;                                // 0 fechada, 1 aberta
+  const bate = Math.sin(t * 2 * Math.PI * 2.2), ritmo = 1 - sm(T_ABRE - 0.3, T_ABRE + 0.4, t) * 0.8;   // a dança murcha quando ele se revela
+  mascote.position.y = Math.abs(bate) * 0.14 * ritmo;
+  corpo.rotation.z = bate * 0.05 * ritmo; cabeca.rotation.z = Math.sin(t * 2 * Math.PI * 1.1) * 0.12 * ritmo - 0.04 * abre; cabeca.rotation.y = Math.sin(t * 2 * Math.PI * 0.55) * 0.18 * ritmo;
+  bracoE.rotation.z = 0.55 + Math.sin(t * 2 * Math.PI * 2.2) * 0.55 * ritmo - 0.35 * abre; bracoD.rotation.z = -0.55 - Math.sin(t * 2 * Math.PI * 2.2 + 1.5) * 0.55 * ritmo + 0.35 * abre;
+  pernaE.rotation.z = Math.sin(t * 2 * Math.PI * 1.1) * 0.12 * ritmo; pernaD.rotation.z = -Math.sin(t * 2 * Math.PI * 1.1) * 0.12 * ritmo;
+  tampa.rotation.x = abre * 2.7 + Math.sin(t * 9) * 0.01 * (1 - abre);           // gira pelo topo para trás
+  // Kauã: rosto cansado, cachos com movimento próprio, piscada lenta, olhar que desce no fim
+  cachos.forEach((c, i) => { c.position.y = 0.5 - Math.abs(i - 2) * 0.04 + Math.sin(t * 5 + i * 1.3) * 0.02 * (0.3 + abre); c.position.x = -0.4 + i * 0.2 + Math.sin(t * 3.2 + i) * 0.012; });
+  const pisca = sm(6.35, 6.55, t) * (1 - sm(6.6, 6.8, t));
+  for (const o of [oE, oD]) { o.palp.scale.y = 1.1 * (0.5 + pisca * 0.65); o.palp.position.y = 0.0 - 0.02 * pisca; o.p.position.x = -0.02 * sm(6.8, 7.1, t); o.p.position.y = -0.03 * sm(6.8, 7.1, t); }
+  boca.scale.x = 1 + (falando(t) && abre > .6 ? Math.abs(Math.sin(t * 13)) * 0.5 : 0); boca.position.y = -0.3 + (falando(t) && abre > .6 ? -Math.abs(Math.sin(t * 13)) * 0.025 : 0); boca.rotation.z = Math.PI / 2 - 0.12;
+  kaua.rotation.z = Math.sin(t * 1.3) * 0.02; kaua.visible = true;
+  // gotas
+  gotas.forEach((d, i) => { const ciclo = (t * 0.8 + d.off) % 1.3; const y = 3.95 - ciclo * ciclo * 2.1 - (i % 3) * 0.05; d.g.position.set(d.x * 0.9 + Math.sin(t * 2 + i) * 0.03, 3.38 + 0.55 + (y - 3.95) * 1.0 + 0.4, d.z + 0.45); d.g.visible = ciclo < 1.2 && d.g.position.y > 0.5; });
+  // câmera: plano médio -> aproxima do rosto quando a tela abre
+  const p = sm(T_ABRE - 0.45, 7.1, t), q = sm(0, 2.8, t);
+  cam.position.set(Math.sin(t * 0.6) * 0.12, 3.1 + p * 0.35, 8.3 - q * 0.4 - p * 3.3); cam.lookAt(0, 3.0 + p * 0.38, 0);
+}
+
+window.renderFrame = async (t) => {
+  t = Math.min(DUR, Math.max(0, t)); pose(t); desenhaHud(t);
+  renderer.clear(); renderer.render(scene, cam); renderer.clearDepth(); renderer.render(hudScene, hudCam);
+};
+window.READY = true;
+window.renderFrame(0);
+</script></body></html>

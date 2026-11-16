@@ -1,0 +1,36 @@
+{
+ "n": 14,
+ "texto": "Paguei quarenta de pizza pra assistir.",
+ "palavras": [
+  {
+   "palavra": "Paguei",
+   "ini": 0.24,
+   "fim": 0.72
+  },
+  {
+   "palavra": "quarenta",
+   "ini": 0.8,
+   "fim": 1.32
+  },
+  {
+   "palavra": "de",
+   "ini": 1.36,
+   "fim": 1.52
+  },
+  {
+   "palavra": "pizza",
+   "ini": 1.68,
+   "fim": 1.84
+  },
+  {
+   "palavra": "pra",
+   "ini": 1.92,
+   "fim": 2
+  },
+  {
+   "palavra": "assistir.",
+   "ini": 2.2,
+   "fim": 2.88
+  }
+ ]
+}

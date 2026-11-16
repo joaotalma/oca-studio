@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "estado": "aprovado",
+  "modo": "automatico_autorizado",
+  "autorizadoPor": "João",
+  "autorizacao": "Pedido de aprovação automática ao finalizar, 2026-11-12",
+  "quando": "2026-11-15T00:08:36.264Z",
+  "assistidoPeloJoao": false,
+  "video": "video.mp4",
+  "videoHash": "5dc6ad111c30b9765c39376c5c506ba59faa310c46abb697fb46ee18664b80d6",
+  "qa": {
+    "schema": 1,
+    "quando": "2026-11-15T00:07:47.974Z",
+    "modo": "final-leve",
+    "aprovado": true,
+    "mudo": false,
+    "temAudio": true,
+    "fonte": "7a38a3bbaa3a3f4861cc44100c3777d7ed0cec21c4a17adf1a0656f73991cdcb",
+    "video": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia02-revisao-joao\\dia02-revisado.mp4",
+    "videoHash": "5dc6ad111c30b9765c39376c5c506ba59faa310c46abb697fb46ee18664b80d6",
+    "audioOrigem": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia02-revisao-joao\\audio-master.wav",
+    "audioOrigemHash": "dac8ba7ab2f3b9030bea1b452bd9105a4e2440643c8c3ae706157fdf1839582f",
+    "politica": {
+      "faixa": [
+        105,
+        140
+      ],
+      "semDuracao": false,
+      "semTexto": true,
+      "leitura": "465376bd86996401ee826ea46c166fe77380f202ae7ff1454604f876c220fe40",
+      "qa": "d14ee57e7623308fa4299c950111ca62357c001e72a825b7209d282d2bc2c6ef",
+      "gate": "a5c87519c79b586d24c12b4f8f4e3fc4e7d1a88e62f88376131af6003d2500c1",
+      "registro": "d95882b7e504a28aee878f8dd19c9b88f3a92fcb7f0a7ab99a64244531c950cb"
+    },
+    "gateCompleto": false,
+    "rascunho": "C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia02-revisao-joao\\qa-resultados\\qa-rascunho.json",
+    "dimensoes": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "duracao": 107.1,
+    "itens": [
+      {
+        "nome": "Duração",
+        "estado": "APROVADO",
+        "detalhe": "107.10 s (esperado 105-140 s)"
+      },
+      {
+        "nome": "Resolução",
+        "estado": "APROVADO",
+        "detalhe": "1080x1920 (esperado 1080x1920)"
+      },
+      {
+        "nome": "Quadros por segundo",
+        "estado": "APROVADO",
+        "detalhe": "30.00 (esperado 30)"
+      },
+      {
+        "nome": "Loudness",
+        "estado": "APROVADO",
+        "detalhe": "-16.0 LUFS (esperado -16 ±1)"
+      },
+      {
+        "nome": "Sem isca de engajamento",
+        "estado": "APROVADO",
+        "detalhe": "nenhum pedido de comentário, envio ou marcação"
+      },
+      {
+        "nome": "Pausas visuais",
+        "estado": "DECLARADAS",
+        "detalhe": "4 intervalos justificados, ver render/demitido-gta6/dia02-revisao-joao/pausas-visuais.json; exigem conferência à vista, não aprovação automática."
+      },
+      {
+        "nome": "Gate",
+        "estado": "APROVADO",
+        "detalhe": "gate completo do rascunho reutilizado; fonte, áudio, regras e MP4 conferidos por SHA-256"
+      },
+      {
+        "nome": "Amostras do master",
+        "estado": "APROVADO",
+        "detalhe": "8 quadros em resolução original: C:\\Users\\joaot\\Projetos\\oca-studio\\animacoes\\render\\demitido-gta6\\dia02-revisao-joao\\qa-resultados\\amostras-final; decodificação, não julgamento artístico"
+      },
+      {
+        "nome": "Fonte estável",
+        "estado": "APROVADO",
+        "detalhe": "nenhuma alteração durante o QA"
+      }
+    ]
+  },
+  "revisao": {
+    "fonte": "7a38a3bbaa3a3f4861cc44100c3777d7ed0cec21c4a17adf1a0656f73991cdcb",
+    "videoHash": "5dc6ad111c30b9765c39376c5c506ba59faa310c46abb697fb46ee18664b80d6",
+    "visual": true,
+    "conteudoDireitos": true,
+    "bloqueios": [],
+    "responsavel": "Codex; rechecagem independente em critica-revisao-joao.md",
+    "evidencias": [
+      "8 amostras em alta e 6 quadros críticos vistos",
+      "Cabeças apoiadas, barba externa, cabelo restaurado, patrão de frente",
+      "Selfie e mãe removidas com seus áudios",
+      "Uma única tela de voto, assinatura fictícia R. Silva, CTA novo",
+      "Gate rascunho 7/7; master 107.1s,1080x1920,30fps,-16LUFS"
+    ],
+    "limites": "Revisão visual por quadros; não afirma julgamento auditivo humano.",
+    "quando": "2026-11-15T00:08:36.024Z"
+  },
+  "publicacao": "manual_pelo_Joao",
+  "redes": [
+    "instagram"
+  ],
+  "limite": "Aprovação delegada após QA técnico; não afirma que João assistiu nem que houve julgamento artístico automático."
+}
