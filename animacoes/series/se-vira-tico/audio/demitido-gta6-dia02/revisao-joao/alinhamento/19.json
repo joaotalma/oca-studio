@@ -1,0 +1,36 @@
+{
+ "n": 19,
+ "texto": "Então começamos uma batalha de passos.",
+ "palavras": [
+  {
+   "palavra": "Então",
+   "ini": 0,
+   "fim": 0.32
+  },
+  {
+   "palavra": "começamos",
+   "ini": 0.48,
+   "fim": 0.96
+  },
+  {
+   "palavra": "uma",
+   "ini": 1.04,
+   "fim": 1.12
+  },
+  {
+   "palavra": "batalha",
+   "ini": 1.2,
+   "fim": 1.68
+  },
+  {
+   "palavra": "de",
+   "ini": 1.8,
+   "fim": 1.92
+  },
+  {
+   "palavra": "passos.",
+   "ini": 2.08,
+   "fim": 2.88
+  }
+ ]
+}

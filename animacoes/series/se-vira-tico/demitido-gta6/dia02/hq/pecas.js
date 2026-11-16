@@ -49,7 +49,7 @@ const INK='#19213c', CREAM='#fff3d3';
   for(const lado of[-1,1]){const sw=Math.sin(t*Math.PI*2*1.1+(lado>0?Math.PI:0))*10*dança;s+=`<g transform="translate(${540+lado*108} 1520) rotate(${F(sw)})"><path d="M0 0V150" stroke="${INK}" stroke-width="92" stroke-linecap="round"/><path d="M0 0V150" stroke="#414d64" stroke-width="70" stroke-linecap="round"/><ellipse cx="${lado*8}" cy="178" rx="74" ry="40" fill="#ff8fb3" ${ink(7)}/></g>`;}
   // braços (atrás do tronco)
   const swing=dança*Math.sin(t*Math.PI*2*2.2);
-  for(const lado of[-1,1]){const ang=lado*(38+swing*lado*28+abre*14);s+=`<g transform="translate(${540+lado*205} 1270) rotate(${F(ang)})"><path d="M0 0V230" stroke="${INK}" stroke-width="100" stroke-linecap="round"/><path d="M0 0V230" stroke="#ffcf5a" stroke-width="76" stroke-linecap="round"/><circle cx="0" cy="250" r="56" fill="#fff" ${ink(7)}/></g>`;}
+  for(const lado of[-1,1]){if(o.aperto&&lado===1)continue;const ang=lado*(38+swing*lado*28+abre*14);s+=`<g transform="translate(${540+lado*205} 1270) rotate(${F(ang)})"><path d="M0 0V230" stroke="${INK}" stroke-width="100" stroke-linecap="round"/><path d="M0 0V230" stroke="#ffcf5a" stroke-width="76" stroke-linecap="round"/><circle cx="0" cy="250" r="56" fill="#fff" ${ink(7)}/></g>`;}
   // tronco
   s+=`<rect x="330" y="1180" width="420" height="380" rx="150" fill="#ffcf5a" ${ink(9)}/><rect x="330" y="1180" width="420" height="380" rx="150" fill="url(#dots)" opacity=".10"/><ellipse cx="540" cy="1400" rx="130" ry="150" fill="#fff2c9" ${ink(6)}/>`;
   s+=`<ellipse cx="540" cy="1196" rx="190" ry="48" fill="#ff8fb3" ${ink(8)}/>`;
@@ -92,7 +92,7 @@ const INK='#19213c', CREAM='#fff3d3';
  const LEO={...CHARS.kaua,...SEM_ADEREÇOS,key:'leo',name:'Léo',skin:'#e2b08a',shade:'#be8a66',hair:'#4a2f22',hairHi:'#7a5642',iris:'#4a3426',cloth:'#e8843a',clothD:'#b9632a',clothHi:'#ffb872',pants:'#2f4b7a',pantsD:'#213557',shoe:'tenis',meia:'#ffffff',hs:1.52,torso:156,sw:64,waist:52,hem:56,hw:44,thigh:108,shin:102};
  const RAFA={...CHARS.kaua,...SEM_ADEREÇOS,key:'rafa',name:'Rafa',skin:'#6f4631',shade:'#4f2f21',hair:'#15110f',hairHi:'#33261f',iris:'#241810',cloth:'#f3efe4',clothD:'#cbc4b1',clothHi:'#ffffff',pants:'#33465e',pantsD:'#243346',shoe:'tenis',meia:'#ffffff',hs:1.5,torso:168,sw:54,waist:44,hem:46,hw:40,thigh:114,shin:108,armU:92,armF:88};
  const PEDRAO={...CHARS.kaua,...SEM_ADEREÇOS,key:'pedrao',name:'Pedrão',skin:'#c68b62',shade:'#9d6944',hair:'#241a15',hairHi:'#46362d',iris:'#35261c',cloth:'#c93a3a',clothD:'#8f2626',clothHi:'#ee7a6d',pants:'#4d4d57',pantsD:'#35353d',shoe:'tenis',meia:'#ffffff',hs:1.66,torso:142,sw:88,waist:80,hem:82,hw:62,thigh:94,shin:90,armU:84,armF:80,ru:15,re:13};
- const DA={...D,amassado:true};
+ const DA={...D,amassado:false};
  const hairBase=hairFront;
  hairFront=d=>{
   if(d.key==='kaua'&&d.amassado)return shape('M-46 -38Q-52 -62 -34 -72Q0 -80 34 -72Q52 -62 46 -38Q30 -52 0 -54Q-30 -52 -46 -38Z',d.hair)+`<ellipse cx="-52" cy="-58" rx="14" ry="7" transform="rotate(-25 -52 -58)" fill="${d.hair}"/><ellipse cx="54" cy="-54" rx="14" ry="7" transform="rotate(22 54 -54)" fill="${d.hair}"/><path d="M-8 -78Q4 -92 18 -77" fill="none" stroke="${d.hair}" stroke-width="7" stroke-linecap="round"/>`;
@@ -106,7 +106,7 @@ const INK='#19213c', CREAM='#fff3d3';
  };
  // ator genérico do elenco (sem o "branco" de impacto do Kauã)
  const POSE0={y:0,q:1,lean:0,head:0,armL:[-6,-8],armR:[6,8],legL:[-5,-2],legR:[5,2],expr:'neutro',mouth:null,blink:0,look:[0,0]};
- const ator=(d,p,x,y,sc)=>`<g transform="translate(${F(x)} ${F(y+(p.y||0))}) scale(${F(sc/(p.q||1))} ${F(sc*(p.q||1))})" filter="url(#cutout)">${drawChar(d,{...POSE0,...p})}</g>`;
+ const ator=(d,p,x,y,sc)=>`<g transform="translate(${F(x)} ${F(y+(p.y||0))}) scale(${F(sc/(p.q||1))} ${F(sc*(p.q||1))})" filter="url(#cutout)">${drawChar(d,{...POSE0,...p,blink:bell(clock%4.3,3.9,4.15),breath:4+4*Math.sin(clock*2),head:(p.head||0)+Math.sin(clock*2.5)*1.5})}</g>`;
 
  // ----- Hambúrguer Louco (HQ), mesmo enquadramento do mascote: pés em y=1712, centro em x=540 -----
  function hamburguer(t,o={}){
@@ -116,11 +116,11 @@ const INK='#19213c', CREAM='#fff3d3';
   for(const lado of[-1,1]){const sl=moon?Math.sin(t*14+(lado>0?Math.PI:0))*34:Math.sin(t*Math.PI*2*1.1+(lado>0?Math.PI:0))*10*danca;
    s+=`<g transform="translate(${540+lado*108} 1520)"><path d="M0 0V150" stroke="${INK}" stroke-width="92" stroke-linecap="round"/><path d="M0 0V150" stroke="#fff0b8" stroke-width="70" stroke-linecap="round"/><path d="M-34 40H34M-34 92H34" stroke="#e8453c" stroke-width="10"/><ellipse cx="${F(lado*8+sl)}" cy="178" rx="84" ry="40" fill="#6b3a22" ${ink(7)}/></g>`;}
   const swing=danca*Math.sin(t*Math.PI*2*2.2);
-  for(const lado of[-1,1]){const ang=lado*(38+swing*lado*28+moon*40);s+=`<g transform="translate(${540+lado*205} 1270) rotate(${F(ang)})"><path d="M0 0V230" stroke="${INK}" stroke-width="100" stroke-linecap="round"/><path d="M0 0V230" stroke="#e8453c" stroke-width="76" stroke-linecap="round"/><circle cx="0" cy="250" r="56" fill="#fff" ${ink(7)}/></g>`;}
+  for(const lado of[-1,1]){if(o.aperto&&lado===1)continue;const ang=lado*(38+swing*lado*28+moon*40);s+=`<g transform="translate(${540+lado*205} 1270) rotate(${F(ang)})"><path d="M0 0V230" stroke="${INK}" stroke-width="100" stroke-linecap="round"/><path d="M0 0V230" stroke="#e8453c" stroke-width="76" stroke-linecap="round"/><circle cx="0" cy="250" r="56" fill="#fff" ${ink(7)}/></g>`;}
   s+=`<g transform="rotate(${F(lean)} 540 1190)"><rect x="330" y="1180" width="420" height="380" rx="150" fill="#e8453c" ${ink(9)}/><rect x="330" y="1180" width="420" height="380" rx="150" fill="url(#dots)" opacity=".10"/><ellipse cx="540" cy="1400" rx="125" ry="150" fill="#ffe58a" ${ink(6)}/><ellipse cx="540" cy="1196" rx="190" ry="48" fill="#ffe58a" ${ink(8)}/>`;
   // cabeça: pãozinho com camadas
   let hh='';
-  hh+=`<g transform="rotate(${F(Math.sin(t*Math.PI*2*1.1+1)*3.5*danca)} 540 1190)" filter="url(#ink-shadow)">`;
+  hh+=`<g transform="translate(0 150) rotate(${F(Math.sin(t*Math.PI*2*1.1+1)*3.5*danca)} 540 1190)" filter="url(#ink-shadow)">`;
   hh+=`<path d="M250 930Q250 1010 330 1030H750Q830 1010 830 930Z" fill="#d98a35" ${ink(9)}/>`;
   hh+=`<rect x="235" y="850" width="610" height="88" rx="40" fill="#6b3a22" ${ink(9)}/><path d="M330 870V918M430 870V918M540 870V918M650 870V918M750 870V918" stroke="#3d2113" stroke-width="7" stroke-linecap="round"/>`;
   hh+=`<rect x="225" y="792" width="630" height="56" rx="10" fill="#ffd23f" ${ink(8)}/><path d="M320 846L350 846L335 912Z M690 846L728 846L706 924Z" fill="#ffd23f" ${ink(7)}/>`;

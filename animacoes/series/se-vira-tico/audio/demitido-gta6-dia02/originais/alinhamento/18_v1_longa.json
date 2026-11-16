@@ -1,0 +1,151 @@
+{
+ "n": 18,
+ "texto": "E sobraram duas coisas de valor. Um: vender a cadeira gamer e jogar no chão até o dia dezenove. Dois: vender a camisa autografada. A que eu nunca vesti.",
+ "palavras": [
+  {
+   "palavra": "E",
+   "ini": 0.067,
+   "fim": 0.08
+  },
+  {
+   "palavra": "sobraram",
+   "ini": 0.12,
+   "fim": 0.64
+  },
+  {
+   "palavra": "duas",
+   "ini": 0.72,
+   "fim": 1.04
+  },
+  {
+   "palavra": "coisas",
+   "ini": 1.12,
+   "fim": 1.44
+  },
+  {
+   "palavra": "de",
+   "ini": 1.48,
+   "fim": 1.52
+  },
+  {
+   "palavra": "valor.",
+   "ini": 1.6,
+   "fim": 2.2
+  },
+  {
+   "palavra": "Um:",
+   "ini": 2.48,
+   "fim": 3.12
+  },
+  {
+   "palavra": "vender",
+   "ini": 3.16,
+   "fim": 3.44
+  },
+  {
+   "palavra": "a",
+   "ini": 3.52,
+   "fim": 3.56
+  },
+  {
+   "palavra": "cadeira",
+   "ini": 3.6,
+   "fim": 3.84
+  },
+  {
+   "palavra": "gamer",
+   "ini": 4,
+   "fim": 4.32
+  },
+  {
+   "palavra": "e",
+   "ini": 4.36,
+   "fim": 4.4
+  },
+  {
+   "palavra": "jogar",
+   "ini": 4.453,
+   "fim": 4.64
+  },
+  {
+   "palavra": "no",
+   "ini": 4.72,
+   "fim": 4.88
+  },
+  {
+   "palavra": "chão",
+   "ini": 4.96,
+   "fim": 5.12
+  },
+  {
+   "palavra": "até",
+   "ini": 5.28,
+   "fim": 5.48
+  },
+  {
+   "palavra": "o",
+   "ini": 5.52,
+   "fim": 5.6
+  },
+  {
+   "palavra": "dia",
+   "ini": 5.68,
+   "fim": 5.76
+  },
+  {
+   "palavra": "dezenove.",
+   "ini": 5.84,
+   "fim": 6.88
+  },
+  {
+   "palavra": "Dois:",
+   "ini": 6.96,
+   "fim": 7.68
+  },
+  {
+   "palavra": "vender",
+   "ini": 7.72,
+   "fim": 8
+  },
+  {
+   "palavra": "a",
+   "ini": 8.027,
+   "fim": 8.053
+  },
+  {
+   "palavra": "camisa",
+   "ini": 8.08,
+   "fim": 8.32
+  },
+  {
+   "palavra": "autografada.",
+   "ini": 8.4,
+   "fim": 9.52
+  },
+  {
+   "palavra": "A",
+   "ini": 9.589,
+   "fim": 9.6
+  },
+  {
+   "palavra": "que",
+   "ini": 9.68,
+   "fim": 9.76
+  },
+  {
+   "palavra": "eu",
+   "ini": 9.8,
+   "fim": 9.84
+  },
+  {
+   "palavra": "nunca",
+   "ini": 10,
+   "fim": 10.24
+  },
+  {
+   "palavra": "vesti.",
+   "ini": 10.32,
+   "fim": 11.04
+  }
+ ]
+}

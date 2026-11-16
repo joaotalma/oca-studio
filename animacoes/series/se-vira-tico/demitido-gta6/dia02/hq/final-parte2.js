@@ -21,7 +21,7 @@
  function balao(cx,y,linhas,tx,ty,t0,t,tam=46){
   const _w=Math.max(...linhas.map(l=>l.length))*tam*.55+60,_h=linhas.length*tam*1.15+30,_x=cx-_w/2;
   const bx=Math.min(_x+_w-70,Math.max(_x+70,tx)),by=y+_h,dx=tx-bx,dy=ty-by,dd=Math.hypot(dx,dy)||1,len=Math.min(dd,120);tx=bx+dx/dd*len;ty=by+dy/dd*len;
-  const a=pop(t,t0,.18); if(a<=0)return '';
+  const a=pop(t,t0,.35); if(a<=0)return '';
   const w=Math.max(...linhas.map(l=>l.length))*tam*.55+60, h=linhas.length*tam*1.15+30, x=cx-w/2;
   let s=`<g transform="translate(${F(cx)} ${F(y+h/2)}) scale(${F(a)}) translate(${F(-cx)} ${F(-y-h/2)})" filter="url(#ink-shadow)">`;
   s+=`<path d="M${F(bx-30)} ${F(y+h-6)}L${F(tx)} ${F(ty)}L${F(bx+30)} ${F(y+h-6)}Z" fill="#fffaf0" ${ink(7)}/>`;
@@ -52,7 +52,7 @@
   if(flash>0)s+=`<rect width="1080" height="1920" fill="#fff" opacity="${F(flash*.9)}"/>`;
   return s;
  }
- const pedHead=(t,expr='surpreso')=>'<clipPath id="pcP"><rect x="0" y="0" width="1080" height="1215"/></clipPath><g clip-path="url(#pcP)">'+ator(PEDRAO,{expr,head:Math.sin(t*12)*3},540,2090,2.2)+'</g>';
+ const pedHead=(t,expr='surpreso')=>'<clipPath id="pcP"><rect x="0" y="0" width="1080" height="1215"/></clipPath><g clip-path="url(#pcP)">'+ator(PEDRAO,{expr,head:Math.sin(t*12)*3},540,2000,2.2)+'</g>';
  function corpoHamb(t,x,y,sc,o={}){ // hambúrguer sem a cabeça: pernas, braços, tronco e gola
   let s=hamburguer(t,{danca:o.danca??.8,moon:o.moon||0});
   return s;
@@ -84,15 +84,17 @@
  function pacto(t){      // 56,1 a 64,4
   const lento=fit(t,63.2,64.0), junta=out((t-61.2)/.9);
   let s=corredorF(t);
-  s+=wrap(mascote(t,{abre:0,danca:.15}),330,1530,.62);
-  s+=wrap(hamburguer(t,{danca:.2,semCabeca:true,look:-1})+pedHead(t,'preocupado'),760,1530,.62,true);
+  s+=wrap(mascote(t,{abre:0,danca:0,aperto:t>=61.2}),330,1530,.62);
+  s+=wrap(hamburguer(t,{danca:0,semCabeca:true,look:-1,aperto:t>=61.2})+pedHead(t,'preocupado'),760,1530,.62,true);
   s+=balao(760,330,['Você não me viu.'],760,1000,57.0,t);
   s+=balao(290,420,['Nem você a mim.'],330,860,59.2,t);
-  if(t>=61.2){ // aperto de mão em câmera lenta
-   const gx=540+(1-junta)*70;
-   s+=`<g transform="translate(${F(gx)} 1010)"><circle r="${F(60+lento*18)}" fill="#fff" ${ink(8)}/><circle cx="${F(-120+junta*80)}" r="52" fill="#fff" ${ink(8)}/><circle cx="${F(120-junta*80)}" r="52" fill="#fff" ${ink(8)}/>`;
-   if(lento>0)for(let i=0;i<10;i++){const an=i*Math.PI/5;s+=`<path d="M${F(Math.cos(an)*110)} ${F(Math.sin(an)*110)}L${F(Math.cos(an)*(150+lento*60))} ${F(Math.sin(an)*(150+lento*60))}" stroke="#ffd23f" stroke-width="10" stroke-linecap="round"/>`;}
-   s+='</g>';
+  if(t>=61.2){ // luvas conectadas às mangas, plano de dois, sem close ambíguo
+   const u=fit(t,61.2,62.1), xL=lerp(475,530,u), xR=lerp(615,560,u), yy=lerp(1400,1320,u);
+   for(const [x0,x,cor] of [[457,xL,'#ffcf5a'],[633,xR,'#e8453c']]){
+    s+=`<path d="M${x0} 1256Q${x0} 1348 ${F(x)} ${F(yy)}" fill="none" stroke="${INK}" stroke-width="64" stroke-linecap="round"/><path d="M${x0} 1256Q${x0} 1348 ${F(x)} ${F(yy)}" fill="none" stroke="${cor}" stroke-width="48" stroke-linecap="round"/>`;
+   }
+   s+=`<g transform="translate(${F(xL)} ${F(yy)})"><path d="M-25 -22Q-10 -32 8 -22L25 -30Q40 -26 34 -12L26 -5Q45 0 38 18Q25 34 -12 22L-28 12Z" fill="#fffaf0" ${ink(5)}/><path d="M10 -6L30 -4M8 6L31 8" fill="none" stroke="#b4afba" stroke-width="3"/></g>`;
+   s+=`<g transform="translate(${F(xR)} ${F(yy+5)}) rotate(180)"><path d="M-25 -22Q-10 -32 8 -22L25 -30Q40 -26 34 -12L26 -5Q45 0 38 18Q25 34 -12 22L-28 12Z" fill="#fffaf0" ${ink(5)}/><path d="M10 -6L30 -4M8 6L31 8" fill="none" stroke="#b4afba" stroke-width="3"/></g>`;
   }
   return s;
  }
@@ -111,21 +113,23 @@
   let s=`<rect width="1080" height="1920" fill="#e7d9bf"/><rect width="1080" height="1920" fill="url(#paper)" opacity=".35"/><path d="M0 1500H1080V1920H0Z" fill="#cfb88f" ${ink(8)}/><rect x="60" y="240" width="420" height="620" fill="#9ad0c9" ${ink(8)}/><path d="M270 240V860M60 550H480" stroke="${INK}" stroke-width="8"/>`;
   s+=`<g transform="translate(700 560)"><rect width="320" height="900" rx="14" fill="#bc9271" ${ink(8)}/><rect x="30" y="40" width="260" height="200" fill="#e9dcb2" ${ink(5)}/><rect x="30" y="280" width="260" height="200" fill="#e9dcb2" ${ink(5)}/></g>`;
   // Kauã sem a cabeça do mascote: cabelo amassado e rosto vermelho (rig + recorte no pescoço do traje)
-  const KCAB='<clipPath id="pcK"><rect x="0" y="0" width="1080" height="1200"/></clipPath><g clip-path="url(#pcK)">'+ator(DA,{expr:'cansado',head:-2},540,2200,2.4)+'<ellipse cx="418" cy="880" rx="60" ry="34" fill="#e6554f" opacity=".5"/><ellipse cx="662" cy="860" rx="60" ry="34" fill="#e6554f" opacity=".5"/></g>';
+  const KCAB='<clipPath id="pcK"><rect x="0" y="0" width="1080" height="1200"/></clipPath><g clip-path="url(#pcK)">'+ator(DA,{expr:'cansado',head:-2},540,2100,2.4)+'</g>';
   s+=wrap(mascote(t,{abre:0,danca:0,semCabeca:true})+KCAB,330,1620,.72);
   s+=`<g transform="translate(190 1270) rotate(-14) scale(.7)"><rect x="-160" y="-200" width="320" height="400" rx="60" fill="#8a6fd6" ${ink(9)}/><rect x="-132" y="-172" width="264" height="344" rx="40" fill="url(#vice-sunset)" ${ink(6)}/><path d="M-70 -50Q-40 -90 -10 -50M30 -50Q60 -90 90 -50" fill="none" stroke="#3a1f4a" stroke-width="14" stroke-linecap="round"/><path d="M-80 20Q10 110 100 20Q10 40 -80 20Z" fill="#3a1f4a"/></g>`;
-  // gerente de costas, entregando as notas
-  s+=`<g transform="translate(${F(820-a*0)} 1500)"><path d="M-130 0Q-150 -420 -90 -540Q0 -590 90 -540Q150 -420 130 0Z" fill="#35496b" ${ink(9)}/><circle cx="0" cy="-640" r="84" fill="#7a5a44" ${ink(9)}/><path d="M-84 -650Q0 -740 84 -650Q70 -700 0 -712Q-70 -700 -84 -650Z" fill="#1c1410"/><g transform="translate(-130 -400) rotate(${F(-70+nota*20)})"><path d="M0 0V220" stroke="${INK}" stroke-width="78" stroke-linecap="round"/><path d="M0 0V220" stroke="#35496b" stroke-width="58" stroke-linecap="round"/><rect x="-36" y="210" width="72" height="44" rx="6" fill="#8fd47a" ${ink(5)}/></g></g>`;
+  // Gerente genérico de frente, com rosto e roupa próprios; notas na mão.
+  const GERENTE={...LEO,key:'gerente',skin:'#c59574',shade:'#986649',hair:'#382a22',hairHi:'#564239',cloth:'#35496b',clothD:'#223453',clothHi:'#6983a3',pants:'#3b3844',pantsD:'#242330',hs:1.45};
+  s+=ator(GERENTE,{expr:'neutro',head:-3,armL:[-35,-115],armR:[8,10]},820,1580,1.2);
+  s+=`<g transform="translate(675 1190) rotate(-12)"><rect x="-52" y="-32" width="104" height="64" rx="6" fill="#8fd47a" ${ink(5)}/><rect x="-44" y="-42" width="104" height="64" rx="6" fill="#b9e69a" ${ink(5)}/><text x="8" y="2" text-anchor="middle" font-family="Arial" font-weight="900" font-size="28" fill="${INK}">80</text></g>`;
   s+=balao(790,420,['R$ 80','−R$ 30 (lavagem','da fantasia)'],780,780,70.8,t,44);
   s+=`<g transform="translate(540 1180) scale(${F(desc)})"><rect x="-250" y="-64" width="500" height="128" rx="12" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="36" text-anchor="middle" ${FONTEH} font-size="84" fill="#ff8a8a">−R$ 30</text></g>`;
   return s;
  }
  function conta(t){      // 75,4 a 79,4: três e vinte mais cinquenta
-  const a=pop(t,75.5,.25), b=pop(t,77.0,.25), c=pop(t,78.2,.3);
+  const a=fit(t,75.5,76.0), b=fit(t,77.0,77.5), c=fit(t,78.2,78.7);
   let s=`<rect width="1080" height="1920" fill="url(#vice-rim)"/><rect width="1080" height="1920" fill="url(#dots)" opacity=".16"/>`;
-  s+=`<g transform="translate(540 700) scale(${F(a)})"><rect x="-440" y="-110" width="880" height="220" rx="16" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="66" text-anchor="middle" ${FONTEH} font-size="150" fill="${CREAM}">R$ 3,20</text></g>`;
-  s+=`<g transform="translate(540 1010) scale(${F(b)})"><rect x="-440" y="-110" width="880" height="220" rx="16" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="66" text-anchor="middle" ${FONTEH} font-size="150" fill="#9be58a">+ R$ 50</text></g>`;
-  s+=`<g transform="translate(540 1330) rotate(-3) scale(${F(c)})" filter="url(#ink-shadow)"><rect x="-470" y="-130" width="940" height="260" rx="20" fill="url(#vice-sunset)" ${ink(12)}/><text y="70" text-anchor="middle" ${FONTEH} font-size="190" fill="#fff9e7" stroke="#35233e" stroke-width="12" paint-order="stroke fill">R$ 53,20</text></g>`;
+  s+=`<g opacity="${F(a)}" transform="translate(540 700) "><rect x="-440" y="-110" width="880" height="220" rx="16" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="66" text-anchor="middle" ${FONTEH} font-size="150" fill="${CREAM}">R$ 3,20</text></g>`;
+  s+=`<g opacity="${F(b)}" transform="translate(540 1010) "><rect x="-440" y="-110" width="880" height="220" rx="16" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="66" text-anchor="middle" ${FONTEH} font-size="150" fill="#9be58a">+ R$ 50</text></g>`;
+  s+=`<g opacity="${F(c)}" transform="translate(540 1330) rotate(-3) " filter="url(#ink-shadow)"><rect x="-470" y="-130" width="940" height="260" rx="20" fill="url(#vice-sunset)" ${ink(12)}/><text y="70" text-anchor="middle" ${FONTEH} font-size="190" fill="#fff9e7" stroke="#35233e" stroke-width="12" paint-order="stroke fill">R$ 53,20</text></g>`;
   return s;
  }
  function chatUI(t){     // 79,7 a 88,2 e cartão da regra nº 2
@@ -134,9 +138,9 @@
   const msgs=[[80.4,'Léo','pizza da noite do lançamento','R$ 40 cada',false,'#ffd9b8',LEO],[81.7,'Rafa','',null,true,'#d9f2e0',RAFA],[82.7,'Pedrão','',null,true,'#d9f2e0',PEDRAO],[83.8,'Léo','@Kauã e tu?','',false,'#ffd9b8',LEO]];
   let y=380;
   for(const [t0,quem,l1,l2,check,cor,d] of msgs){
-   const a=pop(t,t0,.2);
+   const a=fit(t,t0,t0+.4);
    if(a>0){const h=check?110:(l2?190:140);
-    s+=`<g transform="translate(120 ${y}) scale(${F(a)})" style="transform-origin:0 0"><circle cx="46" cy="${h/2}" r="46" fill="${d.cloth}" ${ink(6)}/><text x="46" y="${h/2+14}" text-anchor="middle" ${FONTEH} font-size="40" fill="#fff">${quem[0]}</text><rect x="110" y="0" width="${check?190:640}" height="${h}" rx="28" fill="${cor}" ${ink(6)}/>`;
+    s+=`<g transform="translate(120 ${y})" opacity="${F(a)}"><circle cx="46" cy="${h/2}" r="46" fill="${d.cloth}" ${ink(6)}/><text x="46" y="${h/2+14}" text-anchor="middle" ${FONTEH} font-size="40" fill="#fff">${quem[0]}</text><rect x="110" y="0" width="${check?190:640}" height="${h}" rx="28" fill="${cor}" ${ink(6)}/>`;
     if(check)s+=`<rect x="150" y="24" width="62" height="62" rx="12" fill="#3fbf6a" ${ink(5)}/><path d="M164 56L180 72L204 40" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>`;
     else{s+=`<text x="136" y="52" font-family="Arial Black,Impact" font-weight="900" font-size="36" fill="${INK}">${l1}</text>`;if(l2)s+=`<text x="136" y="104" font-family="Arial Black,Impact" font-weight="900" font-size="52" fill="#c93a3a">${l2}</text>`;}
     s+='</g>';}
@@ -145,10 +149,10 @@
   // "Pedrão ✅ (cansado)": legenda miúda sob o check
   if(t>83.2)s+=`<text x="360" y="${F(380+190+34+110+34+80)}" font-family="Arial Black,Impact" font-weight="900" font-size="32" fill="#7a6a8a" opacity="${F(pop(t,83.2,.3))}">(cansado)</text>`;
   // cartão da regra nº 2
-  const r=pop(t,86.7,.28);
+  const r=fit(t,86.7,87.2);
   if(r>0){
    s+=`<rect width="1080" height="1920" fill="#2a2140" opacity="${F(Math.min(1,r)*.9)}"/>`;
-   s+=`<g transform="translate(540 760) rotate(-3) scale(${F(r)})" filter="url(#ink-shadow)"><rect x="-470" y="-250" width="940" height="500" rx="22" fill="url(#vice-sunset)" ${ink(12)}/><text y="-130" text-anchor="middle" ${FONTEH} font-size="70" letter-spacing="5" fill="#35233e">REGRA DO GRUPO Nº 2</text><text y="-20" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#35233e" stroke-width="10" paint-order="stroke fill">QUEM NÃO RACHA,</text><text y="130" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#35233e" stroke-width="10" paint-order="stroke fill">NÃO SENTA.</text></g>`;
+   s+=`<g opacity="${F(r)}" transform="translate(540 760) rotate(-3) " filter="url(#ink-shadow)"><rect x="-470" y="-250" width="940" height="500" rx="22" fill="url(#vice-sunset)" ${ink(12)}/><text y="-130" text-anchor="middle" ${FONTEH} font-size="70" letter-spacing="5" fill="#35233e">REGRA DO GRUPO Nº 2</text><text y="-20" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#35233e" stroke-width="10" paint-order="stroke fill">QUEM NÃO RACHA,</text><text y="130" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#35233e" stroke-width="10" paint-order="stroke fill">NÃO SENTA.</text></g>`;
    s+=cadeira(540,1500,1.0,r);
   }
   return s;
@@ -166,24 +170,23 @@
   return s;
  }
  function pix(t){        // 88,4 a 99,6: ele paga a pizza
-  const k=pop(t,95.6,.3), s2=pop(t,98.1,.3);
+  const k=fit(t,95.6,96.1), s2=pop(t,98.1,.3);
   let s=quarto(t)+cadeira(780,1600,.95);
   const bat=Math.sin(t*2);
-  s+=ator(D,{expr:t>96.0?'cansado':'preocupado',head:bat*2-2,look:[t>93.2?-8:0,2],armR:[-60,-70]},400,1620,.98);
+  s+=ator(DA,{expr:t>96.0?'cansado':t>92?'envergonhado':'preocupado',head:bat*4-2,lean:Math.sin(t*1.6)*2,look:[t>93.2?-8:0,2],propR:'phone',armR:[30,160+Math.sin(t*2)*4]},400,1620,1.2);
   // pizza e dignidade fatiada
   const pz=pop(t,93.8,.3);
   s+=`<g transform="translate(250 760) rotate(-12) scale(${F(pz)})"><path d="M0 0L260 -40Q300 40 150 150Z" fill="#ffd9b8" ${ink(9)}/><path d="M24 20L250 -16Q270 40 150 120Z" fill="#ffb347" ${ink(6)}/><circle cx="160" cy="30" r="22" fill="#e8453c" ${ink(5)}/><circle cx="210" cy="70" r="18" fill="#e8453c" ${ink(5)}/><path d="M130 160L260 140" stroke="${INK}" stroke-width="0"/></g>`;
-  if(k>0)s+=`<g transform="translate(540 740) rotate(2) scale(${F(k)})" filter="url(#ink-shadow)"><rect x="-340" y="-150" width="680" height="300" rx="30" fill="#fffaf0" ${ink(10)}/><circle cx="-220" cy="0" r="62" fill="#3fbf6a" ${ink(7)}/><path d="M-246 0L-228 20L-192 -22" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><text x="-130" y="-20" font-family="Arial Black,Impact" font-weight="900" font-size="48" fill="${INK}">PIX ENVIADO</text><text x="-130" y="56" ${FONTEH} font-size="84" fill="#c93a3a">R$ 40,00</text></g>`;
+  if(k>0)s+=`<g opacity="${F(k)}" transform="translate(540 740) rotate(2)" filter="url(#ink-shadow)"><rect x="-340" y="-150" width="680" height="300" rx="30" fill="#fffaf0" ${ink(10)}/><circle cx="-220" cy="0" r="62" fill="#3fbf6a" ${ink(7)}/><path d="M-246 0L-228 20L-192 -22" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><text x="-130" y="-20" font-family="Arial Black,Impact" font-weight="900" font-size="48" fill="${INK}">PIX ENVIADO</text><text x="-130" y="56" ${FONTEH} font-size="84" fill="#c93a3a">R$ 40,00</text></g>`;
   return s;
  }
  function mae(t){        // 99,8 a 104,4
   const a=out((t-99.9)/.3);
   let s=quarto(t);
   s+=`<g transform="translate(900 1540)"><rect x="-120" y="-700" width="240" height="820" fill="#7a5a44" ${ink(9)}/><path d="M-110 -700V120" stroke="${INK}" stroke-width="0"/></g>`;
-  // Dona Rose, só da cintura para baixo (avental e chinelo), no vão da porta
-  s+=`<g transform="translate(${F(900-0)} 1540)"><path d="M-110 -220Q-130 -20 -110 120H110Q130 -20 110 -220Z" fill="#5c8f6a" ${ink(9)}/><path d="M-90 -200Q0 -170 90 -200L100 60H-100Z" fill="#fff2c9" ${ink(7)}/><path d="M-60 120V220M60 120V220" stroke="${INK}" stroke-width="40" stroke-linecap="round"/><path d="M-60 120V220M60 120V220" stroke="#e9c19a" stroke-width="26" stroke-linecap="round"/><ellipse cx="-62" cy="236" rx="48" ry="22" fill="#e8453c" ${ink(6)}/><ellipse cx="62" cy="236" rx="48" ry="22" fill="#e8453c" ${ink(6)}/></g>`;
+  // Dona Rose permanece fora de quadro; a porta e o balão localizam sua voz.
   // Kauã de costas ao lado, com a sacola enorme (a ponta da cabeça do celular aparece)
-  s+=ator(D,{expr:'preocupado',head:-2,look:[8,0],armR:[-55,-40]},380,1620,.98);
+  s+=ator(DA,{expr:t<102.6?'preocupado':'forcado',head:-2+Math.sin(t*3)*3,look:[8,0],armR:[-55,-40]},380,1620,1.2);
   s+=`<g transform="translate(560 1480)"><path d="M-110 0Q-140 -250 -70 -330H120Q190 -250 160 0Q20 40 -110 0Z" fill="#c9b8ff" ${ink(10)}/><path d="M-40 -330Q0 -430 70 -330" stroke="${INK}" stroke-width="14" fill="none"/><rect x="-20" y="-410" width="120" height="110" rx="24" fill="#8a6fd6" ${ink(9)} transform="rotate(-10)"/><path d="M-60 -250L10 -180" stroke="#fff" stroke-width="10" opacity=".5"/></g>`;
   s+=balao(700,330,['Filho, o que tem','nessa sacola?'],900,1060,100.1,t,44);
   s+=balao(270,560,['Servidor, mãe.'],380,860,102.7,t,48);
@@ -198,21 +201,22 @@
   return s;
  }
  function votacao(t){    // 110,6 a 116,6
-  const a=out((t-110.7)/.35), b=out((t-111.0)/.35), c=pop(t,112.4,.3);
+  const a=out((t-110.7)/.35), b=out((t-111.0)/.35), c=fit(t,112.4,112.9);
   let s=`<rect width="1080" height="1920" fill="url(#vice-rim)"/><rect width="1080" height="1920" fill="url(#dots)" opacity=".16"/>`;
   s+=`<g transform="translate(540 330) rotate(-2)"><rect x="-480" y="-100" width="960" height="200" rx="14" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="30" text-anchor="middle" ${FONTEH} font-size="84" letter-spacing="3" fill="${CREAM}">O QUE O KAUÃ VENDE?</text></g>`;
   s+=`<g transform="translate(${F(540-(1-a)*1200)} 740) rotate(-1.5)" filter="url(#ink-shadow)"><rect x="-440" y="-200" width="880" height="400" rx="26" fill="#2f7f8a" ${ink(12)}/><text x="0" y="-100" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#183c44" stroke-width="10" paint-order="stroke fill">CADEIRA</text><g transform="translate(-260 150) scale(.42)">${cadeira(0,0,1)}</g><text x="140" y="30" text-anchor="middle" ${FONTEH} font-size="70" fill="#eaffff">R$ 150</text><text x="140" y="100" text-anchor="middle" font-family="Arial Black,Impact" font-weight="900" font-size="34" fill="#eaffff">joga no chão até o dia 19</text></g>`;
-  s+=`<g transform="translate(${F(540+(1-b)*1200)} 1190) rotate(1.5)" filter="url(#ink-shadow)"><rect x="-440" y="-200" width="880" height="400" rx="26" fill="#e86a5c" ${ink(12)}/><text x="0" y="-100" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#6a2118" stroke-width="10" paint-order="stroke fill">CAMISA</text><g transform="translate(-260 40) scale(1.0)"><path d="M-110 -40L-50 -90H50L110 -40L80 -10L60 -30V120H-60V-30L-80 -10Z" fill="#ffd23f" ${ink(7)}/></g><text x="140" y="30" text-anchor="middle" ${FONTEH} font-size="70" fill="#fff4ea">R$ 150</text><text x="140" y="100" text-anchor="middle" font-family="Arial Black,Impact" font-weight="900" font-size="34" fill="#fff4ea">o maior tesouro dele</text></g>`;
-  s+=`<g transform="translate(540 1470) scale(${F(c)})"><rect x="-340" y="-60" width="680" height="120" rx="12" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="30" text-anchor="middle" ${FONTEH} font-size="74" letter-spacing="6" fill="${CREAM}">VOCÊS DECIDEM.</text></g>`;
+  s+=`<g transform="translate(${F(540+(1-b)*1200)} 1190) rotate(1.5)" filter="url(#ink-shadow)"><rect x="-440" y="-200" width="880" height="400" rx="26" fill="#e86a5c" ${ink(12)}/><text x="0" y="-100" text-anchor="middle" ${FONTEH} font-size="130" fill="#fff9e7" stroke="#6a2118" stroke-width="10" paint-order="stroke fill">CAMISA</text><g transform="translate(-260 40) scale(1.0)"><path d="M-110 -40L-50 -90H50L110 -40L80 -10L60 -30V120H-60V-30L-80 -10Z" fill="#ffd23f" ${ink(7)}/><text x="0" y="60" text-anchor="middle" font-family="Segoe Script,cursive" font-size="30" font-style="italic" fill="#183c44">R. Silva</text><path d="M-42 74Q0 86 46 70" fill="none" stroke="#183c44" stroke-width="3"/></g><text x="140" y="30" text-anchor="middle" ${FONTEH} font-size="70" fill="#fff4ea">R$ 150</text><text x="140" y="100" text-anchor="middle" font-family="Arial Black,Impact" font-weight="900" font-size="34" fill="#fff4ea">o maior tesouro dele</text></g>`;
+  s+=`<g opacity="${F(c)}" transform="translate(540 1470)"><rect x="-340" y="-60" width="680" height="120" rx="12" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="30" text-anchor="middle" ${FONTEH} font-size="74" letter-spacing="6" fill="${CREAM}">VOCÊS DECIDEM.</text></g>`;
   return s;
  }
  function fim(t){        // 116,8 a 117,8
   let s=`<rect width="1080" height="1920" fill="#4a4278"/><rect width="1080" height="1920" fill="url(#dots)" opacity=".10"/>`;
   s+=`<path d="M0 0H540L420 1920H0Z" fill="#a8845f" ${ink(0)}/><path d="M540 0H1080V1920H420Z" fill="#8fb8c8"/><path d="M540 0L420 1920" stroke="${CREAM}" stroke-width="18"/><path d="M540 0L420 1920" stroke="${INK}" stroke-width="7"/>`;
   s+=cadeira(220,1300,1.4);
+  s+=ator(DA,{expr:'preocupado',sentado:true,head:-3,armL:[-8,5],armR:[8,-5]},240,1650,.68);
   s+=`<g transform="translate(780 780)"><rect x="-190" y="-240" width="380" height="500" fill="#fffaf0" ${ink(12)}/><rect x="-150" y="-200" width="300" height="420" fill="#d8d0e8"/><path d="M-110 -120L-50 -170H50L110 -120L80 -90L60 -110V90H-60V-110L-80 -90Z" fill="#ffd23f" ${ink(8)}/></g>`;
   s+=`<g transform="translate(560 1480)"><rect x="-250" y="-80" width="500" height="160" rx="24" fill="url(#vice-sunset)" ${ink(10)}/><text y="30" text-anchor="middle" ${FONTEH} font-size="90" fill="#35233e">ANUNCIAR</text></g>`;
-  s+=`<g transform="translate(700 1560) rotate(-18)"><ellipse rx="52" ry="82" fill="#c68b62" ${ink(8)}/></g>`;
+  s+=`<path d="M680 1540L680 1485L725 1525L701 1528L689 1550Z" fill="#fffaf0" ${ink(5)}/>`;
   return s;
  }
  function scene(t){
@@ -230,13 +234,15 @@
   else if(t<110.6)body=anuncios(t);
   else if(t<116.7)body=votacao(t);
   else body=fim(t);
+  // Aproximação contínua na reação: traz o rosto ao foco; interfaces ficam estáveis para ler.
+  const plano=t<46.15?[39.9,46.15]:t>=68.8&&t<75.4?[68.8,75.4]:t>=88.35&&t<99.7?[88.35,99.7]:t>=99.7&&t<104.5?[99.7,104.5]:null;
+  if(plano){const z=1+cl((t-plano[0])/(plano[1]-plano[0]))*.10;body=`<g transform="translate(540 1100) scale(${z.toFixed(5)}) translate(-540 -1100)">${body}</g>`;}
   let s=defs(t)+body+hud2(t,t<56.1||(t>=64.5&&t<75.4));
-  const cut=[46.15,52.1,56.1,64.5,68.8,75.4,79.6,88.35,99.7,104.5,110.6,116.7];
-  for(const c of cut){const b=bell(t,c-.05,c+.12);if(b>0)s+=`<rect width="1080" height="1920" fill="#fff" opacity="${F(b*.5)}"/>`;}
-  const ent=1-fit(t,39.9,40.25);if(ent>0)s+=`<rect width="1080" height="1920" fill="#fff" opacity="${F(ent)}"/>`;
+
   return s;
  }
  function captions(t){
+  if(window.LEGENDAS_EXTERNAS)return;
   if(t>=110.6)return;
   const f=FRASES.find(([a,b])=>t>=a&&t<b);if(!f)return;
   ctx.save();ctx.scale(C.width/1080,C.height/1920);ctx.font='900 49px Arial';ctx.textAlign='center';ctx.textBaseline='middle';

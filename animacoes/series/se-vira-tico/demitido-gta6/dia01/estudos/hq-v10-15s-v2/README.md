@@ -1,5 +1,7 @@
 # Abertura HQ V10 — segunda amostra, 15 segundos
 
+**Aprovada pelo João em 14/11/2026 como visual padrão do spin-off a partir do Dia 2** (ver BIBLIA, seção de visual). O Dia 1 publicado não é refeito.
+
 Revisão solicitada pelo João em 13/11/2026. Estudo isolado para comparar com a primeira amostra HQ; não substitui o episódio inteiro nem a versão anterior.
 
 ## Ajustes

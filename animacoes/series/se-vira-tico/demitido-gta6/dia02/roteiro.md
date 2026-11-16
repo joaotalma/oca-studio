@@ -1,6 +1,8 @@
 # Dia 2: Celular Feliz vs. Hambúrguer Louco
 
-**Estado:** v4 (14/11/2026): roteiro aprovado pelo João, falas gravadas (voz `kaua2`, `rose`, locutor Brian), luta em 3D aprovada (24 a 40 s), gancho e parte 1 em HQ V10 (0 a 24 s) em produção. Pendente: cenas HQ de 40 s ao fim (selfie, revelação, pacto, pagamento, pizza, mãe, anúncios, voto), personagens novos no rig (Léo, Rafa, Pedrão), montagem, QA e capa.
+**Revisão vigente solicitada pelo João em 14/11/2026:** montagem de 107,116 s, com entrada de batalha, nova identificação do Pedrão e CTA gravados. Sem selfie de Léo/Rafa, sem cena da mãe, sem classificados e sem repetição após o voto. Uma única tela “O que o Kauã vende?”. As cenas e tempos da v4 abaixo são a base histórica; a revisão executável está em `revisao-joao/preparar.mjs`, com decisões em `revisao-joao/DECISOES.md`.
+
+**Estado:** vídeo final aprovado automaticamente, por autorização do João em 12/11/2026.
 **Voto vencedor do Dia 1:** **FANTASIA**. Sem contagem de votos, então não há placar (a regra pede 10 votos ou mais). Se o João trouxer os números, entra logo depois do gancho.
 **Duração (linha do tempo real, 14/11/2026):** **117,8 s (1:58)**, com cerca de 96 s de fala, já com as pausas apertadas e a fala 2 encurtada. Faixa do QA: 105 a 140 s.
 **Direitos:** SÓ COMENTÁRIO. O jogo só é citado; os HUDs e o "Hambúrguer Louco" são nossos, sem marcas reais.
@@ -186,9 +188,11 @@ Pedido do João em 14/11/2026: a interpretação precisa **trocar de tom no meio
 - [x] Sem isca: nenhum "comente", "envie", "marque" ou "compartilhe" na fala ou na tela. Pedido de seguir, um só.
 - [x] Nenhuma imagem, fonte ou som do jogo. "Dia 2" só na capa.
 - [x] Duração medida pelo áudio real: 117,8 s (faixa de 105 a 140 s).
-- [ ] Confirmar a frase "Ontem vocês votaram" (quebra um pouco a quarta parede).
+- [x] "Ontem vocês votaram" mantida no roteiro aprovado e na voz existente; resultado FANTASIA sem placar inventado.
 
 ## Produção (depois do sim do João)
+
+**Histórico da preparação, concluída em 14/11/2026.** As pendências e hipóteses técnicas abaixo registram a v4, antes da execução. Voz `kaua2` escolhida pelo João, gravações reutilizadas, elenco aprovado nesta retomada e vídeo final entregue. Para reproduzir a versão concluída, seguir `PRODUCAO.md`; medições e limites em `qa.md`.
 
 - **Voz nova do Kauã (decisão do João em 14/11/2026):** a `kauanarra` sai de cena neste episódio. Antes de criar a voz, o João precisa dar o OK de uso de crédito (o Voice Design gera prévias pagas). **Brief da voz, pra aprovar:** homem de 18 a 22 anos, brasileiro, paulista ou carioca leve, **energia alta e fala rápida**, sarcástico, de quem conta fofoca para os amigos, com risada na garganta; evitar voz de locutor. Texto de amostra: o gancho e uma fala de piada do Dia 2. Gerar de 3 a 4 prévias, e o João escolhe de ouvido. Dona Rose segue com a voz `rose`. **Atenção:** o Dia 1 publicado tem a voz antiga do Kauã; a mudança vai ser perceptível para quem viu os dois. Estimativa de créditos de gravação: cerca de 1.400 caracteres, mais as prévias e as regravações.
 - **3D só na luta (a validar com amostra antes do master):** a luta de dança (24 a 40 s) é em 3D estilizado (formas simples, cor chapada, contorno e sombra tipo desenho), renderizada em código com Three.js no mesmo pipeline Playwright do motor. Three.js 0.160.0 já está em `3d/vendor/three/` (MIT, origem anotada; não entrou no `package.json` do repositório). Os personagens 3D são só o **Celular Feliz** e o **Hambúrguer Louco** (o Kauã e o Pedrão aparecem dentro das fantasias, então não precisam de modelo 3D). Há um protótipo do Celular Feliz em 3D em `3d/amostra/film.html`, feito antes da decisão de limitar o 3D à luta (ele testou o gancho; o gancho final é em HQ V10).
@@ -196,3 +200,9 @@ Pedido do João em 14/11/2026: a interpretação precisa **trocar de tom no meio
 - **Retomadas do Dia 3:** renderizar CADEIRA e CAMISA antes das 18h de 15/11.
 - **QA:** `node scripts/qa-episodio.mjs <filme> <video>`, de `series/se-vira-tico/`.
 - **Postagem:** capa "DIA 2" seguindo o `GUIA-CAPAS.md`; sem "comente".
+
+<!-- aprovacao-final-automatica -->
+## Aprovação final
+
+Vídeo final aprovado pelo fluxo autorizado pelo João em 12/11/2026. Registro: C:\Users\joaot\Projetos\oca-studio\animacoes\entregas\demitido-antes-do-gta\dia02\aprovacao.json. SHA-256: 5dc6ad111c30b9765c39376c5c506ba59faa310c46abb697fb46ee18664b80d6. Publicação manual pelo João.
+<!-- /aprovacao-final-automatica -->

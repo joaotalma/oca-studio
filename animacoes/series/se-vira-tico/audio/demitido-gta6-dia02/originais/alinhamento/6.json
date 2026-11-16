@@ -1,0 +1,86 @@
+{
+ "n": 6,
+ "texto": "Do outro lado do corredor: o Hambúrguer Louco. Ele me encarou. Eu encarei. Ele fez moonwalk.",
+ "palavras": [
+  {
+   "palavra": "Do",
+   "ini": 0.144,
+   "fim": 0.16
+  },
+  {
+   "palavra": "outro",
+   "ini": 0.24,
+   "fim": 0.56
+  },
+  {
+   "palavra": "lado",
+   "ini": 0.64,
+   "fim": 0.88
+  },
+  {
+   "palavra": "do",
+   "ini": 0.96,
+   "fim": 1
+  },
+  {
+   "palavra": "corredor:",
+   "ini": 1.04,
+   "fim": 1.84
+  },
+  {
+   "palavra": "o",
+   "ini": 2.08,
+   "fim": 2.16
+  },
+  {
+   "palavra": "Hambúrguer",
+   "ini": 2.24,
+   "fim": 2.72
+  },
+  {
+   "palavra": "Louco.",
+   "ini": 2.8,
+   "fim": 3.52
+  },
+  {
+   "palavra": "Ele",
+   "ini": 3.84,
+   "fim": 4
+  },
+  {
+   "palavra": "me",
+   "ini": 4.04,
+   "fim": 4.08
+  },
+  {
+   "palavra": "encarou.",
+   "ini": 4.16,
+   "fim": 4.88
+  },
+  {
+   "palavra": "Eu",
+   "ini": 5.12,
+   "fim": 5.2
+  },
+  {
+   "palavra": "encarei.",
+   "ini": 5.28,
+   "fim": 6.04
+  },
+  {
+   "palavra": "Ele",
+   "ini": 6.44,
+   "fim": 6.48
+  },
+  {
+   "palavra": "fez",
+   "ini": 6.52,
+   "fim": 6.64
+  },
+  {
+   "palavra": "moonwalk.",
+   "ini": 6.72,
+   "fim": 7.84
+  }
+ ]
+}

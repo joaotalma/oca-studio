@@ -1,0 +1,66 @@
+{
+ "n": 5,
+ "texto": "Hora quatro. Eu achei que o calor era o chefão. Não era.",
+ "palavras": [
+  {
+   "palavra": "Hora",
+   "ini": 0.08,
+   "fim": 0.32
+  },
+  {
+   "palavra": "quatro.",
+   "ini": 0.4,
+   "fim": 1.12
+  },
+  {
+   "palavra": "Eu",
+   "ini": 1.44,
+   "fim": 1.52
+  },
+  {
+   "palavra": "achei",
+   "ini": 1.6,
+   "fim": 1.76
+  },
+  {
+   "palavra": "que",
+   "ini": 1.8,
+   "fim": 1.84
+  },
+  {
+   "palavra": "o",
+   "ini": 1.88,
+   "fim": 1.92
+  },
+  {
+   "palavra": "calor",
+   "ini": 2,
+   "fim": 2.4
+  },
+  {
+   "palavra": "era",
+   "ini": 2.44,
+   "fim": 2.48
+  },
+  {
+   "palavra": "o",
+   "ini": 2.56,
+   "fim": 2.667
+  },
+  {
+   "palavra": "chefão.",
+   "ini": 2.773,
+   "fim": 3.32
+  },
+  {
+   "palavra": "Não",
+   "ini": 3.68,
+   "fim": 3.84
+  },
+  {
+   "palavra": "era.",
+   "ini": 3.92,
+   "fim": 4.56
+  }
+ ]
+}

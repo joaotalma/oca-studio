@@ -20,8 +20,8 @@
  function cartaoVoto(t){
   const a=out((t-7.45)/.3), b=out((t-7.7)/.3), pop=out((t-8.1)/.2);
   let s=`<rect width="1080" height="1920" fill="url(#vice-rim)"/><rect width="1080" height="1920" fill="url(#dots)" opacity=".16"/>`;
-  s+=`<g transform="translate(${F(-1200*(1-a))} 0)"><g transform="translate(540 430) rotate(-3)"><rect x="-440" y="-120" width="880" height="240" rx="14" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="64" text-anchor="middle" font-family="Impact,Arial Black" font-size="150" letter-spacing="8" fill="${CREAM}">VOCÊS VOTARAM</text></g></g>`;
-  s+=`<g transform="translate(${F(1300*(1-b))} 0)"><g transform="translate(540 960) rotate(2)" filter="url(#ink-shadow)"><rect x="-450" y="-250" width="900" height="500" rx="26" fill="url(#vice-sunset)" ${ink(12)}/><text y="52" text-anchor="middle" font-family="Impact,Arial Black" font-size="200" fill="#fff9e7" stroke="#35233e" stroke-width="14" paint-order="stroke fill">FANTASIA</text><text y="150" text-anchor="middle" font-family="Impact,Arial Black" font-size="66" letter-spacing="6" fill="#35233e">MASCOTE · R$ 80 POR DIA</text></g></g>`;
+  s+=`<g transform="translate(${F(-1200*(1-a))} 0)"><g transform="translate(540 430) rotate(-3)"><rect x="-440" y="-120" width="880" height="240" rx="14" fill="#30233f" stroke="#ffe7c2" stroke-width="6"/><text y="64" text-anchor="middle" font-family="Impact,Arial Black" font-size="112" letter-spacing="4" fill="${CREAM}">VOCÊS VOTARAM</text></g></g>`;
+  s+=`<g transform="translate(${F(1300*(1-b))} 0)"><g transform="translate(540 960) rotate(2)" filter="url(#ink-shadow)"><rect x="-450" y="-250" width="900" height="500" rx="26" fill="url(#vice-sunset)" ${ink(12)}/><text y="52" text-anchor="middle" font-family="Impact,Arial Black" font-size="166" fill="#fff9e7" stroke="#35233e" stroke-width="14" paint-order="stroke fill">FANTASIA</text><text y="150" text-anchor="middle" font-family="Impact,Arial Black" font-size="66" letter-spacing="6" fill="#35233e">MASCOTE · R$ 80 POR DIA</text></g></g>`;
   s+=`<g transform="translate(${F(1500*(1-b))} 1480) rotate(-2) scale(.9)" opacity=".75"><rect x="-300" y="-110" width="600" height="220" rx="22" fill="#9a8fb0" ${ink(9)}/><text y="40" text-anchor="middle" font-family="Impact,Arial Black" font-size="110" fill="#e6dff1" stroke="#4a4160" stroke-width="8" paint-order="stroke fill">CACHORROS</text></g>`;
   s+=`<g transform="translate(850 760) rotate(14) scale(${F(pop)})"><polygon points="0,-130 36,-52 120,-70 70,0 124,64 38,56 0,134 -38,56 -124,64 -70,0 -120,-70 -36,-52" fill="#ffd23f" ${ink(9)}/><text y="20" text-anchor="middle" font-family="Impact,Arial Black" font-size="62" fill="#e8453c" stroke="${INK}" stroke-width="6" paint-order="stroke fill">VENCEU!</text></g>`;
   return s;
@@ -83,12 +83,10 @@
   else if(t<17.0)body=horaQuatro(t);
   else body=corredor(t);
   let s=defs(t)+body+hud(t);
-  const fl=fit(t,23.7,23.88)*(1-fit(t,23.97,24.0));if(t>=23.7)s+=`<rect width="1080" height="1920" fill="#fff" opacity="${F(fl)}"/>`;
-  // golpe de cena nas viradas de plano (flash curto de papel)
-  for(const c of[7.4,9.7,12.4,17.0,19.4,21.6]){const b=bell(t,c-.05,c+.12);if(b>0)s+=`<rect width="1080" height="1920" fill="#fff" opacity="${F(b*.55)}"/>`;}
   return s;
  }
  function captions(t){
+  if(window.LEGENDAS_EXTERNAS)return;
   const f=FRASES.find(([a,b])=>t>=a&&t<b);if(!f)return;
   ctx.save();ctx.scale(C.width/1080,C.height/1920);ctx.font='900 49px Arial';ctx.textAlign='center';ctx.textBaseline='middle';
   ctx.globalAlpha=Math.min(fit(t,f[0],f[0]+.15),1-fit(t,f[1]-.12,f[1]));

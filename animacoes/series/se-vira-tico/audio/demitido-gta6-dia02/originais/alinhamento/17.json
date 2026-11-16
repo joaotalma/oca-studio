@@ -1,0 +1,61 @@
+{
+ "n": 17,
+ "texto": "Segue aí, que faltam cinco dias e o Hambúrguer quer revanche.",
+ "palavras": [
+  {
+   "palavra": "Segue",
+   "ini": 0.16,
+   "fim": 0.4
+  },
+  {
+   "palavra": "aí,",
+   "ini": 0.48,
+   "fim": 0.8
+  },
+  {
+   "palavra": "que",
+   "ini": 0.88,
+   "fim": 0.96
+  },
+  {
+   "palavra": "faltam",
+   "ini": 1.04,
+   "fim": 1.44
+  },
+  {
+   "palavra": "cinco",
+   "ini": 1.52,
+   "fim": 1.76
+  },
+  {
+   "palavra": "dias",
+   "ini": 1.92,
+   "fim": 2.24
+  },
+  {
+   "palavra": "e",
+   "ini": 2.267,
+   "fim": 2.293
+  },
+  {
+   "palavra": "o",
+   "ini": 2.32,
+   "fim": 2.36
+  },
+  {
+   "palavra": "Hambúrguer",
+   "ini": 2.4,
+   "fim": 2.96
+  },
+  {
+   "palavra": "quer",
+   "ini": 3.04,
+   "fim": 3.12
+  },
+  {
+   "palavra": "revanche!",
+   "ini": 3.2,
+   "fim": 4.08
+  }
+ ]
+}

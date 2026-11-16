@@ -4,6 +4,10 @@ Spin-off do Se Vira, Tico em **temporada relâmpago**: 7 episódios, um por dia,
 
 **Estado:** Dia 1 produzido e vídeo final aprovado explicitamente pelo João em 12/11/2026. Registro em `../../../entregas/demitido-antes-do-gta/dia01/aprovacao.json`.
 
+**Dia 2 concluído em 14/11/2026:** roteiro v4 e elenco aprovados pelo João; HQ V10 com luta 3D, 107,1 s após revisão do João (sem selfie/mãe, escolha única e novo CTA). Vídeo final aprovado pelo fluxo delegado após gate 7/7, revisão independente e QA do master. Registro em `../../../entregas/demitido-antes-do-gta/dia02/aprovacao.json`. Saldo final R$ 13,20; pacto com Pedrão; próximo caminho depende do voto real CADEIRA ou CAMISA. Publicação manual pelo João.
+
+**Dia 3 concluído em 15/11/2026 ("A Cadeira"):** roteiro v2 aprovado pelo João; 107 s, HQ V10, com música e risadas sintetizadas, 21 falas gravadas e efeitos sintetizados; QA 7/7 e entrega em `../../../entregas/demitido-antes-do-gta/dia03/`. Voto do Dia 2: CADEIRA (a cadeira quebra com o Marcos). Voto do Dia 3: JÃO ou NOVO, que define a retomada do Dia 4. Método do João: cada episódio é uma escada (gancho "Faltam N dias e eu só tenho R$ X" → "vou fazer A porque vocês escolheram" → ele faz A → dá errado → novo problema), e toda etapa se explica sozinha. Publicação manual pelo João.
+
 ## A série em uma frase (vira a descrição de todo post)
 
 > **O Kauã foi demitido 7 dias antes do GTA 6. Os amigos já compraram. Ele tem R$ 3,20 e um controle que anda sozinho.**

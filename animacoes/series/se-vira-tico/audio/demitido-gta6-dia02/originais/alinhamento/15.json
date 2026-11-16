@@ -1,0 +1,91 @@
+{
+ "n": 15,
+ "texto": "Aí o grupo apitou. Pizza do lançamento. Quarenta cada. Regra número dois: quem não racha, não senta.",
+ "palavras": [
+  {
+   "palavra": "Aí",
+   "ini": 0.08,
+   "fim": 0.187
+  },
+  {
+   "palavra": "o",
+   "ini": 0.213,
+   "fim": 0.24
+  },
+  {
+   "palavra": "grupo",
+   "ini": 0.32,
+   "fim": 0.48
+  },
+  {
+   "palavra": "apitou.",
+   "ini": 0.56,
+   "fim": 1.16
+  },
+  {
+   "palavra": "Pizza",
+   "ini": 1.36,
+   "fim": 1.6
+  },
+  {
+   "palavra": "do",
+   "ini": 1.68,
+   "fim": 1.72
+  },
+  {
+   "palavra": "lançamento.",
+   "ini": 1.76,
+   "fim": 2.56
+  },
+  {
+   "palavra": "Quarenta",
+   "ini": 2.72,
+   "fim": 3.04
+  },
+  {
+   "palavra": "cada.",
+   "ini": 3.12,
+   "fim": 3.68
+  },
+  {
+   "palavra": "Regra",
+   "ini": 4.057,
+   "fim": 4.24
+  },
+  {
+   "palavra": "número",
+   "ini": 4.28,
+   "fim": 4.48
+  },
+  {
+   "palavra": "dois:",
+   "ini": 4.64,
+   "fim": 5.44
+  },
+  {
+   "palavra": "quem",
+   "ini": 5.48,
+   "fim": 5.6
+  },
+  {
+   "palavra": "não",
+   "ini": 5.64,
+   "fim": 5.84
+  },
+  {
+   "palavra": "racha,",
+   "ini": 6,
+   "fim": 6.56
+  },
+  {
+   "palavra": "não",
+   "ini": 6.6,
+   "fim": 6.8
+  },
+  {
+   "palavra": "senta.",
+   "ini": 6.84,
+   "fim": 7.52
+  }
+ ]
+}

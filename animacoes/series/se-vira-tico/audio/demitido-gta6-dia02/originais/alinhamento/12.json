@@ -1,0 +1,76 @@
+{
+ "n": 12,
+ "texto": "Fechamos o pacto mais constrangedor da história: dois mascotes, apertando a mão de pelúcia.",
+ "palavras": [
+  {
+   "palavra": "Fechamos",
+   "ini": 0.08,
+   "fim": 0.56
+  },
+  {
+   "palavra": "o",
+   "ini": 0.613,
+   "fim": 0.667
+  },
+  {
+   "palavra": "pacto",
+   "ini": 0.72,
+   "fim": 1.16
+  },
+  {
+   "palavra": "mais",
+   "ini": 1.28,
+   "fim": 1.52
+  },
+  {
+   "palavra": "constrangedor",
+   "ini": 1.6,
+   "fim": 2.32
+  },
+  {
+   "palavra": "da",
+   "ini": 2.36,
+   "fim": 2.4
+  },
+  {
+   "palavra": "história:",
+   "ini": 2.48,
+   "fim": 3.32
+  },
+  {
+   "palavra": "dois",
+   "ini": 4.4,
+   "fim": 4.56
+  },
+  {
+   "palavra": "mascotes,",
+   "ini": 4.64,
+   "fim": 5.48
+  },
+  {
+   "palavra": "apertando",
+   "ini": 5.6,
+   "fim": 6
+  },
+  {
+   "palavra": "a",
+   "ini": 6.08,
+   "fim": 6.12
+  },
+  {
+   "palavra": "mão",
+   "ini": 6.16,
+   "fim": 6.32
+  },
+  {
+   "palavra": "de",
+   "ini": 6.36,
+   "fim": 6.4
+  },
+  {
+   "palavra": "pelúcia.",
+   "ini": 6.48,
+   "fim": 7.28
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "n": 1,
+ "texto": "Faltam cinco dias pro GTA 6. Eu tenho três e vinte. E tô vestido de celular.",
+ "palavras": [
+  {
+   "palavra": "Faltam",
+   "ini": 0.08,
+   "fim": 0.48
+  },
+  {
+   "palavra": "cinco",
+   "ini": 0.56,
+   "fim": 0.88
+  },
+  {
+   "palavra": "dias",
+   "ini": 1.04,
+   "fim": 1.28
+  },
+  {
+   "palavra": "pro",
+   "ini": 1.36,
+   "fim": 1.44
+  },
+  {
+   "palavra": "GTA",
+   "ini": 1.52,
+   "fim": 1.92
+  },
+  {
+   "palavra": "6!",
+   "ini": 2.04,
+   "fim": 2.72
+  },
+  {
+   "palavra": "Mas",
+   "ini": 3.04,
+   "fim": 3.2
+  },
+  {
+   "palavra": "eu",
+   "ini": 3.24,
+   "fim": 3.28
+  },
+  {
+   "palavra": "só",
+   "ini": 3.36,
+   "fim": 3.52
+  },
+  {
+   "palavra": "tenho",
+   "ini": 3.56,
+   "fim": 3.84
+  },
+  {
+   "palavra": "três",
+   "ini": 3.92,
+   "fim": 4.08
+  },
+  {
+   "palavra": "e",
+   "ini": 4.16,
+   "fim": 4.32
+  },
+  {
+   "palavra": "vinte.",
+   "ini": 4.48,
+   "fim": 5.2
+  },
+  {
+   "palavra": "E",
+   "ini": 5.28,
+   "fim": 5.36
+  },
+  {
+   "palavra": "tô",
+   "ini": 5.44,
+   "fim": 5.56
+  },
+  {
+   "palavra": "vestido",
+   "ini": 5.6,
+   "fim": 6
+  },
+  {
+   "palavra": "de",
+   "ini": 6.08,
+   "fim": 6.16
+  },
+  {
+   "palavra": "celular.",
+   "ini": 6.28,
+   "fim": 7.2
+  }
+ ]
+}

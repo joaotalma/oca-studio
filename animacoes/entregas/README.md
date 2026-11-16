@@ -15,7 +15,7 @@ entregas/
 | Série | Episódios |
 |---|---|
 | `se-vira-tico/` | ep01 a ep06 (T1, versões oficiais iguais às do Google Drive) |
-| `demitido-antes-do-gta/` | dia01 |
+| `demitido-antes-do-gta/` | dia01 e dia02 |
 
 ## Regras
 

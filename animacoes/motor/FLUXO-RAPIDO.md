@@ -39,7 +39,7 @@ As opções editoriais e a duração devem ser iguais nas duas verificações. O
 
 O rascunho tem metade dos quadros e um quarto dos pixels por quadro: **1/8 do trabalho em pixels**, não promessa de tempo oito vezes menor. O gate existente já decodifica em cerca de 270 px. A economia principal é evitar renders completos em 1080 para descobrir erros que o rascunho encontra.
 
-Render paralelo continua como experimento: o projeto não possuía `render-parallel.sh`. Não foi ativado sem medir memória, determinismo e ganho real no Windows. Nunca iniciar dois renders integrais concorrentes por padrão.
+**Render em partes (medido em 12/11/2026):** o `export.mjs` aceita `PARTES=N`. Ele divide os quadros em N trechos, cada um no seu Chrome, e emenda sem recodificar. O `produzir.mjs` (e o `montar.sh`) usa 3 partes por padrão; `--partes 1` volta ao sequencial. No notebook do João (i5-13420H, 8 GB, na bateria), 12 s do Dia 1 em 1080 levaram 106 s em sequência, 91 s em 2 partes, **62 s em 3 partes** e 97 s em 4, quando faltou memória. As emendas não aparecem: comparado ao sequencial, o pior quadro ficou em 50 dB de PSNR, inclusive nas fronteiras, diferença só da compressão. Feche programas pesados durante o render e nunca rode dois renders completos ao mesmo tempo, porque cada um já abre 3 Chromes.
 
 Amostras não garantem ausência de falhas entre quadros em 30 fps. Suspeitas exigem trecho em alta ou gate completo. A aprovação automática não substitui revisão artística, factual ou de direitos, nem publica/agende conteúdo.
 

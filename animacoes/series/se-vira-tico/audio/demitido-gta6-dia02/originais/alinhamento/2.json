@@ -1,0 +1,106 @@
+{
+ "n": 2,
+ "texto": "Ontem vocês votaram. Hoje eu sou o Celular Feliz. Oito horas, trinta e quatro graus, e uma cabeça sem ventilação.",
+ "palavras": [
+  {
+   "palavra": "Ontem",
+   "ini": 0.16,
+   "fim": 0.56
+  },
+  {
+   "palavra": "vocês",
+   "ini": 0.6,
+   "fim": 0.96
+  },
+  {
+   "palavra": "votaram.",
+   "ini": 1,
+   "fim": 1.96
+  },
+  {
+   "palavra": "Hoje",
+   "ini": 2.24,
+   "fim": 2.64
+  },
+  {
+   "palavra": "eu",
+   "ini": 2.72,
+   "fim": 2.96
+  },
+  {
+   "palavra": "sou",
+   "ini": 3,
+   "fim": 3.12
+  },
+  {
+   "palavra": "o",
+   "ini": 3.2,
+   "fim": 3.28
+  },
+  {
+   "palavra": "Celular",
+   "ini": 3.36,
+   "fim": 3.76
+  },
+  {
+   "palavra": "Feliz!",
+   "ini": 3.92,
+   "fim": 4.76
+  },
+  {
+   "palavra": "Oito",
+   "ini": 5.12,
+   "fim": 5.44
+  },
+  {
+   "palavra": "horas,",
+   "ini": 5.52,
+   "fim": 6.16
+  },
+  {
+   "palavra": "trinta",
+   "ini": 6.32,
+   "fim": 6.56
+  },
+  {
+   "palavra": "e",
+   "ini": 6.6,
+   "fim": 6.64
+  },
+  {
+   "palavra": "quatro",
+   "ini": 6.72,
+   "fim": 6.88
+  },
+  {
+   "palavra": "graus,",
+   "ini": 7.04,
+   "fim": 7.72
+  },
+  {
+   "palavra": "e",
+   "ini": 7.92,
+   "fim": 7.96
+  },
+  {
+   "palavra": "uma",
+   "ini": 8,
+   "fim": 8.16
+  },
+  {
+   "palavra": "cabeça",
+   "ini": 8.267,
+   "fim": 8.64
+  },
+  {
+   "palavra": "sem",
+   "ini": 8.72,
+   "fim": 8.8
+  },
+  {
+   "palavra": "ventilação.",
+   "ini": 8.88,
+   "fim": 9.84
+  }
+ ]
+}
