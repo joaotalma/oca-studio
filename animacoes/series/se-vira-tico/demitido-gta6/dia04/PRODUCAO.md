@@ -1,6 +1,8 @@
 # Dia 4: Paçoca (produção)
 
-Estado em 16/11/2026: **roteiro v3 aprovado pelo João** (`roteiro.md`). Nada gravado nem renderizado ainda. Este arquivo existe para um chat novo continuar sem depender da conversa anterior.
+Estado em 16/11/2026: **roteiro v3 aprovado pelo João** (`roteiro.md`). **Episódio produzido e entregue** (93 s; gate 7/7; QA final aprovado nos itens medidos; `entregas/demitido-antes-do-gta/dia04/`; ver `qa.md`). Falta só a publicação do João e o placar 24 h depois. Notas de produção abaixo.
+
+Como reproduzir (Linux, Node 26 do nvm; `python3` com numpy num venv): `node dia04/hq/preparar.mjs` (de `animacoes/`); som com `python hq/efeitos.py|musica.py|risadas.py render/demitido-gta6/dia04-final/<x>.wav` e `node hq/audio-final.mjs`; render final 1080×1920 com `PARTES=2` (3 partes estoura a memória de 8 GB); capa com `node demitido-gta6/dia04/hq/preparar-capa.mjs` e `node demitido-gta6/dia04/capa.mjs` de `series/se-vira-tico/`.
 
 ## Autorizações do João (16/11/2026)
 

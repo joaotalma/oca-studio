@@ -1,6 +1,6 @@
 # Dia 4: Paçoca
 
-**Estado:** **APROVADO pelo João em 16/11/2026** (mensagem: "pode confirmar o roteiro"). Versão v3: sem concorrente, placar do zero, controle tunado e contagem das moedas em casa. O João dispensou a conferência da política do Instagram sobre o pedido de curtida/seguidor e o comentário mais criativo. Voz e render autorizados a seguir (ver `PRODUCAO.md`).
+**Estado:** vídeo final aprovado automaticamente, por autorização do João em 12/11/2026.
 **Data no ar:** a definir pelo João. Sugestão pelos dados: dia útil, por volta do meio-dia (o horário do Dia 1). Relógio: **GTA 6 EM 3 DIAS**.
 **Voto vencedor do Dia 3:** **JÃO** (sem contagem de votos). O controle volta do tio, cheirando a gasolina e puxando para a direita.
 **Duração-alvo:** ~92 s, com ~55 s de fala. O gate de QA usado no spin-off é 105 a 140 s (`--duracao`); este episódio vai ficar abaixo, então rodar o QA com a faixa ajustada (por exemplo `--duracao 85,140`) em vez de encher o vídeo.
@@ -131,3 +131,9 @@ Os tempos são alvo (cerca de 2,8 palavras por segundo); o `falas.js` terá os r
 1. Voz (ElevenLabs, voz `kaua2`): mostrar a estimativa de créditos, gerar as 12 falas e fechar `falas.js` com os tempos reais.
 2. HQ, efeitos, mixagem, render, QA e entrega: ver `PRODUCAO.md`.
 3. O João publica. Depois de 24 h no ar, ler o placar do Dia 4 (curtidas, seguidores, compartilhamentos) e escolher o comentário mais criativo para abrir o Dia 5.
+
+<!-- aprovacao-final-automatica -->
+## Aprovação final
+
+Vídeo final aprovado pelo fluxo autorizado pelo João em 12/11/2026. Registro: /home/talma/projetos/oca-studio/animacoes/entregas/demitido-antes-do-gta/dia04/aprovacao.json. SHA-256: 46c6192a3a4b2c189b558ad8d81173bec2cc255a26e5126e148495d35d65b2be. Publicação manual pelo João.
+<!-- /aprovacao-final-automatica -->

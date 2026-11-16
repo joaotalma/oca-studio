@@ -8,6 +8,8 @@ Spin-off do Se Vira, Tico em **temporada relâmpago**: 7 episódios, um por dia,
 
 **Dia 3 concluído em 15/11/2026 ("A Cadeira"):** roteiro v2 aprovado pelo João; 107 s, HQ V10, com música e risadas sintetizadas, 21 falas gravadas e efeitos sintetizados; QA 7/7 e entrega em `../../../entregas/demitido-antes-do-gta/dia03/`. Voto do Dia 2: CADEIRA (a cadeira quebra com o Marcos). Voto do Dia 3: **JÃO** (informado pelo João em 16/11/2026, sem contagem de votos); o controle volta do tio, tunado. Método do João: cada episódio é uma escada (gancho "Faltam N dias e eu só tenho R$ X" → "vou fazer A porque vocês escolheram" → ele faz A → dá errado → novo problema), e toda etapa se explica sozinha. Publicação manual pelo João.
 
+
+**Dia 4 produzido em 16/11/2026 ('Paçoca'):** roteiro v3 aprovado pelo João; 93 s, HQ V10, 12 falas do Kauã (`kaua2`, 1.167 créditos), efeitos, risadas e música sintetizados, sem pack de terceiros; gate 7/7 e QA final aprovado nos itens medidos; entrega em `../../../entregas/demitido-antes-do-gta/dia04/` (aprovação automática delegada). **Aguarda publicação do João.** Saldo: R$ 13,20 → R$ 0 → R$ 15 (lucro de R$ 1,80); 5 vendidas, 5 comidas, 1 sobra. O placar de ajuda (R$ 1 por curtida, R$ 5 por seguidor, R$ 15 por compartilhamento) começa em zero; 24 h depois da publicação, ler o placar real e o João escolhe o comentário mais criativo, que abre o Dia 5 (sem o @, salvo autorização). Pedido de curtida/seguidor e comentário criativo são exceção autorizada ao item 19 de `docs/APRENDIZADOS.md`; ver `dia04/qa.md`.
 ## A série em uma frase (vira a descrição de todo post)
 
 > **O Kauã foi demitido 7 dias antes do GTA 6. Os amigos já compraram. Ele tem R$ 3,20 e um controle que anda sozinho.**
