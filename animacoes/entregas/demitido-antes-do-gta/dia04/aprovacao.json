@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "estado": "aprovado",
+  "modo": "automatico_autorizado",
+  "autorizadoPor": "João",
+  "autorizacao": "Pedido de aprovação automática ao finalizar, 2026-11-12",
+  "quando": "2026-11-16T05:25:53.978Z",
+  "assistidoPeloJoao": false,
+  "video": "video.mp4",
+  "videoHash": "46c6192a3a4b2c189b558ad8d81173bec2cc255a26e5126e148495d35d65b2be",
+  "qa": {
+    "schema": 1,
+    "quando": "2026-11-16T05:25:45.427Z",
+    "modo": "final-leve",
+    "aprovado": true,
+    "mudo": false,
+    "temAudio": true,
+    "fonte": "30156cb02a7fdea240b0908bc67425cf76340d8efe873e6c704f2ec684998948",
+    "video": "/home/talma/projetos/oca-studio/animacoes/render/demitido-gta6/dia04-hq/final.mp4",
+    "videoHash": "46c6192a3a4b2c189b558ad8d81173bec2cc255a26e5126e148495d35d65b2be",
+    "audioOrigem": "/home/talma/projetos/oca-studio/animacoes/render/demitido-gta6/dia04-final/audio-master.wav",
+    "audioOrigemHash": "b600c6738545fc75ec44bfe64fa61958f8aad5898ac42c0daac55ea41d9a6e43",
+    "politica": {
+      "faixa": [
+        85,
+        140
+      ],
+      "semDuracao": false,
+      "semTexto": true,
+      "leitura": "e2214b4d9c5e61e8240c511ce1c4daae6cc87efd02a109833e906d24255da55e",
+      "qa": "d14ee57e7623308fa4299c950111ca62357c001e72a825b7209d282d2bc2c6ef",
+      "gate": "71054ba8553d4c7543c302ee3557bdf1e50ff22f3f3e91a75cb315e27721b13c",
+      "registro": "d95882b7e504a28aee878f8dd19c9b88f3a92fcb7f0a7ab99a64244531c950cb"
+    },
+    "gateCompleto": false,
+    "rascunho": "/home/talma/projetos/oca-studio/animacoes/render/demitido-gta6/dia04-hq/qa-resultados/qa-rascunho.json",
+    "dimensoes": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "duracao": 93,
+    "itens": [
+      {
+        "nome": "Duração",
+        "estado": "APROVADO",
+        "detalhe": "93.00 s (esperado 85-140 s)"
+      },
+      {
+        "nome": "Resolução",
+        "estado": "APROVADO",
+        "detalhe": "1080x1920 (esperado 1080x1920)"
+      },
+      {
+        "nome": "Quadros por segundo",
+        "estado": "APROVADO",
+        "detalhe": "30.00 (esperado 30)"
+      },
+      {
+        "nome": "Loudness",
+        "estado": "APROVADO",
+        "detalhe": "-16.6 LUFS (esperado -16 ±1)"
+      },
+      {
+        "nome": "Sem isca de engajamento",
+        "estado": "APROVADO",
+        "detalhe": "nenhum pedido de comentário, envio ou marcação"
+      },
+      {
+        "nome": "Pausas visuais",
+        "estado": "DECLARADAS",
+        "detalhe": "4 intervalos justificados, ver series/se-vira-tico/demitido-gta6/dia04/hq/pausas-visuais.json; exigem conferência à vista, não aprovação automática."
+      },
+      {
+        "nome": "Gate",
+        "estado": "APROVADO",
+        "detalhe": "gate completo do rascunho reutilizado; fonte, áudio, regras e MP4 conferidos por SHA-256"
+      },
+      {
+        "nome": "Amostras do master",
+        "estado": "APROVADO",
+        "detalhe": "8 quadros em resolução original: /home/talma/projetos/oca-studio/animacoes/render/demitido-gta6/dia04-hq/qa-resultados/amostras-final; decodificação, não julgamento artístico"
+      },
+      {
+        "nome": "Fonte estável",
+        "estado": "APROVADO",
+        "detalhe": "nenhuma alteração durante o QA"
+      }
+    ]
+  },
+  "revisao": {
+    "fonte": "30156cb02a7fdea240b0908bc67425cf76340d8efe873e6c704f2ec684998948",
+    "videoHash": "46c6192a3a4b2c189b558ad8d81173bec2cc255a26e5126e148495d35d65b2be",
+    "visual": true,
+    "conteudoDireitos": true,
+    "bloqueios": [],
+    "responsavel": "Claude: revisão visual e editorial própria; sem revisão independente",
+    "evidencias": [
+      "8 amostras do master em resolução original e tira de 24 quadros do rascunho",
+      "Gate completo do rascunho 7/7 (pops de 44,47 s e 88,3 s corrigidos com easing)",
+      "12 gravações do Kauã (kaua2); efeitos, risadas e música sintetizados, sem amostras de terceiros",
+      "Áudio medido no MP4 em −16,6 LUFS (remixado sem risadas e com volume reduzido, pedido do João em 16/11/2026)",
+      "Direitos: GTA 6 só citado; futebol genérico; paçoca sem marca; valores e placar são ficção, placar começa em zero",
+      "Exceção autorizada pelo João (16/11/2026): pedido de curtida/seguidor/compartilhamento e comentário mais criativo, registrada em dia04/qa.md"
+    ],
+    "limites": "Sem julgamento auditivo humano: voz, mixagem e música só conferidas por medição; risadas removidas a pedido do João (ficaram ruins; entram depois, se ele trouxer do Windows). Gesto de comer com o braço à frente do rosto, emoji no balão final e tipografia diferente dos Dias 1 a 3 (sem Impact no Linux). Duração 93 s, abaixo da faixa 105 a 140 s por decisão registrada.",
+    "quando": "2026-11-16T12:00:00.000Z"
+  },
+  "publicacao": "manual_pelo_Joao",
+  "redes": [
+    "instagram"
+  ],
+  "limite": "Aprovação delegada após QA técnico; não afirma que João assistiu nem que houve julgamento artístico automático."
+}
