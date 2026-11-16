@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Se Vira, Tico — Diagnóstico</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--mut:#6b7280;--card:#f5f5f7;--bd:#d9d9de;--a:#e8590c;--b:#2f7fd1;--bad:#c92a2a;--ok:#2b8a3e}
+@media(prefers-color-scheme:dark){:root{--bg:#161618;--fg:#f2f2f3;--mut:#9aa0a8;--card:#222226;--bd:#3a3a42;--a:#ff8a4c;--b:#5aa7f0;--bad:#ff6b6b;--ok:#69db7c}}
+*{box-sizing:border-box}body{margin:0;padding:24px 16px 48px;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,sans-serif;max-width:980px;margin-inline:auto}
+h1{margin:0 0 4px;font-size:26px}h2{margin:34px 0 8px;font-size:19px}h3{margin:18px 0 4px;font-size:15px}
+.sub,small,.mut{color:var(--mut)}.sub{margin:0 0 18px}
+.find{display:grid;grid-template-columns:34px 1fr;gap:10px;background:var(--card);border-radius:10px;padding:12px 14px;margin:10px 0}
+.find .n{font-size:22px;font-weight:700;color:var(--a)}.find b{display:block}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:99px;border:1px solid var(--bd);color:var(--mut);margin-left:6px;vertical-align:middle}
+svg{width:100%;height:auto;display:block}
+svg text{fill:var(--fg);font:11px system-ui,sans-serif}svg .m{fill:var(--mut)}
+.wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}th{color:var(--mut);font-size:12px}
+.note{border-left:3px solid var(--a);background:var(--card);padding:9px 13px;border-radius:6px;margin:10px 0;font-size:14px}
+ul{padding-left:20px;margin:6px 0}li{margin:3px 0}
+</style></head><body>
+<h1>Onde o público sai, e o que testar</h1>
+<p class="sub">Se Vira, Tico · Instagram Reels · dados dos prints de 14/11 · retenção por segundo só para EP4, EP5, EP6 e spin-off; EP1–3 trazem anúncios</p>
+
+<h2>O que os números apontam</h2>
+
+<div class="find"><div class="n">1</div><div><b>O buraco está nos primeiros 7–15 s: metade do público já saiu.</b>
+Pelas curvas por segundo (prints de 14/11), a retenção cruza 50% em ~6 s no EP6, ~8 s no EP4, ~12 s no spin-off e ~13 s no EP5 (interpolação entre os pontos lidos). Depois a curva achata: EP4 fica em 30–24% de 21 a 59 s, EP5 em 24–20% de 35 a 58 s. Quem passa dos ~20 s tende a ficar; o meio dos episódios não é o problema.
+<span class="tag">substitui a leitura de 11/11</span></div></div>
+
+<div class="find"><div class="n">2</div><div><b>Em 2–7 s o EP6 perde 38 pontos: o gancho promete uma coisa e a cena seguinte entrega outra.</b>
+O EP6 abre com a frase completa antes de 3 s ("ELE vai se declarar. MAS ELA vai embora") e tem a melhor retenção aos 2 s (83%, contra 72% no EP4 e 81% no EP5). Dos 3 aos 7,6 s a cena é logística de entrega ("Preciso entregar até as oito. Trinta e quatro…", GPS, TURBO), e a retenção vai a 45% aos 7 s e 39% aos 10 s, a pior do conjunto (EP5 tem 56%). O conflito romântico some e volta só aos 40 s. Resultado: 29,8% de pulos e só 5% chegam ao fim, sem nenhum seguidor novo.
+<span class="tag">hipótese, n=1</span></div></div>
+
+<div class="find"><div class="n">3</div><div><b>Aqui os 89% de público frio (aba Reels) pesam: o gancho segura o instante, não a promessa.</b>
+Como a maioria nunca viu o episódio anterior, a abertura precisa funcionar sozinha. EP5 foi o melhor entre os do Tico até 10 s (81% aos 2 s, 62% aos 7 s, 56% aos 10 s). No EP4 a primeira fala só chega aos 13,8 s, quando já restam ~38%. A regra "sem silêncio de abertura" está em docs/ROTEIRO.md; não conferi se o EP4 tinha legenda de conflito antes disso.
+<span class="tag">hipótese, n=3</span></div></div>
+
+<div class="find"><div class="n">4</div><div><b>O encerramento ainda perde público, e a votação é lida por pouca gente.</b>
+Chegam ao fim: EP4 16%, spin-off 9%, EP5 6%, EP6 5%. No EP5 são 20% aos 58 s e 6% no fim, ou seja, o bloco de votação perde dois terços de quem ainda estava ali. No EP4, 24% caem para 17% entre 59 e 64 s. Comentários: 3–7 por episódio, e um no EP4 é do próprio perfil.</div></div>
+
+<div class="find"><div class="n">5</div><div><b>A conta não tem base: 98,4% das views vêm de quem não segue, e são só 44 seguidores.</b>
+Com 19.481 views para 13.834 pessoas (1,4 view por pessoa), ninguém está acompanhando a série em sequência. Veja a seção "Conta inteira" abaixo.</div></div>
+
+<h2>Conta inteira (painel colado em 14/11)</h2>
+<p class="mut" style="margin:0 0 6px">Visão geral da conta pelo painel do Instagram. O período não veio no texto, e o link do painel indica 30 dias.</p>
+<div class="wrap"><table>
+<tr><th>Medida</th><th>Valor</th><th>Leitura</th></tr>
+<tr><td>Views / pessoas</td><td>19.481 / 13.834</td><td>1,4 view por pessoa: quase ninguém revê ou volta</td></tr>
+<tr><td>Views de seguidores</td><td>1,6% (~310 views)</td><td>Distribuição é 100% por público frio</td></tr>
+<tr><td>Visitas ao perfil</td><td>537 (3,9% de quem viu)</td><td>Só uns 4% olham o perfil, e a conta tem 44 seguidores</td></tr>
+<tr><td>Interações</td><td>814 (4,2% das views), 699 contas</td><td>96,2% vêm de não seguidores</td></tr>
+<tr><td>Interação por view</td><td>Seguidores ~10% · não seguidores ~4%</td><td>Quem segue interage ~2,4 vezes mais; seguidor vale mais para a votação (conta feita com percentuais arredondados)</td></tr>
+</table></div>
+<h3>Todos os vídeos (planilha de 14/11, prints do Instagram)</h3>
+<div class="wrap"><table>
+<tr><th>Vídeo</th><th>Pub.</th><th>Dur.</th><th>Views</th><th>Pessoas</th><th>Tempo médio</th><th>Pulos</th><th>Ret. 10 s</th><th>Chegam ao fim</th><th>Novos seg.</th><th>Interações/pessoa</th></tr>
+<tr><td>EP1</td><td>06/11</td><td>87 s</td><td colspan="8"><small>prints sem carregar: só 178 interações</small></td></tr>
+<tr><td>EP2 <small>(anúncios)</small></td><td>07/11</td><td>93 s</td><td>8.628</td><td>6.666</td><td>6,2 s (6,7%)</td><td>—</td><td>—</td><td>—</td><td>14</td><td>4,2%</td></tr>
+<tr><td>EP3 <small>(anúncios)</small></td><td>08/11</td><td>67 s</td><td>2.693</td><td>2.124</td><td>12,8 s (19,0%)</td><td>—</td><td>—</td><td>—</td><td>6</td><td>4,4%</td></tr>
+<tr><td>EP4</td><td>09/11</td><td>67 s</td><td>930</td><td>676</td><td>23,0 s (34,3%)</td><td>33,5%</td><td>43%</td><td>16%</td><td>2</td><td>5,9%</td></tr>
+<tr><td>EP5</td><td>10/11</td><td>67 s</td><td>1.820</td><td>1.510</td><td>21,0 s (31,3%)</td><td>26,5%</td><td><b>56%</b></td><td>6%</td><td>1</td><td>3,7%</td></tr>
+<tr><td>EP6</td><td>11/11</td><td>64 s</td><td>1.373</td><td>1.136</td><td>21,0 s (32,8%)</td><td>29,8%</td><td>39%</td><td>5%</td><td>0</td><td><b>6,3%</b></td></tr>
+<tr><td>Spin-off Dia 1</td><td>13/11</td><td>138 s</td><td>1.711</td><td>1.345</td><td>42,0 s (30,4%)</td><td>26,9%</td><td>53%</td><td>9%</td><td>5</td><td>5,1%</td></tr>
+</table></div>
+<div class="note"><b>Fechou a conta do painel:</b> 7/11 = EP2 (8.628 views, 282 interações), 8/11 = EP3, 10/11 = EP5, <b>11/11 = EP6</b> (1.373 views, 72 interações) e 13/11 = spin-off. O EP2 foi impulsionado: EP1–3 trazem o aviso de anúncios, por isso as views antigas só orgânicas (2.565 no EP2) eram bem menores. Por isso EP2 e EP3 não têm tempo médio comparável: 6,2 s e 12,8 s são total assistido ÷ views com anúncio; os ~26 s e ~18 s informados antes eram só das views orgânicas. EP1 sumiu do painel porque os prints vieram sem carregar.</div>
+<div class="note"><b>O que isso muda:</b> o gargalo não é só retenção, é que o público nunca vira base. A votação, que depende de gente voltando, é alimentada por ~44 seguidores. Por isso os testes 1 e 4 abaixo ficam mais importantes: episódio que se sustenta sozinho para quem é frio e um caminho claro do vídeo para o perfil e para o seguir.</div>
+
+<div class="find"><div class="n">6</div><div><b>Dinheiro em anúncio comprou views, não permanência.</b>
+O EP2 teve 8.628 views (cerca de 3,4 vezes as ~2,6 mil orgânicas) e tempo médio de 6,2 s, contra 21–23 s nos episódios sem anúncio. Trouxe 14 seguidores novos (0,21%), mais que qualquer outro, mas a planilha não separa quantos vieram do pago. Spin-off e EP6 fecharam em 0,37% e 0%.
+<span class="tag">não dá para isolar o pago</span></div></div>
+
+<h2>Retenção por segundo: EP4, EP5, EP6 e spin-off (0–30 s)</h2>
+<p class="mut" style="margin:0 0 6px">Pontos lidos nas curvas dos prints (margem de ~3 pontos). EP1–3 não têm curva. As faixas mostram o que acontece no EP6.</p>
+<div class="wrap" id="cmp"></div>
+<div class="wrap"><table>
+<tr><th>Segundo</th><th>EP4</th><th>EP5</th><th>EP6</th><th>Spin-off</th></tr>
+<tr><td>2</td><td>72%</td><td>81%</td><td><b>83%</b></td><td>84%</td></tr>
+<tr><td>7</td><td>53%</td><td>62%</td><td><b>45%</b></td><td>60%</td></tr>
+<tr><td>10</td><td>43%</td><td>56%</td><td><b>39%</b></td><td>53%</td></tr>
+<tr><td>21</td><td>30%</td><td>37%</td><td>32%</td><td>44%</td></tr>
+<tr><td>28</td><td>28%</td><td>29%</td><td>27%</td><td>44%</td></tr>
+</table></div>
+<p class="mut">O spin-off é o único que fica estável depois dos 15 s (45% aos 15 s, 44% aos 28 s, 24% aos 100 s, 9% no fim aos 138 s). Um vídeo de 138 s com público diferente (~95% homens, 56% de 13–24 anos) retém melhor o meio do que os de ~65 s.</p>
+
+<h2>EP4 e EP5 inteiros, com as cenas</h2>
+<div id="charts"></div>
+
+<h2>Tempo médio de exibição</h2>
+<p class="mut" style="margin:0 0 6px">Cinza: inclui anúncios (EP2, EP3), então não compara com os outros. Entre os sem anúncio, o tempo médio fica em 21–23 s para vídeos de 64–67 s, e 42 s para 138 s.</p>
+<div id="avg"></div>
+
+<h2>O que testar, uma variável por vez</h2>
+<table>
+<tr><th>Teste</th><th>Como</th><th>Mede</th></tr>
+<tr><td><b>1. Cena 2 continua a promessa do gancho</b></td><td>Se o gancho promete o conflito romântico, os segundos 3–10 precisam avançar esse conflito, não abrir outro assunto (no EP6, entrega e GPS). Reescrever só esse trecho num próximo episódio ou final de teste.</td><td>Retenção aos 7 e 10 s, pulos</td></tr>
+<tr><td><b>2. Fala ou legenda antes de 3 s, sempre</b></td><td>Checar cada abertura com o tempo da primeira fala e da primeira legenda de conflito.</td><td>Pulados e metade do público</td></tr>
+<tr><td><b>3. Pergunta da votação antes do fim</b></td><td>Pôr a pergunta em texto no clímax, antes de ~45 s, ou encurtar a cauda pós-votação. Só depois do teste 1, para não misturar variáveis.</td><td>Retenção aos 55–65 s, comentários</td></tr>
+<tr><td><b>4. Motivo para seguir</b></td><td>Identidade da série no início ou fim (nome, "temporada 1 completa", "episódio 2 no perfil"). Hipótese sem dado ainda.</td><td>Seguidores por mil views</td></tr>
+</table>
+<div class="note">Manter o trecho de ~12 a 60 s como está: a curva é estável ali e mexer nele junto com a abertura impediria saber o que funcionou.</div>
+
+<h2>Dados que ainda faltam</h2>
+<ul>
+<li><b>Curva de retenção, pulos e "chegam ao fim" do EP1–3.</b> Os prints não trazem, e EP2–3 misturam anúncios.</li>
+<li><b>Views orgânicas e pagas separadas</b> do EP2 e EP3, para saber de onde vieram os 14 e 6 seguidores.</li>
+<li><b>Fonte das views (aba Reels, perfil, explorar) e seguidores contra não seguidores</b> por vídeo. A aba Público tem isso só para parte dos vídeos.</li>
+<li><b>Leitura com a mesma idade</b> (24 h, 72 h) em todo vídeo novo. O EP6 e o spin-off foram lidos com 3 e 1 dias, e o EP2 com 7.</li>
+<li><b>Votos reais</b> de cada votação. Hoje só há contagem de comentários.</li>
+</ul>
+<p><small>Fontes: planilha "Base de dados dos Reels — Se Vira, Tico" (prints do Instagram de 14/11) e tabela colada pelo João; painel da conta de 14/11; resultados-2026-11-11.*; roteiros, cenas.md, legendas.srt do EP6 e audio/epNN/tempos.json. Retenção é leitura visual das curvas (margem de ~3 pontos).</small></p>
+
+<script>
+const cols=["#e8590c","#2f7fd1","#7048e8","#2b8a3e","#c2255c","#868e96","#f08c00"];
+const SER={
+ "EP4":{c:"#e8590c",t:[0,2,4,5,7,10,15,21,28],v:[100,72,64,61,53,43,36,30,28]},
+ "EP5":{c:"#2f7fd1",t:[0,2,4,5,7,10,15,21,28],v:[100,81,72,66,62,56,47,37,29]},
+ "EP6":{c:"#c2255c",t:[0,2,4,5,7,10,15,21,28],v:[100,83,68,59,45,39,36,32,27]},
+ "Spin-off":{c:"#2b8a3e",t:[0,2,4,5,7,10,15,21,28],v:[100,84,73,68,60,53,45,44,44]}
+};
+function frame(T,Y0,Y1,X0,X1){return {x:s=>X0+(X1-X0)*s/T,y:p=>Y1-(Y1-Y0)*p/100}}
+function grid(f,T,step,X0,X1,Y0,Y1){let s="";
+ [0,25,50,75,100].forEach(p=>{s+=`<line x1="${X0}" x2="${X1}" y1="${f.y(p)}" y2="${f.y(p)}" stroke="var(--bd)" stroke-width=".7"/><text class="m" x="${X0-6}" y="${f.y(p)+4}" text-anchor="end">${p}%</text>`});
+ for(let t=0;t<=T;t+=step)s+=`<text class="m" x="${f.x(t)}" y="${Y1+14}" text-anchor="middle">${t}s</text>`;return s}
+// 1) comparação 0–30 s
+(function(){const T=30,X0=40,X1=680,Y0=16,Y1=206,f=frame(T,Y0,Y1,X0,X1);
+ let s=`<svg viewBox="0 0 700 250" role="img" aria-label="Curvas de retenção dos primeiros 30 segundos">`+grid(f,T,5,X0,X1,Y0,Y1);
+ s+=`<line x1="${f.x(0)}" x2="${f.x(0)}" y1="${Y0}" y2="${Y1}" stroke="var(--bd)"/>`;
+ s+=`<rect x="${f.x(0)}" y="${Y0}" width="${f.x(2.9)-f.x(0)}" height="${Y1-Y0}" fill="var(--a)" opacity=".07"/><text class="m" x="${f.x(1.45)}" y="${Y0+11}" text-anchor="middle">gancho EP6</text>`;
+ s+=`<rect x="${f.x(3)}" y="${Y0}" width="${f.x(7.6)-f.x(3)}" height="${Y1-Y0}" fill="#c2255c" opacity=".07"/><text class="m" x="${f.x(5.3)}" y="${Y0+11}" text-anchor="middle">entrega EP6</text>`;
+ Object.entries(SER).forEach(([k,d],i)=>{
+  s+=`<polyline fill="none" stroke="${d.c}" stroke-width="2.2" points="${d.t.map((t,j)=>f.x(t)+","+f.y(d.v[j])).join(" ")}"/>`;
+  d.t.forEach((t,j)=>s+=`<circle cx="${f.x(t)}" cy="${f.y(d.v[j])}" r="2.6" fill="${d.c}"/>`);
+  s+=`<text x="${f.x(28)+6}" y="${f.y(d.v[8])+4+(k==="EP6"?10:k==="EP5"?-2:k==="EP4"?4:0)}" fill="${d.c}">${k}</text>`;
+ });
+ s+=`</svg>`;document.getElementById("cmp").innerHTML=s})();
+
+// 2) EP4 e EP5 inteiros, com cenas
+const T=68,X0=40,X1=680,Y0=16,Y1=176,F=frame(T,Y0,Y1,X0,X1),x=F.x,y=F.y;
+const EPS=[
+ {n:"EP4 — É só uma corrida",c:"#e8590c",
+  scenes:[["Abertura (sem fala até 13,8 s)",0,12.3],["Título",12.3,13.3],["1. Mensagem",13.3,27.4],["2. Motorista",27.4,36.3],["3. É corrida",36.3,45.6],["4. Pergunta",45.6,56],["Votação",56,62],["Depois",62,67.3]],
+  mark:[[13.8,"1ª fala 13,8 s"]],
+  pts:[[0,100],[2,72],[4,64],[5,61],[7,53],[10,43],[15,36],[21,30],[28,28],[59,24],[64,17],[67.3,16]],
+  info:"33,5% pulados · 43% aos 10 s · 16% chegam ao fim"},
+ {n:"EP5 — Dá tempo?",c:"#2f7fd1",
+  scenes:[["Abertura (gancho aos 0,2 s)",0,15.7],["1. Seis caixas",15.7,30.5],["2. Pertinho",30.5,36.2],["3. Inscrição",36.2,42.1],["4. Dá tempo?",42.1,57.7],["Votação",57.7,62.7],["Retorno",62.7,67.1]],
+  mark:[[0.2,"1ª fala 0,2 s"]],
+  pts:[[0,100],[2,81],[4,72],[5,66],[7,62],[10,56],[15,47],[21,37],[28,29],[35,24],[58,20],[67.1,6]],
+  info:"26,5% pulados · 56% aos 10 s · 6% chegam ao fim"}
+];
+let h="";
+EPS.forEach(e=>{
+ let s=`<h3>${e.n} <small>· ${e.info}</small></h3><div class="wrap"><svg viewBox="0 0 700 262" role="img" aria-label="${e.n}">`+grid(F,60,10,X0,X1,Y0,Y1);
+ s+=`<polyline points="${e.pts.map(p=>x(p[0])+","+y(p[1])).join(" ")}" fill="none" stroke="${e.c}" stroke-width="2.2"/>`;
+ e.pts.forEach(p=>s+=`<circle cx="${x(p[0])}" cy="${y(p[1])}" r="2.8" fill="${e.c}"/>`);
+ const L=e.pts[e.pts.length-1];s+=`<text x="${x(L[0])-6}" y="${y(L[1])-8}" text-anchor="end" fill="var(--bad)">fim ${L[1]}%</text>`;
+ e.mark.forEach(m=>s+=`<line x1="${x(m[0])}" x2="${x(m[0])}" y1="${Y0}" y2="${Y1+34}" stroke="var(--ok)" stroke-width="1.5" stroke-dasharray="2 2"/><text x="${x(m[0])+4}" y="${Y0+10}" fill="var(--ok)">${m[1]}</text>`);
+ e.scenes.forEach((c,i)=>{const w=x(c[2])-x(c[1]);s+=`<rect x="${x(c[1])}" y="${Y1+22}" width="${w-1}" height="26" fill="${cols[i%7]}" opacity=".85"/>`;
+  if(w>38)s+=`<text x="${x(c[1])+w/2}" y="${Y1+39}" text-anchor="middle" fill="#fff" style="font-size:9.5px">${c[0].length*4.6>w?c[0].split(/[ (]/)[0]:c[0]}</text>`});
+ s+=`</svg></div>`;h+=s});
+document.getElementById("charts").innerHTML=h;
+
+// 3) tempo médio (segundos) e % da duração
+const A=[["EP2",93,6.2,"inclui anúncios"],["EP3",67,12.8,"inclui anúncios"],["EP4",67,23,""],["EP5",67,21,""],["EP6",64,21,""],["Spin-off",138,42,""]];
+let a=`<svg viewBox="0 0 700 ${A.length*34+10}">`;
+A.forEach((r,i)=>{const yy=6+i*34,W=560/138;
+ a+=`<text x="0" y="${yy+16}">${r[0]}</text><rect x="64" y="${yy}" width="${W*r[1]}" height="22" rx="4" fill="var(--card)" stroke="var(--bd)"/>`+
+ `<rect x="64" y="${yy}" width="${W*r[2]}" height="22" rx="4" fill="${r[3]?"var(--mut)":"var(--b)"}" opacity=".75"/>`+
+ `<text x="${64+W*r[1]+8}" y="${yy+15}">${String(r[2]).replace(".",",")} s de ${r[1]} s (${String(Math.round(1000*r[2]/r[1])/10).replace('.',',')}%)${r[3]?" · "+r[3]:""}</text>`});
+a+=`</svg>`;document.getElementById("avg").innerHTML=a;
+</script>
+</body></html>
