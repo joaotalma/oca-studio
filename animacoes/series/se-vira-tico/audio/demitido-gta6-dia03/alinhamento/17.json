@@ -1,0 +1,61 @@
+{
+ "n": 17,
+ "texto": "Ou o tio Jão. Ele conserta tudo com ferramenta de moto.",
+ "palavras": [
+  {
+   "palavra": "Ou",
+   "ini": 0.137,
+   "fim": 0.24
+  },
+  {
+   "palavra": "o",
+   "ini": 0.32,
+   "fim": 0.48
+  },
+  {
+   "palavra": "tio",
+   "ini": 0.52,
+   "fim": 0.72
+  },
+  {
+   "palavra": "Jão.",
+   "ini": 0.76,
+   "fim": 1.2
+  },
+  {
+   "palavra": "Ele",
+   "ini": 1.488,
+   "fim": 1.52
+  },
+  {
+   "palavra": "conserta",
+   "ini": 1.6,
+   "fim": 2.16
+  },
+  {
+   "palavra": "tudo",
+   "ini": 2.2,
+   "fim": 2.4
+  },
+  {
+   "palavra": "com",
+   "ini": 2.48,
+   "fim": 2.56
+  },
+  {
+   "palavra": "ferramenta",
+   "ini": 2.613,
+   "fim": 3.013
+  },
+  {
+   "palavra": "de",
+   "ini": 3.067,
+   "fim": 3.12
+  },
+  {
+   "palavra": "moto.",
+   "ini": 3.16,
+   "fim": 3.76
+  }
+ ]
+}

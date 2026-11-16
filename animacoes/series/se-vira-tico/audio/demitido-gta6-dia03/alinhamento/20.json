@@ -1,0 +1,71 @@
+{
+ "n": 20,
+ "texto": "Quatro minutos de áudio. A resposta tava no três e cinquenta e um.",
+ "palavras": [
+  {
+   "palavra": "Quatro",
+   "ini": 0.144,
+   "fim": 0.48
+  },
+  {
+   "palavra": "minutos",
+   "ini": 0.56,
+   "fim": 1.12
+  },
+  {
+   "palavra": "de",
+   "ini": 1.2,
+   "fim": 1.28
+  },
+  {
+   "palavra": "áudio.",
+   "ini": 1.44,
+   "fim": 2.2
+  },
+  {
+   "palavra": "A",
+   "ini": 2.56,
+   "fim": 2.6
+  },
+  {
+   "palavra": "resposta",
+   "ini": 2.64,
+   "fim": 3.12
+  },
+  {
+   "palavra": "tava",
+   "ini": 3.2,
+   "fim": 3.44
+  },
+  {
+   "palavra": "no",
+   "ini": 3.56,
+   "fim": 3.68
+  },
+  {
+   "palavra": "três",
+   "ini": 3.76,
+   "fim": 3.92
+  },
+  {
+   "palavra": "e",
+   "ini": 4,
+   "fim": 4.08
+  },
+  {
+   "palavra": "cinquenta",
+   "ini": 4.12,
+   "fim": 4.4
+  },
+  {
+   "palavra": "e",
+   "ini": 4.48,
+   "fim": 4.56
+  },
+  {
+   "palavra": "um.",
+   "ini": 4.6,
+   "fim": 5.04
+  }
+ ]
+}

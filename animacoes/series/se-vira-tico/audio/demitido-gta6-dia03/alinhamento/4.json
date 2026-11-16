@@ -1,0 +1,51 @@
+{
+ "n": 4,
+ "texto": "Dinheiro na mão. É a melhor cadeira do bairro.",
+ "palavras": [
+  {
+   "palavra": "Dinheiro",
+   "ini": 0.16,
+   "fim": 0.64
+  },
+  {
+   "palavra": "na",
+   "ini": 0.72,
+   "fim": 0.8
+  },
+  {
+   "palavra": "mão.",
+   "ini": 0.88,
+   "fim": 1.36
+  },
+  {
+   "palavra": "É",
+   "ini": 1.52,
+   "fim": 1.6
+  },
+  {
+   "palavra": "a",
+   "ini": 1.64,
+   "fim": 1.68
+  },
+  {
+   "palavra": "melhor",
+   "ini": 1.76,
+   "fim": 2.24
+  },
+  {
+   "palavra": "cadeira",
+   "ini": 2.32,
+   "fim": 2.64
+  },
+  {
+   "palavra": "do",
+   "ini": 2.72,
+   "fim": 2.8
+  },
+  {
+   "palavra": "bairro.",
+   "ini": 2.88,
+   "fim": 3.6
+  }
+ ]
+}

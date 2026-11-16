@@ -1,0 +1,41 @@
+{
+ "n": 15,
+ "texto": "Segue aí, que eu ainda não perdi.",
+ "palavras": [
+  {
+   "palavra": "Segue",
+   "ini": 0.16,
+   "fim": 0.4
+  },
+  {
+   "palavra": "aí,",
+   "ini": 0.48,
+   "fim": 0.84
+  },
+  {
+   "palavra": "que",
+   "ini": 0.96,
+   "fim": 1
+  },
+  {
+   "palavra": "eu",
+   "ini": 1.04,
+   "fim": 1.08
+  },
+  {
+   "palavra": "ainda",
+   "ini": 1.12,
+   "fim": 1.36
+  },
+  {
+   "palavra": "não",
+   "ini": 1.44,
+   "fim": 1.52
+  },
+  {
+   "palavra": "perdi.",
+   "ini": 1.6,
+   "fim": 2.32
+  }
+ ]
+}

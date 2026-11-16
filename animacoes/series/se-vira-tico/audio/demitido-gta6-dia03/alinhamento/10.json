@@ -1,0 +1,51 @@
+{
+ "n": 10,
+ "texto": "Pelo menos eu ainda tenho meu jogo de futebol.",
+ "palavras": [
+  {
+   "palavra": "Pelo",
+   "ini": 0.08,
+   "fim": 0.32
+  },
+  {
+   "palavra": "menos",
+   "ini": 0.4,
+   "fim": 0.64
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.72,
+   "fim": 0.8
+  },
+  {
+   "palavra": "ainda",
+   "ini": 0.88,
+   "fim": 1.12
+  },
+  {
+   "palavra": "tenho",
+   "ini": 1.16,
+   "fim": 1.28
+  },
+  {
+   "palavra": "meu",
+   "ini": 1.36,
+   "fim": 1.48
+  },
+  {
+   "palavra": "jogo",
+   "ini": 1.52,
+   "fim": 1.76
+  },
+  {
+   "palavra": "de",
+   "ini": 1.8,
+   "fim": 1.84
+  },
+  {
+   "palavra": "futebol.",
+   "ini": 1.88,
+   "fim": 2.88
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "n": 16,
+ "texto": "Comprar outro: quatrocentos e trinta. A meta dobra.",
+ "palavras": [
+  {
+   "palavra": "Comprar",
+   "ini": 0.133,
+   "fim": 0.32
+  },
+  {
+   "palavra": "outro:",
+   "ini": 0.4,
+   "fim": 0.88
+  },
+  {
+   "palavra": "quatrocentos",
+   "ini": 0.96,
+   "fim": 1.44
+  },
+  {
+   "palavra": "e",
+   "ini": 1.52,
+   "fim": 1.6
+  },
+  {
+   "palavra": "trinta.",
+   "ini": 1.64,
+   "fim": 2
+  },
+  {
+   "palavra": "A",
+   "ini": 2.32,
+   "fim": 2.36
+  },
+  {
+   "palavra": "meta",
+   "ini": 2.4,
+   "fim": 2.64
+  },
+  {
+   "palavra": "dobra.",
+   "ini": 2.8,
+   "fim": 3.6
+  }
+ ]
+}

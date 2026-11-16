@@ -1,0 +1,81 @@
+{
+ "n": 19,
+ "texto": "...traz aí que eu dou um jeito. Mas já aviso: eu uso o que tiver.",
+ "palavras": [
+  {
+   "palavra": "...traz",
+   "ini": 0,
+   "fim": 0.24
+  },
+  {
+   "palavra": "aí",
+   "ini": 0.32,
+   "fim": 0.56
+  },
+  {
+   "palavra": "que",
+   "ini": 0.64,
+   "fim": 0.72
+  },
+  {
+   "palavra": "eu",
+   "ini": 0.8,
+   "fim": 0.88
+  },
+  {
+   "palavra": "dou",
+   "ini": 0.96,
+   "fim": 1.04
+  },
+  {
+   "palavra": "um",
+   "ini": 1.08,
+   "fim": 1.12
+  },
+  {
+   "palavra": "jeito.",
+   "ini": 1.2,
+   "fim": 1.92
+  },
+  {
+   "palavra": "Mas",
+   "ini": 2.04,
+   "fim": 2.16
+  },
+  {
+   "palavra": "já",
+   "ini": 2.2,
+   "fim": 2.32
+  },
+  {
+   "palavra": "aviso:",
+   "ini": 2.44,
+   "fim": 3.12
+  },
+  {
+   "palavra": "eu",
+   "ini": 3.24,
+   "fim": 3.36
+  },
+  {
+   "palavra": "uso",
+   "ini": 3.44,
+   "fim": 3.68
+  },
+  {
+   "palavra": "o",
+   "ini": 3.76,
+   "fim": 3.84
+  },
+  {
+   "palavra": "que",
+   "ini": 3.88,
+   "fim": 3.92
+  },
+  {
+   "palavra": "tiver.",
+   "ini": 4,
+   "fim": 4.72
+  }
+ ]
+}

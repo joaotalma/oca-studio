@@ -1,0 +1,51 @@
+{
+ "n": 5,
+ "texto": "O limite da cadeira é cento e vinte quilos.",
+ "palavras": [
+  {
+   "palavra": "O",
+   "ini": 0.08,
+   "fim": 0.12
+  },
+  {
+   "palavra": "limite",
+   "ini": 0.16,
+   "fim": 0.56
+  },
+  {
+   "palavra": "da",
+   "ini": 0.6,
+   "fim": 0.64
+  },
+  {
+   "palavra": "cadeira",
+   "ini": 0.72,
+   "fim": 1.28
+  },
+  {
+   "palavra": "é",
+   "ini": 1.44,
+   "fim": 1.6
+  },
+  {
+   "palavra": "cento",
+   "ini": 1.68,
+   "fim": 1.973
+  },
+  {
+   "palavra": "e",
+   "ini": 2.027,
+   "fim": 2.08
+  },
+  {
+   "palavra": "vinte",
+   "ini": 2.133,
+   "fim": 2.24
+  },
+  {
+   "palavra": "quilos.",
+   "ini": 2.4,
+   "fim": 3.2
+  }
+ ]
+}

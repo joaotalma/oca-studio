@@ -1,0 +1,26 @@
+{
+ "n": 11,
+ "texto": "Não, não, não, não.",
+ "palavras": [
+  {
+   "palavra": "Não,",
+   "ini": 0.16,
+   "fim": 0.64
+  },
+  {
+   "palavra": "não,",
+   "ini": 0.8,
+   "fim": 1.08
+  },
+  {
+   "palavra": "não,",
+   "ini": 1.12,
+   "fim": 1.36
+  },
+  {
+   "palavra": "não.",
+   "ini": 1.4,
+   "fim": 2
+  }
+ ]
+}

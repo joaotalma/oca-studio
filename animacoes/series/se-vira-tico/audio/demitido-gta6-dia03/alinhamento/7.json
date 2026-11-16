@@ -1,0 +1,31 @@
+{
+ "n": 7,
+ "texto": "Kauã, que barulho foi esse?!",
+ "palavras": [
+  {
+   "palavra": "Kauã,",
+   "ini": 0.067,
+   "fim": 0.64
+  },
+  {
+   "palavra": "que",
+   "ini": 0.8,
+   "fim": 0.88
+  },
+  {
+   "palavra": "barulho",
+   "ini": 0.96,
+   "fim": 1.36
+  },
+  {
+   "palavra": "foi",
+   "ini": 1.4,
+   "fim": 1.52
+  },
+  {
+   "palavra": "esse?!",
+   "ini": 1.6,
+   "fim": 2.32
+  }
+ ]
+}

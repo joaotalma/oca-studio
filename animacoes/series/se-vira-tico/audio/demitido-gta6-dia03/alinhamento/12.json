@@ -1,0 +1,36 @@
+{
+ "n": 12,
+ "texto": "Ele não obedecia. Agora nem sugere.",
+ "palavras": [
+  {
+   "palavra": "Ele",
+   "ini": 0.08,
+   "fim": 0.24
+  },
+  {
+   "palavra": "não",
+   "ini": 0.32,
+   "fim": 0.4
+  },
+  {
+   "palavra": "obedecia.",
+   "ini": 0.48,
+   "fim": 1.68
+  },
+  {
+   "palavra": "Agora",
+   "ini": 2.16,
+   "fim": 2.56
+  },
+  {
+   "palavra": "nem",
+   "ini": 2.72,
+   "fim": 2.8
+  },
+  {
+   "palavra": "sugere.",
+   "ini": 2.96,
+   "fim": 3.76
+  }
+ ]
+}
